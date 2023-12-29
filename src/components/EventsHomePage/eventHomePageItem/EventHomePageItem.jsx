@@ -23,7 +23,7 @@ const EventHomePageItem = ({
             <div className="date">Date : {date}</div>
             <div className="location">{location}</div>
           </div>
-          <div className="boxDate">
+          <div className="boxDateSec">
             <div className="month">{boxMonth}</div>
             <div className="boxDate">
               {boxDate} <span>{boxWeek}</span>

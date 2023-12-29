@@ -1,11 +1,11 @@
 .eventsHomePage {
-  background-color: #1d5a3f;
+  background-color: #1D5A3F;
   &_wrapper {
     display: flex;
     padding: 150px 100px;
     align-items: center;
     &_left {
-      width: 60%;
+      width: 65%;
       .eventHomeItem {
         padding-right: 200px;
         margin: 0 0 64px;
@@ -14,7 +14,6 @@
         }
         &_wrapper {
           display: flex;
-
           &_left {
             width: 30%;
             .eventItem_image {
@@ -36,6 +35,7 @@
             width: 70%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
+            position: relative;
             .eventItem_content {
               h5 {
                 color: #000;
@@ -46,7 +46,7 @@
                 width: 152px;
               }
               .eventname {
-                color: #9c9c9c;
+                color: #9C9C9C;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -54,7 +54,7 @@
                 font-family: "Poppins";
               }
               .date {
-                color: #9c9c9c;
+                color: #9C9C9C;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -62,7 +62,7 @@
                 font-family: "Poppins";
               }
               .location {
-                color: #208df2;
+                color: #208DF2;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -71,12 +71,52 @@
                 font-family: "Poppins";
               }
             }
+            .boxDateSec {
+              position: absolute;
+              top: -34px;
+              right: 55px;
+              .month {
+                color: #fff;
+                font-family: "Poppins";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 24px */
+                text-transform: uppercase;
+                background-color: #f90;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                padding: 5px 10px;
+              }
+              .boxDate {
+                color: #000;
+                font-family: "Poppins";
+                font-size: 53px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 79.5px */
+                text-transform: uppercase;
+                background: #D9D9D9;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                padding: 0 5px;
+                span {
+                  color: #000;
+                  font-family: "Poppins";
+                  font-size: 19px;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 150%; /* 28.5px */
+                  text-transform: uppercase;
+                }
+              }
+            }
           }
         }
       }
     }
     &_right {
-      width: 40%;
+      width: 35%;
       &_content {
         h2 {
           color: #fff;
