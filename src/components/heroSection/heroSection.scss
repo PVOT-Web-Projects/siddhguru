@@ -1,0 +1,99 @@
+.hero_section {
+  background-color: #fff9e0;
+  overflow: hidden;
+
+  .hero_section_wrapper {
+    position: relative;
+    height: calc(100vh - 250px);
+    .hero_section_wrapper_inner {
+      position: absolute;
+      bottom: -265px;
+      left: 50%;
+      transform: translateX(-50%);
+      .hero_section_first_image {
+        position: relative;
+
+        img {
+          // max-width: 100%;
+          display: block;
+          width: 1000px;
+          animation: godAnimation 40s infinite linear;
+          @media (max-width: 1600px) {
+            width: 800px;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("../../images/hero_image2.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 55%;
+          height: 55%;
+          animation: godAnimationRevenrse 40s infinite linear;
+          z-index: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-image: url("../../images/hero_image3.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          top: 57%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 37%;
+          height: 33%;
+          z-index: 2;
+          @media(max-width:1600px){
+            top: 56%;
+          }
+        }
+      }
+      .hero_section_second_image {
+        @media (max-width: 1600px) {
+          // width: 33%;
+        }
+        img {
+        }
+      }
+      .hero_section_third_image {
+        img {
+          max-width: 100%;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  @keyframes godAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes godAnimationRevenrse {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+}

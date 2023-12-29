@@ -1,0 +1,58 @@
+.homePageVideoSection {
+    .babaBgOuter {
+      position: relative;
+    }
+    .babaBgImage {
+      height: 100%;
+      width: 100%;
+    }
+    .playButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .babaBgText {
+      position: absolute;
+      top: 38%;
+      width: 35%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+    .babaText1 {
+      color: #fff;
+      font-family: Inria Serif;
+      font-size: 41.242px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .babaName {
+      color: #f90;
+      font-family: Inria Serif;
+      font-size: 57.92px;
+      border-top: 1px solid #f90;
+      border-bottom: 1px solid #f90;
+      font-style: normal;
+      width: 93%;
+      font-weight: 700;
+      padding: 7px 0px;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .babaBgButton {
+      background: #f90;
+      border: none;
+      padding: 0.6% 3%;
+      color: #000;
+      margin-top: 1.5rem;
+      font-family: Inria Serif;
+      font-size: 25.143px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+.textSection {
+    padding: 168px 0 80px ;
+  &_wrapper {
+    p {
+      color: #000;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 180.092%;
+      width: 533px;
+      margin: 0 auto;
+      text-align: center;
+      span {
+        color: #6a1c1c;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180.092%; /* 36.018px */
+      }
+    }
+  }
+}

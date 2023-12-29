@@ -1,0 +1,101 @@
+.aboutAshram {
+  background-color: rgba(255, 234, 174, 0.16);
+  padding: 0 0 100px;
+  &_wrapper {
+    &_image {
+      position: relative;
+      height: 400px;
+      .shape_image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &.leaf1 {
+          left: 56%;
+          bottom: 0;
+          img {
+            width: 300px;
+            height: 299px;
+          }
+        }
+        &.leaf2 {
+          left: 42%;
+          bottom: 22px;
+          z-index: 1;
+          img {
+            width: 103px;
+            height: 157px;
+          }
+        }
+        &.leaf3 {
+          left: 42%;
+          bottom: 0;
+          z-index: 2;
+          img {
+            width: 55px;
+            height: 100%;
+          }
+        }
+        &.leaf4 {
+          left: 42%;
+          bottom: 95px;
+          img {
+            width: 150px;
+            height: 100%;
+          }
+        }
+        &.main_image {
+          z-index: 1;
+        }
+      }
+    }
+    .mantra {
+      text-align: center;
+      margin: 40px 0 0;
+      width: 100%;
+      .mantra_wrapper {
+        text-align: center;
+        width: 100%;
+        color: #123828;
+        // font-family: Lohit Devanagari;
+        font-size: 26.934px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .aboutAshram_content {
+      text-align: center;
+      padding: 76px 0 0;
+      .top_border {
+        img {
+        }
+      }
+      .aboutAshram_text {
+        margin: 36px 0;
+        h3 {
+          color: #000;
+          font-size: 42.189px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 107.91%; /* 45.526px */
+          margin: 0 0 38px;
+        }
+        p {
+          color: #000;
+          text-align: center;
+          font-size: 18.563px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130.092%; /* 24.149px */
+          width: 616px;
+          margin: 0 auto;
+        }
+      }
+      .bottom_border {
+        img {
+        }
+      }
+    }
+  }
+}

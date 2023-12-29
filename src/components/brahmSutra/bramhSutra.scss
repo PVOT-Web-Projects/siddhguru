@@ -1,0 +1,101 @@
+// .brahmSutra {
+//   width: 100%;
+//   margin-top: 1rem;
+//   overflow: hidden;
+//   &_wrapper {
+//     padding: 0;
+//     width: 100%;
+//     align-items: center;
+//     // margin: 8rem auto;
+//     position: relative;
+//     @media (max-width: 1199px) {
+//       max-width: 100%;
+//     }
+//     @media (max-width: 991px) {
+//       max-width: 100%;
+//     }
+//     @media (max-width: 769px) {
+//       padding: 0;
+//       max-width: 100%;
+//     }
+//     .slider {
+//       max-width: 1110px;
+//       margin: 0 auto;
+//     }
+//     .slick-track {
+//       padding: 0;
+//       display: flex;
+//       align-items: center;
+//       @media (max-width: 769px) {
+//         padding: 90px 0;
+//       }
+//       @media (max-width: 991px) {
+//         padding: 50px 0 0px;
+//       }
+//     }
+//     .slick-slide {
+//       text-align: center;
+//       margin-bottom: 90px;
+//       transition: transform 0.3s ease-in-out;
+//     }
+//     .slick-slide:not(.slick-current) {
+//       opacity: 1;
+//       padding: 0 2rem;
+//     }
+//     .slick-slide.slick-current {
+//       transform: scale(1.5);
+//       position: relative;
+//       z-index: 1;
+//     }
+//     .card_content {
+//       width: 100%;
+//       // background-color: rgba(32, 77, 29);
+//       // color: rgb(232, 19, 19);
+//       // border: 3px solid rgb(0, 0, 0);
+//       border-radius: 22px;
+//       margin: 94px 0;
+//       padding: 10px 35px;
+//       @media (max-width: 991px) {
+//         padding: 20px 0;
+//       }
+//       @media (max-width: 769px) {
+//         padding: 3px 10px;
+//       }
+//       @media (max-width: 476px) {
+//         padding: 15px 90px;
+//       }
+//       @media (max-width: 376px) {
+//         padding: 17px 60px;
+//       }
+//     }
+//   }
+//   .orange_container {
+//     width: 700px;
+//     height: 700px;
+//     background-color: orange;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
+// .card_content img {
+//   width: 100%;
+//   padding-top: 64px;
+//   padding-left: 0.8rem;
+//   padding-right: 0.8rem;
+//   // background-color: blue;
+//   // padding-bottom: 4.8rem;
+//   @media (max-width: 768px) {
+//     padding-top: 0;
+//   }
+//   @media (max-width: 476px) {
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+//   @media (max-width: 376px) {
+//     // margin-top: 0;
+//     padding-left: 0;
+//     padding-right: 0;
+//   }
+// }

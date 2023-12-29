@@ -1,0 +1,71 @@
+.siddhguru_container {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .siddhguru_mantra_section {
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .siddhguru_mantra_text {
+    color: #123828;
+    font-family: Lohit Devanagari;
+    font-size: 42.194px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 1.5rem;
+  }
+  .siddhguru_message_section {
+    color: #000;
+    font-family: Inria Serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .input_field {
+    background: #d9d9d9;
+    outline: none;
+    border: none;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  .sidhhguru_form_content {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .submit_btn_outer {
+    padding-top: 2rem;
+  }
+  .submit_btn {
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    cursor: pointer;
+    background: #ff9900;
+    outline: none;
+    border: none;
+  }
+  .siddhguru_dropdown_menu {
+    background-color: #d9d9d9;
+    width: 14.5rem;
+    padding-bottom: 13px;
+    padding-top: 13px;
+  }
+
+  .p-dropdown-label {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+.p-dropdown-item {
+  color: black;
+  padding: 8px;
+  background-color: #adabab;
+}
+.p-dropdown-trigger {
+  padding-right: 8px;
+}
