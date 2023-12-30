@@ -111,12 +111,7 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Ashram</h3>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+            Enriched and adorned by the rigorous Sadhana, meditation, and austerities observed by Sri Siddhguru, The Brahmrishi Ashram has become a sacred sanctuary where the divine presence of gods is palpable. Here, you can feel a distinct positive aura that permeates the soil and surroundings. This is the place where hearts can let go of their worries & troubles, and experience 'the eternal bliss'.
             </p>
           </div>
           <div className="bottom_border">

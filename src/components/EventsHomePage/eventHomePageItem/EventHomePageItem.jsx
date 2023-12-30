@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const EventHomePageItem = ({
   image,
   heading,
@@ -7,9 +9,19 @@ const EventHomePageItem = ({
   boxDate,
   boxMonth,
   boxWeek,
+  id
 }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
   return (
-    <div className="eventHomeItem">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0, x: id === 1 || id === 3 ? 180 : 0 } : {}}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      className="eventHomeItem"
+    >
       <div className="eventHomeItem_wrapper">
         <div className="eventHomeItem_wrapper_left">
           <div className="eventItem_image">
@@ -31,7 +43,7 @@ const EventHomePageItem = ({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default EventHomePageItem;

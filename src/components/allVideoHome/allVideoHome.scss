@@ -1,79 +1,91 @@
 .sidhhguru_first_container {
-      .sidhhguru_layout {
-        width: 100%;
-        background: url("../../images/bgImage.png");
-        /* height: 500px; */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        /* background-attachment: fixed; */
-        /* min-height: 50%; */
+  .sidhhguru_layout {
+    width: 100%;
+    background: url("../../images/bgImage.png");
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* background-attachment: fixed; */
+    /* min-height: 50%; */
+    .sidhhguru_gurudev_first_content {
+      padding-top: 6rem;
+      padding-left: 8rem;
+      padding-right: 5rem;
+      margin-bottom: -150px;
+      display: flex;
+      position: relative;
+      gap: 2rem;
+      .allVideoLeft {
+        width: 40%;
       }
-      .sidhhguru_gurudev_first_content {
-        padding-top: 6rem;
-        padding-left: 8rem;
-        padding-right: 5rem;
-        margin-bottom: -150px;
+      .allVideoRight {
+        width: 60%;
         display: flex;
-        position: relative;
-        gap: 2rem;
-      }
-      .sidhhguru_gurudev_content {
-        width: 45%;
-        color: #000;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130.092%;
-      }
-      .sidhhguru_gurudev_btn_outer {
-        padding-top: 2rem;
-      }
-      .sidhhguru_gurudev_btn {
-        border: none;
-        cursor: pointer;
-        background: #FF9900;
-        outline: none;
-        color: #000;
-        font-family: Inria Serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        padding: 1rem 2rem 1rem 2rem;
-      }
-      .sidhhguru_layout1_img,
-      .sidhhguru_layout2_img {
-        display: block;
-        /* width: 100%; */
-      }
-      .sidhhguru_gurudev_second_content_text {
-        padding-top: 3rem;
-        background: #1D5A3F;
-        box-shadow: 19.01px 22.812px 37.069px -24.713px rgba(0, 0, 0, 0.71);
-        padding-bottom: 3rem;
-        text-align: center;
-      }
-      .sidhhguru_gurudev_second_content_text1 {
-        background: #f90;
-        padding-bottom: 3rem;
-        text-align: center;
-        padding-top: 3rem;
-        box-shadow: 19.01px 22.812px 37.069px -24.713px rgba(0, 0, 0, 0.71);
-      }
-      .sidhhguru_gurudev_second_content_innertext {
-        color: #fff;
-        font-family: Inria Serif;
-        font-size: 15.208px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-      }
-      .lotus_img_outer {
-        text-align: center;
-      }
-      .lotus_img {
-        height: 58vh;
+        justify-content: end;
+        .sidhhguru_gurudev_second_content {
+          padding: 0 10px;
+        }
       }
     }
+    .sidhhguru_gurudev_content {
+      width: 425px;
+      color: #000;
+      font-size: 50px;
+      letter-spacing: -1px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130.092%;
+    }
+    .sidhhguru_gurudev_btn_outer {
+      padding-top: 2rem;
+    }
+    .sidhhguru_gurudev_btn {
+      border: none;
+      cursor: pointer;
+      background: #FF9900;
+      outline: none;
+      color: #000;
+      font-family: Inria Serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      padding: 1rem 2rem 1rem 2rem;
+    }
+    .sidhhguru_layout1_img,
+    .sidhhguru_layout2_img {
+      display: block;
+      /* width: 100%; */
+    }
+    .sidhhguru_gurudev_second_content_text {
+      padding-top: 3rem;
+      background: #1D5A3F;
+      box-shadow: 19.01px 22.812px 37.069px -24.713px rgba(0, 0, 0, 0.71);
+      padding-bottom: 3rem;
+      text-align: center;
+    }
+    .sidhhguru_gurudev_second_content_text1 {
+      background: #f90;
+      padding-bottom: 3rem;
+      text-align: center;
+      padding-top: 3rem;
+      box-shadow: 19.01px 22.812px 37.069px -24.713px rgba(0, 0, 0, 0.71);
+    }
+    .sidhhguru_gurudev_second_content_innertext {
+      color: #fff;
+      font-family: Inria Serif;
+      font-size: 15.208px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+    .lotus_img_outer {
+      text-align: center;
+    }
+    .lotus_img {
+      height: 49vh;
+    }
+  }
+}

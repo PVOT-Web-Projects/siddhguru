@@ -1,5 +1,6 @@
 // import { motion } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
+import Button from "../../components/buttons/button3"
 // import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -8,6 +9,14 @@ import Siddhguru_img from "../../images/homePageFormImage.png";
 import "./formHomePage.scss";
 
 function FormHomePage() {
+
+  // const [ref, inView] = useInView({
+  //   triggerOnce: true, // Only trigger once
+  // });
+
+
+
+
   const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
   const sentence = {
     hidden: { opacity: 0 },
@@ -32,11 +41,11 @@ function FormHomePage() {
   const controls = useAnimation();
   const [selectedCity, setSelectedCity] = useState(null);
   const cities = [
-    { name: "New York", code: "NY" },
-    { name: "Rome", code: "RM" },
-    { name: "London", code: "LDN" },
-    { name: "Istanbul", code: "IST" },
-    { name: "Paris", code: "PRS" },
+    { name: "English", code: "NY" },
+    { name: "Hindi", code: "RM" },
+    { name: "Gujrati", code: "LDN" },
+    { name: "Marathi", code: "IST" },
+    { name: "Bangali", code: "PRS" },
   ];
   return (
     <div className="siddhguru_container" ref={ref}>
@@ -89,8 +98,18 @@ function FormHomePage() {
               className="siddhguru_dropdown_menu"
             />
           </div>
-          <div className="submit_btn_outer"></div>
-          <button className="submit_btn">Sign Up</button>
+          <motion.div
+          
+          ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: 0.4 }}
+          
+          
+          
+           className="submit_btn_outer">
+          <Button btn_text="Sign Up"/>
+          </motion.div>
         </form>
       </div>
     </div>

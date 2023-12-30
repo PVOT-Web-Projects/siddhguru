@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Button from "../../components/buttons/button3"
 import "./homePageVideoSection.scss";
 import babaDP from "../../images/videoSectionImage.png";
 import play from "../../images/videoSectionPlayIcon.png";
@@ -35,15 +36,16 @@ const HomePageVideoSection = () => {
           >
             Sri Brahmrishi
           </motion.div>
-          <motion.button
+          <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.7 }}
             className="babaBgButton"
           >
-            Register Now
-          </motion.button>
+          <Button btn_text="Register Now"/>
+          </motion.div>
+          
         </div>
       </div>
     </div>

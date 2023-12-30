@@ -1,48 +1,74 @@
+.brahmasutra_section_title {
+  color: #6A1C1C;
+  font-weight: 400;
+  font-size: 59px;
+  text-align: center;
+  margin-top: 3rem;
+  p {
+    margin-bottom: 20px;
+  }
+}
 .brahmasutra_section {
-      width: 100%;
-      margin-top: 1rem;
-      overflow-x: hidden;
-      position: relative;
-      .orange_container {
-        width: 550px;
-        height: 550px;
-        background-color: orange;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+  width: 100%;
+  // margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .index_indicator{
+    position: absolute;
+    color: #6A1C1C;
+right: 5rem;
+font-family: Inria Serif;
+font-size: 32.185px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.322px;
+  }
+  .orange_container {
+    width: 580px;
+    height: 575px;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .brahmasutra_section_wrapper {
+    padding: 0;
+    .slick-track {
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    .slick-slide {
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      &:not(.slick-current) {
+        opacity: 1;
+        padding: 4rem 4rem;
+        z-index: 10;
+        // background-color: #6A1C1C;
       }
-      .brahmasutra_section_wrapper {
-        padding: 0;
-        .slick-track {
-          padding: 0;
-          display: flex;
-          align-items: center;
-        }
-        .slick-slide {
-          text-align: center;
-          transition: transform 0.3s ease-in-out;
-          &:not(.slick-current) {
-            opacity: 1;
-            padding: 4rem 4rem;
-          }
-          &.slick-current {
-            transform: scale(1.4);
-            position: relative;
-            z-index: 1;
-          }
-        }
-        .brahmasutra_section_images {
-          width: 100%;
-          border-radius: 22px;
-          margin: 94px 0;
-          padding: 0px 13px;
-          img {
-            width: 100%;
-            // padding-top: 64px;
-            // padding-left: 0.8rem;
-            // padding-right: 0.8rem;
-          }
-        }
+      &.slick-current {
+        transform: scale(2.2);
+        position: relative;
+        z-index: 0;
+        padding: 0 7rem;
+        // background-color: red;
       }
     }
+    .brahmasutra_section_images {
+      border-radius: 22px;
+      margin: 94px 0;
+      padding: 0px 13px;
+      img {
+        width: 100%;
+        // padding-top: 64px;
+        // padding-left: 0.8rem;
+        // padding-right: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Button from "../../components/buttons/button";
 import { useInView } from "react-intersection-observer";
 import "./featuredBlogs.scss";
 import img1 from "../../images/featuredBlog1.png";
@@ -49,7 +50,7 @@ const FeaturedBlog = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <button className="blogsCardButton">Read More</button>
+              <Button btn_text="Read More"/>
             </div>
           </motion.div>
           <motion.div
@@ -71,7 +72,7 @@ const FeaturedBlog = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <button className="blogsCardButton">Read More</button>
+              <Button btn_text="Read More"/>
             </div>
           </motion.div>
           <motion.div
@@ -93,7 +94,7 @@ const FeaturedBlog = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <button className="blogsCardButton">Read More</button>
+              <Button btn_text="Read More"/>
             </div>
           </motion.div>
           <motion.div
@@ -115,7 +116,7 @@ const FeaturedBlog = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </div>
-              <button className="blogsCardButton">Read More</button>
+              <Button btn_text="Read More"/>
             </div>
           </motion.div>
         </div>

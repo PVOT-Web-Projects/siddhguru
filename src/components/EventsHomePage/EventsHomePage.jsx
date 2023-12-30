@@ -2,10 +2,15 @@ import EventHomePageItem from "./EventHomePageItem/EventHomePageItem";
 import image1 from "../../images/featuredEvent1.png";
 import image2 from "../../images/featuredEvent2.png";
 import image3 from "../../images/featuredEvent3.png";
+import Button from "../../components/buttons/button"
 import image4 from "../../images/featuredEvent4.png";
-import "./eventsHomePage.scss"
-
+import "./eventsHomePage.scss";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const EventsHomePage = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
   const featuredEventsData = [
     {
       id: 0,
@@ -56,8 +61,9 @@ const EventsHomePage = () => {
     <div className="eventsHomePage">
       <div className="eventsHomePage_wrapper">
         <div className="eventsHomePage_wrapper_left">
-          {featuredEventsData.map((item, index) => (
+          {featuredEventsData.map((item) => (
             <EventHomePageItem
+              id={item.id}
               key={item.id}
               image={item.image}
               heading={item.bigText}
@@ -72,16 +78,38 @@ const EventsHomePage = () => {
         </div>
         <div className="eventsHomePage_wrapper_right">
           <div className="eventsHomePage_wrapper_right_content">
-            <h2>Events</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-            <a href="#">Sign Up</a>
+            <motion.h2
+              ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              Events
+            </motion.h2>
+            <motion.p
+              ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              From spiritual discourses and meditation sessions to yoga and wellness programs promoting physical health, Sri Brahmrishi Ashram has become a vibrant center for personal development. At the same time,  the Ashram actively engages in philanthropic endeavors, reaching out to the underprivileged through charitable activities and community service. Here are the dates, mark your calendar, today!
+            </motion.p>
+            
+            <motion.div
+            ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.9, delay: 0.6 }}
+             >
+              <Button btn_text="Read More"/>
+            </motion.div>
+
+
+
+
+
+           
+          
           </div>
         </div>
       </div>

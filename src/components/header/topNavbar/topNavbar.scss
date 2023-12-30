@@ -1,5 +1,5 @@
 .topNavbar {
-    padding: 10px 0;
+  padding: 10px 0;
   .topNavbar_container {
     max-width: 1600px;
     padding: 0 20px;
@@ -22,11 +22,33 @@
     margin: 0 -14px;
     justify-content: end;
     li {
-      color: #000;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: normal;
       padding: 0 14px;
+      a {
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        position: relative;
+        &:hover {
+          color: #6A1C1C;
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 1px;
+          bottom: -5px;
+          left: 0;
+          background-color: #6A1C1C;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+      }
     }
   }
 }
