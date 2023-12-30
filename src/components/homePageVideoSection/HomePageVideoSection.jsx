@@ -25,7 +25,9 @@ const HomePageVideoSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="babaText1"
           >
-            Digital diksha transform your life
+           Find your answers in Gurudev’s
+Words of Wisdom
+
           </motion.div>
           <motion.div
             ref={ref}
