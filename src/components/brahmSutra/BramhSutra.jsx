@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import pic1 from "../../images/brahmSutraImage1.png";
-import pic2 from "../../images/c1.png";
-import pic3 from "../../images/c2.png";
-import pic4 from "../../images/c3.png";
-import pic5 from "../../images/c4.png";
+import pic2 from "../../images/t1.png";
+import pic3 from "../../images/t2.png";
+import pic4 from "../../images/t3.png";
+import pic5 from "../../images/t4.png";
 import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -18,8 +18,8 @@ const Home = () => {
       <HomePageSlider1 />
       <AboutAshram />
       <HomePage3D />
-      <BrahmSutra />
       <EventsHomePage />
+      <BrahmSutra />
       <HomePageVideoSection />
       <OurProgramSlider />
       <AllVideoHome />

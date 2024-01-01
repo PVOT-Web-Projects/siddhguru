@@ -8,6 +8,7 @@
     margin-bottom: 20px;
   }
 }
+
 .brahmasutra_section {
   width: 100%;
   // margin-top: 3rem;
@@ -15,9 +16,12 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+
+
+ 
   .index_indicator{
     position: absolute;
-    color: #6A1C1C;
+    color: gray;
 right: 5rem;
 font-family: Inria Serif;
 font-size: 32.185px;
@@ -27,8 +31,8 @@ line-height: normal;
 letter-spacing: -0.322px;
   }
   .orange_container {
-    width: 580px;
-    height: 575px;
+    width: 600px;
+    height: 600px;
     background-color: orange;
     position: absolute;
     top: 50%;
@@ -42,12 +46,16 @@ letter-spacing: -0.322px;
       display: flex;
       align-items: center;
     }
+
+    .slick-list{
+      padding: 30px 50px !important;
+    }
     .slick-slide {
       text-align: center;
       transition: transform 0.3s ease-in-out;
       &:not(.slick-current) {
         opacity: 1;
-        padding: 4rem 4rem;
+        padding: 4rem 4.2rem;
         z-index: 10;
         // background-color: #6A1C1C;
       }

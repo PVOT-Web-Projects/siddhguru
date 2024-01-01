@@ -73,7 +73,7 @@ const HomePageSlider1 = () => {
     dots: false,
     focusOnSelect: true,
     appendDots: ".slider_dots",
-    speed: 1000,
+    speed: 500,
     autoplay: false,
     autoplaySpeed: 5000,
     beforeChange: (current, next) => setImgIndex(next),

@@ -57,7 +57,7 @@
         text-align: center;
         width: 100%;
         color: #123828;
-        // font-family: Lohit Devanagari;
+        font-family: Lohit Devanagari;
         font-size: 26.934px;
         font-style: normal;
         font-weight: 400;
@@ -94,6 +94,7 @@
       }
       .bottom_border {
         img {
+          rotate: 180deg;
         }
       }
     }
