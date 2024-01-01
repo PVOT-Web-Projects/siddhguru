@@ -37,7 +37,7 @@ const BramhSutra = () => {
       </div>
       <div className="brahmasutra_section">
         <div className="index_indicator">
-          <p>{`${imgIndex}/${totalImages}`}</p> {/* Display current image index */}
+          <p><span>{`${imgIndex}`}</span>/{`${totalImages}`}</p> {/* Display current image index */}
         </div>
         <div className="orange_container"></div>
         <div className="brahmasutra_section_wrapper">
