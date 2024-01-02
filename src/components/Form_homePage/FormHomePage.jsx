@@ -88,13 +88,13 @@ function FormHomePage() {
             />
           </div>
           <div className="sidhhguru_form_content">
-            <input type="text" placeholder="Country" className="input_field" />
+            <input type="text" placeholder="Language" className="input_field" />
             <Dropdown
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.value)}
               options={cities}
               optionLabel="name"
-              placeholder="Language"
+              placeholder="Country"
               className="siddhguru_dropdown_menu"
             />
           </div>

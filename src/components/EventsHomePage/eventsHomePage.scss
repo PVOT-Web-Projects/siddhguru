@@ -5,7 +5,8 @@
     padding: 120px 240px;
     align-items: center;
     @media(max-width:1600px){
-      padding: 120px 140px;
+      padding: 120px 140px 60px 120px;
+
     }
     @media(max-width:1440px){
       padding: 120px 110px;
@@ -24,7 +25,11 @@
         &_wrapper {
           display: flex;
           &_left {
-            width: 180px;
+            width: 200px;
+
+            @media (max-width:1600px){
+              width: 165px;
+            }
             .eventItem_image {
               height: 100%;
               img {

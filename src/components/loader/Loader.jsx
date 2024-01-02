@@ -1,4 +1,4 @@
-import "./loader.css";
+import "./loader.scss";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import loader from "../../images/loader_logo.svg"

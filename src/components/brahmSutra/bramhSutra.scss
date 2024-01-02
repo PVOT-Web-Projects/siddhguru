@@ -4,6 +4,9 @@
   font-size: 59px;
   text-align: center;
   margin-top: 3rem;
+  @media(min-width:1600px){
+    margin-top: 6rem;
+  }
   p {
     margin-bottom: 20px;
   }
@@ -17,7 +20,9 @@
   overflow-x: hidden;
   overflow-y: hidden;
 
-
+@media (min-width:1600px){
+  margin-bottom: 8rem;
+}
  
   .index_indicator{
     position: absolute;
@@ -36,13 +41,17 @@ p{
 }
   }
   .orange_container {
-    width: 600px;
+    width: 39%;
     height: 600px;
     background-color: orange;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media(min-width:1600px){
+height: 650px;
+    }
   }
   .brahmasutra_section_wrapper {
     padding: 0;
@@ -70,12 +79,19 @@ p{
         z-index: 0;
         padding: 0 7rem;
         // background-color: red;
+
+        @media(min-width:1600px){
+          transform: scale(1.8);
+        }
       }
     }
     .brahmasutra_section_images {
       border-radius: 22px;
       margin: 94px 0;
       padding: 0px 13px;
+      @media(min-width:1600px){
+        padding: 0px 30px;
+      }
       img {
         width: 100%;
         // padding-top: 64px;
