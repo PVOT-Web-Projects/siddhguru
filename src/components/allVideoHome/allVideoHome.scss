@@ -86,6 +86,9 @@
     }
     .lotus_img {
       height: 49vh;
+      @media(min-width:1600px){
+        height:58vh
+      }
     }
   }
 }
