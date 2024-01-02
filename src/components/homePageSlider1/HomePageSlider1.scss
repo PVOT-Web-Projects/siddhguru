@@ -14,6 +14,7 @@
     @media (max-width: 767px) {
       padding: 0;
       max-width: 100%;
+      width: 85%;
     }
     .slider {
       margin: 0 auto;
@@ -26,6 +27,9 @@
       align-items: center;
       @media (max-width: 767px) {
         padding: 0 0 60px;
+      }
+      @media (max-width: 575px) {
+        padding: 0 0 20px;
       }
     }
 
@@ -69,10 +73,17 @@
   .slider_thumbnail_wrapper .slick-slide:not(.slick-current) {
     filter: brightness(0.5);
     opacity: 0.2;
+    @media(max-width:767px){
+      filter: brightness(0);
+      opacity: 1;
+    }
   }
   .slider_btn {
     margin: 40px 0 0;
     text-align: center;
+    @media(max-width:767px){
+      margin: 20px 0 0;
+    }
     a {
       background-color: #f90;
       color: #000;
@@ -86,6 +97,10 @@
   .thumbnail_text {
     text-align: center;
     padding: 0 15px;
+    font-size: 16px;
+    @media(max-width:767px){
+      font-size: 13px;
+    }
   }
 
   .slick-dots li.slick-active button:before {

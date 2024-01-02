@@ -47,9 +47,9 @@ function OurProgramSlider() {
           spaceBetween={40}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
-          autoplay={{
-            delay: 5000,
-          }}
+          // autoplay={{
+          //   delay: 5000,
+          // }}
           speed={1500}
         >
           <SwiperSlide>
@@ -106,7 +106,7 @@ function OurProgramSlider() {
                       <Button btn_text="Register Now" />
                     </div>
                   </div>
-                  <div>
+                  <div className="carousel_section_image">
                     <img
                       src={Carousel_layer1}
                       alt=""
@@ -139,7 +139,7 @@ function OurProgramSlider() {
                       <Button btn_text="Register Now" />
                     </div>
                   </div>
-                  <div>
+                  <div className="carousel_section_image">
                     <img
                       src={Carousel_layer1}
                       alt=""

@@ -2,7 +2,7 @@ import EventHomePageItem from "./EventHomePageItem/EventHomePageItem";
 import image1 from "../../images/featuredEvent1.png";
 import image2 from "../../images/featuredEvent2.png";
 import image3 from "../../images/featuredEvent3.png";
-import Button from "../../components/buttons/button"
+import Button from "../../components/buttons/button";
 import image4 from "../../images/featuredEvent4.png";
 import "./eventsHomePage.scss";
 import { motion } from "framer-motion";
@@ -60,6 +60,15 @@ const EventsHomePage = () => {
   return (
     <div className="eventsHomePage">
       <div className="eventsHomePage_wrapper">
+        <motion.h2
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mobile_heading"
+        >
+          Events
+        </motion.h2>
         <div className="eventsHomePage_wrapper_left">
           {featuredEventsData.map((item) => (
             <EventHomePageItem
@@ -92,24 +101,23 @@ const EventsHomePage = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              From spiritual discourses and meditation sessions to yoga and wellness programs promoting physical health, Sri Brahmrishi Ashram has become a vibrant center for personal development. At the same time,  the Ashram actively engages in philanthropic endeavors, reaching out to the underprivileged through charitable activities and community service. Here are the dates, mark your calendar, today!
+              From spiritual discourses and meditation sessions to yoga and
+              wellness programs promoting physical health, Sri Brahmrishi Ashram
+              has become a vibrant center for personal development. At the same
+              time, the Ashram actively engages in philanthropic endeavors,
+              reaching out to the underprivileged through charitable activities
+              and community service. Here are the dates, mark your calendar,
+              today!
             </motion.p>
-            
+
             <motion.div
-            ref={ref}
+              ref={ref}
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.9, delay: 0.6 }}
-             >
-              <Button btn_text="Read More"/>
+            >
+              <Button btn_text="Read More" />
             </motion.div>
-
-
-
-
-
-           
-          
           </div>
         </div>
       </div>

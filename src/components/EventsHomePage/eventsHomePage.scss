@@ -1,34 +1,76 @@
 .eventsHomePage {
-  background-color: #1D5A3F;
+  background-color: #1d5a3f;
   &_wrapper {
     display: flex;
     padding: 120px 240px;
     align-items: center;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       padding: 120px 140px 60px 120px;
-
     }
-    @media(max-width:1440px){
+    @media (max-width: 1440px) {
       padding: 120px 110px;
+    }
+    @media (max-width: 1199px) {
+      padding: 120px 90px 30px;
+    }
+    @media (max-width: 991px) {
+      padding: 120px 20px 120px 30px;
+    }
+    @media (max-width: 767px) {
+      padding: 50px 20px 120px 30px;
+      flex-direction: column;
     }
     &_left {
       width: 70%;
+      @media (max-width: 991px) {
+        width: 65%;
+      }
+      @media (max-width: 767px) {
+        width: 90%;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
       .eventHomeItem {
         padding-right: 200px;
         margin: 0 0 64px;
-        @media (max-width:1600px){
+        @media (max-width: 1600px) {
           margin: 0 0 54px;
+        }
+        @media (max-width: 1199px) {
+          padding-right: 160px;
+        }
+        @media (max-width: 991px) {
+          padding-right: 80px;
+        }
+        @media (max-width: 767px) {
+          padding-right: 0px;
         }
         &:nth-child(even) {
           transform: translateX(180px);
+          @media (max-width: 1199px) {
+            transform: translateX(120px) !important;
+          }
+          @media (max-width: 991px) {
+            transform: translateX(60px) !important;
+          }
+          @media (max-width: 767px) {
+            transform: translateX(0) !important;
+          }
         }
         &_wrapper {
           display: flex;
           &_left {
             width: 200px;
 
-            @media (max-width:1600px){
+            @media (max-width: 1600px) {
               width: 165px;
+            }
+            @media (max-width: 1199px) {
+              width: 128px;
+            }
+            @media (max-width: 991px) {
+              width: 35%;
             }
             .eventItem_image {
               height: 100%;
@@ -39,6 +81,7 @@
                 border-top-left-radius: 15px;
                 border-bottom-left-radius: 15px;
                 width: 100%;
+                object-fit: cover;
               }
             }
           }
@@ -50,6 +93,12 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             position: relative;
+            @media (max-width: 1199px) {
+              width: 290px;
+            }
+            @media (max-width: 767px) {
+              width: 65%;
+            }
             .eventItem_content {
               h5 {
                 color: #000;
@@ -60,7 +109,7 @@
                 width: 152px;
               }
               .eventname {
-                color: #9C9C9C;
+                color: #9c9c9c;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -68,7 +117,7 @@
                 font-family: "Poppins";
               }
               .date {
-                color: #9C9C9C;
+                color: #9c9c9c;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -76,7 +125,7 @@
                 font-family: "Poppins";
               }
               .location {
-                color: #208DF2;
+                color: #208df2;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 400;
@@ -89,6 +138,15 @@
               position: absolute;
               top: -34px;
               right: 55px;
+              @media (max-width: 1199px) {
+                right: 26px;
+              }
+              @media (max-width: 767px) {
+                right: 45px;
+              }
+              @media (max-width: 575px) {
+                right: 22px;
+              }
               .month {
                 color: #fff;
                 font-family: "Poppins";
@@ -101,6 +159,12 @@
                 border-top-right-radius: 15px;
                 border-top-left-radius: 15px;
                 padding: 5px 10px;
+                @media (max-width: 1199px) {
+                  padding: 5px;
+                }
+                @media (max-width: 575px) {
+                  font-size: 14px;
+                }
               }
               .boxDate {
                 color: #000;
@@ -110,10 +174,16 @@
                 font-weight: 500;
                 line-height: 150%; /* 79.5px */
                 text-transform: uppercase;
-                background: #D9D9D9;
+                background: #d9d9d9;
                 border-bottom-right-radius: 15px;
                 border-bottom-left-radius: 15px;
                 padding: 0 5px;
+                @media (max-width: 1199px) {
+                  font-size: 45px;
+                }
+                @media (max-width: 575px) {
+                  font-size: 35px;
+                }
                 span {
                   color: #000;
                   font-family: "Poppins";
@@ -131,6 +201,12 @@
     }
     &_right {
       width: 30%;
+      @media (max-width: 991px) {
+        width: 35%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
       &_content {
         h2 {
           color: #fff;
@@ -140,6 +216,12 @@
           line-height: normal;
           letter-spacing: -0.59px;
           margin: 0 0 20px;
+          @media (max-width: 991px) {
+            font-size: 56px;
+          }
+          @media (max-width: 767px) {
+            display: none;
+          }
         }
         p {
           color: #fff;
@@ -149,6 +231,14 @@
           line-height: 130.092%;
           margin: 0 0 26px;
           width: 328px;
+          @media (max-width: 991px) {
+            font-size: 16px;
+            width: 300px;
+          }
+          @media (max-width: 767px) {
+            font-size: 16px;
+            width: 100%;
+          }
         }
         // a {
         //   background-color: #f90;
@@ -159,6 +249,19 @@
         //   text-align: center;
         //   padding: 10px 15px;
         // }
+      }
+    }
+    .mobile_heading {
+      display: none;
+      @media (max-width: 767px) {
+        display: block;
+        color: #fff;
+        font-size: 59px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.59px;
+        margin: 0 0 80px;
       }
     }
   }
