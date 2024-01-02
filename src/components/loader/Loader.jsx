@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import loader from "../../images/loader_logo.svg"
 import { useInView } from "react-intersection-observer";
-import  HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation"
+import LoaderTextAnimation from "../loader_text_animation/LoaderTextAnimation";
 export default function Loader() {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [percentage, setPercentage] = useState(0);
@@ -114,14 +114,14 @@ export default function Loader() {
             variants={letter}
             style={{ marginBottom: "12px" }}
           >
-            <HeadingTextAnimation
+            <LoaderTextAnimation
               heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
           </motion.span>
           <motion.span className={"mantra_wrapper_loader"} variants={letter}>
-            <HeadingTextAnimation
+            <LoaderTextAnimation
               heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
               fontSize={"26.934px"}
               justifyContent={"center"}

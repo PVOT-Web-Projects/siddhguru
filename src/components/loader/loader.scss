@@ -26,24 +26,23 @@
     }
   }
 }
-// .CircularProgressbar {
-//   .CircularProgressbar-path {
-//     stroke: white !important;
-//     stroke-linecap: round;
-//     -webkit-transition: stroke-dashoffset 0.5s ease 0s;
-//     transition: stroke-dashoffset 0.5s ease 0s;
-//   }
-//   .CircularProgressbar-text {
-//     fill: #fff !important;
-//     font-size: 20px;
-//     dominant-baseline: middle;
-//     text-anchor: middle;
-//   }
-// }
+.CircularProgressbar {
+  .CircularProgressbar-path {
+    stroke: white !important;
+    stroke-linecap: round;
+    -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+  .CircularProgressbar-text {
+    fill: #fff !important;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+}
 .counterContainer {
 	display: flex;
   position: relative;
-  width: 100%;
   .percentageCounter {
 	font-size: 5em;
 	position: absolute;
@@ -60,9 +59,8 @@
 
     .mantra_loader{
 	position: absolute;
-
-	left: -20%;
-	top: 50%;
+	left: -50rem;
+	bottom: -17rem;
     }
 }
 
