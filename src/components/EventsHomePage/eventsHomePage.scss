@@ -17,7 +17,7 @@
       padding: 120px 20px 120px 30px;
     }
     @media (max-width: 767px) {
-      padding: 50px 20px 120px 30px;
+      padding: 50px 20px 70px 30px;
       flex-direction: column;
     }
     &_left {
@@ -146,6 +146,7 @@
               }
               @media (max-width: 575px) {
                 right: 22px;
+                top: -31px;
               }
               .month {
                 color: #fff;
@@ -182,7 +183,7 @@
                   font-size: 45px;
                 }
                 @media (max-width: 575px) {
-                  font-size: 35px;
+                  font-size: 30px;
                 }
                 span {
                   color: #000;
@@ -192,6 +193,9 @@
                   font-weight: 300;
                   line-height: 150%; /* 28.5px */
                   text-transform: uppercase;
+                  @media (max-width: 575px) {
+                    font-size: 16px;
+                  }
                 }
               }
             }

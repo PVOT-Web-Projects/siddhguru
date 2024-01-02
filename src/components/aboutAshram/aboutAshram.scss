@@ -1,10 +1,11 @@
 .aboutAshram {
-  background-color: rgba(255, 234, 174, 0.16);
+  // background-color: rgba(255, 234, 174, 0.16);
   padding: 0 0 100px;
   &_wrapper {
     &_image {
       position: relative;
-      height: 400px;
+      height: 370px;
+      text-align: center;
       .shape_image {
         position: absolute;
         bottom: 0;

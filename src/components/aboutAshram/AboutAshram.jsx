@@ -9,7 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
-import gif from "../../images/FINAL_GIF.gif"
+import gif from "../../images/final_gif2.gif"
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
