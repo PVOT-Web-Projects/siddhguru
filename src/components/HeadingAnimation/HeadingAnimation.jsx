@@ -18,7 +18,7 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
         // type: "spring",
         damping: 12,
         stiffness: 50,
-        duration: "0.5",
+        duration: "0.8",
       },
     },
     hidden: {
@@ -27,7 +27,7 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
       transition: {
         damping: 12,
         stiffness: 50,
-        duration: "0.5",
+        duration: "0.8",
       },
     },
   };

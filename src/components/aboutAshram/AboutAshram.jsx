@@ -49,7 +49,7 @@ const AboutAshram = () => {
 
   return (
     <div className="aboutAshram">
-      <div className="aboutAshram_wrapper">
+      <motion.div className="aboutAshram_wrapper"   ref={ref}>
         <div className="aboutAshram_wrapper_image">
           <div className="shape_image">
             <img src={shape} alt="shapeImage" />
@@ -96,10 +96,10 @@ const AboutAshram = () => {
           </motion.span>
         </motion.div>
         <motion.div
-          ref={ref}
+        
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 1.5 }}
+          transition={{ duration: 0.5, delay: 1.8 }}
           className="aboutAshram_content"
         >
           <div className="top_border">
@@ -121,7 +121,7 @@ const AboutAshram = () => {
             <img src={border} alt="border" />
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

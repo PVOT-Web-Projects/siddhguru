@@ -33,17 +33,18 @@ const HomePage3D = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="homePage3D">
+    <div className="homePage3D" >
       <div className="eyesOuter">
         <div className="eyesImageOuter">
           <img className="eyesImage" src={eyes} alt="" />
         </div>
         <motion.div
+         ref={ref}
           className="eyesTextOuter"
           variants={sentence}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          ref={ref}
+         
         >
           {/* {text.split("").map((char, index) => ( */}
           <motion.span

@@ -3,9 +3,12 @@
   font-weight: 400;
   font-size: 59px;
   text-align: center;
-  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+
   @media(min-width:1600px){
     margin-top: 6rem;
+    margin-bottom: 2rem;
   }
   p {
     margin-bottom: 20px;
