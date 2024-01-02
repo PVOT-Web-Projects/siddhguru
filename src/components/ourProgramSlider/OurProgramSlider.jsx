@@ -2,11 +2,11 @@ import "./ourProgramSlider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import Carousel_layer from "../../images/sliderBg.png";
 import Carousel_layer1 from "../../images/sliderGuru.png";
 import Button from "../buttons/button4";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 function OurProgramSlider() {
@@ -37,7 +37,7 @@ function OurProgramSlider() {
       <div className="ourProgram_slider_sec">
         <Swiper
           pagination={{
-            el: ".swiper-pagination",
+            el: ".our_program_dots",
             dynamicBullets: true,
             clickable: true,
           }}
@@ -45,8 +45,12 @@ function OurProgramSlider() {
           centeredSlides={false}
           loop={true}
           spaceBetween={40}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
+          autoplay={{
+            delay: 5000,
+          }}
+          speed={1500}
         >
           <SwiperSlide>
             <div>
@@ -150,6 +154,7 @@ function OurProgramSlider() {
           <div className="swiper-pagination"></div>
         </Swiper>
       </div>
+      <div className="our_program_dots"></div>
     </div>
   );
 }
