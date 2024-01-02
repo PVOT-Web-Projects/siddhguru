@@ -1,5 +1,14 @@
 .textSection {
   padding: 168px 0 80px;
+  @media(max-width:1199px){
+    padding: 120px 0 60px;
+  }
+  @media(max-width:991px){
+    padding: 90px 0 50px;
+  }
+  @media(max-width:767px){
+    padding: 50px 0 50px;
+  }
   &_wrapper {
     width: 40%;
     text-align: center;
