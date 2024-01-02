@@ -49,7 +49,7 @@ const BramhSutra = () => {
         {/* <p className="just_space">Brahm-Sutra</p> */}
         <HeadingTextAnimation
           heading={"Brahm-Sutra"}
-          fontSize={"59px"}
+          fontSize={"55px"}
           justifyContent={"center"}
         />
       </motion.div>
@@ -57,7 +57,7 @@ const BramhSutra = () => {
         <div className="index_indicator">
           <p>
             <span>{`${imgIndex}`}</span>/{`${totalImages}`}
-          </p>{" "}
+          </p>
           {/* Display current image index */}
         </div>
         <div className="orange_container"></div>

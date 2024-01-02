@@ -34,7 +34,7 @@ const HomePage3D = () => {
   }, [controls, inView]);
   return (
     <div className="homePage3D">
-      <div className="eyesOuter" ref={ref}>
+      <div className="eyesOuter">
         <div className="eyesImageOuter">
           <img className="eyesImage" src={eyes} alt="" />
         </div>

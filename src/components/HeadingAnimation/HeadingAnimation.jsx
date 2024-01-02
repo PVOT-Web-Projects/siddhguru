@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
 const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
-  //   const words = text.split(" ");
-
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -24,11 +22,9 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
       },
     },
     hidden: {
-      //   opacity: 0,
       x: 0,
       y: 100,
       transition: {
-        // type: "spring",
         damping: 12,
         stiffness: 50,
         duration: "0.5",
@@ -45,14 +41,8 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
         justifyContent: justifyContent,
       }}
       variants={container}
-      //   initial={{rotate:-45}}
-      //   animate={{rotate:45}}
     >
-      {/* {words.map((word, index) => ( */}
-      <motion.span variants={child} style={{ marginRight: "5px" }}>
-        {text}
-      </motion.span>
-      {/* ))} */}
+      <motion.span variants={child}>{text}</motion.span>
     </motion.div>
   );
 };

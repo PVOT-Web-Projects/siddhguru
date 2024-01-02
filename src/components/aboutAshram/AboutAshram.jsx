@@ -11,8 +11,8 @@ import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const AboutAshram = () => {
-  const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
-  const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
+  // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
+  // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -30,15 +30,13 @@ const AboutAshram = () => {
       y: 0,
     },
   };
-  const textSection = {
-    hidden: { opacity: 0, y: 100 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition:"all 5s"
-    },
-    
-  };
+  // const textSection = {
+  //   hidden: { opacity: 0, y: 100 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //   },
+  // };
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -77,14 +75,11 @@ const AboutAshram = () => {
           variants={sentence}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-         
         >
-          {/* {text.split("").map((char, index) => ( */}
           <motion.span
             className={"mantra_wrapper"}
-            // key={char + "-" + index}
             variants={letter}
-            animate={{ rotate: 45 }}
+            style={{ marginBottom: "12px" }}
           >
             <HeadingTextAnimation
               heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
@@ -92,28 +87,20 @@ const AboutAshram = () => {
               justifyContent={"center"}
             />
           </motion.span>
-          {/* ))} */}
-          <br />
-          {/* {text2.split("").map((char, index) => ( */}
-          <motion.span
-            className={"mantra_wrapper"}
-            // key={char + "-" + index}
-            variants={letter}
-          >
+          <motion.span className={"mantra_wrapper"} variants={letter}>
             <HeadingTextAnimation
               heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
           </motion.span>
-          {/* ))} */}
         </motion.div>
         <motion.div
-          variants={textSection}
-          animate={inView ? "visible" : "hidden"}
-          className="aboutAshram_content"
           ref={ref}
-          transition={textSection}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 1.5 }}
+          className="aboutAshram_content"
         >
           <div className="top_border">
             <img src={border} alt="border" />
@@ -121,7 +108,13 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Ashram</h3>
             <p>
-            Enriched and adorned by the rigorous Sadhana, meditation, and austerities observed by Sri Siddhguru, The Brahmrishi Ashram has become a sacred sanctuary where the divine presence of gods is palpable. Here, you can feel a distinct positive aura that permeates the soil and surroundings. This is the place where hearts can let go of their worries & troubles, and experience 'the eternal bliss'.
+              Enriched and adorned by the rigorous Sadhana, meditation, and
+              austerities observed by Sri Siddhguru, The Brahmrishi Ashram has
+              become a sacred sanctuary where the divine presence of gods is
+              palpable. Here, you can feel a distinct positive aura that
+              permeates the soil and surroundings. This is the place where
+              hearts can let go of their worries & troubles, and experience 'the
+              eternal bliss'.
             </p>
           </div>
           <div className="bottom_border">
