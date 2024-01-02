@@ -9,6 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
+import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const AboutAshram = () => {
   const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -76,27 +77,36 @@ const AboutAshram = () => {
           variants={sentence}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          ref={ref}
+         
         >
-          {text.split("").map((char, index) => (
-            <motion.span
-              className={"mantra_wrapper"}
-              key={char + "-" + index}
-              variants={letter}
-            >
-              {char}
-            </motion.span>
-          ))}
+          {/* {text.split("").map((char, index) => ( */}
+          <motion.span
+            className={"mantra_wrapper"}
+            // key={char + "-" + index}
+            variants={letter}
+            animate={{ rotate: 45 }}
+          >
+            <HeadingTextAnimation
+              heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
+              fontSize={"26.934px"}
+              justifyContent={"center"}
+            />
+          </motion.span>
+          {/* ))} */}
           <br />
-          {text2.split("").map((char, index) => (
-            <motion.span
-              className={"mantra_wrapper"}
-              key={char + "-" + index}
-              variants={letter}
-            >
-              {char}
-            </motion.span>
-          ))}
+          {/* {text2.split("").map((char, index) => ( */}
+          <motion.span
+            className={"mantra_wrapper"}
+            // key={char + "-" + index}
+            variants={letter}
+          >
+            <HeadingTextAnimation
+              heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
+              fontSize={"26.934px"}
+              justifyContent={"center"}
+            />
+          </motion.span>
+          {/* ))} */}
         </motion.div>
         <motion.div
           variants={textSection}

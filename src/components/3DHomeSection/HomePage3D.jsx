@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import eyes from "../../images/3D.png";
+import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const HomePage3D = () => {
   const text = "जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है";
   const sentence = {
@@ -42,16 +43,21 @@ const HomePage3D = () => {
           variants={sentence}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
+          ref={ref}
         >
-          {text.split("").map((char, index) => (
-            <motion.span
-              className="eyesText"
-              key={char + "-" + index}
-              variants={letter}
-            >
-              {char}
-            </motion.span>
-          ))}
+          {/* {text.split("").map((char, index) => ( */}
+          <motion.span
+            className="eyesText"
+            // key={char + "-" + index}
+            variants={letter}
+          >
+            <HeadingTextAnimation
+              heading={"जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है"}
+              fontSize={"35px"}
+              justifyContent={"center"}
+            />
+          </motion.span>
+          {/* ))} */}
         </motion.div>
       </div>
     </div>
