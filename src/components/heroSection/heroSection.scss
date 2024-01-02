@@ -1,5 +1,5 @@
 .hero_section {
-  background-color: #FFF9E0;
+  background-color: #fff9e0;
   overflow: hidden;
   .hero_section_wrapper {
     position: relative;
@@ -11,6 +11,12 @@
       transform: translateX(-50%);
       @media (max-width: 1600px) {
         bottom: -335px;
+      }
+      @media (max-width: 991px) {
+        bottom: -207px;
+      }
+      @media (max-width: 575px) {
+        bottom: -122px;
       }
       // @media (max-width: 1500px) {
       //   bottom: -327px;
@@ -24,6 +30,12 @@
           animation: godAnimation 40s infinite linear;
           @media (max-width: 1600px) {
             width: 880px;
+          }
+          @media (max-width: 991px) {
+            width: 550px;
+          }
+          @media (max-width: 575px) {
+            width: 320px;
           }
           // @media (max-width: 1500px) {
           //   width: 980px;

@@ -23,12 +23,6 @@ const HeroSection = () => {
           >
             <img src={image1} alt="hero_image1" />
           </div>
-          {/* <div className="hero_section_second_image">
-          <img src={image2} alt="hero_image2" />
-        </div>
-        <div className="hero_section_third_image">
-          <img src={image3} alt="hero_image3" />
-        </div> */}
         </div>
       </div>
     </div>
