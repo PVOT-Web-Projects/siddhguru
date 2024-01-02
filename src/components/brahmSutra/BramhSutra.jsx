@@ -25,28 +25,27 @@ const BramhSutra = () => {
     { pic: pic1 },
     { pic: pic2 },
   ];
-  const totalImages = images.length; // Set the total number of images
+  const totalImages = images.length;
   const settings = {
     infinite: true,
     centerMode: true,
-    // centerPadding: "0px",
     slidesToShow: 5,
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    beforeChange: (current, next) => setImgIndex(next + 1), // Increase the index by 1
+    autoplay: true,
+    autoplaySpeed: 5000,
+    beforeChange: (current, next) => setImgIndex(next + 1),
   };
   return (
     <>
       <motion.div
         className="brahmasutra_section_title"
         ref={ref}
-        // variants={textVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         transition={{ duration: 0.9 }}
       >
-        {/* <p className="just_space">Brahm-Sutra</p> */}
         <HeadingTextAnimation
           heading={"Brahm-Sutra"}
           fontSize={"55px"}
@@ -58,7 +57,6 @@ const BramhSutra = () => {
           <p>
             <span>{`${imgIndex}`}</span>/{`${totalImages}`}
           </p>
-          {/* Display current image index */}
         </div>
         <div className="orange_container"></div>
         <div className="brahmasutra_section_wrapper">
