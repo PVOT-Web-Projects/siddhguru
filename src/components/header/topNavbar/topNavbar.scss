@@ -1,5 +1,6 @@
 .topNavbar {
   padding: 10px 0;
+  background-color: #6A1C1C;
   .topNavbar_container {
     max-width: 1600px;
     padding: 0 20px;
@@ -24,14 +25,14 @@
     li {
       padding: 0 14px;
       a {
-        color: #000;
+        color: #ffffff;
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
         text-decoration: none;
         position: relative;
         &:hover {
-          color: #6A1C1C;
+          color: #ffffff;
           &::before {
             transform: scaleX(1);
           }
@@ -44,7 +45,7 @@
           height: 1px;
           bottom: -5px;
           left: 0;
-          background-color: #6A1C1C;
+          background-color: #ffffff;
           transform: scaleX(0);
           transition: transform 0.3s ease;
         }
