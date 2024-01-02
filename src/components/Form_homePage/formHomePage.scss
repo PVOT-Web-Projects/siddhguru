@@ -15,9 +15,9 @@
       width: 90%;
     }
   }
-  .siddhguru_section_img {
-    @media (max-width: 555px) {
-      width: 100%;
+  .siddhguru_section {
+    img {
+      max-width: 100%;
     }
   }
   .siddhguru_mantra_text {
