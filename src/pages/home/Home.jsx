@@ -1,8 +1,9 @@
-import HomePage3D from "../../components/3DHomeSection/HomePage3D";
+// import HomePage3D from "../../components/3DHomeSection/HomePage3D";
 import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
 import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import AboutAshram from "../../components/aboutAshram/AboutAshram";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
+import CircleSpin from "../../components/3DHomeSection/CircleSpin";
 import BrahmSutra from "../../components/brahmSutra/BramhSutra";
 import Space from "../../components/counter_HomePage/CounterHomePage";
 import HeroSection from "../../components/heroSection/HeroSection";
@@ -17,7 +18,8 @@ const Home = () => {
       <TextSection />
       <HomePageSlider1 />
       <AboutAshram />
-      <HomePage3D />
+      <CircleSpin/>
+      {/* <HomePage3D /> */}
       <EventsHomePage />
       <BrahmSutra />
       <HomePageVideoSection />
