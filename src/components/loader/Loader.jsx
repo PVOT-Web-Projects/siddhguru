@@ -1,14 +1,10 @@
 import "./loader.scss";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import loader from "../../images/loader_logo.svg"
-import { CircularProgressbar } from "react-circular-progressbar";
-// import "react-circular-progressbar/dist/styles.css";
-
-// const words = ["PVOT"];
-
+import { useInView } from "react-intersection-observer";
+import  HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation"
 export default function Loader() {
-  const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [percentage, setPercentage] = useState(0);
 
@@ -31,21 +27,51 @@ export default function Loader() {
       transition: { duration: 1.3, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
     },
   };
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const controls = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+
+
+  const sentence = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0,
+        staggerChildren: 0.03,
+      },
+    },
+  };
+  const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
+
+
+
+
+
+
+
+
+
+
+
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
-
-    // useEffect(() => {
-    //   if (index === words.length - 1) return;
-    //   const timeoutId = setTimeout(
-    //     () => {
-    //       setIndex(index + 1);
-    //     },
-    //     index === 0 ? 1000 : 150
-    //   );
-    //   return () => clearTimeout(timeoutId);
-    // }, [index]);
 
   useEffect(() => {
     let intervalId;
@@ -60,58 +86,49 @@ export default function Loader() {
     return () => clearInterval(intervalId); // Clean up the interval on component unmount
   }, [percentage]);
 
-  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
-    dimension.height
-  } Q${dimension.width / 2} ${dimension.height + 300} 0 ${
-    dimension.height
-  } L0 0`;
-  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
-    dimension.height
-  } Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height} L0 0`;
 
-  const curve = {
-    initial: {
-      d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
-    },
-    exit: {
-      d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
-    },
-  };
 
   return (
-    <motion.div
-      variants={slideUp}
-      initial="initial"
-      exit="exit"
-      className={"introduction"}
-    >
+    <motion.div  variants={slideUp}  initial="initial"  exit="exit"  className={"introduction"} ref={ref} >
+
       <motion.div variants={opacity} initial="initial" animate="enter">
+
         <div style={{ width: 200, height: 200 }}>
          <img src={loader} alt="" />
         </div>
-      </motion.div>
-      {dimension.width > 0 && (
-        <div className={"counterContainer"}>
-          <motion.div
-            className={"percentageCounter"}
-            variants={opacity}
-            initial="initial"
-            animate="enter"
-          >
+        
+      </motion.div>  {dimension.width > 0 && (
+      <div className={"counterContainer"}>
+          <motion.div  className={"percentageCounter"} variants={opacity} initial="initial" animate="enter">
             {percentage}%
           </motion.div>
-          {/* <motion.p variants={opacity} initial="initial" animate="enter">
-            {words[index]}
-          </motion.p> */}
-          <svg>
-            <motion.path
-              variants={curve}
-              initial="initial"
-              exit="exit"
-            ></motion.path>
-          </svg>
+         
+          <motion.div
+          className={"mantra_loader"}
+          variants={sentence}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+        >
+          <motion.span
+            className={"mantra_wrapper_loader"}
+            variants={letter}
+            style={{ marginBottom: "12px" }}
+          >
+            <HeadingTextAnimation
+              heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
+              fontSize={"26.934px"}
+              justifyContent={"center"}
+            />
+          </motion.span>
+          <motion.span className={"mantra_wrapper_loader"} variants={letter}>
+            <HeadingTextAnimation
+              heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
+              fontSize={"26.934px"}
+              justifyContent={"center"}
+            />
+          </motion.span>
+        </motion.div>
+     
         </div>
       )}
     </motion.div>
