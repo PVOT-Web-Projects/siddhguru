@@ -101,7 +101,7 @@ const AboutAshram = () => {
         <motion.div
           variants={textSection}
           animate={inView ? "visible" : "hidden"}
-          className="aboutAshram_content demo"
+          className="aboutAshram_content"
           ref={ref}
           transition={textSection}
         >
