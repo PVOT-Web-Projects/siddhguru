@@ -31,94 +31,123 @@ const FeaturedBlog = () => {
           Blogs
         </motion.div>
         <div className="blogsCardsOuter">
-          <motion.div
-            className="blogsCard"
-            variants={cardVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="blogsCardImageOuter">
-              <img className="blogsCardImage" src={img1} alt="" />
-            </div>
-            <div className="blogsCardTextOuter">
-              <div className="blogsCardText">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+          <a href="" className="Blogscardmain">
+            <motion.div
+              className="blogsCard"
+              variants={cardVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="blogsCardImageOuter">
+                <img className="blogsCardImage" src={img1} alt="" />
               </div>
-              <div className="blogsCardText2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              <div className="blogsCardTextOuter">
+                <div className="blogsCardTitle">
+                  Reconnect with yourself through Siddhasana
+                </div>
+                {/* <div className="blogsCardText">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div>
+                <div className="blogsCardText2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div> */}
+                <div className="blogCardsBtn">
+                  <Button btn_text="Read More" />
+                </div>
               </div>
-              <Button btn_text="Read More"/>
-            </div>
-          </motion.div>
-          <motion.div
-            className="blogsCard"
-            variants={cardVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <div className="blogsCardImageOuter">
-              <img className="blogsCardImage" src={img2} alt="" />
-            </div>
-            <div className="blogsCardTextOuter">
-              <div className="blogsCardText">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+            </motion.div>
+          </a>
+          <a href="" className="Blogscardmain">
+            <motion.div
+              className="blogsCard"
+              variants={cardVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <div className="blogsCardImageOuter">
+                <img className="blogsCardImage" src={img2} alt="" />
               </div>
-              <div className="blogsCardText2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              <div className="blogsCardTextOuter">
+                <div className="blogsCardTitle">
+                  Pran Mudra is your ‘absolutely free’ immunity booster
+                </div>
+                {/* <div className="blogsCardText">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div>
+                <div className="blogsCardText2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div> */}
+                <div className="blogCardsBtn">
+                  <Button btn_text="Read More" />
+                </div>
               </div>
-              <Button btn_text="Read More"/>
-            </div>
-          </motion.div>
-          <motion.div
-            className="blogsCard"
-            variants={cardVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <div className="blogsCardImageOuter">
-              <img className="blogsCardImage" src={img3} alt="" />
-            </div>
-            <div className="blogsCardTextOuter">
-              <div className="blogsCardText">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+            </motion.div>
+          </a>
+          <a href="" className="Blogscardmain">
+            <motion.div
+              className="blogsCard"
+              variants={cardVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <div className="blogsCardImageOuter">
+                <img className="blogsCardImage" src={img3} alt="" />
               </div>
-              <div className="blogsCardText2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              <div className="blogsCardTextOuter">
+                <div className="blogsCardTitle">
+                  5 Benefits of walking meditation
+                </div>
+                {/* <div className="blogsCardText">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div>
+                <div className="blogsCardText2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div> */}
+                <div className="blogCardsBtn">
+                  <Button btn_text="Read More" />
+                </div>
               </div>
-              <Button btn_text="Read More"/>
-            </div>
-          </motion.div>
-          <motion.div
-            className="blogsCard"
-            variants={cardVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <div className="blogsCardImageOuter">
-              <img className="blogsCardImage" src={img4} alt="" />
-            </div>
-            <div className="blogsCardTextOuter">
-              <div className="blogsCardText">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+            </motion.div>
+          </a>
+          <a href="" className="Blogscardmain">
+            <motion.div
+              className="blogsCard"
+              variants={cardVariants}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              <div className="blogsCardImageOuter">
+                <img className="blogsCardImage" src={img4} alt="" />
               </div>
-              <div className="blogsCardText2">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              <div className="blogsCardTextOuter">
+                <div className="blogsCardTitle">
+                  How to activate the body’s Chakras?
+                </div>
+
+                {/* <div className="blogsCardText">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div>
+                <div className="blogsCardText2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </div> */}
+                <div className="blogCardsBtn">
+                  <Button btn_text="Read More" />
+                </div>
               </div>
-              <Button btn_text="Read More"/>
-            </div>
-          </motion.div>
+            </motion.div>
+          </a>
         </div>
       </div>
     </div>

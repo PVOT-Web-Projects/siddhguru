@@ -1,50 +1,111 @@
 .homePageVideoSection {
-    .babaBgOuter {
-      position: relative;
-    }
-    .babaBgImage {
-      height: 100%;
-      width: 100%;
-      display: block;
-    }
-    .playButton {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .babaBgText {
-      position: absolute;
-      top: 38%;
-      width: 41%;
-      left: 25%;
-      transform: translate(-50%, -50%);
-    }
-    .babaText1 {
-      color: #fff;
-      font-family: Inria Serif;
-      font-size:37px;
-      font-style: normal;
-      font-weight: 700;
-      margin-bottom: 6px;
-      line-height: normal;
-      text-transform: uppercase;
-    }
-    .babaName {
-      color: #f90;
-      font-family: Inria Serif;
-      font-size: 57.92px;
-      border-top: 1px solid #f90;
-      border-bottom: 1px solid #f90;
-      font-style: normal;
-  max-width: fit-content;
-      font-weight: 700;
-      padding: 7px 0px;
-      line-height: normal;
-      text-transform: uppercase;
-    }
-    .babaBgButton {
-      margin-top: 1rem;
+  .babaBgOuter {
+    position: relative;
+  }
+  .babaBgImage {
+    height: 100%;
+    width: 100%;
+    display: block;
+    @media (max-width:1025px) {
+      height: 100vh;
+      object-fit: cover;
     }
   }
-  
+  .playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width:426px) {
+      height: 6rem;
+      
+    }
+  }
+  .babaBgText {
+    position: absolute;
+    top: 38%;
+    width: 41%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    // @media (max-width:1025px) {
+    //   width: 50%;
+    //   left: 30%;
+    // }
+    @media (max-width:768px) {
+      width: 60%;
+      top: 20%;
+      left: 35%;
+    }
+    @media (max-width:426px) {
+      width:90%;
+      top: 20%;
+      left:50%;
+       text-align: center;
+    }
+  }
+  .babaText1 {
+    color: #fff;
+    font-family: Inria Serif;
+    font-size:37px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: normal;
+    text-transform: uppercase;
+    @media (max-width:1025px) {
+      font-size:30px;
+    }
+    @media (max-width:768px) {
+      font-size:25px;
+    }
+    @media (max-width:426px) {
+      font-size:20px;
+    }
+    @media (max-width:335px) {
+      font-size:18px;
+    }
+  }
+  .babaName {
+    color: #f90;
+    font-family: Inria Serif;
+    font-size: 57.92px;
+    border-top: 1px solid #f90;
+    border-bottom: 1px solid #f90;
+    font-style: normal;
+    width:fit-content;
+    font-weight: 700;
+    padding: 7px 0px;
+    line-height: normal;
+    text-transform: uppercase;
+   
+    
+    @media (max-width:1025px) {
+      font-size:40px;
+    }
+    @media (max-width:768px) {
+      font-size:30px;
+    } 
+   @media (max-width:426px) {
+      font-size:25px;
+      margin:0 auto;
+    }
+    @media (max-width:335px) {
+      font-size:20px;
+    }
+
+  }
+  .babaBgButton {
+    margin-top: 1rem;
+    width: 50%;
+    @media (max-width:340px) {
+      width: 55%;
+      text-align: center;
+      align-items: center;
+      
+    }
+    @media (max-width:426px) {
+      margin: 1rem auto;
+    }
+
+  }
+}

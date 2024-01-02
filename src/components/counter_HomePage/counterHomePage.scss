@@ -12,7 +12,8 @@ $background-color_3: #f90;
   }
   .centerOuter {
     display: flex;
-    width: 50%;
+    // width: 50%;
+    justify-content: center;
     margin: 0 auto;
     padding-top: 6rem;
     padding-bottom: 20rem;
@@ -30,6 +31,26 @@ $background-color_3: #f90;
     line-height: normal;
     background-color: $background-color_2;
     letter-spacing: -1.118px;
+    @media (max-width:768px) {
+      padding: 1rem 1rem;
+      width: 130px;
+      font-size: 90px
+    }
+    @media (max-width:575px) {
+      padding: 1rem 2rem;
+      width: 90px;
+      font-size: 60px
+    }
+    @media (max-width:426px) {
+      padding: 1rem 2rem;
+      width: 60px;
+      font-size: 40px
+    }
+    @media (max-width:375px) {
+      padding: 1rem 2rem;
+      width: 40px;
+      font-size: 30px
+    }
   }
   .CenterText {
     color: $color_1;
@@ -42,6 +63,22 @@ $background-color_3: #f90;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -1.118px;
+    @media (max-width:768px) {
+      padding: 1rem 2rem;
+      font-size: 90px
+    }
+    @media (max-width:575px) {
+      padding: 1rem 2rem;
+      font-size:60px
+    }
+    @media (max-width:426px) {
+      padding: 1rem 2rem;
+      font-size:40px
+    }
+    @media (max-width:375px) {
+      padding: 1rem 2rem;
+      font-size:30px
+    }
   }
   .centerBlogText {
     transform: translate(-50%, -50%);

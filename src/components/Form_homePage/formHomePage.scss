@@ -8,6 +8,17 @@
     margin: 0 auto;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
+    @media (max-width: 426px) {
+      width: 90%;
+    }
+  }
+  .siddhguru_section_img {
+    @media (max-width: 555px) {
+      width: 100%;
+    }
   }
   .siddhguru_mantra_text {
     color: #123828;
@@ -17,6 +28,12 @@
     font-weight: 400;
     line-height: normal;
     padding-top: 1.5rem;
+    @media (max-width: 426px) {
+      font-size: 25px;
+    }
+    @media (max-width: 384px) {
+      font-size: 20px;
+    }
   }
   .siddhguru_message_section {
     color: #000;
@@ -30,16 +47,21 @@
     background: #d9d9d9;
     outline: none;
     border: none;
-    font-family: Inria Serif;
     padding: 1rem 3rem 1rem 1rem;
+    @media (max-width: 496px) {
+      width: 60%;
+    }
   }
+
   .sidhhguru_form_content {
     padding-top: 2rem;
     display: flex;
-   
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    @media (max-width: 496px) {
+      flex-direction: column;
+    }
   }
   .submit_btn_outer {
     padding-top: 2rem;
@@ -50,14 +72,19 @@
     background: #ff9900;
     outline: none;
     border: none;
+    width: 20px;
   }
   .siddhguru_dropdown_menu {
     background-color: #d9d9d9;
-    width: 220px;
-
+    width: 14.5rem;
     padding-bottom: 13px;
-    color: #757575;
     padding-top: 13px;
+    @media (max-width: 496px) {
+      width: 75%;
+    }
+    @media (max-width: 397px) {
+      width: 79%;
+    }
   }
 
   .p-dropdown-label {
@@ -71,5 +98,5 @@
   background-color: #d9d9d9;
 }
 .p-dropdown-trigger {
-  padding-right: 13px;
+  padding-right: 8px;
 }
