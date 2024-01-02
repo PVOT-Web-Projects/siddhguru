@@ -98,6 +98,16 @@ const HomePageSlider1 = () => {
     focusOnSelect: true,
     centerPadding: "0px",
     speed: 1000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
   };
   return (
     <div className="homePageSlider">
