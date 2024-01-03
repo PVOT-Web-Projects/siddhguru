@@ -13,6 +13,7 @@ const HeroSection = () => {
     <div className="hero_section">
       <Header />
       <div className="hero_section_wrapper" ref={ref}>
+        <h2>Lorem ipsum dolor</h2>
         <div className="hero_section_wrapper_inner">
           <div
             className="hero_section_first_image"

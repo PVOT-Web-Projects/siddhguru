@@ -4,7 +4,13 @@
   .hero_section_wrapper {
     position: relative;
     height: calc(100vh - 255px);
-    @media(max-width:575px){
+    h2 {
+      text-align: center;
+      padding: 60px 0 0;
+      font-size: 46px;
+      color: #6a1c1c;
+    }
+    @media (max-width: 575px) {
       height: calc(100vh - 200px);
     }
     .hero_section_wrapper_inner {

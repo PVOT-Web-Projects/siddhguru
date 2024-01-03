@@ -1,6 +1,9 @@
 .homePageSlider {
   overflow: hidden;
   padding: 0 0 150px;
+  @media(max-width:767px){
+    padding: 0 0 80px;
+  }
   &_wrapper {
     padding: 0 0 20px;
     max-width: 1040px;

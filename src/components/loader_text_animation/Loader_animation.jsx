@@ -5,7 +5,7 @@ const Loader_animation = ({ text, fontSize, justifyContent }) => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 1 * i },
+      transition: { staggerChildren: 0.12, delayChildren: 0.1 * i },
     }),
   };
 

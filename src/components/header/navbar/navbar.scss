@@ -1,9 +1,18 @@
 .navbar {
+  @media(max-width:991px){
+    display: none;
+  }
   ul {
     display: flex;
     margin: 0 -30px;
+    @media(max-width:1300px){
+      margin: 0 -20px;
+    }
     li {
       padding: 0 30px;
+      @media(max-width:1300px){
+        padding: 0 20px;
+      }
       a {
         color: #000;
         text-decoration: none;

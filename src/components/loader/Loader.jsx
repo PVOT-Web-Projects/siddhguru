@@ -1,7 +1,7 @@
 import "./loader.scss";
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import loader from "../../images/loader_logo.svg"
+import loader from "../../images/loader_logo.svg";
 import { useInView } from "react-intersection-observer";
 import LoaderTextAnimation from "../loader_text_animation/LoaderTextAnimation";
 export default function Loader() {
@@ -37,8 +37,6 @@ export default function Loader() {
     }
   }, [controls, inView]);
 
-
-
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -57,18 +55,6 @@ export default function Loader() {
     },
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
@@ -86,49 +72,64 @@ export default function Loader() {
     return () => clearInterval(intervalId); // Clean up the interval on component unmount
   }, [percentage]);
 
-
-
   return (
-    <motion.div  variants={slideUp}  initial="initial"  exit="exit"  className={"introduction"} ref={ref} >
-
+    <motion.div
+      variants={slideUp}
+      initial="initial"
+      exit="exit"
+      className={"introduction"}
+      ref={ref}
+    >
       <motion.div variants={opacity} initial="initial" animate="enter">
-
-        <div style={{ width: 200, height: 200 }}>
-         <img src={loader} alt="" />
+        <div>
+          <img src={loader} alt="" />
         </div>
-        
-      </motion.div>  {dimension.width > 0 && (
-      <div className={"counterContainer"}>
-          <motion.div  className={"percentageCounter"} variants={opacity} initial="initial" animate="enter">
-            {percentage}%
-          </motion.div>
-         
-          <motion.div
-          className={"mantra_loader"}
-          variants={sentence}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-        >
-          <motion.span
-            className={"mantra_wrapper_loader"}
-            variants={letter}
-            style={{ marginBottom: "12px" }}
-          >
-            <LoaderTextAnimation
-              heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
-              fontSize={"26.934px"}
-              justifyContent={"center"}
-            />
-          </motion.span>
-          <motion.span className={"mantra_wrapper_loader"} variants={letter}>
-            <LoaderTextAnimation
-              heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
-              fontSize={"26.934px"}
-              justifyContent={"center"}
-            />
-          </motion.span>
-        </motion.div>
-     
+      </motion.div>{" "}
+      {dimension.width > 0 && (
+        <div className="counterContainer_wrapper">
+          <div className={"counterContainer"}>
+            <motion.div
+              className={"percentageCounter"}
+              variants={opacity}
+              initial="initial"
+              animate="enter"
+            >
+              {percentage}%
+            </motion.div>
+
+            <motion.div
+              className={"mantra_loader"}
+              variants={sentence}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
+              <motion.span
+                className={"mantra_wrapper_loader"}
+                variants={letter}
+                style={{ marginBottom: "12px" }}
+              >
+                <LoaderTextAnimation
+                  heading={
+                    "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "
+                  }
+                  fontSize={"26.934px"}
+                  justifyContent={"center"}
+                />
+              </motion.span>
+              <motion.span
+                className={"mantra_wrapper_loader"}
+                variants={letter}
+              >
+                <LoaderTextAnimation
+                  heading={
+                    "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "
+                  }
+                  fontSize={"26.934px"}
+                  justifyContent={"center"}
+                />
+              </motion.span>
+            </motion.div>
+          </div>
         </div>
       )}
     </motion.div>
