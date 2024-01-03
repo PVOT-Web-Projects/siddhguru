@@ -47,10 +47,20 @@ function OurProgramSlider() {
           spaceBetween={40}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
-          // autoplay={{
-          //   delay: 5000,
-          // }}
+          autoplay={{
+            delay: 5000,
+          }}
           speed={1500}
+          breakpoints={{
+            575: {
+              slidesPerView: 1.1,
+              spaceBetween: 40,
+            },
+            10: {
+              slidesPerView: 1.1,
+              spaceBetween: 20,
+            },
+          }}
         >
           <SwiperSlide>
             <div>

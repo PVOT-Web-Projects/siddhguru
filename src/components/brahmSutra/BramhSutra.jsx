@@ -33,7 +33,7 @@ const BramhSutra = () => {
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     beforeChange: (current, next) => setImgIndex(next + 1),
   };
