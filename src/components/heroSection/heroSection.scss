@@ -9,6 +9,8 @@
       padding: 60px 0 0;
       font-size: 46px;
       color: #6a1c1c;
+      z-index: 9;
+      position: relative;
     }
     @media (max-width: 575px) {
       height: calc(100vh - 200px);
