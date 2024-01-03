@@ -1,4 +1,5 @@
 .homePage3D {
+  overflow: hidden;
   .eyesOuter {
     background: #ffe1d1;
     // padding-top: 4rem;
@@ -18,14 +19,29 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 40px 0;
-    span {
-      margin: 40px 0;
-      padding: 0 20px;
+    padding: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 575px) {
+      font-size: 24px;
+    }
+    p {
+      padding: 0 5px;
+      span {
+        opacity: 0;
+      }
       @media (max-width: 575px) {
-        font-size: 24px !important;
+        padding: 0 3px;
       }
     }
+    // span {
+    //   margin: 40px 0;
+    //   padding: 0 20px;
+    //   @media (max-width: 575px) {
+    //     font-size: 24px !important;
+    //   }
+    // }
   }
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import "./homePage3d.scss";
+import "./homePage3D.scss";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import HomePage3D from "./HomePage3D";
 gsap.registerPlugin(ScrollTrigger);
@@ -14,6 +14,7 @@ const AirpodsAnimation = () => {
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
+  let refs = useRef([]);
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -44,13 +45,12 @@ const AirpodsAnimation = () => {
           pin: true,
           scrub: 0.1,
           // scrub: true,
-          end: "+=400%",
+          end: "+=500%",
         },
       })
       .to(airpodsRef.current, {
         frame: frameCount - 1,
         snap: "frame",
-
         ease: "none",
         duration: 1,
       });
@@ -68,20 +68,65 @@ const AirpodsAnimation = () => {
         canvas.height
       );
     }
-
+    createAnimation();
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
+  const createAnimation = () => {
+    gsap.to(refs.current, {
+      scrollTrigger: {
+        trigger: ".hf",
+        scrub: true,
+        start: `top`,
+        end: "+=400%",
+      },
+      opacity: 1,
+      color: "#123828",
+      ease: "none",
+      stagger: 20,
+    });
+  };
+
+  const splitWords = (phrase) => {
+    let body = [];
+    phrase.split(" ").forEach((word, i) => {
+      const letters = splitLetters(word);
+      body.push(<p key={word + "_" + i}>{letters}</p>);
+    });
+    return body;
+  };
+
+  const splitLetters = (word) => {
+    let letters = [];
+    word.split("").forEach((letter, i) => {
+      letters.push(
+        <span
+          key={letter + "_" + i}
+          ref={(el) => {
+            refs.current.push(el);
+          }}
+        >
+          {letter}
+        </span>
+      );
+    });
+    return letters;
+  };
+
   return (
-    <div className="test">
+    <div className="homePage3D">
       <div className="hf">
         <section ref={sectionRef}>
           <canvas ref={canvasRef}></canvas>
           <div>
-            <HomePage3D />
+            <div className="eyesText">
+              {splitWords(
+                "जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है"
+              )}
+            </div>
           </div>
         </section>
       </div>
