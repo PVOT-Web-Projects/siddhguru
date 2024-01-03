@@ -14,12 +14,12 @@
   }
   .eyesText {
     color: #123828;
-    font-family: "Lohit-Devanagari";
+    font-family: "Lohit-Devanagari" !important;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 40px 10px;
+    padding: 0 10px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,8 +28,10 @@
     }
     p {
       padding: 0 5px;
+      font-family: "Lohit-Devanagari" !important;
       span {
         opacity: 0;
+        font-family: "Lohit-Devanagari" !important;
       }
       @media (max-width: 575px) {
         padding: 0 3px;
