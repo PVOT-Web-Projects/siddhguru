@@ -24,7 +24,7 @@ const AirpodsAnimation = () => {
     canvas.width = 750;
     canvas.height = window.innerHeight;
 
-    const frameCount = 150;
+    const frameCount = 140;
     const currentFrame = (index) =>
       ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
         .toString()
@@ -76,13 +76,13 @@ const AirpodsAnimation = () => {
   }, []);
 
   return (
-    <div className="test" >
+    <div className="test">
       <div className="hf">
         <section ref={sectionRef}>
           <canvas ref={canvasRef}></canvas>
+          <HomePage3D />
         </section>
       </div>
-      <HomePage3D />
     </div>
   );
 };
