@@ -24,7 +24,7 @@ const AirpodsAnimation = () => {
     canvas.width = 750;
     canvas.height = window.innerHeight;
 
-    const frameCount = 140;
+    const frameCount = 150;
     const currentFrame = (index) =>
       ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
         .toString()
