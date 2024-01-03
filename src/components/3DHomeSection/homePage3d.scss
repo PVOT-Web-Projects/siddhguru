@@ -37,13 +37,6 @@
         padding: 0 3px;
       }
     }
-    // span {
-    //   margin: 40px 0;
-    //   padding: 0 20px;
-    //   @media (max-width: 575px) {
-    //     font-size: 24px !important;
-    //   }
-    // }
   }
 }
 
@@ -59,8 +52,14 @@ canvas {
   display: block;
   width: 685px;
   height: 685px;
+  @media (max-width: 1600px) {
+    width: 600px;
+    height: 600px;
+  }
   @media (max-width: 991px) {
     padding-top: 60px;
+    width: 570px;
+    height: 570px;
   }
   @media (max-width: 787px) {
     width: 500px;
@@ -69,6 +68,7 @@ canvas {
   }
   @media (max-width: 575px) {
     width: 400px;
-    height: 400px;
+    height: 350px;
+    max-width: 100%;
   }
 }
