@@ -44,7 +44,7 @@ const AirpodsAnimation = () => {
           pin: true,
           scrub: 0.1,
           // scrub: true,
-          end: "+=900%",
+          end: "+=400%",
         },
       })
       .to(airpodsRef.current, {
@@ -80,7 +80,9 @@ const AirpodsAnimation = () => {
       <div className="hf">
         <section ref={sectionRef}>
           <canvas ref={canvasRef}></canvas>
-          <HomePage3D />
+          <div>
+            <HomePage3D />
+          </div>
         </section>
       </div>
     </div>

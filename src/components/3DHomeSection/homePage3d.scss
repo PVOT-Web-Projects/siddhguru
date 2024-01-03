@@ -9,7 +9,7 @@
   }
   .eyesTextOuter {
     text-align: center;
-    margin-top: 3rem;
+    // margin-top: 3rem;
   }
   .eyesText {
     color: #123828;
@@ -18,6 +18,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 40px 0;
+    span {
+      margin: 40px 0;
+      @media (max-width: 575px) {
+        font-size: 20px !important;
+      }
+    }
   }
 }
 
@@ -37,7 +44,11 @@ canvas {
     padding-top: 60px;
   }
   @media (max-width: 787px) {
-    width: 100%;
-    padding-top: 120px;
+    width: 500px;
+    height: 500px;
+  }
+  @media (max-width: 575px) {
+    width: 300px;
+    height: 300px;
   }
 }
