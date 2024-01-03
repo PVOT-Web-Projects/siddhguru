@@ -35,9 +35,9 @@ const HomePage3D = () => {
   return (
     <div className="homePage3D" >
       <div className="eyesOuter">
-        <div className="eyesImageOuter">
+        {/* <div className="eyesImageOuter">
           <img className="eyesImage" src={eyes} alt="" />
-        </div>
+        </div> */}
         <motion.div
          ref={ref}
           className="eyesTextOuter"

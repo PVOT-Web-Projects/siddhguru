@@ -45,6 +45,9 @@
   position: absolute;
   bottom: 97px;
   width: 91%;
+  @media (max-width: 767px) {
+    bottom: 60px;
+  }
   .counterContainer {
     display: flex;
     align-items: center;
@@ -55,20 +58,12 @@
     }
     .percentageCounter {
       font-size: 5em;
-      // position: absolute;
-      // left: 25rem;
-      // bottom: -17rem;
       color: #000000;
-      // @media (min-width: 1600px) {
-      //   left: 37rem;
-      //   bottom: -23rem;
-      // }
+      @media (max-width: 767px) {
+        font-size: 4rem;
+      }
     }
-
     .mantra_loader {
-      // position: absolute;
-      // left: -50rem;
-      // bottom: -17rem;
       @media (max-width: 575px) {
         margin: 0 0 20px;
       }

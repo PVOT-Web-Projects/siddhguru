@@ -1,8 +1,8 @@
-
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./homePage3d.scss";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import HomePage3D from "./HomePage3D";
 gsap.registerPlugin(ScrollTrigger);
 
 // https://iraoverseas.com/wp-content/uploads/2024/01/0000001.png
@@ -21,7 +21,7 @@ const AirpodsAnimation = () => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
     // Set a fixed size for the canvas (adjust as needed)
-    canvas.width = 750
+    canvas.width = 750;
     canvas.height = window.innerHeight;
 
     const frameCount = 150;
@@ -50,17 +50,23 @@ const AirpodsAnimation = () => {
       .to(airpodsRef.current, {
         frame: frameCount - 1,
         snap: "frame",
-        
+
         ease: "none",
         duration: 1,
-      })
+      });
 
     imagesRef.current[0].onload = render;
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
       // Draw the image without scaling
-      context.drawImage(imagesRef.current[airpodsRef.current.frame], 0, 0, canvas.width, canvas.height);
+      context.drawImage(
+        imagesRef.current[airpodsRef.current.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
     }
 
     // Cleanup
@@ -70,14 +76,13 @@ const AirpodsAnimation = () => {
   }, []);
 
   return (
-    <div className="test">
-    <div className="hf" >
-<section  ref={sectionRef}>
-      <canvas ref={canvasRef}></canvas>
-    </section>
-    </div>
-
-
+    <div className="test" >
+      <div className="hf">
+        <section ref={sectionRef}>
+          <canvas ref={canvasRef}></canvas>
+        </section>
+      </div>
+      <HomePage3D />
     </div>
   );
 };
