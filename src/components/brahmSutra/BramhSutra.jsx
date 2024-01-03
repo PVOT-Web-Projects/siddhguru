@@ -11,7 +11,7 @@ import "./bramhSutra.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
-const BramhSutra = () => {
+const BrahmSutra = () => {
   const [imgIndex, setImgIndex] = useState(1);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -29,44 +29,52 @@ const BramhSutra = () => {
   const settings = {
     infinite: true,
     centerMode: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
+    centerPadding: "300px",
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
-    beforeChange: (current, next) => setImgIndex(next + 1),
+    beforeChange: (current, next) => setImgIndex(next),
     responsive: [
-
-      // {
-      //   breakpoint: 1025,
-      //   settings: {
-      //     slidesToShow: 3,
-      //     slidesToScroll: 1,
-      //     centerPadding: "60px",
-      //     centerMode: true,
-      //   },
-      // },
-
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          centerPadding: "0px",
+          centerMode: true,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          centerPadding: "60px",
+          centerPadding: "0px",
           centerMode: true,
         },
       },
       {
-        breakpoint: 426,
+        breakpoint: 476,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerPadding: "85px",
+          centerPadding: "0px",
           centerMode: true,
         },
       },
-    ]
+      {
+        breakpoint: 376,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "0px",
+          centerMode: true,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -83,22 +91,23 @@ const BramhSutra = () => {
           justifyContent={"center"}
         />
       </motion.div>
-      <div className="brahmasutra_section">
+      <div className="test_slider">
         <div className="index_indicator">
           <p>
             <span>{`${imgIndex}`}</span>/{`${totalImages}`}
           </p>
         </div>
+        {/* <div className="container"> */}
         <div className="orange_container"></div>
-        <div className="brahmasutra_section_wrapper">
+        <div className="test_slider_wrapper">
           <Slider {...settings}>
             {images.map((item, idx) => (
               <div
                 key={idx}
-                className={idx === imgIndex - 1 ? "slide activeSlide" : "slide"}
+                className={idx === imgIndex ? "slide activeSlide" : "slide"}
               >
-                <div className="brahmasutra_section_images">
-                  <img src={item.pic} alt={`Image ${idx}`} />
+                <div className="card_content">
+                  <img src={item.pic} alt={item.heading} />
                 </div>
               </div>
             ))}
@@ -108,4 +117,4 @@ const BramhSutra = () => {
     </>
   );
 };
-export default BramhSutra;
+export default BrahmSutra;

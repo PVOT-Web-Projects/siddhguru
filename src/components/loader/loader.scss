@@ -48,6 +48,9 @@
   @media (max-width: 767px) {
     bottom: 60px;
   }
+  @media (max-width: 575px) {
+    bottom: 80px;
+  }
   .counterContainer {
     display: flex;
     align-items: center;
