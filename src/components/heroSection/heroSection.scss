@@ -3,7 +3,7 @@
   overflow: hidden;
   .hero_section_wrapper {
     position: relative;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 210px);
     h2 {
       text-align: center;
       padding: 60px 0 0;
@@ -11,6 +11,15 @@
       color: #6a1c1c;
       z-index: 9;
       position: relative;
+    }
+    .hero_section_title{
+      span{
+        text-align: center;
+        color: #6a1c1c;
+        @media(max-width:767px){
+          font-size: 45px !important;
+        }
+      }
     }
     @media (max-width: 575px) {
       height: calc(100vh - 200px);
