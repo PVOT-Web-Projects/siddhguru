@@ -1,9 +1,11 @@
 .hero_section {
   background-color: #fff9e0;
   overflow: hidden;
+  
   .hero_section_wrapper {
     position: relative;
-    height: calc(100vh - 260px);
+    height: calc(100vh - 310px);
+    padding: 30px 0;
     h2 {
       text-align: center;
       padding: 60px 0 0;
@@ -16,6 +18,9 @@
       display: none;
       @media (max-width: 767px) {
         display: block;
+        position: relative;
+        z-index: 9;
+        padding: 0 30px;
       }
 
       span {
@@ -24,10 +29,13 @@
         @media (max-width: 767px) {
           font-size: 45px !important;
         }
+        @media (max-width: 575px) {
+          font-size: 35px !important;
+        }
       }
     }
     @media (max-width: 575px) {
-      height: calc(100vh - 235px);
+      height: calc(100vh - 300px);
     }
     .hero_section_wrapper_inner {
       position: absolute;

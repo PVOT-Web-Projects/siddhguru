@@ -12,11 +12,11 @@ const FeaturedBlog = () => {
   });
   const cardVariants = {
     hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: -110 },
   };
   const textVariants = {
     hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: -160 },
   };
   return (
     <div ref={ref} className="fratured_blog">

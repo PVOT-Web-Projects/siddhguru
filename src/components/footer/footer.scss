@@ -1,10 +1,10 @@
 .footer_main {
   background-color: #6a1c1c;
   padding: 1rem;
-  @media (max-width:425px) {
-    padding: 16px 4px;
+  // @media (max-width:425px) {
+  //   padding: 16px 4px;
     
-  }
+  // }
 
   .footer_img_container {
     text-align: center;
@@ -25,23 +25,24 @@
       width: 45rem;
     }
     @media (max-width:768px) {
-      width: 35rem;
+      width: 100%;
+      font-size: 14px;
     }
-    @media (max-width:578px) {
-      width:25rem;
-      font-size: 15px;
-      line-height: 25px;
-    }
+    // @media (max-width:578px) {
+    //   width:25rem;
+    //   font-size: 15px;
+    //   line-height: 25px;
+    // }
  
-      @media (max-width:426px) {
-        width:22rem;
-        font-size: 13px;
-        line-height: 25px;
-      }
-      @media (max-width:365px) {
-        width:19rem;
+    //   @media (max-width:426px) {
+    //     width:22rem;
+    //     font-size: 13px;
+    //     line-height: 25px;
+    //   }
+    //   @media (max-width:365px) {
+    //     width:19rem;
        
-      }
+    //   }
     a {
       color: #fff;
       text-decoration: none;

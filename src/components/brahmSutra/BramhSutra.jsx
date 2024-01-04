@@ -77,7 +77,7 @@ const BrahmSutra = () => {
     ],
   };
   return (
-    <>
+    <div className="brahmsutra">
       <motion.div
         className="brahmasutra_section_title"
         ref={ref}
@@ -114,7 +114,7 @@ const BrahmSutra = () => {
           </Slider>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default BrahmSutra;

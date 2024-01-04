@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import LocomotoveScroll from "locomotive-scroll";
+// import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./components/loader/Loader";
@@ -16,11 +16,11 @@ function App() {
     window.scrollTo(0, 0);
   }, 2200);
 
-  useEffect(() => {
-    const scroll = new LocomotoveScroll({
-      smooth: true,
-    });
-  });
+  // useEffect(() => {
+  //   const scroll = new LocomotoveScroll({
+  //     smooth: true,
+  //   });
+  // });
 
   return (
     <>
