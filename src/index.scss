@@ -5,7 +5,7 @@
 *,
 ::after,
 ::before {
-  box-sizing: unset !important;
+  box-sizing: border-box !important;
 }
 @font-face {
   font-family: "Lohit-Devanagari";

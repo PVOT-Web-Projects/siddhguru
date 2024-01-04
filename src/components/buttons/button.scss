@@ -14,7 +14,7 @@
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      width: 120px;
+      width: auto;
       &:hover::after {
         transform-origin: bottom center;
         transform: skewY(9.3deg) scaleY(2);
@@ -43,6 +43,7 @@
           transform: translateY(225%) translateX(-50%);
           height: 14px;
           line-height: 13px;
+          width: 100%;
         }
       }
       &::after {
@@ -80,7 +81,7 @@
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      width: 120px;
+      width: auto;
       &:hover::after {
         transform-origin: bottom center;
         transform: skewY(9.3deg) scaleY(2);
@@ -109,6 +110,7 @@
           transform: translateY(225%) translateX(-50%);
           height: 14px;
           line-height: 13px;
+          width: 100%;
         }
       }
       &::after {
@@ -150,7 +152,7 @@
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      width: 120px;
+      width: auto;
       &:hover::after {
         transform-origin: bottom center;
         transform: skewY(9.3deg) scaleY(2);
@@ -179,6 +181,7 @@
           transform: translateY(225%) translateX(-50%);
           height: 14px;
           line-height: 13px;
+          width: 100%;
         }
       }
       &::after {
@@ -219,7 +222,7 @@
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      width: 160px;
+      width: auto;
   
       &:hover::after {
         transform-origin: bottom center;
@@ -249,6 +252,7 @@
           transform: translateY(225%) translateX(-50%);
           height: 14px;
           line-height: 13px;
+          width: 100%;
         }
       }
       &::after {
