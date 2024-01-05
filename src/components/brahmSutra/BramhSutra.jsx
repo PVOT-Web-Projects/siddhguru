@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import pic1 from "../../images/brahmSutraImage1.png";
-import pic2 from "../../images/t1.png";
-import pic3 from "../../images/t2.png";
-import pic4 from "../../images/t3.png";
-import pic5 from "../../images/t4.png";
+import pic1 from "../../images/brahmasutra1.svg";
+import pic2 from "../../images/brahmasutra2.svg";
+import pic3 from "../../images/brahmasutra3.svg";
+import pic4 from "../../images/brahmasutra4.svg";
+import pic5 from "../../images/brahmasutra1.svg";
 import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,26 +29,18 @@ const BrahmSutra = () => {
   const settings = {
     infinite: true,
     centerMode: true,
-    slidesToShow: 3,
-    centerPadding: "300px",
+    slidesToShow: 5,
+    centerPadding: "50px",
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
+    arrows:false,
     beforeChange: (current, next) => setImgIndex(next),
     responsive: [
       {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          centerPadding: "0px",
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 768,
+        breakpoint: 991,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -57,16 +49,7 @@ const BrahmSutra = () => {
         },
       },
       {
-        breakpoint: 476,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "0px",
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 376,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -104,9 +87,13 @@ const BrahmSutra = () => {
             {images.map((item, idx) => (
               <div
                 key={idx}
-                className={idx === imgIndex ? "slide activeSlide" : "slide"}
+                className={
+                  idx === imgIndex
+                    ? "brahmsutraSlide brahmsutraActiveSlide"
+                    : "brahmsutraSlide"
+                }
               >
-                <div className="card_content">
+                <div className="imageCard">
                   <img src={item.pic} alt={item.heading} />
                 </div>
               </div>

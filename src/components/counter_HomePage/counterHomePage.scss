@@ -33,22 +33,18 @@ $background-color_3: #f90;
     letter-spacing: -1.118px;
     @media (max-width:768px) {
       padding: 1rem 1rem;
-      width: 130px;
       font-size: 90px
     }
     @media (max-width:575px) {
       padding: 1rem 2rem;
-      width: 90px;
       font-size: 60px
     }
     @media (max-width:426px) {
       padding: 1rem 2rem;
-      width: 60px;
       font-size: 40px
     }
     @media (max-width:375px) {
       padding: 1rem 2rem;
-      width: 40px;
       font-size: 30px
     }
   }

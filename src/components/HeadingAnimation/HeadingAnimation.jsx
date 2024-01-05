@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
+const AnimatedTextWord = ({ text, fontSize, justifyContent, className }) => {
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
