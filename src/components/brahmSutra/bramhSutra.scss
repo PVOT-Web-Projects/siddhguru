@@ -246,7 +246,10 @@
           }
         }
       }
-
+      .slick-slide.slick-active {
+        z-index: 99999;
+        position: relative;
+      }
       .slick-slide.slick-active.slick-center.slick-current {
         transform: scale(2.5);
         @media (max-width: 1199px) {
