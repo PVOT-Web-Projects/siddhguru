@@ -93,7 +93,7 @@
     .sidhhguru_layout1_img,
     .sidhhguru_layout2_img {
       display: block;
-       width: 100%; 
+      width: 100%;
       max-width: 100%;
     }
     .sidhhguru_gurudev_second_content_text {
@@ -125,6 +125,7 @@
     }
     .lotus_img_outer {
       text-align: center;
+      ;
       @media (max-width: 767px) {
         text-align: center;
         position: absolute;
@@ -135,6 +136,7 @@
     }
     .lotus_img {
       height: 49vh;
+      max-width: 100%;
       @media (min-width: 1600px) {
         height: 58vh;
       }

@@ -53,6 +53,7 @@
         position: relative;
       }
       .slick-slide.slick-active.slick-center.slick-current {
+        transition: all 1s;
         transform: scale(2.5);
         @media (max-width: 1199px) {
           transform: scale(2);

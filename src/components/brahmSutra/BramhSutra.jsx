@@ -34,7 +34,7 @@ const BrahmSutra = () => {
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows:false,
     beforeChange: (current, next) => setImgIndex(next),
