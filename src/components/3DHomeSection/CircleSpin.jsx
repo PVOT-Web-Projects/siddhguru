@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./homePage3D.scss";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import HomePage3D from "./HomePage3D";
+// import HomePage3D from "./HomePage3D";
 gsap.registerPlugin(ScrollTrigger);
 
 // https://iraoverseas.com/wp-content/uploads/2024/01/0000001.png
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AirpodsAnimation = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
-  const textRef = useRef(null);
+  // const textRef = useRef(null);
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
@@ -18,7 +18,7 @@ const AirpodsAnimation = () => {
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
-    const text = textRef.current;
+    // const text = textRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
     // Set a fixed size for the canvas (adjust as needed)
@@ -121,12 +121,8 @@ const AirpodsAnimation = () => {
       <div className="hf">
         <section ref={sectionRef}>
           <canvas ref={canvasRef}></canvas>
-          <div>
-            <div className="eyesText">
-              {splitWords(
-                "जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है"
-              )}
-            </div>
+          <div className="eyesText">
+            {splitWords("जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है")}
           </div>
         </section>
       </div>

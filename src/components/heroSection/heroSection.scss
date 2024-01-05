@@ -1,7 +1,7 @@
 .hero_section {
   background-color: #fff9e0;
   overflow: hidden;
-  
+
   .hero_section_wrapper {
     position: relative;
     height: calc(100vh - 210px);
@@ -48,16 +48,10 @@
       @media (max-width: 991px) {
         bottom: -244px;
       }
-      // @media (max-width: 575px) {
-      //   bottom: -122px;
-      // }
-      // @media (max-width: 1500px) {
-      //   bottom: -327px;
-      // }
+
       .hero_section_first_image {
         position: relative;
         img {
-          // max-width: 100%;
           display: block;
           width: 1232px;
           animation: godAnimation 40s infinite linear;
@@ -67,12 +61,6 @@
           @media (max-width: 991px) {
             width: 650px;
           }
-          // @media (max-width: 575px) {
-          //   width: 320px;
-          // }
-          // @media (max-width: 1500px) {
-          //   width: 980px;
-          // }
         }
         &::before {
           content: "";
@@ -111,7 +99,6 @@
       }
       .hero_section_second_image {
         @media (max-width: 1600px) {
-          // width: 33%;
         }
         img {
         }

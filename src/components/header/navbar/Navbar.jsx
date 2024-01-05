@@ -1,10 +1,16 @@
 import "./navbar.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 
-import { Navbar, Container, Nav, NavDropdown, Offcanvas } from 'react-bootstrap';
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Offcanvas,
+} from "react-bootstrap";
 import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
 const Menu = () => {
@@ -32,92 +38,140 @@ const Menu = () => {
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
-          <motion.div ref={ref}
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="padding">
-            <NavDropdown title="Siddhguru" id="basic-nav-dropdown" className='dropdown'
+            className="padding"
+          >
+            <NavDropdown
+              title="Siddhguru"
+              id="basic-nav-dropdown"
+              className="dropdown"
               show={showSubMenu2}
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
-              >
-              
+            >
               <DropdownSubmenu title="The Saint" className="react_submenu">
-             
-                <NavDropdown.Item href="#action/8.1">Life in a Nutshell</NavDropdown.Item>
-                <NavDropdown.Divider className="navbar_divider"/>
-                <NavDropdown.Item href="#action/8.1">Sadhana & Kundalini Invocation</NavDropdown.Item>
-                <NavDropdown.Divider className="navbar_divider"/>
-                <NavDropdown.Item href="#action/8.1">Siddhis and Nidhis</NavDropdown.Item>
-                <NavDropdown.Divider className="navbar_divider"/>
+                <NavDropdown.Item href="#action/8.1">
+                  Life in a Nutshell
+                </NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
+                  Sadhana & Kundalini Invocation
+                </NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
+                  Siddhis and Nidhis
+                </NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
                 <NavDropdown.Item href="#action/8.1">Mission</NavDropdown.Item>
-             
               </DropdownSubmenu>
-              <NavDropdown.Divider className="navbar_divider"/>
-              <DropdownSubmenu href="#action/3.7" title="Vision"   className="react_submenu">
-                
-                <NavDropdown.Item href="#action/8.1">Divine Touch (Digital Diksha)</NavDropdown.Item>
-                <NavDropdown.Divider  className="navbar_divider"/>
-                <NavDropdown.Item href="#action/8.1">Siddhasana</NavDropdown.Item>
-                <NavDropdown.Divider  className="navbar_divider"/>
+              <NavDropdown.Divider className="navbar_divider" />
+              <DropdownSubmenu
+                href="#action/3.7"
+                title="Vision"
+                className="react_submenu"
+              >
+                <NavDropdown.Item href="#action/8.1">
+                  Divine Touch (Digital Diksha)
+                </NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
+                  Siddhasana
+                </NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
                 <NavDropdown.Item href="#action/8.1">Ashram</NavDropdown.Item>
-                <NavDropdown.Divider className="navbar_divider"/>
-                <NavDropdown.Item href="#action/8.1">World Spiritual Forum</NavDropdown.Item>
-
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
+                  World Spiritual Forum
+                </NavDropdown.Item>
               </DropdownSubmenu>
-              <NavDropdown.Divider className="navbar_divider"/>
-              <DropdownSubmenu href="#action/3.7" title="Core Wisdom"   className="react_submenu">
-                <NavDropdown.Item href="#action/8.1">Miracles of Vedic Science</NavDropdown.Item>
+              <NavDropdown.Divider className="navbar_divider" />
+              <DropdownSubmenu
+                href="#action/3.7"
+                title="Core Wisdom"
+                className="react_submenu"
+              >
+                <NavDropdown.Item href="#action/8.1">
+                  Miracles of Vedic Science
+                </NavDropdown.Item>
               </DropdownSubmenu>
-
             </NavDropdown>
           </motion.div>
-          
-          <motion.div ref={ref}
+
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.3 }}>
-            <Nav.Link href="#link" className="line_underscore">About Ashram</Nav.Link>
+            transition={{ duration: 0.6, delay: 1.3 }}
+          >
+            <Nav.Link href="#link" className="line_underscore">
+              About Ashram
+            </Nav.Link>
           </motion.div>
-          <motion.div ref={ref}
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.4 }}>
-            <Nav.Link href="#link" className="line_underscore">Knowledge</Nav.Link>
+            transition={{ duration: 0.6, delay: 1.4 }}
+          >
+            <Nav.Link href="#link" className="line_underscore">
+              Knowledge
+            </Nav.Link>
           </motion.div>
-          <motion.div ref={ref}
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.5 }}>
-            <Nav.Link href="#link" className="line_underscore">Activities</Nav.Link>
+            transition={{ duration: 0.6, delay: 1.5 }}
+          >
+            <Nav.Link href="#link" className="line_underscore">
+              Activities
+            </Nav.Link>
           </motion.div>
-          <motion.div ref={ref}
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.6 }}>
-            <Nav.Link href="#link" className="line_underscore">Events</Nav.Link>
+            transition={{ duration: 0.6, delay: 1.6 }}
+          >
+            <Nav.Link href="#link" className="line_underscore">
+              Events
+            </Nav.Link>
           </motion.div>
-          <motion.p ref={ref}
+          <motion.p
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.7 }}
-            className="padding">
-            <NavDropdown title="Centers" id="basic-nav-dropdown" className='dropdown' show={showSubMenu}
+            className="padding"
+          >
+            <NavDropdown
+              title="Centers"
+              id="basic-nav-dropdown"
+              className="dropdown"
+              show={showSubMenu}
               onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}>
-
-              <NavDropdown.Item href="#action/3.1" >Indian</NavDropdown.Item>
-              <NavDropdown.Divider className="navbar_divider"/>
-              <NavDropdown.Item href="#action/3.1" >International</NavDropdown.Item>
-
+              onMouseLeave={handleMouseLeave}
+            >
+              <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
+              <NavDropdown.Divider className="navbar_divider" />
+              <NavDropdown.Item href="#action/3.1">
+                International
+              </NavDropdown.Item>
             </NavDropdown>
           </motion.p>
-          <motion.div ref={ref}
+          <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.8 }}>
-            <Nav.Link href="#link" className="line_underscore">Contact Us</Nav.Link>
+            transition={{ duration: 0.6, delay: 1.8 }}
+          >
+            <Nav.Link href="#link" className="line_underscore">
+              Contact Us
+            </Nav.Link>
           </motion.div>
         </Nav>
         <Navbar.Toggle aria-controls="offcanvasNavbar" className="Mobile" />
@@ -131,74 +185,117 @@ const Menu = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-
               <Nav.Link href="#link">News</Nav.Link>
               <Nav.Link href="#link">Gallery</Nav.Link>
               <Nav.Link href="#link">Register Devotee/Volunteer</Nav.Link>
               <Nav.Link href="#link">Donate </Nav.Link>
-              <NavDropdown title="Siddhguru" id="basic-nav-dropdown" className="mobile_dropdown">
-                <NavDropdown title="The Saint" id="basic-nav-dropdown" className="dropdownsubmenu_btn">
-
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Life in a Nutshell</NavDropdown.Item>
+              <NavDropdown
+                title="Siddhguru"
+                id="basic-nav-dropdown"
+                className="mobile_dropdown"
+              >
+                <NavDropdown
+                  title="The Saint"
+                  id="basic-nav-dropdown"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Life in a Nutshell
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Sadhana & Kundalini Invocation</NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Sadhana & Kundalini Invocation
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Siddhis and Nidhis</NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Siddhis and Nidhis
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Mission</NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Mission
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-
-                </NavDropdown>
-                <NavDropdown.Divider /> 
-                <NavDropdown title="Vision" id="basic-nav-dropdown_sub" className="dropdownsubmenu_btn">
-
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Divine Touch (Digital Diksha)</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Siddhasana</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Ashram</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">World Spiritual Forum</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </NavDropdown>
-                   <NavDropdown.Divider />
-                <NavDropdown title="Core Wisdom" id="basic-nav-dropdown_sub" className="dropdownsubmenu_btn">
-                <NavDropdown.Item href="#action/3.1" className="dropdownsubmenu_btn">Miracles of Vedic Science</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown.Divider />
-
-                {/* <DropdownSubmenu href="#action/3.7" title="The Saint">
-                  <NavDropdown.Item href="#action/8.1">Life in a Nutshell</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">Sadhana & Kundalini Invocation</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">Siddhis and Nidhis</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">Mission</NavDropdown.Item>
-                </DropdownSubmenu>
-                <DropdownSubmenu href="#action/3.7" title="Vision">
-                  <NavDropdown.Item href="#action/8.1">Divine Touch (Digital Diksha)</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">Siddhasana</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">Ashram</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/8.1">World Spiritual Forum</NavDropdown.Item>
-                </DropdownSubmenu>
-                <DropdownSubmenu href="#action/3.7" title="Core Wisdom">
-                  <NavDropdown.Item href="#action/8.1">Miracles of Vedic Science</NavDropdown.Item>
-                </DropdownSubmenu> */}
-
+                <NavDropdown
+                  title="Vision"
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Divine Touch (Digital Diksha)
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Siddhasana
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Ashram
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    World Spiritual Forum
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
+                <NavDropdown.Divider />
+                <NavDropdown
+                  title="Core Wisdom"
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Miracles of Vedic Science
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown.Divider />
               </NavDropdown>
               <Nav.Link href="#link">About Ashram</Nav.Link>
               <Nav.Link href="#link">Knowledge</Nav.Link>
               <Nav.Link href="#link">Activities</Nav.Link>
               <Nav.Link href="#link">Events</Nav.Link>
-              <NavDropdown title="Centers" id="basic-nav-dropdown" className='dropdown'>
-
+              <NavDropdown
+                title="Centers"
+                id="basic-nav-dropdown"
+                className="dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.1">International</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">
+                  International
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-
               </NavDropdown>
               <Nav.Link href="#link">Contact Us</Nav.Link>
             </Nav>
-
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

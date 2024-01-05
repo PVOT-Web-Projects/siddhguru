@@ -46,14 +46,6 @@ const FeaturedBlog = () => {
                 <div className="blogsCardTitle">
                   Reconnect with yourself through Siddhasana
                 </div>
-                {/* <div className="blogsCardText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <div className="blogsCardText2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div> */}
                 <div className="blogCardsBtn">
                   <Button btn_text="Read More" />
                 </div>
@@ -75,14 +67,6 @@ const FeaturedBlog = () => {
                 <div className="blogsCardTitle">
                   Pran Mudra is your ‘absolutely free’ immunity booster
                 </div>
-                {/* <div className="blogsCardText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <div className="blogsCardText2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div> */}
                 <div className="blogCardsBtn">
                   <Button btn_text="Read More" />
                 </div>
@@ -104,14 +88,6 @@ const FeaturedBlog = () => {
                 <div className="blogsCardTitle">
                   5 Benefits of walking meditation
                 </div>
-                {/* <div className="blogsCardText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <div className="blogsCardText2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div> */}
                 <div className="blogCardsBtn">
                   <Button btn_text="Read More" />
                 </div>
@@ -131,17 +107,8 @@ const FeaturedBlog = () => {
               </div>
               <div className="blogsCardTextOuter">
                 <div className="blogsCardTitle">
-                  How to activate the body’s Chakras?
+                  How to activate the body's Chakras?
                 </div>
-
-                {/* <div className="blogsCardText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div>
-                <div className="blogsCardText2">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </div> */}
                 <div className="blogCardsBtn">
                   <Button btn_text="Read More" />
                 </div>

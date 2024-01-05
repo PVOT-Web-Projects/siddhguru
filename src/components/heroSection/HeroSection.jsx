@@ -1,17 +1,12 @@
 import "./heroSection.scss";
 import image1 from "../../images/hero_image1.png";
-import image2 from "../../images/hero_image2.png";
-import image3 from "../../images/hero_image3.png";
 import Header from "../header/Header";
-// import { useInView } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 
 const HeroSection = () => {
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true });
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -22,13 +17,7 @@ const HeroSection = () => {
       },
     },
   };
-  const letter = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-    },
-  };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -42,7 +31,6 @@ const HeroSection = () => {
     <div className="hero_section">
       <Header />
       <div className="hero_section_wrapper" ref={ref}>
-        {/* <h2>Lorem ipsum dolor</h2> */}
         <motion.div
           className={"hero_section_title"}
           variants={sentence}
@@ -56,13 +44,7 @@ const HeroSection = () => {
           />
         </motion.div>
         <div className="hero_section_wrapper_inner">
-          <div
-            className="hero_section_first_image"
-            // style={{
-            //   opacity: isInView ? 1 : 0,
-            //   transition: "all 3s",
-            // }}
-          >
+          <div className="hero_section_first_image">
             <img src={image1} alt="hero_image1" />
           </div>
         </div>

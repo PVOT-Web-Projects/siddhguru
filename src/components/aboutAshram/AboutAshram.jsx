@@ -9,7 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
-import gif from "../../images/finalGif3.gif"
+import gif from "../../images/finalGif3.gif";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
@@ -50,26 +50,8 @@ const AboutAshram = () => {
 
   return (
     <div className="aboutAshram">
-      <motion.div className="aboutAshram_wrapper"   ref={ref}>
+      <motion.div className="aboutAshram_wrapper" ref={ref}>
         <div className="aboutAshram_wrapper_image">
-          {/* <div className="shape_image">
-            <img src={shape} alt="shapeImage" />
-          </div>
-          <div className="shape_image leaf1">
-            <img src={leaf1} alt="shapeImage" />
-          </div>
-          <div className="shape_image leaf2">
-            <img src={leaf2} alt="shapeImage" />
-          </div>
-          <div className="shape_image leaf3">
-            <img src={leaf3} alt="shapeImage" />
-          </div>
-          <div className="shape_image leaf4">
-            <img src={leaf4} alt="shapeImage" />
-          </div>
-          <div className="shape_image main_image">
-            <img src={aboutAshram} alt="shapeImage" />
-          </div> */}
           <img src={gif} alt="gif" />
         </div>
         <motion.div
@@ -98,7 +80,6 @@ const AboutAshram = () => {
           </motion.span>
         </motion.div>
         <motion.div
-        
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 1.8 }}

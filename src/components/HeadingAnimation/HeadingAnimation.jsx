@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const AnimatedTextWord = ({ text, fontSize, justifyContent, className }) => {
+const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -48,3 +49,9 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent, className }) => {
 };
 
 export default AnimatedTextWord;
+
+AnimatedTextWord.propTypes = {
+  text: PropTypes.string,
+  fontSize: PropTypes.string,
+  justifyContent: PropTypes.string,
+};

@@ -58,12 +58,8 @@
 
   .sidhhguru_form_content {
     padding-top: 2rem;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // gap: 3rem;
+
     @media (max-width: 575px) {
-      // flex-direction: column;
       padding: 0;
     }
   }

@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./homePageSlider1.scss";
-import Button from "../../components/buttons/button3"
+import Button from "../../components/buttons/button3";
 import image1 from "../../images/vision.png";
 import image2 from "../../images/the_saint.png";
 import image3 from "../../images/core_wisdom.png";
@@ -153,7 +153,7 @@ const HomePageSlider1 = () => {
               >
                 <div className="thumbnail_text">{item.content}</div>
                 <div className="slider_btn">
-                 <Button btn_text="Read More"/>
+                  <Button btn_text="Read More" />
                 </div>
               </div>
             ))}

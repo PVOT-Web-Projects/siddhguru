@@ -7,22 +7,18 @@ import icon3 from "../../images/youtube_icon.svg";
 import icon1 from "../../images/instagram_icon.svg";
 
 const Footer = () => {
-
-
-
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
   return (
     <div className="footer_main">
       <motion.div
-       ref={ref}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 }}
-      
-      
-       className="footer_img_container">
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="footer_img_container"
+      >
         <img className="footer_img" src={footerimg}></img>
       </motion.div>
       <div className="footer_text">

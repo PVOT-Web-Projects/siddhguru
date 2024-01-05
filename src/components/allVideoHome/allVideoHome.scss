@@ -2,13 +2,10 @@
   .sidhhguru_layout {
     width: 100%;
     background: url("../../images/bgImage.png");
-    /* height: 500px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    /* background-attachment: fixed; */
-    /* min-height: 50%; */
     @media (max-width: 767px) {
       height: 180vh;
       position: relative;

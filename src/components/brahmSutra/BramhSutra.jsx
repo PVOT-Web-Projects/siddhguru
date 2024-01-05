@@ -80,7 +80,6 @@ const BrahmSutra = () => {
             <span>{`${imgIndex}`}</span>/{`${totalImages}`}
           </p>
         </div>
-        {/* <div className="container"> */}
         <div className="orange_container"></div>
         <div className="test_slider_wrapper">
           <Slider {...settings}>

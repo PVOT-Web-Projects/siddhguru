@@ -1,7 +1,5 @@
-// import { motion } from "framer-motion";
 import { motion, useAnimation } from "framer-motion";
-import Button from "../../components/buttons/button3"
-// import React from "react";
+import Button from "../../components/buttons/button3";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { Dropdown } from "primereact/dropdown";
@@ -9,14 +7,6 @@ import Siddhguru_img from "../../images/homePageFormImage.png";
 import "./formHomePage.scss";
 
 function FormHomePage() {
-
-  // const [ref, inView] = useInView({
-  //   triggerOnce: true, // Only trigger once
-  // });
-
-
-
-
   const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
   const sentence = {
     hidden: { opacity: 0 },
@@ -99,16 +89,13 @@ function FormHomePage() {
             />
           </div>
           <motion.div
-          
-          ref={ref}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.4 }}
-          
-          
-          
-           className="submit_btn_outer">
-          <Button btn_text="Sign Up"/>
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="submit_btn_outer"
+          >
+            <Button btn_text="Sign Up" />
           </motion.div>
         </form>
       </div>

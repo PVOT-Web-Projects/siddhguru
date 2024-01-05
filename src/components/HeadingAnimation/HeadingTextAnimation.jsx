@@ -1,4 +1,5 @@
 import AnimatedTextWord from "./HeadingAnimation";
+import PropTypes from "prop-types";
 
 const HeadingTextAnimation = ({ heading, fontSize, justifyContent }) => {
   return (
@@ -15,3 +16,9 @@ const HeadingTextAnimation = ({ heading, fontSize, justifyContent }) => {
   );
 };
 export default HeadingTextAnimation;
+
+HeadingTextAnimation.propTypes = {
+  heading: PropTypes.string,
+  fontSize: PropTypes.string,
+  justifyContent: PropTypes.string,
+};
