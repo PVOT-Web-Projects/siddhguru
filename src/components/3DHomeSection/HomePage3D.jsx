@@ -43,7 +43,7 @@ const HomePage3D = () => {
           className="eyesTextOuter"
           variants={sentence}
           initial="hidden"
-          animate={inView ? "visible" : "hidden "}
+          animate={inView ? "visible" : "hidden"}
          
         >
           {/* {text.split("").map((char, index) => ( */}
