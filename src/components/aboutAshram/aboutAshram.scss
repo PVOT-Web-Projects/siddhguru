@@ -68,11 +68,12 @@
         text-align: center;
         width: 100%;
         color: #123828;
-        font-family: "Lohit-Devanagari";
+        font-family: "Lohit-Devanagari" !important;
         font-style: normal;
         display: block;
         font-weight: 400;
         span {
+          font-family: "Lohit-Devanagari" !important;
           @media (max-width: 767px) {
             font-size: 20px !important;
           }
