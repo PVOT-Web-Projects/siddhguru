@@ -35,7 +35,7 @@ const Menu = () => {
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.2 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
             className="padding">
             <NavDropdown title="Siddhguru" id="basic-nav-dropdown" className='dropdown'
               show={showSubMenu2}
@@ -77,31 +77,31 @@ const Menu = () => {
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.3 }}>
+            transition={{ duration: 0.6, delay: 1.3 }}>
             <Nav.Link href="#link" className="line_underscore">About Ashram</Nav.Link>
           </motion.div>
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.4 }}>
+            transition={{ duration: 0.6, delay: 1.4 }}>
             <Nav.Link href="#link" className="line_underscore">Knowledge</Nav.Link>
           </motion.div>
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.5 }}>
+            transition={{ duration: 0.6, delay: 1.5 }}>
             <Nav.Link href="#link" className="line_underscore">Activities</Nav.Link>
           </motion.div>
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.6 }}>
+            transition={{ duration: 0.6, delay: 1.6 }}>
             <Nav.Link href="#link" className="line_underscore">Events</Nav.Link>
           </motion.div>
           <motion.p ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.7 }}
+            transition={{ duration: 0.6, delay: 1.7 }}
             className="padding">
             <NavDropdown title="Centers" id="basic-nav-dropdown" className='dropdown' show={showSubMenu}
               onMouseEnter={handleMouseEnter}
@@ -116,7 +116,7 @@ const Menu = () => {
           <motion.div ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 2.8 }}>
+            transition={{ duration: 0.6, delay: 1.8 }}>
             <Nav.Link href="#link" className="line_underscore">Contact Us</Nav.Link>
           </motion.div>
         </Nav>
