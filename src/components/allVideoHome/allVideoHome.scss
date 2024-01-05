@@ -140,6 +140,10 @@
       @media (min-width: 1600px) {
         height: 58vh;
       }
+      @media (max-width: 767px) {
+        height: 58vh;
+        max-width: max-content;
+      }
     }
   }
 }
