@@ -1,4 +1,3 @@
-// import HomePage3D from "../../components/3DHomeSection/HomePage3D";
 import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
 import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import AboutAshram from "../../components/aboutAshram/AboutAshram";
@@ -13,13 +12,12 @@ import OurProgramSlider from "../../components/ourProgramSlider/OurProgramSlider
 import TextSection from "../../components/textSection/TextSection";
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroSection />
       <TextSection />
       <HomePageSlider1 />
       <AboutAshram />
-      <CircleSpin/>
-      {/* <HomePage3D /> */}
+      <CircleSpin />
       <EventsHomePage />
       <BrahmSutra />
       <HomePageVideoSection />
@@ -27,7 +25,7 @@ const Home = () => {
       <AllVideoHome />
       <FormHomePage />
       <Space />
-    </div>
+    </>
   );
 };
 export default Home;

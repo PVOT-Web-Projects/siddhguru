@@ -5,12 +5,12 @@ import TopNavbar from "../header/topNavbar/TopNavbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <TopNavbar />
       {/* <Header /> */}
       <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 export default Layout;

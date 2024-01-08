@@ -27,7 +27,7 @@ const AirpodsAnimation = () => {
 
     const frameCount = 150;
     const currentFrame = (index) =>
-      ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
+      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
         .toString()
         .padStart(7, "0")}.png`;
 
@@ -41,7 +41,7 @@ const AirpodsAnimation = () => {
       .timeline({
         onUpdate: render,
         scrollTrigger: {
-          trigger: section,
+         trigger: ".hf",
           pin: true,
           scrub: 0.1,
           // scrub: true,
@@ -115,11 +115,12 @@ const AirpodsAnimation = () => {
     });
     return letters;
   };
+  console.log(refs);
 
   return (
     <div className="homePage3D">
       <div className="hf">
-        <section ref={sectionRef}>
+        <section>
           <canvas ref={canvasRef}></canvas>
           <div className="eyesText">
             {splitWords("जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है")}

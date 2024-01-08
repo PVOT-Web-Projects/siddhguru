@@ -16,21 +16,20 @@ function App() {
     window.scrollTo(0, 0);
   }, 2200);
 
-  // useEffect(() => {
-  //   const scroll = new LocomotoveScroll({
-  //     smooth: true,
-  //   });
-  // });
-
   return (
     <>
-      <AnimatePresence mode="wait">{isLoading && <Loader />}</AnimatePresence>
-      <Layout>
-        <Routes>
-          <Route path="/siddhguru1" element={<Home />} />
-          <Route />
-        </Routes>
-      </Layout>
+      <AnimatePresence mode="wait">
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <Layout>
+            <Routes>
+              <Route path="/siddhguru1" element={<Home />} />
+              <Route />
+            </Routes>
+          </Layout>
+        )}
+      </AnimatePresence>
     </>
   );
 }
