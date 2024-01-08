@@ -73,19 +73,14 @@ export default function Loader() {
   }, [percentage]);
 
   return (
-    <motion.div
-      variants={slideUp}
-      initial="initial"
-      exit="exit"
-      className={"introduction"}
-      ref={ref}
-    >
-      {/* <motion.div variants={opacity} initial="initial" animate="enter"> */}
+    <div className={"loader"}>
+      <div className="loader_wrapper">
+        {/* <motion.div variants={opacity} initial="initial" animate="enter"> */}
         <div>
           <img src={loader} alt="" />
         </div>
-      {/* </motion.div>{" "} */}
-      {/* {dimension.width > 0 && (
+        {/* </motion.div>{" "} */}
+        {/* {dimension.width > 0 && (
         <div className="counterContainer_wrapper">
           <div className={"counterContainer"}>
             <motion.div
@@ -132,6 +127,7 @@ export default function Loader() {
           </div>
         </div>
       )} */}
-    </motion.div>
+      </div>
+    </div>
   );
 }

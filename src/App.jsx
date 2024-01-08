@@ -25,10 +25,10 @@ function App() {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading ? (
           <Loader />
-        ) : ( */}
+        ) : (
           <Layout>
             <ScrollTop />
             <Routes>
@@ -36,8 +36,8 @@ function App() {
               <Route />
             </Routes>
           </Layout>
-        {/* )}
-      </AnimatePresence> */}
+        )}
+      </AnimatePresence>
     </>
   );
 }
