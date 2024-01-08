@@ -97,7 +97,38 @@ export default function Loader() {
               {percentage}%
             </motion.div>
 
-          
+            <motion.div
+              className={"mantra_loader"}
+              variants={sentence}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+            >
+              <motion.span
+                className={"mantra_wrapper_loader"}
+                variants={letter}
+                style={{ marginBottom: "12px" }}
+              >
+                <LoaderTextAnimation
+                  heading={
+                    "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "
+                  }
+                  fontSize={"26.934px"}
+                  justifyContent={"center"}
+                />
+              </motion.span>
+              <motion.span
+                className={"mantra_wrapper_loader"}
+                variants={letter}
+              >
+                <LoaderTextAnimation
+                  heading={
+                    "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "
+                  }
+                  fontSize={"26.934px"}
+                  justifyContent={"center"}
+                />
+              </motion.span>
+            </motion.div>
           </div>
         </div>
       )}
