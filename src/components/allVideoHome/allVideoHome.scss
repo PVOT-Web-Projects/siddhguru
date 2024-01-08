@@ -135,10 +135,13 @@
       }
     }
     .lotus_img {
-      height: 49vh;
+      height: 51vh;
       max-width: 100%;
       @media (min-width: 1600px) {
         height: 58vh;
+      }
+      @media(max-width:1440px){
+        height: 44vh;
       }
       @media (max-width: 767px) {
         height: 58vh;
