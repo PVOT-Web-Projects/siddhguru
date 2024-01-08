@@ -85,7 +85,7 @@ export default function Loader() {
           <img src={loader} alt="" />
         </div>
       </motion.div>{" "}
-      {dimension.width > 0 && (
+      {/* {dimension.width > 0 && (
         <div className="counterContainer_wrapper">
           <div className={"counterContainer"}>
             <motion.div
@@ -131,7 +131,7 @@ export default function Loader() {
             </motion.div>
           </div>
         </div>
-      )}
+      )} */}
     </motion.div>
   );
 }
