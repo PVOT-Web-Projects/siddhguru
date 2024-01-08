@@ -35,7 +35,7 @@ const BrahmSutra = () => {
     speed: 1000,
     focusOnSelect: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     arrows:false,
     beforeChange: (current, next) => setImgIndex(next),
     responsive: [

@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
+import ScrollTop from "./components/scrollTop/ScrollTop";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,12 @@ function App() {
     window.scrollTo(0, 0);
   }, 2200);
 
+  // useEffect(() => {
+  //   const scroll = new LocomotoveScroll({
+  //     smooth: true,
+  //   });
+  // });
+
   return (
     <>
       <AnimatePresence mode="wait">
@@ -23,6 +30,7 @@ function App() {
           <Loader />
         ) : (
           <Layout>
+            <ScrollTop />
             <Routes>
               <Route path="/siddhguru1" element={<Home />} />
               <Route />

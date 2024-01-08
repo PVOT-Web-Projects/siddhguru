@@ -41,7 +41,7 @@ const AirpodsAnimation = () => {
       .timeline({
         onUpdate: render,
         scrollTrigger: {
-         trigger: ".hf",
+          trigger: ".hf",
           pin: true,
           scrub: 0.1,
           // scrub: true,
@@ -118,16 +118,16 @@ const AirpodsAnimation = () => {
   console.log(refs);
 
   return (
-    <div className="homePage3D">
-      <div className="hf">
-        <section>
+    <section>
+      <div className="homePage3D">
+        <div className="hf">
           <canvas ref={canvasRef}></canvas>
           <div className="eyesText">
             {splitWords("जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है")}
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
