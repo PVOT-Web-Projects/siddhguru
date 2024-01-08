@@ -30,25 +30,31 @@ $background-color_3: #f90;
     font-weight: 400;
     line-height: normal;
     background-color: $background-color_2;
-    margin-right:5px ;
+    margin-right: 5px;
     letter-spacing: -1.118px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    @media (max-width:768px) {
+    width: 232px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    @media (max-width: 768px) {
       padding: 1rem 1rem;
-      font-size: 90px
+      font-size: 90px;
+      width: 190px;
     }
-    @media (max-width:575px) {
+    @media (max-width: 575px) {
       padding: 1rem 2rem;
-      font-size: 60px
+      font-size: 60px;
+      width: 150px;
     }
-    @media (max-width:426px) {
+    @media (max-width: 426px) {
       padding: 1rem 2rem;
       font-size: 40px;
-      margin-right:3px ;
+      margin-right: 3px;
+      width: 120px;
     }
-    @media (max-width:375px) {
-      padding: 1rem 1.5rem;
-      font-size: 30px
+    @media (max-width: 375px) {
+      padding: 1rem 1.2rem;
+      font-size: 30px;
+      width: 90px;
     }
   }
   .CenterText {
@@ -63,23 +69,24 @@ $background-color_3: #f90;
     line-height: normal;
     letter-spacing: -1.118px;
     margin-left: 5px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    @media (max-width:768px) {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    @media (max-width: 768px) {
       padding: 1rem 2rem;
-      font-size: 90px
+      font-size: 90px;
     }
-    @media (max-width:575px) {
+    @media (max-width: 575px) {
       padding: 1rem 2rem;
-      font-size:60px
+      font-size: 60px;
     }
-    @media (max-width:426px) {
+    @media (max-width: 426px) {
       padding: 1rem 2rem;
-      font-size:40px;
+      font-size: 40px;
       margin-left: 3px;
     }
-    @media (max-width:375px) {
+    @media (max-width: 375px) {
       padding: 1rem 2rem;
-      font-size:30px
+      font-size: 30px;
     }
   }
   .centerBlogText {
