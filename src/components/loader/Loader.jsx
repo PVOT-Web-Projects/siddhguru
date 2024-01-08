@@ -80,11 +80,11 @@ export default function Loader() {
       className={"introduction"}
       ref={ref}
     >
-      <motion.div variants={opacity} initial="initial" animate="enter">
+      {/* <motion.div variants={opacity} initial="initial" animate="enter"> */}
         <div>
           <img src={loader} alt="" />
         </div>
-      </motion.div>{" "}
+      {/* </motion.div>{" "} */}
       {/* {dimension.width > 0 && (
         <div className="counterContainer_wrapper">
           <div className={"counterContainer"}>
