@@ -45,7 +45,7 @@ const AirpodsAnimation = () => {
           pin: true,
           scrub: 0.1,
           // scrub: true,
-          start:'top',
+          start: "top",
           end: "+=500%",
         },
       })
@@ -123,9 +123,9 @@ const AirpodsAnimation = () => {
       <div className="homePage3D">
         <div className="hf">
           <canvas ref={canvasRef}></canvas>
-          {/* <div className="eyesText">
+          <div className="eyesText">
             {splitWords("जिनकी एक दृष्टि जीवन की दिशा व दशा दोनो बदल देती है")}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
