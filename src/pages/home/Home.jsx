@@ -16,7 +16,7 @@ const Home = () => {
       <HeroSection />
       <TextSection />
       <HomePageSlider1 />
-      {/* <AboutAshram /> */}
+      <AboutAshram />
       <CircleSpin />
       <EventsHomePage />
       <BrahmSutra />
