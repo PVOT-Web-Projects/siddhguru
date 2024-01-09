@@ -118,7 +118,7 @@ const AirpodsAnimation = () => {
   console.log(refs);
 
   return (
-    <section>
+    <section ref={sectionRef}>
       <div className="homePage3D">
         <div className="hf">
           <canvas ref={canvasRef}></canvas>

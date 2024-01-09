@@ -25,19 +25,17 @@ function App() {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
-        {isLoading ? (
-          <Loader />
-        ) : ( */}
-          <Layout>
-            <ScrollTop />
-            <Routes>
-              <Route path="/siddhguru1" element={<Home />} />
-              <Route />
-            </Routes>
-          </Layout>
-        {/* )}
-      </AnimatePresence> */}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <Layout>
+          <ScrollTop />
+          <Routes>
+            <Route path="/siddhguru1" element={<Home />} />
+            <Route />
+          </Routes>
+        </Layout>
+      )}
     </>
   );
 }
