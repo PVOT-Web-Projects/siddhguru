@@ -2,7 +2,8 @@
   // overflow: hidden;
   padding: 20px 100px 40px 20px;
   z-index: 9;
-  position: relative;
+  position: absolute;
+  width: 100%;
   @media (max-width: 1199px) {
     padding: 20px 40px 40px 20px;
   }

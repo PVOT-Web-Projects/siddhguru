@@ -29,7 +29,7 @@ const HeroSection = () => {
   }, [controls, inView]);
   return (
     <div className="hero_section">
-      <Header />
+      {/* <Header /> */}
       <div className="hero_section_wrapper" ref={ref}>
         <motion.div
           className={"hero_section_title"}

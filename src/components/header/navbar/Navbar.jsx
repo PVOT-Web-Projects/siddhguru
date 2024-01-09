@@ -13,6 +13,7 @@ import {
 } from "react-bootstrap";
 import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Menu = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -137,9 +138,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.6 }}
           >
-            <Nav.Link href="#link" className="line_underscore">
+            {/* <Nav.Link href="/siddhguru1/events" className="line_underscore">
               Events
-            </Nav.Link>
+            </Nav.Link> */}
+            <Link to={"/siddhguru1/events"} className="line_underscore nav-link">
+              Events
+            </Link>
           </motion.div>
           <motion.p
             ref={ref}

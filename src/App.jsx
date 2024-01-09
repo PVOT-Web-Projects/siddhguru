@@ -7,6 +7,7 @@ import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import ScrollTop from "./components/scrollTop/ScrollTop";
+import Events from "./pages/events/Events";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <ScrollTop />
           <Routes>
             <Route path="/siddhguru1" element={<Home />} />
+            <Route path="/siddhguru1/events" element={<Events />} />
             <Route />
           </Routes>
         </Layout>
