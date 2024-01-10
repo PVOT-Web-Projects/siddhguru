@@ -9,6 +9,8 @@ import Home from "./pages/home/Home";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import Events from "./pages/events/Events";
 import TheSaint from "./pages/theSaint/TheSaint";
+import Vision from "./pages/vision/Vision";
+import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +19,7 @@ function App() {
     setIsLoading(false);
     document.body.style.cursor = "smooth";
     window.scrollTo(0, 0);
-  }, 3000);
+  }, 2500);
 
   // useEffect(() => {
   //   const scroll = new LocomotoveScroll({
@@ -37,6 +39,8 @@ function App() {
               <Route path="/siddhguru1" element={<Home />} />
               <Route path="/siddhguru1/events" element={<Events />} />
               <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
+              <Route path="/siddhguru1/vision" element={<Vision />} />
+              <Route path="/siddhguru1/core-wisdom" element={<CoreWisdom />} />
               <Route />
             </Routes>
           </Layout>

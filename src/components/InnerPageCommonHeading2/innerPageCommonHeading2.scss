@@ -1,15 +1,39 @@
 .innerPageCommonHeading2 {
-    padding: 200px 0;
+  padding: 180px 0;
+  @media(max-width:1199px){
+    padding: 160px 0;
+  }
   &_wrapper {
     text-align: center;
     .top_image {
       img {
+        max-width: 100%;
       }
     }
     h2 {
+      padding: 28px 0;
+      margin: 0;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 107.91%;
+      @media (max-width: 1199px) {
+        font-size: 35px;
+        padding: 22px 0;
+      }
+      @media (max-width: 991px) {
+        font-size: 30px;
+        padding: 18px 0;
+      }
+      @media (max-width: 767px) {
+        font-size: 27px;
+        padding: 15px 0;
+      }
     }
     .bottom_image {
       img {
+        transform: rotate(180deg);
+        max-width: 100%;
       }
     }
   }
