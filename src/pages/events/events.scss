@@ -1,0 +1,15 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 80px;
+
+  @media (max-width: 1024px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 575px) {
+    padding: 0 20px;
+  }
+}

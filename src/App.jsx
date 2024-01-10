@@ -8,6 +8,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import Events from "./pages/events/Events";
+import TheSaint from "./pages/theSaint/TheSaint";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
           <Routes>
             <Route path="/siddhguru1" element={<Home />} />
             <Route path="/siddhguru1/events" element={<Events />} />
+            <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
             <Route />
           </Routes>
         </Layout>
