@@ -17,9 +17,11 @@ const InnerPageCommonHeading2 = ({ heading, textColor }) => {
         </div>
         <h2 style={{ color: textColor }}>{heading}</h2>
         <div className="bottom_image">
-          <img src={brownImage} alt="brownImage" />
-          <img src={greenImage} alt="brownImage" />
-          <img src={orangeImage} alt="brownImage" />
+        {textColor === "#966940" && <img src={brownImage} alt="brownImage" />}
+          {textColor === "#1D5A3F" && <img src={greenImage} alt="greenImage" />}
+          {textColor === "#FF9900" && (
+            <img src={orangeImage} alt="orangeImage" />
+          )}
         </div>
       </div>
     </div>

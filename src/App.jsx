@@ -31,7 +31,7 @@ function App() {
         <Loader />
       ) : (
         <Layout>
-          <ScrollTop />
+          {/* <ScrollTop /> */}
           <Routes>
             <Route path="/siddhguru1" element={<Home />} />
             <Route path="/siddhguru1/events" element={<Events />} />
