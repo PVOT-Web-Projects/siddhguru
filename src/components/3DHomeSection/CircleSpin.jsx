@@ -69,27 +69,27 @@ const AirpodsAnimation = () => {
         canvas.height
       );
     }
-    createAnimation();
+    // createAnimation();
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
-  const createAnimation = () => {
-    gsap.to(refs.current, {
-      scrollTrigger: {
-        trigger: ".hf",
-        scrub: true,
-        start: `top`,
-        end: "+=400%",
-      },
-      opacity: 1,
-      color: "#123828",
-      ease: "none",
-      stagger: 20,
-    });
-  };
+  // const createAnimation = () => {
+  //   gsap.to(refs.current, {
+  //     scrollTrigger: {
+  //       trigger: ".hf",
+  //       scrub: true,
+  //       start: `top`,
+  //       end: "+=400%",
+  //     },
+  //     opacity: 1,
+  //     color: "#123828",
+  //     ease: "none",
+  //     stagger: 20,
+  //   });
+  // };
 
   const splitWords = (phrase) => {
     let body = [];

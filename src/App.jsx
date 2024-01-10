@@ -15,9 +15,9 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-    document.body.style.cursor = "default";
+    document.body.style.cursor = "smooth";
     window.scrollTo(0, 0);
-  }, 2200);
+  }, 3000);
 
   // useEffect(() => {
   //   const scroll = new LocomotoveScroll({
@@ -27,19 +27,21 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <Layout>
-          {/* <ScrollTop /> */}
-          <Routes>
-            <Route path="/siddhguru1" element={<Home />} />
-            <Route path="/siddhguru1/events" element={<Events />} />
-            <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
-            <Route />
-          </Routes>
-        </Layout>
-      )}
+      <AnimatePresence mode="wait">
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <Layout>
+            <ScrollTop />
+            <Routes>
+              <Route path="/siddhguru1" element={<Home />} />
+              <Route path="/siddhguru1/events" element={<Events />} />
+              <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
+              <Route />
+            </Routes>
+          </Layout>
+        )}
+      </AnimatePresence>
     </>
   );
 }
