@@ -15,6 +15,7 @@ const AirpodsAnimation = () => {
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
   let refs = useRef([]);
+  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -55,9 +56,23 @@ const AirpodsAnimation = () => {
         ease: "none",
         duration: 1,
       });
+      // const createAnimation = () => {
+        gsap.to(refs.current, {
+          scrollTrigger: {
+            trigger: ".hf",
+            scrub: 0.1,
+            start: `top`,
+            end: "+=400%",
+          },
+          opacity: 1,
+          color: "#123828",
+          ease: "none",
+          stagger: 20,
+        });
+      // };
 
     imagesRef.current[0].onload = render;
-
+   
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
       // Draw the image without scaling
@@ -69,27 +84,14 @@ const AirpodsAnimation = () => {
         canvas.height
       );
     }
-    // createAnimation();
+   
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
-  // const createAnimation = () => {
-  //   gsap.to(refs.current, {
-  //     scrollTrigger: {
-  //       trigger: ".hf",
-  //       scrub: true,
-  //       start: `top`,
-  //       end: "+=400%",
-  //     },
-  //     opacity: 1,
-  //     color: "#123828",
-  //     ease: "none",
-  //     stagger: 20,
-  //   });
-  // };
+
 
   const splitWords = (phrase) => {
     let body = [];
