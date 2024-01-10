@@ -1,9 +1,9 @@
 .innerPageCommonHeading {
-  padding: 250px 0 134px;
-  @media(max-width:991px){
-    padding: 200px 0 80px;
+  padding: 240px 0 134px;
+  @media (max-width: 1199px) {
+    padding: 200px 0 110px;
   }
-  @media(max-width:767px){
+  @media (max-width: 767px) {
     padding: 140px 0 60px;
   }
   &_wrapper {
@@ -14,6 +14,15 @@
       font-style: normal;
       font-weight: 400;
       line-height: 107.91%;
+      @media (max-width: 1199px) {
+        font-size: 60px;
+      }
+      @media (max-width: 991px) {
+        font-size: 50px;
+      }
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
     }
   }
 }

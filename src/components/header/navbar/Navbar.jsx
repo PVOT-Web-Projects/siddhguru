@@ -54,7 +54,11 @@ const Menu = () => {
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
             >
-              <DropdownSubmenu title="The Saint" href="/the-saint" className="react_submenu">
+              <DropdownSubmenu
+                title="The Saint"
+                href="/the-saint"
+                className="react_submenu"
+              >
                 <NavDropdown.Item href="#action/8.1">
                   Life in a Nutshell
                 </NavDropdown.Item>
@@ -108,9 +112,10 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.3 }}
           >
-            <Nav.Link href="#link" className="line_underscore">
+            {/* <Nav.Link href="#link" className="line_underscore">
               About Ashram
-            </Nav.Link>
+            </Nav.Link> */}
+            <Link to="/siddhguru1/about-ashram" className="line_underscore nav-link">About Ashram</Link>
           </motion.div>
           <motion.div
             ref={ref}
@@ -141,7 +146,10 @@ const Menu = () => {
             {/* <Nav.Link href="/siddhguru1/events" className="line_underscore">
               Events
             </Nav.Link> */}
-            <Link to={"/siddhguru1/events"} className="line_underscore nav-link">
+            <Link
+              to={"/siddhguru1/events"}
+              className="line_underscore nav-link"
+            >
               Events
             </Link>
           </motion.div>
@@ -282,10 +290,10 @@ const Menu = () => {
                 </NavDropdown>
                 <NavDropdown.Divider />
               </NavDropdown>
-              <Nav.Link href="#link">About Ashram</Nav.Link>
+              <Nav.Link href="/siddhguru1/about-ashram">About Ashram</Nav.Link>
               <Nav.Link href="#link">Knowledge</Nav.Link>
               <Nav.Link href="#link">Activities</Nav.Link>
-              <Nav.Link href="#link">Events</Nav.Link>
+              <Nav.Link href="/siddhguru1/events">Events</Nav.Link>
               <NavDropdown
                 title="Centers"
                 id="basic-nav-dropdown"

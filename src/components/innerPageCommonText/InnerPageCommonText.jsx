@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import "./innerPageCommonText.scss";
 
-const InnerPageCommonText = ({ text }) => {
+const InnerPageCommonText = ({ text1, text2, text3 }) => {
   return (
     <div className="innerPageCommonText">
       <div className="innerPageCommonText_wrapper">
-        <p>{text}</p>
+        {text1 && <p>{text1}</p>}
+        {text2 && <p>{text2}</p>}
+        {text3 && <p>{text3}</p>}
       </div>
     </div>
   );
@@ -13,5 +15,7 @@ const InnerPageCommonText = ({ text }) => {
 export default InnerPageCommonText;
 
 InnerPageCommonText.propTypes = {
-  text: PropTypes.string,
+  text1: PropTypes.string,
+  text2: PropTypes.string,
+  text3: PropTypes.string,
 };

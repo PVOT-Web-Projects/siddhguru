@@ -11,6 +11,7 @@ import Events from "./pages/events/Events";
 import TheSaint from "./pages/theSaint/TheSaint";
 import Vision from "./pages/vision/Vision";
 import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
+import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +42,7 @@ function App() {
               <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
               <Route path="/siddhguru1/vision" element={<Vision />} />
               <Route path="/siddhguru1/core-wisdom" element={<CoreWisdom />} />
+              <Route path="/siddhguru1/about-ashram" element={<AboutAshramPage />} />
               <Route />
             </Routes>
           </Layout>

@@ -1,7 +1,10 @@
 .innerPageCommonHeading2 {
-  padding: 180px 0;
+  padding: 180px 0 120px;
   @media(max-width:1199px){
-    padding: 160px 0;
+    padding: 160px 0 90px;
+  }
+  @media(max-width:575px){
+    padding: 140px 0 70px;
   }
   &_wrapper {
     text-align: center;

@@ -1,0 +1,20 @@
+.theSaint {
+  .leftRightImageContent {
+    padding: 0 10rem;
+
+    @media (max-width: 1348px) {
+      padding: 0 6rem;
+    }
+
+    @media (max-width: 1192px) {
+      padding: 0 4rem;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 2rem;
+    }
+    @media (max-width: 575px) {
+      padding: 0 1rem;
+    }
+  }
+}
