@@ -115,7 +115,12 @@ const Menu = () => {
             {/* <Nav.Link href="#link" className="line_underscore">
               About Ashram
             </Nav.Link> */}
-            <Link to="/siddhguru1/about-ashram" className="line_underscore nav-link">About Ashram</Link>
+            <Link
+              to="/siddhguru1/about-ashram"
+              className="line_underscore nav-link"
+            >
+              About Ashram
+            </Link>
           </motion.div>
           <motion.div
             ref={ref}
@@ -123,9 +128,15 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.4 }}
           >
-            <Nav.Link href="#link" className="line_underscore">
+            {/* <Nav.Link href="#link" className="line_underscore">
               Knowledge
-            </Nav.Link>
+            </Nav.Link> */}
+            <Link
+              to="/siddhguru1/knowledge"
+              className="line_underscore nav-link"
+            >
+              Knowledge
+            </Link>
           </motion.div>
           <motion.div
             ref={ref}
@@ -291,7 +302,7 @@ const Menu = () => {
                 <NavDropdown.Divider />
               </NavDropdown>
               <Nav.Link href="/siddhguru1/about-ashram">About Ashram</Nav.Link>
-              <Nav.Link href="#link">Knowledge</Nav.Link>
+              <Nav.Link href="/siddhguru1/knowledge">Knowledge</Nav.Link>
               <Nav.Link href="#link">Activities</Nav.Link>
               <Nav.Link href="/siddhguru1/events">Events</Nav.Link>
               <NavDropdown

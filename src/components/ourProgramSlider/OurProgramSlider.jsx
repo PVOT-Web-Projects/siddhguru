@@ -6,17 +6,14 @@ import { Pagination, Autoplay } from "swiper/modules";
 import Carousel_layer from "../../images/sliderBg.png";
 import Carousel_layer1 from "../../images/sliderGuru.png";
 import Button from "../buttons/button4";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 function OurProgramSlider() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const textVariants = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
-  };
+
   return (
     <div className="sidhhguru_slider_section">
       <motion.div

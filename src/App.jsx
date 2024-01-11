@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 // import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
@@ -12,6 +12,7 @@ import TheSaint from "./pages/theSaint/TheSaint";
 import Vision from "./pages/vision/Vision";
 import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
 import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
+import Knowledge from "./pages/knowledge/Knowledge";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,11 +39,15 @@ function App() {
             <ScrollTop />
             <Routes>
               <Route path="/siddhguru1" element={<Home />} />
-              <Route path="/siddhguru1/events" element={<Events />} />
               <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
               <Route path="/siddhguru1/vision" element={<Vision />} />
               <Route path="/siddhguru1/core-wisdom" element={<CoreWisdom />} />
-              <Route path="/siddhguru1/about-ashram" element={<AboutAshramPage />} />
+              <Route
+                path="/siddhguru1/about-ashram"
+                element={<AboutAshramPage />}
+              />
+              <Route path="/siddhguru1/knowledge" element={<Knowledge />} />
+              <Route path="/siddhguru1/events" element={<Events />} />
               <Route />
             </Routes>
           </Layout>

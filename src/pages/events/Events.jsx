@@ -35,7 +35,7 @@ const Events = () => {
         }
       />
       <div className="cardList">
-        {events.map((item) => (
+        {events?.map((item) => (
           <CardItem
             key={item.id}
             imageUrl={
