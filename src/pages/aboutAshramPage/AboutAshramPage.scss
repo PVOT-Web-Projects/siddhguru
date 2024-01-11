@@ -2,14 +2,14 @@
   .innerPageCommonHeading {
     padding: 200px 0 90px;
     @media (max-width: 1199px) {
-        padding: 160px 0 80px;
-      }
+      padding: 160px 0 80px;
+    }
     @media (max-width: 991px) {
-        padding: 140px 0 50px;
-      }
+      padding: 140px 0 50px;
+    }
     @media (max-width: 767px) {
-        padding: 140px 0 40px;
-      }
+      padding: 140px 0 40px;
+    }
     .innerPageCommonHeading_wrapper {
       width: 836px;
       margin: 0 auto;
@@ -27,8 +27,6 @@
         padding: 0 10px;
       }
       h2 {
-        color: #f90;
-        text-align: center;
         font-size: 70px;
         font-style: normal;
         font-weight: 400;
@@ -45,6 +43,22 @@
         @media (max-width: 575px) {
           font-size: 32px;
         }
+      }
+    }
+  }
+  .animatedText {
+    padding: 0 20px 100px;
+    span {
+      font-family: "Lohit-Devanagari";
+      text-align: center;
+      @media (max-width: 1199px) {
+        font-size: 22px;
+      }
+      @media (max-width: 991px) {
+        font-size: 20px;
+      }
+      .text2 {
+        font-family: "Inria Serif";
       }
     }
   }

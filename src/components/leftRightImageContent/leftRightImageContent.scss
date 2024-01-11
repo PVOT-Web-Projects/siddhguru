@@ -1,10 +1,7 @@
 .leftRightImageContent_wrapper {
   width: 100%;
   padding-bottom: 2rem;
-
-  @media (max-width: 769px) {
-    gap: 20px;
-  }
+  overflow: hidden;
 
   &:nth-child(odd) {
     display: flex;
@@ -42,14 +39,6 @@
     }
   }
 
-  //   &_text {
-  //     width: 50%;
-
-  //     @media (max-width: 769px) {
-  //       width: 100%;
-  //     }
-  //   }
-
   &_text {
     background-color: #ffeaae29;
     display: flex;
@@ -71,13 +60,11 @@
       padding: 1rem;
     }
     .title {
-      font-family: Inria Serif;
       font-size: 35px;
       font-weight: 400;
       line-height: 38px;
       letter-spacing: 0em;
       text-align: left;
-      color: #1d5a3f;
       padding-bottom: 20px;
 
       @media (max-width: 1024px) {
@@ -96,6 +83,31 @@
     }
 
     .text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.04em;
+      text-align: left;
+      color: black;
+
+      @media (max-width: 1024px) {
+        font-size: 13.5px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      @media (max-width: 905px) {
+        padding-bottom: 10px;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+    .text2 {
+      margin: 15px 0 0;
       font-size: 14px;
       font-weight: 400;
       line-height: 21px;

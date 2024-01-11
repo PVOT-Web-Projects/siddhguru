@@ -1,14 +1,14 @@
 .innerPageCommonText {
   &_wrapper {
     width: 806px;
-    margin: 0 auto 110px;
+    margin: 0 auto 60px;
     @media (max-width: 991px) {
       width: 70%;
-      margin: 0 auto 80px;
+      margin: 0 auto 50px;
     }
     @media (max-width: 767px) {
       width: 80%;
-      margin: 0 auto 60px;
+      margin: 0 auto 30px;
     }
     p {
       color: #000;

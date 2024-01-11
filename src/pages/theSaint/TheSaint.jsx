@@ -48,7 +48,7 @@ const TheSaint = () => {
       <InnerPageCommonHeading2 heading={"The Saint"} textColor={"#1D5A3F"} />
       <div className="leftRightImageContent">
         {theSaintData.map((item, index) => (
-          <LeftRIghtImageContent key={index} {...item} />
+          <LeftRIghtImageContent key={index} {...item} index={index} titleColor={"#1D5A3F"} />
         ))}
       </div>
     </div>

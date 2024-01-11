@@ -1,11 +1,25 @@
 import wisdomImage from "../../images/coreWisdomImage.png";
 import "./miracleOfVedicScience.scss";
+import { motion } from "framer-motion";
 
 const MiraclesOfVedicScience = () => {
   return (
     <div className="miraclesOfVedicScience">
       <div className="miraclesOfVedicScience_wrapper">
-        <div className="miraclesOfVedicScience_wrapper_image">
+        <motion.div
+          className="miraclesOfVedicScience_wrapper_image"
+          initial={{
+            opacity: 0,
+            // if odd index card,slide from right instead of left
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 1, // Animation duration
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <img src={wisdomImage} alt="wisdomImage" />
           <div className="imageHeading">{"Miracles of Vedic Science"}</div>
           <div className="miraclesOfVedicScienceText">
@@ -41,7 +55,7 @@ const MiraclesOfVedicScience = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="miraclesOfVedicScienceText_mobile">
           <div className="left">
             <p>

@@ -5,6 +5,7 @@ import image1 from "../../images/aboutAshramImage1.png";
 import image2 from "../../images/aboutAshramImage2.png";
 import image3 from "../../images/aboutAshramImage3.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
+import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -29,6 +30,15 @@ const AboutAshramPage = () => {
         text3={
           "Embrace yourself in worship and the Guru's blessings with Trimukha Ganesh Mandir, Shree Laksmi Narayan Mandir, and Shree Brahmeshwar Parshavnath Jeeravala. Swarn Jain Mandir, Shree Brahmeshwar Mahadev, Shree Dhyan Mandir, Mata Hall, Dhyan Kendra, Gaushala, and a unique energy centre."
         }
+      />
+      <HeadingTextAnimation
+        heading={
+          "ना शरमाया करो ना सकुचाया करो, तुम्हारे माता पिता का घर है जब मन करे आया जाय करो "
+        }
+        text2={"- Siddhguru"}
+        fontSize={26}
+        justifyContent={"center"}
+        color={"#6A1C1C"}
       />
       {aboutAshramImages.map((item, index) => (
         <AboutAshramImages key={index} {...item} />

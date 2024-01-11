@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
-const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
+const AnimatedTextWord = ({ text,text2, fontSize, justifyContent, color }) => {
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.12, delayChildren: 1 * i },
+      transition: { staggerChildren: 0.12, delayChildren: 0.3 * i },
     }),
   };
 
@@ -40,10 +40,11 @@ const AnimatedTextWord = ({ text, fontSize, justifyContent }) => {
         display: "flex",
         fontSize: fontSize,
         justifyContent: justifyContent,
+        color: color,
       }}
       variants={container}
     >
-      <motion.span variants={child}>{text}</motion.span>
+      <motion.span variants={child}>{text}<span className="text2">{text2}</span></motion.span>
     </motion.div>
   );
 };
@@ -52,6 +53,8 @@ export default AnimatedTextWord;
 
 AnimatedTextWord.propTypes = {
   text: PropTypes.string,
-  fontSize: PropTypes.string,
+  text2: PropTypes.string,
+  fontSize: PropTypes.number,
   justifyContent: PropTypes.string,
+  color: PropTypes.string,
 };
