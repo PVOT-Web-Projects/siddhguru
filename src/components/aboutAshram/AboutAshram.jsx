@@ -1,9 +1,3 @@
-import shape from "../../images/aboutShape.svg";
-import aboutAshram from "../../images/aboutAshramImage.png";
-import leaf1 from "../../images/aboutAshramLeaf1.svg";
-import leaf2 from "../../images/aboutAshramLeaf2.svg";
-import leaf3 from "../../images/aboutAshramLeaf3.svg";
-import leaf4 from "../../images/aboutAshramLeaf4.svg";
 import "./aboutAshram.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -91,13 +85,7 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Ashram</h3>
             <p>
-              Enriched and adorned by the rigorous Sadhana, meditation, and
-              austerities observed by Sri Siddhguru, The Brahmrishi Ashram has
-              become a sacred sanctuary where the divine presence of gods is
-              palpable. Here, you can feel a distinct positive aura that
-              permeates the soil and surroundings. This is the place where
-              hearts can let go of their worries & troubles, and experience 'the
-              eternal bliss'.
+             {" Enriched and adorned by the rigorous Sadhana, meditation, and austerities observed by Sri Siddhguru, The Brahmrishi Ashram has become a sacred sanctuary where the divine presence of gods is palpable. Here, you can feel a distinct positive aura that permeates the soil and surroundings. This is the place where hearts can let go of their worries & troubles, and experience 'the eternal bliss'."}
             </p>
           </div>
           <div className="bottom_border">

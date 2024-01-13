@@ -48,6 +48,9 @@
   }
   .animatedText {
     padding: 0 20px 100px;
+    @media(max-width:767px){
+      padding-bottom: 50px;
+    }
     span {
       font-family: "Lohit-Devanagari";
       text-align: center;

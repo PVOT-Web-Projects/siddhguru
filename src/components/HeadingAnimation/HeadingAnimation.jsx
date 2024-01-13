@@ -54,7 +54,7 @@ export default AnimatedTextWord;
 AnimatedTextWord.propTypes = {
   text: PropTypes.string,
   text2: PropTypes.string,
-  fontSize: PropTypes.number,
+  fontSize: PropTypes.string,
   justifyContent: PropTypes.string,
   color: PropTypes.string,
 };

@@ -27,5 +27,20 @@
     padding: 15px;
     // height: 60vh;
     object-fit: cover;
+    &.desktop {
+      @media (max-width: 575px) {
+        display: none;
+      }
+    }
+  }
+  .images_mobile {
+    display: none;
+    @media (max-width: 575px) {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      height: 100%;
+      padding: 15px;
+    }
   }
 }

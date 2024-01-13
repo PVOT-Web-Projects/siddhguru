@@ -4,6 +4,7 @@ import "./aboutAshramPage.scss";
 import image1 from "../../images/aboutAshramImage1.png";
 import image2 from "../../images/aboutAshramImage2.png";
 import image3 from "../../images/aboutAshramImage3.png";
+import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
 import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 
@@ -11,6 +12,7 @@ const AboutAshramPage = () => {
   const aboutAshramImages = [
     {
       imageUrl1: image1,
+      imageUrl1_mobile: image1_mobile,
       imageUrl2: image2,
       imageUrl3: image3,
     },
@@ -36,7 +38,7 @@ const AboutAshramPage = () => {
           "ना शरमाया करो ना सकुचाया करो, तुम्हारे माता पिता का घर है जब मन करे आया जाय करो "
         }
         text2={"- Siddhguru"}
-        fontSize={26}
+        fontSize={"26px"}
         justifyContent={"center"}
         color={"#6A1C1C"}
       />

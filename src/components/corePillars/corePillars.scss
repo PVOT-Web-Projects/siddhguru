@@ -1,0 +1,92 @@
+.corePillars {
+  &_wrapper {
+    padding: 40px 100px;
+    @media (max-width: 991px) {
+      padding: 40px 80px;
+    }
+    @media (max-width: 767px) {
+      padding: 40px 60px;
+    }
+    @media (max-width: 575px) {
+      padding: 40px 20px;
+    }
+    &_heading {
+      h3 {
+        color: #966940;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107.91%;
+        text-align: center;
+        margin: 0 0 56px;
+        @media(max-width:1199px){
+            font-size: 38px;
+        }
+        @media(max-width:991px){
+            font-size: 32px;
+            margin: 0 0 40px;
+        }
+        @media(max-width:767px){
+            font-size: 28px;
+            margin: 0 0 30px;
+        }
+        @media(max-width:575px){
+            font-size: 25px;
+        }
+      }
+    }
+    &_images {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -5px;
+      @media (max-width: 575px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 1600px) {
+        margin: 0 -2.5px;
+      }
+
+      .corePillarsItem {
+        width: 25%;
+        position: relative;
+        @media (max-width: 575px) {
+          width: 50%;
+        }
+        &_image {
+          padding: 0 5px;
+          @media (max-width: 1600px) {
+            padding: 0 2.5px;
+          }
+          @media (max-width: 575px) {
+            padding: 0 2.5px 5px;
+          }
+          img {
+            max-width: 100%;
+            display: block;
+            width: 100%;
+          }
+          .title {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 107.91%;
+            @media (max-width: 1199px) {
+              font-size: 38px;
+            }
+            @media (max-width: 991px) {
+              font-size: 27px;
+            }
+            @media (max-width: 767px) {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

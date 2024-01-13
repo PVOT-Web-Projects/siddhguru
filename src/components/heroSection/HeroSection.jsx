@@ -1,6 +1,6 @@
 import "./heroSection.scss";
 import image1 from "../../images/hero_image1.png";
-import Header from "../header/Header";
+// import Header from "../header/Header";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";

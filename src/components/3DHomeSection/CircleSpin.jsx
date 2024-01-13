@@ -17,7 +17,7 @@ const AirpodsAnimation = () => {
   let refs = useRef([]);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    const section = sectionRef.current;
+    // const section = sectionRef.current;
     const canvas = canvasRef.current;
     // const text = textRef.current;
     const context = canvas.getContext("2d");
@@ -45,9 +45,8 @@ const AirpodsAnimation = () => {
           trigger: ".hf",
           pin: true,
           scrub: 0.1,
-          // scrub: true,
           start: "top",
-          end: "+=500%",
+          end: "+=400%",
         },
       })
       .to(airpodsRef.current, {
@@ -55,20 +54,21 @@ const AirpodsAnimation = () => {
         snap: "frame",
         ease: "none",
         duration: 1,
+      })
+      .to(refs.current, {
+        scrollTrigger: {
+          trigger: ".hf",
+          scrub: 0.1,
+          start: `top`,
+          end: "+=400%",
+        },
+        opacity: 1,
+        color: "#123828",
+        ease: "none",
+        stagger: 20,
       });
       // const createAnimation = () => {
-        gsap.to(refs.current, {
-          scrollTrigger: {
-            trigger: ".hf",
-            scrub: 0.1,
-            start: `top`,
-            end: "+=400%",
-          },
-          opacity: 1,
-          color: "#123828",
-          ease: "none",
-          stagger: 20,
-        });
+        // gsap
       // };
 
     imagesRef.current[0].onload = render;

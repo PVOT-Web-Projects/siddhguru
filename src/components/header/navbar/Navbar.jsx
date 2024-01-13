@@ -144,9 +144,15 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 1.5 }}
           >
-            <Nav.Link href="#link" className="line_underscore">
+            {/* <Nav.Link href="#link" className="line_underscore">
               Activities
-            </Nav.Link>
+            </Nav.Link> */}
+            <Link
+              to="/siddhguru1/activities"
+              className="line_underscore nav-link"
+            >
+              Activities
+            </Link>
           </motion.div>
           <motion.div
             ref={ref}

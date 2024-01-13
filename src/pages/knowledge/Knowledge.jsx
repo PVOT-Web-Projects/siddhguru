@@ -11,7 +11,7 @@ const Knowledge = () => {
   const [knowledge, setKnowledge] = useState([]);
   useEffect(() => {
     axios
-      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/posts/?_embed")
+      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/knowledge/?_embed")
       .then((response) => {
         setKnowledge(response.data);
         console.log(response.data);
@@ -36,7 +36,7 @@ const Knowledge = () => {
                 .source_url
             }
             title={item.title.rendered}
-            description={item.excerpt.rendered}
+            description={item.content.rendered}
           />
         ))}
       </div>

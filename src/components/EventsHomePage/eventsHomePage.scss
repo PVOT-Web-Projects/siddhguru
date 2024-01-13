@@ -89,10 +89,13 @@
             display: flex;
             background-color: #fff;
             padding: 10px;
-            width: 300px;
+            width: 350px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             position: relative;
+            @media (max-width: 1600px) {
+              width: 315px;
+            }
             @media (max-width: 1199px) {
               width: 290px;
             }
@@ -137,7 +140,10 @@
             .boxDateSec {
               position: absolute;
               top: -34px;
-              right: 55px;
+              right: 42px;
+              @media(max-width:1600px){
+                right: 38px;
+              }
               @media (max-width: 1199px) {
                 right: 26px;
               }
