@@ -31,7 +31,7 @@ const Events = () => {
       <FullWidthImageSec
         imageUrl={fullWidthImage}
         text={
-          "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
+          "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
       />
       <div className="cardList">

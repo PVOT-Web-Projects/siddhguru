@@ -43,7 +43,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="padding"
           >
             <NavDropdown
@@ -110,7 +110,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.3 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             {/* <Nav.Link href="#link" className="line_underscore">
               About Ashram
@@ -126,7 +126,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.4 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
             {/* <Nav.Link href="#link" className="line_underscore">
               Knowledge
@@ -142,7 +142,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.5 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
           >
             {/* <Nav.Link href="#link" className="line_underscore">
               Activities
@@ -158,7 +158,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.6 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           >
             {/* <Nav.Link href="/siddhguru1/events" className="line_underscore">
               Events
@@ -174,7 +174,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.7 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
             className="padding"
           >
             <NavDropdown
@@ -196,7 +196,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.8 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
           >
             <Nav.Link href="#link" className="line_underscore">
               Contact Us
