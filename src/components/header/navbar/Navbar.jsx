@@ -184,6 +184,7 @@ const Menu = () => {
               show={showSubMenu}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              href={"/siddhguru/centers"}
             >
               <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
               <NavDropdown.Divider className="navbar_divider" />
