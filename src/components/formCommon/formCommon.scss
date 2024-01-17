@@ -1,0 +1,87 @@
+.siddhguru_form_Section {
+  .input_field {
+    background: #d9d9d9;
+    outline: none;
+    border: none;
+    padding: 10px 35px 10px 15px;
+    width: 230px;
+    margin: 0 20px;
+    @media (max-width: 575px) {
+      margin: 0;
+      width: 90%;
+    }
+  }
+
+  .sidhhguru_form_content {
+    // padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem;
+
+    @media (max-width: 575px) {
+      padding: 0;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+  .submit_btn_outer {
+    // padding-top: 2rem;
+  }
+  .submit_btn {
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    cursor: pointer;
+    background: #ff9900;
+    outline: none;
+    border: none;
+    width: 20px;
+  }
+  .siddhguru_dropdown_menu {
+    background-color: #d9d9d9;
+    width: 230px;
+    margin: 0 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    @media (max-width: 575px) {
+      width: 90%;
+      margin: 0;
+    }
+  }
+
+  .p-dropdown-label {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .p-dropdown-item {
+    color: black;
+    padding: 8px;
+    background-color: #d9d9d9;
+  }
+  .p-dropdown-trigger {
+    padding-right: 8px;
+  }
+  ul.p-dropdown-items {
+    padding: 0 !important;
+  }
+  .p-dropdown-items-wrapper {
+    overflow: hidden !important;
+  }
+  .p-dropdown-item {
+    transition: all 0.4s;
+  }
+  .p-dropdown-item:hover {
+    background-color: #ff9900;
+    color: #fff;
+  }
+  p.error {
+    text-align: left;
+    margin: 0 0 0 30px;
+    font-size: 14px;
+    color: red;
+  }
+  .formField {
+    @media (max-width: 575px) {
+      margin: 0 0 20px;
+    }
+  }
+}

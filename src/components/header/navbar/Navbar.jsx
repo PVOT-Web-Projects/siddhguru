@@ -199,9 +199,15 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <Nav.Link href="#link" className="line_underscore">
+            {/* <Nav.Link href="#link" className="line_underscore">
               Contact Us
-            </Nav.Link>
+            </Nav.Link> */}
+            <Link
+              to={"/siddhguru1/contact"}
+              className="line_underscore nav-link"
+            >
+              Contact
+            </Link>
           </motion.div>
         </Nav>
         <Navbar.Toggle aria-controls="offcanvasNavbar" className="Mobile" />
