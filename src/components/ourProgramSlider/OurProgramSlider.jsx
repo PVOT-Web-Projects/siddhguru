@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import Carousel_layer from "../../images/sliderBg.png";
+import Carousel_layer2 from "../../images/ourProgramSliderBg2.png";
 import Carousel_layer1 from "../../images/sliderGuru.png";
 import Button from "../buttons/button4";
 import { motion } from "framer-motion";
@@ -96,7 +97,7 @@ function OurProgramSlider() {
             {/* <div> */}
             <div className="carousel_image_container">
               <img
-                src={Carousel_layer}
+                src={Carousel_layer2}
                 alt="image"
                 className="carousel_layer_img"
               />
@@ -104,11 +105,11 @@ function OurProgramSlider() {
                 <div className="carousel_overlay_text_content">
                   <div className="carousel_section_text">
                     <p className="carousel_first_text">
-                      Have Gurudev as your partner & protector for this life and
-                      every life!
+                      Elevate your soul with the power of silence at a 7-day
+                      residential retreat
                     </p>
 
-                    <p className="carousel_second_text">Digital Diksha</p>
+                    <p className="carousel_second_text">Siddhasana</p>
                     <div className="carousel_slider_button_outer">
                       <Button btn_text="Register Now" />
                     </div>
@@ -137,11 +138,10 @@ function OurProgramSlider() {
                 <div className="carousel_overlay_text_content">
                   <div className="carousel_section_text">
                     <p className="carousel_first_text">
-                      Have Gurudev as your partner & protector for this life and
-                      every life!
+                      Join us and serve humanity as a mental health counseling
+                      volunteer
                     </p>
-
-                    <p className="carousel_second_text">Digital Diksha</p>
+                    <p className="carousel_second_text">Siddha Yuva</p>
                     <div className="carousel_slider_button_outer">
                       <Button btn_text="Register Now" />
                     </div>
