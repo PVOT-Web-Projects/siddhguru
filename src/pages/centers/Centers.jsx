@@ -1,9 +1,40 @@
+import CardItem from "../../components/CardItem/CardItem";
 import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import TwoCardSection from "../../components/twoCardSection/TwoCardSection";
 import bigImage1 from "../../images/centerPage_bigImage1.png";
 import bigImage2 from "../../images/centerPage_bigImage2.png";
+
+const centerTopCards = [
+  {
+    image: bigImage1,
+    title: "Welcome New year with enthusiasm and Smile",
+    content:
+      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+    imageText: "Gujrat",
+    colorGradient:
+      "linear-gradient(0deg, #A44F00 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+  },
+  {
+    image: bigImage1,
+    title: "Welcome New year with enthusiasm and Smile",
+    content:
+      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+    imageText: "Maharashtra",
+    colorGradient:
+      "linear-gradient(0deg, rgba(244, 210, 182, 0.60) -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+  },
+  {
+    image: bigImage1,
+    title: "Welcome New year with enthusiasm and Smile",
+    content:
+      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+    imageText: "Delhi",
+    colorGradient:
+      "linear-gradient(0deg, #0073A4 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+  },
+];
 
 const Centers = () => {
   return (
@@ -21,6 +52,17 @@ const Centers = () => {
           "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
       />
+      <div className="cardList">
+        {centerTopCards?.map((item) => (
+          <CardItem
+            key={item.id}
+            imageUrl={item.image}
+            title={item.title}
+            description={item.content}
+            imageText={item.imageText}
+          />
+        ))}
+      </div>
       <FullWidthImageSec
         imageUrl={bigImage2}
         text={

@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const TextSection = () => {
   const text =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
+    "Welcome to the Sacred Haven of Spiritual Enlightenment—Shri Siddhguru, the Divine Guide for the Modern Seeker. In the heart of his holiness Shri Sidheshwar Brahmrishi Gurudev, “Siddhguru” transcends the miracles of Vedic science and boundaries of conventional spirituality, ushering humanity towards the path of a divine life.";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,7 +46,7 @@ const TextSection = () => {
             className={"mantra_wrapper"}
             key={char + "-" + index}
             variants={letter}
-            style={index < 12 ? { color: "#6A1C1C" } : null}
+            style={index < 10 ? { color: "#6A1C1C" } : null}
           >
             {char}
           </motion.span>
