@@ -21,11 +21,73 @@
       padding: 0 0 30px;
     }
     .card_image {
+      position: relative;
       .card-image {
         width: 100%;
         object-fit: cover;
         max-width: 100%;
         height: 100%;
+      }
+      .imageText {
+        color: #fff;
+        font-size: 42.189px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107.91%;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: capitalize;
+        @media (max-width: 1199px) {
+          font-size: 35px;
+        }
+        @media (max-width: 991px) {
+          font-size: 28px;
+          bottom: 30px;
+        }
+      }
+      &.image_0 {
+        &::before {
+          content: "";
+          position: absolute;
+          background: linear-gradient(
+            0deg,
+            #a44f00 -4.37%,
+            rgba(217, 217, 217, 0) 102.81%
+          );
+          bottom: 0;
+          width: calc(100%);
+          height: 160px;
+        }
+      }
+      &.image_1 {
+        &::before {
+          content: "";
+          position: absolute;
+          background: linear-gradient(
+            0deg,
+            rgba(244, 210, 182, 0.6) -4.37%,
+            rgba(217, 217, 217, 0) 102.81%
+          );
+          bottom: 0;
+          width: calc(100%);
+          height: 160px;
+        }
+      }
+      &.image_2 {
+        &::before {
+          content: "";
+          position: absolute;
+          background: linear-gradient(
+            0deg,
+            #0073a4 -4.37%,
+            rgba(217, 217, 217, 0) 102.81%
+          );
+          bottom: 0;
+          width: calc(100%);
+          height: 160px;
+        }
       }
     }
     .card-content {
