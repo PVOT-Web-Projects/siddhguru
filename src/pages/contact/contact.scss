@@ -1,0 +1,101 @@
+.contact {
+  &_wrapper {
+    display: flex;
+    padding: 0 100px;
+    margin: 0 0 82px;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      padding: 0 100px 0 50px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 50px;
+      flex-direction: column;
+    }
+    &_left {
+      width: 40%;
+      padding-left: 100px;
+      @media (max-width: 1199px) {
+        padding-left: 50px;
+      }
+      @media (max-width: 991px) {
+        padding-left: 0px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin: 0 0 40px;
+      }
+      .heading {
+        color: #000;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107.91%;
+        margin: 0 0 34px;
+        width: 219px;
+        @media (max-width: 991px) {
+          font-size: 50px;
+          margin: 0 0 20px;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+      .title {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.092%;
+        margin: 0 0 20px;
+        @media (max-width: 991px) {
+          font-size: 18px;
+          margin: 0 0 15px;
+        }
+      }
+      .content {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130.092%;
+      }
+    }
+    &_right {
+      width: 44%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .submit_btn_outer {
+        text-align: center;
+      }
+      .siddhguru_dropdown_menu {
+        @media (max-width: 991px) {
+          width: 200px;
+        }
+        @media (max-width: 767px) {
+          width: 230px;
+        }
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+      }
+      .input_field {
+        @media (max-width: 991px) {
+          width: 200px;
+        }
+        @media (max-width: 767px) {
+          width: 230px;
+        }
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+      }
+      p.error {
+        @media (max-width: 575px) {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

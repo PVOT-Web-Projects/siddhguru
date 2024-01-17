@@ -16,6 +16,7 @@ import Knowledge from "./pages/knowledge/Knowledge";
 import Activities from "./pages/activities/Activities";
 import Centers from "./pages/centers/Centers";
 import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,6 +55,7 @@ function App() {
               <Route path="/siddhguru1/events" element={<Events />} />
               <Route path="/siddhguru1/centers" element={<Centers />} />
               <Route path="/siddhguru1/blog" element={<Blog />} />
+              <Route path="/siddhguru1/contact" element={<Contact />} />
               <Route />
             </Routes>
           </Layout>
