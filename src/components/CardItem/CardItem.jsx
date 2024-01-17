@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./cardItem.scss";
 
-const CardItem = ({ imageUrl, title, description, imageText }) => {
+const CardItem = ({ imageUrl, title, description, imageText, id }) => {
   const removeTags = (str) => {
     if (str === null || str === "") return false;
     else str = str.toString();
@@ -10,7 +10,7 @@ const CardItem = ({ imageUrl, title, description, imageText }) => {
   return (
     <div className="card_wraper">
       <div className="card_item">
-        <div className="card_image">
+        <div className={`card_image ${imageText && `image_${id}`}`}>
           <img src={imageUrl} alt="Card Image" className="card-image" />
           {imageText && <div className="imageText">{imageText}</div>}
         </div>
@@ -35,6 +35,7 @@ const CardItem = ({ imageUrl, title, description, imageText }) => {
 };
 
 CardItem.propTypes = {
+  id: PropTypes.number,
   imageUrl: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,

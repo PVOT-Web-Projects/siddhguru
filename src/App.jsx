@@ -15,6 +15,7 @@ import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
 import Knowledge from "./pages/knowledge/Knowledge";
 import Activities from "./pages/activities/Activities";
 import Centers from "./pages/centers/Centers";
+import Blog from "./pages/blog/Blog";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
               <Route path="/siddhguru1/activities" element={<Activities />} />
               <Route path="/siddhguru1/events" element={<Events />} />
               <Route path="/siddhguru1/centers" element={<Centers />} />
+              <Route path="/siddhguru1/blog" element={<Blog />} />
               <Route />
             </Routes>
           </Layout>

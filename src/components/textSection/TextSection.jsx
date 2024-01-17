@@ -1,6 +1,5 @@
 import "./textSection.scss";
-import { useRef } from "react";
-import { color, motion, useAnimation } from "framer-motion";
+import {  motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const TextSection = () => {

@@ -1,10 +1,11 @@
-import { motion, useAnimation } from "framer-motion";
-import Button from "../../components/buttons/button3";
+import { motion} from "framer-motion";
+// import Button from "../../components/buttons/button3";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
-import { Dropdown } from "primereact/dropdown";
+// import { useState } from "react";
+// import { Dropdown } from "primereact/dropdown";
 import Siddhguru_img from "../../images/homePageFormImage.png";
 import "./formHomePage.scss";
+import FormCommon from "../formCommon/FormCommon";
 
 function FormHomePage() {
   const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
@@ -28,15 +29,15 @@ function FormHomePage() {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const controls = useAnimation();
-  const [selectedCity, setSelectedCity] = useState(null);
-  const cities = [
-    { name: "English", code: "NY" },
-    { name: "Hindi", code: "RM" },
-    { name: "Gujrati", code: "LDN" },
-    { name: "Marathi", code: "IST" },
-    { name: "Bangali", code: "PRS" },
-  ];
+  // const controls = useAnimation();
+  // const [selectedCity, setSelectedCity] = useState(null);
+  // const cities = [
+  //   { name: "English", code: "NY" },
+  //   { name: "Hindi", code: "RM" },
+  //   { name: "Gujrati", code: "LDN" },
+  //   { name: "Marathi", code: "IST" },
+  //   { name: "Bangali", code: "PRS" },
+  // ];
   return (
     <div className="siddhguru_container" ref={ref}>
       <div className="siddhguru_section">
@@ -63,7 +64,7 @@ function FormHomePage() {
       <div className="siddhguru_message_section">
         <p>Receive Siddhguru’s quote every day in your inbox.</p>
       </div>
-      <div className="siddhguru_form_Section">
+      {/* <div className="siddhguru_form_Section">
         <form action="">
           <div className="sidhhguru_form_content">
             <input
@@ -98,7 +99,8 @@ function FormHomePage() {
             <Button btn_text="Sign Up" />
           </motion.div>
         </form>
-      </div>
+      </div> */}
+      <FormCommon />
     </div>
   );
 }

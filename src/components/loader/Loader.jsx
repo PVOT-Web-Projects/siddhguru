@@ -18,15 +18,15 @@ export default function Loader() {
     },
   };
 
-  const slideUp = {
-    initial: {
-      top: 0,
-    },
-    exit: {
-      top: "-100vh",
-      transition: { duration: 1.3, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
-    },
-  };
+  // const slideUp = {
+  //   initial: {
+  //     top: 0,
+  //   },
+  //   exit: {
+  //     top: "-100vh",
+  //     transition: { duration: 1.3, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
+  //   },
+  // };
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -83,14 +83,14 @@ export default function Loader() {
         {dimension.width > 0 && (
         <div className="counterContainer_wrapper">
           <div className={"counterContainer"}>
-            <motion.div
+            {/* <motion.div
               className={"percentageCounter"}
               variants={opacity}
               initial="initial"
               animate="enter"
             >
               {percentage}%
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               className={"mantra_loader"}
