@@ -1,7 +1,7 @@
 import "./topNavbar.scss";
 const TopNavbar = () => {
   return (
-    <div className="topNavbar">
+    <div className="topNavbar" id="hide-topNav">
       <div className="topNavbar_container">
         <div className="topNavbar_wrapper">
           <ul>
