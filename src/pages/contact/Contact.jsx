@@ -1,5 +1,7 @@
+import ContactAddress from "../../components/contactAddress/ContactAddress";
 import FormCommon from "../../components/formCommon/FormCommon";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+import Map from "../../map/Map";
 import "./contact.scss";
 
 const Contact = () => {
@@ -25,6 +27,8 @@ const Contact = () => {
           <FormCommon />
         </div>
       </div>
+      <ContactAddress />
+      <Map />
     </div>
   );
 };

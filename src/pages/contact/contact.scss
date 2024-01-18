@@ -12,11 +12,17 @@
       padding: 0 50px;
       flex-direction: column;
     }
+    @media (max-width: 575px) {
+      padding: 0 20px;
+    }
     &_left {
       width: 40%;
       padding-left: 100px;
-      @media (max-width: 1199px) {
+      @media(max-width:1600px){
         padding-left: 50px;
+      }
+      @media (max-width: 1199px) {
+        padding-left: 30px;
       }
       @media (max-width: 991px) {
         padding-left: 0px;
@@ -39,6 +45,10 @@
         }
         @media (max-width: 767px) {
           width: 100%;
+          font-size: 45px;
+        }
+        @media (max-width: 575px) {
+          font-size: 40px;
         }
       }
       .title {
@@ -62,7 +72,7 @@
       }
     }
     &_right {
-      width: 44%;
+      width: 50%;
       @media (max-width: 767px) {
         width: 100%;
       }

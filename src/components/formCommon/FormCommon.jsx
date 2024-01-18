@@ -5,18 +5,31 @@ import { useFormik } from "formik";
 import { FormSchemas } from "../../schemas/FormSchemas";
 import SubmitButton from "../buttons/SubmitButton";
 import "./formCommon.scss";
+import emailjs from "@emailjs/browser";
 
 const FormCommon = () => {
   const cities = [
-    { name: "English", code: "NY" },
-    { name: "Hindi", code: "RM" },
-    { name: "Gujrati", code: "LDN" },
-    { name: "Marathi", code: "IST" },
-    { name: "Bangali", code: "PRS" },
+    { name: "English" },
+    { name: "Hindi" },
+    { name: "Gujrati" },
+    { name: "Marathi" },
+    { name: "Bangali" },
   ];
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  function sendemail(object) {
+    emailjs.sendForm("service_en5qoij", "template_7ymw9ml", object, "fobUr4FlhTii3NWuL").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+      
+    );
+    console.log(object)
+  }
   const initialValue = {
     fullName: "",
     email: "",
@@ -27,9 +40,18 @@ const FormCommon = () => {
     initialValues: initialValue,
     validationSchema: FormSchemas,
     onSubmit: (value, action) => {
-      action.resetForm();
       console.log("value", value);
+      emailjs.send('service_en5qoij', 'template_ycgs2m9', values, 'fobUr4FlhTii3NWuL')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        // resetForm(); // Reset the form after successful submission
+      })
+      .catch((error) => {
+        console.error('Email send error:', error);
+      });
+      action.resetForm();
     },
+    
   });
   console.log(values);
 
@@ -87,8 +109,9 @@ const FormCommon = () => {
               optionLabel="name"
               placeholder="Language"
               className="siddhguru_dropdown_menu"
+              id="language"
               onChange={handleChange}
-              value={values.language}
+              value={values.language.name}
             />
             {touched.language && errors.language && (
               <p className="error">{errors.language}</p>
