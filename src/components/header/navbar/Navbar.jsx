@@ -179,6 +179,7 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
+
             <Link
               to={"/siddhguru1/events"}
               className="line_underscore nav-link"
@@ -192,6 +193,29 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.7 }}
             className="padding"
+
+            Events
+          </Link>
+        </motion.div>
+        <motion.p
+          ref={ref}
+          initial={{ opacity: 0, y: 0 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="padding"
+        >
+          <NavDropdown
+             title=
+                  {
+                     <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
+                  }
+            id="basic-nav-dropdown"
+            className="dropdown"
+            show={showSubMenu}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            href={"/siddhguru/centers"}
+
           >
             <NavDropdown
               title=
