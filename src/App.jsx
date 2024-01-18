@@ -39,7 +39,7 @@ function App() {
         ) : (
           <Layout>
             <ScrollTop />
-            <Routes>
+          <Routes>
               <Route path="/siddhguru1" element={<Home />} />
               <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
               <Route path="/siddhguru1/vision" element={<Vision />} />
@@ -53,7 +53,7 @@ function App() {
               <Route path="/siddhguru1/events" element={<Events />} />
               <Route path="/siddhguru1/centers" element={<Centers />} />
               <Route />
-            </Routes>
+        </Routes> 
           </Layout>
         )}
       </AnimatePresence>
