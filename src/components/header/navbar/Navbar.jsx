@@ -189,7 +189,10 @@ const Menu = () => {
           className="padding"
         >
           <NavDropdown
-            title="Centers"
+             title=
+                  {
+                     <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
+                  }
             id="basic-nav-dropdown"
             className="dropdown"
             show={showSubMenu}
