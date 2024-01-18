@@ -189,13 +189,16 @@ const Menu = () => {
           className="padding"
         >
           <NavDropdown
-            title="Centers"
+             title=
+                  {
+                     <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
+                  }
             id="basic-nav-dropdown"
             className="dropdown"
             show={showSubMenu}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            href={"/siddhguru1/centers"}
+            href={"/siddhguru/centers"}
           >
             <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
             <NavDropdown.Divider className="navbar_divider" />
