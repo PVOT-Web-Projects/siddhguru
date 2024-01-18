@@ -22,7 +22,15 @@ const Menu = () => {
   });
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [showSubMenu2, setShowSubMenu2] = useState(false);
+  const [offcanvasVisible, setOffcanvasVisible] = useState(false);
 
+  const toggleBtn = () => {
+    setOffcanvasVisible(!offcanvasVisible)
+  }
+
+  const handleOffcanvasHide = () => {
+    setOffcanvasVisible((prevVisible) => !prevVisible);
+  };
 
   const handleMouseEnter = () => {
     setShowSubMenu(true);
@@ -57,14 +65,14 @@ const Menu = () => {
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
             >
-            
-                <DropdownSubmenu
-                  title=
-                  {
-                     <Link to="/siddhguru1/the-saint" className="line_underscore nav-link">The Saint</Link>
-                  }
-                 className="react_submenu"
-                >
+
+              <DropdownSubmenu
+                title=
+                {
+                  <Link to="/siddhguru1/the-saint" className="line_underscore nav-link">The Saint</Link>
+                }
+                className="react_submenu"
+              >
 
                 <NavDropdown.Item href="#action/8.1">
                   Life in a Nutshell
@@ -80,290 +88,291 @@ const Menu = () => {
                 <NavDropdown.Divider className="navbar_divider" />
                 <NavDropdown.Item href="#action/8.1">Mission</NavDropdown.Item>
               </DropdownSubmenu>
-           
-            <NavDropdown.Divider className="navbar_divider" />
-            <DropdownSubmenu
-              href="#action/3.7"
-              title=
-                  {
-                     <Link to="/siddhguru1/Vision" className="line_underscore nav-link">Vision</Link>
-                  }
-              className="react_submenu"
-            >
 
-              <NavDropdown.Item href="#action/8.1">
-                Divine Touch (Digital Diksha)
-              </NavDropdown.Item>
               <NavDropdown.Divider className="navbar_divider" />
-              <NavDropdown.Item href="#action/8.1">
-                Siddhasana
-              </NavDropdown.Item>
-              <NavDropdown.Divider className="navbar_divider" />
-              <NavDropdown.Item href="#action/8.1">Ashram</NavDropdown.Item>
-              <NavDropdown.Divider className="navbar_divider" />
-              <NavDropdown.Item href="#action/8.1">
-                World Spiritual Forum
-              </NavDropdown.Item>
-            </DropdownSubmenu>
-            <NavDropdown.Divider className="navbar_divider" />
-            <DropdownSubmenu
-              href="#action/3.7"
-                  
-              title=
-                  {
-                     <Link to="/siddhguru1/core-wisdom" className="line_underscore nav-link">Core Wisdom</Link>
-                  }
-              className="react_submenu"
-            >
-              <NavDropdown.Item href="#action/8.1">
-                Miracles of Vedic Science
-              </NavDropdown.Item>
-            </DropdownSubmenu>
-          </NavDropdown>
-        </motion.div>
-
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          {/* <Nav.Link href="#link" className="line_underscore">
-              About Ashram
-            </Nav.Link> */}
-          <Link
-            to="/siddhguru1/about-ashram"
-            className="line_underscore nav-link"
-          >
-            About Ashram
-          </Link>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          {/* <Nav.Link href="#link" className="line_underscore">
-              Knowledge
-            </Nav.Link> */}
-          <Link
-            to="/siddhguru1/knowledge"
-            className="line_underscore nav-link"
-          >
-            Knowledge
-          </Link>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-        >
-          
-          <Link
-            to="/siddhguru1/activities"
-            className="line_underscore nav-link"
-          >
-            Activities
-          </Link>
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <Link
-            to={"/siddhguru1/events"}
-            className="line_underscore nav-link"
-          >
-            Events
-          </Link>
-        </motion.div>
-        <motion.p
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="padding"
-        >
-          <NavDropdown
-             title=
-                  {
-                     <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
-                  }
-            id="basic-nav-dropdown"
-            className="dropdown"
-            show={showSubMenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
-            <NavDropdown.Divider className="navbar_divider" />
-            <NavDropdown.Item href="#action/3.1">
-              International
-            </NavDropdown.Item>
-          </NavDropdown>
-        </motion.p>
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          {/* <Nav.Link href="#link" className="line_underscore">
-            Contact Us
-          </Nav.Link> */}
-          <Link
-            to={"/siddhguru1/contact"}
-            className="line_underscore nav-link"
-          >
-            Contact
-          </Link>
-        </motion.div>
-      </Nav>
-
-
-      {/* mobile design */}
-
-
-      <Navbar.Toggle aria-controls="offcanvasNavbar" className="Mobile" />
-      <Navbar.Offcanvas
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-        placement="end"
-      >
-        <Offcanvas.Header closeButton>
-          {/* <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title> */}
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#link">News</Nav.Link>
-            <Nav.Link href="#link">Gallery</Nav.Link>
-            <Nav.Link href="#link">Register Devotee/Volunteer</Nav.Link>
-            <Nav.Link href="#link">Donate </Nav.Link>
-            <NavDropdown
-              title="Siddhguru"
-              id="basic-nav-dropdown"
-              className="mobile_dropdown"
-            >
-              <NavDropdown
-               
+              <DropdownSubmenu
+                href="#action/3.7"
                 title=
-                  {
-                     <Link to="/siddhguru1/vision" className="nav_link_mobile">The saint</Link>
-                  }
-                id="basic-nav-dropdown"
-                className="dropdownsubmenu_btn"
+                {
+                  <Link to="/siddhguru1/Vision" className="line_underscore nav-link">Vision</Link>
+                }
+                className="react_submenu"
               >
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
-                  Life in a Nutshell
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
-                  Sadhana & Kundalini Invocation
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
-                  Siddhis and Nidhis
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
-                  Mission
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-              <NavDropdown.Divider />
-              <NavDropdown
-               title=
-                  {
-                     <Link to="/siddhguru1/core-wisdom" className="nav_link_mobile">Vision</Link>
-                  }
-                id="basic-nav-dropdown_sub"
-                className="dropdownsubmenu_btn"
-              >
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
+
+                <NavDropdown.Item href="#action/8.1">
                   Divine Touch (Digital Diksha)
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
                   Siddhasana
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
-                  Ashram
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">Ashram</NavDropdown.Item>
+                <NavDropdown.Divider className="navbar_divider" />
+                <NavDropdown.Item href="#action/8.1">
                   World Spiritual Forum
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-              </NavDropdown>
-              <NavDropdown.Divider />
-              <NavDropdown
+              </DropdownSubmenu>
+              <NavDropdown.Divider className="navbar_divider" />
+              <DropdownSubmenu
+                href="#action/3.7"
+
                 title=
-                  {
-                     <Link to="/siddhguru1/core-wisdom" className="nav_link_mobile">Core Wisdom</Link>
-                  }
-                id="basic-nav-dropdown_sub"
-                className="dropdownsubmenu_btn"
+                {
+                  <Link to="/siddhguru1/core-wisdom" className="line_underscore nav-link">Core Wisdom</Link>
+                }
+                className="react_submenu"
               >
-                <NavDropdown.Item
-                  href="#action/3.1"
-                  className="dropdownsubmenu_btn"
-                >
+                <NavDropdown.Item href="#action/8.1">
                   Miracles of Vedic Science
                 </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown.Divider />
+              </DropdownSubmenu>
             </NavDropdown>
-            <Nav.Link href="/siddhguru1/about-ashram">About Ashram</Nav.Link>
-            <Nav.Link href="/siddhguru1/knowledge">Knowledge</Nav.Link>
-            <Nav.Link href="#link">Activities</Nav.Link>
-            <Nav.Link href="/siddhguru1/events">Events</Nav.Link>
+          </motion.div>
+
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Link
+              to="/siddhguru1/about-ashram"
+              className="line_underscore nav-link"
+            >
+              About Ashram
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            {/* <Nav.Link href="#link" className="line_underscore">
+              Knowledge
+            </Nav.Link> */}
+            <Link
+              to="/siddhguru1/knowledge"
+              className="line_underscore nav-link"
+            >
+              Knowledge
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+
+            <Link
+              to="/siddhguru1/activities"
+              className="line_underscore nav-link"
+            >
+              Activities
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <Link
+              to={"/siddhguru1/events"}
+              className="line_underscore nav-link"
+            >
+              Events
+            </Link>
+          </motion.div>
+          <motion.p
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="padding"
+          >
             <NavDropdown
-              title="Centers"
+              title=
+              {
+                <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
+              }
               id="basic-nav-dropdown"
               className="dropdown"
+              show={showSubMenu}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Divider className="navbar_divider" />
               <NavDropdown.Item href="#action/3.1">
                 International
               </NavDropdown.Item>
-              <NavDropdown.Divider />
             </NavDropdown>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
-          </Nav>
-        </Offcanvas.Body>
-      </Navbar.Offcanvas>
-    </Container>
-    </Navbar >
+          </motion.p>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            <Link
+              to={"/siddhguru1/contact"}
+              className="line_underscore nav-link"
+            >
+              Contact
+            </Link>
+          </motion.div>
+        </Nav>
+
+
+        {/* mobile design */}
+
+
+        <Navbar.Toggle aria-controls="offcanvasNavbar" className="Mobile" onClick={toggleBtn} />
+        <Navbar.Offcanvas
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          placement="end"
+          show={offcanvasVisible}
+          onHide={handleOffcanvasHide}
+        >
+          <Offcanvas.Header closeButton>
+            {/* <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title> */}
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="#link">News</Nav.Link>
+              <Nav.Link href="#link">Gallery</Nav.Link>
+              <Nav.Link href="#link">Register Devotee/Volunteer</Nav.Link>
+              <Nav.Link href="#link">Donate </Nav.Link>
+              <NavDropdown
+                title="Siddhguru"
+                id="basic-nav-dropdown"
+                className="mobile_dropdown"
+              >
+                <NavDropdown
+
+                  title=
+                  {
+                    <Link to="/siddhguru1/the-saint" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)} >
+
+                      The Saint
+
+                    </Link>
+                  }
+                  id="basic-nav-dropdown"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Life in a Nutshell
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Sadhana & Kundalini Invocation
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Siddhis and Nidhis
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Mission
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
+                <NavDropdown.Divider />
+                <NavDropdown
+                  title=
+                  {
+                    <Link to="/siddhguru1/vision" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)}>Vision</Link>
+                  }
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Divine Touch (Digital Diksha)
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Siddhasana
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Ashram
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    World Spiritual Forum
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </NavDropdown>
+                <NavDropdown.Divider />
+                <NavDropdown
+
+                  title=
+                  {
+                    <Link to="/siddhguru1/core-wisdom" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)}>Core Wisdom</Link>
+                  }
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                >
+                  <NavDropdown.Item
+                    href="#action/3.1"
+                    className="dropdownsubmenu_btn"
+                  >
+                    Miracles of Vedic Science
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown.Divider />
+              </NavDropdown>
+            <Link to="/siddhguru1/about-ashram" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>About Ashram</Link>
+            <Link to="/siddhguru1/Knowledge" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Knowledge</Link>
+            <Link to="/siddhguru1/activities" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Activities</Link>
+            <Link to="/siddhguru1/events" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Events</Link>
+              <NavDropdown
+                title="Centers"
+                id="basic-nav-dropdown"
+                className="dropdown"
+              >
+                <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.1">
+                  International
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+              </NavDropdown>
+              <Link to="/siddhguru1/contact" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Contact Us</Link> 
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
   );
 };
 export default Menu;
