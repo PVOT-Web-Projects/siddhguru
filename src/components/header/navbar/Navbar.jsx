@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { Link } from "react-router-dom";
 
-
 import {
   Navbar,
   Container,
@@ -25,8 +24,8 @@ const Menu = () => {
   const [offcanvasVisible, setOffcanvasVisible] = useState(false);
 
   const toggleBtn = () => {
-    setOffcanvasVisible(!offcanvasVisible)
-  }
+    setOffcanvasVisible(!offcanvasVisible);
+  };
 
   const handleOffcanvasHide = () => {
     setOffcanvasVisible((prevVisible) => !prevVisible);
@@ -65,15 +64,17 @@ const Menu = () => {
               onMouseEnter={handleMouseEnter2}
               onMouseLeave={handleMouseLeave2}
             >
-
               <DropdownSubmenu
-                title=
-                {
-                  <Link to="/siddhguru1/the-saint" className="line_underscore nav-link">The Saint</Link>
+                title={
+                  <Link
+                    to="/siddhguru1/the-saint"
+                    className="line_underscore nav-link"
+                  >
+                    The Saint
+                  </Link>
                 }
                 className="react_submenu"
               >
-
                 <NavDropdown.Item href="#action/8.1">
                   Life in a Nutshell
                 </NavDropdown.Item>
@@ -92,13 +93,16 @@ const Menu = () => {
               <NavDropdown.Divider className="navbar_divider" />
               <DropdownSubmenu
                 href="#action/3.7"
-                title=
-                {
-                  <Link to="/siddhguru1/Vision" className="line_underscore nav-link">Vision</Link>
+                title={
+                  <Link
+                    to="/siddhguru1/Vision"
+                    className="line_underscore nav-link"
+                  >
+                    Vision
+                  </Link>
                 }
                 className="react_submenu"
               >
-
                 <NavDropdown.Item href="#action/8.1">
                   Divine Touch (Digital Diksha)
                 </NavDropdown.Item>
@@ -116,10 +120,13 @@ const Menu = () => {
               <NavDropdown.Divider className="navbar_divider" />
               <DropdownSubmenu
                 href="#action/3.7"
-
-                title=
-                {
-                  <Link to="/siddhguru1/core-wisdom" className="line_underscore nav-link">Core Wisdom</Link>
+                title={
+                  <Link
+                    to="/siddhguru1/core-wisdom"
+                    className="line_underscore nav-link"
+                  >
+                    Core Wisdom
+                  </Link>
                 }
                 className="react_submenu"
               >
@@ -165,7 +172,6 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-
             <Link
               to="/siddhguru1/activities"
               className="line_underscore nav-link"
@@ -179,7 +185,6 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-
             <Link
               to={"/siddhguru1/events"}
               className="line_underscore nav-link"
@@ -187,40 +192,19 @@ const Menu = () => {
               Events
             </Link>
           </motion.div>
+
           <motion.p
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.7 }}
             className="padding"
-
-            Events
-          </Link>
-        </motion.div>
-        <motion.p
-          ref={ref}
-          initial={{ opacity: 0, y: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="padding"
-        >
-          <NavDropdown
-             title=
-                  {
-                     <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
-                  }
-            id="basic-nav-dropdown"
-            className="dropdown"
-            show={showSubMenu}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            href={"/siddhguru/centers"}
-
           >
             <NavDropdown
-              title=
-              {
-                <Link to="/siddhguru1/centers" className="nav_link">Centers</Link>
+              title={
+                <Link to="/siddhguru1/centers" className="nav_link">
+                  Centers
+                </Link>
               }
               id="basic-nav-dropdown"
               className="dropdown"
@@ -250,11 +234,13 @@ const Menu = () => {
           </motion.div>
         </Nav>
 
-
         {/* mobile design */}
 
-
-        <Navbar.Toggle aria-controls="offcanvasNavbar" className="Mobile" onClick={toggleBtn} />
+        <Navbar.Toggle
+          aria-controls="offcanvasNavbar"
+          className="Mobile"
+          onClick={toggleBtn}
+        />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
@@ -277,13 +263,13 @@ const Menu = () => {
                 className="mobile_dropdown"
               >
                 <NavDropdown
-
-                  title=
-                  {
-                    <Link to="/siddhguru1/the-saint" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)} >
-
+                  title={
+                    <Link
+                      to="/siddhguru1/the-saint"
+                      className="nav_link_mobile"
+                      onClick={() => setOffcanvasVisible(false)}
+                    >
                       The Saint
-
                     </Link>
                   }
                   id="basic-nav-dropdown"
@@ -320,9 +306,14 @@ const Menu = () => {
                 </NavDropdown>
                 <NavDropdown.Divider />
                 <NavDropdown
-                  title=
-                  {
-                    <Link to="/siddhguru1/vision" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)}>Vision</Link>
+                  title={
+                    <Link
+                      to="/siddhguru1/vision"
+                      className="nav_link_mobile"
+                      onClick={() => setOffcanvasVisible(false)}
+                    >
+                      Vision
+                    </Link>
                   }
                   id="basic-nav-dropdown_sub"
                   className="dropdownsubmenu_btn"
@@ -358,10 +349,14 @@ const Menu = () => {
                 </NavDropdown>
                 <NavDropdown.Divider />
                 <NavDropdown
-
-                  title=
-                  {
-                    <Link to="/siddhguru1/core-wisdom" className="nav_link_mobile" onClick={() => setOffcanvasVisible(false)}>Core Wisdom</Link>
+                  title={
+                    <Link
+                      to="/siddhguru1/core-wisdom"
+                      className="nav_link_mobile"
+                      onClick={() => setOffcanvasVisible(false)}
+                    >
+                      Core Wisdom
+                    </Link>
                   }
                   id="basic-nav-dropdown_sub"
                   className="dropdownsubmenu_btn"
@@ -375,10 +370,34 @@ const Menu = () => {
                 </NavDropdown>
                 <NavDropdown.Divider />
               </NavDropdown>
-            <Link to="/siddhguru1/about-ashram" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>About Ashram</Link>
-            <Link to="/siddhguru1/Knowledge" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Knowledge</Link>
-            <Link to="/siddhguru1/activities" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Activities</Link>
-            <Link to="/siddhguru1/events" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Events</Link>
+              <Link
+                to="/siddhguru1/about-ashram"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                About Ashram
+              </Link>
+              <Link
+                to="/siddhguru1/Knowledge"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Knowledge
+              </Link>
+              <Link
+                to="/siddhguru1/activities"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Activities
+              </Link>
+              <Link
+                to="/siddhguru1/events"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Events
+              </Link>
               <NavDropdown
                 title="Centers"
                 id="basic-nav-dropdown"
@@ -391,7 +410,13 @@ const Menu = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>
-              <Link to="/siddhguru1/contact" className="mobile_nav_link" onClick={() => setOffcanvasVisible(false)}>Contact Us</Link> 
+              <Link
+                to="/siddhguru1/contact"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Contact Us
+              </Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

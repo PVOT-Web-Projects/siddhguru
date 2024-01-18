@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./topNavbar.scss";
 const TopNavbar = () => {
   return (
@@ -6,7 +7,7 @@ const TopNavbar = () => {
         <div className="topNavbar_wrapper">
           <ul>
             <li>
-              <a href="#">News</a>
+              <Link to="/siddhguru1/news">News</Link>
             </li>
             <li>
               <a href="#">Gallery</a>
