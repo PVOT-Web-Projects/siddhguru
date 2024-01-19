@@ -1,0 +1,31 @@
+.iconWithText {
+  &_wrapper {
+    width: 806px;
+    margin: 0 auto;
+    .iconWithText {
+      display: flex;
+      justify-content: end;
+    //   padding-left: 150px;
+    margin: 0 0 20px;
+      &_left {
+        width: 5%;
+        text-align: center;
+        img {
+        }
+      }
+      &_right {
+        padding-left: 20px;
+        width: 60%;
+        p {
+          color: #000;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 57.78px */
+          letter-spacing: -0.72px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

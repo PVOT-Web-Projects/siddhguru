@@ -19,9 +19,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
-
 import Gallery from "./pages/Gallary/gallary";
-import Devotee from "./pages/devotee/Devotee";
 
 
 function App() {
