@@ -10,10 +10,10 @@ const TopNavbar = () => {
               <Link to="/siddhguru1/news">News</Link>
             </li>
             <li>
-            <Link to="/siddhguru1/galary">Gallery</Link>
+              <Link to="/siddhguru1/galary">Gallery</Link>
             </li>
             <li>
-              <a href="#">Register Devotee/Volunteer</a>
+              <Link to="/siddhguru1/devotee">Register Devotee/Volunteer</Link>
             </li>
             <li>
               <a href="#">Donate</a>
