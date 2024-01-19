@@ -2,7 +2,8 @@ import "./devotee.scss";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import IconWithText from "../../components/iconWithText/IconWithText";
-import Button from "../../components/buttons/button";
+import Button from "../../components/buttons/button3";
+import { Link } from "react-router-dom";
 const Devotee = () => {
   return (
     <div className="devotee">
@@ -14,6 +15,16 @@ const Devotee = () => {
       />
       <IconWithText />
       <Button btn_text="Login" />
+      <div className="links">
+        <div className="links_wrapper">
+          <div className="links_wrapper_left">
+            <Link to="#">Create account</Link>
+          </div>
+          <div className="links_wrapper_right">
+            <Link to="#">Forgot your password?</Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
