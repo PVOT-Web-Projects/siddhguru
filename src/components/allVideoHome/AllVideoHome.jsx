@@ -36,10 +36,10 @@ function AllVideoHome() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="sidhhguru_gurudev_second_content"
               >
-                <a
+                {/* <a
                   href="https://www.instagram.com/p/C1ovE2VtnlX/"
                   target="_blank"
-                >
+                > */}
                   <img
                     src={sidhhguru_layout1}
                     alt="none"
@@ -51,7 +51,7 @@ function AllVideoHome() {
                       <br /> and spiritual interventions.
                     </p>
                   </div>
-                </a>
+                {/* </a> */}
               </motion.div>
               <motion.div
                 ref={ref}
@@ -60,7 +60,7 @@ function AllVideoHome() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="sidhhguru_gurudev_second_content"
               >
-                <a href="https://www.instagram.com/p/CxaBjzHM4Ku/" target="_blank">
+                {/* <a href="https://www.instagram.com/p/CxaBjzHM4Ku/" target="_blank"> */}
                   <img
                     src={sidhhguru_layout2}
                     alt="none"
@@ -72,7 +72,7 @@ function AllVideoHome() {
                       <br /> divine wisdom of Sri Sidhhguru.
                     </p>
                   </div>
-                </a>
+                {/* </a> */}
               </motion.div>
             </div>
           </div>
