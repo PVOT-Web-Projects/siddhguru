@@ -21,6 +21,7 @@ import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
 
 import Gallery from "./pages/Gallary/gallary";
+import Devotee from "./pages/devotee/Devotee";
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
               <Route path="/siddhguru1/contact" element={<Contact />} />
               <Route path="/siddhguru1/news" element={<News />} />
               <Route path="/siddhguru1/galary" element={<Gallery />} />
+              <Route path="/siddhguru1/devotee" element={<Devotee />} />
               <Route />
             </Routes>
           </Layout>
