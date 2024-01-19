@@ -18,6 +18,7 @@ import Centers from "./pages/centers/Centers";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
+import Devotee from "./pages/devotee/Devotee";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
