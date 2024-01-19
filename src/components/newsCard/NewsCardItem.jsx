@@ -22,6 +22,7 @@ const NewsCardItem = ({ image, title, content, date }) => {
             <div className="newsCardItem_wrapper_right_inner_bottomText">
               <div className="left">Ahmedabad/Report</div>
               <div className="right">{date}</div>
+              <div className="right"></div>
             </div>
           </div>
         </div>

@@ -18,7 +18,9 @@ import Centers from "./pages/centers/Centers";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
+
 import Gallery from "./pages/Gallary/gallary";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
