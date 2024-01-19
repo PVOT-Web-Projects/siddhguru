@@ -1,0 +1,45 @@
+.galary_image_conatainer
+{
+    padding:5rem 6rem;
+    @media (max-width:769px) {
+
+        padding:5rem 3rem;
+}
+   
+    @media (max-width:426px) {
+
+        padding:5rem 2rem;
+}
+@media (max-width:320px) {
+
+    padding:5rem 10px;
+}
+  
+    .galary_image
+    {
+        display: flex;
+        flex-wrap:wrap;
+       
+        width: 100%;
+    }
+    .galaryimg{
+        max-width: 100%;
+        display: block;
+
+    }
+    .galary_img1
+    {
+        width: 33.33%;
+        padding: 20px;
+    @media (max-width:769px) {
+
+            width: 50%;
+    }
+    @media (max-width:426px) {
+
+        width: 100%;
+}
+       
+    }
+
+}

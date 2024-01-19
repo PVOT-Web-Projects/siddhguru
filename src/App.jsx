@@ -18,7 +18,9 @@ import Centers from "./pages/centers/Centers";
 import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
-import Devotee from "./pages/devotee/Devotee";
+
+import Gallery from "./pages/Gallary/gallary";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -76,6 +78,7 @@ function App() {
               <Route path="/siddhguru1/blog" element={<Blog />} />
               <Route path="/siddhguru1/contact" element={<Contact />} />
               <Route path="/siddhguru1/news" element={<News />} />
+              <Route path="/siddhguru1/galary" element={<Gallery />} />
               <Route />
             </Routes>
           </Layout>
