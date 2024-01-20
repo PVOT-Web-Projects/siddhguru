@@ -1,3 +1,4 @@
+import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactAddress from "../../components/contactAddress/ContactAddress";
 import FormCommon from "../../components/formCommon/FormCommon";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
@@ -24,7 +25,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact_wrapper_right">
-          <FormCommon />
+          {/* <FormCommon /> */}
+          <ContactForm />
         </div>
       </div>
       <ContactAddress />

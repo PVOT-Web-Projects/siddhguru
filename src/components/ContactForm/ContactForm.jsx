@@ -1,13 +1,13 @@
+import "./contactForm.scss";
 import { useInView } from "react-intersection-observer";
 import { Dropdown } from "primereact/dropdown";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
-import { FormSchemas } from "../../schemas/FormSchemas";
+import { ContactSchemas } from "../../schemas/FormSchemas";
 import SubmitButton from "../buttons/SubmitButton";
-import "./formCommon.scss";
 import emailjs from "@emailjs/browser";
 
-const FormCommon = () => {
+const ContactForm = () => {
   const cities = [
     { name: "English" },
     { name: "Hindi" },
@@ -18,45 +18,40 @@ const FormCommon = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  // function sendemail(object) {
-  //   emailjs.sendForm("service_en5qoij", "template_7ymw9ml", object, "fobUr4FlhTii3NWuL").then(
-  //     (result) => {
-  //       console.log(result.text);
-  //     },
-  //     (error) => {
-  //       console.log(error.text);
-  //     }
-      
-  //   );
-  //   console.log(object)
-  // }
+
   const initialValue = {
     fullName: "",
     email: "",
     country: "",
     language: "",
+    message: "",
   };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,
-    validationSchema: FormSchemas,
+    validationSchema: ContactSchemas,
     onSubmit: (value, action) => {
       console.log("value", value);
-      emailjs.send('service_en5qoij', 'template_ycgs2m9', values, 'fobUr4FlhTii3NWuL')
-      .then((response) => {
-        console.log('Email sent successfully:', response);
-        // resetForm(); // Reset the form after successful submission
-      })
-      .catch((error) => {
-        console.error('Email send error:', error);
-      });
+      emailjs
+        .send(
+          "service_en5qoij",
+          "template_ycgs2m9",
+          values,
+          "fobUr4FlhTii3NWuL"
+        )
+        .then((response) => {
+          console.log("Email sent successfully:", response);
+          // resetForm(); // Reset the form after successful submission
+        })
+        .catch((error) => {
+          console.error("Email send error:", error);
+        });
       action.resetForm();
     },
-    
   });
   console.log(values);
 
   return (
-    <div className="siddhguru_form_Section">
+    <div className="contactForm">
       <form onSubmit={handleSubmit}>
         <div className="sidhhguru_form_content">
           <div className="formField">
@@ -118,6 +113,19 @@ const FormCommon = () => {
             )}
           </div>
         </div>
+        <div className="formField textAreaFieal">
+          <textarea
+            name="message"
+            placeholder="Message"
+            className="textarea"
+            value={values.message}
+            onChange={handleChange}
+            rows={"3"}
+          ></textarea>
+          {touched.message && errors.message && (
+            <p className="error">{errors.message}</p>
+          )}
+        </div>
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -133,4 +141,4 @@ const FormCommon = () => {
   );
 };
 
-export default FormCommon;
+export default ContactForm;

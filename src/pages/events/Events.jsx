@@ -8,14 +8,18 @@ import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
 import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
 import fullWidthImage from "../../images/fullWidthImage1.png";
+import Spinner from "../../components/spinner/Spinner";
 const Events = () => {
   const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
     axios
       .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/posts/?_embed")
       .then((response) => {
         setEvents(response.data);
         console.log(response.data);
+        setLoading(false);
       })
       .catch((error) => console.error(error));
   }, []);
@@ -34,20 +38,24 @@ const Events = () => {
           "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
       />
-      <div className="cardList">
-        {events?.map((item) => (
-          <CardItem
-            key={item.id}
-            imageUrl={
-              item._embedded["wp:featuredmedia"] &&
-              item._embedded["wp:featuredmedia"][0].media_details.sizes.full
-                .source_url
-            }
-            title={item.title.rendered}
-            description={item.excerpt.rendered}
-          />
-        ))}
-      </div>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <div className="cardList">
+          {events?.map((item) => (
+            <CardItem
+              key={item.id}
+              imageUrl={
+                item._embedded["wp:featuredmedia"] &&
+                item._embedded["wp:featuredmedia"][0].media_details.sizes.full
+                  .source_url
+              }
+              title={item.title.rendered}
+              description={item.excerpt.rendered}
+            />
+          ))}
+        </div>
+      )}
       <FormHomePage />
     </div>
   );
