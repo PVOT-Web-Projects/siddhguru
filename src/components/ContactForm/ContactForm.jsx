@@ -158,6 +158,7 @@ const ContactForm = () => {
             pauseOnHover={false}
             theme="light"
             transition={Slide}
+            className={"contactFormNotification"}
             // progressStyle={{ background: "#f90" }}
           />
         )}
