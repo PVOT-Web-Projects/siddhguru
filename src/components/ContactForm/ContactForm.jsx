@@ -6,8 +6,12 @@ import { useFormik } from "formik";
 import { ContactSchemas } from "../../schemas/FormSchemas";
 import SubmitButton from "../buttons/SubmitButton";
 import emailjs from "@emailjs/browser";
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [formResponse, setFormResponse] = useState("");
   const cities = [
     { name: "English" },
     { name: "Hindi" },
@@ -18,6 +22,10 @@ const ContactForm = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+
+  const submitMessage = () => {
+    toast.success("Form Submitted Successfully...");
+  };
 
   const initialValue = {
     fullName: "",
@@ -40,16 +48,18 @@ const ContactForm = () => {
         )
         .then((response) => {
           console.log("Email sent successfully:", response);
-          // resetForm(); // Reset the form after successful submission
+          setFormResponse(response);
+          action.resetForm();
         })
         .catch((error) => {
           console.error("Email send error:", error);
         });
-      action.resetForm();
+      submitMessage();
+     
     },
   });
   console.log(values);
-
+  console.log("response", formResponse.text);
   return (
     <div className="contactForm">
       <form onSubmit={handleSubmit}>
@@ -133,9 +143,24 @@ const ContactForm = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="submit_btn_outer"
         >
-          {/* <Button btn_text="Sign Up" /> */}
           <SubmitButton btn_text="Sign Up" />
         </motion.div>
+        {formResponse.text === "OK" && (
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={true}
+            rtl={false}
+            pauseOnFocusLoss={false}
+            draggable={false}
+            pauseOnHover={false}
+            theme="light"
+            transition={Slide}
+            // progressStyle={{ background: "#f90" }}
+          />
+        )}
       </form>
     </div>
   );
