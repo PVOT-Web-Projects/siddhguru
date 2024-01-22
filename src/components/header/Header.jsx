@@ -4,7 +4,7 @@ import Menu from "./navbar/Navbar";
 
 const Header = () => {
   return (
-    <div className="header" id="hide-header">
+    <div className="header">
       <div className="header_container">
         <div className="header_wrapper">
           <Logo />

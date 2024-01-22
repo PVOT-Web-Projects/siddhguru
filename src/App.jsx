@@ -22,7 +22,6 @@ import Devotee from "./pages/devotee/Devotee";
 import Gallery from "./pages/Gallary/gallary";
 import Devotee from "./pages/devotee/Devotee";
 
-
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -43,13 +42,10 @@ function App() {
   //   window.onscroll = function () {
   //     var currentScrollPos = window.pageYOffset;
   //     if (prevScrollpos > currentScrollPos) {
-  //       document.getElementById("hide-header").style.top = "30px";
-  //       document.getElementById("hide-topNav").style.top = "0";
+  //       document.getElementById("hide-header").style.top = "0px";
   //     } else {
   //       document.getElementById("hide-header").style.top =
-  //         "-140px"; /* adjust this value to the height of your header */
-  //       document.getElementById("hide-topNav").style.top =
-  //         "-140px"; /* adjust this value to the height of your header */
+  //         "-200px"; /* adjust this value to the height of your header */
   //     }
   //     prevScrollpos = currentScrollPos;
   //   };

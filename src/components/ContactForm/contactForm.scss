@@ -1,21 +1,28 @@
 .contactForm {
+  padding: 0 40px;
+  @media(max-width:991px){
+    padding: 0 20px;
+  }
+  @media(max-width:767px){
+    padding: 0;
+  }
   .input_field {
     background: #d9d9d9;
     outline: none;
     border: none;
-    padding: 10px 35px 10px 15px;
-    width: 230px;
-    margin: 0 20px;
+    padding: 10px 20px 10px 15px;
+    width: 100%;
+   
     @media (max-width: 575px) {
       margin: 0;
-      width: 90%;
+      width: 100%;
     }
   }
 
   .sidhhguru_form_content {
     // padding-top: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 0 2rem;
 
     @media (max-width: 575px) {
@@ -37,19 +44,22 @@
   }
   .siddhguru_dropdown_menu {
     background-color: #d9d9d9;
-    width: 230px;
-    margin: 0 20px;
+    width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     @media (max-width: 575px) {
-      width: 90%;
+      width: 100%;
       margin: 0;
     }
   }
 
   .formField {
+    width: 48%;
+    @media(max-width:575px){
+      width: 100%;
+    }
     &.textAreaFieal {
-      width: 300px;
+      width: 100%;
       margin: 0 auto 20px;
       text-align: center;
       @media (max-width: 575px) {
@@ -69,11 +79,11 @@
       margin: 0 0 20px;
     }
   }
-  .contactFormNotification{
-    @media(max-width:575px){
-        width: 90%;
-        margin: 50px auto 0;
-        font-size: 14px;
+  .contactFormNotification {
+    @media (max-width: 575px) {
+      width: 90%;
+      margin: 50px auto 0;
+      font-size: 14px;
     }
   }
 }

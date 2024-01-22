@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 const CorePillarsItem = ({ image, title, id }) => {
   return (
-    <div className="corePillarsItem">
-      <div className={`corePillarsItem_image image_${id}`}>
+    <div className={`corePillarsItem image_${id}`}>
+      <div className={`corePillarsItem_image`}>
         <img src={image} alt={title}  />
         <div className="title">{title}</div>
       </div>

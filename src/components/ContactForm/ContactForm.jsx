@@ -143,7 +143,7 @@ const ContactForm = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="submit_btn_outer"
         >
-          <SubmitButton btn_text="Sign Up" />
+          <SubmitButton btn_text="Send Message" />
         </motion.div>
         {formResponse.text === "OK" && (
           <ToastContainer
