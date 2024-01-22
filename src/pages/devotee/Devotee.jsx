@@ -20,9 +20,9 @@ const Devotee = () => {
           <div className="links_wrapper_left">
             <Link to="#">Create account</Link>
           </div>
-          <div className="links_wrapper_right">
+          {/* <div className="links_wrapper_right">
             <Link to="#">Forgot your password?</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
