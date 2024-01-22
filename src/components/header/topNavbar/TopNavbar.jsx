@@ -9,8 +9,11 @@ const TopNavbar = () => {
             <li>
               <Link to="/siddhguru1/news">News</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/siddhguru1/galary">Gallery</Link>
+            </li> */}
+            <li>
+              <Link to="/siddhguru1/blog">Blogs</Link>
             </li>
             <li>
               <Link to="/siddhguru1/devotee">Register Devotee/Volunteer</Link>
