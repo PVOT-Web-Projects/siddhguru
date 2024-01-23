@@ -88,7 +88,7 @@
           &_right {
             display: flex;
             background-color: #fff;
-            padding: 10px;
+            padding: 15px 10px 10px;
             width: 350px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -99,13 +99,16 @@
             @media (max-width: 1199px) {
               width: 290px;
             }
+            @media (max-width: 991px) {
+              padding: 10px;
+            }
             @media (max-width: 767px) {
               width: 65%;
             }
             .eventItem_content {
               h5 {
                 color: #000;
-                font-size: 16px;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
@@ -121,15 +124,25 @@
               }
               .date {
                 color: #9c9c9c;
-                font-size: 8px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
                 font-family: "Poppins";
+                width: 180px;
+                @media (max-width: 991px) {
+                  width: 160px;
+                }
+                @media (max-width: 767px) {
+                  width: 90%;
+                }
+                @media (max-width: 575px) {
+                  width: 65%;
+                }
               }
               .location {
                 color: #208df2;
-                font-size: 8px;
+                font-size: 12px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 250%;
@@ -141,7 +154,7 @@
               position: absolute;
               top: -34px;
               right: 42px;
-              @media(max-width:1600px){
+              @media (max-width: 1600px) {
                 right: 38px;
               }
               @media (max-width: 1199px) {
@@ -185,6 +198,7 @@
                 border-bottom-right-radius: 15px;
                 border-bottom-left-radius: 15px;
                 padding: 0 5px;
+                text-align: center;
                 @media (max-width: 1199px) {
                   font-size: 45px;
                 }
