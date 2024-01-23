@@ -3,9 +3,11 @@
     display: none;
   }
 }
-.navbar.navbar-light {
-  position: fixed;
-  right: 20px;
+@media (max-width: 991px) {
+  .navbar.navbar-light {
+    position: fixed;
+    right: 20px;
+  }
 }
 .dropdown {
   position: relative;
