@@ -10,15 +10,17 @@ const Contact = () => {
       <InnerPageCommonHeading heading={"Contact"} />
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
-          <div className="heading">Connection & Devotion</div>
+          <div className="heading">
+            Stay connected with Gurudev's blessings!
+          </div>
           <div className="title">
             {
-              "Whether you seek guidance, have questions, or wish to share your experiences, we welcome you with open hearts."
+              "Subscribe to our monthly newsletters and open the gateway to a world of spiritual wisdom. Immerse yourself in stories of Vedic science, unravel the daily learning lessons from Gurudev, and discover the transformative power of divine knowledge."
             }
           </div>
           <div className="content">
             {
-              "Feel free to reach out to us using the contact form below. Our dedicated team is here to assist you on your spiritual journey. Please allow us some time to respond, as we receive a significant volume of messages from our beloved devotees."
+              "By subscribing, you join a community that cherishes holistic well-being and a deeper connection to the profound teachings of Siddhguru. Let the newsletter be your guide on this sacred journey, offering insights, inspiration, and a continuous flow of Gurudev's blessings right to your inbox. Subscribe now and embark on a path of spiritual growth and enlightenment."
             }
           </div>
         </div>

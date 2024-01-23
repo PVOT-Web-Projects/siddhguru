@@ -18,7 +18,7 @@
     &_left {
       width: 40%;
       padding-left: 100px;
-      @media(max-width:1600px){
+      @media (max-width: 1600px) {
         padding-left: 50px;
       }
       @media (max-width: 1199px) {
@@ -33,23 +33,27 @@
       }
       .heading {
         color: #000;
-        font-size: 60px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 400;
         line-height: 107.91%;
         margin: 0 0 34px;
-        width: 330px;
+        width: 355px;
+        @media (max-width: 1199px) {
+          font-size: 45px;
+          margin: 0 0 20px;
+          width: 330px;
+        }
         @media (max-width: 991px) {
-          font-size: 50px;
+          font-size: 40px;
           margin: 0 0 20px;
           width: 290px;
         }
         @media (max-width: 767px) {
           width: 100%;
-          font-size: 45px;
         }
         @media (max-width: 575px) {
-          font-size: 40px;
+          font-size: 36px;
         }
       }
       .title {
