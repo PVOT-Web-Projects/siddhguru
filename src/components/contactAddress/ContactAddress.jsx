@@ -4,18 +4,21 @@ import "./contactAddress.scss";
 const contactAddressData = [
   {
     heading: "Address",
-    address:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+    address: "Sri Siddeshwar Teerth Brahmrishi Ashram, Ravi, Gujarat",
   },
   {
-    heading: "Address",
-    address:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+    heading: "Contact",
+    // address:
+    //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+    number1: "918887776665",
+    number2: "917776665554",
   },
   {
-    heading: "Address",
-    address:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+    heading: "Get in Touch",
+    // address:
+    //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
+    mail1: "devotee@shribrahmarishi.org",
+    mail2: "info@brahamarishi.org",
   },
 ];
 
