@@ -1,9 +1,12 @@
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .Mobile {
     display: none;
   }
 }
-
+.navbar.navbar-light {
+  position: fixed;
+  right: 20px;
+}
 .dropdown {
   position: relative;
   top: 40%;
