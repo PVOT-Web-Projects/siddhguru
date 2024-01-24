@@ -24,7 +24,7 @@ import Devotee from "./pages/devotee/Devotee";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoading2, setIsLoading2] = useState(true);
+  // const [isLoading2, setIsLoading2] = useState(true);
 
   setTimeout(() => {
     setIsLoading(false);
