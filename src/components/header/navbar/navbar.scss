@@ -34,6 +34,18 @@ button.Mobile.navbar-toggler.collapsed {
   left: 100%;
   top: 0;
 }
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  width: fit-content;
+  display: block;
+  @media (max-width: 991px) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
 .dropdown-menu[data-bs-popper] {
   margin: 0 !important;
 }
@@ -111,6 +123,8 @@ button.Mobile.navbar-toggler.collapsed {
   padding-left: 20px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+  text-decoration: none;
+  color: black;
 }
 
 .dropdown-divider {
