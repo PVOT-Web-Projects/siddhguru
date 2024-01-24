@@ -253,7 +253,7 @@ const Menu = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Link
+              {/* <Link
                 to="/siddhguru1/news"
                 className="nav_link_mobile"
                 onClick={() => setOffcanvasVisible(false)}
@@ -268,7 +268,7 @@ const Menu = () => {
               >
                 Register Devotee/Volunteer
               </Link>
-              <Nav.Link href="#link">Donate </Nav.Link>
+              <Nav.Link href="#link">Donate </Nav.Link> */}
               <NavDropdown
                 title="Siddhguru"
                 id="basic-nav-dropdown"
@@ -428,6 +428,26 @@ const Menu = () => {
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Contact Us
+              </Link>
+              <Link
+                to="/siddhguru1/news"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                News
+              </Link>
+              <Link to="#" className="mobile_nav_link">
+                Gallery
+              </Link>
+              <Link
+                to="/siddhguru1/devotee"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Register Devotee/Volunteer
+              </Link>
+              <Link className="mobile_nav_link" href="#">
+                Donate
               </Link>
             </Nav>
           </Offcanvas.Body>
