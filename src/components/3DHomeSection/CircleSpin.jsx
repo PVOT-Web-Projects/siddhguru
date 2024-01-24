@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./homePage3D.scss";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 import image from "../../images/3D image.svg";
 // import HomePage3D from "./HomePage3D";
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 // https://iraoverseas.com/wp-content/uploads/2024/01/0000001.png
 
@@ -16,10 +16,10 @@ const CircleSpin = () => {
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
   let refs = useRef([]);
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     const section = sectionRef.current;
-    const canvas = canvasRef.current;
+    // const canvas = canvasRef.current;
     // const text = textRef.current;
     // const context = canvas.getContext("2d");
     // contextRef.current = context;
@@ -120,7 +120,7 @@ const CircleSpin = () => {
     });
     return letters;
   };
-  console.log(refs);
+  // console.log(refs);
 
   return (
     <>
