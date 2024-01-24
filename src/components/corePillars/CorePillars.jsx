@@ -49,7 +49,7 @@ const CorePillars = () => {
     >
       <div className="corePillars_wrapper">
         <div className="corePillars_wrapper_heading">
-          <h3>{"The core Pillars of Ashram are:"}</h3>
+          <h3>{"The Core Pillars of Ashram are:"}</h3>
         </div>
         <div className="corePillars_wrapper_images">
           {corePillarsData.map((item) => (

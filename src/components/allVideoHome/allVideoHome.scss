@@ -52,8 +52,10 @@
             gap: 20px;
           }
           .sidhhguru_gurudev_second_content {
+            display: flex;
+            flex-direction: column;
             padding: 0 10px;
-            a{
+            a {
               text-decoration: none;
             }
           }
@@ -113,6 +115,7 @@
       text-align: center;
       box-shadow: 19.01px 22.812px 37.069px -24.713px rgba(0, 0, 0, 0.71);
       padding: 2rem 0;
+      height: 100%;
       @media (max-width: 991px) {
         padding: 1rem 0;
       }
@@ -128,7 +131,6 @@
     }
     .lotus_img_outer {
       text-align: center;
-      ;
       @media (max-width: 767px) {
         text-align: center;
         position: absolute;
@@ -143,7 +145,7 @@
       @media (min-width: 1600px) {
         height: 58vh;
       }
-      @media(max-width:1440px){
+      @media (max-width: 1440px) {
         height: 44vh;
       }
       @media (max-width: 767px) {

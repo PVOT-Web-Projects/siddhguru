@@ -253,9 +253,21 @@ const Menu = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#link">News</Nav.Link>
+              <Link
+                to="/siddhguru1/news"
+                className="nav_link_mobile"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                News
+              </Link>
               <Nav.Link href="#link">Gallery</Nav.Link>
-              <Nav.Link href="#link">Register Devotee/Volunteer</Nav.Link>
+              <Link
+                to="/siddhguru1/devotee"
+                className="nav_link_mobile"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Register Devotee/Volunteer
+              </Link>
               <Nav.Link href="#link">Donate </Nav.Link>
               <NavDropdown
                 title="Siddhguru"

@@ -2,17 +2,21 @@ import { useEffect, useState } from "react";
 import "./news.scss";
 import axios from "axios";
 import NewsCardItem from "../../components/newsCard/NewsCardItem";
+import Spinner from "../../components/spinner/Spinner";
 
 const News = () => {
   const [news, setNews] = useState([]);
   const [categoryValue, setCategoryValue] = useState("national");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     axios
       .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/news/?_embed")
       .then((response) => {
         setNews(response.data);
         console.log(response.data);
+        setLoading(false);
       })
       .catch((error) => console.error(error));
   }, []);
@@ -52,26 +56,28 @@ const News = () => {
           </div>
         </div>
         <div className="news_wrapper_cardList">
-          {news?.map((item) => {
-            console.log(item._embedded["wp:term"][0][0].slug);
-            return (
-              <>
-                {item._embedded["wp:term"][0][0].slug === categoryValue && (
-                  <NewsCardItem
-                    key={item.id}
-                    image={
-                      item._embedded["wp:featuredmedia"] &&
-                      item._embedded["wp:featuredmedia"][0].media_details.sizes
-                        .full.source_url
-                    }
-                    title={item.title.rendered}
-                    content={item.content.rendered}
-                  />
-                )}
-                
-              </>
-            );
-          })}
+          {loading ? (
+            <Spinner />
+          ) : (
+            news?.map((item) => {
+              return (
+                <>
+                  {item._embedded["wp:term"][0][0].slug === categoryValue && (
+                    <NewsCardItem
+                      key={item.id}
+                      image={
+                        item._embedded["wp:featuredmedia"] &&
+                        item._embedded["wp:featuredmedia"][0].media_details
+                          .sizes.full.source_url
+                      }
+                      title={item.title.rendered}
+                      content={item.content.rendered}
+                    />
+                  )}
+                </>
+              );
+            })
+          )}
         </div>
       </div>
     </div>

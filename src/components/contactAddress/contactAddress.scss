@@ -1,35 +1,35 @@
 .contactAddress {
-    padding: 42px 0 0;
-    border-top: 1px solid #000;
-    margin: 0 133px 96px;
-    @media(max-width:1199px){
-        margin: 0 100px 96px;
-    }
-    @media(max-width:991px){
-        margin: 0 50px 96px;
-    }
-    @media(max-width:575px){
-        margin: 0 20px 96px;
-    }
+  padding: 42px 0 0;
+  border-top: 1px solid #000;
+  margin: 0 133px 96px;
+  @media (max-width: 1199px) {
+    margin: 0 100px 96px;
+  }
+  @media (max-width: 991px) {
+    margin: 0 50px 96px;
+  }
+  @media (max-width: 575px) {
+    margin: 0 20px 96px;
+  }
   &_wrapper {
     display: flex;
     justify-content: space-between;
-    @media(max-width:767px){
-        flex-wrap: wrap;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
     }
     .contactAddressItem {
-        width: 295px;
-        padding: 0 20px;
-        @media(max-width:767px){
-            margin: 0 0 40px;
-            width: 50%;
-        }
-        @media(max-width:575px){
-            margin: 0 0 40px;
-            width: 100%;
-            padding: 0;
-        }
-       
+      width: 295px;
+      padding: 0 20px;
+      @media (max-width: 767px) {
+        margin: 0 0 40px;
+        width: 50%;
+      }
+      @media (max-width: 575px) {
+        margin: 0 0 40px;
+        width: 100%;
+        padding: 0;
+      }
+
       .heading {
         color: #000;
         font-size: 20px;
@@ -44,6 +44,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 130.092%;
+      }
+      .number {
+        a {
+          text-decoration: none;
+          color: black;
+          transition: all 0.4s;
+          &:hover {
+            color: #f90;
+          }
+        }
       }
     }
   }

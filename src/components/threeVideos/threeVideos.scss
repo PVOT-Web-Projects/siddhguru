@@ -1,0 +1,52 @@
+
+.threeVideos {
+  padding: 80px 150px;
+  background-color: rgba(255, 234, 174, 0.16);
+  @media (max-width: 991px) {
+    padding: 60px 120px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 30px;
+  }
+  @media (max-width: 575px) {
+    padding: 60px 20px;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      margin: 0;
+    }
+    .threeVideoItem {
+      width: 33.33%;
+
+      @media (max-width: 575px) {
+        width: 100%;
+        margin: 0 0 20px;
+      }
+      &_wrapper {
+        padding: 0 10px;
+        position: relative;
+        @media (max-width: 575px) {
+          padding: 0;
+        }
+        video {
+          width: 100%;
+        }
+        button {
+          border: none;
+          background-color: transparent;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

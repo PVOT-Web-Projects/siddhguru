@@ -18,18 +18,18 @@ const FormCommon = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  function sendemail(object) {
-    emailjs.sendForm("service_en5qoij", "template_7ymw9ml", object, "fobUr4FlhTii3NWuL").then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
+  // function sendemail(object) {
+  //   emailjs.sendForm("service_en5qoij", "template_7ymw9ml", object, "fobUr4FlhTii3NWuL").then(
+  //     (result) => {
+  //       console.log(result.text);
+  //     },
+  //     (error) => {
+  //       console.log(error.text);
+  //     }
       
-    );
-    console.log(object)
-  }
+  //   );
+  //   console.log(object)
+  // }
   const initialValue = {
     fullName: "",
     email: "",
@@ -111,7 +111,7 @@ const FormCommon = () => {
               className="siddhguru_dropdown_menu"
               id="language"
               onChange={handleChange}
-              value={values.language.name}
+              value={values.language}
             />
             {touched.language && errors.language && (
               <p className="error">{errors.language}</p>

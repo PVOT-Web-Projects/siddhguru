@@ -6,6 +6,9 @@
     position: relative;
     height: calc(100vh - 40px);
     padding: 30px 0;
+    @media (max-width: 575px) {
+      height: calc(100vh - 120px);
+    }
     h2 {
       text-align: center;
       padding: 60px 0 0;
@@ -34,9 +37,7 @@
         }
       }
     }
-    @media (max-width: 575px) {
-      height: calc(100vh - 200px);
-    }
+
     .hero_section_wrapper_inner {
       position: absolute;
       bottom: -440px;

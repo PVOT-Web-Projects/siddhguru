@@ -10,6 +10,7 @@ import HomePageSlider1 from "../../components/homePageSlider1/HomePageSlider1";
 import HomePageVideoSection from "../../components/homePageVideoSection/HomePageVideoSection";
 import OurProgramSlider from "../../components/ourProgramSlider/OurProgramSlider";
 import TextSection from "../../components/textSection/TextSection";
+import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
       <TextSection />
       <HomePageSlider1 />
       <AboutAshram />
+      <ThreeVideos />
       <CircleSpin />
       <EventsHomePage />
       <BrahmSutra />

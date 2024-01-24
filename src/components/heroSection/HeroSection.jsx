@@ -4,7 +4,7 @@ import image1 from "../../images/hero_image1.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
+// import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 
 const HeroSection = () => {
   const sentence = {
@@ -37,11 +37,11 @@ const HeroSection = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <HeadingTextAnimation
+          {/* <HeadingTextAnimation
             heading={"Lorem ipsum dolor"}
             fontSize={"45px"}
             justifyContent={"center"}
-          />
+          /> */}
         </motion.div>
         <div className="hero_section_wrapper_inner">
           <div className="hero_section_first_image">

@@ -34,7 +34,7 @@ const EventHomePageItem = ({
         <div className="eventHomeItem_wrapper_right">
           <div className="eventItem_content">
             <h5>{heading}</h5>
-            <div className="eventname">Event : {eventName}</div>
+            {eventName && <div className="eventname">Event : {eventName}</div> }
             <div className="date">Date : {date}</div>
             <div className="location">{location}</div>
           </div>

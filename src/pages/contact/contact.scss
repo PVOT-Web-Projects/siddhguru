@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     @media (max-width: 991px) {
-      padding: 0 100px 0 50px;
+      padding: 0 40px 0 50px;
     }
     @media (max-width: 767px) {
       padding: 0 50px;
@@ -18,7 +18,7 @@
     &_left {
       width: 40%;
       padding-left: 100px;
-      @media(max-width:1600px){
+      @media (max-width: 1600px) {
         padding-left: 50px;
       }
       @media (max-width: 1199px) {
@@ -33,22 +33,27 @@
       }
       .heading {
         color: #000;
-        font-size: 60px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 400;
         line-height: 107.91%;
         margin: 0 0 34px;
-        width: 219px;
-        @media (max-width: 991px) {
-          font-size: 50px;
+        width: 355px;
+        @media (max-width: 1199px) {
+          font-size: 45px;
           margin: 0 0 20px;
+          width: 330px;
+        }
+        @media (max-width: 991px) {
+          font-size: 40px;
+          margin: 0 0 20px;
+          width: 290px;
         }
         @media (max-width: 767px) {
           width: 100%;
-          font-size: 45px;
         }
         @media (max-width: 575px) {
-          font-size: 40px;
+          font-size: 36px;
         }
       }
       .title {
@@ -73,6 +78,12 @@
     }
     &_right {
       width: 50%;
+      @media (max-width: 1199px) {
+        width: 57%;
+      }
+      @media (max-width: 991px) {
+        width: 60%;
+      }
       @media (max-width: 767px) {
         width: 100%;
       }
@@ -80,26 +91,26 @@
         text-align: center;
       }
       .siddhguru_dropdown_menu {
-        @media (max-width: 991px) {
-          width: 200px;
-        }
-        @media (max-width: 767px) {
-          width: 230px;
-        }
-        @media (max-width: 575px) {
-          width: 100%;
-        }
+        // @media (max-width: 991px) {
+        //   width: 200px;
+        // }
+        // @media (max-width: 767px) {
+        //   width: 230px;
+        // }
+        // @media (max-width: 575px) {
+        //   width: 100%;
+        // }
       }
       .input_field {
-        @media (max-width: 991px) {
-          width: 200px;
-        }
-        @media (max-width: 767px) {
-          width: 230px;
-        }
-        @media (max-width: 575px) {
-          width: 100%;
-        }
+        // @media (max-width: 991px) {
+        //   width: 200px;
+        // }
+        // @media (max-width: 767px) {
+        //   width: 230px;
+        // }
+        // @media (max-width: 575px) {
+        //   width: 100%;
+        // }
       }
       p.error {
         @media (max-width: 575px) {

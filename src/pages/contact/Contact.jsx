@@ -1,5 +1,5 @@
+import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactAddress from "../../components/contactAddress/ContactAddress";
-import FormCommon from "../../components/formCommon/FormCommon";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import Map from "../../map/Map";
 import "./contact.scss";
@@ -10,21 +10,23 @@ const Contact = () => {
       <InnerPageCommonHeading heading={"Contact"} />
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
-          <div className="heading">Keep in Touch</div>
+          <div className="heading">
+            Stay connected with Gurudev's blessings!
+          </div>
           <div className="title">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            {
+              "Subscribe to our monthly newsletters and open the gateway to a world of spiritual wisdom. Immerse yourself in stories of Vedic science, unravel the daily learning lessons from Gurudev, and discover the transformative power of divine knowledge."
+            }
           </div>
           <div className="content">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged
+            {
+              "By subscribing, you join a community that cherishes holistic well-being and a deeper connection to the profound teachings of Siddhguru. Let the newsletter be your guide on this sacred journey, offering insights, inspiration, and a continuous flow of Gurudev's blessings right to your inbox. Subscribe now and embark on a path of spiritual growth and enlightenment."
+            }
           </div>
         </div>
         <div className="contact_wrapper_right">
-          <FormCommon />
+          {/* <FormCommon /> */}
+          <ContactForm />
         </div>
       </div>
       <ContactAddress />
