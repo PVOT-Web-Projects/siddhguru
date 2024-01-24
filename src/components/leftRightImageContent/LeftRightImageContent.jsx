@@ -14,6 +14,7 @@ const LeftRIghtImageContent = ({
   conclution,
   titleColor,
   index,
+  id,
 }) => {
   return (
     <motion.div
@@ -31,6 +32,7 @@ const LeftRIghtImageContent = ({
       }}
       viewport={{ once: true }}
       className="leftRightImageContent_wrapper"
+      id={id}
     >
       <div className="leftRightImageContent_wrapper_image">
         <img src={img} className="thesaintimg" />
@@ -87,4 +89,5 @@ LeftRIghtImageContent.propTypes = {
   descriptiontext2: PropTypes.string,
   conclution: PropTypes.string,
   titleColor: PropTypes.string,
+  id: PropTypes.string,
 };
