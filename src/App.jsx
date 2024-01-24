@@ -20,6 +20,7 @@ import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
 import Gallery from "./pages/Gallary/gallary";
+import Devotee from "./pages/devotee/Devotee";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
