@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 // import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion"; 
 import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
