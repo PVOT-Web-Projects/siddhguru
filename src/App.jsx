@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait"> */}
         {isLoading ? (
           <Loader />
         ) : (
@@ -81,7 +81,7 @@ function App() {
             </Routes>
           </Layout>
         )}
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </>
   );
 }
