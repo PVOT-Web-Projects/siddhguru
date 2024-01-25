@@ -22,7 +22,7 @@ const ThreeVideoItem = ({ video, posterImage }) => {
   // };
 
   return (
-    <div className="threeVideoItem">
+    <div className="threeVideoItem try">
       <div className="threeVideoItem_wrapper">
         {/* <video ref={videoRef}>
           <source src={video} type="video/mp4" />
