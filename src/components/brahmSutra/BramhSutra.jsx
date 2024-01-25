@@ -1,9 +1,14 @@
 import Slider from "react-slick";
-import pic1 from "../../images/brahmasutra1.svg";
-import pic2 from "../../images/brahmasutra2.svg";
-import pic3 from "../../images/brahmasutra3.svg";
-import pic4 from "../../images/brahmasutra4.svg";
-import pic5 from "../../images/brahmasutra1.svg";
+// import pic1 from "../../images/brahmasutra1.svg";
+// import pic2 from "../../images/brahmasutra2.svg";
+// import pic3 from "../../images/brahmasutra3.svg";
+// import pic4 from "../../images/brahmasutra4.svg";
+// import pic5 from "../../images/brahmasutra1.svg";
+import pic1 from "../../images/brahmasutraImage1.png";
+import pic2 from "../../images/brahmasutraImage2.png";
+import pic3 from "../../images/brahmasutraImage3.png";
+import pic4 from "../../images/brahmasutraImage4.png";
+import pic5 from "../../images/brahmasutraImage5.png";
 import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,9 +39,9 @@ const BrahmSutra = () => {
     slidesToScroll: 1,
     speed: 1000,
     focusOnSelect: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
-    arrows:false,
+    arrows: false,
     beforeChange: (current, next) => setImgIndex(next),
     responsive: [
       {
