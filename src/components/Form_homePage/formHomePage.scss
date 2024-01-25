@@ -7,7 +7,8 @@
   }
 
   .siddhguru_mantra_section {
-    width: 40%;
+    // width: 40%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -17,9 +18,26 @@
     @media (max-width: 426px) {
       width: 90%;
     }
+    .mantra_wrapper {
+      span {
+        font-family: "Lohit-Devanagari" !important;
+        @media (max-width: 1440px) {
+          font-size: 38px;
+        }
+        @media (max-width: 1199px) {
+          font-size: 35px;
+        }
+        @media (max-width: 991px) {
+          font-size: 30px;
+        }
+        @media (max-width: 575px) {
+          font-size: 22px;
+        }
+      }
+    }
   }
   .siddhguru_section {
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       padding: 0 20px;
     }
     img {

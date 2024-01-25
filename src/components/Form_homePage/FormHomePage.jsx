@@ -1,4 +1,4 @@
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 // import Button from "../../components/buttons/button3";
 import { useInView } from "react-intersection-observer";
 // import { useState } from "react";
@@ -6,9 +6,10 @@ import { useInView } from "react-intersection-observer";
 import Siddhguru_img from "../../images/homePageFormImage.png";
 import "./formHomePage.scss";
 import FormCommon from "../formCommon/FormCommon";
+import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 
 function FormHomePage() {
-  const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
+  // const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -50,15 +51,20 @@ function FormHomePage() {
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
       >
-        {text.split("").map((char, index) => (
-          <motion.span
-            className="siddhguru_mantra_text"
-            key={char + "-" + index}
-            variants={letter}
-          >
-            {char}
-          </motion.span>
-        ))}
+        <motion.span className={"mantra_wrapper"} variants={letter}>
+          <HeadingTextAnimation
+            heading={"कल को आसान बनाने के लिए आज "}
+            fontSize={"39px"}
+            justifyContent={"center"}
+          />
+        </motion.span>
+        <motion.span className={"mantra_wrapper"} variants={letter}>
+          <HeadingTextAnimation
+            heading={"आपको कड़ी मेहनत करनी ही पड़ेगी."}
+            fontSize={"39px"}
+            justifyContent={"center"}
+          />
+        </motion.span>
       </motion.div>
 
       <div className="siddhguru_message_section">
