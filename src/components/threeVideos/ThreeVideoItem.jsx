@@ -30,7 +30,7 @@ const ThreeVideoItem = ({ video, posterImage }) => {
         <Player
           playsInline={true}
           src={video}
-          // poster={posterImage}
+          poster={posterImage}
           // width={"100%"}
           // height={"100%"}
           fluid={true}
