@@ -34,6 +34,7 @@ button.Mobile.navbar-toggler.collapsed {
   left: 100%;
   top: 0;
 }
+
 .dropdown-menu a {
   text-decoration: none;
   color: black;
@@ -63,6 +64,9 @@ button.Mobile.navbar-toggler.collapsed {
   .dropdown-menu.show {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+  }
+  .mobile_sub_menu .dropdown-menu{
+    padding: 10px 0 0 !important;
   }
 }
 

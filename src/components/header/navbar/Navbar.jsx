@@ -68,7 +68,7 @@ const Menu = () => {
               <DropdownSubmenu
                 title={
                   <Link
-                    to="/siddhguru1/the-saint"
+                    to="/the-saint"
                     className="line_underscore nav-link"
                   >
                     The Saint
@@ -76,19 +76,19 @@ const Menu = () => {
                 }
                 className="react_submenu"
               >
-                <HashLink to="/siddhguru1/the-saint/#life_of_nutshell">
+                <HashLink to="/the-saint/#life_of_nutshell">
                   Life in a Nutshell
                 </HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/the-saint#kundalini" smooth>
+                <HashLink to="/the-saint#kundalini" smooth>
                   Sadhana & Kundalini Invocation
                 </HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/the-saint#asht_siddhi's_&_nav_nidhis">
+                <HashLink to="/the-saint#asht_siddhi's_&_nav_nidhis">
                   Siddhis and Nidhis
                 </HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/the-saint#mission">Mission</HashLink>
+                <HashLink to="/the-saint#mission">Mission</HashLink>
               </DropdownSubmenu>
 
               <NavDropdown.Divider className="navbar_divider" />
@@ -96,7 +96,7 @@ const Menu = () => {
                 href="#action/3.7"
                 title={
                   <Link
-                    to="/siddhguru1/Vision"
+                    to="/Vision"
                     className="line_underscore nav-link"
                   >
                     Vision
@@ -104,17 +104,17 @@ const Menu = () => {
                 }
                 className="react_submenu"
               >
-                <HashLink to="/siddhguru1/vision#anant_diksha">
+                <HashLink to="/vision#anant_diksha">
                   Divine Touch (Digital Diksha)
                 </HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/vision#siddhasana">
+                <HashLink to="/vision#siddhasana">
                   Siddhasana
                 </HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/vision#ashram">Ashram</HashLink>
+                <HashLink to="/vision#ashram">Ashram</HashLink>
                 <NavDropdown.Divider className="navbar_divider" />
-                <HashLink to="/siddhguru1/vision#world_spiritual_forum">
+                <HashLink to="/vision#world_spiritual_forum">
                   World Spiritual Forum
                 </HashLink>
               </DropdownSubmenu>
@@ -123,7 +123,7 @@ const Menu = () => {
                 href="#action/3.7"
                 title={
                   <Link
-                    to="/siddhguru1/core-wisdom"
+                    to="/core-wisdom"
                     className="line_underscore nav-link"
                   >
                     Core Wisdom
@@ -145,7 +145,7 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
-              to="/siddhguru1/about-ashram"
+              to="/about-ashram"
               className="line_underscore nav-link"
             >
               About Ashram
@@ -161,7 +161,7 @@ const Menu = () => {
               Knowledge
             </Nav.Link> */}
             <Link
-              to="/siddhguru1/knowledge"
+              to="/knowledge"
               className="line_underscore nav-link"
             >
               Knowledge
@@ -174,7 +174,7 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             <Link
-              to="/siddhguru1/activities"
+              to="/activities"
               className="line_underscore nav-link"
             >
               Activities
@@ -187,7 +187,7 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <Link
-              to={"/siddhguru1/events"}
+              to={"/events"}
               className="line_underscore nav-link"
             >
               Events
@@ -203,7 +203,7 @@ const Menu = () => {
           >
             <NavDropdown
               title={
-                <Link to="/siddhguru1/centers" className="nav_link">
+                <Link to="/centers" className="nav_link">
                   Centers
                 </Link>
               }
@@ -227,7 +227,7 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <Link
-              to={"/siddhguru1/contact"}
+              to={"/contact"}
               className="line_underscore nav-link"
             >
               Contact
@@ -255,7 +255,7 @@ const Menu = () => {
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               {/* <Link
-                to="/siddhguru1/news"
+                to="/news"
                 className="nav_link_mobile"
                 onClick={() => setOffcanvasVisible(false)}
               >
@@ -263,7 +263,7 @@ const Menu = () => {
               </Link>
               <Nav.Link href="#link">Gallery</Nav.Link>
               <Link
-                to="/siddhguru1/devotee"
+                to="/devotee"
                 className="nav_link_mobile"
                 onClick={() => setOffcanvasVisible(false)}
               >
@@ -273,12 +273,12 @@ const Menu = () => {
               <NavDropdown
                 title="Siddhguru"
                 id="basic-nav-dropdown"
-                className="mobile_dropdown"
+                className="mobile_dropdown "
               >
                 <NavDropdown
                   title={
                     <Link
-                      to="/siddhguru1/the-saint"
+                      to="/the-saint"
                       className="nav_link_mobile"
                       onClick={() => setOffcanvasVisible(false)}
                     >
@@ -286,18 +286,18 @@ const Menu = () => {
                     </Link>
                   }
                   id="basic-nav-dropdown"
-                  className="dropdownsubmenu_btn"
+                  className="dropdownsubmenu_btn mobile_sub_menu"
                 >
                   <HashLink
-                    to="/siddhguru1/the-saint#life_of_nutshell"
+                    to="/the-saint#life_of_nutshell"
                     onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
+                    className="dropdownsubmenu_btn "
                   >
                     Life in a Nutshell
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/the-saint#kundalini"
+                    to="/the-saint#kundalini"
                     smooth
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
@@ -306,7 +306,7 @@ const Menu = () => {
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/the-saint#asht_siddhi's_&_nav_nidhis"
+                    to="/the-saint#asht_siddhi's_&_nav_nidhis"
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
                   >
@@ -314,7 +314,7 @@ const Menu = () => {
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/the-saint#mission"
+                    to="/the-saint#mission"
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
                   >
@@ -326,7 +326,7 @@ const Menu = () => {
                 <NavDropdown
                   title={
                     <Link
-                      to="/siddhguru1/vision"
+                      to="/vision"
                       className="nav_link_mobile"
                       onClick={() => setOffcanvasVisible(false)}
                     >
@@ -337,7 +337,7 @@ const Menu = () => {
                   className="dropdownsubmenu_btn"
                 >
                   <HashLink
-                    to="/siddhguru1/vision#anant_diksha"
+                    to="/vision#anant_diksha"
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
                   >
@@ -345,7 +345,7 @@ const Menu = () => {
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/vision#siddhasana"
+                    to="/vision#siddhasana"
                     smooth
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
@@ -354,7 +354,7 @@ const Menu = () => {
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/vision#ashram"
+                    to="/vision#ashram"
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
                   >
@@ -362,7 +362,7 @@ const Menu = () => {
                   </HashLink>
                   <NavDropdown.Divider className="navbar_divider" />
                   <HashLink
-                    to="/siddhguru1/vision#world_spiritual_forum"
+                    to="/vision#world_spiritual_forum"
                     onClick={() => setOffcanvasVisible(false)}
                     className="dropdownsubmenu_btn"
                   >
@@ -373,7 +373,7 @@ const Menu = () => {
                 <NavDropdown
                   title={
                     <Link
-                      to="/siddhguru1/core-wisdom"
+                      to="/core-wisdom"
                       className="nav_link_mobile"
                       onClick={() => setOffcanvasVisible(false)}
                     >
@@ -393,28 +393,28 @@ const Menu = () => {
                 <NavDropdown.Divider />
               </NavDropdown>
               <Link
-                to="/siddhguru1/about-ashram"
+                to="/about-ashram"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 About Ashram
               </Link>
               <Link
-                to="/siddhguru1/Knowledge"
+                to="/Knowledge"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Knowledge
               </Link>
               <Link
-                to="/siddhguru1/activities"
+                to="/activities"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Activities
               </Link>
               <Link
-                to="/siddhguru1/events"
+                to="/events"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
@@ -423,7 +423,7 @@ const Menu = () => {
               <NavDropdown
                 title={
                   <Link
-                    to="/siddhguru1/centers"
+                    to="/centers"
                     className="nav_link_mobile"
                     onClick={() => setOffcanvasVisible(false)}
                   >
@@ -451,14 +451,14 @@ const Menu = () => {
                 <NavDropdown.Divider />
               </NavDropdown>
               <Link
-                to="/siddhguru1/contact"
+                to="/contact"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Contact Us
               </Link>
               <Link
-                to="/siddhguru1/news"
+                to="/news"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
@@ -468,7 +468,7 @@ const Menu = () => {
                 Gallery
               </Link> */}
               <Link
-                to="/siddhguru1/devotee"
+                to="/devotee"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
