@@ -1,6 +1,6 @@
 .footer_main {
   background-color: #6a1c1c;
-  padding: 2rem 0;
+  padding: 2rem 1rem 1rem;
   .footer_img_container {
     text-align: center;
     padding: 2rem;
@@ -18,12 +18,15 @@
     p{
       margin: 0;
     }
-    @media (max-width: 982px) {
-      width: 45rem;
+    @media (max-width: 1199px) {
+      width: 55rem;
+    }
+    @media (max-width: 991px) {
+      width: 80%;
     }
     @media (max-width: 768px) {
       width: 100%;
-      font-size: 14px;
+      font-size: 16px;
     }
 
     a {

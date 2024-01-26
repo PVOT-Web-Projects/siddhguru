@@ -1,7 +1,7 @@
-import corePillarImage1 from "../../images/corePillarsImage1.png";
-import corePillarImage2 from "../../images/corePillarsImage2.png";
-import corePillarImage3 from "../../images/corePillarsImage3.png";
-import corePillarImage4 from "../../images/corePillarsImage4.png";
+import corePillarImage1 from "../../images/corePillar1.png";
+import corePillarImage2 from "../../images/corePillar2.png";
+import corePillarImage3 from "../../images/corePillar3.png";
+import corePillarImage4 from "../../images/corePillar4.png";
 import CorePillarsItem from "./CorePillarsItem";
 import "./corePillars.scss";
 import { motion } from "framer-motion";
