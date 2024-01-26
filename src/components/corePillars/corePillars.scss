@@ -11,6 +11,10 @@
       padding: 40px 20px;
     }
     &_heading {
+      @media(max-width:575px){
+        width: 85%;
+        margin: 0 auto;
+      }
       h3 {
         color: #966940;
         font-size: 42px;
