@@ -32,14 +32,14 @@ const ThreeVideos = () => {
         ))} */}
         <div className="threeVideoItem try">
           <div className="threeVideoItem_wrapper">
-            <Player
+            {/* <Player
               playsInline={true}
               src={video1}
               poster={poster1}
               // width={"100%"}
               // height={"100%"}
               fluid={true}
-            />
+            /> */}
           </div>
         </div>
         <div className="threeVideoItem try">
