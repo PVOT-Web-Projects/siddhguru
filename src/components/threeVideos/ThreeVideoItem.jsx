@@ -22,12 +22,19 @@ const ThreeVideoItem = ({ video, posterImage }) => {
   // };
 
   return (
-    <div className="threeVideoItem">
+    <div className="threeVideoItem try">
       <div className="threeVideoItem_wrapper">
         {/* <video ref={videoRef}>
           <source src={video} type="video/mp4" />
         </video> */}
-        <Player playsInline src={video} poster={posterImage} />
+        <Player
+          playsInline={true}
+          src={video}
+          poster={posterImage}
+          // width={"100%"}
+          // height={"100%"}
+          fluid={true}
+        />
         {/* {playButton && (
           <button onClick={handlePlay}>
             <img src={playIcon} alt="playIcon" />

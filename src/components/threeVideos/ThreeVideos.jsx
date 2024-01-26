@@ -5,6 +5,7 @@ import poster1 from "../../images/poster1.jpg";
 import poster2 from "../../images/poster2.jpg";
 import poster3 from "../../images/poster3.jpg";
 import ThreeVideoItem from "./ThreeVideoItem";
+import { Player } from "video-react";
 import "./threeVideos.scss";
 
 const videoData = [
@@ -26,9 +27,45 @@ const ThreeVideos = () => {
   return (
     <div className="threeVideos">
       <div className="threeVideos_wrapper">
-        {videoData.map((item, index) => (
+        {/* {videoData.map((item, index) => (
           <ThreeVideoItem key={index} {...item} />
-        ))}
+        ))} */}
+        <div className="threeVideoItem try">
+          <div className="threeVideoItem_wrapper">
+            <Player
+              playsInline={true}
+              src={video1}
+              poster={poster1}
+              // width={"100%"}
+              // height={"100%"}
+              fluid={true}
+            />
+          </div>
+        </div>
+        <div className="threeVideoItem try">
+          <div className="threeVideoItem_wrapper">
+            <Player
+              playsInline={true}
+              src={video2}
+              poster={poster2}
+              // width={"100%"}
+              // height={"100%"}
+              fluid={true}
+            />
+          </div>
+        </div>
+        <div className="threeVideoItem try">
+          <div className="threeVideoItem_wrapper">
+            <Player
+              playsInline={true}
+              src={video3}
+              poster={poster3}
+              // width={"100%"}
+              // height={"100%"}
+              fluid={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

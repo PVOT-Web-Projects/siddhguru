@@ -28,7 +28,7 @@
       }
       &_wrapper {
         padding: 0 10px;
-        position: relative;
+        // position: relative;
         @media (max-width: 575px) {
           padding: 0;
         }
@@ -49,4 +49,7 @@
       }
     }
   }
+}
+.video-react-controls-enabled.video-react-paused.video-react-fluid.video-react-user-inactive.video-react-workinghover.video-react{
+  padding-top: 177.778% !important;
 }
