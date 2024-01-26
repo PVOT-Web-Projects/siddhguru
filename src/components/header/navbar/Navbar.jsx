@@ -421,13 +421,31 @@ const Menu = () => {
                 Events
               </Link>
               <NavDropdown
-                title="Centers"
+                title={
+                  <Link
+                    to="/siddhguru1/centers"
+                    className="nav_link_mobile"
+                    onClick={() => setOffcanvasVisible(false)}
+                  >
+                    Centers
+                  </Link>
+                }
                 id="basic-nav-dropdown"
                 className="dropdown"
               >
-                <NavDropdown.Item href="#action/3.1">Indian</NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action/3.1"
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                >
+                  Indian
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item
+                  id="basic-nav-dropdown_sub"
+                  className="dropdownsubmenu_btn"
+                  href="#action/3.1"
+                >
                   International
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -446,9 +464,9 @@ const Menu = () => {
               >
                 News
               </Link>
-              <Link to="#" className="mobile_nav_link">
+              {/* <Link to="#" className="mobile_nav_link">
                 Gallery
-              </Link>
+              </Link> */}
               <Link
                 to="/siddhguru1/devotee"
                 className="mobile_nav_link"
