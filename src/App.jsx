@@ -60,23 +60,23 @@ function App() {
           <Layout>
             <ScrollTop />
             <Routes>
-              <Route path="/siddhguru1" element={<Home />} />
-              <Route path="/siddhguru1/the-saint" element={<TheSaint />} />
-              <Route path="/siddhguru1/vision" element={<Vision />} />
-              <Route path="/siddhguru1/core-wisdom" element={<CoreWisdom />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/the-saint" element={<TheSaint />} />
+              <Route path="/vision" element={<Vision />} />
+              <Route path="/core-wisdom" element={<CoreWisdom />} />
               <Route
-                path="/siddhguru1/about-ashram"
+                path="/about-ashram"
                 element={<AboutAshramPage />}
               />
-              <Route path="/siddhguru1/knowledge" element={<Knowledge />} />
-              <Route path="/siddhguru1/activities" element={<Activities />} />
-              <Route path="/siddhguru1/events" element={<Events />} />
-              <Route path="/siddhguru1/centers" element={<Centers />} />
-              <Route path="/siddhguru1/blog" element={<Blog />} />
-              <Route path="/siddhguru1/contact" element={<Contact />} />
-              <Route path="/siddhguru1/news" element={<News />} />
-              <Route path="/siddhguru1/galary" element={<Gallery />} />
-              <Route path="/siddhguru1/devotee" element={<Devotee />} />
+              <Route path="/knowledge" element={<Knowledge />} />
+              <Route path="/activities" element={<Activities />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/centers" element={<Centers />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/galary" element={<Gallery />} />
+              <Route path="/devotee" element={<Devotee />} />
               <Route />
             </Routes>
           </Layout>

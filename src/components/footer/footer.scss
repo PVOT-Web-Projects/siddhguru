@@ -1,20 +1,23 @@
 .footer_main {
   background-color: #6a1c1c;
-  padding: 1rem;
+  padding: 2rem 0;
   .footer_img_container {
     text-align: center;
     padding: 2rem;
   }
 
   .footer_text {
-    width: 60rem;
-    font-size: 16px;
+    width: 68rem;
+    font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: center;
     margin: 0 auto;
     color: #ffffff;
+    p{
+      margin: 0;
+    }
     @media (max-width: 982px) {
       width: 45rem;
     }

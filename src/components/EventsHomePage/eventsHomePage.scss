@@ -94,7 +94,7 @@
             border-bottom-right-radius: 15px;
             position: relative;
             @media (max-width: 1600px) {
-              width: 315px;
+              width: 275px;
             }
             @media (max-width: 1199px) {
               width: 290px;
@@ -126,10 +126,13 @@
                 color: #9c9c9c;
                 font-size: 12px;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 600;
                 line-height: 150%;
                 font-family: "Poppins";
                 width: 180px;
+                @media(max-width:1600px){
+                  width: 143px;
+                }
                 @media (max-width: 991px) {
                   width: 160px;
                 }
@@ -155,7 +158,7 @@
               top: -34px;
               right: 42px;
               @media (max-width: 1600px) {
-                right: 38px;
+                right: 27px;
               }
               @media (max-width: 1199px) {
                 right: 26px;
@@ -234,7 +237,7 @@
       &_content {
         h2 {
           color: #fff;
-          font-size: 59px;
+          font-size: 42px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;

@@ -7,16 +7,16 @@ const TopNavbar = () => {
         <div className="topNavbar_wrapper">
           <ul>
             <li>
-              <Link to="/siddhguru1/news">News</Link>
+              <Link to="/news">News</Link>
             </li>
             {/* <li>
-              <Link to="/siddhguru1/galary">Gallery</Link>
+              <Link to="/galary">Gallery</Link>
             </li> */}
             <li>
-              <Link to="/siddhguru1/blog">Blogs</Link>
+              <Link to="/blog">Blogs</Link>
             </li>
             <li>
-              <Link to="/siddhguru1/devotee">Register Devotee/Volunteer</Link>
+              <Link to="/devotee">Register Devotee/Volunteer</Link>
             </li>
             <li>
               <a href="#">Donate</a>

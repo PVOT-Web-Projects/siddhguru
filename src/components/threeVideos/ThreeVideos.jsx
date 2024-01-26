@@ -3,7 +3,7 @@ import video2 from "../../images/video2.mp4";
 import video3 from "../../images/video3.mp4";
 import poster1 from "../../images/poster1.jpg";
 import poster2 from "../../images/poster2.jpg";
-import poster3 from "../../images/poster3.jpg";
+import poster3 from "../../images/poster4.jpg";
 import ThreeVideoItem from "./ThreeVideoItem";
 import { Player } from "video-react";
 import "./threeVideos.scss";

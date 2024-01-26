@@ -37,9 +37,9 @@
   }
   .babaBgText {
     position: absolute;
-    top: 38%;
-    width: 41%;
-    left: 25%;
+    top: 50%;
+    width: 32%;
+    left: 21%;
     transform: translate(-50%, -50%);
 
     @media (max-width: 767px) {
@@ -51,8 +51,7 @@
   }
   .babaText1 {
     color: #fff;
-    font-family: Inria Serif;
-    font-size: 37px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     margin-bottom: 6px;
@@ -73,8 +72,7 @@
   }
   .babaName {
     color: #f90;
-    font-family: Inria Serif;
-    font-size: 57.92px;
+    font-size: 42px;
     border-top: 1px solid #f90;
     border-bottom: 1px solid #f90;
     font-style: normal;

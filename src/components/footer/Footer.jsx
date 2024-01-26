@@ -24,14 +24,14 @@ const Footer = () => {
       <div className="footer_text">
         <p>Address :</p>
         Sri Siddeshwar Teerth – Sri Brahmrishi Ashram,R.C.Road, C. Ramapuram,
-        Ramachandrapuram Mandalam, Tirupati – 517561, India. Cell :{" "}
+        Ramachandrapuram Mandalam, Tirupati – 517561, India. Call :
         <a
           href="to:91 986
         6622049"
         >
           +91 986 6622049
         </a>
-        , <a href="to:918772247056">+91 877 2247056</a> | Tele Fax :{" "}
+        , <a href="to:918772247056">+91 877 2247056</a> | Tele Fax :
         <a href="to:918772247059">+91 877 2247059</a>| Email :
         <a href="mailto:contact@sribrahmrishiashram.org">
           contact@sribrahmrishiashram.org
