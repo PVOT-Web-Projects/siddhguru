@@ -4,7 +4,7 @@ import FullWidthImage from "../../components/fullWidthImage/FullWidthImage";
 import Galarybanner from "../../components/gallarybaner/Gallarybaner";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import galleryBigImage from "../../images/galleryBigImage.png";
-import galleryBigImage2 from "../../images/fullWidthImage.png";
+import galleryBigImage2 from "../../images/fullWidthImage2.png";
 const Gallery = () => {
   return (
     <>

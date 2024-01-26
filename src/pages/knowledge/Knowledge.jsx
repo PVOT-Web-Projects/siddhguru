@@ -4,9 +4,10 @@ import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageC
 import axios from "axios";
 import CardItem from "../../components/CardItem/CardItem";
 import FullWidthImage from "../../components/fullWidthImage/FullWidthImage";
-import fullImage from "../../images/fullWidthImage.png";
+import fullImage from "../../images/fullWidthImage2.png";
 import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import Spinner from "../../components/spinner/Spinner";
+import "./knowledge.scss";
 
 const Knowledge = () => {
   const [knowledge, setKnowledge] = useState([]);

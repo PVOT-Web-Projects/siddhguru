@@ -11,6 +11,7 @@ import centerTopCardImage3 from "../../images/delhi.png";
 import centerBottomCardImage1 from "../../images/uk.png";
 import centerBottomCardImage2 from "../../images/usa.png";
 import centerBottomCardImage3 from "../../images/australia.png";
+import "./centers.scss";
 
 const centerTopCards = [
   {
@@ -82,6 +83,7 @@ const Centers = () => {
       />
       <TwoCardSection />
       <FullWidthImageSec
+        id={"indian"}
         imageUrl={bigImage1}
         text={
           "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
@@ -100,6 +102,7 @@ const Centers = () => {
         ))}
       </div>
       <FullWidthImageSec
+        id={"international"}
         imageUrl={bigImage2}
         text={
           "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
@@ -116,7 +119,7 @@ const Centers = () => {
             imageText={item.imageText}
           />
         ))}
-      </div>  
+      </div>
     </div>
   );
 };

@@ -34,7 +34,6 @@ button.Mobile.navbar-toggler.collapsed {
   left: 100%;
   top: 0;
 }
-
 .dropdown-menu a {
   text-decoration: none;
   color: black;
@@ -64,9 +63,6 @@ button.Mobile.navbar-toggler.collapsed {
   .dropdown-menu.show {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-  }
-  .mobile_sub_menu .dropdown-menu{
-    padding: 10px 0 0 !important;
   }
 }
 
@@ -125,8 +121,8 @@ button.Mobile.navbar-toggler.collapsed {
 
 .dropdownsubmenu_btn {
   padding-left: 20px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+  // padding-top: 0px !important;
+  // padding-bottom: 0px !important;
   text-decoration: none;
   color: black;
 }
@@ -214,4 +210,89 @@ button.Mobile.navbar-toggler.collapsed {
   padding: 0.5rem 0;
   color: #000 !important;
   text-decoration: none !important;
+}
+@media (min-width: 991px) {
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown button {
+    border: none;
+    padding-top: 0.3rem;
+    background-color: transparent;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .dropdown:hover button {
+    background-color: transparent;
+  }
+
+  .dropdown > div {
+    background-color: #fff2bd;
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border: 1px solid #ddd2a4;
+    border-radius: 10px;
+  }
+
+  .dropdown .submenu {
+    position: relative;
+  }
+
+  .dropdown .submenu > div {
+    background-color: #fff2bd;
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    top: 20px;
+    transition: 0.3s;
+    opacity: 0;
+    border: 1px solid #ddd2a4;
+    border-radius: 10px;
+  }
+
+  .dropdown .submenu:hover > div {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .dropdown:hover > div {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .dropdown a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: #000;
+    transition: 0.1s;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd2a4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .svg {
+    display: flex;
+  }
+
+  .dropdown div:active {
+    visibility: hidden;
+  }
+  .centers {
+    padding: 0px !important;
+    border-bottom: none !important;
+  }
+}
+.sub_sub_menu .dropdown-menu{
+  padding: 10px 0 0 !important;
 }

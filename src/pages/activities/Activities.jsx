@@ -4,6 +4,7 @@ import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImage
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import fullWidthImage from "../../images/fullWidthImage1.png";
+import "./activities.scss";
 
 const Activities = () => {
   return (
