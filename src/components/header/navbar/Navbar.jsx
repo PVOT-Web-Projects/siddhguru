@@ -246,9 +246,9 @@ const Menu = () => {
                     </svg>
                   </Link>
                   <div>
-                    <a href="#" onClick={closeDropdown}>
+                    <Link to="/core-wisdom" onClick={closeDropdown}>
                       Miracles of Vedic Science
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
