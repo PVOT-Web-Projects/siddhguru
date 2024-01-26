@@ -15,7 +15,7 @@ const EventsHomePage = () => {
     {
       id: 0,
       image: image1,
-      bigText: "Asia Tour",
+      bigText: "Dubai",
       // eventName: "Name of Event",
       date: "11th March, 24 to 15th March, 24",
       location: "Dubai",
@@ -26,7 +26,7 @@ const EventsHomePage = () => {
     {
       id: 1,
       image: image2,
-      bigText: "Asia Tour",
+      bigText: "Bangkok",
       // eventName: "Name of Event",
       date: "16th March, 24 to 19th March, 24",
       location: "Bangkok",
@@ -37,7 +37,7 @@ const EventsHomePage = () => {
     {
       id: 2,
       image: image3,
-      bigText: "Asia Tour",
+      bigText: "Kuala Lumpur",
       // eventName: "Name of Event",
       date: "20th March, 24 to 24th March, 24",
       location: "Kuala Lumpur",
@@ -48,7 +48,7 @@ const EventsHomePage = () => {
     {
       id: 3,
       image: image4,
-      bigText: "Asia Tour",
+      bigText: "Guangzhou",
       // eventName: "Name of Event",
       date: "25th March, 24 to 30th March, 24",
       location: "Guangzhou",
