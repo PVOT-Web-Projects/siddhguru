@@ -37,8 +37,6 @@ const ThreeVideos = () => {
               playsInline={true}
               src={video2}
               poster={poster2}
-              // width={"100%"}
-              // height={"100%"}
               fluid={true}
             />
           </div>
@@ -49,8 +47,6 @@ const ThreeVideos = () => {
               playsInline={true}
               src={video3}
               poster={poster3}
-              // width={"100%"}
-              // height={"100%"}
               fluid={true}
             />
           </div>
@@ -61,8 +57,6 @@ const ThreeVideos = () => {
               playsInline={true}
               src={video2}
               poster={poster1}
-              // width={"100%"}
-              // height={"100%"}
               fluid={true}
             />
           </div>
