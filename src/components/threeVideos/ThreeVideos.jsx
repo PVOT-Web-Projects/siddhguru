@@ -59,7 +59,7 @@ const ThreeVideos = () => {
           <div className="threeVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video1}
+              src={video2}
               poster={poster1}
               // width={"100%"}
               // height={"100%"}
