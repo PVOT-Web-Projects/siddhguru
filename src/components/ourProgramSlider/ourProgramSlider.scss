@@ -53,9 +53,9 @@
       width: 100%;
       text-align: center;
       @media (max-width: 767px) {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        bottom: auto;
+        top: auto;
+        // transform: translate(-50%, -50%);
+        bottom: 0;
       }
     }
     .carousel_overlay_text_content {
@@ -64,8 +64,8 @@
       padding: 0 40px 0 80px;
       align-items: center;
       @media (max-width: 767px) {
-        padding: 0 40px;
-        flex-direction: column-reverse;
+        padding: 0 20px;
+        flex-direction: column;
       }
     }
     .carousel_guru_img {
@@ -84,6 +84,7 @@
       width: 50%;
       @media (max-width: 767px) {
         width: 100%;
+        margin: 0 0 20px;
       }
     }
     .carousel_section_image {
@@ -95,8 +96,16 @@
         width: 35%;
       }
       @media (max-width: 767px) {
-        width: 52%;
-        margin: 0 0 26px;
+        width: 40%;
+        // margin: 0 0 26px;
+      }
+      @media (max-width: 575px) {
+        width: 60%;
+        // margin: 0 0 26px;
+      }
+      @media (max-width: 420px) {
+        width: 70%;
+        // margin: 0 0 26px;
       }
     }
     .carousel_second_text {
