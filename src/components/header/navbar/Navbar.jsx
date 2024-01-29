@@ -65,7 +65,7 @@ const Menu = () => {
           >
             {/* <div className={`dropdown ${isDropdownOpen ? "active" : ""}`}> */}
             <div className="dropdown">
-              <button onClick={toggleDropdown}>
+              <button onClick={toggleDropdown} className="siddhguru_dropdown_btn1">
                 Siddhguru
                 <svg
                   width="32px"
