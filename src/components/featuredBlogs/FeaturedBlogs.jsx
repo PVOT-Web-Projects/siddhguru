@@ -6,6 +6,9 @@ import img2 from "../../images/featuredBlog2.png";
 import img3 from "../../images/featuredBlog3.png";
 import img4 from "../../images/featuredBlog1.png";
 import BlogItem from "../blogs/blogItem";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Spinner from "../spinner/Spinner";
 
 const BlogsData = [
   {
@@ -39,6 +42,19 @@ const BlogsData = [
 ];
 
 const FeaturedBlog = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/blogs/?_embed")
+      .then((response) => {
+        setBlogs(response.data);
+        console.log(response.data);
+        setLoading(false);
+      })
+      .catch((error) => console.error(error));
+  }, []);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -62,11 +78,29 @@ const FeaturedBlog = () => {
         >
           Blogs
         </motion.div>
-        <div className="blogsCardsOuter">
-          {BlogsData.map((item, index) => (
-            <BlogItem key={index} {...item} cardVariants={cardVariants} />
-          ))}
-        </div>
+        {loading ? (
+          <Spinner />
+        ) : (
+          <div className="blogsCardsOuter">
+            {blogs?.map(
+              (item, index) =>
+                index < 4 && (
+                  <BlogItem
+                    key={index}
+                    image={
+                      item._embedded["wp:featuredmedia"] &&
+                      item._embedded["wp:featuredmedia"][0].media_details.sizes
+                        .full.source_url
+                    }
+                    title={item.title.rendered}
+                    // description={item.excerpt.rendered}
+                    cardVariants={cardVariants}
+                    name={item.slug}
+                  />
+                )
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

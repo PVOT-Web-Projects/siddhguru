@@ -8,6 +8,10 @@ import image6 from "../../images/featuredBlog2.png";
 import image7 from "../../images/featuredBlog3.png";
 import image8 from "../../images/featuredBlog1.png";
 import BlogItem from "./blogItem";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Spinner from "../spinner/Spinner";
+import { useLocation } from "react-router-dom";
 
 const BlogsData = [
   {
@@ -74,13 +78,43 @@ const cardVariants = {
 };
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/blogs/?_embed")
+      .then((response) => {
+        setBlogs(response.data);
+        console.log(response.data);
+        setLoading(false);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+  const hash = useLocation();
+  console.log(hash);
   return (
     <div className="blogs">
-      <div className="blogsCardsOuter">
-        {BlogsData.map((item, index) => (
-          <BlogItem key={index} {...item} cardVariants={cardVariants} />
-        ))}
-      </div>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <div className="blogsCardsOuter">
+          {blogs?.map((item, index) => (
+            <BlogItem
+              key={index}
+              image={
+                item._embedded["wp:featuredmedia"] &&
+                item._embedded["wp:featuredmedia"][0].media_details.sizes.full
+                  .source_url
+              }
+              title={item.title.rendered}
+              // description={item.excerpt.rendered}
+              name={item.slug}
+              cardVariants={cardVariants}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

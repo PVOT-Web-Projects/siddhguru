@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 // import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
-// import { AnimatePresence } from "framer-motion"; 
+// import { AnimatePresence } from "framer-motion";
 import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
@@ -20,6 +20,7 @@ import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
 import Gallery from "./pages/Gallary/gallary";
+import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,33 +55,31 @@ function App() {
   return (
     <>
       {/* <AnimatePresence mode="wait"> */}
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <Layout>
-            <ScrollTop />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/the-saint" element={<TheSaint />} />
-              <Route path="/vision" element={<Vision />} />
-              <Route path="/core-wisdom" element={<CoreWisdom />} />
-              <Route
-                path="/about-ashram"
-                element={<AboutAshramPage />}
-              />
-              <Route path="/knowledge" element={<Knowledge />} />
-              <Route path="/activities" element={<Activities />} />
-              <Route path="/events" element={<Events />} />
-              <Route path="/centers" element={<Centers />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/galary" element={<Gallery />} />
-              <Route path="/devotee" element={<Devotee />} />
-              <Route />
-            </Routes>
-          </Layout>
-        )}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <Layout>
+          <ScrollTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/the-saint" element={<TheSaint />} />
+            <Route path="/vision" element={<Vision />} />
+            <Route path="/core-wisdom" element={<CoreWisdom />} />
+            <Route path="/about-ashram" element={<AboutAshramPage />} />
+            <Route path="/knowledge" element={<Knowledge />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/centers" element={<Centers />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path=":name" element={<BlogSingle />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/galary" element={<Gallery />} />
+            <Route path="/devotee" element={<Devotee />} />
+            <Route />
+          </Routes>
+        </Layout>
+      )}
       {/* </AnimatePresence> */}
     </>
   );
