@@ -45,7 +45,7 @@ const TextSection = () => {
             className={"mantra_wrapper"}
             key={char + "-" + index}
             variants={letter}
-            style={index > 139 && index < 188 ? { color: "#6A1C1C", fontWeight:700 } : null}
+            style={index > 139 && index < 188 ? { color: "#FF9900", fontWeight:700 } : null}
           >
             {char}
           </motion.span>
