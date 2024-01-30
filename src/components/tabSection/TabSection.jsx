@@ -133,8 +133,9 @@ const tabData3 = [
 
 const TabSection = () => {
   const [activeMainTab, setActiveMainTab] = useState("tab1");
-  const [tabContent, setTabContent] = useState(0);
-  console.log(tabContent);
+  const [tabContent1, setTabContent1] = useState(0);
+  const [tabContent2, setTabContent2] = useState(0);
+  const [tabContent3, setTabContent3] = useState(0);
 
   const handleTab1 = () => {
     setActiveMainTab("tab1");
@@ -189,8 +190,8 @@ const TabSection = () => {
                 {tabData1.map((item, index) => (
                   <li
                     key={index}
-                    className={`${tabContent === index ? "active" : ""}`}
-                    onClick={() => setTabContent(index)}
+                    className={`${tabContent1 === index ? "active" : ""}`}
+                    onClick={() => setTabContent1(index)}
                   >
                     {item.title}
                   </li>
@@ -204,8 +205,8 @@ const TabSection = () => {
                 {tabData2.map((item, index) => (
                   <li
                     key={index}
-                    className={`${tabContent === index ? "active" : ""}`}
-                    onClick={() => setTabContent(index)}
+                    className={`${tabContent2 === index ? "active" : ""}`}
+                    onClick={() => setTabContent2(index)}
                   >
                     {item.title}
                   </li>
@@ -219,8 +220,8 @@ const TabSection = () => {
                 {tabData3.map((item, index) => (
                   <li
                     key={index}
-                    className={`${tabContent === index ? "active" : ""}`}
-                    onClick={() => setTabContent(index)}
+                    className={`${tabContent3 === index ? "active" : ""}`}
+                    onClick={() => setTabContent3(index)}
                   >
                     {item.title}
                   </li>
@@ -233,7 +234,7 @@ const TabSection = () => {
           {activeMainTab === "tab1" &&
             theSaintData.map(
               (item, index) =>
-                tabContent === index && (
+                tabContent1 === index && (
                   <LeftRIghtImageContent
                     key={index}
                     {...item}
@@ -245,7 +246,7 @@ const TabSection = () => {
           {activeMainTab === "tab2" &&
             visionData.map(
               (item, index) =>
-                tabContent === index && (
+                tabContent2 === index && (
                   <LeftRIghtImageContent
                     key={index}
                     {...item}
@@ -257,7 +258,7 @@ const TabSection = () => {
           {activeMainTab === "tab3" &&
             wisdomData.map(
               (item, index) =>
-                tabContent === index && (
+                tabContent3 === index && (
                   <LeftRIghtImageContent
                     key={index}
                     {...item}
