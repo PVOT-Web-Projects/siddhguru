@@ -61,205 +61,6 @@ const Menu = () => {
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="padding"
-          >
-            {/* <div className={`dropdown ${isDropdownOpen ? "active" : ""}`}> */}
-            <div className="dropdown">
-              <button onClick={toggleDropdown} className="siddhguru_dropdown_btn1">
-                Siddhguru
-                <svg
-                  width="32px"
-                  height="32px"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#000000"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    {" "}
-                    <g>
-                      {" "}
-                      <path fill="none" d="M0 0h24v24H0z"></path>{" "}
-                      <path d="M12 14l-4-4h8z"></path> 
-                    </g>
-                     
-                  </g>
-                </svg>
-              </button>
-              <div>
-                <div className="submenu">
-                  <Link
-                    to="/the-saint"
-                    onClick={closeDropdown}
-                    className="close"
-                  >
-                    The Saint
-                    <svg
-                      width="32px"
-                      height="32px"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#000000"
-                      transform="rotate(270)"
-                    >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g
-                        id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></g>
-                      <g id="SVGRepo_iconCarrier">
-                        {" "}
-                        <g>
-                          {" "}
-                          <path fill="none" d="M0 0h24v24H0z"></path>{" "}
-                          <path d="M12 14l-4-4h8z"></path> 
-                        </g>
-                         
-                      </g>
-                    </svg>
-                  </Link>
-                  <div>
-                    <HashLink
-                      to="/the-saint#life_of_nutshell"
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Life in a Nutshell
-                    </HashLink>
-
-                    <HashLink
-                      to="/the-saint#kundalini"
-                      smooth
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Sadhana & Kundalini Invocation
-                    </HashLink>
-                    <HashLink
-                      to="/the-saint#asht_siddhi's_&_nav_nidhis"
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Siddhis and Nidhis
-                    </HashLink>
-                    <HashLink
-                      to="/the-saint#mission"
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Mission
-                    </HashLink>
-                  </div>
-                </div>
-                <div className="submenu">
-                  <Link to="/vision" onClick={closeDropdown}>
-                    Vision
-                    <svg
-                      width="32px"
-                      height="32px"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#000000"
-                      transform="rotate(270)"
-                    >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g
-                        id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></g>
-                      <g id="SVGRepo_iconCarrier">
-                        {" "}
-                        <g>
-                          {" "}
-                          <path fill="none" d="M0 0h24v24H0z"></path>{" "}
-                          <path d="M12 14l-4-4h8z"></path> 
-                        </g>
-                         
-                      </g>
-                    </svg>
-                  </Link>
-                  <div>
-                    <HashLink
-                      to="/vision#anant_diksha"
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Divine Touch (Digital Diksha)
-                    </HashLink>
-                    <HashLink
-                      to="/vision#siddhasana"
-                      smooth
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Siddhasana
-                    </HashLink>
-                    <HashLink
-                      to="/vision#ashram"
-                      onClick={closeDropdown}
-                      className="dropdownsubmenu_btn"
-                    >
-                      Ashram
-                    </HashLink>
-                    <HashLink
-                      to="/vision#world_spiritual_forum"
-                      onClick={() => setOffcanvasVisible(false)}
-                      className="dropdownsubmenu_btn"
-                    >
-                      World Spiritual Forum
-                    </HashLink>
-                  </div>
-                </div>
-                <div className="submenu">
-                  <Link to="/core-wisdom" onClick={closeDropdown}>
-                    Core Wisdom
-                    <svg
-                      width="32px"
-                      height="32px"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#000000"
-                      transform="rotate(270)"
-                    >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                      <g
-                        id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></g>
-                      <g id="SVGRepo_iconCarrier">
-                        {" "}
-                        <g>
-                          {" "}
-                          <path fill="none" d="M0 0h24v24H0z"></path>{" "}
-                          <path d="M12 14l-4-4h8z"></path> 
-                        </g>
-                         
-                      </g>
-                    </svg>
-                  </Link>
-                  <div>
-                    <Link to="/core-wisdom" onClick={closeDropdown}>
-                      Miracles of Vedic Science
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link to="/about-ashram" className="line_underscore nav-link">
               About Ashram
@@ -269,15 +70,23 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
-            {/* <Nav.Link href="#link" className="line_underscore">
-              Knowledge
-            </Nav.Link> */}
-            <Link to="/knowledge" className="line_underscore nav-link">
-              Knowledge
+            <Link to="/vedic-science" className="line_underscore nav-link">
+              Vedic Science
             </Link>
           </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Link to="/siddhasana" className="line_underscore nav-link">
+              Siddhasana
+            </Link>
+          </motion.div>
+
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
@@ -294,10 +103,20 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
+            <Link to="/experience" className="line_underscore nav-link">
+              Experience
+            </Link>
+          </motion.div>
+          {/* <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             <Link to={"/events"} className="line_underscore nav-link">
               Events
             </Link>
-          </motion.div>
+          </motion.div> */}
 
           <motion.p
             ref={ref}
@@ -401,128 +220,7 @@ const Menu = () => {
                 Register Devotee/Volunteer
               </Link>
               <Nav.Link href="#link">Donate </Nav.Link> */}
-              <NavDropdown
-                title="Siddhguru"
-                id="basic-nav-dropdown"
-                className="mobile_dropdown"
-              >
-                <NavDropdown
-                  title={
-                    <Link
-                      to="/the-saint"
-                      className="nav_link_mobile"
-                      onClick={() => setOffcanvasVisible(false)}
-                    >
-                      The Saint
-                    </Link>
-                  }
-                  id="basic-nav-dropdown"
-                  className="dropdownsubmenu_btn sub_sub_menu"
-                >
-                  <HashLink
-                    to="/the-saint#life_of_nutshell"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Life in a Nutshell
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/the-saint#kundalini"
-                    smooth
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Sadhana & Kundalini Invocation
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/the-saint#asht_siddhi's_&_nav_nidhis"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Siddhis and Nidhis
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/the-saint#mission"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Mission
-                  </HashLink>
-                  {/* <NavDropdown.Divider /> */}
-                </NavDropdown>
-                <NavDropdown.Divider />
-                <NavDropdown
-                  title={
-                    <Link
-                      to="/vision"
-                      className="nav_link_mobile"
-                      onClick={() => setOffcanvasVisible(false)}
-                    >
-                      Vision
-                    </Link>
-                  }
-                  id="basic-nav-dropdown_sub"
-                  className="dropdownsubmenu_btn sub_sub_menu"
-                >
-                  <HashLink
-                    to="/vision#anant_diksha"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Divine Touch (Digital Diksha)
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/vision#siddhasana"
-                    smooth
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Siddhasana
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/vision#ashram"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    Ashram
-                  </HashLink>
-                  <NavDropdown.Divider className="navbar_divider" />
-                  <HashLink
-                    to="/vision#world_spiritual_forum"
-                    onClick={() => setOffcanvasVisible(false)}
-                    className="dropdownsubmenu_btn"
-                  >
-                    World Spiritual Forum
-                  </HashLink>
-                </NavDropdown>
-                <NavDropdown.Divider />
-                <NavDropdown
-                  title={
-                    <Link
-                      to="/core-wisdom"
-                      className="nav_link_mobile"
-                      onClick={() => setOffcanvasVisible(false)}
-                    >
-                      Core Wisdom
-                    </Link>
-                  }
-                  id="basic-nav-dropdown_sub"
-                  className="dropdownsubmenu_btn sub_sub_menu"
-                >
-                  <NavDropdown.Item
-                    href="#action/3.1"
-                    className="dropdownsubmenu_btn"
-                  >
-                    Miracles of Vedic Science
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <NavDropdown.Divider />
-              </NavDropdown>
+
               <Link
                 to="/about-ashram"
                 className="mobile_nav_link"
@@ -531,11 +229,18 @@ const Menu = () => {
                 About Ashram
               </Link>
               <Link
-                to="/Knowledge"
+                to="/vedic-science"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Knowledge
+                Vedic Science
+              </Link>
+              <Link
+                to="/siddhasana"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Siddhasana
               </Link>
               <Link
                 to="/activities"
@@ -545,12 +250,13 @@ const Menu = () => {
                 Activities
               </Link>
               <Link
-                to="/events"
+                to="/experience"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Events
+                Experience
               </Link>
+
               <NavDropdown
                 title={
                   <Link
@@ -597,9 +303,28 @@ const Menu = () => {
               >
                 News
               </Link>
-              {/* <Link to="#" className="mobile_nav_link">
+
+              <Link
+                to="/events"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Events
+              </Link>
+              <Link
+                to="/gallery"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
                 Gallery
-              </Link> */}
+              </Link>
+              <Link
+                to="/blog"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Blogs
+              </Link>
               <Link
                 to="/devotee"
                 className="mobile_nav_link"

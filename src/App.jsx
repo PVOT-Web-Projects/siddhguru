@@ -21,6 +21,8 @@ import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
 import Gallery from "./pages/Gallary/gallary";
 import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
+import Siddhasana from "./pages/siddhasana/Siddhasana";
+import Experience from "./pages/experience/Experience";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,7 +68,7 @@ function App() {
             <Route path="/vision" element={<Vision />} />
             <Route path="/core-wisdom" element={<CoreWisdom />} />
             <Route path="/about-ashram" element={<AboutAshramPage />} />
-            <Route path="/knowledge" element={<Knowledge />} />
+            <Route path="/vedic-science" element={<Knowledge />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/events" element={<Events />} />
             <Route path="/centers" element={<Centers />} />
@@ -74,8 +76,10 @@ function App() {
             <Route path=":name" element={<BlogSingle />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/news" element={<News />} />
-            <Route path="/galary" element={<Gallery />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/devotee" element={<Devotee />} />
+            <Route path="/siddhasana" element={<Siddhasana />} />
+            <Route path="/experience" element={<Experience />} />
             <Route />
           </Routes>
         </Layout>

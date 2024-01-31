@@ -10,7 +10,10 @@ const TopNavbar = () => {
               <Link to="/news">News</Link>
             </li>
             <li>
-              <Link to="/galary">Gallery</Link>
+              <Link to="/events">Events</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
               <Link to="/blog">Blogs</Link>
