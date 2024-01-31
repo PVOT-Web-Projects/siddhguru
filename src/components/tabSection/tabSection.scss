@@ -183,5 +183,32 @@
     @media (max-width: 575px) {
       display: block;
     }
+    &_wrapper {
+      &_tab {
+        &_image {
+          position: relative;
+          cursor: pointer;
+          img {
+            max-width: 100%;
+            display: block;
+            width: 100%;
+          }
+          .tabSection_mobile_wrapper_tab_text {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 107.91%;
+          }
+        }
+      }
+    }
   }
 }
+
+
+
