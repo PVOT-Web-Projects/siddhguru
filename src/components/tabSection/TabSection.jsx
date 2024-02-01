@@ -216,7 +216,7 @@ const TabSection = () => {
           )}
           {activeMainTab === "tab3" && (
             <div className="tabs">
-              <ul>
+              <ul className="thirdTabTitle">
                 {tabData3.map((item, index) => (
                   <li
                     key={index}

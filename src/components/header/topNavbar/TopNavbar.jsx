@@ -9,9 +9,9 @@ const TopNavbar = () => {
             <li>
               <Link to="/news">News</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/events">Events</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>

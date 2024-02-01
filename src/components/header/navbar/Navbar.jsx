@@ -62,16 +62,6 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Link to="/about-ashram" className="line_underscore nav-link">
-              About Ashram
-            </Link>
-          </motion.div>
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
             <Link to="/vedic-science" className="line_underscore nav-link">
               Vedic Science
             </Link>
@@ -80,10 +70,20 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link to="/siddhasana" className="line_underscore nav-link">
               Siddhasana
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Link to="/about-ashram" className="line_underscore nav-link">
+              Ashram
             </Link>
           </motion.div>
 
@@ -97,17 +97,8 @@ const Menu = () => {
               Activities
             </Link>
           </motion.div>
+
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            <Link to="/experience" className="line_underscore nav-link">
-              Experience
-            </Link>
-          </motion.div>
-          {/* <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -116,7 +107,17 @@ const Menu = () => {
             <Link to={"/events"} className="line_underscore nav-link">
               Events
             </Link>
-          </motion.div> */}
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <Link to="/experience" className="line_underscore nav-link">
+              Experience
+            </Link>
+          </motion.div>
 
           <motion.p
             ref={ref}
@@ -219,14 +220,6 @@ const Menu = () => {
                 Register Devotee/Volunteer
               </Link>
               <Nav.Link href="#link">Donate </Nav.Link> */}
-
-              <Link
-                to="/about-ashram"
-                className="mobile_nav_link"
-                onClick={() => setOffcanvasVisible(false)}
-              >
-                About Ashram
-              </Link>
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"
@@ -242,11 +235,26 @@ const Menu = () => {
                 Siddhasana
               </Link>
               <Link
+                to="/about-ashram"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Ashram
+              </Link>
+
+              <Link
                 to="/activities"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Activities
+              </Link>
+              <Link
+                to="/events"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Events
               </Link>
               <Link
                 to="/experience"
@@ -303,13 +311,6 @@ const Menu = () => {
                 News
               </Link>
 
-              <Link
-                to="/events"
-                className="mobile_nav_link"
-                onClick={() => setOffcanvasVisible(false)}
-              >
-                Events
-              </Link>
               <Link
                 to="/gallery"
                 className="mobile_nav_link"

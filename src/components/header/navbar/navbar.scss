@@ -27,6 +27,9 @@ button.Mobile.navbar-toggler.collapsed {
   flex-direction: row !important;
   justify-content: end;
   gap: 2rem;
+  @media (max-width: 1060px) {
+    gap: 1.5rem;
+  }
 }
 
 .navbar-nav .dropdown-menu {
@@ -225,7 +228,7 @@ button.Mobile.navbar-toggler.collapsed {
     transition: 0.3s;
     cursor: pointer;
   }
-  .siddhguru_dropdown_btn1{
+  .siddhguru_dropdown_btn1 {
     padding-top: 0.3rem;
   }
 
@@ -296,6 +299,6 @@ button.Mobile.navbar-toggler.collapsed {
     border-bottom: none !important;
   }
 }
-.sub_sub_menu .dropdown-menu{
+.sub_sub_menu .dropdown-menu {
   padding: 10px 0 0 !important;
 }
