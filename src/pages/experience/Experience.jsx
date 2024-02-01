@@ -1,5 +1,6 @@
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import VideoCards from "../../components/videoCards/VideoCards";
+import "./experience.scss";
 
 const Experience = () => {
   return (
