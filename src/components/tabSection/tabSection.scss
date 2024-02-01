@@ -200,6 +200,7 @@
     }
     &_wrapper {
       &_tab {
+        overflow: hidden;
         &_image {
           position: relative;
           cursor: pointer;
