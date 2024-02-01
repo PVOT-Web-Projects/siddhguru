@@ -5,7 +5,7 @@ import "./logo.scss";
 const Logo = () => {
   return (
     <div className="logo">
-      <Link to={"/"}>
+      <Link to={"/siddhguru"}>
       <img src={logo} alt="logo" />
       </Link>
     </div>

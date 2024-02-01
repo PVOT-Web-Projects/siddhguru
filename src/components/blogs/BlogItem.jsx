@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const BlogItem = ({ name, image, title, description, url, cardVariants }) => {
+const BlogItem = ({ name, image, title, description, cardVariants }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -50,4 +50,5 @@ BlogItem.propTypes = {
   url: PropTypes.any,
   cardVariants: PropTypes.any,
   link: PropTypes.any,
+  name: PropTypes.any,
 };

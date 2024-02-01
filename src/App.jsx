@@ -73,7 +73,7 @@ function App() {
             <Route path="/events" element={<Events />} />
             <Route path="/centers" element={<Centers />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path=":name" element={<BlogSingle />} />
+            <Route path="/blog/:name" element={<BlogSingle />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/news" element={<News />} />
             <Route path="/gallery" element={<Gallery />} />
