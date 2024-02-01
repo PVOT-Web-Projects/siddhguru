@@ -25,6 +25,15 @@
           border-left: 10px solid #fff;
           border-right: 10px solid #fff;
           transition: all 0.4s;
+          overflow: hidden;
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
+            .mainTab_name {
+              color: rgb(255, 153, 0);
+            }
+          }
           cursor: pointer;
           @media (max-width: 767px) {
             border-top: 5px solid #fff;
@@ -45,6 +54,7 @@
             max-width: 100%;
             display: block;
             width: 100%;
+            transition: all 0.4s;
           }
           .mainTab_name {
             position: absolute;
@@ -58,6 +68,7 @@
             line-height: 107.91%;
             width: 100%;
             text-align: center;
+            transition: all 0.4s;
             @media (max-width: 1199px) {
               font-size: 35px;
             }
@@ -107,6 +118,10 @@
             font-weight: 400;
             line-height: normal;
             padding: 0 50px;
+            transition: all 0.4s;
+            &:hover {
+              color: #6a1c1c;
+            }
             @media (max-width: 1600px) {
               padding: 0 20px;
             }
@@ -209,6 +224,3 @@
     }
   }
 }
-
-
-

@@ -13,15 +13,15 @@ import {
   NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
-import { DropdownSubmenu } from "react-bootstrap-submenu";
+// import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
 
 const Menu = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
-  const [showSubMenu, setShowSubMenu] = useState(false);
-  const [showSubMenu2, setShowSubMenu2] = useState(false);
+  // const [showSubMenu, setShowSubMenu] = useState(false);
+  // const [showSubMenu2, setShowSubMenu2] = useState(false);
   const [offcanvasVisible, setOffcanvasVisible] = useState(false);
 
   const toggleBtn = () => {
@@ -32,18 +32,18 @@ const Menu = () => {
     setOffcanvasVisible((prevVisible) => !prevVisible);
   };
 
-  const handleMouseEnter = () => {
-    setShowSubMenu(true);
-  };
-  const handleMouseLeave = () => {
-    setShowSubMenu(false);
-  };
-  const handleMouseEnter2 = () => {
-    setShowSubMenu2(true);
-  };
-  const handleMouseLeave2 = () => {
-    setShowSubMenu2(false);
-  };
+  // const handleMouseEnter = () => {
+  //   setShowSubMenu(true);
+  // };
+  // const handleMouseLeave = () => {
+  //   setShowSubMenu(false);
+  // };
+  // const handleMouseEnter2 = () => {
+  //   setShowSubMenu2(true);
+  // };
+  // const handleMouseLeave2 = () => {
+  //   setShowSubMenu2(false);
+  // };
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
@@ -137,20 +137,19 @@ const Menu = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#000000"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
                       <g>
                         {" "}
                         <path fill="none" d="M0 0h24v24H0z"></path>{" "}
-                        <path d="M12 14l-4-4h8z"></path> 
+                        <path d="M12 14l-4-4h8z"></path>
                       </g>
-                       
                     </g>
                   </svg>{" "}
                 </Link>
