@@ -56,7 +56,7 @@ const Images = [
 const VideoCards = () => {
   return (
     <div className="experience_section">
-      <div className="gallery_section">
+      <div className="gallery_section demo">
         {Images.map((item, index) => (
           <div key={index} className="main_content">
             <Link to="#">
