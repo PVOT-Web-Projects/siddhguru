@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import BlogSingleItem from "../../../components/blogs/blogSingleItem/BlogSingleItem";
 import axios from "axios";
 import Spinner from "../../../components/spinner/Spinner";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import "./blogSingle.scss";
 
 const BlogSingle = () => {
   const [blogs, setBlogs] = useState([]);
@@ -18,35 +19,34 @@ const BlogSingle = () => {
       })
       .catch((error) => console.error(error));
   }, []);
-  const { pathname } = useLocation();
-  console.log(pathname);
+  const { name } = useParams();
+  console.log(name);
   return (
     <>
       {loading ? (
         <Spinner />
       ) : (
         <>
-          {/* <h1>Hello BLog</h1> */}
-          {blogs?.filter((item) => {
-            return(
-              `/${item.slug}` === pathname
-              )
-              // console.log(`/${item.slug}`);
-            })
-            .map((item, index) => (
-              <BlogSingleItem
-                key={index}
-                image={
-                  item._embedded["wp:featuredmedia"] &&
-                  item._embedded["wp:featuredmedia"][0].media_details.sizes.full
-                    .source_url
-                }
-                title={item.title.rendered}
-                // description={item.excerpt.rendered}
-                // name={item.slug}
-                //   cardVariants={cardVariants}
-              />
-            ))}
+          {blogs
+            ?.filter((item) => item.slug === name)
+            .map((item, index) => {
+              console.log(item.acf);
+              return (
+                <BlogSingleItem
+                  key={index}
+                  // image={
+                  //   item._embedded["wp:featuredmedia"] &&
+                  //   item._embedded["wp:featuredmedia"][0].media_details.sizes.full
+                  //     .source_url
+                  // }
+                  image={item.acf.banner_image}
+                  title={item.title.rendered}
+                  // description={item.excerpt.rendered}
+                  // name={item.slug}
+                  //   cardVariants={cardVariants}
+                />
+              );
+            })}
         </>
       )}
     </>

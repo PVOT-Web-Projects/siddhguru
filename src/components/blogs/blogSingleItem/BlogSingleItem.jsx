@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./blogSingleItem.scss";
 
 const BlogSingleItem = ({ image, title }) => {
   return (
@@ -8,6 +9,7 @@ const BlogSingleItem = ({ image, title }) => {
           <img src={image} alt={title} />
         </div>
       </div>
+      
     </div>
   );
 };
