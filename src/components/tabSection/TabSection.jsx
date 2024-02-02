@@ -62,7 +62,7 @@ const visionData = [
   {
     id: "anant_diksha",
     img: image1,
-    title: "Anant Diksha",
+    title: "Divine Touch (Digital Diksha)",
     text: "Immerse yourself in a transformative journey with Anant Diksha, an extraordinary initiation into the realms of spiritual wisdom guided by Siddhguru. In ancient times, telepathy was used for communication, as seen when Sanjay narrated Mahabharat to Dhritrasht. Today, distance healing reflects the power of connections and energy, regardless of physical proximity. ",
     text2:
       "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes Siddhguru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
@@ -107,13 +107,13 @@ const tabData1 = [
   {
     title: "Siddhis and Nidhis",
   },
-  {
-    title: "Mission",
-  },
+  // {
+  //   title: "Mission",
+  // },
 ];
 const tabData2 = [
   {
-    title: "Anant Diksha",
+    title: "Divine Touch (Digital Diksha)",
   },
   {
     title: "Siddhasana",
@@ -168,7 +168,7 @@ const TabSection = () => {
               onClick={handleTab2}
             >
               <img src={mainTabImage2} alt="mainTab" />
-              <div className="mainTab_name">Vision</div>
+              <div className="mainTab_name">Mission</div>
             </div>
             <div
               className={`${
