@@ -11,6 +11,7 @@ import fullWidthImage from "../../images/fullWidthImage1.png";
 import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/EventsPage.jpg"
+import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 const Events = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -59,7 +60,8 @@ const Events = () => {
           ))}
         </div>
       )}
-      <FormHomePage />
+      {/* <FormHomePage /> */}
+      <AllVideoHome />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Galarybanner from "../../components/gallarybaner/Gallarybaner";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import galleryBigImage from "../../images/galleryBigImage.png";
 import galleryBigImage2 from "../../images/fullWidthImage2.png";
+import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 const Gallery = () => {
   return (
     <>
@@ -17,7 +18,8 @@ const Gallery = () => {
         }
       />
       <FullWidthImage image={galleryBigImage2} />
-      <FormHomePage />
+      {/* <FormHomePage /> */}
+      <AllVideoHome />
     </>
   );
 };
