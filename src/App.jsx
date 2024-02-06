@@ -12,7 +12,6 @@ import TheSaint from "./pages/theSaint/TheSaint";
 import Vision from "./pages/vision/Vision";
 import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
 import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
-import Knowledge from "./pages/knowledge/Knowledge";
 import Activities from "./pages/activities/Activities";
 import Centers from "./pages/centers/Centers";
 import Blog from "./pages/blog/Blog";
@@ -23,6 +22,7 @@ import Gallery from "./pages/Gallary/gallary";
 import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
+import VedicScience from "./pages/vedicScience/VedicScience";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -68,7 +68,7 @@ function App() {
             <Route path="/vision" element={<Vision />} />
             <Route path="/core-wisdom" element={<CoreWisdom />} />
             <Route path="/about-ashram" element={<AboutAshramPage />} />
-            <Route path="/vedic-science" element={<Knowledge />} />
+            <Route path="/vedic-science" element={<VedicScience />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/events" element={<Events />} />
             <Route path="/centers" element={<Centers />} />

@@ -119,7 +119,7 @@ const Menu = () => {
             </Link>
           </motion.div>
 
-          <motion.p
+          {/* <motion.p
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -172,7 +172,7 @@ const Menu = () => {
                 </HashLink>
               </div>
             </div>
-          </motion.p>
+          </motion.p> */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
@@ -263,7 +263,7 @@ const Menu = () => {
               >
                 Experience
               </Link>
-
+{/* 
               <NavDropdown
                 title={
                   <Link
@@ -295,7 +295,7 @@ const Menu = () => {
                   International
                 </HashLink>
                 <NavDropdown.Divider />
-              </NavDropdown>
+              </NavDropdown> */}
               <Link
                 to="/contact"
                 className="mobile_nav_link"

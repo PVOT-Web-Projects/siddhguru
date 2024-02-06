@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const TextSection = () => {
   const text =
-    "Welcome to the Sacred Haven of Spiritual Enlightenment—Shri Siddhguru, the Divine Guide for the Modern Seeker. In the heart of his holiness Shri Sidheshwar Brahmrishi Gurudev, “Siddhguru” transcends the miracles of Vedic science and boundaries of conventional spirituality, ushering humanity towards the path of a divine life.";
+    "In Vedic science, the Sri Siddheshwar Teerth - Brahmarishi Ashram family welcomes you. In the present age, every individual strives for eternal happiness for themselves and their families. In the journey of life, surrounded by the world's challenges, solutions to every small or big problem of human life are found in Vedic science. Sri Siddheshwar Brahmarishi Gurudev, also known as 'Siddhaguru,' is on a unique mission of spirituality and service to alleviate every sorrow of human life through his spiritual achievements, traveling worldwide. ";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,7 +45,7 @@ const TextSection = () => {
             className={"mantra_wrapper"}
             key={char + "-" + index}
             variants={letter}
-            style={index > 139 && index < 188 ? { color: "#FF9900", fontWeight:700 } : null}
+            style={index > 331 && index < 398 ? { color: "#FF9900", fontWeight:700 } : null}
           >
             {char}
           </motion.span>

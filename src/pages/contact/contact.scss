@@ -118,5 +118,27 @@
         }
       }
     }
+    .socialIcon {
+      width: 30%;
+      ul {
+        display: flex;
+        margin: 0 -20px;
+        li {
+          padding: 0 20px;
+          a {
+           
+            &:hover {
+              img {
+                transform: translateY(-10px);
+              }
+            }
+            img {
+              width: 50px;
+              transition: all 0.4s;
+            }
+          }
+        }
+      }
+    }
   }
 }

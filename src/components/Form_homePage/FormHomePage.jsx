@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 // import { useState } from "react";
 // import { Dropdown } from "primereact/dropdown";
-import Siddhguru_img from "../../images/homePageFormImage.png";
+import Siddhguru_img from "../../images/allVideo.jpg";
 import "./formHomePage.scss";
 import FormCommon from "../formCommon/FormCommon";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
@@ -53,23 +53,23 @@ function FormHomePage() {
       >
         <motion.span className={"mantra_wrapper"} variants={letter}>
           <HeadingTextAnimation
-            heading={"कल को आसान बनाने के लिए आज "}
+            heading={"Lift your soul, empower yourself, become divine. "}
             fontSize={"39px"}
             justifyContent={"center"}
           />
         </motion.span>
         <motion.span className={"mantra_wrapper"} variants={letter}>
           <HeadingTextAnimation
-            heading={"आपको कड़ी मेहनत करनी ही पड़ेगी."}
+            heading={"You are a born victor."}
             fontSize={"39px"}
             justifyContent={"center"}
           />
         </motion.span>
       </motion.div>
 
-      <div className="siddhguru_message_section">
+      {/* <div className="siddhguru_message_section">
         <p>Receive Siddhguru’s quote every day in your inbox.</p>
-      </div>
+      </div> */}
       {/* <div className="siddhguru_form_Section">
         <form action="">
           <div className="sidhhguru_form_content">
@@ -106,7 +106,7 @@ function FormHomePage() {
           </motion.div>
         </form>
       </div> */}
-      <FormCommon />
+      {/* <FormCommon /> */}
     </div>
   );
 }

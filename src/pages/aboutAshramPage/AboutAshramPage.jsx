@@ -7,6 +7,8 @@ import image3 from "../../images/aboutAshramImage3.png";
 import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
 import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
+import bannerImage from "../../images/AshramPage.jpg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -19,9 +21,10 @@ const AboutAshramPage = () => {
   ];
   return (
     <div className="aboutAshramPage">
-      <InnerPageCommonHeading
+      {/* <InnerPageCommonHeading
         heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
-      />
+      /> */}
+      <InnerPageBanner image={bannerImage} />
       <InnerPageCommonText
         text1={
           "Step into the sacred embrace of Shri Brahmrishi Ashram, your gateway to spiritual liberation, blessed by Gurudev, for a profound journey to ultimate freedom, Moksha. Feel the divine energy surrounding you as you connect with our master upon entering. Touch the sacred ground, seeking healing power to fortify the body and spirit. Walk reverently, for this ground was sanctified by Lord Vishnu and revived by Shri Gurudev's spiritual energy. Strengthened by His sadhana, you embark on your spiritual quest, surrendering to His divine feet."
