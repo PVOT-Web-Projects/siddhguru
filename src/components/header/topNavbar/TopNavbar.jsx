@@ -3,6 +3,7 @@ import "./topNavbar.scss";
 import icon2 from "../../../images/facebook_icon.svg";
 import icon3 from "../../../images/youtube_icon.svg";
 import icon1 from "../../../images/instagram_icon.svg";
+import icon4 from "../../../images/twitter.svg";
 
 const TopNavbar = () => {
   return (
@@ -32,6 +33,14 @@ const TopNavbar = () => {
                 target="_blank"
               >
                 <img src={icon3} />
+              </a>
+            </div>
+            <div className="youtube_icon social_icon">
+              <a
+                href=" https://twitter.com/sri_sidheswar"
+                target="_blank"
+              >
+                <img src={icon4} />
               </a>
             </div>
           </div>

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import facebook from "../../images/facebook.svg";
 import insta from "../../images/insta.svg";
 import youtube from "../../images/youtube.svg";
+import twitter from "../../images/twittercopy.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/ContactPage.jpg";
 
@@ -37,18 +38,32 @@ const Contact = () => {
         <div className="socialIcon">
           <ul>
             <li>
-              <Link to={"https://www.instagram.com/srisidheshwarbrahmrishi/"} target="_blank">
+              <Link
+                to={"https://www.instagram.com/srisidheshwarbrahmrishi/"}
+                target="_blank"
+              >
                 <img src={insta} alt="insta" />
               </Link>
             </li>
             <li>
-              <Link to={"https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"} target="_blank">
+              <Link
+                to={"https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"}
+                target="_blank"
+              >
                 <img src={facebook} alt="facebook" />
               </Link>
             </li>
             <li>
-              <Link to={"https://www.youtube.com/@srisidheshwartirth-brahmri5318"} target="_blank">
+              <Link
+                to={"https://www.youtube.com/@srisidheshwartirth-brahmri5318"}
+                target="_blank"
+              >
                 <img src={youtube} alt="youtube" />
+              </Link>
+            </li>
+            <li>
+              <Link to={"https://twitter.com/sri_sidheswar"} target="_blank">
+                <img src={twitter} alt="youtube" />
               </Link>
             </li>
           </ul>
