@@ -23,6 +23,9 @@
       .footer_link_container{
         display: flex;
         margin: 0 -10px;
+        @media(max-width:991px){
+          display: none;
+        }
         .social_icon{
           padding: 0 10px;
           transition: all 0.4s;
@@ -36,6 +39,7 @@
         // display: flex;
         // margin: 0 -14px;
         // justify-content: end;
+        margin: 0;
         @media (max-width: 991px) {
           display: none;
         }
