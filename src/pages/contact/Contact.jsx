@@ -61,11 +61,11 @@ const Contact = () => {
                 <img src={youtube} alt="youtube" />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={"https://twitter.com/sri_sidheswar"} target="_blank">
                 <img src={twitter} alt="youtube" />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
