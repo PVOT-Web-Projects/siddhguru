@@ -22,6 +22,7 @@ const EventHomePageItem = ({
   rightLight2,
   rightLight3,
   rightLight4,
+  note,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -77,6 +78,7 @@ const EventHomePageItem = ({
                 </p>
               )}
             </div>
+            <div className="note">{note}</div>
             {/* <div className="location">{location}</div> */}
             <div className="eventCardBtn">
               <Button btn_text="Register Now" />

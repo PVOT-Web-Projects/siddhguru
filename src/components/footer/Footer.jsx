@@ -40,17 +40,26 @@ const Footer = () => {
 
       <div className="footer_link_container">
         <div className="instagram_icon social_icon">
-          <a href="#">
+          <a
+            href="https://www.instagram.com/srisidheshwarbrahmrishi/"
+            target="_blank"
+          >
             <img src={icon1} height="20px" />
           </a>
         </div>
         <div className="facebook_icon social_icon">
-          <a href="#">
+          <a
+            href=" https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"
+            target="_blank"
+          >
             <img src={icon2} />
           </a>
         </div>
         <div className="youtube_icon social_icon">
-          <a href="#">
+          <a
+            href=" https://www.youtube.com/@srisidheshwartirth-brahmri5318"
+            target="_blank"
+          >
             <img src={icon3} />
           </a>
         </div>

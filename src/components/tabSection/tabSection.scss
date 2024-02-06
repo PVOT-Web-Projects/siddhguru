@@ -234,6 +234,16 @@
           text-align: center;
           border-radius: 10px;
           cursor: pointer;
+          img {
+            width: 40px;
+            background-color: #fff;
+            border-radius: 100%;
+            padding: 10px;
+            margin-left: 20px;
+            &.showLess{
+              transform: rotate(180deg);
+            }
+          }
         }
       }
     }
