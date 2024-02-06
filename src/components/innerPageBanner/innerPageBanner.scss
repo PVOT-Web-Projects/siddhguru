@@ -1,0 +1,12 @@
+.innerPageBanner {
+    margin: 0 0 50px;
+  &_wrapper {
+    img {
+      max-width: 100%;
+      display: block;
+      width: 100%;
+      height: calc(100vh - 40px);
+      object-fit: cover;
+    }
+  }
+}

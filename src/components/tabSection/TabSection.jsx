@@ -2,15 +2,15 @@ import TextSection from "../textSection/TextSection";
 import mainTabImage1 from "../../images/mainTab1.png";
 import mainTabImage2 from "../../images/mainTab2.png";
 import mainTabImage3 from "../../images/mainTab3.png";
-import theSaintImage1 from "../../images/theSaintImage1.png";
-import theSaintImage2 from "../../images/theSaintImage2.png";
-import theSaintImage3 from "../../images/theSaintImage3.png";
+import theSaintImage1 from "../../images/Life in a Nutshell.jpg";
+import theSaintImage2 from "../../images/Sadhana & Kundalini Invocation.jpg";
+import theSaintImage3 from "../../images/Siddhis-and-Nidhis.jpg";
 import theSaintImage4 from "../../images/theSaintImage4.png";
-import image1 from "../../images/visionImage1.png";
-import image2 from "../../images/visionImage2.png";
-import image3 from "../../images/visionImage3.png";
-import image4 from "../../images/visionImage4.png";
-import wisdomImage from "../../images/coreWisdomImage.png";
+import image1 from "../../images/Divine Touch (Digital Diksha).jpg";
+import image2 from "../../images/Siddhasana.jpg";
+import image3 from "../../images/Ashram.jpg";
+import image4 from "../../images/World-Spiritual-Forum.jpg";
+import wisdomImage from "../../images/Miracles of Vedic Science.jpg";
 import "./tabSection.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
@@ -20,8 +20,10 @@ const theSaintData = [
     id: "life_of_nutshell",
     index: 0,
     img: theSaintImage1,
-    title: "Life in a Nutshell",
-    text: "Dive into the incredible life story of Siddhguru, a journey marked by extraordinary events and divine moments that shaped his existence. It all began with his miraculous birth in the holy land of Bharata, filled with divine interventions that unfolded from a very young age. At just nine months old, his parents sought help from the revered Shri Devraha Baba when Siddhguru faced a critical health situation. To everyone's amazement, Devraha Baba recognized something special in the child, declaring him an incarnation of the Divine Spirit sent to bring spirituality to the world. The story then takes us to Siddhguru's upbringing under Devraha Baba's guidance, where silent introspection and deep spiritual exploration became the core of his existence for nearly eleven years.",
+    title: "Sri Siddhguru",
+    text: "The gentle and extraordinary yogi, Sri Siddheshwar Brahmarishi Gurudev, has not only achieved excellence in worldly education, attaining the highest position, but has also delved into the study of Agama, Vedas, Puranas, and Upanishads in the spiritual field. Alongside Sanskrit, he has also earned a direct title in astrology. Siddhaguru is a great yogi whose Kundalini has been awakened from birth, and he has attained the realms of Vishnu Lok, Shiva Lok, and Brahma Lok, becoming a Brahmarishi and Arihant. Through profound meditation and ascetic practices, he has acquired the eight siddhis and nine treasures, becoming Siddheshwar himself.",
+    conclution:
+      "Undoubtedly, a single glance and awe-inspiring prayer to Sri Siddheshwar Brahmarishi Gurudev can change the direction and condition of our lives, provided our trust, dedication, and resolution are a hundred percent",
   },
   {
     id: "kundalini",
@@ -99,7 +101,7 @@ const wisdomData = [
 
 const tabData1 = [
   {
-    title: "Life in a Nutshell",
+    title: "Sri Siddhguru",
   },
   {
     title: "Sadhana & Kundalini Invocation",
@@ -159,7 +161,7 @@ const TabSection = () => {
               onClick={handleTab1}
             >
               <img src={mainTabImage1} alt="mainTab" />
-              <div className="mainTab_name">The Saint</div>
+              <div className="mainTab_name">Sri Siddhguru</div>
             </div>
             <div
               className={`${

@@ -21,14 +21,14 @@ const Home = () => {
       <TabSection />
       <AboutAshram />
       <ThreeVideos />
-      <CircleSpin />
+      {/* <CircleSpin /> */}
       <EventsHomePage />
-      <BrahmSutra />
-      <HomePageVideoSection />
-      <OurProgramSlider />
+      {/* <BrahmSutra /> */}
+      {/* <HomePageVideoSection /> */}
+      {/* <OurProgramSlider /> */}
       <AllVideoHome />
-      <FormHomePage />
-      <Space />
+      {/* <FormHomePage /> */}
+      {/* <Space /> */}
     </>
   );
 };

@@ -85,7 +85,9 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Ashram</h3>
             <p>
-             {" Enriched and adorned by the rigorous Sadhana, meditation, and austerities observed by Sri Siddhguru, The Brahmrishi Ashram has become a sacred sanctuary where the divine presence of gods is palpable. Here, you can feel a distinct positive aura that permeates the soil and surroundings. This is the place where hearts can let go of their worries & troubles, and experience 'the eternal bliss'."}
+              {
+                "'Sri Siddheshwar Teerth' is a spiritual pilgrimage site in Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees worldwide visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, and Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji. In this ashram, a three-day and seven-day Siddhasana retreat is also organized free of cost, and people from all over the world come to benefit from it. They leave with divine knowledge and the experience of eternal happiness. This pilgrimage site on the spiritual land of India is a center of energy in itself."
+              }
             </p>
           </div>
           <div className="bottom_border">

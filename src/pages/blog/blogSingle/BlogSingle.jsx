@@ -8,13 +8,17 @@ import "./blogSingle.scss";
 const BlogSingle = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [bannerImage, setBannerImage] = useState();
+  console.log(bannerImage);
   useEffect(() => {
     setLoading(true);
     axios
+      // https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/media/198
       .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/blogs/?_embed")
       .then((response) => {
         setBlogs(response.data);
         console.log(response.data);
+        setBannerImage(response.data.acf.banner_image);
         setLoading(false);
       })
       .catch((error) => console.error(error));

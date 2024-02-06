@@ -78,10 +78,10 @@ const Centers = () => {
       <InnerPageCommonHeading heading={"Centers"} />
       <InnerPageCommonText
         text1={
-          "Isha is supported by over 17 million volunteers worldwide in more than 300 centers worldwide. The most prominent of these centers are the Isha Yoga Center in Coimbatore and the Sadhguru Sannidhi in Bengaluru in India, and the Isha Institute of Inner-sciences in Tennessee and Isha Yoga Center in Los Angeles in the United States. These were established by Sadhguru as large-scale infrastructure for raising human consciousness. The centers offer energized spaces for inner transformation, where one can imbibe classical Yoga, meditation, and rejuvenating processes for health and inner freedom."
+          "Immerse yourself in a sanctuary where ancient wisdom meets modern seekers. At our centres, we open the doors to a world where spirituality is not just a practice but a way of life, and every step leads you closer to the essence of your being. Welcome to a space where the spiritual journey unfolds and seekers from around the globe connect in the pursuit of divine wisdom."
         }
       />
-      <TwoCardSection />
+      {/* <TwoCardSection /> */}
       <FullWidthImageSec
         id={"indian"}
         imageUrl={bigImage1}
@@ -89,7 +89,7 @@ const Centers = () => {
           "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
       />
-      <div className="cardList">
+      {/* <div className="cardList">
         {centerTopCards?.map((item, index) => (
           <CardItem
             key={index}
@@ -100,7 +100,7 @@ const Centers = () => {
             imageText={item.imageText}
           />
         ))}
-      </div>
+      </div> */}
       <FullWidthImageSec
         id={"international"}
         imageUrl={bigImage2}
@@ -108,7 +108,7 @@ const Centers = () => {
           "As Gurudev always says there are 3 stages of everyone’s life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
       />
-      <div className="cardList">
+      {/* <div className="cardList">
         {centerBottomCards?.map((item, index) => (
           <CardItem
             key={index}
@@ -119,7 +119,7 @@ const Centers = () => {
             imageText={item.imageText}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,27 +5,35 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 130vh;
+    position: relative;
+    @media(max-width:1440px){
+      height: 140vh;
+    }
+    @media(max-width:1199px){
+      height: 150vh;
+    }
     @media (max-width: 767px) {
-      height: 290vh;
+      height: 160vh;
       position: relative;
       overflow: hidden;
     }
     @media (max-width: 575px) {
-      height: 200vh;
-      position: relative;
-      overflow: hidden;
+      height: 130vh;
+    
     }
     .sidhhguru_gurudev_first_content {
-      padding-top: 6rem;
+      padding-top: 4rem;
       padding-left: 8rem;
       padding-right: 5rem;
       margin-bottom: -150px;
       display: flex;
       position: relative;
+      justify-content: center;
+      z-index: 1;
       gap: 2rem;
-      @media (max-width: 1300px) {
-        padding: 6rem 4rem 0;
+      @media (max-width: 1600px) {
+        padding: 3rem 4rem 0;
       }
       @media (max-width: 1199px) {
         padding: 6rem 3rem 0;
@@ -39,7 +47,7 @@
         padding: 4rem 1rem 0;
       }
       .allVideoLeft {
-        width: 40%;
+        width: 100%;
         @media (max-width: 767px) {
           width: 100%;
         }
@@ -140,12 +148,14 @@
     }
     .lotus_img_outer {
       text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 50px;
+      width: 100%;
       @media (max-width: 767px) {
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 119px;
+      width: auto;
+      bottom: 110px;
       }
     }
     .lotus_img {
@@ -158,7 +168,7 @@
         height: 51vh;
       }
       @media (max-width: 767px) {
-        height: 58vh;
+        height: 100%;
         max-width: max-content;
       }
     }
