@@ -7,6 +7,9 @@ const LeftRIghtImageContent = ({
   title,
   text,
   text2,
+  text3,
+  text4,
+  text5,
   descriptiontitle1,
   descriptiontext1,
   descriptiontitle2,
@@ -43,6 +46,9 @@ const LeftRIghtImageContent = ({
         </div>
         {text && <div className="text">{text}</div>}
         {text2 && <div className="text2">{text2}</div>}
+        {text3 && <div className="text2">{text3}</div>}
+        {text4 && <div className="text2">{text4}</div>}
+        {text5 && <div className="text2">{text5}</div>}
         {(descriptiontext1 ||
           descriptiontext2 ||
           descriptiontitle1 ||
