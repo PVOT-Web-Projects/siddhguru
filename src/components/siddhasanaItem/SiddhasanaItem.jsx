@@ -1,4 +1,6 @@
 import "./siddhasanaItem.scss";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const SiddhasanaItem = ({
   heading,
@@ -8,9 +10,19 @@ const SiddhasanaItem = ({
   text4,
   text5,
   image,
+  delay,
 }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
   return (
-    <div className="SiddhasanaItem">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: delay }}
+      className="SiddhasanaItem"
+    >
       <div className="SiddhasanaItem_wrapper">
         <h2>{heading}</h2>
         <p>{text1}</p>
@@ -22,7 +34,7 @@ const SiddhasanaItem = ({
       <div className="SiddhasanaItem_image">
         <img src={image} alt="siddhasana" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default SiddhasanaItem;

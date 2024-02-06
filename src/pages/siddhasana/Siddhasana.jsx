@@ -8,6 +8,7 @@ import bannerImage from "../../images/SiddhasanaPage.jpg";
 
 const siddhasanaData = [
   {
+    delay: 0.1,
     image: image,
     heading: "WHAT",
     text1:
@@ -22,6 +23,7 @@ const siddhasanaData = [
       "Note: Siddhasana is a priceless program built and sustained purely by the labor of love.  There is absolutely no charge for participation at any residential retreat in India.",
   },
   {
+    delay: 0.2,
     image: image,
     heading: "WHERE & WHEN",
     text1:
@@ -38,6 +40,7 @@ const siddhasanaData = [
       "Siddhasana Workshops and sessions are organized throughout the year.",
   },
   {
+    delay: 0.3,
     image: image,
     heading: "WHY",
     text1:
@@ -51,6 +54,7 @@ const siddhasanaData = [
       "This program enhances your overall health and empowers you to become the *best version of yourself.*",
   },
   {
+    delay: 0.4,
     image: image,
     heading: "WHOM",
     text1: "Siddhasana Retreat is open for all from the age of  25 years.",
