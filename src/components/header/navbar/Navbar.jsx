@@ -87,7 +87,7 @@ const Menu = () => {
             </Link>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -96,7 +96,7 @@ const Menu = () => {
             <Link to="/activities" className="line_underscore nav-link">
               Activities
             </Link>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             ref={ref}
@@ -242,13 +242,13 @@ const Menu = () => {
                 Ashram
               </Link>
 
-              <Link
+              {/* <Link
                 to="/activities"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Activities
-              </Link>
+              </Link> */}
               <Link
                 to="/events"
                 className="mobile_nav_link"

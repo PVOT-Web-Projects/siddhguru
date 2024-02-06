@@ -14,6 +14,7 @@ import wisdomImage from "../../images/Miracles of Vedic Science.jpg";
 import "./tabSection.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
+import Button from "../buttons/button2";
 
 const theSaintData = [
   {
@@ -21,44 +22,52 @@ const theSaintData = [
     index: 0,
     img: theSaintImage1,
     title: "Sri Siddhguru",
-    text: "The gentle and extraordinary yogi, Sri Siddheshwar Brahmarishi Gurudev, has not only achieved excellence in worldly education, attaining the highest position, but has also delved into the study of Agama, Vedas, Puranas, and Upanishads in the spiritual field. Alongside Sanskrit, he has also earned a direct title in astrology. Siddhaguru is a great yogi whose Kundalini has been awakened from birth, and he has attained the realms of Vishnu Lok, Shiva Lok, and Brahma Lok, becoming a Brahmarishi and Arihant. Through profound meditation and ascetic practices, he has acquired the eight siddhis and nine treasures, becoming Siddheshwar himself.",
-    conclution:
-      "Undoubtedly, a single glance and awe-inspiring prayer to Sri Siddheshwar Brahmarishi Gurudev can change the direction and condition of our lives, provided our trust, dedication, and resolution are a hundred percent",
+    text: "Full of compassion, love, humility, and simplicity, Sri Brahmrishi Siddhguru Gurudev is one of the most revered saints of our age. ",
+    text2:
+      "Sri Siddhguru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
+    text3:
+      "Once you create a spiritual bond with Sri Siddhguru, he acts as a catalyst to bring peace and harmony to your life in ways beyond the comprehension of the limited capacity of our minds.  He has the divine ability to transform your life even when he is thousands of miles away.",
   },
   {
     id: "kundalini",
     index: 1,
     img: theSaintImage2,
     title: "Kundalini",
-    text: "Discover the fascinating world of Kundalini awakening, a powerful spiritual energy tucked away within every one of us. Siddhguru's expertise in unlocking the secrets of Kundalini is like a guidebook, unveiling the incredible potential hidden within each seeker. The teachings of Gurudev are like a deep dive into your inner self.All the Seven chakras of Gurudev were activated by birth. Siddhguru's mastery in navigating this inner realm is like a roadmap, showing how this energy can be awakened, unleashing a profound force for personal growth and spiritual evolution. It's like discovering a hidden treasure chest within yourself, waiting to be explored.",
+    text: "Kundalini is a powerful spiritual energy tucked away within every one of us that remains dormant until awakened. One reaches the pinnacle of spirituality by invoking all eight Kundalini Chakras, which can take many lives. Gurudev was born with all his eight Kundalini Chakras invoked. There are just a few living saints that have accomplished this virtually impossible spiritual state of this super divine consciousness. Most have chosen to distance themselves from fellow human beings. However, Siddhguru chose to use his divine energy to alleviate our sufferings and bring inner peace and happiness to our lives. ",
+    text2:
+      "We must pay for our karmic debt, so we’ll face challenges in our lives. Gurudev gives us the strength to overcome those challenges calmly.",
   },
   {
     id: "asht_siddhi's_&_nav_nidhis",
     index: 2,
     img: theSaintImage3,
     title: "Asht Siddhi’s & Nav Nidhis",
-    text: "Discover the amazing spiritual treasures Siddhguru holds, known as Nav Nidhis and Asht Siddhis. They are like magical keys to celestial vaults full of divine wealth and blessings. Gurudev doesn't just have treasures; he possesses rare spiritual attainments, the Asht Siddhis, something only a few saints achieve, like those in the Himalayas. Gurudev's journey to attaining these is a fascinating tale he joyfully shares. It's like he's been given the keys to an otherworldly treasure trove! Every glimpse of Gurudev has the power to change your life's direction and destiny. So, dive into the divine blessings flowing through these channels and witness the magical impact of these sacred treasures Gurudev holds.It's like having a direct line to cosmic goodness and abundance!",
+    text: "There are eight Siddhis. To acquire all eight Siddhis, one must practice and master 17868 Vidhis.",
+    text2:"In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
+    text3:"“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
+    text4:"Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
+    text5:"From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
 
-    descriptiontitle1: "Asht Sidhi -",
-    descriptiontext1:
-      "अणिमा , महिमा, लघिमा, गरिमा, प्राप्ति, प्राकाम्य, इशित्व, वशित्व  पद्म निधि, महापद्म निधि, नील निधि, मुकुंद निधि, नंद निधि, मकर निधि, कच्छप निधि, 8. शंख निधि  खर्व निधि",
+    // descriptiontitle1: "Asht Sidhi -",
+    // descriptiontext1:
+    //   "अणिमा , महिमा, लघिमा, गरिमा, प्राप्ति, प्राकाम्य, इशित्व, वशित्व  पद्म निधि, महापद्म निधि, नील निधि, मुकुंद निधि, नंद निधि, मकर निधि, कच्छप निधि, 8. शंख निधि  खर्व निधि",
 
-    descriptiontitle2: "Nav Nidhi - ",
-    descriptiontext2:
-      "पद्म निधि, महापद्म निधि, नील निधि, मुकुंद निधि, नंद निधि, मकर निधि, कच्छप निधि, 8. शंख निधि  खर्व निधि",
+    // descriptiontitle2: "Nav Nidhi - ",
+    // descriptiontext2:
+    //   "पद्म निधि, महापद्म निधि, नील निधि, मुकुंद निधि, नंद निधि, मकर निधि, कच्छप निधि, 8. शंख निधि  खर्व निधि",
 
-    conclution:
-      "Gurudev has always practised these Vedic powers for the protection of others and will continue to do so.",
+    // conclution:
+    //   "Gurudev has always practised these Vedic powers for the protection of others and will continue to do so.",
   },
-  {
-    id: "mission",
-    index: 3,
-    img: theSaintImage4,
-    title: "Mission",
-    text: "Service to humanity is the best work of life - Siddhguru",
-    descriptiontitle1:
-      "Siddhguru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where Siddhguru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. Siddhguru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
-  },
+  // {
+  //   id: "mission",
+  //   index: 3,
+  //   img: theSaintImage4,
+  //   title: "Mission",
+  //   text: "Service to humanity is the best work of life - Siddhguru",
+  //   descriptiontitle1:
+  //     "Siddhguru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where Siddhguru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. Siddhguru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
+  // },
 ];
 const visionData = [
   {
@@ -138,6 +147,9 @@ const TabSection = () => {
   const [tabContent1, setTabContent1] = useState(0);
   const [tabContent2, setTabContent2] = useState(0);
   const [tabContent3, setTabContent3] = useState(0);
+  const [tabContent1Mobile, setTabContent1Mobile] = useState(false);
+  const [tabContent2Mobile, setTabContent2Mobile] = useState(false);
+  const [tabContent3Mobile, setTabContent3Mobile] = useState(false);
 
   const handleTab1 = () => {
     setActiveMainTab("tab1");
@@ -147,6 +159,15 @@ const TabSection = () => {
   };
   const handleTab3 = () => {
     setActiveMainTab("tab3");
+  };
+  const handleTab1Mobile = () => {
+    setTabContent1Mobile(!tabContent1Mobile);
+  };
+  const handleTab2Mobile = () => {
+    setTabContent2Mobile(!tabContent2Mobile);
+  };
+  const handleTab3Mobile = () => {
+    setTabContent3Mobile(!tabContent3Mobile);
   };
   return (
     <div className="tabSection">
@@ -280,7 +301,7 @@ const TabSection = () => {
                 The Saint
               </div>
             </div>
-            {activeMainTab === "tab1" &&
+            {tabContent1Mobile &&
               theSaintData.map((item, index) => (
                 <LeftRIghtImageContent
                   key={index}
@@ -289,17 +310,17 @@ const TabSection = () => {
                   titleColor={"#1D5A3F"}
                 />
               ))}
-            <div className="viewmore" onClick={handleTab1}>
-              View more
+            <div className="viewmore" onClick={handleTab1Mobile}>
+              {tabContent1Mobile ? "View Less" : "View More"}
               <img src="" alt="" />
             </div>
           </div>
           <div className="tabSection_mobile_wrapper_tab">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage2} alt="mainTabMobile" />
-              <div className="tabSection_mobile_wrapper_tab_text">Vision</div>
+              <div className="tabSection_mobile_wrapper_tab_text">Mission</div>
             </div>
-            {activeMainTab === "tab2" &&
+            {tabContent2Mobile === true &&
               visionData.map((item, index) => (
                 <LeftRIghtImageContent
                   key={index}
@@ -308,8 +329,8 @@ const TabSection = () => {
                   titleColor={"#1D5A3F"}
                 />
               ))}
-            <div className="viewmore" onClick={handleTab2}>
-              View more
+            <div className="viewmore" onClick={handleTab2Mobile}>
+              {tabContent2Mobile ? "View Less" : "View More"}
               <img src="" alt="" />
             </div>
           </div>
@@ -320,7 +341,7 @@ const TabSection = () => {
                 Core Wisdom
               </div>
             </div>
-            {activeMainTab === "tab3" &&
+            {tabContent3Mobile === true &&
               wisdomData.map((item, index) => (
                 <LeftRIghtImageContent
                   key={index}
@@ -329,8 +350,8 @@ const TabSection = () => {
                   titleColor={"#1D5A3F"}
                 />
               ))}
-            <div className="viewmore" onClick={handleTab3}>
-              View more
+            <div className="viewmore" onClick={handleTab3Mobile}>
+              {tabContent3Mobile ? "View Less" : "View More"}
               <img src="" alt="" />
             </div>
           </div>
