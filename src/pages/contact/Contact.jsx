@@ -37,17 +37,17 @@ const Contact = () => {
         <div className="socialIcon">
           <ul>
             <li>
-              <Link to={"#"} target="_blank">
-                <img src={facebook} alt="facebook" />
-              </Link>
-            </li>
-            <li>
-              <Link to={"#"} target="_blank">
+              <Link to={"https://www.instagram.com/srisidheshwarbrahmrishi/"} target="_blank">
                 <img src={insta} alt="insta" />
               </Link>
             </li>
             <li>
-              <Link to={"#"} target="_blank">
+              <Link to={"https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"} target="_blank">
+                <img src={facebook} alt="facebook" />
+              </Link>
+            </li>
+            <li>
+              <Link to={"https://www.youtube.com/@srisidheshwartirth-brahmri5318"} target="_blank">
                 <img src={youtube} alt="youtube" />
               </Link>
             </li>

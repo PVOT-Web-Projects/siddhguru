@@ -36,13 +36,13 @@ const Events = () => {
         // }
       />
       <EventsHomePage />
-      <FullWidthImageSec
+      {/* <FullWidthImageSec
         imageUrl={fullWidthImage}
         text={
           "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
-      />
-      {loading ? (
+      /> */}
+      {/* {loading ? (
         <Spinner />
       ) : (
         <div className="cardList">
@@ -59,7 +59,7 @@ const Events = () => {
             />
           ))}
         </div>
-      )}
+      )} */}
       {/* <FormHomePage /> */}
       <AllVideoHome />
     </div>

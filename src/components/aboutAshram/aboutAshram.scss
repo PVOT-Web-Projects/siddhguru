@@ -116,8 +116,8 @@
           font-style: normal;
           font-weight: 400;
           line-height: 140.092%; /* 24.149px */
-          width: 616px;
-          margin: 0 auto;
+          width: 630px;
+          margin: 0 auto 20px;
           @media (max-width: 1199px) {
             width: 48%;
           }
@@ -130,6 +130,10 @@
           }
           @media (max-width: 575px) {
             width: 90%;
+          }
+          span{
+            color: #123828;
+            font-weight: 600;
           }
         }
       }

@@ -14,7 +14,7 @@ import wisdomImage from "../../images/Miracles of Vedic Science.jpg";
 import "./tabSection.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
-import Button from "../buttons/button2";
+import arrow from "../../images/downArrow.svg";
 
 const theSaintData = [
   {
@@ -43,10 +43,14 @@ const theSaintData = [
     img: theSaintImage3,
     title: "Asht Siddhi’s & Nav Nidhis",
     text: "There are eight Siddhis. To acquire all eight Siddhis, one must practice and master 17868 Vidhis.",
-    text2:"In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
-    text3:"“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
-    text4:"Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
-    text5:"From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
+    text2:
+      "In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
+    text3:
+      "“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
+    text4:
+      "Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
+    text5:
+      "From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
 
     // descriptiontitle1: "Asht Sidhi -",
     // descriptiontext1:
@@ -312,7 +316,11 @@ const TabSection = () => {
               ))}
             <div className="viewmore" onClick={handleTab1Mobile}>
               {tabContent1Mobile ? "View Less" : "View More"}
-              <img src="" alt="" />
+              {tabContent1Mobile ? (
+                <img src={arrow} alt="arrow" className="showLess" />
+              ) : (
+                <img src={arrow} alt="arrow" />
+              )}
             </div>
           </div>
           <div className="tabSection_mobile_wrapper_tab">
@@ -331,7 +339,11 @@ const TabSection = () => {
               ))}
             <div className="viewmore" onClick={handleTab2Mobile}>
               {tabContent2Mobile ? "View Less" : "View More"}
-              <img src="" alt="" />
+              {tabContent2Mobile ? (
+                <img src={arrow} alt="arrow" className="showLess" />
+              ) : (
+                <img src={arrow} alt="arrow" />
+              )}
             </div>
           </div>
           <div className="tabSection_mobile_wrapper_tab">
@@ -352,7 +364,11 @@ const TabSection = () => {
               ))}
             <div className="viewmore" onClick={handleTab3Mobile}>
               {tabContent3Mobile ? "View Less" : "View More"}
-              <img src="" alt="" />
+              {tabContent3Mobile ? (
+                <img src={arrow} alt="arrow" className="showLess" />
+              ) : (
+                <img src={arrow} alt="arrow" />
+              )}
             </div>
           </div>
         </div>

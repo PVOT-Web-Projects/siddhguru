@@ -4,14 +4,15 @@ import "./contactAddress.scss";
 const contactAddressData = [
   {
     heading: "Address",
-    address: "Sri Siddeshwar Teerth Brahmrishi Ashram, Ravi, Gujarat",
+    address: "Sri Siddheshwar Tirth R.C Road, C. Ramapuram, ",
+    address2: " RC puram (Mandalam, Tirupati, Andhra Pradesh 517561",
   },
   {
     heading: "Contact",
     // address:
     //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
-    number1: "918887776665",
-    number2: "917776665554",
+    number1: "08772247056",
+    number2: "08772247056",
   },
   {
     heading: "Get in Touch",
