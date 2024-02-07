@@ -27,6 +27,7 @@ import VedicScience from "./pages/vedicScience/VedicScience";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   // const [isLoading2, setIsLoading2] = useState(true);
+  const [widthCheck, setWidthCheck] = useState(window.innerWidth);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -40,19 +41,27 @@ function App() {
   //   });
   // });
 
+  const handleResize = () => {
+    setWidthCheck(window.innerWidth);
+  };
+  console.log(widthCheck);
+
   useEffect(() => {
-    var prevScrollpos = window.pageXOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("hide-header").style.top = "0px";
-      } else {
-        document.getElementById("hide-header").style.top =
-          "-200px"; /* adjust this value to the height of your header */
-      }
-      prevScrollpos = currentScrollPos;
-    };
-  }, []);
+    window.addEventListener("resize", handleResize);
+    if (widthCheck > 991) {
+      var prevScrollpos = window.pageXOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("hide-header").style.top = "0px";
+        } else {
+          document.getElementById("hide-header").style.top =
+            "-200px"; /* adjust this value to the height of your header */
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    }
+  }, [widthCheck]);
 
   return (
     <>
