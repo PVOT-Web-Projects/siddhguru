@@ -52,15 +52,25 @@ const Menu = () => {
     setDropdownOpen(false);
   };
   return (
-    <Navbar expand={false}>
+    <Navbar expand={false} >
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
-          <motion.div
+          {/* <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Link to="/" className="line_underscore nav-link">
+              Home
+            </Link>
+          </motion.div> */}
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link to="/vedic-science" className="line_underscore nav-link">
               Vedic Science
@@ -70,7 +80,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link to="/siddhasana" className="line_underscore nav-link">
               Siddhasana
@@ -80,7 +90,7 @@ const Menu = () => {
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
           >
             <Link to="/about-ashram" className="line_underscore nav-link">
               Ashram
@@ -220,6 +230,13 @@ const Menu = () => {
                 Register Devotee/Volunteer
               </Link>
               <Nav.Link href="#link">Donate </Nav.Link> */}
+              {/* <Link
+                to="/"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                Home
+              </Link> */}
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"
@@ -263,7 +280,7 @@ const Menu = () => {
               >
                 Experience
               </Link>
-{/* 
+              {/* 
               <NavDropdown
                 title={
                   <Link
@@ -303,28 +320,28 @@ const Menu = () => {
               >
                 Contact Us
               </Link>
-              <Link
+              {/* <Link
                 to="/news"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 News
-              </Link>
+              </Link> */}
 
-              <Link
+              {/* <Link
                 to="/gallery"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Gallery
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 to="/blog"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
                 Blogs
-              </Link>
+              </Link> */}
               <Link
                 to="/devotee"
                 className="mobile_nav_link"
@@ -332,9 +349,9 @@ const Menu = () => {
               >
                 Register Devotee/Volunteer
               </Link>
-              <Link className="mobile_nav_link" href="#">
+              {/* <Link className="mobile_nav_link" href="#">
                 Donate
-              </Link>
+              </Link> */}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
