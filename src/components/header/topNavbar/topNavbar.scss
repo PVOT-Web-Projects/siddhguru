@@ -1,6 +1,9 @@
 .topNavbar {
   padding: 10px 0;
   background-color: #6a1c1c;
+  @media(max-width:991px){
+    display: none;
+  }
   .topNavbar_container {
     max-width: 1600px;
     padding: 0 20px;
