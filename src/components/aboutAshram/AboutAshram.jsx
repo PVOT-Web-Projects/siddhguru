@@ -87,7 +87,7 @@ const AboutAshram = () => {
             <p>
               <span>'Sri Siddheshwar Teerth'</span>
               {
-                " is a spiritual pilgrimage site in Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees worldwide visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, and Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji. "
+                " is a spiritual pilgrimage site near Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees worldwide visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, and Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji. "
               }
             </p>
             <p>

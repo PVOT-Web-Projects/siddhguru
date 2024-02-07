@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 // import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
@@ -40,19 +40,19 @@ function App() {
   //   });
   // });
 
-  // useEffect(() => {
-  //   var prevScrollpos = window.pageXOffset;
-  //   window.onscroll = function () {
-  //     var currentScrollPos = window.pageYOffset;
-  //     if (prevScrollpos > currentScrollPos) {
-  //       document.getElementById("hide-header").style.top = "0px";
-  //     } else {
-  //       document.getElementById("hide-header").style.top =
-  //         "-200px"; /* adjust this value to the height of your header */
-  //     }
-  //     prevScrollpos = currentScrollPos;
-  //   };
-  // }, []);
+  useEffect(() => {
+    var prevScrollpos = window.pageXOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("hide-header").style.top = "0px";
+      } else {
+        document.getElementById("hide-header").style.top =
+          "-200px"; /* adjust this value to the height of your header */
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  }, []);
 
   return (
     <>

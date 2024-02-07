@@ -28,7 +28,7 @@ const AboutAshramPage = () => {
       <InnerPageCommonText
         boldText={"'Sri Siddheshwar Teerth'"}
         text1={
-          " is a spiritual pilgrimage site located in Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees from around the world visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji."
+          " is a spiritual pilgrimage site located near Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees from around the world visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji."
         }
         text2={
           "In this ashram, a three-day and seven-day Siddhasana retreat is also organized, which is free of cost, and people from all over the world come here to benefit from it. They leave with the divine knowledge and experience of eternal happiness in their lives. This pilgrimage site on the spiritual land of India is a center of energy in itself."
