@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import {
@@ -17,6 +17,8 @@ import {
 import { useState } from "react";
 
 const Menu = () => {
+  const location = useLocation();
+  console.log(location.pathname);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
@@ -52,7 +54,7 @@ const Menu = () => {
     setDropdownOpen(false);
   };
   return (
-    <Navbar expand={false} >
+    <Navbar expand={false}>
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
@@ -72,7 +74,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Link to="/vedic-science" className="line_underscore nav-link">
+            <Link
+              to="/vedic-science"
+              className={`line_underscore nav-link ${
+                location.pathname === "/vedic-science" ? "highlight" : ""
+              }`}
+            >
               Vedic Science
             </Link>
           </motion.div>
@@ -82,7 +89,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Link to="/siddhasana" className="line_underscore nav-link">
+            <Link
+              to="/siddhasana"
+              className={`line_underscore nav-link  ${
+                location.pathname === "/siddhasana" ? "highlight" : ""
+              }`}
+            >
               Siddhasana
             </Link>
           </motion.div>
@@ -92,7 +104,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            <Link to="/about-ashram" className="line_underscore nav-link">
+            <Link
+              to="/about-ashram"
+              className={`line_underscore nav-link ${
+                location.pathname === "/about-ashram" ? "highlight" : ""
+              }`}
+            >
               Ashram
             </Link>
           </motion.div>
@@ -114,7 +131,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <Link to={"/events"} className="line_underscore nav-link">
+            <Link
+              to={"/events"}
+              className={`line_underscore nav-link ${
+                location.pathname === "/events" ? "highlight" : ""
+              }`}
+            >
               Events
             </Link>
           </motion.div>
@@ -124,7 +146,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            <Link to="/experience" className="line_underscore nav-link">
+            <Link
+              to="/experience"
+              className={`line_underscore nav-link ${
+                location.pathname === "/experience" ? "highlight" : ""
+              }`}
+            >
               Experience
             </Link>
           </motion.div>
@@ -189,7 +216,12 @@ const Menu = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <Link to={"/contact"} className="line_underscore nav-link">
+            <Link
+              to={"/contact"}
+              className={`line_underscore nav-link ${
+                location.pathname === "/contact" ? "highlight" : ""
+              }`}
+            >
               Contact
             </Link>
           </motion.div>

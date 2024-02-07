@@ -97,6 +97,7 @@ const Siddhasana = () => {
           <SiddhasanaItem key={index} {...item} />
         ))}
       </div>
+      <div className="border"></div>
       <WeAreHere />
     </div>
   );

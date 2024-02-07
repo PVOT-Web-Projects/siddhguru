@@ -1,4 +1,24 @@
 .siddhasana {
+  .border {
+    border: 1px solid black;
+    width: 1199px;
+    margin: 0 auto;
+    @media (max-width: 1240px) {
+      width: 85%;
+    }
+    // @media (max-width: 1199px) {
+    //   width: 60%;
+    // }
+    // @media (max-width: 991px) {
+    //   width: 65%;
+    // }
+    // @media (max-width: 767px) {
+    //   width: 70%;
+    // }
+    @media (max-width: 575px) {
+      width: 90%;
+    }
+  }
   .innerPageCommonHeading {
     h2 {
       width: 50%;
@@ -22,7 +42,7 @@
   }
   &_wrapper {
     padding: 0 150px;
-   
+
     margin: 0 0 50px;
     @media (max-width: 1600px) {
       margin: 0 0 120px;
@@ -78,8 +98,8 @@
         height: 100%;
         object-fit: cover;
         @media (max-width: 767px) {
-            width: 100%;
-          }
+          width: 100%;
+        }
       }
     }
   }
