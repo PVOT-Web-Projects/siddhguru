@@ -7,6 +7,7 @@
   .navbar.navbar-light {
     position: fixed;
     right: 20px;
+    z-index: 999;
   }
 }
 .dropdown {
