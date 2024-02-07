@@ -31,8 +31,10 @@ const VedicScience = () => {
       {/* <InnerPageCommonHeading heading={"Vedic Science"} /> */}
       <InnerPageBanner image={bannerImage} />
       <InnerPageCommonText
-        text1={`Vedic Science is the invaluable knowledge of India that can make India the Vishwa Guru, driven by the concept of "Vasudhaiva Kutumbakam" (the world is one family). The treasure of our ancient culture and spirituality makes anything possible. The miracles of Vedic Science can turn the impossible into possible. Practicing and acquiring knowledge in Vedic Science transform an individual's life. One can attain liberation and eternal happiness through the blessings and guidance of enlightened beings. From Distance Healing to Cosmic Travel, every mystery is hidden in this ancient science of ours. `}
-      />
+        text1={`Our intellect is the primary driver of virtually every field of knowledge – be it modern science, philosophy, politics, finance, or anything else. Vedic science is the only field of knowledge where our intellect is not its only driver, but its primary driver is our consciousness. The only person who can help us cherish the true fruits of Vedic science is a sage who has reached the highest level of consciousness – the supreme consciousness. Sri Siddhguru is that sage.`}
+        text2={`His all eight Kundalini are invoked from birth, which gives him the energy to dive deeper into unraveling the unknown mysteries of our existence with intense Sadhana. He has discovered many Siddhis practiced by our Rishis that had been lost for thousands of years.  While you’ll find his discourses inspiring, he goes beyond that to transform your life. He acts as a catalyst to guide us to lead a more fulfilling life and advance towards spirituality in mysterious ways beyond the comprehension of our intellect of limited capacity. His true gift to us is his divine energy to elevate your consciousness, not just our intellect.
+        `}
+     />
       {/* {loading ? (
         <Spinner />
       ) : (
