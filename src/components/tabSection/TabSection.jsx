@@ -302,7 +302,7 @@ const TabSection = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage1} alt="mainTabMobile" />
               <div className="tabSection_mobile_wrapper_tab_text">
-                The Saint
+                Sri Siddhguru
               </div>
             </div>
             {tabContent1Mobile &&

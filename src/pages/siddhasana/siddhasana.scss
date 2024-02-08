@@ -42,16 +42,10 @@
   }
   &_wrapper {
     padding: 0 150px;
-
-    margin: 0 0 50px;
-    @media (max-width: 1600px) {
-      margin: 0 0 120px;
-    }
-    @media (max-width: 1199px) {
-      padding: 0 80px;
-    }
+    margin: 0 0 100px;
     @media (max-width: 991px) {
       padding: 0 60px;
+      margin:  0 0 20px;
     }
     @media (max-width: 767px) {
       padding: 0 30px;
