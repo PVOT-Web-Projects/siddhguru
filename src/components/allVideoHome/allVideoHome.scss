@@ -7,10 +7,13 @@
     background-size: cover;
     height: 130vh;
     position: relative;
-    @media(max-width:1440px){
+    @media (max-width: 1600px) {
+      height: 155vh;
+    }
+    @media (max-width: 1440px) {
       height: 140vh;
     }
-    @media(max-width:1199px){
+    @media (max-width: 1199px) {
       height: 150vh;
     }
     @media (max-width: 767px) {
@@ -20,7 +23,6 @@
     }
     @media (max-width: 575px) {
       height: 130vh;
-    
     }
     .sidhhguru_gurudev_first_content {
       padding-top: 4rem;
@@ -112,7 +114,6 @@
       background: #ff9900;
       outline: none;
       color: #000;
-      font-family: Inria Serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -154,8 +155,8 @@
       bottom: 50px;
       width: 100%;
       @media (max-width: 767px) {
-      width: auto;
-      bottom: 110px;
+        width: auto;
+        bottom: 110px;
       }
     }
     .lotus_img {
