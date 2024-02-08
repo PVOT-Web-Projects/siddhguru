@@ -64,7 +64,7 @@ const VideoCards = () => {
     triggerOnce: true, // Only trigger once
   });
   return (
-    <div className="experience_section">
+    <motion.div ref={ref} className="experience_section">
       <div className="gallery_section demo">
         {Images.map((item, index) => (
           <motion.div
@@ -95,7 +95,7 @@ const VideoCards = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default VideoCards;
