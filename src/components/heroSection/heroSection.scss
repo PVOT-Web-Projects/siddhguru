@@ -2,8 +2,11 @@
   background-color: #fff9e0;
   overflow: hidden;
   margin-top: -80px;
-  @media(max-width: 767) , (max-height: 1025px){
-    margin-top: -300px;
+  @media (max-width: 800px) {
+    margin-top: -400px;
+  }
+  @media (max-width: 575px) {
+    margin-top: -80px;
   }
 
   .hero_section_wrapper {
