@@ -230,6 +230,10 @@ button.Mobile.navbar-toggler.collapsed {
   padding: 0.5rem 0;
   color: #000 !important;
   text-decoration: none !important;
+  font-size: 22px;
+  @media (max-width: 350px) {
+    font-size: 18px;
+  }
 }
 @media (min-width: 991px) {
   .dropdown {
