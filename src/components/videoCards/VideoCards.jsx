@@ -9,8 +9,11 @@ import svg1 from "../../images/quoteStart.svg";
 import svg2 from "../../images/quoteEnd.svg";
 import playBtn from "../../images/playBtn.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const Images = [
   {
+    delay: 0.2,
     pic: pic1,
     title: "Ashok Sancheti 1",
     svg1: svg1,
@@ -18,6 +21,7 @@ const Images = [
     link: "https://www.youtube.com/watch?v=SiCGZ1lCbGI&list=UULFNytVTV_cBGfhWUsNmQPtDQ&index=36",
   },
   {
+    delay: 0.4,
     pic: pic2,
     title: "Vladislav Y",
     svg1: svg1,
@@ -25,6 +29,7 @@ const Images = [
     link: "https://www.youtube.com/shorts/o2xNZRUfNOE",
   },
   {
+    delay: 0.6,
     pic: pic3,
     title: "Ramesh Sankhla",
     svg1: svg1,
@@ -32,6 +37,7 @@ const Images = [
     link: "https://www.youtube.com/watch?v=N49iS5du51Y&list=UULFNytVTV_cBGfhWUsNmQPtDQ&index=28",
   },
   {
+    delay: 0.8,
     pic: pic4,
     title: "Ashok Sancheti 2",
     svg1: svg1,
@@ -54,11 +60,21 @@ const Images = [
   // },
 ];
 const VideoCards = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
   return (
     <div className="experience_section">
       <div className="gallery_section demo">
         {Images.map((item, index) => (
-          <div key={index} className="main_content">
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: item.delay }}
+            key={index}
+            className="main_content"
+          >
             <Link to={item.link} target="_blank">
               <div className="images_section">
                 <img src={item.pic} alt={item.title} />
@@ -76,7 +92,7 @@ const VideoCards = () => {
                 <img src={item.svg2} />
               </div> */}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
