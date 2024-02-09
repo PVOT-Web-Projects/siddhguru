@@ -6,15 +6,23 @@ import "./layout.scss";
 import scrollTop from "../../images/scrollTop2.svg";
 
 const Layout = ({ children }) => {
+  // useLayoutEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: "instant" });
+  // }, [pathname]);
+  // return null;
+
+  const scrollTopHandle = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <TopNavbar />
       <Header />
       <main>
         {children}
-        <a href="#hide-topNav" className="scrollTop">
+        <div onClick={scrollTopHandle} className="scrollTop">
           <img src={scrollTop} alt="scrollTop" />
-        </a>
+        </div>
       </main>
       <Footer />
     </>

@@ -11,22 +11,24 @@ import HomePageVideoSection from "../../components/homePageVideoSection/HomePage
 import OurProgramSlider from "../../components/ourProgramSlider/OurProgramSlider";
 import TextSection from "../../components/textSection/TextSection";
 import ThreeVideos from "../../components/threeVideos/ThreeVideos";
+import TabSection from "../../components/tabSection/TabSection";
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <TextSection />
-      <HomePageSlider1 />
+      {/* <TextSection /> */}
+      {/* <HomePageSlider1 /> */}
+      <TabSection />
       <AboutAshram />
       <ThreeVideos />
-      <CircleSpin />
+      {/* <CircleSpin /> */}
       <EventsHomePage />
-      <BrahmSutra />
-      <HomePageVideoSection />
-      <OurProgramSlider />
+      {/* <BrahmSutra /> */}
+      {/* <HomePageVideoSection /> */}
+      {/* <OurProgramSlider /> */}
       <AllVideoHome />
-      <FormHomePage />
-      <Space />
+      {/* <FormHomePage /> */}
+      {/* <Space /> */}
     </>
   );
 };

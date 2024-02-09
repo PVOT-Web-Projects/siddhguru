@@ -1,9 +1,14 @@
 .devotee {
   background: rgba(255, 234, 174, 0.16);
   .innerPageCommonHeading {
-    padding-bottom: 70px;
-    @media (max-width: 991px) {
-      padding-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    // @media (max-width: 991px) {
+    //   padding-bottom: 50px;
+    // }
+     @media (max-width: 767px) {
+      padding-bottom: 0;
+      padding-top: 50px;
     }
   }
   .btn3 {

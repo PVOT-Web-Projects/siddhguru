@@ -27,6 +27,7 @@ const HomePageSlider1 = () => {
       color: "#F90",
       content:
         "Sri Siddhguru’s vision is to raise the consciousness of humanity to the divine consciousness by spreading the message of divine life to spiritual sojourners and seekers of peace & bliss. Gurudev is on a mission to end the toiling and suffering of the people and at the same time bring them liberation from the bondage of Karma Bandhan.",
+      link: "/vision",
     },
     {
       image: image2,
@@ -34,6 +35,7 @@ const HomePageSlider1 = () => {
       color: "#966940",
       content:
         "Life is not a painful quest of chasing happiness. Life is a festival that deserves to be celebrated every day, every moment by living happily. Service to humanity is the best work of life! It is the best way to experience pure joy. Everyone should seek wealth and richness - material, intellectual, moral, and spiritual - so that they can serve humanity as a service to God.",
+      link: "/core-wisdom",
     },
     {
       image: image3,
@@ -41,6 +43,7 @@ const HomePageSlider1 = () => {
       color: "#1D523B",
       content:
         "Siddhguru Sri Siddheshwar Brahmrishi Gurudev is an incarnation of a divine Siddh soul, a radiant flame of wisdom, a beacon of hope for people from all walks of life. Like a river of enlightenment, cutting through the landscape of ignorance and igniting the spark of divinity within each individual, his teachings have been transforming the lives of countless devotees.",
+      link: "/the-saint",
     },
     {
       image: image1,
@@ -48,6 +51,7 @@ const HomePageSlider1 = () => {
       color: "#F90",
       content:
         "Sri Siddhguru’s vision is to raise the consciousness of humanity to the divine consciousness by spreading the message of divine life to spiritual sojourners and seekers of peace & bliss. Gurudev is on a mission to end the toiling and suffering of the people and at the same time bring them liberation from the bondage of Karma Bandhan.",
+      link: "/vision",
     },
     {
       image: image2,
@@ -55,6 +59,7 @@ const HomePageSlider1 = () => {
       color: "#966940",
       content:
         "Life is not a painful quest of chasing happiness. Life is a festival that deserves to be celebrated every day, every moment by living happily. Service to humanity is the best work of life! It is the best way to experience pure joy. Everyone should seek wealth and richness - material, intellectual, moral, and spiritual - so that they can serve humanity as a service to God.",
+      link: "/core-wisdom",
     },
     {
       image: image3,
@@ -62,6 +67,7 @@ const HomePageSlider1 = () => {
       color: "#1D523B",
       content:
         "Siddhguru Sri Siddheshwar Brahmrishi Gurudev is an incarnation of a divine Siddh soul, a radiant flame of wisdom, a beacon of hope for people from all walks of life. Like a river of enlightenment, cutting through the landscape of ignorance and igniting the spark of divinity within each individual, his teachings have been transforming the lives of countless devotees.",
+      link: "/the-saint",
     },
   ];
   const settings = {
@@ -153,7 +159,7 @@ const HomePageSlider1 = () => {
               >
                 <div className="thumbnail_text">{item.content}</div>
                 <div className="slider_btn">
-                  <Button btn_text="Read More" />
+                  <Button btn_text="Read More" link={item.link} />
                 </div>
               </div>
             ))}

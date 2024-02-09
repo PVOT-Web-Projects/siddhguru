@@ -51,7 +51,7 @@
         width: 100%;
       }
       .imageHeading {
-        color: #f90;
+        color: #fff;
         font-size: 35.333px;
         font-style: normal;
         font-weight: 400;
@@ -103,15 +103,15 @@
           display: none;
         }
         .left {
-          width: 457px;
-          margin: 0 50px 0 100px;
+          width: 480px;
+          margin: 0 30px 0 40px;
           @media (max-width: 1199px) {
             width: 530px;
-            margin: 0 30px 0 60px;
+            margin: 0 20px 0 30px;
           }
           p {
             color: #fff;
-            font-size: 14px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 151%; /* 21.14px */
@@ -119,15 +119,15 @@
           }
         }
         .right {
-          width: 457px;
-          margin: 0 100px 0 50px;
+          width: 480px;
+          margin: 0 40px 0 30px;
           @media (max-width: 1199px) {
             width: 530px;
-            margin: 0 60px 0 30px;
+            margin: 0 30px 0 20px;
           }
           p {
             color: #fff;
-            font-size: 14px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 151%; /* 21.14px */
@@ -160,15 +160,18 @@
         }
         @media (max-width: 575px) {
           width: 100%;
-          margin: 0;
+          margin: 0 0 20px;
         }
         p {
-          color: #f90;
-          font-size: 14px;
+          color: #000;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 151%; /* 21.14px */
           letter-spacing: -0.56px;
+          @media (max-width: 575px) {
+            font-size: 15.5px;
+          }
         }
       }
       .right {
@@ -182,12 +185,15 @@
           margin: 0;
         }
         p {
-          color: #f90;
-          font-size: 14px;
+          color: #000;
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 151%; /* 21.14px */
           letter-spacing: -0.56px;
+          @media (max-width: 575px) {
+            font-size: 15.5px;
+          }
         }
       }
     }

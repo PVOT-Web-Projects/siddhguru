@@ -1,0 +1,136 @@
+.experience_section {
+  padding: 50px 120px;
+  margin: 0 0 50px;
+  @media (max-width: 1600px) {
+    padding: 50px 150px;
+  }
+  @media (max-width: 1199px) {
+    padding: 50px 100px;
+  }
+  @media (max-width: 991px) {
+    padding: 50px 70px;
+  }
+  @media (max-width: 767px) {
+    padding: 50px 40px;
+  }
+  @media (max-width: 575px) {
+    padding: 50px 30px;
+  }
+  @media (max-width: 320px) {
+    padding: 50px 20px;
+  }
+
+  .gallery_section {
+    // background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+    @media (max-width: 991px) {
+      margin: 0 -15px;
+    }
+  }
+  .main_content {
+    width: 25%;
+    margin-bottom: 3rem;
+    padding: 0 24px;
+    @media (max-width: 1440px) {
+      width: 33.33%;
+    }
+    @media (max-width: 991px) {
+      padding: 0 15px;
+    }
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  .images_section {
+    position: relative;
+    // overflow: hidden;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+
+      @media (max-width: 575px) {
+        height: 480px;
+        object-fit: cover;
+      }
+    }
+    &:hover {
+      .playbutton {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .titles {
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151%; /* 27.18px */
+    letter-spacing: -0.72px;
+    padding: 0 10px;
+    @media (max-width: 991px) {
+      padding: 0 5px;
+    }
+  }
+  .titles span {
+    // background-color: violet;
+  }
+  .titles img {
+    padding: 0 10px;
+    max-width: 100%;
+    // width: 20%;
+  }
+
+  .playbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      max-width: 100%;
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      transition: all 0.4s;
+
+      @media (max-width: 575px) {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .content_section {
+    display: flex;
+    padding: 20px 10px;
+  }
+  .startImage {
+    width: 10%;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  .endImage {
+    display: flex;
+    align-items: end;
+    width: 10%;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

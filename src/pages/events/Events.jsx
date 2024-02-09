@@ -9,6 +9,9 @@ import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
 import fullWidthImage from "../../images/fullWidthImage1.png";
 import Spinner from "../../components/spinner/Spinner";
+import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
+import bannerImage from "../../images/EventsPage.jpg"
+import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 const Events = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -25,20 +28,21 @@ const Events = () => {
   }, []);
   return (
     <div className="events">
-      <InnerPageCommonHeading heading={"Event"} />
-      <InnerPageCommonText
+      {/* <InnerPageCommonHeading heading={"Event"} /> */}
+      <InnerPageBanner  image={bannerImage}/>
+      {/* <InnerPageCommonText
         text1={
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
-      />
+      /> */}
       <EventsHomePage />
-      <FullWidthImageSec
+      {/* <FullWidthImageSec
         imageUrl={fullWidthImage}
         text={
           "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
         }
-      />
-      {loading ? (
+      /> */}
+      {/* {loading ? (
         <Spinner />
       ) : (
         <div className="cardList">
@@ -55,8 +59,9 @@ const Events = () => {
             />
           ))}
         </div>
-      )}
-      <FormHomePage />
+      )} */}
+      {/* <FormHomePage /> */}
+      <AllVideoHome />
     </div>
   );
 };

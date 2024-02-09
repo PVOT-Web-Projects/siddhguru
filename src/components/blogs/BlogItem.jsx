@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import Button from "../buttons/button";
 import { useInView } from "react-intersection-observer";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const BlogItem = ({ image, title, description, url, cardVariants }) => {
+const BlogItem = ({ name, image, title, description, cardVariants }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -14,7 +15,7 @@ const BlogItem = ({ image, title, description, url, cardVariants }) => {
   //   };
   return (
     <div className="blogCardWrapper">
-      <a href={url} className="Blogscardmain">
+      <Link to={name} className="Blogscardmain">
         <motion.div
           className="blogsCard"
           variants={cardVariants}
@@ -32,11 +33,11 @@ const BlogItem = ({ image, title, description, url, cardVariants }) => {
               <div className="blogsCardDescription">{description}</div>
             )}
             <div className="blogCardsBtn">
-              <Button btn_text="Read More" />
+              <Button btn_text="Read More" link={name} />
             </div>
           </div>
         </motion.div>
-      </a>
+      </Link>
     </div>
   );
 };
@@ -48,4 +49,6 @@ BlogItem.propTypes = {
   description: PropTypes.string,
   url: PropTypes.any,
   cardVariants: PropTypes.any,
+  link: PropTypes.any,
+  name: PropTypes.any,
 };

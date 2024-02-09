@@ -9,7 +9,7 @@
   .card_item {
     display: flex;
     flex-direction: column;
-    padding: 72px 31px;
+    padding: 30px 31px;
     height: 100%;
     @media (max-width: 1199px) {
       padding: 40px 20px;
@@ -91,7 +91,7 @@
       }
     }
     .card-content {
-      padding-top: 20px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: left;
@@ -120,14 +120,17 @@
       }
 
       .card-description {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 21px;
-        letter-spacing: -0.04rem;
+        letter-spacing: 0.2px;
         text-align: left;
         margin-bottom: 10px;
         color: black;
         width: 80%;
+        @media (max-width: 575px) {
+          width: 100%;
+        }
       }
     }
   }
