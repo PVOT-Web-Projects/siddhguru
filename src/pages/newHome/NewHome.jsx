@@ -14,11 +14,13 @@ import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSection from "../../components/tabSection/TabSection";
 import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
+import bannerVideo from "../../images/newHomeBanner.mp4";
+import bannerVideomobile from "../../images/newHomeMobileBanner.mp4";
 const NewHome = () => {
   return (
     <>
       {/* <HeroSection /> */}
-      <NewHeroSection />
+      <NewHeroSection deskVideo={bannerVideo} mobileVideo={bannerVideomobile} />
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
       {/* <TabSection /> */}
