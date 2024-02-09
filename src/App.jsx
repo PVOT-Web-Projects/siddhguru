@@ -23,6 +23,7 @@ import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
 import VedicScience from "./pages/vedicScience/VedicScience";
+import NewHome from "./pages/newHome/NewHome";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -73,6 +74,7 @@ function App() {
           <ScrollTop />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/new-home" element={<NewHome />} />
             <Route path="/the-saint" element={<TheSaint />} />
             <Route path="/vision" element={<Vision />} />
             <Route path="/core-wisdom" element={<CoreWisdom />} />
