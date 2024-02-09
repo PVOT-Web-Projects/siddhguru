@@ -3,13 +3,13 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import VideoCards from "../../components/fourvideocard/fourvideocard";
 // import VideoCards_one from "../../components/videoCards/VideoCards";
 import "./experience.scss";
-import bannerImage from "../../images/ExperiencePage.jpg";
+import bannerImage from "../../images/experienceBanner.jpg";
 
 const Experience = () => {
   return (
     <div className="experience">
       {/* <InnerPageCommonHeading heading={"Experience"} /> */}
-      <InnerPageBanner image={bannerImage} />
+      <InnerPageBanner image={bannerImage} text={"Experience"} />
       <VideoCards />
       {/* <VideoCards_one /> */}
     </div>
