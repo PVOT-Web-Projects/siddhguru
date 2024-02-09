@@ -358,7 +358,7 @@ const TabSectionNew = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               {/* <img src={mainTabImage3} alt="mainTabMobile" /> */}
               <video src={video3} autoPlay loop muted></video>
-              <div className="tabSection_mobile_wrapper_tab_text">
+              <div className="tabSection_mobile_wrapper_tab_text ">
                 Core Wisdom
               </div>
             </div>
