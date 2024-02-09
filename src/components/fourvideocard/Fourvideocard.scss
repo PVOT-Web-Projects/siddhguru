@@ -1,0 +1,78 @@
+.fourVideos {
+  padding: 80px 150px;
+  background-color: rgba(255, 234, 174, 0.16);
+  @media (max-width: 991px) {
+    padding: 60px 120px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 30px;
+  }
+  @media (max-width: 575px) {
+    padding: 60px 20px;
+  }
+  &_wrapper {
+    display: flex;
+    // justify-content: center;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    // gap: 2rem;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .fourVideoItem {
+      width: 25%;
+      height: 100%;
+
+      @media (max-width: 991px) {
+        width: 50%;
+        margin-top: 50px;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+      .fourVideoItem_text {
+        width: 100%;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 151%; /* 27.18px */
+        letter-spacing: -0.72px;
+        padding-top: 10px;
+        // padding: 0 50px;
+        // margin-top: 20px;
+        @media (max-width: 991px) {
+          padding-top:5px;
+        }
+      }
+      &_wrapper {
+        padding: 0 10px;
+        // position: relative;
+        @media (max-width: 575px) {
+          padding: 0;
+        }
+        video {
+          width: 100%;
+        }
+        button {
+          border: none;
+          background-color: transparent;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+.video-react-controls-enabled.video-react-paused.video-react-fluid.video-react-user-inactive.video-react-workinghover.video-react {
+  padding-top: 177.778% !important;
+}
