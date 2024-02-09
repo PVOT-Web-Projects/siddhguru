@@ -75,6 +75,21 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
+              to="/new-home"
+              className={`line_underscore nav-link ${
+                location.pathname === "/new-home" ? "highlight" : ""
+              }`}
+            >
+              New Home
+            </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Link
               to="/vedic-science"
               className={`line_underscore nav-link ${
                 location.pathname === "/vedic-science" ? "highlight" : ""
@@ -269,6 +284,13 @@ const Menu = () => {
               >
                 Home
               </Link> */}
+              <Link
+                to="/new-home"
+                className="mobile_nav_link"
+                onClick={() => setOffcanvasVisible(false)}
+              >
+                New Home
+              </Link>
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"

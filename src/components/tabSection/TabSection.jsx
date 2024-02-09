@@ -22,35 +22,35 @@ const theSaintData = [
     index: 0,
     img: theSaintImage1,
     title: "Sri Siddhguru",
-    text: "Full of compassion, love, humility, and simplicity, Sri Brahmrishi Siddhguru Gurudev is one of the most revered saints of our age. ",
-    text2:
-      "Sri Siddhguru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
-    text3:
-      "Once you create a spiritual bond with Sri Siddhguru, he acts as a catalyst to bring peace and harmony to your life in ways beyond the comprehension of the limited capacity of our minds.  He has the divine ability to transform your life even when he is thousands of miles away.",
+    text: "Sri Brahmrishi Siddhguru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
+    // text2:
+    //   "Sri Siddhguru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
+    // text3:
+    //   "Once you create a spiritual bond with Sri Siddhguru, he acts as a catalyst to bring peace and harmony to your life in ways beyond the comprehension of the limited capacity of our minds.  He has the divine ability to transform your life even when he is thousands of miles away.",
   },
   {
     id: "kundalini",
     index: 1,
     img: theSaintImage2,
     title: "Kundalini",
-    text: "Kundalini is a powerful spiritual energy tucked away within every one of us that remains dormant until awakened. One reaches the pinnacle of spirituality by invoking all eight Kundalini Chakras, which can take many lives. Gurudev was born with all his eight Kundalini Chakras invoked. There are just a few living saints that have accomplished this virtually impossible spiritual state of this super divine consciousness. Most have chosen to distance themselves from fellow human beings. However, Siddhguru chose to use his divine energy to alleviate our sufferings and bring inner peace and happiness to our lives. ",
-    text2:
-      "We must pay for our karmic debt, so we’ll face challenges in our lives. Gurudev gives us the strength to overcome those challenges calmly.",
+    text: "Kundalini, a dormant spiritual energy within us, reaches its peak through awakening all eight Chakras, a feat rarely achieved and often taking multiple lifetimes. Gurudev, uniquely born with all Chakras awakened, is among the few saints to attain such a divine consciousness. Unlike other sages who retreat from society, he uses his spiritual prowess to ease human suffering and enhance our inner peace and happiness. Additionally, he empowers us to navigate life's challenges with strength, helping us to settle our karmic debts.",
+    // text2:
+    //   "We must pay for our karmic debt, so we’ll face challenges in our lives. Gurudev gives us the strength to overcome those challenges calmly.",
   },
   {
     id: "asht_siddhi's_&_nav_nidhis",
     index: 2,
     img: theSaintImage3,
     title: "Asht Siddhi’s & Nav Nidhis",
-    text: "There are eight Siddhis. To acquire all eight Siddhis, one must practice and master 17868 Vidhis.",
-    text2:
-      "In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
-    text3:
-      "“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
-    text4:
-      "Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
-    text5:
-      "From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
+    text: "Siddhguru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to Siddhguru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
+    // text2:
+    //   "In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
+    // text3:
+    //   "“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
+    // text4:
+    //   "Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
+    // text5:
+    //   "From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
 
     // descriptiontitle1: "Asht Sidhi -",
     // descriptiontext1:
@@ -77,28 +77,28 @@ const visionData = [
   {
     id: "anant_diksha",
     img: image1,
-    title: "Divine Touch (Digital Diksha)",
-    text: "Immerse yourself in a transformative journey with Anant Diksha, an extraordinary initiation into the realms of spiritual wisdom guided by Siddhguru. In ancient times, telepathy was used for communication, as seen when Sanjay narrated Mahabharat to Dhritrasht. Today, distance healing reflects the power of connections and energy, regardless of physical proximity. ",
-    text2:
-      "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes Siddhguru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
+    title: "Vision",
+    text: "Sri Siddhguru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. Siddhguru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
+    // text2:
+    //   "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes Siddhguru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
   },
   {
     id: "siddhasana",
     img: image2,
     title: "Siddhasana",
-    text: "A transformative journey with Siddheshwar: The Power of the Soul. Siddhasana is a flagship lifestyle program designed to guide you on a journey of self-discovery and reconnection to your authentic being through the profound influence of silence. This residential silence retreat unfolds over seven thoughtfully curated levels, each strategically designed to bring the untrained and distracted mind closer to a more fulfilling and conscious existence. At every stage, unique activities, guidelines, and purposes are introduced, creating a holistic experience that resonates with the individual at their core. At the culmination of each level, participants often express a heightened sense of satisfaction and depart with a profound sense of happiness, having rediscovered the authentic essence within themselves.",
+    text: "Siddhasana is a unique life-changing experience, focusing on self-discovery and reconnecting with your true self in silence. This retreat is structured into seven levels, each designed to help calm and focus your mind, leading to a more conscious and fulfilling life. With activities and guidance tailored to each stage, you'll deeply engage with your inner self. By the end of each level, participants typically feel deep satisfaction and joy, having found a closer connection to their authentic essence.",
   },
   {
     id: "ashram",
     img: image3,
     title: "Ashram",
-    text: "Journey into the sacred embrace of Siddhguru's Ashram,located in the heart of tirupati a pious place of pilgrimage, surrounded by hills.A spiritual haven that transcends the ordinary and opens doors to solace and enlightenment. It is a peaceful oasis, a respite from the hustle of daily life, where the air is thick with tranquillity and the atmosphere resonates with divine energy. Step into a space where the noise of the world fades away and a gentle spiritual breeze guides you towards inner peace. Unveil the sanctity of this spiritual abode, where every corner echoes the wisdom of Siddhguru and every moment is an opportunity for enlightenment and spiritual nourishment.(Read More)",
+    text: "Discover the serene Siddhguru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of Siddhguru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
   },
   {
     id: "world_spiritual_forum",
     img: image4,
     title: "World Spiritual Forum",
-    text: "World Spiritual Forum, is a space that bridges the distances between seekers worldwide. You can call it an energy centre or a cosmic conference where people from different corners of the globe unite in a shared quest for divine wisdom. It is a virtual meeting point where the collective energy of spirituality flows seamlessly across continents. Through the World Spiritual Forum, Siddhguru's vision resonates far and wide, connecting hearts and minds in a shared exploration of higher consciousness. It's a platform that amplifies the universal nature of spiritual seeking, proving that divine wisdom knows no geographical boundaries.",
+    text: "The World Spiritual Forum brings together people from all over the world, sharing Siddhguru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
   },
 ];
 const wisdomData = [
@@ -128,7 +128,7 @@ const tabData1 = [
 ];
 const tabData2 = [
   {
-    title: "Divine Touch (Digital Diksha)",
+    title: "Vision",
   },
   {
     title: "Siddhasana",
