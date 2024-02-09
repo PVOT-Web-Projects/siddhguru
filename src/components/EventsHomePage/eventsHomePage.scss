@@ -354,8 +354,17 @@
       }
     }
     &_previous {
-      margin: 40px 0 0;
-
+      padding: 40px 100px 50px;
+      background-color: #1d5a3f;
+      @media(max-width:991px){
+        padding: 40px 60px 50px;
+      }
+      @media(max-width:767px){
+        padding: 40px 40px 50px;
+      }
+      @media(max-width:991px){
+        padding: 40px 20px 50px;
+      }
       .previousEvent_heading {
         color: #fff;
         font-size: 42px;
@@ -376,7 +385,9 @@
           margin: 0 0 20px;
           overflow: hidden;
           border-radius: 22px;
-         
+         &:last-child{
+          margin: 0;
+         }
 
           a {
             // position: relative;

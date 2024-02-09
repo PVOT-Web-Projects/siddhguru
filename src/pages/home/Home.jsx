@@ -20,9 +20,10 @@ const Home = () => {
       {/* <HomePageSlider1 /> */}
       <TabSection />
       <AboutAshram />
+      <EventsHomePage />
       <ThreeVideos />
       {/* <CircleSpin /> */}
-      <EventsHomePage />
+     
       {/* <BrahmSutra /> */}
       {/* <HomePageVideoSection /> */}
       {/* <OurProgramSlider /> */}

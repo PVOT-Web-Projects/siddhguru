@@ -5,6 +5,7 @@ import WeAreHere from "../../components/weAreHere/WeAreHere";
 import image from "../../images/siddhasanaImage.png";
 import "./siddhasana.scss";
 import bannerImage from "../../images/siddhasanaBanner.jpg";
+import mobilebannerImage from "../../images/siddhasanaBanner.jpg";
 
 const siddhasanaData = [
   {
@@ -70,7 +71,7 @@ const Siddhasana = () => {
       {/* <InnerPageCommonHeading
         heading={"The Power of Soul: Siddhasana Retreats"}
       /> */}
-      <InnerPageBanner image={bannerImage} text={"Siddhasana"} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Siddhasana"} />
       {/* <div className="siddhasana_wrapper">
         <div className="siddhasana_wrapper_content">
           Embark on a transformative journey with Siddhasana, a flagship

@@ -1,10 +1,11 @@
 import "./innerPageBanner.scss";
 
-const InnerPageBanner = ({ image, text, color }) => {
+const InnerPageBanner = ({ image, text, color, mobileImage }) => {
   return (
     <div className="innerPageBanner">
       <div className="innerPageBanner_wrapper">
-        <img src={image} alt="bannerImage" />
+        <img src={image} alt="bannerImage" className="deskImage" />
+        <img src={mobileImage} alt="bannerImage" className="mobileImage" />
         <div className="bannerText" style={{ color: color }}>
           {text}
         </div>
