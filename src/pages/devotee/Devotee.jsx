@@ -6,11 +6,12 @@ import Button from "../../components/buttons/button3";
 import { Link } from "react-router-dom";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/devoteeBanner.jpg";
+import mobilebannerImage from "../../images/devoteeBanner.jpg";
 const Devotee = () => {
   return (
     <div className="devotee">
       {/* <InnerPageCommonHeading heading={"Devotee"} /> */}
-      <InnerPageBanner image={bannerImage} text={"Devotee"} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Devotee"} />
       <InnerPageCommonText
         text1={
           "Step into the heartwarming realm of a digital celebration of the dedicated community of seekers. A virtual gathering of like-minded individuals, each thread of the community weaves a unique tale of their divine journey. Whether you're a seasoned devotee or just beginning your journey, it is an invitation to connect, find inspiration, and foster a sense of unity with fellow seekers."

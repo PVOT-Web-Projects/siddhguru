@@ -93,33 +93,7 @@ const EventsHomePage = () => {
       note: "*The venues, timings, and other details of the Africa Tour programs will be displayed here very soon.",
     },
   ];
-  const prevEventData = [
-    {
-      image: videoPoster1,
-      videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
-      name: "Shri Anand Mahotsav 2024",
-    },
-    {
-      image: videoPoster1,
-      videoUrl: "https://www.youtube.com/watch?v=Z-Ch3fGy634",
-      name: "Namaste Europe",
-    },
-    {
-      image: videoPoster1,
-      videoUrl: "https://www.youtube.com/watch?v=BDjD65sTZpM",
-      name: "Jan Kalyan Mahotsav 2023",
-    },
-    {
-      image: videoPoster1,
-      videoUrl: "https://www.youtube.com/watch?v=8qpZUtUNwiA",
-      name: "Siddheshwar Mahotsav 2023",
-    },
-    {
-      image: videoPoster1,
-      videoUrl: "https://www.youtube.com/watch?v=1LM4oRJ2y-M",
-      name: "Gurupurnima 2023",
-    },
-  ];
+ 
   return (
     <div className="eventsHomePage">
       <div className="eventsHomePage_wrapper">
@@ -199,7 +173,7 @@ const EventsHomePage = () => {
             />
           ))}
         </div>
-        <div className="eventsHomePage_wrapper_previous">
+        {/* <div className="eventsHomePage_wrapper_previous">
           <motion.h2
             // ref={ref}
             initial={{ opacity: 0, y: 50 }}
@@ -214,7 +188,7 @@ const EventsHomePage = () => {
               <EventHomeVideoItem key={index} {...item} />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

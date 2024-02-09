@@ -9,6 +9,7 @@ import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramIma
 import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/AshramBanner.jpg";
+import mobilebannerImage from "../../images/AshramBanner.jpg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -24,7 +25,7 @@ const AboutAshramPage = () => {
       {/* <InnerPageCommonHeading
         heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
       /> */}
-      <InnerPageBanner image={bannerImage} text={"Ashram"} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Ashram"} />
       <InnerPageCommonText
         boldText={"'Sri Siddheshwar Teerth'"}
         text1={

@@ -12,6 +12,18 @@
         height: 75vh;
         object-position: 88% 100%;
       }
+      &.deskImage {
+        display: block;
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &.mobileImage {
+        display: none;
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
     }
     .bannerText {
       position: absolute;
@@ -30,6 +42,8 @@
         transform: translateX(-50%);
         top: auto;
         bottom: 20px;
+        width: 90%;
+        text-align: center;
       }
     }
   }

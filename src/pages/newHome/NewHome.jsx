@@ -24,9 +24,10 @@ const NewHome = () => {
       {/* <TabSection /> */}
       <TabSectionNew />
       <AboutAshram />
+      <EventsHomePage />
       <ThreeVideos />
       {/* <CircleSpin /> */}
-      <EventsHomePage />
+     
       {/* <BrahmSutra /> */}
       {/* <HomePageVideoSection /> */}
       {/* <OurProgramSlider /> */}

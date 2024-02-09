@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import CardItem from "../../components/CardItem/CardItem";
 import "./events.scss";
+import "../../components/EventsHomePage/eventsHomePage.scss";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
@@ -10,9 +11,46 @@ import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImage
 import fullWidthImage from "../../images/fullWidthImage1.png";
 import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/eventBanner.jpg"
+import bannerImage from "../../images/eventBanner.jpg";
+import mobilebannerImage from "../../images/eventBanner.jpg";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import videoPoster1 from "../../images/arrowImageCircle.svg"
+import EventHomeVideoItem from "../../components/EventsHomePage/eventHomePageItem/EventHomePageVideoItem";
+
+const prevEventData = [
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
+    name: "Shri Anand Mahotsav 2024",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=Z-Ch3fGy634",
+    name: "Namaste Europe",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=BDjD65sTZpM",
+    name: "Jan Kalyan Mahotsav 2023",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=8qpZUtUNwiA",
+    name: "Siddheshwar Mahotsav 2023",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=1LM4oRJ2y-M",
+    name: "Gurupurnima 2023",
+  },
+];
+
 const Events = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger once
+  });
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -29,13 +67,29 @@ const Events = () => {
   return (
     <div className="events">
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
-      <InnerPageBanner  image={bannerImage} text={"Events"} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Events"} />
       {/* <InnerPageCommonText
         text1={
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
       /> */}
       <EventsHomePage />
+      <div className="eventsHomePage_wrapper_previous">
+        <motion.h2
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.9, delay: 0.2 }}
+          className="previousEvent_heading"
+        >
+          Previous Events
+        </motion.h2>
+        <div className="eventsHomePage_wrapper_previous_wrapper">
+          {prevEventData.map((item, index) => (
+            <EventHomeVideoItem key={index} {...item} />
+          ))}
+        </div>
+      </div>
       {/* <FullWidthImageSec
         imageUrl={fullWidthImage}
         text={
