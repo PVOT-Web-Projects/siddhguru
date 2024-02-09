@@ -16,8 +16,8 @@ import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
 import arrow from "../../images/downArrow.svg";
 import video1 from "../../images/tab1Image.mp4";
-import video2 from "../../images/tab2Image.mp4";
-import video3 from "../../images/tab3Image.mp4";
+import video2 from "../../images/tab2Image2.mp4";
+import video3 from "../../images/tab3Image2.mp4";
 
 const theSaintData = [
   {
