@@ -103,6 +103,9 @@
             height: 29%;
             width: 33%;
           }
+          @media(max-width:991px){
+            top: 53%;
+          }
         }
       }
       .hero_section_second_image {
