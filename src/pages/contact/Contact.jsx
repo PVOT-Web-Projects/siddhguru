@@ -9,13 +9,13 @@ import insta from "../../images/insta.svg";
 import youtube from "../../images/youtube.svg";
 import twitter from "../../images/twittercopy.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/ContactPage.jpg";
+import bannerImage from "../../images/contactBanner.jpg";
 
 const Contact = () => {
   return (
     <div className="contact">
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
-      <InnerPageBanner image={bannerImage} />
+      <InnerPageBanner image={bannerImage} text={"Contact"} />
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
           <div className="heading">

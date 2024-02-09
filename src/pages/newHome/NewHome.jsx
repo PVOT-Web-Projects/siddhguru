@@ -12,13 +12,17 @@ import OurProgramSlider from "../../components/ourProgramSlider/OurProgramSlider
 import TextSection from "../../components/textSection/TextSection";
 import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSection from "../../components/tabSection/TabSection";
+import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
+import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 const NewHome = () => {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <NewHeroSection />
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
-      <TabSection />
+      {/* <TabSection /> */}
+      <TabSectionNew />
       <AboutAshram />
       <ThreeVideos />
       {/* <CircleSpin /> */}

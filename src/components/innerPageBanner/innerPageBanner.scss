@@ -1,6 +1,7 @@
 .innerPageBanner {
   // margin: 0 0 50px;
   &_wrapper {
+    position: relative;
     img {
       max-width: 100%;
       display: block;
@@ -10,6 +11,25 @@
       @media (max-width: 767px) {
         height: 75vh;
         object-position: 88% 100%;
+      }
+    }
+    .bannerText {
+      position: absolute;
+      left: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 52px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      @media (max-width: 991px) {
+        font-size: 35px;
+      }
+      @media (max-width: 575px) {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 20px;
       }
     }
   }
