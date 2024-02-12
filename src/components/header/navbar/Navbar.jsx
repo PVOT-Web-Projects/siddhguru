@@ -82,7 +82,7 @@ const Menu = () => {
             <Link
               to="/"
               className={`line_underscore nav-link ${
-                location.pathname === "/new-home" ? "highlight" : ""
+                location.pathname === "/" ? "highlight" : ""
               }`}
             >
               Home
