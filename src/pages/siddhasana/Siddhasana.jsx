@@ -1,19 +1,19 @@
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
-import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
+import SiddhasanaItem from "../../components/SiddhasanaItem/SiddhasanaItem";
 import WeAreHere from "../../components/weAreHere/WeAreHere";
-import image1 from "../../images/siddhasana_WHAT.jpg";
-import image2 from "../../images/siddhasana_WHERE & WHEN.jpg";
-import image3 from "../../images/siddhasana_WHY-min.jpg";
-import image4 from "../../images/siddhasana_WHOM.jpg";
-import "./siddhasana.scss";
+import image1 from "../../images/Siddhasana_WHAT.jpg";
+import image2 from "../../images/Siddhasana_WHERE & WHEN.jpg";
+import image3 from "../../images/Siddhasana_WHY-min.jpg";
+import image4 from "../../images/Siddhasana_WHOM.jpg";
+import "./Siddhasana.scss";
 import bannerImage from "../../images/Siddhasana-D.jpg";
 import mobilebannerImage from "../../images/Siddhasana-M.jpg";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/Siddhasana Banner D.mp4";
 import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
 
-const siddhasanaData = [
+const SiddhasanaData = [
   {
     delay: 0.1,
     image: image1,
@@ -42,7 +42,7 @@ const siddhasanaData = [
     text4:
       "The 2-hour sessions are conducted in-person at various conferences, organizations, and universities.",
     text5:
-      "The online workshops are conducted worldwide. SIDDHASANA Residential Retreats are conducted every month in India",
+      "The online workshops are conducted worldwide. Siddhasana Residential Retreats are conducted every month in India",
     text6:
       "Siddhasana Workshops and sessions are organized throughout the year.",
   },
@@ -53,7 +53,7 @@ const siddhasanaData = [
     text1:
       "Stress, anxiety, anger, fear, guilt, hurt, sadness  and loneliness is stopping us from experiencing the true happiness, peace and love within us.",
     text2:
-      "Siddheshwar The power of soul SIDDHASANA is here to hold your hand and take you through this journey of self empowerment by sharing the art of letting go all the emotional baggages and gift yourself a life full of freedom",
+      "Siddheshwar The power of soul Siddhasana is here to hold your hand and take you through this journey of self empowerment by sharing the art of letting go all the emotional baggages and gift yourself a life full of freedom",
     text3:
       "We believe stress, tension,etc is a symptom of deteriorating soul power, Siddhasana resolves this through focused soul uplifting therapies with the pure element of silence.",
     text4: "“ Become Non Harming and Live and Let Live “",
@@ -73,7 +73,7 @@ const siddhasanaData = [
 
 const Siddhasana = () => {
   return (
-    <div className="siddhasana">
+    <div className="Siddhasana">
       {/* <InnerPageCommonHeading
         heading={"The Power of Soul: Siddhasana Retreats"}
       /> */}
@@ -83,8 +83,8 @@ const Siddhasana = () => {
         text={"Siddhasana"}
       />
       {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}
-      {/* <div className="siddhasana_wrapper">
-        <div className="siddhasana_wrapper_content">
+      {/* <div className="Siddhasana_wrapper">
+        <div className="Siddhasana_wrapper_content">
           Embark on a transformative journey with Siddhasana, a flagship
           lifestyle programme guiding you through self-discovery and connection
           to your authentic self using the profound power of silence. Progress
@@ -100,12 +100,12 @@ const Siddhasana = () => {
           silence, unlocking inner potential, and embracing a life filled with
           peace, joy, and self-empowerment.
         </div>
-        <div className="siddhasana_wrapper_image">
-          <img src={image} alt="siddhasana" />
+        <div className="Siddhasana_wrapper_image">
+          <img src={image} alt="Siddhasana" />
         </div>
       </div> */}
-      <div className="siddhasana_wrapper">
-        {siddhasanaData.map((item, index) => (
+      <div className="Siddhasana_wrapper">
+        {SiddhasanaData.map((item, index) => (
           <SiddhasanaItem key={index} {...item} />
         ))}
       </div>
