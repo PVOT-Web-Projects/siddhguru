@@ -244,11 +244,11 @@
                   width: 100%;
                   border-radius: 12px;
                   &::after {
-                    bottom: -120%;
+                    bottom: -160%;
                   }
                   &:hover {
                     &::after {
-                      transform: skewY(9.3deg) scaleY(4);
+                      transform: skewY(9.3deg) scaleY(5);
                     }
                   }
                 }
