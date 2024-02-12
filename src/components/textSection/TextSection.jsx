@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const TextSection = () => {
   const text =
-    "Welcome to the Sri Sidheshwar Teerth - Brahmarishi Ashram family in the realm of Vedic science. In this modern era, individuals seek a life of happiness for themselves and their loved ones. Amidst life's challenges, both minor and monumental, Vedic science offers solutions to every facet of human existence. Sri Sidheshwar Brahmarishi Gurudev, affectionately known as 'SiddhGuru,' embarks on a distinctive mission of spirituality and service, endeavoring to alleviate every sorrow in human life through his spiritual accomplishments, spanning the globe with his teachings.";
+    "Welcome to the Sri Sidheshwar Tirth - Brahmrishi Ashram family in the realm of Vedic science. In this modern era, individuals seek a life of happiness for themselves and their loved ones. Amidst life's challenges, both minor and monumental, Vedic science offers solutions to every facet of human existence. Sri Sidheshwar Brahmarishi Gurudev, affectionately known as 'SiddhGuru,' embarks on a distinctive mission of spirituality and service, endeavoring to alleviate every sorrow in human life through his spiritual accomplishments, spanning the globe with his teachings.";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,7 +46,7 @@ const TextSection = () => {
             key={char + "-" + index}
             variants={letter}
             style={
-              index > 308 && index < 381
+              index > 306 && index < 380
                 ? { color: "#FF9900", fontWeight: 700 }
                 : null
             }

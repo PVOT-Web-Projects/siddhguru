@@ -76,8 +76,8 @@ function App() {
         <Layout>
           <ScrollTop />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/new-home" element={<NewHome />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<NewHome />} />
             <Route path="/the-saint" element={<TheSaint />} />
             <Route path="/vision" element={<Vision />} />
             <Route path="/core-wisdom" element={<CoreWisdom />} />

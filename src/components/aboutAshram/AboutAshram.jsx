@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
-import gif from "../../images/finalGif3.gif";
+import gif from "../../images/aboutAshramImage.jpeg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
@@ -87,7 +87,7 @@ const AboutAshram = () => {
             <p>
               <span>Sri Sidheshwar Teerth (Near Tirupati, Andhra Pradesh)</span>
               {
-                " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
+                " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
               }
             </p>
             <p>

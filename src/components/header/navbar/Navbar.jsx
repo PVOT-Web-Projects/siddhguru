@@ -75,12 +75,12 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
-              to="/new-home"
+              to="/"
               className={`line_underscore nav-link ${
                 location.pathname === "/new-home" ? "highlight" : ""
               }`}
             >
-              New Home
+              Home
             </Link>
           </motion.div>
           <motion.div
@@ -285,11 +285,11 @@ const Menu = () => {
                 Home
               </Link> */}
               <Link
-                to="/new-home"
+                to="/"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                New Home
+                Home
               </Link>
               <Link
                 to="/vedic-science"
