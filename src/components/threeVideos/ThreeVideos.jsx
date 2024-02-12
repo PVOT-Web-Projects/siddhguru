@@ -1,4 +1,4 @@
-import video1 from "../../images/video1.mp4";
+import video1 from "../../images/exp1.mp4";
 import video2 from "../../images/video2.mp4";
 import video3 from "../../images/video3.mp4";
 import poster1 from "../../images/poster1.jpg";
@@ -35,7 +35,7 @@ const ThreeVideos = () => {
           <div className="threeVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video2}
+              src={video1}
               poster={poster2}
               fluid={true}
             />

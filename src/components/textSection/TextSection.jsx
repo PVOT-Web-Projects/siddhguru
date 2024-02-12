@@ -1,10 +1,10 @@
 import "./textSection.scss";
-import {  motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const TextSection = () => {
   const text =
-    "In Vedic science, the Sri Siddheshwar Teerth - Brahmarishi Ashram family welcomes you. In the present age, every individual strives for eternal happiness for themselves and their families. In the journey of life, surrounded by the world's challenges, solutions to every small or big problem of human life are found in Vedic science. Sri Siddheshwar Brahmarishi Gurudev, also known as 'Siddhaguru,' is on a unique mission of spirituality and service to alleviate every sorrow of human life through his spiritual achievements, traveling worldwide. ";
+    "Welcome to the Sri Sidheshwar Teerth - Brahmarishi Ashram family in the realm of Vedic science. In this modern era, individuals seek a life of happiness for themselves and their loved ones. Amidst life's challenges, both minor and monumental, Vedic science offers solutions to every facet of human existence. Sri Sidheshwar Brahmarishi Gurudev, affectionately known as 'SiddhGuru,' embarks on a distinctive mission of spirituality and service, endeavoring to alleviate every sorrow in human life through his spiritual accomplishments, spanning the globe with his teachings.";
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,7 +45,11 @@ const TextSection = () => {
             className={"mantra_wrapper"}
             key={char + "-" + index}
             variants={letter}
-            style={index > 331 && index < 398 ? { color: "#FF9900", fontWeight:700 } : null}
+            style={
+              index > 308 && index < 381
+                ? { color: "#FF9900", fontWeight: 700 }
+                : null
+            }
           >
             {char}
           </motion.span>

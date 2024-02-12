@@ -4,8 +4,8 @@ import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import WeAreHere from "../../components/weAreHere/WeAreHere";
 import image from "../../images/siddhasanaImage.png";
 import "./siddhasana.scss";
-import bannerImage from "../../images/siddhasanaBanner.jpg";
-import mobilebannerImage from "../../images/siddhasanaBanner.jpg";
+import bannerImage from "../../images/Siddhasana-D.jpg";
+import mobilebannerImage from "../../images/Siddhasana-M.jpg";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/Siddhasana Banner D.mp4";
 import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
@@ -74,8 +74,8 @@ const Siddhasana = () => {
       {/* <InnerPageCommonHeading
         heading={"The Power of Soul: Siddhasana Retreats"}
       /> */}
-      {/* <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Siddhasana"} /> */}
-      <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Siddhasana"} />
+      {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}
       {/* <div className="siddhasana_wrapper">
         <div className="siddhasana_wrapper_content">
           Embark on a transformative journey with Siddhasana, a flagship

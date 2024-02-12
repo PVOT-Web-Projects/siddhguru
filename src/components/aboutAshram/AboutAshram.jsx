@@ -83,16 +83,21 @@ const AboutAshram = () => {
             <img src={border} alt="border" />
           </div>
           <div className="aboutAshram_text">
-            <h3>About Ashram</h3>
+            <h3>About Our Ashram</h3>
             <p>
-              <span>'Sri Siddheshwar Teerth'</span>
+              <span>Sri Sidheshwar Teerth (Near Tirupati, Andhra Pradesh)</span>
               {
-                " is a spiritual pilgrimage site near Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees worldwide visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, and Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji. "
+                " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
               }
             </p>
             <p>
               {
-                "In this ashram, a three-day and seven-day Siddhasana retreat is also organized free of cost, and people from all over the world come to benefit from it. They leave with divine knowledge and the experience of eternal happiness. This pilgrimage site on the spiritual land of India is a center of energy in itself."
+                "Additionally, the ashram hosts free three-day and seven-day Siddhasana retreats, attracting seekers from diverse corners of the world who depart enriched with spiritual wisdom and the bliss of eternal fulfillment. Positioned on the sacred soil of India, this pilgrimage site radiates with an inherent spiritual energy, serving as a beacon of enlightenment and transformation for all who tread its hallowed grounds."
+              }
+            </p>
+            <p>
+              {
+                "The sanctity of this place has touched countless souls, offering profound experiences of Sri Gurudev's divine grace."
               }
             </p>
           </div>

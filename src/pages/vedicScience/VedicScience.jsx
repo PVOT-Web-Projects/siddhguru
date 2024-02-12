@@ -37,7 +37,7 @@ const VedicScience = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/knowledge/?_embed")
+      .get("https://Siddhguru.pvotdesigns.xyz//wp-json/wp/v2/knowledge/?_embed")
       .then((response) => {
         setKnowledge(response.data);
         console.log(response.data);
@@ -55,7 +55,7 @@ const VedicScience = () => {
         // color={"#cf4a2a"}
       />
       {/* <InnerPageCommonText
-        text1={`Our intellect is the primary driver of virtually every field of knowledge – be it modern science, philosophy, politics, finance, or anything else. Vedic science is the only field of knowledge where our intellect is not its only driver, but its primary driver is our consciousness. The only person who can help us cherish the true fruits of Vedic science is a sage who has reached the highest level of consciousness – the supreme consciousness. Sri Siddhguru is that sage.`}
+        text1={`Our intellect is the primary driver of virtually every field of knowledge – be it modern science, philosophy, politics, finance, or anything else. Vedic science is the only field of knowledge where our intellect is not its only driver, but its primary driver is our consciousness. The only person who can help us cherish the true fruits of Vedic science is a sage who has reached the highest level of consciousness – the supreme consciousness. Sri SiddhGuru is that sage.`}
         text2={`His all eight Kundalini are invoked from birth, which gives him the energy to dive deeper into unraveling the unknown mysteries of our existence with intense Sadhana. He has discovered many Siddhis practiced by our Rishis that had been lost for thousands of years.  While you’ll find his discourses inspiring, he goes beyond that to transform your life. He acts as a catalyst to guide us to lead a more fulfilling life and advance towards spirituality in mysterious ways beyond the comprehension of our intellect of limited capacity. His true gift to us is his divine energy to elevate your consciousness, not just our intellect.
         `}
       /> */}

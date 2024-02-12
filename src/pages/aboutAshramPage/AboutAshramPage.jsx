@@ -8,8 +8,8 @@ import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
 import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/AshramBanner.jpg";
-import mobilebannerImage from "../../images/AshramBanner.jpg";
+import bannerImage from "../../images/Ashram_D.jpg";
+import mobilebannerImage from "../../images/Ashram_M.jpg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -25,14 +25,23 @@ const AboutAshramPage = () => {
       {/* <InnerPageCommonHeading
         heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
       /> */}
-      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Ashram"} />
+      <InnerPageBanner
+        image={bannerImage}
+        mobileImage={mobilebannerImage}
+        text={"Awaken Your Soul: SiddhGuru's Ashram, Where Transformation Begins"}
+      />
       <InnerPageCommonText
-        boldText={"'Sri Siddheshwar Teerth'"}
+        boldText={
+          "Sri Sidheshwar Teerth (Near Tirupati, Andhra Pradesh, India)"
+        }
         text1={
-          " is a spiritual pilgrimage site located near Tirupati, Andhra Pradesh, India. Every year, thousands of pilgrims and devotees from around the world visit this sacred abode. In the presence of Sri Siddhaguru, various festivals like Navaratri, Diwali, Shivaratri, Guru Purnima are celebrated with great enthusiasm every year. Coming to this sacred place, countless individuals have experienced the divine presence of Guruji."
+          " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
         }
         text2={
-          "In this ashram, a three-day and seven-day Siddhasana retreat is also organized, which is free of cost, and people from all over the world come here to benefit from it. They leave with the divine knowledge and experience of eternal happiness in their lives. This pilgrimage site on the spiritual land of India is a center of energy in itself."
+          "Additionally, the ashram hosts free three-day and seven-day Siddhasana retreats, attracting seekers from diverse corners of the world who depart enriched with spiritual wisdom and the bliss of eternal fulfillment. Positioned on the sacred soil of India, this pilgrimage site radiates with an inherent spiritual energy, serving as a beacon of enlightenment and transformation for all who tread its hallowed grounds."
+        }
+        text3={
+          "The sanctity of this place has touched countless souls, offering profound experiences of Sri Gurudev's divine grace."
         }
         // text3={
         //   "Embrace yourself in worship and the Guru's blessings with Trimukha Ganesh Mandir, Shree Laksmi Narayan Mandir, and Shree Brahmeshwar Parshavnath Jeeravala. Swarn Jain Mandir, Shree Brahmeshwar Mahadev, Shree Dhyan Mandir, Mata Hall, Dhyan Kendra, Gaushala, and a unique energy centre."

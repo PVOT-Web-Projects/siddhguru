@@ -30,10 +30,10 @@ const Footer = () => {
           href="to:91 986
         6622049"
         >
-          +91 986 6622049
+          +91 0986 6622049
         </a>
-        , <a href="to:918772247056">+91 877 2247056</a> | Tele Fax :
-        <a href="to:918772247059">+91 877 2247059</a>| Email :
+        , <a href="to:918772247056">+91 0877 2247056</a> | Tele Fax :
+        <a href="to:918772247059">+91 0877 2247059</a>| Email :
         <a href="mailto:contact@sribrahmrishiashram.org">
           contact@sribrahmrishiashram.org
         </a>

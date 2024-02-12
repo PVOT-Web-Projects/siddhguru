@@ -11,8 +11,8 @@ import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImage
 import fullWidthImage from "../../images/fullWidthImage1.png";
 import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/eventBanner.jpg";
-import mobilebannerImage from "../../images/eventBanner.jpg";
+import bannerImage from "../../images/Events-Banners-D_2.jpg";
+import mobilebannerImage from "../../images/Events-Banners-M_2.jpg";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -67,7 +67,7 @@ const Events = () => {
   return (
     <div className="events">
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
-      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Events"} />
+      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"} />
       {/* <InnerPageCommonText
         text1={
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
