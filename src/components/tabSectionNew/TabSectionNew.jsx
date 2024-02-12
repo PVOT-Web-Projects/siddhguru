@@ -10,7 +10,10 @@ import image1 from "../../images/Divine Touch (Digital Diksha).jpg";
 import image2 from "../../images/Siddhasana.jpg";
 import image3 from "../../images/Ashram.jpg";
 import image4 from "../../images/World-Spiritual-Forum.jpg";
-import wisdomImage from "../../images/Miracles of Vedic Science.jpg";
+import wisdomImage1 from "../../images/Miracles of Vedic Science.jpg";
+import wisdomImage2 from "../../images/spiritual.jpeg";
+import wisdomImage3 from "../../images/socialWisdom.jpeg";
+import wisdomImage4 from "../../images/Miracles of Vedic Science.jpg";
 import "./tabSectionNew.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
@@ -107,13 +110,13 @@ const visionData = [
 const wisdomData = [
   {
     // id: "anant_diksha",
-    img: wisdomImage,
+    img: wisdomImage1,
     title: "Wisdom",
     text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhytmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
   },
   {
     // id: "anant_diksha",
-    img: wisdomImage,
+    img: wisdomImage2,
     title: "Spiritual Wisdom",
     text: "Happy moment – praise God; difficult moment – seek God; painful moment – trust God; every moment – thank God.",
     text2: "When our fate closes all doors, our faith opens new doors.",
@@ -127,7 +130,7 @@ const wisdomData = [
   },
   {
     // id: "anant_diksha",
-    img: wisdomImage,
+    img: wisdomImage3,
     title: "Social Wisdom",
     text: "Service to humanity is the best work of life.",
     text2:
@@ -140,7 +143,7 @@ const wisdomData = [
   },
   {
     // id: "anant_diksha",
-    img: wisdomImage,
+    img: wisdomImage4,
     title: "Professional Wisdom",
     text: "For Success in life, you need a combination of intelligence, hard work, focus, timing, and even luck.",
     text2:

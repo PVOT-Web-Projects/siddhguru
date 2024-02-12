@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
     }, 2000);
   }, []);
 
-  // useEffect(() => {
-  //   popup && (document.body.style.overflow = "hidden");
-  //   !popup && (document.body.style.overflow = "unset");
-  // }, [popup]);
+  useEffect(() => {
+    popup && (document.body.style.overflow = "hidden");
+    !popup && (document.body.style.overflow = "unset");
+  }, [popup]);
 
   const handlePopup = () => {
     setPopup(false);
@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
         {children}
         {/* <div onClick={scrollTopHandle} className="scrollTop"> */}
         {/* <img src={scrollTop} alt="scrollTop" /> */}
-        {/* {popup && (
+        {popup && (
           <div className="popup">
             <div className="popup_wrapper">
               <img src={popupImage} alt="popup" />
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
-        )} */}
+        )}
         {/* </div> */}
       </main>
       <Footer />
