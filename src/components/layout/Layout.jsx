@@ -8,6 +8,7 @@ import popupImage from "../../images/popup.jpeg";
 import close from "../../images/closeIcon.svg";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Layout = ({ children }) => {
   // useLayoutEffect(() => {
@@ -44,7 +45,12 @@ const Layout = ({ children }) => {
         {popup && (
           <div className="popup">
             <div className="popup_wrapper">
-              <img src={popupImage} alt="popup" />
+              <Link
+                to={"https://app.sribrahmrishiashram.org/devotee/login"}
+                target="_blank"
+              >
+                <img src={popupImage} alt="popup" />
+              </Link>
               <div className="close" onClick={handlePopup}>
                 <img src={close} alt="close" />
               </div>
