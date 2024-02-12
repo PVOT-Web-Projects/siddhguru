@@ -29,7 +29,9 @@ const Devotee = () => {
       <div className="links">
         <div className="links_wrapper">
           <div className="links_wrapper_left">
-            <Link to="#">Create account</Link>
+            <Link to="https://app.sribrahmrishiashram.org/devotee/login" target="_blank">
+              Create account
+            </Link>
           </div>
           {/* <div className="links_wrapper_right">
             <Link to="#">Forgot your password?</Link>
