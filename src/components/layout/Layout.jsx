@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
     }, 2000);
   }, []);
 
-  useEffect(() => {
-    popup && (document.body.style.overflow = "hidden");
-    !popup && (document.body.style.overflow = "unset");
-  }, [popup]);
+  // useEffect(() => {
+  //   popup && (document.body.style.overflow = "hidden");
+  //   !popup && (document.body.style.overflow = "unset");
+  // }, [popup]);
 
   const handlePopup = () => {
     setPopup(false);
