@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
 import gif from "../../images/aboutAshramImage.jpeg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
+import Button from "../buttons/button4";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -45,9 +46,9 @@ const AboutAshram = () => {
   return (
     <div className="aboutAshram">
       <motion.div className="aboutAshram_wrapper" ref={ref}>
-        <div className="aboutAshram_wrapper_image">
+        {/* <div className="aboutAshram_wrapper_image">
           <img src={gif} alt="gif" />
-        </div>
+        </div> */}
         <motion.div
           className={"mantra"}
           variants={sentence}
@@ -60,18 +61,23 @@ const AboutAshram = () => {
             style={{ marginBottom: "12px" }}
           >
             <HeadingTextAnimation
-              heading={"॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ "}
+              heading={"Join our WhatsApp Channel,"}
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
           </motion.span>
           <motion.span className={"mantra_wrapper"} variants={letter}>
             <HeadingTextAnimation
-              heading={"॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥ "}
+              heading={
+                "Experience the miracle of vedic Science with Sri Siddhguru."
+              }
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
           </motion.span>
+          <div className="joinBtn">
+            <Button btn_text="join Now" link="" />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -85,7 +91,9 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Our Ashram</h3>
             <p>
-              <span>Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)</span>
+              <span>
+                Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)
+              </span>
               {
                 " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
               }

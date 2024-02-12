@@ -260,6 +260,9 @@
           text-align: center;
           border-radius: 10px;
           cursor: pointer;
+          @media (max-width: 320px) {
+            width: 220px;
+          }
           img {
             width: 40px;
             background-color: #fff;
