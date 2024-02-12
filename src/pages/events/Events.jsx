@@ -38,7 +38,7 @@ const prevEventData = [
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/watch?v=8qpZUtUNwiA",
-    name: "Siddheshwar Mahotsav 2023",
+    name: "Sidheshwar Mahotsav 2023",
   },
   {
     image: videoPoster1,

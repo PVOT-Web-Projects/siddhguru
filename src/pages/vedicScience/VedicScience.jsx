@@ -11,7 +11,7 @@ import "./vedicScience.scss";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/Vedic-Science_D.jpg";
-import bannerImagemobile from "../../images/vedicScienceMobileBanner2.jpg";
+import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
 import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";

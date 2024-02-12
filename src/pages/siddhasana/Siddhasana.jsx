@@ -104,7 +104,7 @@ const Siddhasana = () => {
           <img src={image} alt="Siddhasana" />
         </div>
       </div> */}
-      <div className="Siddhasana_wrapper">
+      <div className="siddhasana_wrapper">
         {SiddhasanaData.map((item, index) => (
           <SiddhasanaItem key={index} {...item} />
         ))}

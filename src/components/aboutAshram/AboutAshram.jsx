@@ -85,7 +85,7 @@ const AboutAshram = () => {
           <div className="aboutAshram_text">
             <h3>About Our Ashram</h3>
             <p>
-              <span>Sri Sidheshwar Teerth (Near Tirupati, Andhra Pradesh)</span>
+              <span>Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)</span>
               {
                 " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
               }
