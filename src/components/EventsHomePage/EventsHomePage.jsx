@@ -47,7 +47,7 @@ const EventsHomePage = () => {
       boxMonth: "March",
       boxDate: "16",
       eventDesc1:
-        "A divine experience of Shivatva (the state of being Shiva) in the presence of Sri Siddheshwar Brahmarishi Gurudev",
+        "A divine experience of Shivatva (the state of being Shiva) in the presence of Sri Sidheshwar Brahmarishi Gurudev",
       // boxWeek: "tue",
       leftBold1: "Kal Sarp Dosh Nivaran Poojan - ",
       rightLight1: " 10 AM Onwards",

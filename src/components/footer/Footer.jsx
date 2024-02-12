@@ -24,7 +24,7 @@ const Footer = () => {
       </motion.div>
       <div className="footer_text">
         <p>Address :</p>
-        Sri Siddeshwar Teerth – Sri Brahmrishi Ashram,R.C.Road, C. Ramapuram,
+        Sri Sideshwar Tirth – Sri Brahmrishi Ashram, R.C.Road, C. Ramapuram,
         Ramachandrapuram Mandalam, Tirupati – 517561, India. Call :
         <a
           href="to:91 986
