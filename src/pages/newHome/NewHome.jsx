@@ -15,12 +15,12 @@ import TabSection from "../../components/tabSection/TabSection";
 import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/homeVideoBanner.mp4";
-import bannerVideomobile from "../../images/newHomeMobileBanner.mp4";
+import bannerVideomobile from "../../images/homeVideoMobileBanner.mp4";
 const NewHome = () => {
   return (
     <>
       {/* <HeroSection /> */}
-      <NewHeroSection deskVideo={bannerVideo} mobileVideo={bannerVideo} />
+      <NewHeroSection deskVideo={bannerVideo} mobileVideo={bannerVideomobile} />
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
       {/* <TabSection /> */}

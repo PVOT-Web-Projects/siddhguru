@@ -27,6 +27,7 @@ import NewHome from "./pages/newHome/NewHome";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  // const [popup, setPopup] = useState(true);
   // const [isLoading2, setIsLoading2] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
 
@@ -35,6 +36,8 @@ function App() {
     document.body.style.cursor = "smooth";
     window.scrollTo(0, 0);
   }, 2500);
+
+  
 
   // useEffect(() => {
   //   const scroll = new LocomotoveScroll({
