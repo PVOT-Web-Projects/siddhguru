@@ -45,7 +45,7 @@ const theSaintData = [
     index: 2,
     img: theSaintImage3,
     title: "Siddhis",
-    text: "siddhGuru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to siddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
+    text: "SiddhGuru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to siddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
     // text2:
     //   "In siddhGuru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
     // text3:

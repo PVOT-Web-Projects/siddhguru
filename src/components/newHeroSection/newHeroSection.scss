@@ -4,6 +4,8 @@
       max-width: 100%;
       width: 100%;
       display: block;
+      height: calc(100vh - 180px);
+      object-fit: cover;
       &.desk {
         display: block;
         @media (max-width: 767px) {
