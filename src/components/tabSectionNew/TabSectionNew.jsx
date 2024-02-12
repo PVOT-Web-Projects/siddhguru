@@ -351,8 +351,8 @@ const TabSectionNew = () => {
         <div className="tabSection_mobile_wrapper">
           <div className="tabSection_mobile_wrapper_tab">
             <div className="tabSection_mobile_wrapper_tab_image">
-              {/* <img src={mainTabImage1} alt="mainTabMobile" /> */}
-              <video src={video1} autoPlay loop muted></video>
+              <img src={mainTabImage1} alt="mainTabMobile" />
+              {/* <video src={video1} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">
                 Sri SiddhGuru
               </div>
@@ -380,8 +380,8 @@ const TabSectionNew = () => {
           </div>
           <div className="tabSection_mobile_wrapper_tab">
             <div className="tabSection_mobile_wrapper_tab_image">
-              {/* <img src={mainTabImage2} alt="mainTabMobile" /> */}
-              <video src={video2} autoPlay loop muted></video>
+              <img src={mainTabImage2} alt="mainTabMobile" />
+              {/* <video src={video2} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">Mission</div>
             </div>
             {tabContent2Mobile === true && (
@@ -407,8 +407,8 @@ const TabSectionNew = () => {
           </div>
           <div className="tabSection_mobile_wrapper_tab">
             <div className="tabSection_mobile_wrapper_tab_image">
-              {/* <img src={mainTabImage3} alt="mainTabMobile" /> */}
-              <video src={video3} autoPlay loop muted></video>
+              <img src={mainTabImage3} alt="mainTabMobile" />
+              {/* <video src={video3} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text ">Wisdom</div>
             </div>
             {tabContent3Mobile === true && (
