@@ -32,7 +32,7 @@ const AboutAshramPage = () => {
       />
       <InnerPageCommonText
         boldText={
-          "Sri Sidheshwar Teerth (Near Tirupati, Andhra Pradesh, India)"
+          "Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)"
         }
         text1={
           " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
