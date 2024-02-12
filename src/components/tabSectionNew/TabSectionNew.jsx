@@ -13,7 +13,7 @@ import image4 from "../../images/World-Spiritual-Forum.jpg";
 import wisdomImage1 from "../../images/Miracles of Vedic Science.jpg";
 import wisdomImage2 from "../../images/spiritual.jpeg";
 import wisdomImage3 from "../../images/socialWisdom.jpeg";
-import wisdomImage4 from "../../images/Miracles of Vedic Science.jpg";
+import wisdomImage4 from "../../images/professionalWisdom.jpeg";
 import "./tabSectionNew.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
