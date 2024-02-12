@@ -76,7 +76,7 @@ const AboutAshram = () => {
             />
           </motion.span>
           <div className="joinBtn">
-            <Button btn_text="join Now" link="" />
+            <Button btn_text="Join Now" link="" />
           </div>
         </motion.div>
         <motion.div
