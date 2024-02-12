@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import logoImage from "../../../images/logo.png";
 
 import {
   Navbar,
@@ -15,6 +16,7 @@ import {
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
+import Logo from "../logo/Logo";
 
 const Menu = () => {
   const location = useLocation();
@@ -407,6 +409,11 @@ const Menu = () => {
                 Donate
               </Link> */}
             </Nav>
+
+            {/* <Logo /> */}
+            <div className="mobileNavLogo">
+              <img src={logoImage} alt="logo" />
+            </div>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

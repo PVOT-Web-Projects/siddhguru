@@ -68,12 +68,13 @@
         text-align: center;
         width: 100%;
         color: #123828;
-        font-family: "Lohit-Devanagari" !important;
+        // font-family: "Lohit-Devanagari" !important;
         font-style: normal;
         display: block;
         font-weight: 400;
+        padding: 0 20px;
         span {
-          font-family: "Lohit-Devanagari" !important;
+          // font-family: "Lohit-Devanagari" !important;
           @media (max-width: 767px) {
             font-size: 20px !important;
           }
@@ -147,5 +148,8 @@
         }
       }
     }
+  }
+  .joinBtn{
+    margin: 20px 0 0;
   }
 }

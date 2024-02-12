@@ -81,7 +81,10 @@ const EventHomePageItem = ({
             <div className="note">{note}</div>
             {/* <div className="location">{location}</div> */}
             <div className="eventCardBtn">
-              <Button btn_text="Register Now" />
+              <Button
+                link={"https://app.sribrahmrishiashram.org/devotee/login"}
+                btn_text="Register Now"
+              />
             </div>
           </div>
           {/* <div className="boxDateSec">
