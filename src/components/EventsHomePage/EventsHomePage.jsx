@@ -1,9 +1,9 @@
 import EventHomePageItem from "./EventHomePageItem/EventHomePageItem";
-import image1 from "../../images/E1.jpg";
-import image2 from "../../images/E2.jpg";
-import image3 from "../../images/E3.jpg";
+import image1 from "../../images/Dhwajarohan.jpg";
+import image2 from "../../images/Maha-Shivratri.jpg";
+import image3 from "../../images/Asia-Tour.jpg";
+import image4 from "../../images/Africa-Tour.jpg";
 import Button from "../../components/buttons/button";
-import image4 from "../../images/E4.jpg";
 import videoPoster1 from "../../images/arrowImageCircle.svg";
 import "./eventsHomePage.scss";
 import { motion } from "framer-motion";
@@ -93,7 +93,7 @@ const EventsHomePage = () => {
       note: "*The venues, timings, and other details of the Africa Tour programs will be displayed here very soon.",
     },
   ];
- 
+
   return (
     <div className="eventsHomePage">
       <div className="eventsHomePage_wrapper">
@@ -141,7 +141,17 @@ const EventsHomePage = () => {
             transition={{ duration: 0.9, delay: 0.1 }}
             className="eventSec_second_heading"
           >
-            Upcoming Events
+            Upcoming Events with Sri SiddhGuru
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            className="eventSec_second_text"
+          >
+            Stay updated on Sri SiddhGuru's upcoming transformative gatherings
+            and spiritual events.
           </motion.div>
           {/* </motion.div> */}
         </div>

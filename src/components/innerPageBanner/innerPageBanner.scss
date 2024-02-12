@@ -34,16 +34,31 @@
       color: #fff;
       font-weight: 600;
       text-transform: uppercase;
+      width: 850px;
+      @media (max-width: 1199px) {
+        font-size: 35px;
+        width: 550px;
+        left: 55px;
+      }
       @media (max-width: 991px) {
         font-size: 35px;
+        width: 450px;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+        width: 450px;
+        top: 20px;
+        transform: translateY(0);
+        font-size: 28px;
+        left: 20px;
       }
       @media (max-width: 575px) {
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
-        bottom: 20px;
+        left: 20px;
+        // transform: translateX(-50%);
+        // top: auto;
+        // bottom: 20px;
         width: 90%;
-        text-align: center;
+        // text-align: center;
       }
     }
   }
