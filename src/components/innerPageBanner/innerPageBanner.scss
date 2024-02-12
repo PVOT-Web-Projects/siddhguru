@@ -8,12 +8,17 @@
       width: 100%;
       //   height: calc(100vh - 40px);
       object-fit: cover;
+      height: calc(100vh - 180px);
+      @media(max-width:1600px){
+        height: calc(100vh - 100px);
+      }
       @media (max-width: 767px) {
         height: 75vh;
         object-position: 88% 100%;
       }
       &.deskImage {
         display: block;
+
         @media (max-width: 767px) {
           display: none;
         }
