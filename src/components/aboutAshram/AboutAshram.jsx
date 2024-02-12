@@ -69,14 +69,14 @@ const AboutAshram = () => {
           <motion.span className={"mantra_wrapper"} variants={letter}>
             <HeadingTextAnimation
               heading={
-                "Experience the miracle of vedic Science with Sri Siddhguru."
+                "Experience the miracle of vedic Science with Sri SiddhGuru."
               }
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
           </motion.span>
           <div className="joinBtn">
-            <Button btn_text="join Now" link="" />
+            <Button btn_text="Join Now" link="" />
           </div>
         </motion.div>
         <motion.div
