@@ -22,9 +22,12 @@ const Layout = ({ children }) => {
     setTimeout(() => {
       setPopup(true);
     }, 2000);
-    // popup && (document.body.style.overflow = "hidden");
-    // !popup && (document.body.style.overflow = "unset");
   }, []);
+
+  useEffect(() => {
+    popup && (document.body.style.overflow = "hidden");
+    !popup && (document.body.style.overflow = "unset");
+  }, [popup]);
 
   const handlePopup = () => {
     setPopup(false);
