@@ -8,7 +8,7 @@ const NewHeroSection = ({deskVideo, mobileVideo}) => {
       <div className="newHeroSection_wrapper">
         {/* <img src="" alt="" /> */}
         <video src={deskVideo} loop autoPlay muted className="desk"></video>
-        <video src={mobileVideo} loop autoPlay={true} controls= '' muted className="mobile"></video>
+        <video src={mobileVideo} loop autoPlay={true} playsInline muted className="mobile"></video>
       </div>
     </div>
   );
