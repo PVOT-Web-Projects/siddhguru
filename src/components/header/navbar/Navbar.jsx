@@ -6,7 +6,10 @@ import "react-bootstrap-submenu/dist/index.css";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logoImage from "../../../images/logo.png";
-
+import icon2 from "../../../images/facebookMobile.svg";
+import icon3 from "../../../images/youtubeMobile.svg";
+import icon1 from "../../../images/instaMobile.svg";
+import icon4 from "../../../images/twitterMobile.svg";
 import {
   Navbar,
   Container,
@@ -411,6 +414,37 @@ const Menu = () => {
             </Nav>
 
             {/* <Logo /> */}
+            <div className="footer_link_container">
+              <div className="instagram_icon social_icon">
+                <a
+                  href="https://www.instagram.com/srisidheshwarbrahmrishi/"
+                  target="_blank"
+                >
+                  <img src={icon1} height="20px" />
+                </a>
+              </div>
+              <div className="facebook_icon social_icon">
+                <a
+                  href=" https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"
+                  target="_blank"
+                >
+                  <img src={icon2} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a
+                  href=" https://www.youtube.com/@srisidheshwartirth-brahmri5318"
+                  target="_blank"
+                >
+                  <img src={icon3} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a href=" https://twitter.com/sri_sidheswar" target="_blank">
+                  <img src={icon4} />
+                </a>
+              </div>
+            </div>
             <div className="mobileNavLogo">
               <img src={logoImage} alt="logo" />
             </div>
