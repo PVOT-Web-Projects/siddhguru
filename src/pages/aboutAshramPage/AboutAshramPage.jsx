@@ -28,7 +28,7 @@ const AboutAshramPage = () => {
       <InnerPageBanner
         image={bannerImage}
         mobileImage={mobilebannerImage}
-        text={"Awaken Your Soul: SiddhGuru's Ashram, Where Transformation Begins"}
+        bigText={"Awaken Your Soul: SiddhGuru's Ashram, Where Transformation Begins"}
       />
       <InnerPageCommonText
         boldText={

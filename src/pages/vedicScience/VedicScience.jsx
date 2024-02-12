@@ -12,19 +12,20 @@ import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/vedicScienceBanner2.jpg";
 import bannerImagemobile from "../../images/vedicScienceMobileBanner2.jpg";
-import image from "../../images/siddhasanaImage.png";
+import image1 from "../../images/vedicExp.jpg";
+import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 const siddhasanaData = [
   {
     delay: 0.1,
-    image: image,
+    image: image1,
     heading: "Experience the wonders of Vedic science with Sri Siddhguru.",
     text1:
       "Intellect drives virtually every field of knowledge, but in Vedic science, consciousness is key. Only a sage at supreme consciousness can unlock its true potential. Sri Siddhguru, born with all eight Kundalini Chakras activated, possesses deep insights into Vedic mysteries through intense Sadhana. Rediscovering lost Siddhis, his teachings inspire and transform lives beyond intellectual understanding. He guides us toward fulfilling lives and spiritual advancement, offering his divine energy to elevate our consciousness, revealing the essence of Vedic science through profound spiritual engagement rather than mere intellectual pursuit.",
   },
   {
     delay: 0.2,
-    image: image,
+    image: image2,
     heading: "Brahm Shakti",
     text1:
       "Brahm Shakti embodies Sri Siddhguru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahm Drusti involves a transformative gaze directly into your eyes. Brahm Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri Siddhguru, positioning him as a guiding light for enhancing our lives.",

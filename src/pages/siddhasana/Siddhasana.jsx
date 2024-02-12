@@ -2,7 +2,10 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import WeAreHere from "../../components/weAreHere/WeAreHere";
-import image from "../../images/siddhasanaImage.png";
+import image1 from "../../images/siddhasana_WHAT.jpg";
+import image2 from "../../images/siddhasana_WHERE & WHEN.jpg";
+import image3 from "../../images/siddhasana_WHY-min.jpg";
+import image4 from "../../images/siddhasana_WHOM.jpg";
 import "./siddhasana.scss";
 import bannerImage from "../../images/Siddhasana-D.jpg";
 import mobilebannerImage from "../../images/Siddhasana-M.jpg";
@@ -13,7 +16,7 @@ import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
 const siddhasanaData = [
   {
     delay: 0.1,
-    image: image,
+    image: image1,
     heading: "WHAT",
     text1:
       "Siddheshwar - The Power of Soul (“Siddhasana”) is a flagship lifestyle program with the mission to help you rediscover your inner self and reconnect you to your authentic being by using the power of silence.",
@@ -28,7 +31,7 @@ const siddhasanaData = [
   },
   {
     delay: 0.2,
-    image: image,
+    image: image2,
     heading: "WHERE & WHEN",
     text1:
       "Siddheshwar - The Power of Soul “Siddhasana” programs are shared in the following ways:",
@@ -45,7 +48,7 @@ const siddhasanaData = [
   },
   {
     delay: 0.3,
-    image: image,
+    image: image3,
     heading: "WHY",
     text1:
       "Stress, anxiety, anger, fear, guilt, hurt, sadness  and loneliness is stopping us from experiencing the true happiness, peace and love within us.",
@@ -59,7 +62,7 @@ const siddhasanaData = [
   },
   {
     delay: 0.4,
-    image: image,
+    image: image4,
     heading: "WHOM",
     text1: "Siddhasana Retreat is open for all from the age of  25 years.",
     text2:
@@ -74,7 +77,11 @@ const Siddhasana = () => {
       {/* <InnerPageCommonHeading
         heading={"The Power of Soul: Siddhasana Retreats"}
       /> */}
-      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} text={"Siddhasana"} />
+      <InnerPageBanner
+        image={bannerImage}
+        mobileImage={mobilebannerImage}
+        text={"Siddhasana"}
+      />
       {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}
       {/* <div className="siddhasana_wrapper">
         <div className="siddhasana_wrapper_content">

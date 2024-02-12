@@ -10,6 +10,8 @@ import poster4 from "../../images/shubhas_poster.jpg";
 import FourVideoItem from "./Fourvideocard_data";
 import { Player } from "video-react";
 import "./Fourvideocard.scss";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const videoData = [
   {
@@ -31,14 +33,22 @@ const videoData = [
 ];
 
 const Fourvideos = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   return (
-    <div className="fourVideos">
+    <div className="fourVideos" ref={ref}>
       <div className="fourVideos_wrapper">
         {/* {videoData.map((item, index) => (
           <ThreeVideoItem key={index} {...item} />
         ))} */}
 
-        <div className="fourVideoItem try">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="fourVideoItem try"
+        >
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
@@ -48,8 +58,13 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">Mayank Solanki</div>
-        </div>
-        <div className="fourVideoItem try">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="fourVideoItem try"
+        >
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
@@ -59,8 +74,13 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">Vladislav Y</div>
-        </div>
-        <div className="fourVideoItem try">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="fourVideoItem try"
+        >
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
@@ -70,8 +90,13 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">Ramesh Sankhla</div>
-        </div>
-        <div className="fourVideoItem try">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="fourVideoItem try"
+        >
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
@@ -81,7 +106,7 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">Ashok Sancheti</div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

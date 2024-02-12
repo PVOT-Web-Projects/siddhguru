@@ -20,6 +20,37 @@
     width: 30px;
   }
 }
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (max-width: 991px) {
+    width: 70%;
+  }
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+  @media (max-width: 575px) {
+    width: 90%;
+  }
+  .popup_wrapper {
+    position: relative;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      img {
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 @keyframes scrollTop {
   0% {
