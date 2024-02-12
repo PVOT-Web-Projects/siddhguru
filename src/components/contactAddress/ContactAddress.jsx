@@ -4,7 +4,7 @@ import "./contactAddress.scss";
 const contactAddressData = [
   {
     heading: "Address",
-    address: "Sri Siddheshwar Tirth R.C Road, C. Ramapuram, ",
+    address: "Sri Sidheshwar Tirth R.C Road, C. Ramapuram, ",
     address2: " RC puram (Mandalam, Tirupati, Andhra Pradesh 517561",
   },
   {
