@@ -18,7 +18,8 @@ const Experience = () => {
       <InnerPageBanner
         image={bannerImage}
         mobileImage={mobilebannerImage}
-        bigText={" Divine Encounters: Sharing Experiences with SiddhGuru"}
+        bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
+        // bigText2={"DIVINE EXPERIENCES WITH SIDDHGURU"}
       />
       <div className="headingAndText" ref={ref}>
         <div className="headingAndText_wrapper">

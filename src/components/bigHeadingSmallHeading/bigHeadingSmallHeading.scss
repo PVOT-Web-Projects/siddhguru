@@ -1,0 +1,31 @@
+.bigHeadingSmallHeading {
+  text-align: center;
+  padding: 80px 20px;
+  @media (max-width: 991px) {
+    padding: 50px 20px;
+  }
+  h2 {
+    font-size: 42px;
+    color: rgb(255, 153, 0);
+    margin: 0 0 20px;
+    @media (max-width: 991px) {
+      font-size: 38px;
+    }
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+    @media (max-width: 575px) {
+      font-size: 28px;
+    }
+  }
+  h4 {
+    font-size: 28px;
+    color: #fff;
+    @media (max-width: 991px) {
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+        font-size: 18px;
+      }
+  }
+}

@@ -16,7 +16,12 @@ const Contact = () => {
   return (
     <div className="contact">
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
-      <InnerPageBanner image={bannerImage} mobileImage={mobilebannerImage} bigText={"Connect with SiddhGuru: Let Divine Wisdom Light Your Path"} />
+      <InnerPageBanner
+        image={bannerImage}
+        mobileImage={mobilebannerImage}
+        bigText={"Connect with SiddhGuru:"}
+        bigText2={"Let Divine Wisdom Light Your Path"}
+      />
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
           <div className="heading">

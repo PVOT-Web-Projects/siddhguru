@@ -1,6 +1,13 @@
 import "./innerPageBanner.scss";
 
-const InnerPageBanner = ({ image, text, color, mobileImage, bigText }) => {
+const InnerPageBanner = ({
+  image,
+  text,
+  color,
+  mobileImage,
+  bigText,
+  bigText2,
+}) => {
   return (
     <div className="innerPageBanner">
       <div className="innerPageBanner_wrapper">
@@ -14,6 +21,8 @@ const InnerPageBanner = ({ image, text, color, mobileImage, bigText }) => {
         {bigText && (
           <div className="bannerBigText" style={{ color: color }}>
             {bigText}
+            <br />
+            {bigText2 && bigText2}
           </div>
         )}
       </div>

@@ -10,6 +10,7 @@ import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextA
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/Ashram_D.jpg";
 import mobilebannerImage from "../../images/Ashram_M.jpg";
+import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -28,12 +29,13 @@ const AboutAshramPage = () => {
       <InnerPageBanner
         image={bannerImage}
         mobileImage={mobilebannerImage}
-        bigText={"Awaken Your Soul: SiddhGuru's Ashram, Where Transformation Begins"}
+        bigText={
+          "Awaken Your Soul: SiddhGuru's Ashram,"
+        }
+        bigText2={"Where Transformation Begins"}
       />
       <InnerPageCommonText
-        boldText={
-          "Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)"
-        }
+        boldText={"Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)"}
         text1={
           " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
         }
@@ -59,6 +61,7 @@ const AboutAshramPage = () => {
       {aboutAshramImages.map((item, index) => (
         <AboutAshramImages key={index} {...item} />
       ))}
+      <GalleryAshram />
       <div className="aboutAshramPage_wrapper"></div>
     </div>
   );

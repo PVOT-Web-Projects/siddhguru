@@ -21,6 +21,7 @@ import arrow from "../../images/downArrow.svg";
 import video1 from "../../images/tab1Image.mp4";
 import video2 from "../../images/tab2Image2.mp4";
 import video3 from "../../images/tab3Image2.mp4";
+import BigHeadingSmallHeading from "../bigHeadingSmallHeading/BigHeadingSmallHeading";
 
 const theSaintData = [
   {
@@ -227,7 +228,13 @@ const TabSectionNew = () => {
   return (
     <div className="tabSectionNew">
       <div className="tabSectionNew_wrapper">
-        <TextSection />
+        {/* <TextSection /> */}
+        <BigHeadingSmallHeading
+          bigHeading={"Sri Sidheshwar Brahmarishi SiddhGuru."}
+          smallHeading={
+            "Transforming Lives with the supreme power of Vedic Science."
+          }
+        />
         <div className="mainTab">
           <div className="mainTab_wrapper">
             <div
