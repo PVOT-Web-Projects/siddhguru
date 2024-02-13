@@ -76,7 +76,7 @@ const AboutAshram = () => {
             />
           </motion.span>
           <div className="joinBtn">
-            <Button btn_text="Join Now" link="" />
+            <Button btn_text="Join Now" link="https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T" />
           </div>
         </motion.div>
         <motion.div

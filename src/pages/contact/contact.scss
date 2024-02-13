@@ -120,6 +120,12 @@
     }
     .socialIcon {
       width: 30%;
+      @media (max-width: 1199px) {
+        width: 37%;
+      }
+      @media (max-width: 991px) {
+        width: 45%;
+      }
       @media (max-width: 767px) {
         width: 100%;
       }
@@ -127,11 +133,17 @@
         display: flex;
         margin: 0 -20px;
         padding: 0;
-        @media(max-width:767px){
+        @media (max-width: 767px) {
           justify-content: center;
+        }
+        @media (max-width: 767px) {
+          margin: 0 -10px;
         }
         li {
           padding: 0 20px;
+          @media (max-width: 575px) {
+            padding: 0 10px;
+          }
           a {
             &:hover {
               img {
@@ -141,8 +153,11 @@
             img {
               width: 50px;
               transition: all 0.4s;
-              @media(max-width:767px){
+              @media (max-width: 767px) {
                 width: 40px;
+              }
+              @media (max-width: 575px) {
+                width: 35px;
               }
             }
           }
