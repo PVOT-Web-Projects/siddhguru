@@ -19,6 +19,7 @@ const Experience = () => {
         image={bannerImage}
         mobileImage={mobilebannerImage}
         bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
+        
         // bigText2={"DIVINE EXPERIENCES WITH SIDDHGURU"}
       />
       <div className="headingAndText" ref={ref}>
