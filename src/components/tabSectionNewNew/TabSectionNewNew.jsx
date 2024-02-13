@@ -311,7 +311,7 @@ const TabSectionNew = () => {
               className={`${
                 activeMainTab === "tab1" ? "active" : ""
               } mainTab_wrapper_image`}
-              onClick={handleTab1}
+              // onClick={handleTab1}
             >
               <img src={mainTabImage1} alt="mainTab" />
               <div className="mainTab_name">Sri SiddhGuru</div>
@@ -320,7 +320,7 @@ const TabSectionNew = () => {
               className={`${
                 activeMainTab === "tab2" ? "active" : ""
               } mainTab_wrapper_image`}
-              onClick={handleTab2}
+              // onClick={handleTab2}
             >
               <img src={mainTabImage2} alt="mainTab" />
               <div className="mainTab_name">Mission</div>
@@ -329,7 +329,7 @@ const TabSectionNew = () => {
               className={`${
                 activeMainTab === "tab3" ? "active" : ""
               } mainTab_wrapper_image`}
-              onClick={handleTab3}
+              // onClick={handleTab3}
             >
               <img src={mainTabImage3} alt="mainTab" />
               <div className="mainTab_name">Core Wisdom</div>

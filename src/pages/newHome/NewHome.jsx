@@ -22,7 +22,14 @@ const NewHome = () => {
   return (
     <>
       {/* <HeroSection /> */}
-      <NewHeroSection deskVideo={bannerVideo} mobileVideo={bannerVideomobile} />
+      <NewHeroSection
+        deskVideo={
+          "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833663/rlqouehxtqvpftanwbue.mp4"
+        }
+        mobileVideo={
+          "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833729/rhkym0lc0hcybuyip2q8.mp4"
+        }
+      />
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
       {/* <TabSection /> */}

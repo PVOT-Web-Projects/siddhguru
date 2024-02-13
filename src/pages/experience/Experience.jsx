@@ -16,8 +16,8 @@ const Experience = () => {
     <div className="experience">
       {/* <InnerPageCommonHeading heading={"Experience"} /> */}
       <InnerPageBanner
-        image={bannerImage}
-        mobileImage={mobilebannerImage}
+        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834432/g0xdsymxuriw25mzpcmo.jpg"}
+        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834473/qccpbcw446zsiax7egn1.jpg"}
         bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
         
         // bigText2={"DIVINE EXPERIENCES WITH SIDDHGURU"}

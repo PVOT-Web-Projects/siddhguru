@@ -18,8 +18,12 @@ const Contact = () => {
     <div className="contact">
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
       <InnerPageBanner
-        image={bannerImage}
-        mobileImage={mobilebannerImage}
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834577/qk6cuimbw8ycrinntrdj.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834624/a3v9yrnpp9sewfznxjz4.jpg"
+        }
         bigText={"Connect with SiddhGuru:"}
         bigText2={"Let Divine Wisdom Light Your Path"}
       />
@@ -59,7 +63,10 @@ const Contact = () => {
               </Link>
             </li>
             <li>
-              <Link to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"} target="_blank">
+              <Link
+                to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"}
+                target="_blank"
+              >
                 <img src={whatsApp} alt="whatsapp" />
               </Link>
             </li>
