@@ -15,6 +15,8 @@ import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
 import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
+import { Player } from "video-react";
+import vedicScienceVideo from "../../images/videcScienceVideo.mp4";
 const siddhasanaData = [
   {
     delay: 0.1,
@@ -83,7 +85,15 @@ const VedicScience = () => {
           ))}
         </div>
       )} */}
-      <FullWidthImage image={fullImage} />
+      {/* <FullWidthImage image={fullImage} /> */}
+      <div className="vedicScienceVideo">
+        <Player
+          playsInline={true}
+          src={vedicScienceVideo}
+          // poster={poster2}
+          // fluid={true}
+        />
+      </div>
       {/* <FormHomePage /> */}
       <AllVideoHome />
     </div>
