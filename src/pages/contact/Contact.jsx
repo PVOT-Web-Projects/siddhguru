@@ -8,6 +8,7 @@ import facebook from "../../images/facebook.svg";
 import insta from "../../images/insta.svg";
 import youtube from "../../images/youtube.svg";
 import twitter from "../../images/twittercopy.svg";
+import whatsApp from "../../images/whatsApp.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/Contact-Banners-D_2.jpg";
 import mobilebannerImage from "../../images/Contact-Banners-M_2.jpg";
@@ -57,11 +58,11 @@ const Contact = () => {
                 <img src={youtube} alt="youtube" />
               </Link>
             </li>
-            {/* <li>
-              <Link to={"https://twitter.com/sri_sidheswar"} target="_blank">
-                <img src={twitter} alt="youtube" />
+            <li>
+              <Link to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"} target="_blank">
+                <img src={whatsApp} alt="whatsapp" />
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

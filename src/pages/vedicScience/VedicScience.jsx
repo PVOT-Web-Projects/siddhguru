@@ -17,6 +17,7 @@ import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import { Player } from "video-react";
 import vedicScienceVideo from "../../images/videcScienceVideo.mp4";
+import posterImage from "../../images/vedicVideoPosert.jpg";
 const siddhasanaData = [
   {
     delay: 0.1,
@@ -90,7 +91,7 @@ const VedicScience = () => {
         <Player
           playsInline={true}
           src={vedicScienceVideo}
-          // poster={poster2}
+          poster={posterImage}
           // fluid={true}
         />
       </div>

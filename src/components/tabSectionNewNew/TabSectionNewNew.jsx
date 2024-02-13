@@ -297,8 +297,8 @@ const TabSectionNew = () => {
     setTabContent3Mobile(!tabContent3Mobile);
   };
   return (
-    <div className="tabSectionNew">
-      <div className="tabSectionNew_wrapper">
+    <div className="tabSectionNewNew">
+      <div className="tabSectionNewNew_wrapper">
         <BigHeadingSmallHeading
           bigHeading={"Sri Sidheshwar Brahmarishi SiddhGuru."}
           smallHeading={
