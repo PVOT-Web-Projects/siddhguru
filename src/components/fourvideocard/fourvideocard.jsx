@@ -3,9 +3,9 @@ import video3 from "../../images/exp4.mp4";
 import video2 from "../../images/Mayank Solanki Testimonial (Website).mp4";
 // import video1 from "../../images/exp1.mp4";
 import video4 from "../../images/exp3.mp4";
-import poster1 from "../../images/Ravi_poster.jpg";
-import poster2 from "../../images/mayank_poster.jpg";
-import poster3 from "../../images/video3banner.jpg";
+import poster1 from "../../images/expPoster1.jpg";
+import poster2 from "../../images/expPoster2.jpg";
+import poster3 from "../../images/expPoster3.jpg";
 import poster4 from "../../images/shubhas_poster.jpg";
 import FourVideoItem from "./Fourvideocard_data";
 import { Player } from "video-react";
@@ -28,7 +28,7 @@ const videoData = [
   },
   {
     video: video4,
-    // posterImage: poster4,
+    posterImage: poster4,
   },
 ];
 
@@ -53,7 +53,7 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={video2}
-              // poster={poster2}
+              poster={poster2}
               // fluid={true}
             />
           </div>
@@ -69,7 +69,7 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={video3}
-              // poster={poster3}
+              poster={poster3}
               // fluid={true}
             />
           </div>
@@ -85,7 +85,7 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={video4}
-              // poster={poster4}
+              poster={poster4}
               // fluid={true}
             />
           </div>
@@ -101,7 +101,7 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={video1}
-              // poster={poster2}
+              poster={poster1}
               // fluid={true}
             />
           </div>
