@@ -53,8 +53,8 @@ const VedicScience = () => {
     <div className="vedicScience">
       {/* <InnerPageCommonHeading heading={"Vedic Science"} /> */}
       <InnerPageBanner
-        image={bannerImage}
-        mobileImage={bannerImagemobile}
+        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833843/nhssft0dd3dgkai9wieu.jpg"}
+        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833906/ptlecsareqywcgdlcemx.jpg"}
         text={"Vedic Science"}
         // color={"#cf4a2a"}
       />

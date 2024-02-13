@@ -27,11 +27,13 @@ const AboutAshramPage = () => {
         heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
       /> */}
       <InnerPageBanner
-        image={bannerImage}
-        mobileImage={mobilebannerImage}
-        bigText={
-          "Awaken Your Soul: SiddhGuru's Ashram,"
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834197/pgosswoceox7q8swkq67.jpg"
         }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834247/h5gwtgeiejoq7o7o3uct.jpg"
+        }
+        bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
       />
       <InnerPageCommonText

@@ -58,7 +58,7 @@ const TopNavbar = () => {
               <Link to="/blog">Blogs</Link>
             </li> */}
             <li>
-              <Link to="/devotee">Register Devotee/Volunteer</Link>
+              <Link to="https://app.sribrahmrishiashram.org/devotee/login" target="_blank">Register Devotee/Volunteer</Link>
             </li>
             {/* <li>
               <a href="#">Donate</a>

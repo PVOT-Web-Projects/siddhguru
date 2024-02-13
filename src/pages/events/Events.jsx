@@ -68,8 +68,12 @@ const Events = () => {
     <div className="events">
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
       <InnerPageBanner
-        image={bannerImage}
-        mobileImage={mobilebannerImage}
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834320/nwzqojhj6pzfciyuzprc.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834370/kpypuwlmn1u00pwvka5c.jpg"
+        }
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"
         }

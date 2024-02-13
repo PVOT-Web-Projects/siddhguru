@@ -47,21 +47,21 @@
               z-index: 9;
             }
           }
-          cursor: pointer;
+          // cursor: pointer;
           @media (max-width: 767px) {
             border-top: 5px solid #fff;
             border-left: 5px solid #fff;
             border-right: 5px solid #fff;
           }
           &.active {
-            border-top: 10px solid #efe1a3;
-            border-left: 10px solid #efe1a3;
-            border-right: 10px solid #efe1a3;
-            @media (max-width: 767px) {
-              border-top: 5px solid #efe1a3;
-              border-left: 5px solid #efe1a3;
-              border-right: 5px solid #efe1a3;
-            }
+            // border-top: 10px solid #efe1a3;
+            // border-left: 10px solid #efe1a3;
+            // border-right: 10px solid #efe1a3;
+            // @media (max-width: 767px) {
+            //   border-top: 5px solid #efe1a3;
+            //   border-left: 5px solid #efe1a3;
+            //   border-right: 5px solid #efe1a3;
+            // }
             .mainTab_name {
               color: #f90;
             }

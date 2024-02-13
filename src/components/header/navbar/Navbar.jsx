@@ -402,9 +402,10 @@ const Menu = () => {
                 Blogs
               </Link> */}
               <Link
-                to="/devotee"
+                to="/https://app.sribrahmrishiashram.org/devotee/login"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
+                target="_blank"
               >
                 Register Devotee/Volunteer
               </Link>
