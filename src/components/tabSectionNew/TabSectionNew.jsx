@@ -30,6 +30,7 @@ const theSaintData = [
     img: theSaintImage1,
     title: "Sri SiddhGuru",
     text: "Sri Brahmrishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
+    itemIndex: 0,
     // text2:
     //   "Sri SiddhGuru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
     // text3:
@@ -41,6 +42,7 @@ const theSaintData = [
     img: theSaintImage2,
     title: "Kundalini",
     text: "Kundalini, a dormant spiritual energy within us, reaches its peak through awakening all eight Chakras, a feat rarely achieved and often taking multiple lifetimes. Gurudev, uniquely born with all Chakras awakened, is among the few saints to attain such a divine consciousness. Unlike other sages who retreat from society, he uses his spiritual prowess to ease human suffering and enhance our inner peace and happiness. Additionally, he empowers us to navigate life's challenges with strength, helping us to settle our karmic debts.",
+    itemIndex: 1,
     // text2:
     //   "We must pay for our karmic debt, so we’ll face challenges in our lives. Gurudev gives us the strength to overcome those challenges calmly.",
   },
@@ -50,6 +52,7 @@ const theSaintData = [
     img: theSaintImage3,
     title: "Siddhis",
     text: "SiddhGuru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to SiddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
+    itemIndex: 2,
     // text2:
     //   "In SiddhGuru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
     // text3:
@@ -86,6 +89,7 @@ const visionData = [
     img: image1,
     title: "Vision",
     text: "Sri SiddhGuru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. SiddhGuru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
+    itemIndex: 3,
     // text2:
     //   "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes SiddhGuru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
   },
@@ -94,18 +98,21 @@ const visionData = [
     img: image2,
     title: "Siddhasana",
     text: "Siddhasana is a unique life-changing experience, focusing on self-discovery and reconnecting with your true self in silence. This retreat is structured into seven levels, each designed to help calm and focus your mind, leading to a more conscious and fulfilling life. With activities and guidance tailored to each stage, you'll deeply engage with your inner self. By the end of each level, participants typically feel deep satisfaction and joy, having found a closer connection to their authentic essence.",
+    itemIndex: 4,
   },
   {
     id: "ashram",
     img: image3,
     title: "Ashram",
     text: "Discover the serene SiddhGuru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of SiddhGuru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
+    itemIndex: 5,
   },
   {
     id: "world_spiritual_forum",
     img: image4,
     title: "World Spiritual Forum",
     text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
+    itemIndex: 6,
   },
 ];
 const wisdomData = [
@@ -114,6 +121,7 @@ const wisdomData = [
     img: wisdomImage1,
     title: "Wisdom",
     text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhytmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
+    itemIndex: 7,
   },
   {
     // id: "anant_diksha",
@@ -128,6 +136,7 @@ const wisdomData = [
     text5:
       "Man with intelligence has many questions; the man with surrender has all the answers.",
     text6: "Man cannot do God's work. God can but will not do man's work.",
+    itemIndex: 8,
   },
   {
     // id: "anant_diksha",
@@ -141,6 +150,7 @@ const wisdomData = [
       "It is not important what you leave for your children. It is important what you leave in them.",
     text5:
       "Your life will serve in two ways – either as an example for others or as a warning for others.",
+    itemIndex: 9,
   },
   {
     // id: "anant_diksha",
@@ -152,6 +162,7 @@ const wisdomData = [
     text3: "Try and fail, but never fail to try.",
     text4:
       "Experience is not what happened to you. It is what you do with what happened to you.",
+    itemIndex: 10,
   },
 ];
 

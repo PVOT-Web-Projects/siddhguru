@@ -13,9 +13,11 @@ import TextSection from "../../components/textSection/TextSection";
 import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSection from "../../components/tabSection/TabSection";
 import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
+import TabSectionNewNew from "../../components/tabSectionNewNew/TabSectionNewNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/homeVideoBanner.mp4";
 import bannerVideomobile from "../../images/homeVideoMobileBanner.mp4";
+import "./newHome.scss";
 const NewHome = () => {
   return (
     <>
@@ -24,12 +26,17 @@ const NewHome = () => {
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
       {/* <TabSection /> */}
-      <TabSectionNew />
+      <div className="tab">
+        <TabSectionNew />
+      </div>
+      <div className="tabNew">
+        <TabSectionNewNew />
+      </div>
       <AboutAshram />
       <EventsHomePage />
       <ThreeVideos />
       {/* <CircleSpin /> */}
-     
+
       {/* <BrahmSutra /> */}
       {/* <HomePageVideoSection /> */}
       {/* <OurProgramSlider /> */}

@@ -7,10 +7,11 @@ const InnerPageBanner = ({
   mobileImage,
   bigText,
   bigText2,
+  overlay,
 }) => {
   return (
     <div className="innerPageBanner">
-      <div className="innerPageBanner_wrapper">
+      <div className={`innerPageBanner_wrapper ${overlay ? "overlay" : ""}`}>
         <img src={image} alt="bannerImage" className="deskImage" />
         <img src={mobileImage} alt="bannerImage" className="mobileImage" />
         {text && (
