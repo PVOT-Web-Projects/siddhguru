@@ -53,14 +53,14 @@
       position: absolute;
       left: 40px;
       @media (max-width: 767px) {
-        bottom: 20%;
+        bottom: 15%;
       }
     }
     &.next {
       position: absolute;
       right: 40px;
       @media (max-width: 767px) {
-        bottom: 20%;
+        bottom: 15%;
       }
     }
   }
