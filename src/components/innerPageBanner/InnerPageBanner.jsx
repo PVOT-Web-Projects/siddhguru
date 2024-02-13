@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./innerPageBanner.scss";
 
 const InnerPageBanner = ({
