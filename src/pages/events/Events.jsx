@@ -69,10 +69,10 @@ const Events = () => {
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834320/nwzqojhj6pzfciyuzprc.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834370/kpypuwlmn1u00pwvka5c.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
         }
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"

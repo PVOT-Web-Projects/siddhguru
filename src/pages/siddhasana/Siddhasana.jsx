@@ -78,8 +78,8 @@ const Siddhasana = () => {
         heading={"The Power of Soul: Siddhasana Retreats"}
       /> */}
       <InnerPageBanner
-        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833977/cuhegqhrcwplcd4irsfo.jpg"}
-        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834134/jxbgszaphpuorcjsugpk.jpg"}
+        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg"}
+        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg"}
         text={"Siddhasana"}
       />
       {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}

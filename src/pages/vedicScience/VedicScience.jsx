@@ -53,8 +53,12 @@ const VedicScience = () => {
     <div className="vedicScience">
       {/* <InnerPageCommonHeading heading={"Vedic Science"} /> */}
       <InnerPageBanner
-        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833843/nhssft0dd3dgkai9wieu.jpg"}
-        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833906/ptlecsareqywcgdlcemx.jpg"}
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"
+        }
         text={"Vedic Science"}
         // color={"#cf4a2a"}
       />

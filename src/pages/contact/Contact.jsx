@@ -19,10 +19,10 @@ const Contact = () => {
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834577/qk6cuimbw8ycrinntrdj.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg"
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834624/a3v9yrnpp9sewfznxjz4.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg"
         }
         bigText={"Connect with SiddhGuru:"}
         bigText2={"Let Divine Wisdom Light Your Path"}
