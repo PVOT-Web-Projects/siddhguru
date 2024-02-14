@@ -1,5 +1,5 @@
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import SiddhasanaItem from "../../components/SiddhasanaItem/SiddhasanaItem";
 import WeAreHere from "../../components/weAreHere/WeAreHere";
 import image1 from "../../images/Siddhasana_WHAT.jpg";
@@ -7,11 +7,11 @@ import image2 from "../../images/Siddhasana_WHERE & WHEN.jpg";
 import image3 from "../../images/Siddhasana_WHY-min.jpg";
 import image4 from "../../images/Siddhasana_WHOM.jpg";
 import "./Siddhasana.scss";
-import bannerImage from "../../images/Siddhasana-D.jpg";
-import mobilebannerImage from "../../images/Siddhasana-M.jpg";
-import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
-import bannerVideo from "../../images/Siddhasana Banner D.mp4";
-import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
+// import bannerImage from "../../images/Siddhasana-D.jpg";
+// import mobilebannerImage from "../../images/Siddhasana-M.jpg";
+// import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
+// import bannerVideo from "../../images/Siddhasana Banner D.mp4";
+// import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
 
 const SiddhasanaData = [
   {

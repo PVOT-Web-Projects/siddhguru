@@ -3,9 +3,9 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import VideoCards from "../../components/fourvideocard/fourvideocard";
 // import VideoCards_one from "../../components/videoCards/VideoCards";
 import "./experience.scss";
-import bannerImage from "../../images/Experience-Banners-D_2.jpg";
-import mobilebannerImage from "../../images/Experience-Banners-M_2.jpg";
-import { motion, useAnimation } from "framer-motion";
+// import bannerImage from "../../images/Experience-Banners-D_2.jpg";
+// import mobilebannerImage from "../../images/Experience-Banners-M_2.jpg";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Experience = () => {

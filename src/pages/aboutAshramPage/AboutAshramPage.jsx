@@ -1,4 +1,4 @@
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import "./aboutAshramPage.scss";
 import image1 from "../../images/aboutAshramImage1.png";
@@ -6,10 +6,10 @@ import image2 from "../../images/aboutAshramImage2.png";
 import image3 from "../../images/aboutAshramImage3.png";
 import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
-import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+// import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/Ashram_D.jpg";
-import mobilebannerImage from "../../images/Ashram_M.jpg";
+// import bannerImage from "../../images/Ashram_D.jpg";
+// import mobilebannerImage from "../../images/Ashram_M.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 
 const AboutAshramPage = () => {
