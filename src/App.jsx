@@ -18,7 +18,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
 import Devotee from "./pages/devotee/Devotee";
-import Gallery from "./pages/Gallary/gallary";
+// import Gallery from "./pages/Gallary/gallary";
 import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
@@ -36,8 +36,6 @@ function App() {
     document.body.style.cursor = "smooth";
     window.scrollTo(0, 0);
   }, 2500);
-
-  
 
   // useEffect(() => {
   //   const scroll = new LocomotoveScroll({
@@ -90,7 +88,6 @@ function App() {
             <Route path="/blog/:name" element={<BlogSingle />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/news" element={<News />} />
-            <Route path="/gallery" element={<Gallery />} />
             <Route path="/devotee" element={<Devotee />} />
             <Route path="/siddhasana" element={<Siddhasana />} />
             <Route path="/experience" element={<Experience />} />
