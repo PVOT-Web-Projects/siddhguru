@@ -16,10 +16,12 @@ import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
 // import Centers from "./pages/centers/Centers";
 // import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
+
 // import News from "./pages/news/News";
 // import Devotee from "./pages/devotee/Devotee";
 // import Gallery from "./pages/Gallary/gallary";
 // import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
+
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
 import VedicScience from "./pages/vedicScience/VedicScience";
@@ -86,9 +88,11 @@ function App() {
             {/* <Route path="/blog" element={<Blog />} /> */}
             {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
             <Route path="/contact" element={<Contact />} />
+
             {/* <Route path="/news" element={<News />} /> */}
             {/* <Route path="/gallery" element={<Gallery />} /> */}
             {/* <Route path="/devotee" element={<Devotee />} /> */}
+
             <Route path="/siddhasana" element={<Siddhasana />} />
             <Route path="/experience" element={<Experience />} />
             <Route />
