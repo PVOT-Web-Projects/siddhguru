@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
-import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import axios from "axios";
-import CardItem from "../../components/CardItem/CardItem";
-import FullWidthImage from "../../components/fullWidthImage/FullWidthImage";
-import fullImage from "../../images/fullWidthImage2.png";
-import FormHomePage from "../../components/Form_homePage/FormHomePage";
-import Spinner from "../../components/spinner/Spinner";
+// import CardItem from "../../components/CardItem/CardItem";
+// import FullWidthImage from "../../components/fullWidthImage/FullWidthImage";
+// import fullImage from "../../images/fullWidthImage2.png";
+// import FormHomePage from "../../components/Form_homePage/FormHomePage";
+// import Spinner from "../../components/spinner/Spinner";
 import "./vedicScience.scss";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/Vedic-Science_D.jpg";
-import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
+// import bannerImage from "../../images/Vedic-Science_D.jpg";
+// import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
 import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
@@ -36,25 +36,29 @@ const siddhasanaData = [
 ];
 
 const VedicScience = () => {
-  const [knowledge, setKnowledge] = useState([]);
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    axios
-      .get("https://SiddhGuru.pvotdesigns.xyz//wp-json/wp/v2/knowledge/?_embed")
-      .then((response) => {
-        setKnowledge(response.data);
-        console.log(response.data);
-        setLoading(false);
-      })
-      .catch((error) => console.error(error));
-  }, []);
+  // const [knowledge, setKnowledge] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   axios
+  //     .get("https://SiddhGuru.pvotdesigns.xyz//wp-json/wp/v2/knowledge/?_embed")
+  //     .then((response) => {
+  //       setKnowledge(response.data);
+  //       console.log(response.data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => console.error(error));
+  // }, []);
   return (
     <div className="vedicScience">
       {/* <InnerPageCommonHeading heading={"Vedic Science"} /> */}
       <InnerPageBanner
-        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833843/nhssft0dd3dgkai9wieu.jpg"}
-        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707833906/ptlecsareqywcgdlcemx.jpg"}
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"
+        }
         text={"Vedic Science"}
         // color={"#cf4a2a"}
       />

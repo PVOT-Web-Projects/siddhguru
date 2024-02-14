@@ -1,4 +1,4 @@
-import FormHomePage from "../../components/Form_homePage/FormHomePage";
+// import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import Galaryimages from "../../components/Gallaryimages/Galaryimage";
 import FullWidthImage from "../../components/fullWidthImage/FullWidthImage";
 import Galarybanner from "../../components/gallarybaner/Gallarybaner";

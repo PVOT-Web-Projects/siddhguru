@@ -16,9 +16,9 @@ const Layout = ({ children }) => {
   // }, [pathname]);
   // return null;
   const [popup, setPopup] = useState(false);
-  const scrollTopHandle = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // const scrollTopHandle = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
   useEffect(() => {
     setTimeout(() => {
       setPopup(true);

@@ -92,10 +92,10 @@ const AboutAshram = () => {
             <h3>About Our Ashram</h3>
             <p>
               <span>
-                Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)
+              Sri Sidheshwar Tirth - Sri Brahmrishi Ashram, Tirupati
               </span>
               {
-                " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
+                " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri."
               }
             </p>
             <p>

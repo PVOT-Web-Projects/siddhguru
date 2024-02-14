@@ -1,5 +1,5 @@
 import "./devotee.scss";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import IconWithText from "../../components/iconWithText/IconWithText";
 import Button from "../../components/buttons/button3";

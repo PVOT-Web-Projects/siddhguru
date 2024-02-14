@@ -1,17 +1,17 @@
-import ContactForm from "../../components/ContactForm/ContactForm";
+// import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactAddress from "../../components/contactAddress/ContactAddress";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import Map from "../../map/Map";
 import "./contact.scss";
 import { Link } from "react-router-dom";
 import facebook from "../../images/facebook.svg";
 import insta from "../../images/insta.svg";
 import youtube from "../../images/youtube.svg";
-import twitter from "../../images/twittercopy.svg";
+// import twitter from "../../images/twittercopy.svg";
 import whatsApp from "../../images/whatsApp.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/Contact-Banners-D_2.jpg";
-import mobilebannerImage from "../../images/Contact-Banners-M_2.jpg";
+// import bannerImage from "../../images/Contact-Banners-D_2.jpg";
+// import mobilebannerImage from "../../images/Contact-Banners-M_2.jpg";
 
 const Contact = () => {
   return (
@@ -19,10 +19,10 @@ const Contact = () => {
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834577/qk6cuimbw8ycrinntrdj.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg"
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834624/a3v9yrnpp9sewfznxjz4.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg"
         }
         bigText={"Connect with SiddhGuru:"}
         bigText2={"Let Divine Wisdom Light Your Path"}
@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
           <div className="heading">
-            Stay connected with Gurudev's blessings!
+            {"Stay connected with Gurudev's blessings!"}
           </div>
         </div>
         {/* <div className="contact_wrapper_right">

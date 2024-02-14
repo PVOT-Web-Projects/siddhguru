@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { Link, useLocation } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 import logoImage from "../../../images/logo.png";
 import icon2 from "../../../images/facebookMobile.svg";
 import icon3 from "../../../images/youtubeMobile.svg";
@@ -14,12 +14,12 @@ import {
   Navbar,
   Container,
   Nav,
-  NavDropdown,
+  // NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
-import Logo from "../logo/Logo";
+// import Logo from "../logo/Logo";
 
 const Menu = () => {
   const location = useLocation();
@@ -51,13 +51,13 @@ const Menu = () => {
   // const handleMouseLeave2 = () => {
   //   setShowSubMenu2(false);
   // };
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-  const closeDropdown = () => {
-    setDropdownOpen(false);
-  };
+  // const [isDropdownOpen, setDropdownOpen] = useState(false);
+  // const toggleDropdown = () => {
+  //   setDropdownOpen(!isDropdownOpen);
+  // };
+  // const closeDropdown = () => {
+  //   setDropdownOpen(false);
+  // };
   return (
     <Navbar expand={false}>
       <Container fluid>

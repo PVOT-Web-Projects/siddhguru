@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import CardItem from "../../components/CardItem/CardItem";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
+// import CardItem from "../../components/CardItem/CardItem";
 import "./events.scss";
 import "../../components/EventsHomePage/eventsHomePage.scss";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
-import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
-import FormHomePage from "../../components/Form_homePage/FormHomePage";
-import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
-import fullWidthImage from "../../images/fullWidthImage1.png";
-import Spinner from "../../components/spinner/Spinner";
+// import FormHomePage from "../../components/Form_homePage/FormHomePage";
+// import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
+// import fullWidthImage from "../../images/fullWidthImage1.png";
+// import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/Events-Banners-D_2.jpg";
-import mobilebannerImage from "../../images/Events-Banners-M_2.jpg";
+// import bannerImage from "../../images/Events-Banners-D_2.jpg";
+// import mobilebannerImage from "../../images/Events-Banners-M_2.jpg";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -51,28 +51,28 @@ const Events = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
-  const [events, setEvents] = useState([]);
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    axios
-      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/posts/?_embed")
-      .then((response) => {
-        setEvents(response.data);
-        console.log(response.data);
-        setLoading(false);
-      })
-      .catch((error) => console.error(error));
-  }, []);
+  // const [events, setEvents] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   axios
+  //     .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/posts/?_embed")
+  //     .then((response) => {
+  //       setEvents(response.data);
+  //       console.log(response.data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => console.error(error));
+  // }, []);
   return (
     <div className="events">
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834320/nwzqojhj6pzfciyuzprc.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834370/kpypuwlmn1u00pwvka5c.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
         }
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"

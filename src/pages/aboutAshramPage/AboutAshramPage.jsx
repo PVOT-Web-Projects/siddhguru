@@ -1,4 +1,4 @@
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import "./aboutAshramPage.scss";
 import image1 from "../../images/aboutAshramImage1.png";
@@ -6,10 +6,10 @@ import image2 from "../../images/aboutAshramImage2.png";
 import image3 from "../../images/aboutAshramImage3.png";
 import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
-import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+// import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/Ashram_D.jpg";
-import mobilebannerImage from "../../images/Ashram_M.jpg";
+// import bannerImage from "../../images/Ashram_D.jpg";
+// import mobilebannerImage from "../../images/Ashram_M.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 
 const AboutAshramPage = () => {
@@ -28,18 +28,18 @@ const AboutAshramPage = () => {
       /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834197/pgosswoceox7q8swkq67.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg"
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834247/h5gwtgeiejoq7o7o3uct.jpg"
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
         }
         bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
       />
       <InnerPageCommonText
-        boldText={"Sri Sidheshwar Tirth (Near Brahmrishi Ashram, Tirupati)"}
+        boldText={"Sri Sidheshwar Tirth - Sri Brahmrishi Ashram, Tirupati"}
         text1={
-          " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri, and Guru Purnima."
+          " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri."
         }
         text2={
           "Additionally, the ashram hosts free three-day and seven-day Siddhasana retreats, attracting seekers from diverse corners of the world who depart enriched with spiritual wisdom and the bliss of eternal fulfillment. Positioned on the sacred soil of India, this pilgrimage site radiates with an inherent spiritual energy, serving as a beacon of enlightenment and transformation for all who tread its hallowed grounds."

@@ -3,9 +3,9 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import VideoCards from "../../components/fourvideocard/fourvideocard";
 // import VideoCards_one from "../../components/videoCards/VideoCards";
 import "./experience.scss";
-import bannerImage from "../../images/Experience-Banners-D_2.jpg";
-import mobilebannerImage from "../../images/Experience-Banners-M_2.jpg";
-import { motion, useAnimation } from "framer-motion";
+// import bannerImage from "../../images/Experience-Banners-D_2.jpg";
+// import mobilebannerImage from "../../images/Experience-Banners-M_2.jpg";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Experience = () => {
@@ -16,8 +16,8 @@ const Experience = () => {
     <div className="experience">
       {/* <InnerPageCommonHeading heading={"Experience"} /> */}
       <InnerPageBanner
-        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834432/g0xdsymxuriw25mzpcmo.jpg"}
-        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707834473/qccpbcw446zsiax7egn1.jpg"}
+        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg"}
+        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg"}
         bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
         
         // bigText2={"DIVINE EXPERIENCES WITH SIDDHGURU"}

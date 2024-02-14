@@ -5,21 +5,23 @@ import "./global.scss";
 // import { AnimatePresence } from "framer-motion";
 import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
-import Home from "./pages/home/Home";
+// import Home from "./pages/home/Home";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import Events from "./pages/events/Events";
-import TheSaint from "./pages/theSaint/TheSaint";
-import Vision from "./pages/vision/Vision";
-import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
+// import TheSaint from "./pages/theSaint/TheSaint";
+// import Vision from "./pages/vision/Vision";
+// import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
 import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
-import Activities from "./pages/activities/Activities";
-import Centers from "./pages/centers/Centers";
-import Blog from "./pages/blog/Blog";
+// import Activities from "./pages/activities/Activities";
+// import Centers from "./pages/centers/Centers";
+// import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
-import News from "./pages/news/News";
-import Devotee from "./pages/devotee/Devotee";
+
+// import News from "./pages/news/News";
+// import Devotee from "./pages/devotee/Devotee";
 // import Gallery from "./pages/Gallary/gallary";
-import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
+// import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
+
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
 import VedicScience from "./pages/vedicScience/VedicScience";
@@ -32,9 +34,9 @@ function App() {
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
 
   setTimeout(() => {
-    setIsLoading(false);
     document.body.style.cursor = "smooth";
     window.scrollTo(0, 0);
+    setIsLoading(false);
   }, 2500);
 
   // useEffect(() => {
@@ -67,7 +69,6 @@ function App() {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait"> */}
       {isLoading ? (
         <Loader />
       ) : (
@@ -76,26 +77,28 @@ function App() {
           <Routes>
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="/" element={<NewHome />} />
-            <Route path="/the-saint" element={<TheSaint />} />
-            <Route path="/vision" element={<Vision />} />
-            <Route path="/core-wisdom" element={<CoreWisdom />} />
+            {/* <Route path="/the-saint" element={<TheSaint />} /> */}
+            {/* <Route path="/vision" element={<Vision />} /> */}
+            {/* <Route path="/core-wisdom" element={<CoreWisdom />} /> */}
             <Route path="/about-ashram" element={<AboutAshramPage />} />
             <Route path="/vedic-science" element={<VedicScience />} />
-            <Route path="/activities" element={<Activities />} />
+            {/* <Route path="/activities" element={<Activities />} /> */}
             <Route path="/events" element={<Events />} />
-            <Route path="/centers" element={<Centers />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:name" element={<BlogSingle />} />
+            {/* <Route path="/centers" element={<Centers />} /> */}
+            {/* <Route path="/blog" element={<Blog />} /> */}
+            {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
             <Route path="/contact" element={<Contact />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/devotee" element={<Devotee />} />
+
+            {/* <Route path="/news" element={<News />} /> */}
+            {/* <Route path="/gallery" element={<Gallery />} /> */}
+            {/* <Route path="/devotee" element={<Devotee />} /> */}
+
             <Route path="/siddhasana" element={<Siddhasana />} />
             <Route path="/experience" element={<Experience />} />
             <Route />
           </Routes>
         </Layout>
       )}
-      {/* </AnimatePresence> */}
     </>
   );
 }
