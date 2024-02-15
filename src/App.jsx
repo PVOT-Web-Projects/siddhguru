@@ -65,8 +65,8 @@ function App() {
   const [videosLoaded, setVideosLoaded] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  console.log("video", videosLoaded);
-  console.log("image", imagesLoaded);
+  // console.log("video", videosLoaded);
+  // console.log("image", imagesLoaded);
 
   useEffect(() => {
     //Function to load all the images from home page beforehand
@@ -170,7 +170,7 @@ function App() {
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
   };
-  console.log(widthCheck);
+  // console.log(widthCheck);
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);

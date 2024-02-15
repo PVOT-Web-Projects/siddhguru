@@ -23,7 +23,7 @@ import { useState } from "react";
 
 const Menu = () => {
   const location = useLocation();
-  console.log(location.pathname);
+  // console.log(location.pathname);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });

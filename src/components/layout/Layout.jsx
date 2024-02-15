@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
   const handlePopup = () => {
     setPopup(false);
   };
-  console.log("popup", popup);
+  // console.log("popup", popup);
   return (
     <>
       <TopNavbar />
