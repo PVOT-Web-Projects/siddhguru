@@ -19,6 +19,7 @@ const LeftRIghtImageContent = ({
   titleColor,
   index,
   id,
+  tagline,
 }) => {
   return (
     <motion.div
@@ -42,6 +43,7 @@ const LeftRIghtImageContent = ({
         <img src={img} className="thesaintimg" />
       </div>
       <div className="leftRightImageContent_wrapper_text">
+        {tagline && <div className="tagline">{tagline}</div>}
         <div className="title" style={{ color: titleColor }}>
           {title}
         </div>
@@ -98,4 +100,9 @@ LeftRIghtImageContent.propTypes = {
   conclution: PropTypes.string,
   titleColor: PropTypes.string,
   id: PropTypes.string,
+  text3: PropTypes.string,
+  text4: PropTypes.string,
+  text5: PropTypes.string,
+  text6: PropTypes.string,
+  tagline: PropTypes.string,
 };

@@ -21,6 +21,7 @@ const AboutAshramPage = () => {
       imageUrl3: image3,
     },
   ];
+  
   return (
     <div className="aboutAshramPage">
       {/* <InnerPageCommonHeading
