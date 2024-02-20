@@ -70,16 +70,16 @@ const AboutAshramPage = () => {
       /> */}
       <HeadingContentWithImages
         heading={
-          "For Gaushala, just need to put the number of cows at the ashram"
+          "Gaushala"
         }
         content={
-          '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to over _____ cows who are valued and cared for with compassion."'
+          '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to many cows who are valued and cared for with compassion."'
         }
         image1={gaushalaImage1}
         image2={gaushalaImage2}
       />
       <HeadingContentWithImages
-        heading={"For Dhyan Mandir"}
+        heading={"Dhyan Mandir"}
         content={
           "Welcome to Sidheshwar Tirth, Brahmrishi Ashram Dhyan Mandir, a peaceful place for meditation and self-reflection. Here, you can escape the hustle and bustle of daily life and find a quiet spot to relax and unwind. Whether you're new to meditation or have been practising for years, our serene sanctuary is open to everyone. Sit quietly, focus on your breath, and let go of stress and worries. It's a space where you can connect with yourself and the divine. Join us as we journey inward and discover the peace that lies within."
         }
