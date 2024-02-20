@@ -26,6 +26,35 @@ import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
 import VedicScience from "./pages/vedicScience/VedicScience";
 import NewHome from "./pages/newHome/NewHome";
+import mainTab1 from "./images/mainTab1.png";
+import mainTab2 from "./images/mainTab2.png";
+import mainTab3 from "./images/mainTab3.png";
+import tab1Images1 from "./images/Life in a Nutshell.jpg";
+import tab1Images2 from "./images/Sadhana & Kundalini Invocation.jpg";
+import tab1Images3 from "./images/Siddhis-and-Nidhis.jpg";
+import tab2Images1 from "./images/Divine Touch (Digital Diksha).jpg";
+import tab2Images2 from "./images/Siddhasana.jpg";
+import tab2Images3 from "./images/Ashram.jpg";
+import tab2Images4 from "./images/World-Spiritual-Forum.jpg";
+import tab3Images1 from "./images/Miracles of Vedic Science.jpg";
+import tab3Images2 from "./images/spiritual.jpeg";
+import tab3Images3 from "./images/socialWisdom.jpeg";
+import tab3Images4 from "./images/professionalWisdom.jpeg";
+import eventImage1 from "./images/Dhwajarohan.jpg";
+import eventImage2 from "./images/Maha-Shivratri.jpg";
+import eventImage3 from "./images/Asia-Tour.jpg";
+import eventImage4 from "./images/Africa-Tour.jpg";
+import lotus_image from "./images/lotus.png";
+import popupImage from "./images/popup.jpeg";
+import video1 from "./images/exp1.mp4";
+import video2 from "./images/video2.mp4";
+import video3 from "./images/video3.mp4";
+import homeBanner from "./images/newHomeBanner.mp4";
+import homeBannerM from "./images/homeVideoMobileBanner.mp4";
+import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
+import expVideo3 from "./images/exp4.mp4";
+import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
+import expVideo4 from "./images/exp5.mp4";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,22 +62,115 @@ function App() {
   // const [isLoading2, setIsLoading2] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
 
-  setTimeout(() => {
-    document.body.style.cursor = "smooth";
-    window.scrollTo(0, 0);
-    setIsLoading(false);
-  }, 2500);
+  const [videosLoaded, setVideosLoaded] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   const scroll = new LocomotoveScroll({
-  //     smooth: true,
-  //   });
-  // });
+  // console.log("video", videosLoaded);
+  // console.log("image", imagesLoaded);
+
+  useEffect(() => {
+    //Function to load all the images from home page beforehand
+
+    window.onload = () => {
+      // const loadVideo = (url) => {
+      //   return new Promise((resolve, reject) => {
+      //     const video = document.querySelector("video");
+      //     video.onloadedmetadata = () => resolve(url);
+      //     video.onerror = (err) => reject(err);
+      //     video.src = url;
+      //   });
+      // };
+
+      // Array of video URLs to load
+      const videoUrls = [
+        video1,
+        video2,
+        video3,
+        homeBanner,
+        homeBannerM,
+        expVideo1,
+        expVideo2,
+        expVideo3,
+        expVideo4,
+      ];
+
+      const loadVideos = async () => {
+        try {
+          await Promise.all(videoUrls);
+          setVideosLoaded(true);
+        } catch (error) {
+          console.error("Error loading videos:", error);
+        }
+      };
+
+      const loadImage = (url) => {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve(url);
+          image.onerror = (err) => reject(err);
+          image.src = url;
+        });
+      };
+
+      // Array of image URLs to load
+      const imageUrls = [
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg",
+        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg",
+        mainTab1,
+        mainTab2,
+        mainTab3,
+        tab1Images1,
+        tab1Images2,
+        tab1Images3,
+        tab2Images1,
+        tab2Images2,
+        tab2Images3,
+        tab2Images4,
+        tab3Images1,
+        tab3Images2,
+        tab3Images3,
+        tab3Images4,
+        eventImage1,
+        eventImage2,
+        eventImage3,
+        eventImage4,
+        popupImage,
+        lotus_image,
+      ];
+
+      const loadImages = async () => {
+        try {
+          await Promise.all(imageUrls.map(loadImage));
+          setImagesLoaded(true);
+        } catch (error) {
+          console.error("Error loading images:", error);
+        }
+      };
+      setTimeout(() => {
+        document.body.style.cursor = "smooth";
+        window.scrollTo(0, 0);
+        loadImages();
+        loadVideos();
+        setIsLoading(false);
+      }, 2500);
+    };
+    return () => (window.onload = null);
+  }, []);
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
   };
-  console.log(widthCheck);
+  // console.log(widthCheck);
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);

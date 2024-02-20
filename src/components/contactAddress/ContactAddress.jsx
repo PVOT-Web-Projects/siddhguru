@@ -5,7 +5,7 @@ const contactAddressData = [
   {
     heading: "Address",
     address: "Sri Sidheshwar Tirth R.C Road, C. Ramapuram, ",
-    address2: " RC puram (Mandalam, Tirupati, Andhra Pradesh 517561",
+    address2: " RC puram Mandalam, Tirupati, Andhra Pradesh 517561",
   },
   {
     heading: "Contact",

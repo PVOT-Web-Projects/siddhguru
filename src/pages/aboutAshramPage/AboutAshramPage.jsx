@@ -11,6 +11,11 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 // import bannerImage from "../../images/Ashram_D.jpg";
 // import mobilebannerImage from "../../images/Ashram_M.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
+import HeadingContentWithImages from "../../components/headingContentWithImages/HeadingContentWithImages";
+import gaushalaImage1 from "../../images/gaushalaImage1.jpg";
+import gaushalaImage2 from "../../images/gaushalaImage2.jpg";
+import dyanMandirImage1 from "../../images/dyanMandirImage1.jpg";
+import dyanMandirImage2 from "../../images/dyanMandirImage2.jpg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -21,6 +26,7 @@ const AboutAshramPage = () => {
       imageUrl3: image3,
     },
   ];
+
   return (
     <div className="aboutAshramPage">
       {/* <InnerPageCommonHeading
@@ -37,9 +43,11 @@ const AboutAshramPage = () => {
         bigText2={"Where Transformation Begins"}
       />
       <InnerPageCommonText
-        boldText={"Sri Sidheshwar Tirth - Sri Brahmrishi Ashram, Tirupati"}
+        boldText={
+          "Sri Sidheshwar Tirth - Sri Brahmarishi Ashram, near Tirupati"
+        }
         text1={
-          " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhaguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, Shivaratri."
+          " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri Siddhguru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, and MahaShivaratri."
         }
         text2={
           "Additionally, the ashram hosts free three-day and seven-day Siddhasana retreats, attracting seekers from diverse corners of the world who depart enriched with spiritual wisdom and the bliss of eternal fulfillment. Positioned on the sacred soil of India, this pilgrimage site radiates with an inherent spiritual energy, serving as a beacon of enlightenment and transformation for all who tread its hallowed grounds."
@@ -60,6 +68,24 @@ const AboutAshramPage = () => {
         justifyContent={"center"}
         color={"#6A1C1C"}
       /> */}
+      <HeadingContentWithImages
+        heading={
+          "For Gaushala, just need to put the number of cows at the ashram"
+        }
+        content={
+          '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to over _____ cows who are valued and cared for with compassion."'
+        }
+        image1={gaushalaImage1}
+        image2={gaushalaImage2}
+      />
+      <HeadingContentWithImages
+        heading={"For Dhyan Mandir"}
+        content={
+          "Welcome to Sidheshwar Tirth, Brahmrishi Ashram Dhyan Mandir, a peaceful place for meditation and self-reflection. Here, you can escape the hustle and bustle of daily life and find a quiet spot to relax and unwind. Whether you're new to meditation or have been practising for years, our serene sanctuary is open to everyone. Sit quietly, focus on your breath, and let go of stress and worries. It's a space where you can connect with yourself and the divine. Join us as we journey inward and discover the peace that lies within."
+        }
+        image1={dyanMandirImage1}
+        image2={dyanMandirImage2}
+      />
       {aboutAshramImages.map((item, index) => (
         <AboutAshramImages key={index} {...item} />
       ))}

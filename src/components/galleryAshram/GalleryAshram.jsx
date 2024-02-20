@@ -1,25 +1,26 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "./galleryAshram.scss";
-import image1 from "../../images/galleryImage1.webp";
-import image2 from "../../images/galleryImage2.webp";
-import image4 from "../../images/galleryImage3.webp";
-import image3 from "../../images/galleryImage4.webp";
-import image5 from "../../images/galleryImage5.webp";
-import image6 from "../../images/galleryImage6.webp";
-import image7 from "../../images/galleryImage7.webp";
-import image8 from "../../images/galleryImage8.webp";
-import image9 from "../../images/galleryImage9.webp";
-import image10 from "../../images/galleryImage10.webp";
-import image11 from "../../images/galleryImage11.webp";
-import image12 from "../../images/galleryImage12.webp";
-import image13 from "../../images/galleryImage13.webp";
-import image14 from "../../images/galleryImage14.webp";
-import image15 from "../../images/galleryImage15.webp";
-import image16 from "../../images/galleryImage16.webp";
-import image17 from "../../images/galleryImage17.webp";
-import image18 from "../../images/galleryImage18.webp";
-import image19 from "../../images/galleryImage19.webp";
-import image20 from "../../images/galleryImage20.webp";
+import image1 from "../../images/001.jpg";
+import image2 from "../../images/002.jpg";
+import image4 from "../../images/003.jpg";
+import image3 from "../../images/004.jpg";
+import image5 from "../../images/005.jpg";
+import image6 from "../../images/006.jpg";
+import image7 from "../../images/007.jpg";
+import image8 from "../../images/008.jpg";
+import image9 from "../../images/009.jpg";
+import image10 from "../../images/010.jpg";
+import image11 from "../../images/011.jpg";
+import image12 from "../../images/012.jpg";
+import image13 from "../../images/013.jpg";
+import image14 from "../../images/014.jpg";
+import image15 from "../../images/015.jpg";
+import image16 from "../../images/016.jpg";
+import image17 from "../../images/017.jpg";
+import image18 from "../../images/018.jpg";
+import image19 from "../../images/019.jpg";
+import image20 from "../../images/020.jpg";
+import image21 from "../../images/021.jpg";
 import closeIcon from "../../images/closeIcon.svg";
 import { useState } from "react";
 
@@ -44,6 +45,7 @@ const images = [
   image18,
   image19,
   image20,
+  image21,
 ];
 
 const GalleryAshram = () => {
