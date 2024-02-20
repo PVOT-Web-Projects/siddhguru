@@ -156,11 +156,12 @@ function App() {
           console.error("Error loading images:", error);
         }
       };
+      loadImages();
+      loadVideos();
       setTimeout(() => {
         document.body.style.cursor = "smooth";
         window.scrollTo(0, 0);
-        loadImages();
-        loadVideos();
+       
         setIsLoading(false);
       }, 2500);
     };
