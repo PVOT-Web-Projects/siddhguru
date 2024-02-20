@@ -24,7 +24,7 @@ const Footer = () => {
       </motion.div>
       <div className="footer_text">
         <p>Address :</p>
-        Sri Sidheshwar Tirth R.C Road, C. Ramapuram, RC puram Mandalam, Tirupati, Andhra Pradesh 517561, India. Call :
+        Sri Sidheshwar Tirth R.C Road, C. Ramapuram, RC puram Mandalam, Near Tirupati, Andhra Pradesh 517561, India. Call :
         <a
           href="to:91 986
         6622049"
