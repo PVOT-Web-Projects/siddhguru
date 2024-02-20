@@ -57,7 +57,7 @@ const EventsHomePage = () => {
       leftBold2: "Maha Rudrabhishek - ",
       rightLight2: "6 PM Onwards",
       leftBold3: "Venue - ",
-      rightLight3: "Sri Sidheshwar Tirth, Brahmarishi Ashram, near Tirupati",
+      rightLight3: "Sri Sidheshwar Tirth, Sri Brahmarishi Ashram, near Tirupati",
       link:"https://app.sribrahmrishiashram.org/devotee/login?eventId=1cb163f2-04cb-42fe-bf02-05bbf3da2b5c"
     },
     {
