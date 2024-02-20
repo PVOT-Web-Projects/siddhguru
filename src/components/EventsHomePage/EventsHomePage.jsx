@@ -28,14 +28,15 @@ const EventsHomePage = () => {
       eventDesc2:
         "The event will include the hoisting of the flag according to Jain rituals, followed by worship and, afterward, a feast offering the lovingly prepared meal, known as Swamivatsalya Bhojan Prasad.",
       // boxWeek: "tue",
-      leftBold1: "SattarBhedi Pujan - ",
-      rightLight1: "8 AM Onwards",
+      leftBold1: "18 Abhishek Poojan - ",
+      rightLight1: "8:00 AM onwards",
       leftBold2: "Sattar Bhedi Poojan - ",
-      rightLight2: "11.45 AM Onwards",
+      rightLight2: "11:45 AM onwards",
       leftBold3: "Dhwajarohan Mahotsav - ",
-      rightLight3: "12.39PM",
+      rightLight3: "12:39 PM during Vijaya Muhurat",
       leftBold4: "Program Sponsor - ",
       rightLight4: "Shri Rajendra Ji Mehta & Family (Mumbai)",
+      link:"https://app.sribrahmrishiashram.org/devotee/login?eventId=19aae3ae-a742-4693-999e-f13a0e83950c"
     },
     {
       id: 1,
@@ -49,17 +50,20 @@ const EventsHomePage = () => {
       eventDesc1:
         "A divine experience of Shivatva (the state of being Shiva) in the presence of Sri Sidheshwar Brahmarishi Gurudev",
       // boxWeek: "tue",
-      leftBold1: "Kal Sarp Dosh Nivaran Poojan - ",
-      rightLight1: " 10 AM Onwards",
-      leftBold2: "Maharudrabhishek - ",
+      eventDesc2:"Mahashivratri is a special day celebrated to mark the wedding of Lord Shiva and Maa Parvati. People across India observe this day with fasting, prayers, and meditation. It's a time to seek blessings for harmony in relationships, spiritual growth, and peace of mind.",
+      eventDesc3:"On this auspicious night, it's believed that Lord Shiva performs his divine dance, the Tandava. It's a time to honour the union of Shiva and Parvati and to reflect on our own spiritual journey with devotion and contemplation.",
+      leftBold1: "Kaal Sarp Dosh Nivaran Poojan - ",
+      rightLight1: "10 AM onwards",
+      leftBold2: "Maha Rudrabhishek - ",
       rightLight2: "6 PM Onwards",
       leftBold3: "Venue - ",
-      rightLight3: "Sri Sidheshwar Tirth, Brahmrishi Ashram, Tirupati",
+      rightLight3: "Sri Sidheshwar Tirth, Brahmarishi Ashram, near Tirupati",
+      link:"https://app.sribrahmrishiashram.org/devotee/login?eventId=1cb163f2-04cb-42fe-bf02-05bbf3da2b5c"
     },
     {
       id: 2,
       image: image3,
-      bigText: "Asia Tour (Brahm Sparsh – A Divine Touch) ",
+      bigText: "Asia Tour (Brahma Sparsh – A Divine Touch) ",
       // eventName: "Name of Event",
       date: "12th March to 30th March, 2024",
       location: "Kuala Lumpur",
@@ -73,13 +77,13 @@ const EventsHomePage = () => {
       leftBold3: "Kuala Lumpur - ",
       rightLight3: " 21 to 24 March, 2024",
       leftBold4: "Guangzhou (China) - ",
-      rightLight4: " 26 to 30 March 2024",
+      rightLight4: " March 29 to April 1 2024",
       note: "* The venues, timings, and other details of the Asia Tour programs will be displayed here very soon.",
     },
     {
       id: 3,
       image: image4,
-      bigText: "Africa Tour (Brahm Sparsh – A Divine Touch)",
+      bigText: "Africa Tour (Brahma Sparsh – A Divine Touch)",
       // eventName: "Name of Event",
       date: "22nd May to 4th June, 2024",
       location: "Guangzhou",
@@ -173,6 +177,7 @@ const EventsHomePage = () => {
               boxWeek={item.boxWeek}
               eventDesc1={item.eventDesc1}
               eventDesc2={item.eventDesc2}
+              eventDesc3={item.eventDesc3}
               leftBold1={item.leftBold1}
               leftBold2={item.leftBold2}
               leftBold3={item.leftBold3}
@@ -182,6 +187,7 @@ const EventsHomePage = () => {
               rightLight3={item.rightLight3}
               rightLight4={item.rightLight4}
               note={item.note}
+              link={item.link}
             />
           ))}
         </div>

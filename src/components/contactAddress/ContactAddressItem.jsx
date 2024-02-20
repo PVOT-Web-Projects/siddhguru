@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 const ContactAddressItem = ({
   heading,
@@ -39,11 +38,4 @@ const ContactAddressItem = ({
 };
 export default ContactAddressItem;
 
-ContactAddressItem.propTypes = {
-  heading: PropTypes.string,
-  address: PropTypes.string,
-  number1: PropTypes.string,
-  number2: PropTypes.string,
-  mail1: PropTypes.string,
-  mail2: PropTypes.string,
-};
+
