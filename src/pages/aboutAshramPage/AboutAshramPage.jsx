@@ -16,6 +16,8 @@ import gaushalaImage1 from "../../images/gaushalaImage1.jpg";
 import gaushalaImage2 from "../../images/gaushalaImage2.jpg";
 import dyanMandirImage1 from "../../images/dyanMandirImage1.jpg";
 import dyanMandirImage2 from "../../images/dyanMandirImage2.jpg";
+import gaushalaImage3 from "../../images/gaushalaImage3.jpg";
+import gaushalaImage4 from "../../images/gaushalaImage4.jpeg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -69,14 +71,14 @@ const AboutAshramPage = () => {
         color={"#6A1C1C"}
       /> */}
       <HeadingContentWithImages
-        heading={
-          "Gaushala"
-        }
+        heading={"Gaushala"}
         content={
           '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to many cows who are valued and cared for with compassion."'
         }
         image1={gaushalaImage1}
         image2={gaushalaImage2}
+        image3={gaushalaImage3}
+        image4={gaushalaImage4}
       />
       <HeadingContentWithImages
         heading={"Dhyan Mandir"}
