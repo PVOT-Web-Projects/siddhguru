@@ -194,11 +194,11 @@ const tabData3 = [
   },
   {
     title: "Social Wisdom",
-    id: 8,
+    id: 9,
   },
   {
     title: "Professional Wisdom",
-    id: 9,
+    id: 10,
   },
 ];
 

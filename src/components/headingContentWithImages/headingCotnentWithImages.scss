@@ -55,6 +55,7 @@
     .images {
       display: flex;
       margin: 0 -20px;
+      flex-wrap: wrap;
       @media (max-width: 991px) {
         margin: 0 -10px;
       }
@@ -67,8 +68,10 @@
         display: block;
         width: 50%;
         padding: 0 20px;
+        margin: 0 0 40px;
         @media (max-width: 991px) {
           padding: 0 10px;
+          margin: 0 0 20px;
         }
         @media (max-width: 575px) {
           width: 100%;
