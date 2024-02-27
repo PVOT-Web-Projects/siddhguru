@@ -64,7 +64,6 @@ function App() {
 
   const [videosLoaded, setVideosLoaded] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  console.log("loading", isLoading);
 
   // console.log("video", videosLoaded);
   // console.log("image", imagesLoaded);
@@ -162,7 +161,8 @@ function App() {
           });
 
           await Promise.all(loadImagePromises);
-          setIsLoading(false);
+
+          // setIsLoading(false);
         } catch (error) {
           console.error("Error loading images:", error);
           // Handle error loading images
@@ -178,11 +178,16 @@ function App() {
       //   }
       // };
       loadImages();
-
+     
       // loadVideos();
     };
     // return () => (window.onload = null);
   }, []);
+  setTimeout(() => {
+    document.body.style.cursor = "smooth";
+    window.scrollTo(0, 0);
+    setIsLoading(false);
+  }, 3000);
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
