@@ -162,7 +162,7 @@ function App() {
 
           await Promise.all(loadImagePromises);
 
-          setIsLoading(false);
+          // setIsLoading(false);
         } catch (error) {
           console.error("Error loading images:", error);
           // Handle error loading images
