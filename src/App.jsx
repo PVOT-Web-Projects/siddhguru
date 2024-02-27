@@ -64,6 +64,7 @@ function App() {
 
   const [videosLoaded, setVideosLoaded] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  console.log("loading", isLoading);
 
   // console.log("video", videosLoaded);
   // console.log("image", imagesLoaded);
