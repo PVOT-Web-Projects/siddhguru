@@ -158,12 +158,8 @@ function App() {
       };
       loadImages();
       // loadVideos();
-      setTimeout(() => {
-        document.body.style.cursor = "smooth";
-        window.scrollTo(0, 0);
 
-        setIsLoading(false);
-      }, 2000);
+      setIsLoading(false);
     };
     return () => (window.onload = null);
   }, []);
