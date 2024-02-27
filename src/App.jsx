@@ -157,7 +157,7 @@ function App() {
         }
       };
       loadImages();
-      loadVideos();
+      // loadVideos();
       setTimeout(() => {
         document.body.style.cursor = "smooth";
         window.scrollTo(0, 0);
