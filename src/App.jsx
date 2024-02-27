@@ -163,8 +163,13 @@ function App() {
           });
   
           await Promise.all(loadImagePromises);
+          setTimeout(() => {
+            document.body.style.cursor = "smooth";
+            window.scrollTo(0, 0);
+            setIsLoading(false);
+          }, 2500);
   
-          setIsLoading(false);
+         
         } catch (error) {
           console.error("Error loading images:", error);
           // Handle error loading images
@@ -182,15 +187,12 @@ function App() {
       //   }
       // };
       loadImages();
-      setTimeout(() => {
-        document.body.style.cursor = "smooth";
-        window.scrollTo(0, 0);
-      }, 2500);
+     
       // loadVideos();
 
      
     };
-    return () => (window.onload = null);
+    // return () => (window.onload = null);
   }, []);
  
 
