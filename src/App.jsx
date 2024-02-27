@@ -158,15 +158,15 @@ function App() {
       };
       loadImages();
       loadVideos();
-      setTimeout(() => {
-        document.body.style.cursor = "smooth";
-        window.scrollTo(0, 0);
-       
-        setIsLoading(false);
-      }, 2500);
     };
     return () => (window.onload = null);
   }, []);
+  setTimeout(() => {
+    document.body.style.cursor = "smooth";
+    window.scrollTo(0, 0);
+
+    setIsLoading(false);
+  }, 2500);
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
