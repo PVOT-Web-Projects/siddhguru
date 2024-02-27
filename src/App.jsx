@@ -148,8 +148,6 @@ function App() {
         lotus_image,
       ];
 
-
-
       const loadImages = async () => {
         try {
           const loadImagePromises = imageUrls.map((imageUrl, index) => {
@@ -161,22 +159,14 @@ function App() {
               };
             });
           });
-  
+
           await Promise.all(loadImagePromises);
-          setTimeout(() => {
-            document.body.style.cursor = "smooth";
-            window.scrollTo(0, 0);
-            setIsLoading(false);
-          }, 2500);
-  
-         
+          setIsLoading(false);
         } catch (error) {
           console.error("Error loading images:", error);
           // Handle error loading images
         }
       };
-
-
 
       // const loadImages = async () => {
       //   try {
@@ -187,14 +177,11 @@ function App() {
       //   }
       // };
       loadImages();
-     
-      // loadVideos();
 
-     
+      // loadVideos();
     };
     // return () => (window.onload = null);
   }, []);
- 
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
