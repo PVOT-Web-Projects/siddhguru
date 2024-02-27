@@ -148,25 +148,51 @@ function App() {
         lotus_image,
       ];
 
+
+
       const loadImages = async () => {
         try {
-          await Promise.all(imageUrls.map(loadImage));
-          setImagesLoaded(true);
+          const loadImagePromises = imageUrls.map((imageUrl, index) => {
+            return new Promise((resolve) => {
+              const img = new Image();
+              img.src = imageUrl;
+              img.onload = () => {
+                resolve();
+              };
+            });
+          });
+  
+          await Promise.all(loadImagePromises);
+  
+          setIsLoading(false);
         } catch (error) {
           console.error("Error loading images:", error);
+          // Handle error loading images
         }
       };
+
+
+
+      // const loadImages = async () => {
+      //   try {
+      //     await Promise.all(imageUrls.map(loadImage));
+      //     setImagesLoaded(true);
+      //   } catch (error) {
+      //     console.error("Error loading images:", error);
+      //   }
+      // };
       loadImages();
+      setTimeout(() => {
+        document.body.style.cursor = "smooth";
+        window.scrollTo(0, 0);
+      }, 2500);
       // loadVideos();
 
-      setIsLoading(false);
+     
     };
     return () => (window.onload = null);
   }, []);
-  setTimeout(() => {
-    document.body.style.cursor = "smooth";
-    window.scrollTo(0, 0);
-  }, 2500);
+ 
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
