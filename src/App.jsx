@@ -178,18 +178,18 @@ function App() {
       //   }
       // };
       loadImages();
-      if (!imagesLoaded && !videosLoaded) {
-        setIsLoading(false);
-      } else {
-        setTimeout(() => {
-          document.body.style.cursor = "smooth";
-          window.scrollTo(0, 0);
-          setIsLoading(false);
-        }, 3000);
-      }
 
-      // loadVideos();
+      loadVideos();
     };
+    if (imagesLoaded === false && videosLoaded === false) {
+      setIsLoading(false);
+    } else {
+      setTimeout(() => {
+        document.body.style.cursor = "smooth";
+        window.scrollTo(0, 0);
+        setIsLoading(false);
+      }, 3000);
+    }
     // return () => (window.onload = null);
   }, [videosLoaded, imagesLoaded]);
 
