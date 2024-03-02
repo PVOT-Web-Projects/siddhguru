@@ -272,17 +272,20 @@
             }
           }
           // @media (max-width: 575px) {
-           
+
           // }
         }
         .mobileTab1 {
-          height: max-content;
+          height: 0;
+          overflow: hidden;
         }
         .mobileTab2 {
-          height: max-content;
+          height: 0;
+          overflow: hidden;
         }
         .mobileTab3 {
-          height: max-content;
+          height: 0;
+          overflow: hidden;
         }
         .viewmore {
           background-color: #f90;
