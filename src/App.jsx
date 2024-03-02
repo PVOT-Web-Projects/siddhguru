@@ -62,11 +62,11 @@ function App() {
   // const [isLoading2, setIsLoading2] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
 
-  const [videosLoaded, setVideosLoaded] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [videosLoaded, setVideosLoaded] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(true);
 
-  // console.log("video", videosLoaded);
-  // console.log("image", imagesLoaded);
+  console.log("video", videosLoaded);
+  console.log("image", imagesLoaded);
 
   useEffect(() => {
     //Function to load all the images from home page beforehand
@@ -97,20 +97,20 @@ function App() {
       const loadVideos = async () => {
         try {
           await Promise.all(videoUrls);
-          setVideosLoaded(true);
+          setVideosLoaded(false);
         } catch (error) {
           console.error("Error loading videos:", error);
         }
       };
 
-      const loadImage = (url) => {
-        return new Promise((resolve, reject) => {
-          const image = new Image();
-          image.onload = () => resolve(url);
-          image.onerror = (err) => reject(err);
-          image.src = url;
-        });
-      };
+      // const loadImage = (url) => {
+      //   return new Promise((resolve, reject) => {
+      //     const image = new Image();
+      //     image.onload = () => resolve(url);
+      //     image.onerror = (err) => reject(err);
+      //     image.src = url;
+      //   });
+      // };
 
       // Array of image URLs to load
       const imageUrls = [
@@ -147,7 +147,7 @@ function App() {
         popupImage,
         lotus_image,
       ];
-
+      console.log(imageUrls);
       const loadImages = async () => {
         try {
           const loadImagePromises = imageUrls.map((imageUrl, index) => {
@@ -161,7 +161,7 @@ function App() {
           });
 
           await Promise.all(loadImagePromises);
-
+          setImagesLoaded(false);
           // setIsLoading(false);
         } catch (error) {
           console.error("Error loading images:", error);
@@ -178,16 +178,20 @@ function App() {
       //   }
       // };
       loadImages();
-     
+      if (!imagesLoaded && !videosLoaded) {
+        setIsLoading(false);
+      } else {
+        setTimeout(() => {
+          document.body.style.cursor = "smooth";
+          window.scrollTo(0, 0);
+          setIsLoading(false);
+        }, 3000);
+      }
+
       // loadVideos();
     };
     // return () => (window.onload = null);
-  }, []);
-  setTimeout(() => {
-    document.body.style.cursor = "smooth";
-    window.scrollTo(0, 0);
-    setIsLoading(false);
-  }, 3000);
+  }, [videosLoaded, imagesLoaded]);
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
