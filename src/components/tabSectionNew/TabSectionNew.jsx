@@ -17,6 +17,7 @@ import wisdomImage4 from "../../images/professionalWisdom.jpeg";
 import "./tabSectionNew.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
+import { HashLink } from "react-router-hash-link";
 import arrow from "../../images/downArrow.svg";
 // import video1 from "../../images/tab1Image.mp4";
 // import video2 from "../../images/tab2Image2.mp4";
@@ -28,7 +29,7 @@ const theSaintData = [
     id: "life_of_nutshell",
     index: 0,
     img: theSaintImage1,
-    tagline:"",
+    tagline: "",
     title: "Sri SiddhGuru",
     text: "Sri Brahmrishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and  Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
     itemIndex: 0,
@@ -41,7 +42,7 @@ const theSaintData = [
     id: "kundalini",
     index: 1,
     img: theSaintImage2,
-    tagline:"Sri SiddhGuru",
+    tagline: "Sri SiddhGuru",
     title: "Kundalini",
     text: "Kundalini, a dormant spiritual energy within us, reaches its peak through awakening all  Chakras, a feat rarely achieved and often taking multiple lifetimes. Gurudev, uniquely born with all Chakras awakened, is among the few saints to attain such a divine consciousness. Unlike other sages who retreat from society, he uses his spiritual prowess to ease human suffering and enhance our inner peace and happiness. Additionally, he empowers us to navigate life's challenges with strength, helping us to settle our karmic debts.",
     itemIndex: 1,
@@ -52,7 +53,7 @@ const theSaintData = [
     id: "asht_siddhi's_&_nav_nidhis",
     index: 2,
     img: theSaintImage3,
-    tagline:"Sri SiddhGuru",
+    tagline: "Sri SiddhGuru",
     title: "Siddhis",
     text: "SiddhGuru acquired all  Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to SiddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
     itemIndex: 2,
@@ -90,7 +91,7 @@ const visionData = [
   {
     id: "anant_diksha",
     img: image1,
-    tagline:"Mission",
+    tagline: "Mission",
     title: "Vision",
     text: "Sri SiddhGuru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. SiddhGuru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
     itemIndex: 3,
@@ -100,7 +101,7 @@ const visionData = [
   {
     id: "siddhasana",
     img: image2,
-    tagline:"Mission",
+    tagline: "Mission",
     title: "Siddhasana",
     text: "Siddhasana is a unique life-changing experience, focusing on self-discovery and reconnecting with your true self in silence. This retreat is structured into seven levels, each designed to help calm and focus your mind, leading to a more conscious and fulfilling life. With activities and guidance tailored to each stage, you'll deeply engage with your inner self. By the end of each level, participants typically feel deep satisfaction and joy, having found a closer connection to their authentic essence.",
     itemIndex: 4,
@@ -108,7 +109,7 @@ const visionData = [
   {
     id: "ashram",
     img: image3,
-    tagline:"Mission",
+    tagline: "Mission",
     title: "Ashram",
     text: "Discover the serene SiddhGuru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of SiddhGuru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
     itemIndex: 5,
@@ -116,7 +117,7 @@ const visionData = [
   {
     id: "world_spiritual_forum",
     img: image4,
-    tagline:"Mission",
+    tagline: "Mission",
     title: "World Spiritual Forum",
     text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
     itemIndex: 6,
@@ -126,7 +127,7 @@ const wisdomData = [
   {
     // id: "anant_diksha",
     img: wisdomImage1,
-    tagline:"Core Wisdom",
+    tagline: "Core Wisdom",
     title: "Wisdom",
     text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhytmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
     itemIndex: 7,
@@ -134,7 +135,7 @@ const wisdomData = [
   {
     // id: "anant_diksha",
     img: wisdomImage2,
-    tagline:"Core Wisdom",
+    tagline: "Core Wisdom",
     title: "Spiritual Wisdom",
     text: "Happy moment – praise God; difficult moment – seek God; painful moment – trust God; every moment – thank God.",
     text2: "When our fate closes all doors, our faith opens new doors.",
@@ -151,7 +152,7 @@ const wisdomData = [
     // id: "anant_diksha",
     img: wisdomImage3,
     title: "Social Wisdom",
-    tagline:"Core Wisdom",
+    tagline: "Core Wisdom",
     text: "Service to humanity is the best work of life.",
     text2:
       "We understand less, explain more, and hence get entangled more and sorted less.",
@@ -165,7 +166,7 @@ const wisdomData = [
   {
     // id: "anant_diksha",
     img: wisdomImage4,
-    tagline:"Core Wisdom",
+    tagline: "Core Wisdom",
     title: "Professional Wisdom",
     text: "For Success in life, you need a combination of intelligence, hard work, focus, timing, and even luck.",
     text2:
@@ -381,7 +382,7 @@ const TabSectionNew = () => {
       </div>
       <div className="tabSection_mobile">
         <div className="tabSection_mobile_wrapper">
-          <div className="tabSection_mobile_wrapper_tab">
+          <div className="tabSection_mobile_wrapper_tab" id="tab1">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage1} alt="mainTabMobile" />
               {/* <video src={video1} autoPlay loop muted></video> */}
@@ -401,16 +402,20 @@ const TabSectionNew = () => {
                 ))}
               </div>
             )}
-            <div className="viewmore" onClick={handleTab1Mobile}>
+            <HashLink
+              className="viewmore"
+              to={tabContent1Mobile && "#tab1"}
+              onClick={handleTab1Mobile}
+            >
               {tabContent1Mobile ? "View Less" : "View More"}
               {tabContent1Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
                 <img src={arrow} alt="arrow" />
               )}
-            </div>
+            </HashLink>
           </div>
-          <div className="tabSection_mobile_wrapper_tab">
+          <div className="tabSection_mobile_wrapper_tab" id="tab2">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage2} alt="mainTabMobile" />
               {/* <video src={video2} autoPlay loop muted></video> */}
@@ -428,16 +433,20 @@ const TabSectionNew = () => {
                 ))}
               </div>
             )}
-            <div className="viewmore" onClick={handleTab2Mobile}>
+            <HashLink
+              className="viewmore"
+              to={tabContent2Mobile && "#tab2"}
+              onClick={handleTab2Mobile}
+            >
               {tabContent2Mobile ? "View Less" : "View More"}
               {tabContent2Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
                 <img src={arrow} alt="arrow" />
               )}
-            </div>
+            </HashLink>
           </div>
-          <div className="tabSection_mobile_wrapper_tab">
+          <div className="tabSection_mobile_wrapper_tab" id="tab3">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage3} alt="mainTabMobile" />
               {/* <video src={video3} autoPlay loop muted></video> */}
@@ -455,14 +464,18 @@ const TabSectionNew = () => {
                 ))}
               </div>
             )}
-            <div className="viewmore" onClick={handleTab3Mobile}>
+            <HashLink
+              className="viewmore"
+              to={tabContent3Mobile && "#tab3"}
+              onClick={handleTab3Mobile}
+            >
               {tabContent3Mobile ? "View Less" : "View More"}
               {tabContent3Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
                 <img src={arrow} alt="arrow" />
               )}
-            </div>
+            </HashLink>
           </div>
         </div>
       </div>

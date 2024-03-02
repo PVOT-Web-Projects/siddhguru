@@ -271,23 +271,9 @@
               font-size: 22px;
             }
           }
-          // @media (max-width: 575px) {
-
-          // }
         }
-        // .mobileTab1 {
-        //   height: 0;
-        //   overflow: hidden;
-        // }
-        // .mobileTab2 {
-        //   height: 0;
-        //   overflow: hidden;
-        // }
-        // .mobileTab3 {
-        //   height: 0;
-        //   overflow: hidden;
-        // }
-        .viewmore {
+
+        a.viewmore {
           background-color: #f90;
           color: #000;
           font-size: 18px;
@@ -297,6 +283,8 @@
           text-align: center;
           border-radius: 10px;
           cursor: pointer;
+          display: block;
+          text-decoration: none;
           @media (max-width: 320px) {
             width: 220px;
           }
