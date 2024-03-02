@@ -71,7 +71,7 @@ function App() {
   useEffect(() => {
     //Function to load all the images from home page beforehand
 
-    window.onload = () => {
+    // window.onload = () => {
       // const loadVideo = (url) => {
       //   return new Promise((resolve, reject) => {
       //     const video = document.querySelector("video");
@@ -180,7 +180,7 @@ function App() {
       loadImages();
 
       loadVideos();
-    };
+    // };
     if (imagesLoaded === false && videosLoaded === false) {
       setIsLoading(false);
     } else {
