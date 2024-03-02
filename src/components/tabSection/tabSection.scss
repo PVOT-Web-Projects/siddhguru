@@ -223,6 +223,7 @@
             font-weight: 400;
             line-height: 107.91%;
           }
+         
         }
         .viewmore {
           background-color: #f90;
@@ -240,7 +241,7 @@
             border-radius: 100%;
             padding: 10px;
             margin-left: 20px;
-            &.showLess{
+            &.showLess {
               transform: rotate(180deg);
             }
           }

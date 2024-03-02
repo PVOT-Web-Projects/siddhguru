@@ -67,6 +67,7 @@ function App() {
 
   console.log("video", videosLoaded);
   console.log("image", imagesLoaded);
+  console.log("loading", isLoading);
 
   useEffect(() => {
     //Function to load all the images from home page beforehand
