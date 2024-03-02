@@ -402,7 +402,7 @@ const Menu = () => {
                 Blogs
               </Link> */}
               <Link
-                to="/https://app.sribrahmrishiashram.org/devotee/login"
+                to="https://app.sribrahmrishiashram.org/devotee/login"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
                 target="_blank"
