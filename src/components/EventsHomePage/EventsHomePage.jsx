@@ -78,7 +78,8 @@ const EventsHomePage = () => {
       rightLight3: " 21 to 24 March, 2024",
       leftBold4: "Guangzhou (China) - ",
       rightLight4: " March 29 to April 1 2024",
-      note: "* The venues, timings, and other details of the Asia Tour programs will be displayed here very soon.",
+      // note: "* The venues, timings, and other details of the Asia Tour programs will be displayed here very soon.",
+      link:"https://app.sribrahmrishiashram.org/devotee/login?eventId=14024a87-763c-42ae-b27c-2d686a52e49d"
     },
     {
       id: 3,
