@@ -116,4 +116,5 @@ EventHomePageItem.propTypes = {
   boxMonth: PropTypes.string,
   boxWeek: PropTypes.string,
   id: PropTypes.number,
+  
 };

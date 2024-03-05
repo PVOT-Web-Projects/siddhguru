@@ -3,12 +3,12 @@ import image1 from "../../images/Dhwajarohan.jpg";
 import image2 from "../../images/Maha-Shivratri.jpg";
 import image3 from "../../images/Asia-Tour.jpg";
 import image4 from "../../images/Africa-Tour.jpg";
-import Button from "../../components/buttons/button";
-import videoPoster1 from "../../images/arrowImageCircle.svg";
+// import Button from "../../components/buttons/button";
+// import videoPoster1 from "../../images/arrowImageCircle.svg";
 import "./eventsHomePage.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import EventHomeVideoItem from "./eventHomePageItem/EventHomePageVideoItem";
+// import EventHomeVideoItem from "./eventHomePageItem/EventHomePageVideoItem";
 const EventsHomePage = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -79,7 +79,7 @@ const EventsHomePage = () => {
       leftBold4: "Guangzhou (China) - ",
       rightLight4: " March 29 to April 1 2024",
       // note: "* The venues, timings, and other details of the Asia Tour programs will be displayed here very soon.",
-      link:"https://app.sribrahmrishiashram.org/devotee/login?eventId=14024a87-763c-42ae-b27c-2d686a52e49d"
+      link:"/events/asia-tour"
     },
     {
       id: 3,

@@ -8,7 +8,7 @@ import popupImage from "../../images/popup.jpeg";
 import close from "../../images/closeIcon.svg";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Layout = ({ children }) => {
   // useLayoutEffect(() => {
@@ -24,9 +24,13 @@ const Layout = ({ children }) => {
       setPopup(true);
     }, 2000);
   }, []);
+  const location = useLocation();
+  console.log(location);
 
   useEffect(() => {
-    popup && (document.body.style.overflow = "hidden");
+    location.pathname != "/events/asia-tour" &&
+      popup &&
+      (document.body.style.overflow = "hidden");
     !popup && (document.body.style.overflow = "unset");
   }, [popup]);
 
@@ -42,7 +46,8 @@ const Layout = ({ children }) => {
         {children}
         {/* <div onClick={scrollTopHandle} className="scrollTop"> */}
         {/* <img src={scrollTop} alt="scrollTop" /> */}
-        {popup && (
+
+        {popup && location.pathname != "/events/asia-tour" && (
           <div className="popup">
             <div className="popup_wrapper">
               <Link

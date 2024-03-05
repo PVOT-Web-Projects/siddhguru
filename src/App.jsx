@@ -55,6 +55,7 @@ import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
 import expVideo3 from "./images/exp4.mp4";
 import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
 import expVideo4 from "./images/exp5.mp4";
+import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -238,6 +239,7 @@ function App() {
             <Route path="/vedic-science" element={<VedicScience />} />
             {/* <Route path="/activities" element={<Activities />} /> */}
             <Route path="/events" element={<Events />} />
+            <Route path="/events/asia-tour" element={<SingleEvent />} />
             {/* <Route path="/centers" element={<Centers />} /> */}
             {/* <Route path="/blog" element={<Blog />} /> */}
             {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
