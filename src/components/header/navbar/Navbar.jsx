@@ -63,16 +63,6 @@ const Menu = () => {
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
-          {/* <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Link to="/" className="line_underscore nav-link">
-              Home
-            </Link>
-          </motion.div> */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
@@ -426,7 +416,7 @@ const Menu = () => {
               </div>
               <div className="facebook_icon social_icon">
                 <a
-                  href=" https://www.facebook.com/siddhgurusrisidheshwarbrahmrishi"
+                  href=" https://www.facebook.comsrisidheshwarbrahmrishi"
                   target="_blank"
                 >
                   <img src={icon2} />
