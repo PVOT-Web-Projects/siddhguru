@@ -1,0 +1,14 @@
+.singleEvent {
+  .innerPageBanner_wrapper {
+    img {
+      @media (max-width: 1399px) {
+        height: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      img.mobileImage {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -75,14 +75,22 @@ const AboutAshram = () => {
               justifyContent={"center"}
             />
           </motion.span>
-          <div className="joinBtn">
-            <Button btn_text="Join Now" link="https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T" />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="joinBtn"
+          >
+            <Button
+              btn_text="Join Now"
+              link="https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"
+            />
+          </motion.div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 1.8 }}
+          transition={{ duration: 0.5, delay: 1 }}
           className="aboutAshram_content"
         >
           <div className="top_border">
@@ -92,7 +100,7 @@ const AboutAshram = () => {
             <h3>About Our Ashram</h3>
             <p>
               <span>
-              Sri Sidheshwar Tirth - Sri Brahmarishi Ashram, near Tirupati
+                Sri Sidheshwar Tirth - Sri Brahmarishi Ashram, near Tirupati
               </span>
               {
                 " stands as a revered spiritual pilgrimage site drawing thousands of devotees and pilgrims from around the globe annually. Blessed by the divine presence of Sri SiddhGuru, this sacred abode resonates with fervor during celebrated festivals such as Navaratri, Diwali, and MahaShivaratri."
