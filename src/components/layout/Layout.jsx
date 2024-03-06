@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setPopup(true);
-    }, 2000);
+    }, 4000);
   }, []);
   const location = useLocation();
   console.log(location);
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         {/* <img src={scrollTop} alt="scrollTop" /> */}
 
         {popup && location.pathname != "/events/asia-tour" && (
-          <div className="popup">
+          <div className={`popup`}>
             <div className="popup_wrapper">
               <Link
                 to={"https://app.sribrahmrishiashram.org/devotee/login"}

@@ -59,31 +59,28 @@ import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  // const [popup, setPopup] = useState(true);
-  // const [isLoading2, setIsLoading2] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
-
   const [videosLoaded, setVideosLoaded] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(true);
+  const [hideLoader, setHideLoader] = useState(false);
 
   console.log("video", videosLoaded);
   console.log("image", imagesLoaded);
   console.log("loading", isLoading);
 
   useEffect(() => {
-    //Function to load all the images from home page beforehand
+    setTimeout(() => {
+      setHideLoader(true);
+    }, 5000);
+  }, []);
 
-    // window.onload = () => {
-    // const loadVideo = (url) => {
-    //   return new Promise((resolve, reject) => {
-    //     const video = document.querySelector("video");
-    //     video.onloadedmetadata = () => resolve(url);
-    //     video.onerror = (err) => reject(err);
-    //     video.src = url;
-    //   });
-    // };
-
+  useEffect(() => {
     // Array of video URLs to load
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
     const videoUrls = [
       video1,
       video2,
@@ -106,15 +103,6 @@ function App() {
         console.error("Error loading videos:", error);
       }
     };
-
-    // const loadImage = (url) => {
-    //   return new Promise((resolve, reject) => {
-    //     const image = new Image();
-    //     image.onload = () => resolve(url);
-    //     image.onerror = (err) => reject(err);
-    //     image.src = url;
-    //   });
-    // };
 
     // Array of image URLs to load
     const imageUrls = [
@@ -173,14 +161,6 @@ function App() {
       }
     };
 
-    // const loadImages = async () => {
-    //   try {
-    //     await Promise.all(imageUrls.map(loadImage));
-    //     setImagesLoaded(true);
-    //   } catch (error) {
-    //     console.error("Error loading images:", error);
-    //   }
-    // };
     loadImages();
 
     loadVideos();
@@ -189,17 +169,6 @@ function App() {
       window.scrollTo(0, 0);
       setIsLoading(false);
     }, 3000);
-    // };
-    // if (imagesLoaded === false && videosLoaded === false) {
-    //   setIsLoading(false);
-    // } else {
-    //   setTimeout(() => {
-    //     document.body.style.cursor = "smooth";
-    //     window.scrollTo(0, 0);
-    //     setIsLoading(false);
-    //   }, 3000);
-    // }
-    // return () => (window.onload = null);
   }, [videosLoaded, imagesLoaded]);
 
   const handleResize = () => {
@@ -226,37 +195,34 @@ function App() {
 
   return (
     <>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <Layout>
-          <ScrollTop />
-          <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
-            <Route path="/" element={<NewHome />} />
-            {/* <Route path="/the-saint" element={<TheSaint />} /> */}
-            {/* <Route path="/vision" element={<Vision />} /> */}
-            {/* <Route path="/core-wisdom" element={<CoreWisdom />} /> */}
-            <Route path="/about-ashram" element={<AboutAshramPage />} />
-            <Route path="/vedic-science" element={<VedicScience />} />
-            {/* <Route path="/activities" element={<Activities />} /> */}
-            <Route path="/events" element={<Events />} />
-            <Route path="/events/asia-tour" element={<SingleEvent />} />
-            {/* <Route path="/centers" element={<Centers />} /> */}
-            {/* <Route path="/blog" element={<Blog />} /> */}
-            {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
-            <Route path="/contact" element={<Contact />} />
+      { !hideLoader && <Loader loading={isLoading} />}
+      <Layout>
+        <ScrollTop />
+        <Routes>
+          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<NewHome />} />
+          {/* <Route path="/the-saint" element={<TheSaint />} /> */}
+          {/* <Route path="/vision" element={<Vision />} /> */}
+          {/* <Route path="/core-wisdom" element={<CoreWisdom />} /> */}
+          <Route path="/about-ashram" element={<AboutAshramPage />} />
+          <Route path="/vedic-science" element={<VedicScience />} />
+          {/* <Route path="/activities" element={<Activities />} /> */}
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/asia-tour" element={<SingleEvent />} />
+          {/* <Route path="/centers" element={<Centers />} /> */}
+          {/* <Route path="/blog" element={<Blog />} /> */}
+          {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
+          <Route path="/contact" element={<Contact />} />
 
-            {/* <Route path="/news" element={<News />} /> */}
-            {/* <Route path="/gallery" element={<Gallery />} /> */}
-            {/* <Route path="/devotee" element={<Devotee />} /> */}
+          {/* <Route path="/news" element={<News />} /> */}
+          {/* <Route path="/gallery" element={<Gallery />} /> */}
+          {/* <Route path="/devotee" element={<Devotee />} /> */}
 
-            <Route path="/siddhasana" element={<Siddhasana />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route />
-          </Routes>
-        </Layout>
-      )}
+          <Route path="/siddhasana" element={<Siddhasana />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route />
+        </Routes>
+      </Layout>
     </>
   );
 }
