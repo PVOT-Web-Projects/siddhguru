@@ -5,7 +5,7 @@ import image1 from "../../images/dubai.jpg";
 import image2 from "../../images/bangkok.jpg";
 import image3 from "../../images/kaula.jpg";
 import image4 from "../../images/gaunzaho.jpg";
-import defaultImage from "../../images/AsiaTour.jpg";
+import defaultImage from "../../images/AsiaTour.jpeg";
 import Button from "../buttons/button4";
 import EventImage from "./EventImage";
 import EventsDetails from "./EventsDetails";
@@ -28,26 +28,26 @@ const links = [
 ];
 
 const eventData = [
-  //   {
-  //     id: 0,
-  //     place: "Dubai, UAE",
-  //     date: "",
-  //     time: "",
-  //     schedule: "",
-  //     address1: "",
-  //     address2: "",
-  //     address3: "",
-  //     address4: "",
-  //     contactInfo: [
-  //       {
-  //         contactPerson: "Ashish Mehta",
-  //         countryCode: "+91 ",
-  //         contactNumber: "99400 99501",
-  //       },
-  //     ],
-  //   },
+    {
+      id: 0,
+      place: "Dubai, UAE",
+      date: "",
+      time: "",
+      schedule: "",
+      address1: "",
+      address2: "",
+      address3: "",
+      address4: "",
+      contactInfo: [
+        {
+          contactPerson: "Ashish Mehta",
+          countryCode: "+91 ",
+          contactNumber: "99400 99501",
+        },
+      ],
+    },
   {
-    id: 0,
+    id: 1,
     place: "Bangkok, Thailand",
     date: "17 March",
     time: "10:30 am onwards",
@@ -82,7 +82,7 @@ const eventData = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     place: "Kuala Lumpur, Malaysia",
     date: "23 March",
     time: "10 am onwards",
@@ -112,7 +112,7 @@ const eventData = [
   },
 
   {
-    id: 2,
+    id: 3,
     place: "Guangzhou, China",
     date: "30 March",
     time: "5 pm onwards",
