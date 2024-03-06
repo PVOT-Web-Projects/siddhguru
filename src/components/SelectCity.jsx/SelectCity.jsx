@@ -1,7 +1,7 @@
 import { Dropdown } from "primereact/dropdown";
 import { useFormik } from "formik";
 import "./selectCity.scss";
-// import image1 from "../../images/dubai.jpg";
+import image1 from "../../images/dubai.jpg";
 import image2 from "../../images/bangkok.jpg";
 import image3 from "../../images/kaula.jpg";
 import image4 from "../../images/gaunzaho.jpg";
@@ -140,14 +140,14 @@ const eventData = [
   },
 ];
 
-const images = [image2, image3, image4];
+const images = [image1, image2, image3, image4];
 
 const SelectCity = () => {
   const cities = [
-    // { name: "Dubai", id: 0 },
-    { name: "Bangkok", id: 0 },
-    { name: "Kuala Lumpur", id: 1 },
-    { name: "Guangzhou (China)", id: 2 },
+    { name: "Dubai", id: 0 },
+    { name: "Bangkok", id: 1 },
+    { name: "Kuala Lumpur", id: 2 },
+    { name: "Guangzhou (China)", id: 3 },
   ];
   const initialValue = {
     city: "",

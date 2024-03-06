@@ -40,17 +40,11 @@ import tab3Images1 from "./images/Miracles of Vedic Science.jpg";
 import tab3Images2 from "./images/spiritual.jpeg";
 import tab3Images3 from "./images/socialWisdom.jpeg";
 import tab3Images4 from "./images/professionalWisdom.jpeg";
-import eventImage1 from "./images/Dhwajarohan.jpg";
-import eventImage2 from "./images/Maha-Shivratri.jpg";
-import eventImage3 from "./images/Asia-Tour.jpg";
-import eventImage4 from "./images/Africa-Tour.jpg";
 import lotus_image from "./images/lotus.png";
 import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
-// import homeBanner from "./images/newHomeBanner.mp4";
-// import homeBannerM from "./images/homeVideoMobileBanner.mp4";
 import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
 import expVideo3 from "./images/exp4.mp4";
 import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
@@ -132,10 +126,6 @@ function App() {
       tab3Images2,
       tab3Images3,
       tab3Images4,
-      eventImage1,
-      eventImage2,
-      eventImage3,
-      eventImage4,
       popupImage,
       lotus_image,
     ];
