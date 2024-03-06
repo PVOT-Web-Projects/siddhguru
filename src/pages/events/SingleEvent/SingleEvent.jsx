@@ -1,6 +1,6 @@
 import InnerPageBanner from "../../../components/innerPageBanner/InnerPageBanner";
 import "./singleEvent.scss";
-import deskImage from "../../../images/asiaTour4.jpeg";
+import deskImage from "../../../images/AsiaTour.jpeg";
 import mobileImage from "../../../images/MAsiaTour.jpg";
 import InnerPageCommonText from "../../../components/innerPageCommonText/InnerPageCommonText";
 import SelectCity from "../../../components/SelectCity.jsx/SelectCity";
