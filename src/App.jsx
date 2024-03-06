@@ -142,7 +142,7 @@ function App() {
     console.log(imageUrls);
     const loadImages = async () => {
       try {
-        const loadImagePromises = imageUrls.map((imageUrl, index) => {
+        const loadImagePromises = imageUrls.map((imageUrl) => {
           return new Promise((resolve) => {
             const img = new Image();
             img.src = imageUrl;

@@ -4,9 +4,10 @@ import { motion, useAnimation } from "framer-motion";
 import loader from "../../images/loader_logo.svg";
 import { useInView } from "react-intersection-observer";
 import LoaderTextAnimation from "../loader_text_animation/LoaderTextAnimation";
-export default function Loader({loading}) {
+import PropTypes from "prop-types";
+
+export default function Loader({ loading }) {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
-  // const [percentage, setPercentage] = useState(0);
   console.log("loading", loading);
 
   const opacity = {
@@ -19,15 +20,6 @@ export default function Loader({loading}) {
     },
   };
 
-  // const slideUp = {
-  //   initial: {
-  //     top: 0,
-  //   },
-  //   exit: {
-  //     top: "-100vh",
-  //     transition: { duration: 1.3, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
-  //   },
-  // };
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -75,7 +67,7 @@ export default function Loader({loading}) {
   // }, [percentage]);
 
   return (
-    <div className={`loader ${loading ? 'loading' : 'loaded'}`}>
+    <div className={`loader ${loading ? "loading" : "loaded"}`}>
       <div className="loader_wrapper">
         <motion.div variants={opacity} initial="initial" animate="enter">
           <div>
@@ -134,3 +126,7 @@ export default function Loader({loading}) {
     </div>
   );
 }
+
+Loader.propTypes = {
+  loading: PropTypes.any,
+};
