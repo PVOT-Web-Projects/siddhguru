@@ -1,6 +1,6 @@
 import "./newHeroSection.scss";
-import bannerVideo from "../../images/newHomeBanner.mp4";
-import bannerVideomobile from "../../images/newHomeMobileBanner.mp4";
+// import bannerVideo from "../../images/newHomeBanner.mp4";
+// import bannerVideomobile from "../../images/newHomeMobileBanner.mp4";
 
 const NewHeroSection = ({deskVideo, mobileVideo}) => {
   return (
