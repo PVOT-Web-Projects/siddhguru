@@ -28,11 +28,12 @@ const Layout = ({ children }) => {
   console.log(location);
 
   useEffect(() => {
-    location.pathname != "/events/asia-tour" &&
-      popup &&
-      (document.body.style.overflow = "hidden");
+    popup && (document.body.style.overflow = "hidden");
     !popup && (document.body.style.overflow = "unset");
-  }, [popup]);
+    if (location.pathname === "/events/asia-tour") {
+      document.body.style.overflow = "unset";
+    }
+  }, [popup, location]);
 
   const handlePopup = () => {
     setPopup(false);

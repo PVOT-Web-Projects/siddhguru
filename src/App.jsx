@@ -79,7 +79,7 @@ function App() {
     if (isLoading) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "unset";
     }
     const videoUrls = [
       video1,
