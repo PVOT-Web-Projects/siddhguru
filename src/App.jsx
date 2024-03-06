@@ -49,8 +49,8 @@ import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
-import homeBanner from "./images/newHomeBanner.mp4";
-import homeBannerM from "./images/homeVideoMobileBanner.mp4";
+// import homeBanner from "./images/newHomeBanner.mp4";
+// import homeBannerM from "./images/homeVideoMobileBanner.mp4";
 import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
 import expVideo3 from "./images/exp4.mp4";
 import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
@@ -74,119 +74,121 @@ function App() {
     //Function to load all the images from home page beforehand
 
     // window.onload = () => {
-      // const loadVideo = (url) => {
-      //   return new Promise((resolve, reject) => {
-      //     const video = document.querySelector("video");
-      //     video.onloadedmetadata = () => resolve(url);
-      //     video.onerror = (err) => reject(err);
-      //     video.src = url;
-      //   });
-      // };
+    // const loadVideo = (url) => {
+    //   return new Promise((resolve, reject) => {
+    //     const video = document.querySelector("video");
+    //     video.onloadedmetadata = () => resolve(url);
+    //     video.onerror = (err) => reject(err);
+    //     video.src = url;
+    //   });
+    // };
 
-      // Array of video URLs to load
-      const videoUrls = [
-        video1,
-        video2,
-        video3,
-        homeBanner,
-        homeBannerM,
-        expVideo1,
-        expVideo2,
-        expVideo3,
-        expVideo4,
-      ];
+    // Array of video URLs to load
+    const videoUrls = [
+      video1,
+      video2,
+      video3,
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4",
+      // homeBanner,
+      // homeBannerM,
+      expVideo1,
+      expVideo2,
+      expVideo3,
+      expVideo4,
+    ];
 
-      const loadVideos = async () => {
-        try {
-          await Promise.all(videoUrls);
-          setVideosLoaded(false);
-        } catch (error) {
-          console.error("Error loading videos:", error);
-        }
-      };
+    const loadVideos = async () => {
+      try {
+        await Promise.all(videoUrls);
+        setVideosLoaded(false);
+      } catch (error) {
+        console.error("Error loading videos:", error);
+      }
+    };
 
-      // const loadImage = (url) => {
-      //   return new Promise((resolve, reject) => {
-      //     const image = new Image();
-      //     image.onload = () => resolve(url);
-      //     image.onerror = (err) => reject(err);
-      //     image.src = url;
-      //   });
-      // };
+    // const loadImage = (url) => {
+    //   return new Promise((resolve, reject) => {
+    //     const image = new Image();
+    //     image.onload = () => resolve(url);
+    //     image.onerror = (err) => reject(err);
+    //     image.src = url;
+    //   });
+    // };
 
-      // Array of image URLs to load
-      const imageUrls = [
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg",
-        "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg",
-        mainTab1,
-        mainTab2,
-        mainTab3,
-        tab1Images1,
-        tab1Images2,
-        tab1Images3,
-        tab2Images1,
-        tab2Images2,
-        tab2Images3,
-        tab2Images4,
-        tab3Images1,
-        tab3Images2,
-        tab3Images3,
-        tab3Images4,
-        eventImage1,
-        eventImage2,
-        eventImage3,
-        eventImage4,
-        popupImage,
-        lotus_image,
-      ];
-      console.log(imageUrls);
-      const loadImages = async () => {
-        try {
-          const loadImagePromises = imageUrls.map((imageUrl, index) => {
-            return new Promise((resolve) => {
-              const img = new Image();
-              img.src = imageUrl;
-              img.onload = () => {
-                resolve();
-              };
-            });
+    // Array of image URLs to load
+    const imageUrls = [
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg",
+      "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg",
+      mainTab1,
+      mainTab2,
+      mainTab3,
+      tab1Images1,
+      tab1Images2,
+      tab1Images3,
+      tab2Images1,
+      tab2Images2,
+      tab2Images3,
+      tab2Images4,
+      tab3Images1,
+      tab3Images2,
+      tab3Images3,
+      tab3Images4,
+      eventImage1,
+      eventImage2,
+      eventImage3,
+      eventImage4,
+      popupImage,
+      lotus_image,
+    ];
+    console.log(imageUrls);
+    const loadImages = async () => {
+      try {
+        const loadImagePromises = imageUrls.map((imageUrl, index) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+              resolve();
+            };
           });
+        });
 
-          await Promise.all(loadImagePromises);
-          setImagesLoaded(false);
-          // setIsLoading(false);
-        } catch (error) {
-          console.error("Error loading images:", error);
-          // Handle error loading images
-        }
-      };
+        await Promise.all(loadImagePromises);
+        setImagesLoaded(false);
+        // setIsLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        // Handle error loading images
+      }
+    };
 
-      // const loadImages = async () => {
-      //   try {
-      //     await Promise.all(imageUrls.map(loadImage));
-      //     setImagesLoaded(true);
-      //   } catch (error) {
-      //     console.error("Error loading images:", error);
-      //   }
-      // };
-      loadImages();
+    // const loadImages = async () => {
+    //   try {
+    //     await Promise.all(imageUrls.map(loadImage));
+    //     setImagesLoaded(true);
+    //   } catch (error) {
+    //     console.error("Error loading images:", error);
+    //   }
+    // };
+    loadImages();
 
-      loadVideos();
-      setTimeout(() => {
-        document.body.style.cursor = "smooth";
-        window.scrollTo(0, 0);
-        setIsLoading(false);
-      }, 3000);
+    loadVideos();
+    setTimeout(() => {
+      document.body.style.cursor = "smooth";
+      window.scrollTo(0, 0);
+      setIsLoading(false);
+    }, 3000);
     // };
     // if (imagesLoaded === false && videosLoaded === false) {
     //   setIsLoading(false);
