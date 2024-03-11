@@ -11,41 +11,41 @@ import EventImage from "./EventImage";
 import EventsDetails from "./EventsDetails";
 const links = [
   {
-    dubai: "",
+    link: "",
   },
   {
-    bangkok:
+    link:
       "https://app.sribrahmrishiashram.org/devotee/login?eventId=14024a87-763c-42ae-b27c-2d686a52e49d",
   },
   {
-    kaula:
-      "https://app.sribrahmrishiashram.org/devotee/login?eventId=14024a87-763c-42ae-b27c-2d686a52e49d",
+    link:
+      "https://app.sribrahmrishiashram.org/devotee/login?eventId=f2a7f312-fcf9-4957-97be-c28a0d540907",
   },
   {
-    guangzhou:
-      "https://app.sribrahmrishiashram.org/devotee/login?eventId=14024a87-763c-42ae-b27c-2d686a52e49d",
+    link:
+      "https://app.sribrahmrishiashram.org/devotee/login?eventId=89b0e8a1-9061-45fb-9cdc-1e736e9ddc30",
   },
 ];
 
 const eventData = [
-    {
-      id: 0,
-      place: "Dubai, UAE",
-      date: "",
-      time: "",
-      schedule: "",
-      address1: "",
-      address2: "",
-      address3: "",
-      address4: "",
-      contactInfo: [
-        {
-          contactPerson: "Ashish Mehta",
-          countryCode: "+91 ",
-          contactNumber: "99400 99501",
-        },
-      ],
-    },
+  {
+    id: 0,
+    place: "Dubai, UAE",
+    date: "",
+    time: "",
+    schedule: "",
+    address1: "",
+    address2: "",
+    address3: "",
+    address4: "",
+    contactInfo: [
+      {
+        contactPerson: "Ashish Mehta",
+        countryCode: "+91 ",
+        contactNumber: "99400 99501",
+      },
+    ],
+  },
   {
     id: 1,
     place: "Bangkok, Thailand",
@@ -221,13 +221,16 @@ const SelectCity = () => {
         </div>
       </div>
       <div className="mobileLink">
-        {links.map(
-          (item, index) =>
-            values.city.id === index &&
-            index > 0 && (
-              <Button link={item} key={index} btn_text="Register Now" />
+        {links.map((item, index) => {
+          console.log(values.city.id)
+          return (
+            
+            (values.city.id === index ) && (index > 0 )&&
+             (
+              <Button link={item.link} key={index} btn_text="Register Now" />
             )
-        )}
+          );
+        })}
       </div>
     </div>
   );
