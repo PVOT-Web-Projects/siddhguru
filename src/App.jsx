@@ -70,11 +70,7 @@ function App() {
 
   useEffect(() => {
     // Array of video URLs to load
-    if (isLoading) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+   
     const videoUrls = [
       video1,
       video2,
@@ -159,7 +155,12 @@ function App() {
       window.scrollTo(0, 0);
       setIsLoading(false);
     }, 3000);
-  }, [videosLoaded, imagesLoaded]);
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    } if(!isLoading){
+      document.body.style.overflow = "unset";
+    }
+  }, [videosLoaded, imagesLoaded, isLoading]);
 
   const handleResize = () => {
     setWidthCheck(window.innerWidth);
