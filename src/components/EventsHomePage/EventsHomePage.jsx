@@ -145,6 +145,7 @@ const EventsHomePage = () => {
               id={item.id}
               key={item.id}
               // image={item.image}
+              show={item.acf.show_post}
               image={
                 item._embedded["wp:featuredmedia"] &&
                 item._embedded["wp:featuredmedia"][0].media_details.sizes.full
