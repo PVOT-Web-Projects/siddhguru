@@ -1,36 +1,35 @@
-import video1 from "../../images/Ashok Sancheti Testimonial.mp4";
-import video3 from "../../images/exp4.mp4";
-import video2 from "../../images/Mayank Solanki Testimonial (Website).mp4";
-// import video1 from "../../images/exp1.mp4";
-import video4 from "../../images/exp5.mp4";
+// import video1 from "../../images/Ashok Sancheti Testimonial.mp4";
+// import video3 from "../../images/exp4.mp4";
+// import video2 from "../../images/Mayank Solanki Testimonial (Website).mp4";
+// import video4 from "../../images/exp5.mp4";
 import poster1 from "../../images/expPoster1.jpg";
 import poster2 from "../../images/expPoster2.jpg";
 import poster3 from "../../images/expPoster3.jpg";
 import poster4 from "../../images/exp5Poster.jpg";
-import FourVideoItem from "./Fourvideocard_data";
+// import FourVideoItem from "./Fourvideocard_data";
 import { Player } from "video-react";
 import "./Fourvideocard.scss";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const videoData = [
-  {
-    video: video1,
-    posterImage: poster1,
-  },
-  {
-    video: video2,
-    posterImage: poster2,
-  },
-  {
-    video: video3,
-    posterImage: poster3,
-  },
-  {
-    video: video4,
-    posterImage: poster4,
-  },
-];
+// const videoData = [
+//   {
+//     video: video1,
+//     posterImage: poster1,
+//   },
+//   {
+//     video: video2,
+//     posterImage: poster2,
+//   },
+//   {
+//     video: video3,
+//     posterImage: poster3,
+//   },
+//   {
+//     video: video4,
+//     posterImage: poster4,
+//   },
+// ];
 
 const Fourvideos = () => {
   const [ref, inView] = useInView({
@@ -52,7 +51,9 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video2}
+              src={
+                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4"
+              }
               poster={poster2}
               // fluid={true}
             />
@@ -68,7 +69,9 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video3}
+              src={
+                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4"
+              }
               poster={poster3}
               // fluid={true}
             />
@@ -84,7 +87,9 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video4}
+              src={
+                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4"
+              }
               poster={poster4}
               // fluid={true}
             />
@@ -100,7 +105,9 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={video1}
+              src={
+                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4"
+              }
               poster={poster1}
               // fluid={true}
             />

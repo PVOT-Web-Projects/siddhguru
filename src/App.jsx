@@ -45,10 +45,7 @@ import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
-import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
-import expVideo3 from "./images/exp4.mp4";
-import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
-import expVideo4 from "./images/exp5.mp4";
+
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 
 function App() {
@@ -70,19 +67,19 @@ function App() {
 
   useEffect(() => {
     // Array of video URLs to load
-   
+
     const videoUrls = [
       video1,
       video2,
       video3,
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4",
-      // homeBanner,
-      // homeBannerM,
-      expVideo1,
-      expVideo2,
-      expVideo3,
-      expVideo4,
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4",
+     
     ];
 
     const loadVideos = async () => {
@@ -157,7 +154,8 @@ function App() {
     }, 3000);
     if (isLoading) {
       document.body.style.overflow = "hidden";
-    } if(!isLoading){
+    }
+    if (!isLoading) {
       document.body.style.overflow = "unset";
     }
   }, [videosLoaded, imagesLoaded, isLoading]);
@@ -186,7 +184,7 @@ function App() {
 
   return (
     <>
-      { !hideLoader && <Loader loading={isLoading} />}
+      {!hideLoader && <Loader loading={isLoading} />}
       <Layout>
         <ScrollTop />
         <Routes>

@@ -16,7 +16,7 @@ import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import { Player } from "video-react";
-import vedicScienceVideo from "../../images/videcScienceVideo.mp4";
+// import vedicScienceVideo from "../../images/videcScienceVideo.mp4";
 import posterImage from "../../images/vedicVideoPosert.jpg";
 const siddhasanaData = [
   {
@@ -94,7 +94,7 @@ const VedicScience = () => {
       <div className="vedicScienceVideo">
         <Player
           playsInline={true}
-          src={vedicScienceVideo}
+          src={"https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4"}
           poster={posterImage}
           // fluid={true}
         />

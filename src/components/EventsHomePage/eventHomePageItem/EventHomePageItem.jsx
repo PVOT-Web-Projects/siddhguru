@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import PropTypes from "prop-types";
 import Button from "../../buttons/button4";
 const EventHomePageItem = ({
+  show,
   image,
   heading,
   eventName,
@@ -29,7 +30,7 @@ const EventHomePageItem = ({
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
-  return (
+  return show ? (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
@@ -85,10 +86,7 @@ const EventHomePageItem = ({
             {/* <div className="location">{location}</div> */}
             {!note && (
               <div className="eventCardBtn">
-                <Button
-                  link={link}
-                  btn_text="Register Now"
-                />
+                <Button link={link} btn_text="Register Now" />
               </div>
             )}
             {note && <div className="comingSoon">Coming soon...</div>}
@@ -102,7 +100,7 @@ const EventHomePageItem = ({
         </div>
       </div>
     </motion.div>
-  );
+  ) : null;
 };
 export default EventHomePageItem;
 
@@ -116,5 +114,4 @@ EventHomePageItem.propTypes = {
   boxMonth: PropTypes.string,
   boxWeek: PropTypes.string,
   id: PropTypes.number,
-  
 };
