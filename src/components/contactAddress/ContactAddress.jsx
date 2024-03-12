@@ -11,8 +11,8 @@ const contactAddressData = [
     heading: "Contact",
     // address:
     //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
-    number1: "08772247056",
-    number2: "08772247056",
+    number1: "9866622049",
+    number2: "8772247056",
   },
   {
     heading: "Get in Touch",
