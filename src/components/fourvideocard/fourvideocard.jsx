@@ -1,7 +1,7 @@
-// import video1 from "../../images/Ashok Sancheti Testimonial.mp4";
-// import video3 from "../../images/exp4.mp4";
-// import video2 from "../../images/Mayank Solanki Testimonial (Website).mp4";
-// import video4 from "../../images/exp5.mp4";
+import video1 from "../../images/Ashok Sancheti Testimonial-AxJu7i3v.mp4";
+import video3 from "../../images/exp3-dNXmpXxb.mp4";
+import video2 from "../../images/Mayank Solanki Testimonial (Website)-MYSdPzFp.mp4";
+import video4 from "../../images/exp4-G1wzJ-nw.mp4";
 import poster1 from "../../images/expPoster1.jpg";
 import poster2 from "../../images/expPoster2.jpg";
 import poster3 from "../../images/expPoster3.jpg";
@@ -52,7 +52,8 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={
-                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4"
+                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4"
+                video2
               }
               poster={poster2}
               // fluid={true}
@@ -70,7 +71,8 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={
-                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4"
+                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4"
+                video4
               }
               poster={poster3}
               // fluid={true}
@@ -88,7 +90,8 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={
-                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4"
+                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4"
+                video3
               }
               poster={poster4}
               // fluid={true}
@@ -106,7 +109,8 @@ const Fourvideos = () => {
             <Player
               playsInline={true}
               src={
-                "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4"
+                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4"
+                video1
               }
               poster={poster1}
               // fluid={true}
