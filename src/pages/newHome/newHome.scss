@@ -1,0 +1,12 @@
+.tab {
+  display: none;
+  @media (max-width: 575px) {
+    display: block;
+  }
+}
+.tabNew {
+  display: block;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}

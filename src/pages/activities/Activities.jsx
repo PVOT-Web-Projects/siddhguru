@@ -1,9 +1,9 @@
-import FormHomePage from "../../components/Form_homePage/FormHomePage";
+// import FormHomePage from "../../components/Form_homePage/FormHomePage";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import CorePillars from "../../components/corePillars/CorePillars";
 import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import fullWidthImage from "../../images/fullWidthImage1.png";
 import "./activities.scss";

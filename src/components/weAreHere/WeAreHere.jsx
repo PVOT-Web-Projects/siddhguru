@@ -1,3 +1,4 @@
+import Button from "../buttons/button4";
 import "./weAreHere.scss";
 
 const WeAreHere = () => {
@@ -38,6 +39,7 @@ const WeAreHere = () => {
             <div className="text">Experience of Silence</div>
           </li>
         </ul>
+        <Button btn_text={"Contact Us"} link={"https://app.sribrahmrishiashram.org/devotee/login"} />
       </div>
     </div>
   );

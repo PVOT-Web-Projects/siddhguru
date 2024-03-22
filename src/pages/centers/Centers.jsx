@@ -1,76 +1,76 @@
-import CardItem from "../../components/CardItem/CardItem";
+// import CardItem from "../../components/CardItem/CardItem";
 import FullWidthImageSec from "../../components/fullWidthImageSec/FullWidthImageSec";
 import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
-import TwoCardSection from "../../components/twoCardSection/TwoCardSection";
+// import TwoCardSection from "../../components/twoCardSection/TwoCardSection";
 import bigImage1 from "../../images/centerPage_bigImage1.png";
 import bigImage2 from "../../images/centerPage_bigImage2.png";
-import centerTopCardImage1 from "../../images/gujrat.png";
-import centerTopCardImage2 from "../../images/maharashrta.png";
-import centerTopCardImage3 from "../../images/delhi.png";
-import centerBottomCardImage1 from "../../images/uk.png";
-import centerBottomCardImage2 from "../../images/usa.png";
-import centerBottomCardImage3 from "../../images/australia.png";
+// import centerTopCardImage1 from "../../images/gujrat.png";
+// import centerTopCardImage2 from "../../images/maharashrta.png";
+// import centerTopCardImage3 from "../../images/delhi.png";
+// import centerBottomCardImage1 from "../../images/uk.png";
+// import centerBottomCardImage2 from "../../images/usa.png";
+// import centerBottomCardImage3 from "../../images/australia.png";
 import "./centers.scss";
 
-const centerTopCards = [
-  {
-    image: centerTopCardImage1,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "Gujrat",
-    colorGradient:
-      "linear-gradient(0deg, #A44F00 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-  {
-    image: centerTopCardImage2,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "Maharashtra",
-    colorGradient:
-      "linear-gradient(0deg, rgba(244, 210, 182, 0.60) -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-  {
-    image: centerTopCardImage3,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "Delhi",
-    colorGradient:
-      "linear-gradient(0deg, #0073A4 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-];
-const centerBottomCards = [
-  {
-    image: centerBottomCardImage1,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "UK",
-    colorGradient:
-      "linear-gradient(0deg, #A44F00 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-  {
-    image: centerBottomCardImage2,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "USA",
-    colorGradient:
-      "linear-gradient(0deg, rgba(244, 210, 182, 0.60) -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-  {
-    image: centerBottomCardImage3,
-    title: "Welcome New year with enthusiasm and Smile",
-    content:
-      "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
-    imageText: "Australia",
-    colorGradient:
-      "linear-gradient(0deg, #0073A4 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
-  },
-];
+// const centerTopCards = [
+//   {
+//     image: centerTopCardImage1,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "Gujrat",
+//     colorGradient:
+//       "linear-gradient(0deg, #A44F00 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+//   {
+//     image: centerTopCardImage2,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "Maharashtra",
+//     colorGradient:
+//       "linear-gradient(0deg, rgba(244, 210, 182, 0.60) -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+//   {
+//     image: centerTopCardImage3,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "Delhi",
+//     colorGradient:
+//       "linear-gradient(0deg, #0073A4 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+// ];
+// const centerBottomCards = [
+//   {
+//     image: centerBottomCardImage1,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "UK",
+//     colorGradient:
+//       "linear-gradient(0deg, #A44F00 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+//   {
+//     image: centerBottomCardImage2,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "USA",
+//     colorGradient:
+//       "linear-gradient(0deg, rgba(244, 210, 182, 0.60) -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+//   {
+//     image: centerBottomCardImage3,
+//     title: "Welcome New year with enthusiasm and Smile",
+//     content:
+//       "Welcome 2024 with a new hope, a renewed enthusiasm and a genuine smile. Take lesson…",
+//     imageText: "Australia",
+//     colorGradient:
+//       "linear-gradient(0deg, #0073A4 -4.37%, rgba(217, 217, 217, 0.00) 102.81%)",
+//   },
+// ];
 
 const Centers = () => {
   return (

@@ -3,11 +3,13 @@ import { useInView } from "react-intersection-observer";
 import PropTypes from "prop-types";
 import Button from "../../buttons/button4";
 const EventHomePageItem = ({
+  show,
   image,
   heading,
   eventName,
   eventDesc1,
   eventDesc2,
+  eventDesc3,
   date,
   location,
   boxDate,
@@ -23,11 +25,12 @@ const EventHomePageItem = ({
   rightLight3,
   rightLight4,
   note,
+  link,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
-  return (
+  return show ? (
     <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
@@ -38,7 +41,7 @@ const EventHomePageItem = ({
       <div className="eventHomeItem_wrapper">
         <div className="eventHomeItem_wrapper_left">
           <div className="eventItem_image">
-            <img src={image} alt="" />
+            <img src={image} alt="eventImage" />
           </div>
         </div>
         <div className="eventHomeItem_wrapper_right">
@@ -51,6 +54,7 @@ const EventHomePageItem = ({
             <div className="event_content">
               <p>{eventDesc1}</p>
               <p>{eventDesc2}</p>
+              <p>{eventDesc3}</p>
             </div>
             <div className="event_card_left_right_data">
               {(leftBold1 || rightLight1) && (
@@ -78,11 +82,14 @@ const EventHomePageItem = ({
                 </p>
               )}
             </div>
-            <div className="note">{note}</div>
+            {note && <div className="note">{note}</div>}
             {/* <div className="location">{location}</div> */}
-            <div className="eventCardBtn">
-              <Button btn_text="Register Now" />
-            </div>
+            {!note && (
+              <div className="eventCardBtn">
+                <Button link={link} btn_text="Register Now" />
+              </div>
+            )}
+            {note && <div className="comingSoon">Coming soon...</div>}
           </div>
           {/* <div className="boxDateSec">
             <div className="month">{boxMonth}</div>
@@ -93,7 +100,7 @@ const EventHomePageItem = ({
         </div>
       </div>
     </motion.div>
-  );
+  ) : null;
 };
 export default EventHomePageItem;
 

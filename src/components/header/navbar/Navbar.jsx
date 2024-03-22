@@ -4,21 +4,26 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { Link, useLocation } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-
+// import { HashLink } from "react-router-hash-link";
+import logoImage from "../../../images/logo.png";
+import icon2 from "../../../images/facebookMobile.svg";
+import icon3 from "../../../images/youtubeMobile.svg";
+import icon1 from "../../../images/instaMobile.svg";
+import icon4 from "../../../images/twitterMobile.svg";
 import {
   Navbar,
   Container,
   Nav,
-  NavDropdown,
+  // NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
 import { useState } from "react";
+// import Logo from "../logo/Logo";
 
 const Menu = () => {
   const location = useLocation();
-  console.log(location.pathname);
+  // console.log(location.pathname);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
@@ -46,28 +51,18 @@ const Menu = () => {
   // const handleMouseLeave2 = () => {
   //   setShowSubMenu2(false);
   // };
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-  const closeDropdown = () => {
-    setDropdownOpen(false);
-  };
+  // const [isDropdownOpen, setDropdownOpen] = useState(false);
+  // const toggleDropdown = () => {
+  //   setDropdownOpen(!isDropdownOpen);
+  // };
+  // const closeDropdown = () => {
+  //   setDropdownOpen(false);
+  // };
   return (
     <Navbar expand={false}>
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
-          {/* <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Link to="/" className="line_underscore nav-link">
-              Home
-            </Link>
-          </motion.div> */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
@@ -75,12 +70,12 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
-              to="/new-home"
+              to="/"
               className={`line_underscore nav-link ${
-                location.pathname === "/new-home" ? "highlight" : ""
+                location.pathname === "/" ? "highlight" : ""
               }`}
             >
-              New Home
+              Home
             </Link>
           </motion.div>
           <motion.div
@@ -285,11 +280,11 @@ const Menu = () => {
                 Home
               </Link> */}
               <Link
-                to="/new-home"
+                to="/"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                New Home
+                Home
               </Link>
               <Link
                 to="/vedic-science"
@@ -397,9 +392,10 @@ const Menu = () => {
                 Blogs
               </Link> */}
               <Link
-                to="/devotee"
+                to="https://app.sribrahmrishiashram.org/devotee/login"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
+                target="_blank"
               >
                 Register Devotee/Volunteer
               </Link>
@@ -407,6 +403,42 @@ const Menu = () => {
                 Donate
               </Link> */}
             </Nav>
+
+            {/* <Logo /> */}
+            <div className="footer_link_container">
+              <div className="instagram_icon social_icon">
+                <a
+                  href="https://www.instagram.com/srisidheshwarbrahmrishi/"
+                  target="_blank"
+                >
+                  <img src={icon1} height="20px" />
+                </a>
+              </div>
+              <div className="facebook_icon social_icon">
+                <a
+                  href=" https://www.facebook.comsrisidheshwarbrahmrishi"
+                  target="_blank"
+                >
+                  <img src={icon2} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a
+                  href=" https://www.youtube.com/@srisidheshwartirth-brahmri5318"
+                  target="_blank"
+                >
+                  <img src={icon3} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a href=" https://twitter.com/sri_sidheswar" target="_blank">
+                  <img src={icon4} />
+                </a>
+              </div>
+            </div>
+            <div className="mobileNavLogo">
+              <img src={logoImage} alt="logo" />
+            </div>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
