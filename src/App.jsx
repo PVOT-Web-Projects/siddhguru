@@ -45,7 +45,11 @@ import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
-
+import fullVideo from "./images/videcScienceVideo-FyWQQtnN.mp4";
+import expvideo1 from "./images/Ashok Sancheti Testimonial-AxJu7i3v.mp4";
+import expvideo3 from "./images/exp3-dNXmpXxb.mp4";
+import expvideo2 from "./images/Mayank Solanki Testimonial (Website)-MYSdPzFp.mp4";
+import expvideo4 from "./images/exp4-G1wzJ-nw.mp4";
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 
 function App() {
@@ -72,6 +76,11 @@ function App() {
       video1,
       video2,
       video3,
+      fullVideo,
+      expvideo1,
+      expvideo2,
+      expvideo3,
+      expvideo4,
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4",
@@ -79,7 +88,6 @@ function App() {
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4",
-     
     ];
 
     const loadVideos = async () => {

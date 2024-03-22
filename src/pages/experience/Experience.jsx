@@ -16,10 +16,14 @@ const Experience = () => {
     <div className="experience">
       {/* <InnerPageCommonHeading heading={"Experience"} /> */}
       <InnerPageBanner
-        image={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg"}
-        mobileImage={"https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg"}
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg"
+        }
         bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
-        
+
         // bigText2={"DIVINE EXPERIENCES WITH SIDDHGURU"}
       />
       <div className="headingAndText" ref={ref}>
