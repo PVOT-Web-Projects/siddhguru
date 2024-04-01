@@ -75,10 +75,10 @@ const AboutAshramPage = () => {
         content={
           '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to many cows who are valued and cared for with compassion."'
         }
-        image1={gaushalaImage1}
+        // image1={gaushalaImage1}
         image2={gaushalaImage2}
         image3={gaushalaImage3}
-        image4={gaushalaImage4}
+        // image4={gaushalaImage4}
       />
       <HeadingContentWithImages
         heading={"Dhyan Mandir"}

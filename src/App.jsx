@@ -192,7 +192,7 @@ function App() {
 
   return (
     <>
-      {!hideLoader && <Loader loading={isLoading} />}
+      {/* {!hideLoader && <Loader loading={isLoading} />} */}
       <Layout>
         <ScrollTop />
         <Routes>

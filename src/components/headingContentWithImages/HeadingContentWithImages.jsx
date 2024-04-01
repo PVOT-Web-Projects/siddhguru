@@ -19,8 +19,8 @@ const HeadingContentWithImages = ({
           <p>{content}</p>
         </div>
         <div className="images">
-          <img src={image1} alt={heading} />
-          <img src={image2} alt={heading} />
+          {image1 && <img src={image1} alt={heading} />}
+          {image2 && <img src={image2} alt={heading} />}
           {image3 && <img src={image3} alt={heading} />}
           {image4 && <img src={image4} alt={heading} />}
         </div>
