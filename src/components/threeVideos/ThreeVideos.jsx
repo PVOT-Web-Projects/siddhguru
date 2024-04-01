@@ -1,6 +1,7 @@
 import video1 from "../../images/exp1.mp4";
 import video2 from "../../images/video2.mp4";
 import video3 from "../../images/video3.mp4";
+import fullVideo from "../../images/Obama Video.mp4"
 import poster1 from "../../images/poster1.jpg";
 import poster2 from "../../images/poster2.jpg";
 import poster3 from "../../images/poster4.jpg";
@@ -35,13 +36,23 @@ const ThreeVideos = () => {
           <div className="threeVideoItem_wrapper">
             <Player
               playsInline={true}
+              src={fullVideo}
+              // poster={poster2}
+              fluid={true}
+            />
+          </div>
+        </div>
+        {/* <div className="threeVideoItem try">
+          <div className="threeVideoItem_wrapper">
+            <Player
+              playsInline={true}
               src={video1}
               poster={poster2}
               fluid={true}
             />
           </div>
-        </div>
-        <div className="threeVideoItem try">
+        </div> */}
+        {/* <div className="threeVideoItem try">
           <div className="threeVideoItem_wrapper">
             <Player
               playsInline={true}
@@ -60,7 +71,7 @@ const ThreeVideos = () => {
               fluid={true}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
