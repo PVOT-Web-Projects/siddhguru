@@ -177,6 +177,16 @@ const wisdomData = [
     itemIndex: 10,
   },
 ];
+const brahmaShaktiData = [
+  {
+    // id: "anant_diksha",
+    img: wisdomImage1,
+    tagline: "Brahma Shakti",
+    title: "Brahma Shakti",
+    text: "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+    itemIndex: 11,
+  },
+];
 
 const tabData1 = [
   {
@@ -220,15 +230,22 @@ const tabData3 = [
     title: "Professional Wisdom",
   },
 ];
+const tabData4 = [
+  {
+    title: "Brahm Shakti",
+  },
+];
 
 const TabSectionNew = () => {
   const [activeMainTab, setActiveMainTab] = useState("tab1");
   const [tabContent1, setTabContent1] = useState(0);
   const [tabContent2, setTabContent2] = useState(0);
   const [tabContent3, setTabContent3] = useState(0);
+  // const [tabContent4, setTabContent4] = useState(0);
   const [tabContent1Mobile, setTabContent1Mobile] = useState(false);
   const [tabContent2Mobile, setTabContent2Mobile] = useState(false);
   const [tabContent3Mobile, setTabContent3Mobile] = useState(false);
+  const [tabContent4Mobile, setTabContent4Mobile] = useState(false);
 
   const handleTab1 = () => {
     setActiveMainTab("tab1");
@@ -247,6 +264,9 @@ const TabSectionNew = () => {
   };
   const handleTab3Mobile = () => {
     setTabContent3Mobile(!tabContent3Mobile);
+  };
+  const handleTab4Mobile = () => {
+    setTabContent4Mobile(!tabContent4Mobile);
   };
   return (
     <div className="tabSectionNew">
@@ -471,6 +491,39 @@ const TabSectionNew = () => {
             >
               {tabContent3Mobile ? "View Less" : "View More"}
               {tabContent3Mobile ? (
+                <img src={arrow} alt="arrow" className="showLess" />
+              ) : (
+                <img src={arrow} alt="arrow" />
+              )}
+            </HashLink>
+          </div>
+          <div className="tabSection_mobile_wrapper_tab" id="tab4">
+            <div className="tabSection_mobile_wrapper_tab_image">
+              <img src={mainTabImage3} alt="mainTabMobile" />
+              {/* <video src={video3} autoPlay loop muted></video> */}
+              <div className="tabSection_mobile_wrapper_tab_text ">
+                Brahm Shakti
+              </div>
+            </div>
+            {tabContent4Mobile === true && (
+              <div className="mobileTab4">
+                {brahmaShaktiData.map((item, index) => (
+                  <LeftRIghtImageContent
+                    key={index}
+                    {...item}
+                    index={index}
+                    titleColor={"#1D5A3F"}
+                  />
+                ))}
+              </div>
+            )}
+            <HashLink
+              className="viewmore"
+              to={tabContent4Mobile && "#tab4"}
+              onClick={handleTab4Mobile}
+            >
+              {tabContent4Mobile ? "View Less" : "View More"}
+              {tabContent4Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
                 <img src={arrow} alt="arrow" />
