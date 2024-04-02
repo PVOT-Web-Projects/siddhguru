@@ -2,7 +2,8 @@
 import mainTabImage1 from "../../images/mainTab1.png";
 import mainTabImage2 from "../../images/mainTab2.png";
 import mainTabImage3 from "../../images/mainTab3.png";
-import theSaintImage1 from "../../images/Life in a Nutshell.jpg";
+// import theSaintImage1 from "../../images/Life in a Nutshell.jpg";
+import theSaintImage1 from "../../images/SiddhguruTabImage.png";
 import theSaintImage2 from "../../images/Sadhana & Kundalini Invocation.jpg";
 import theSaintImage3 from "../../images/Siddhis-and-Nidhis.jpg";
 // import theSaintImage4 from "../../images/theSaintImage4.png";
@@ -14,7 +15,7 @@ import wisdomImage1 from "../../images/Miracles of Vedic Science.jpg";
 import wisdomImage2 from "../../images/spiritual.jpeg";
 import wisdomImage3 from "../../images/socialWisdom.jpeg";
 import wisdomImage4 from "../../images/professionalWisdom.jpeg";
-import brahmaShaktiImg from "../../images/vedicBrahm.jpg"; 
+import brahmaShaktiImg from "../../images/brahmaShaktiTab.png"; 
 import "./tabSectionNewNew.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
