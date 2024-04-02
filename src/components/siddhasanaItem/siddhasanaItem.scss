@@ -28,6 +28,44 @@
       @media (max-width: 767px) {
         padding: 20px;
       }
+      .SiddhasanaItem_wrapper_list {
+        list-style: disc;
+      }
+      .register_now {
+        margin: 0 0 10px;
+      }
+      .forther_info {
+        margin: 0 0 10px;
+      }
+      .register_now a {
+        text-decoration: none;
+        color: black;
+      }
+      .call_info_wrap {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:575px){
+          flex-direction: column;
+        }
+      }
+      .list_col1 {
+        width: 33.33%;
+        @media(max-width:575px){
+          width: 90%;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+         
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
     }
   }
   &_wrapper {
@@ -42,10 +80,10 @@
       font-size: 42px;
       color: #000;
       margin: 0 0 10px;
-      @media(max-width:767px){
+      @media (max-width: 767px) {
         font-size: 32px;
       }
-      @media(max-width:575px){
+      @media (max-width: 575px) {
         font-size: 28px;
       }
     }

@@ -15,7 +15,7 @@ import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import TabSectionNewNew from "../../components/tabSectionNewNew/TabSectionNewNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
-// import bannerVideo from "../../images/homeVideoBanner.mp4";
+import bannerVideo from "../../images/Website-Banner-New2.mp4";
 // import bannerVideomobile from "../../images/homeVideoMobileBanner.mp4";
 import "./newHome.scss";
 const NewHome = () => {
@@ -25,7 +25,8 @@ const NewHome = () => {
       <NewHeroSection
         deskVideo={
           // "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4"
-          "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833663/rlqouehxtqvpftanwbue.mp4"
+          // "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833663/rlqouehxtqvpftanwbue.mp4"
+          bannerVideo
         }
         mobileVideo={
           // "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4"

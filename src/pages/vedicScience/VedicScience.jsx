@@ -10,7 +10,7 @@ import axios from "axios";
 import "./vedicScience.scss";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-// import bannerImage from "../../images/Vedic-Science_D.jpg";
+import bannerImage from "../../images/vedicScienceNewBanner.jpg";
 // import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
 import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
@@ -35,6 +35,13 @@ const siddhasanaData = [
     text1:
       "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
   },
+  {
+    delay: 0.4,
+    image: image2,
+    heading: "Knowledge of various scriptures",
+    text1:
+      "From his early life, Siddhguru embarked upon a journey that surpassed mere acquisition of worldly wisdom; he delved deep into the sacred realms of knowledge, mastering the holy scriptures - including Aagamas, Vedas, Guru Granth Sahib, Ramayan, Bible, Puranas, Upanishads, Epics, Bhagavad Gita, and beyond. His pursuit was not merely academic; it was a spiritual odyssey illuminated by the light of profound understanding. His scholarly achievements, including a Doctorate in Astrology alongside proficiency in Sanskrit, were but stepping stones towards a deeper truth. Later, with the help of his Guru and unwavering dedication, Siddhguru achieved the esoteric powers of Mantras and Tantras, on par with the ancient sages and seers.",
+  },
 ];
 
 const VedicScience = () => {
@@ -56,7 +63,8 @@ const VedicScience = () => {
       {/* <InnerPageCommonHeading heading={"Vedic Science"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916426/qwtt0niioctnyu2xxm5m.jpg"
+          bannerImage
         }
         mobileImage={
           "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"

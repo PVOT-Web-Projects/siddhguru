@@ -8,6 +8,12 @@ const HeadingContentWithImages = ({
   image2,
   image3,
   image4,
+  list1,
+  list2,
+  list3,
+  list4,
+  list5,
+  list6,
 }) => {
   return (
     <div className="headingContentWithImagesItem">
@@ -18,6 +24,18 @@ const HeadingContentWithImages = ({
         <div className="content">
           <p>{content}</p>
         </div>
+        {(list1 || list2 || list3 || list4 || list5 || list6) && (
+          <div className="list">
+            <ul>
+              {list1 && <li>{list1}</li>}
+              {list2 && <li>{list2}</li>}
+              {list3 && <li>{list3}</li>}
+              {list4 && <li>{list4}</li>}
+              {list5 && <li>{list5}</li>}
+              {list6 && <li>{list6}</li>}
+            </ul>
+          </div>
+        )}
         <div className="images">
           {image1 && <img src={image1} alt={heading} />}
           {image2 && <img src={image2} alt={heading} />}

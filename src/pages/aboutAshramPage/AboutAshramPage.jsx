@@ -8,7 +8,7 @@ import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
 import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
 // import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-// import bannerImage from "../../images/Ashram_D.jpg";
+import bannerImage from "../../images/aboutAshramNewBanner.jpg";
 // import mobilebannerImage from "../../images/Ashram_M.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 import HeadingContentWithImages from "../../components/headingContentWithImages/HeadingContentWithImages";
@@ -36,7 +36,8 @@ const AboutAshramPage = () => {
       /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg"
+          bannerImage
         }
         mobileImage={
           "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
@@ -70,6 +71,18 @@ const AboutAshramPage = () => {
         justifyContent={"center"}
         color={"#6A1C1C"}
       /> */}
+      <HeadingContentWithImages
+        heading={"Prāṇa Vriddhi (Energy Enhancement System™)"}
+        content={
+          '"Devotees from all over India and the entire world visit Sri Brahmrishi Ashram for an opportunity to experience Prāṇa Vriddhi through our EE System based on BIO-SCALAR TECHNOLOGY. In the peaceful atmosphere of Dhyan Mandir, you can activate and enhance the ‘Prāṇa’ energy within yourself through this SCALAR FIELD THERAPY that is not available anywhere else in India. Our Prāṇa Vriddhi EE System generates multiple life-enhancing energy fields that promote cell regeneration, immunity, pain relief, detoxification of the body, and overall energy levels.'
+        }
+        list1={"Combines your body, mind, and soul"}
+        list2={"Helps you achieve peak performance"}
+        list3={"Takes you to a higher state of health"}
+        list4={"Recharges your inner Prāṇa energy"}
+        list5={"Promotes natural healing & rejuvenation"}
+        list6={"Enhances the sense of self-awareness"}
+      />
       <HeadingContentWithImages
         heading={"Gaushala"}
         content={
