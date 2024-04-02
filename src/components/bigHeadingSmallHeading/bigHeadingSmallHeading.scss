@@ -1,6 +1,7 @@
 .bigHeadingSmallHeading {
   text-align: center;
   padding: 80px 20px;
+  display: none;
   @media (max-width: 991px) {
     padding: 50px 20px;
   }
