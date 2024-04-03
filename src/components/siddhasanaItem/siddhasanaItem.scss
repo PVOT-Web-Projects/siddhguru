@@ -40,6 +40,12 @@
       .register_now a {
         text-decoration: none;
         color: black;
+        display: flex;
+        flex-wrap: wrap;
+        transition: all 0.4s;
+        &:hover{
+          color: #f90;
+        }
       }
       .call_info_wrap {
         display: flex;
@@ -62,6 +68,10 @@
             a {
               text-decoration: none;
               color: black;
+              transition: all 0.4s;
+              &:hover{
+                color: #f90;
+              }
             }
           }
         }

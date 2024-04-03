@@ -5,6 +5,9 @@
   @media (max-width: 991px) {
     padding: 50px 20px;
   }
+  @media(max-width:575px){
+    display: block;
+  }
   h2 {
     font-size: 42px;
     color: rgb(255, 153, 0);

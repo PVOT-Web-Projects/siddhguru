@@ -6,6 +6,7 @@ import image1 from "../../images/Siddhasana_WHAT.jpg";
 import image2 from "../../images/Siddhasana_WHERE & WHEN.jpg";
 import image3 from "../../images/Siddhasana_WHY-min.jpg";
 import image4 from "../../images/Siddhasana_WHOM.jpg";
+import image5 from "../../images/how_image.jpeg";
 import "./Siddhasana.scss";
 // import bannerImage from "../../images/Siddhasana-D.jpg";
 // import mobilebannerImage from "../../images/Siddhasana-M.jpg";
@@ -75,7 +76,7 @@ const SiddhasanaData = [
   },
   {
     delay: 0.6,
-    image: image4,
+    image: image5,
     heading: "HOW",
     text1:
       "The 7-day residential program and 3-day international program of Siddheshwar - The Power of Soul “Siddhasana” - are meticulously crafted with an eye towards re-awakening and re-balancing the essential parts of the body, mind, and soul, through the unique blend of carefully constructed programs.",

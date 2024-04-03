@@ -9,7 +9,7 @@ import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramIma
 // import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/aboutAshramNewBanner.jpg";
-// import mobilebannerImage from "../../images/Ashram_M.jpg";
+import mobilebannerImage from "../../images/ashramMOB.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 import HeadingContentWithImages from "../../components/headingContentWithImages/HeadingContentWithImages";
 import gaushalaImage1 from "../../images/gaushalaImage1.jpg";
@@ -40,7 +40,8 @@ const AboutAshramPage = () => {
           bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
+          mobilebannerImage
         }
         bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
