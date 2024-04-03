@@ -18,6 +18,7 @@ import dyanMandirImage1 from "../../images/dyanMandirImage1.jpg";
 import dyanMandirImage2 from "../../images/dyanMandirImage2.jpg";
 import gaushalaImage3 from "../../images/gaushalaImage3.jpg";
 import gaushalaImage4 from "../../images/gaushalaImage4.jpeg";
+import border from "../../images/aboutAshramBorder.svg";
 
 const AboutAshramPage = () => {
   const aboutAshramImages = [
@@ -72,6 +73,9 @@ const AboutAshramPage = () => {
         justifyContent={"center"}
         color={"#6A1C1C"}
       /> */}
+      <div className="divider">
+        <img src={border} alt="border" />
+      </div>
       <HeadingContentWithImages
         heading={"Prāṇa Vriddhi (Energy Enhancement System™)"}
         content={
@@ -84,6 +88,9 @@ const AboutAshramPage = () => {
         list5={"Promotes natural healing & rejuvenation"}
         list6={"Enhances the sense of self-awareness"}
       />
+      <div className="divider">
+        <img src={border} alt="border" />
+      </div>
       <HeadingContentWithImages
         heading={"Gaushala"}
         content={
@@ -94,7 +101,7 @@ const AboutAshramPage = () => {
         image3={gaushalaImage3}
         // image4={gaushalaImage4}
       />
-      <HeadingContentWithImages
+      {/* <HeadingContentWithImages
         heading={"Dhyan Mandir"}
         content={
           "Welcome to Sidheshwar Tirth, Brahmrishi Ashram Dhyan Mandir, a peaceful place for meditation and self-reflection. Here, you can escape the hustle and bustle of daily life and find a quiet spot to relax and unwind. Whether you're new to meditation or have been practising for years, our serene sanctuary is open to everyone. Sit quietly, focus on your breath, and let go of stress and worries. It's a space where you can connect with yourself and the divine. Join us as we journey inward and discover the peace that lies within."
@@ -104,7 +111,7 @@ const AboutAshramPage = () => {
       />
       {aboutAshramImages.map((item, index) => (
         <AboutAshramImages key={index} {...item} />
-      ))}
+      ))} */}
       <GalleryAshram />
       <div className="aboutAshramPage_wrapper"></div>
     </div>
