@@ -71,12 +71,12 @@ const SiddhasanaItem = ({
           list9) && (
           <>
             <div className="register_now">
-              Register now at:
+              {"Register now at : "}
               <Link
                 target="_blank"
                 to="https://www.siddheshwarthepowerofsoul.org/registration"
               >
-                {" www.siddheshwarthepowerofsoul.org/registration"}
+                www.siddheshwarthepowerofsoul.org/<span>registration</span>
               </Link>
             </div>
             <div className="forther_info">For Further Information:</div>
@@ -91,10 +91,10 @@ const SiddhasanaItem = ({
                     <Link to="tel:9845549950">+91 984 554 9950</Link>
                   </li>
                   <li>
-                    <Link to="to:9940099501">+91 994 009 9501</Link>
+                    <Link to="tel:9940099501">+91 994 009 9501</Link>
                   </li>
                   <li>
-                    <Link to="to:9343761899">+91 934 376 1899</Link>
+                    <Link to="tel:9343761899">+91 934 376 1899</Link>
                   </li>
                 </ul>
               </div>
@@ -102,7 +102,7 @@ const SiddhasanaItem = ({
                 <ul>
                   {"USA : "}
                   <li>
-                    <Link to="to:9546818534">+1 954 681 8534</Link>
+                    <Link to="tel:9546818534">+1 954 681 8534</Link>
                   </li>
                 </ul>
               </div>
@@ -110,7 +110,7 @@ const SiddhasanaItem = ({
                 <ul>
                   {"GERMANY : "}
                   <li>
-                    <Link to="to:915203930692">+4 91 520 393 0692</Link>
+                    <Link to="tel:915203930692">+4 91 520 393 0692</Link>
                   </li>
                 </ul>
               </div>

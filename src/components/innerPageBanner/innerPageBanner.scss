@@ -80,23 +80,25 @@
     }
     .bannerBigText {
       position: absolute;
-      left: 100px;
-      top: 50%;
+      left: 70px;
+      top: 45%;
       transform: translateY(-50%);
       font-size: 52px;
       color: #fff;
       font-weight: 600;
       text-transform: uppercase;
-      width: 850px;
+      // width: 850px;
+      width: 46vw;
       text-align: left;
       @media (max-width: 1199px) {
         font-size: 35px;
-        width: 550px;
+        width: 500px;
         left: 55px;
       }
       @media (max-width: 991px) {
         font-size: 35px;
-        width: 450px;
+        width: 400px;
+        top: 40%;
       }
       @media (max-width: 767px) {
         font-size: 35px;

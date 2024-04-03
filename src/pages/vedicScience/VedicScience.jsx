@@ -11,7 +11,7 @@ import "./vedicScience.scss";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/vedicScienceNewBanner.jpg";
-// import bannerImagemobile from "../../images/Vedic-Science_M.jpg";
+import bannerImagemobile from "../../images/vedicMOB.jpg";
 import image1 from "../../images/vedicExp.jpg";
 import image2 from "../../images/vedicBrahm.jpg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
@@ -28,15 +28,15 @@ const siddhasanaData = [
     text1:
       "Intellect drives virtually every field of knowledge, but in Vedic science, consciousness is key. Only a sage at supreme consciousness can unlock its true potential. Sri SiddhGuru, born with all Kundalini Chakras activated, possesses deep insights into Vedic mysteries through intense Sadhana. Rediscovering lost Siddhis, his teachings inspire and transform lives beyond intellectual understanding. He guides us toward fulfilling lives and spiritual advancement, offering his divine energy to elevate our consciousness, revealing the essence of Vedic science through profound spiritual engagement rather than mere intellectual pursuit.",
   },
+  // {
+  //   delay: 0.2,
+  //   image: image2,
+  //   heading: "Brahma Shakti",
+  //   text1:
+  //     "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+  // },
   {
     delay: 0.2,
-    image: image2,
-    heading: "Brahma Shakti",
-    text1:
-      "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
-  },
-  {
-    delay: 0.4,
     image: image2,
     heading: "Knowledge of various scriptures",
     text1:
@@ -67,7 +67,8 @@ const VedicScience = () => {
           bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"
+          bannerImagemobile
         }
         text={"Vedic Science"}
         // color={"#cf4a2a"}
