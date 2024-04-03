@@ -38,9 +38,9 @@ const siddhasanaData = [
   {
     delay: 0.2,
     image: image2,
-    heading: "Knowledge of various scriptures",
+    heading: "An Eminent Spiritual Scholar",
     text1:
-      "From his early life, Siddhguru embarked upon a journey that surpassed mere acquisition of worldly wisdom; he delved deep into the sacred realms of knowledge, mastering the holy scriptures - including Aagamas, Vedas, Guru Granth Sahib, Ramayan, Bible, Puranas, Upanishads, Epics, Bhagavad Gita, and beyond. His pursuit was not merely academic; it was a spiritual odyssey illuminated by the light of profound understanding. His scholarly achievements, including a Doctorate in Astrology alongside proficiency in Sanskrit, were but stepping stones towards a deeper truth. Later, with the help of his Guru and unwavering dedication, Siddhguru achieved the esoteric powers of Mantras and Tantras, on par with the ancient sages and seers.",
+      "Sri Siddhguru is one of the eminent scholars of Sanskrit and Vedic literature in the world. His profound expertise extends across scriptures such as the Vedas, Puranas, Bhagavad Gita, Agamas, and Astrology. Also, he has a deep understanding of the ideologies and philosophies of various faiths - including Jainism, Sikhism, Christianity, Buddhism, and Islam. Sri Siddhguru possesses the unique talent of explaining intricate concepts from the ancient scriptures using a simple language that is accessible to all.",
   },
 ];
 

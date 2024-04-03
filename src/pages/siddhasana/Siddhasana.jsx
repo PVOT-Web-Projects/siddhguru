@@ -38,14 +38,20 @@ const SiddhasanaData = [
       "Siddheshwar - The Power of Soul “Siddhasana” programs are shared in the following ways:",
     text2:
       "Siddhasana Residential Retreats are conducted every month in India. Also, its online/ offline workshops are regularly conducted worldwide - including New York, Dubai, Japan, France, Portugal, Sweden, London, Spain, Canada, Singapore, Hong Kong, Georgia, Australia, New Zealand, Netherlands, Denmark, Holland, Thailand, Brazil, Mauritius, Kenya, Fiji, and Tanzania.",
-    text3:
-      "The flagship 7-day residential silence retreat program is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
-    text4:
-      "The 3-day international retreats are conducted in different parts of the world.",
-    text5:
-      "The 2-hour sessions are conducted in-person at various conferences, organizations, and universities.",
+    // text3:
+    //   "The flagship 7-day residential silence retreat program is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
+    // text4:
+    //   "The 3-day international retreats are conducted in different parts of the world.",
+    // text5:
+    //   "The 2-hour sessions are conducted in-person at various conferences, organizations, and universities.",
     text6:
       "Online workshops are also arranged in different parts of the world.",
+      list1bold:"The flagship 7-day residential silence retreat program",
+      list1light:" is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
+      list2bold:"The 3-day international retreats",
+      list2light:"are conducted in different parts of the world.",
+      list3bold:"The 2-hour sessions",
+      list3light:"are conducted in-person at various conferences, organizations, and universities.",
   },
   {
     delay: 0.3,
