@@ -1,12 +1,12 @@
 .tab {
   display: none;
-  @media (max-width: 575px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
 .tabNew {
   display: block;
-  @media (max-width: 575px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
