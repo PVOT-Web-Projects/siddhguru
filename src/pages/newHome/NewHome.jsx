@@ -16,7 +16,7 @@ import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import TabSectionNewNew from "../../components/tabSectionNewNew/TabSectionNewNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/Website Banner video.mp4";
-// import bannerVideomobile from "../../images/homeVideoMobileBanner.mp4";
+import bannerVideomobile from "../../images/Website_mobile_banner_video.mp4";
 import "./newHome.scss";
 const NewHome = () => {
   return (

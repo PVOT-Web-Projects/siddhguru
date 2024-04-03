@@ -2,6 +2,7 @@ import "./siddhasanaItem.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import Button from "../buttons/button4";
 const SiddhasanaItem = ({
   heading,
   text1,
@@ -20,6 +21,12 @@ const SiddhasanaItem = ({
   list7,
   list8,
   list9,
+  list1bold,
+  list2bold,
+  list3bold,
+  list1light,
+  list2light,
+  list3light,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -39,6 +46,27 @@ const SiddhasanaItem = ({
         {text3 && <p>{text3}</p>}
         {text4 && <p>{text4}</p>}
         {text5 && <p>{text5}</p>}
+        {(list1bold ||
+          list2bold ||
+          list3bold ||
+          list1light ||
+          list2light ||
+          list3light) && (
+          <ul className="item_bold_and_light_list">
+            <li>
+              {list1bold}
+              <span>{` ${list1light}`}</span>
+            </li>
+            <li>
+              {list2bold}
+              <span>{` ${list2light}`}</span>
+            </li>
+            <li>
+              {list3bold}
+              <span>{` ${list3light}`}</span>
+            </li>
+          </ul>
+        )}
         {(list1 ||
           list2 ||
           list3 ||
@@ -70,7 +98,7 @@ const SiddhasanaItem = ({
           list8 ||
           list9) && (
           <>
-            <div className="register_now">
+            {/* <div className="register_now">
               {"Register now at : "}
               <Link
                 target="_blank"
@@ -78,7 +106,8 @@ const SiddhasanaItem = ({
               >
                 www.siddheshwarthepowerofsoul.org/<span>registration</span>
               </Link>
-            </div>
+            </div> */}
+            <Button link={"https://www.siddheshwarthepowerofsoul.org/registration"} btn_text={"Register now"} />
             <div className="forther_info">For Further Information:</div>
             <div className="call_info_wrap">
               <div className="list_col1">
