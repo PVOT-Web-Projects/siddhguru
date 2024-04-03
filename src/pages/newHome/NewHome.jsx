@@ -15,7 +15,7 @@ import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import TabSectionNewNew from "../../components/tabSectionNewNew/TabSectionNewNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
-import bannerVideo from "../../images/Website Banner_New.mp4";
+import bannerVideo from "../../images/Website Banner video.mp4";
 // import bannerVideomobile from "../../images/homeVideoMobileBanner.mp4";
 import "./newHome.scss";
 const NewHome = () => {
