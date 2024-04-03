@@ -6,7 +6,7 @@
       display: block;
       // height: calc(100vh - 180px);
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       &.desk {
         display: block;
         @media (max-width: 767px) {

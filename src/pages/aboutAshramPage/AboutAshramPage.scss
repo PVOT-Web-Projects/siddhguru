@@ -1,4 +1,12 @@
 .aboutAshramPage {
+  .divider {
+    text-align: center;
+    img {
+      max-width: 100%;
+      // display: block;
+      // text-align: center;
+    }
+  }
   .innerPageCommonHeading {
     padding: 200px 0 50px;
     @media (max-width: 1199px) {
@@ -48,7 +56,7 @@
   }
   .animatedText {
     padding: 0 20px 100px;
-    @media(max-width:767px){
+    @media (max-width: 767px) {
       padding-bottom: 50px;
     }
     span {
