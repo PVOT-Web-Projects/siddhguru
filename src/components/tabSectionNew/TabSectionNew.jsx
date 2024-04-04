@@ -1,19 +1,20 @@
 // import TextSection from "../textSection/TextSection";
-import mainTabImage1 from "../../images/mainTab1.png";
-import mainTabImage2 from "../../images/mainTab2.png";
-import mainTabImage3 from "../../images/mainTab3.png";
-import theSaintImage1 from "../../images/Life in a Nutshell.jpg";
+import mainTabImage1 from "../../images/saintTHUMB-min.jpg";
+import mainTabImage2 from "../../images/missionTHUMB-min.jpg";
+import mainTabImage3 from "../../images/corewisdom-min.jpg";
+import theSaintImage1 from "../../images/saintMain.png";
 import theSaintImage2 from "../../images/Sadhana & Kundalini Invocation.jpg";
 import theSaintImage3 from "../../images/Siddhis-and-Nidhis.jpg";
 // import theSaintImage4 from "../../images/theSaintImage4.png";
-import image1 from "../../images/Divine Touch (Digital Diksha).jpg";
+import image1 from "../../images/VisionMain.png";
 import image2 from "../../images/Siddhasana.jpg";
 import image3 from "../../images/Ashram.jpg";
 import image4 from "../../images/World-Spiritual-Forum.jpg";
-import wisdomImage1 from "../../images/Miracles of Vedic Science.jpg";
+import wisdomImage1 from "../../images/WisdomMain.png";
 import wisdomImage2 from "../../images/spiritual.jpeg";
 import wisdomImage3 from "../../images/socialWisdom.jpeg";
 import wisdomImage4 from "../../images/professionalWisdom.jpeg";
+import brahmaShaktiImg from "../../images/brahmaShaktiTab.png";
 import "./tabSectionNew.scss";
 import { useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
@@ -29,7 +30,7 @@ const theSaintData = [
     id: "life_of_nutshell",
     index: 0,
     img: theSaintImage1,
-    tagline: "",
+    tagline: "Saint",
     title: "Sri SiddhGuru",
     text: "Sri Brahmrishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and  Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
     itemIndex: 0,
@@ -42,7 +43,7 @@ const theSaintData = [
     id: "kundalini",
     index: 1,
     img: theSaintImage2,
-    tagline: "Sri SiddhGuru",
+    tagline: "Saint",
     title: "Kundalini",
     text: "Kundalini, a dormant spiritual energy within us, reaches its peak through awakening all  Chakras, a feat rarely achieved and often taking multiple lifetimes. Gurudev, uniquely born with all Chakras awakened, is among the few saints to attain such a divine consciousness. Unlike other sages who retreat from society, he uses his spiritual prowess to ease human suffering and enhance our inner peace and happiness. Additionally, he empowers us to navigate life's challenges with strength, helping us to settle our karmic debts.",
     itemIndex: 1,
@@ -53,7 +54,7 @@ const theSaintData = [
     id: "asht_siddhi's_&_nav_nidhis",
     index: 2,
     img: theSaintImage3,
-    tagline: "Sri SiddhGuru",
+    tagline: "Saint",
     title: "Siddhis",
     text: "SiddhGuru acquired all  Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to SiddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
     itemIndex: 2,
@@ -77,6 +78,15 @@ const theSaintData = [
     // conclution:
     //   "Gurudev has always practised these Vedic powers for the protection of others and will continue to do so.",
   },
+  {
+    id: "brahma_shakti",
+    index: 3,
+    img: brahmaShaktiImg,
+    tagline: "Saint",
+    title: "Brahma Shakti",
+    text: "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+    itemIndex: 3,
+  },
   // {
   //   id: "mission",
   //   index: 3,
@@ -91,51 +101,51 @@ const visionData = [
   {
     id: "anant_diksha",
     img: image1,
-    tagline: "Mission",
+    tagline: "Vision",
     title: "Vision",
     text: "Sri SiddhGuru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. SiddhGuru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
-    itemIndex: 3,
+    itemIndex: 4,
     // text2:
     //   "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes SiddhGuru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
   },
   {
     id: "siddhasana",
     img: image2,
-    tagline: "Mission",
+    tagline: "Vision",
     title: "Siddhasana",
     text: "Siddhasana is a unique life-changing experience, focusing on self-discovery and reconnecting with your true self in silence. This retreat is structured into seven levels, each designed to help calm and focus your mind, leading to a more conscious and fulfilling life. With activities and guidance tailored to each stage, you'll deeply engage with your inner self. By the end of each level, participants typically feel deep satisfaction and joy, having found a closer connection to their authentic essence.",
-    itemIndex: 4,
+    itemIndex: 5,
   },
   {
     id: "ashram",
     img: image3,
-    tagline: "Mission",
+    tagline: "Vision",
     title: "Ashram",
     text: "Discover the serene SiddhGuru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of SiddhGuru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
-    itemIndex: 5,
+    itemIndex: 6,
   },
   {
     id: "world_spiritual_forum",
     img: image4,
-    tagline: "Mission",
+    tagline: "Vision",
     title: "World Spiritual Forum",
     text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
-    itemIndex: 6,
+    itemIndex: 7,
   },
 ];
 const wisdomData = [
   {
     // id: "anant_diksha",
     img: wisdomImage1,
-    tagline: "Core Wisdom",
+    tagline: "Wisdom",
     title: "Wisdom",
     text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhytmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
-    itemIndex: 7,
+    itemIndex: 8,
   },
   {
     // id: "anant_diksha",
     img: wisdomImage2,
-    tagline: "Core Wisdom",
+    tagline: "Wisdom",
     title: "Spiritual Wisdom",
     text: "Happy moment – praise God; difficult moment – seek God; painful moment – trust God; every moment – thank God.",
     text2: "When our fate closes all doors, our faith opens new doors.",
@@ -146,13 +156,13 @@ const wisdomData = [
     text5:
       "Man with intelligence has many questions; the man with surrender has all the answers.",
     text6: "Man cannot do God's work. God can but will not do man's work.",
-    itemIndex: 8,
+    itemIndex: 9,
   },
   {
     // id: "anant_diksha",
     img: wisdomImage3,
     title: "Social Wisdom",
-    tagline: "Core Wisdom",
+    tagline: "Wisdom",
     text: "Service to humanity is the best work of life.",
     text2:
       "We understand less, explain more, and hence get entangled more and sorted less.",
@@ -161,12 +171,12 @@ const wisdomData = [
       "It is not important what you leave for your children. It is important what you leave in them.",
     text5:
       "Your life will serve in two ways – either as an example for others or as a warning for others.",
-    itemIndex: 9,
+    itemIndex: 10,
   },
   {
     // id: "anant_diksha",
     img: wisdomImage4,
-    tagline: "Core Wisdom",
+    tagline: "Wisdom",
     title: "Professional Wisdom",
     text: "For Success in life, you need a combination of intelligence, hard work, focus, timing, and even luck.",
     text2:
@@ -174,19 +184,19 @@ const wisdomData = [
     text3: "Try and fail, but never fail to try.",
     text4:
       "Experience is not what happened to you. It is what you do with what happened to you.",
-    itemIndex: 10,
-  },
-];
-const brahmaShaktiData = [
-  {
-    // id: "anant_diksha",
-    img: wisdomImage1,
-    tagline: "Brahma Shakti",
-    title: "Brahma Shakti",
-    text: "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
     itemIndex: 11,
   },
 ];
+// const brahmaShaktiData = [
+//   {
+//     // id: "anant_diksha",
+//     img: wisdomImage1,
+//     tagline: "Brahma Shakti",
+//     title: "Brahma Shakti",
+//     text: "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+//     itemIndex: 11,
+//   },
+// ];
 
 const tabData1 = [
   {
@@ -407,7 +417,7 @@ const TabSectionNew = () => {
               <img src={mainTabImage1} alt="mainTabMobile" />
               {/* <video src={video1} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">
-                Sri SiddhGuru
+                Saint
               </div>
             </div>
             {tabContent1Mobile && (
@@ -439,7 +449,7 @@ const TabSectionNew = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage2} alt="mainTabMobile" />
               {/* <video src={video2} autoPlay loop muted></video> */}
-              <div className="tabSection_mobile_wrapper_tab_text">Mission</div>
+              <div className="tabSection_mobile_wrapper_tab_text">Vision</div>
             </div>
             {tabContent2Mobile === true && (
               <div className="mobileTab2">
@@ -497,10 +507,9 @@ const TabSectionNew = () => {
               )}
             </HashLink>
           </div>
-          <div className="tabSection_mobile_wrapper_tab" id="tab4">
+          {/* <div className="tabSection_mobile_wrapper_tab" id="tab4">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage3} alt="mainTabMobile" />
-              {/* <video src={video3} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text ">
                 Brahm Shakti
               </div>
@@ -529,7 +538,7 @@ const TabSectionNew = () => {
                 <img src={arrow} alt="arrow" />
               )}
             </HashLink>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

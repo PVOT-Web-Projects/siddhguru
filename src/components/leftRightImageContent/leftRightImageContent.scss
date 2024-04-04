@@ -6,6 +6,7 @@
   &:nth-child(odd) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -16,6 +17,7 @@
   &:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 
     @media (max-width: 767px) {
       flex-direction: column;
@@ -24,7 +26,7 @@
   }
 
   &_image {
-    width: 50%;
+    width: 45%;
 
     @media (max-width: 767px) {
       width: 100%;
