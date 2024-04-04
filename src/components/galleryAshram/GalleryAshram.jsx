@@ -25,26 +25,26 @@ import closeIcon from "../../images/closeIcon.svg";
 import { useState } from "react";
 
 const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
+  // image1,
+  // image2,
+  // image3,
+  // image4,
+  // image5,
+  // image6,
+  // image7,
   image8,
-  image9,
-  image10,
-  image11,
-  image12,
+  // image9,
+  // image10,
+  // image11,
+  // image12,
   image13,
   image14,
-  image15,
-  image16,
-  image17,
-  image18,
-  image19,
-  image20,
+  // image15,
+  // image16,
+  // image17,
+  // image18,
+  // image19,
+  // image20,
   image21,
 ];
 
@@ -81,11 +81,19 @@ const GalleryAshram = () => {
             className="close"
             onClick={() => handleNext()}
           />
-          <button onClick={() => handleNext("prev-img")} className="prev">
+          <button
+            disabled={data.index === 0 ? true : false}
+            onClick={() => handleNext("prev-img")}
+            className="prev"
+          >
             Previous
           </button>
           <img src={data.img} alt="imagePopup" />
-          <button onClick={() => handleNext("next-img")} className="next">
+          <button
+            disabled={data.index === images.length - 1 ? true : false}
+            onClick={() => handleNext("next-img")}
+            className="next"
+          >
             Next
           </button>
         </div>

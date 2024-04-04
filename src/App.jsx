@@ -168,27 +168,27 @@ function App() {
     }
   }, [videosLoaded, imagesLoaded, isLoading]);
 
-  const handleResize = () => {
-    setWidthCheck(window.innerWidth);
-  };
+  // const handleResize = () => {
+  //   setWidthCheck(window.innerWidth);
+  // };
   // console.log(widthCheck);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    if (widthCheck > 991) {
-      var prevScrollpos = window.pageXOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("hide-header").style.top = "0px";
-        } else {
-          document.getElementById("hide-header").style.top =
-            "-200px"; /* adjust this value to the height of your header */
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    }
-  }, [widthCheck]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   if (widthCheck > 991) {
+  //     var prevScrollpos = window.pageXOffset;
+  //     window.onscroll = function () {
+  //       var currentScrollPos = window.pageYOffset;
+  //       if (prevScrollpos > currentScrollPos) {
+  //         document.getElementById("hide-header").style.top = "0px";
+  //       } else {
+  //         document.getElementById("hide-header").style.top =
+  //           "-200px"; 
+  //       }
+  //       prevScrollpos = currentScrollPos;
+  //     };
+  //   }
+  // }, [widthCheck]);
 
   return (
     <>
