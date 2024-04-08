@@ -8,9 +8,12 @@ import Siddhguru_img from "../../images/lotusGuruImage.jpg";
 import "./formHomePage.scss";
 import FormCommon from "../formCommon/FormCommon";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
+import { useContext } from "react";
+import LanguageContext from "../language/Language";
 
 function FormHomePage() {
   // const text = "कल को आसान बनाने के लिए आज आपको कड़ी मेहनत करनी ही पड़ेगी.";
+  const { language } = useContext(LanguageContext);
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -54,14 +57,22 @@ function FormHomePage() {
       >
         <motion.span className={"mantra_wrapper"} variants={letter}>
           <HeadingTextAnimation
-            heading={"Lift your soul, empower yourself, become divine. "}
+            heading={
+              language === "en"
+                ? "Lift your soul, empower yourself, become divine."
+                : "आत्मोत्थान करो,  ऊर्जावान बनो, और दिव्यता की अनुभूति करो। "
+            }
             fontSize={"39px"}
             justifyContent={"center"}
           />
         </motion.span>
         <motion.span className={"mantra_wrapper"} variants={letter}>
           <HeadingTextAnimation
-            heading={"You are a born victor."}
+            heading={
+              language === "en"
+                ? "You are a born victor."
+                : "आपका जन्म जीतने के लिए ही हुआ है।"
+            }
             fontSize={"39px"}
             justifyContent={"center"}
           />

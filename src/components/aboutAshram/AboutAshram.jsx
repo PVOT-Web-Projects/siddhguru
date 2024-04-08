@@ -1,14 +1,16 @@
 import "./aboutAshram.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
 import gif from "../../images/aboutAshramImage.jpeg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 import Button from "../buttons/button4";
+import LanguageContext from "../language/Language";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
+  const { language } = useContext(LanguageContext);
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -61,7 +63,11 @@ const AboutAshram = () => {
             style={{ marginBottom: "12px" }}
           >
             <HeadingTextAnimation
-              heading={"Join our WhatsApp Channel,"}
+              heading={
+                language === "en"
+                  ? "Join our WhatsApp Channel"
+                  : "हमारे व्हॉट्सऐप चैनल से जुड़ें "
+              }
               fontSize={"26.934px"}
               justifyContent={"center"}
             />
@@ -69,7 +75,9 @@ const AboutAshram = () => {
           <motion.span className={"mantra_wrapper"} variants={letter}>
             <HeadingTextAnimation
               heading={
-                "Experience the miracle of vedic Science with Sri SiddhGuru."
+                language === "en"
+                  ? "Experience the miracle of vedic Science with Sri SiddhGuru."
+                  : "गुरुदेव के मार्गदर्शन में वैदिक विज्ञान की शक्ति को अपने जीवन में उतारें"
               }
               fontSize={"26.934px"}
               justifyContent={"center"}
