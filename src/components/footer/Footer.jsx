@@ -6,8 +6,11 @@ import icon2 from "../../images/facebook_icon.svg";
 import icon3 from "../../images/youtube_icon.svg";
 import icon1 from "../../images/instagram_icon.svg";
 import icon4 from "../../images/twitter.svg";
+import { useContext } from "react";
+import LanguageContext from "../language/Language";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
@@ -23,16 +26,15 @@ const Footer = () => {
         <img className="footer_img" src={footerimg}></img>
       </motion.div>
       <div className="footer_text">
-        <p>Address :</p>
-        Sri Sidheshwar Tirth R.C Road, C. Ramapuram, RC puram Mandalam, Near
-        Tirupati, Andhra Pradesh 517561, India. Call :
-        <a
-          href="tel:91 9866622049"
-        >
-          +91 0986 6622049
-        </a>
-        , <a href="tel:918772247056">+91 0877 2247056</a> | Tele Fax :
-        <a href="tel:918772247059">+91 0877 2247059</a>| Email :
+        <p>{language === "en" ? "Address :" : "पता:"}</p>
+        {language === "en"
+          ? "Sri Sidheshwar Tirth R.C Road, C. Ramapuram, RC puram Mandalam, Near Tirupati, Andhra Pradesh 517561, India. Call :"
+          : "श्री सिद्धेश्वर तीर्थ, ब्रह्मर्षि आश्रम, आर. सी. रोड, सी. रामपुरम, रामचंद्रपुरम मंडलम, तिरुपति के पास, आन्ध्र प्रदेश - 517561, भारत।. फोन:"}
+        <a href="tel:91 9866622049">+91 0986 6622049</a>,{" "}
+        <a href="tel:918772247056">+91 0877 2247056</a> |{" "}
+        {language === "en" ? "Tele Fax :" : "टैली फैक्स : "}
+        <a href="tel:918772247059">+91 0877 2247059</a>|{" "}
+        {language === "en" ? "Email :" : "ई-मेल : "}
         <a href="mailto:contact@sribrahmrishiashram.org">
           contact@sribrahmrishiashram.org
         </a>

@@ -3,9 +3,12 @@ import App from "./App.jsx";
 import "./index.scss";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 import "./fonts/Lohit-Devanagari.ttf";
+import { LanguageProvider } from "./components/language/Language.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <HashRouter>
-    <App />
-  </HashRouter>
+  <LanguageProvider>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </LanguageProvider>
 );

@@ -2,12 +2,14 @@ import EventHomePageItem from "./EventHomePageItem/EventHomePageItem";
 import "./eventsHomePage.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import LanguageContext from "../language/Language";
 
 const EventsHomePage = () => {
   const [events, setEvents] = useState([]);
-  console.log(events);
+  // console.log(events);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     axios
@@ -124,7 +126,9 @@ const EventsHomePage = () => {
             transition={{ duration: 0.9, delay: 0.1 }}
             className="eventSec_second_heading"
           >
-            Upcoming Events with Sri SiddhGuru
+            {language === "en"
+              ? "Upcoming Events with Sri SiddhGuru"
+              : "गुरुदेव के आगामी कार्यक्रम"}
           </motion.div>
           <motion.div
             ref={ref}
@@ -133,8 +137,9 @@ const EventsHomePage = () => {
             transition={{ duration: 0.9, delay: 0.3 }}
             className="eventSec_second_text"
           >
-           {` Stay updated on Sri SiddhGuru's upcoming transformative gatherings
-            and spiritual events.`}
+            {language === "en"
+              ? "Stay updated on Sri SiddhGuru's upcoming transformative gatherings and spiritual events."
+              : "श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] के आध्यात्मिक कार्यक्रमों एवं यात्राओं के बारे में विस्तृत जानकारी यहाँ प्राप्त करें"}
           </motion.div>
           {/* </motion.div> */}
         </div>
