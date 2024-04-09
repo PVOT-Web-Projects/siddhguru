@@ -8,6 +8,8 @@ import image3 from "../../images/Siddhasana_WHY-min.jpg";
 import image4 from "../../images/Siddhasana_WHOM.jpg";
 import image5 from "../../images/how_image.jpeg";
 import "./Siddhasana.scss";
+import { useContext } from "react";
+import LanguageContext from "../../components/language/Language";
 // import bannerImage from "../../images/Siddhasana-D.jpg";
 // import mobilebannerImage from "../../images/Siddhasana-M.jpg";
 // import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
@@ -46,12 +48,14 @@ const SiddhasanaData = [
     //   "The 2-hour sessions are conducted in-person at various conferences, organizations, and universities.",
     text6:
       "Online workshops are also arranged in different parts of the world.",
-      list1bold:"The flagship 7-day residential silence retreat program",
-      list1light:" is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
-      list2bold:"The 3-day international retreats",
-      list2light:"are conducted in different parts of the world.",
-      list3bold:"The 2-hour sessions",
-      list3light:"are conducted in-person at various conferences, organizations, and universities.",
+    list1bold: "The flagship 7-day residential silence retreat program",
+    list1light:
+      " is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
+    list2bold: "The 3-day international retreats",
+    list2light: "are conducted in different parts of the world.",
+    list3bold: "The 2-hour sessions",
+    list3light:
+      "are conducted in-person at various conferences, organizations, and universities.",
   },
   {
     delay: 0.3,
@@ -97,8 +101,94 @@ const SiddhasanaData = [
     list9: "Becoming one with self and nature",
   },
 ];
+const SiddhasanaHindiData = [
+  {
+    delay: 0.1,
+    image: image1,
+    heading: "क्या",
+    text1:
+      "Siddheshwar - The Power of Soul (सिद्धासना) सिद्धगुरु की प्रेरणा से निर्मित प्रमुख जीवनशैली कार्यक्रम (flagship lifestyle program) है जिसमें मौन साधना के ज़रिए लोगों को बाहरी दुनिया से परे स्वयं को पहचानने एवं अपने आप से जुड़ने के ध्येय से निर्मित किया गया है।",
+    text2:
+      'सिद्धसना एक जागृति की यात्रा है जिसकी आधार-शिला "मौन (silence)" है। यह एक आवासीय (residential) प्रोग्राम है जिसकी रूप-रेखा आपकी जीवन चेतना के स्तर को अचेतन (subconscious) से पूर्ण चेतना की ओर ले जाने के लिए निर्धारित की गई है।',
+    text3:
+      " यह प्रोग्राम 7 चरणों में विभाजित किया गया है जिसके तहत लोगों के अनियंत्रित और विचलित मन को पूर्णता की ओर एक कदम आगे बढ़ाने के लिए बड़ी सावधानी से हर एक चरण की रचना की गई है।",
+    text4:
+      "हर चरण के अपने लक्ष्य हैं, गतिविधियां हैं और मार्गदर्शिकाएं हैं। हर चरण के समापन पर प्रतिभागियों को अधिक संतुष्टि तथा परमानन्द की अनुभूति होती है।",
+    text5:
+      "सूचना: सिद्धासना एक निःशुल्क प्रोग्राम है जिसकी परिकल्पना एवं परिचालन सिर्फ और सिर्फ गुरुभक्तों की श्रद्धा व् प्रतिबद्धता से होता है। भारत में इस आवासीय प्रोग्राम में हिस्सा लेने के लिए कोई भी शुल्क नहीं लिया जाता।",
+  },
+  {
+    delay: 0.2,
+    image: image2,
+    heading: "कहाँ और कब",
+    text1:
+      "Siddheshwar - The Power of Soul (सिद्धासना) प्रोग्राम कुछ इस तरह आयोजित किए जाते हैं:",
+    text2:
+      " फ्लैगशिप आवासीय लाइफस्टाइल रिट्रीट तिरुमाला पर्वतमाला की सुरम्य पहाड़ियों में स्थित श्री सिद्धेश्वर तीर्थ के शांत, आरोग्यवर्धक और पावन वातावरण में आयोजित किया जाता है।",
+    // text3:
+    //   "The flagship 7-day residential silence retreat program is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
+    // text4:
+    //   "The 3-day international retreats are conducted in different parts of the world.",
+    // text5:
+    //   "The 2-hour sessions are conducted in-person at various conferences, organizations, and universities.",
+    text6:
+      "दुनियाभर में उपलब्ध ऑनलाइन वर्कशॉप के साथ साथ भारत में हर माह सिद्धासना आवासीय रिट्रीट का आयोजन किया जाता है।",
+    // list1bold: "The flagship 7-day residential silence retreat program",
+    list1light:
+      "दुनियाभर में उपलब्ध ऑनलाइन वर्कशॉप के साथ साथ भारत में हर माह सिद्धासना आवासीय रिट्रीट का आयोजन किया जाता है।",
+    list2bold: "तीन दिवसीय अंतर्राष्ट्रीय रिट्रीट ",
+    list2light: "दुनिया के अलग अलग भागों में आयोजित किया जाता है।",
+    list3bold: "विभिन्न कॉन्फरेंस, सम्मेलन,",
+    list3light:
+      " सभाओं एवं विश्वविद्यालयों में दो घंटे के सेशन्स आयोजित किये जाते हैं।",
+  },
+  {
+    delay: 0.3,
+    image: image3,
+    heading: "क्यों",
+    text1:
+      " तनाव, चिंता, क्रोध, भय, पछतावा, आघात, उदासी और अकेलापन - यह सब हमें अंदर से ख़ुशी, शांति और प्रेम की अनुभूति करने से रोकते हैं।",
+    text2:
+      "स्वयं को अधिक ऊर्जावान बनाते हुए अपनी कुंठाओं से मुक्त हो कर अपना जीवन जी सकें इस हेतु Siddheshwar",
+    text3:
+      "The Power of Soul (सिद्धासना) हर कदम पर आपका मार्गदर्शन करता है।",
+    text4:
+      "हमारा मानना है कि तनाव, चिंता, इत्यादि आपकी आत्मा के ऊर्जास्तर में हो रही कमी का लक्षण है। वैज्ञानिक प्रक्रियाओं पर आधारित उपचारों द्वारा सिद्धासना आपकी आत्मा की ऊर्जा को उच्च स्तर पर पहुंचाता है।",
+    text5: "अहिंसक बनो – जीयो और जीने दो - इसी सोच के साथ यह प्रोग्राम आपको अधिक स्वस्थ बनाता है और आपको अपने श्रेष्ठत्तम रूप तक पहुँचने की शक्ति प्रदान करता है।",
+    text6:
+      "This program enhances your overall health and empowers you to become the BEST VERSION OF YOURSELF.",
+  },
+  {
+    delay: 0.4,
+    image: image4,
+    heading: "कौन",
+    text1:
+      "Siddheshwar - The Power of Soul “Siddhasana” program is perfectly suitable for school & university teachers, parents, doctors, engineers, doctors, IAS & Govt. Officials, lawyers & judges, entrepreneurs,  homemakers, working professionals, executives and CXO corporate leaders.",
+    text2: "सिद्धासना रिट्रीट 25 वर्ष से अधिक उम्र के सभी लोगों के लिए उपलब्ध है।",
+    text3:
+      "सिद्धासना वर्कशॉप वयस्कों के साथ साथ 14 वर्ष से अधिक उम्र वाले बच्चों के लिए उपलब्ध है।",
+    text4: "आईये मौन के सद्गुणों को अपनाने में थोड़ा समय दें और अपने आप को खोजें।",
+  },
+  {
+    delay: 0.6,
+    image: image5,
+    heading: "HOW",
+    text1:
+      "The 7-day residential program and 3-day international program of Siddheshwar - The Power of Soul “Siddhasana” - are meticulously crafted with an eye towards re-awakening and re-balancing the essential parts of the body, mind, and soul, through the unique blend of carefully constructed programs.",
+    list1: "Rhythmic and expressive therapies",
+    list2: "Full body exercises",
+    list3: "Various natural therapies",
+    list4: "Balancing the 5 elements of the human body",
+    list5: "Mindful activities",
+    list6: "Siddheshwar Yoga, pranayama, and meditation",
+    list7: "Breathing techniques",
+    list8: "Satvic food",
+    list9: "Becoming one with self and nature",
+  },
+];
 
 const Siddhasana = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="Siddhasana">
       {/* <InnerPageCommonHeading
@@ -138,9 +228,11 @@ const Siddhasana = () => {
         </div>
       </div> */}
       <div className="siddhasana_wrapper">
-        {SiddhasanaData.map((item, index) => (
-          <SiddhasanaItem key={index} {...item} />
-        ))}
+        {(language === "en" ? SiddhasanaData : SiddhasanaHindiData).map(
+          (item, index) => (
+            <SiddhasanaItem key={index} {...item} />
+          )
+        )}
       </div>
       <div className="border"></div>
       <WeAreHere />

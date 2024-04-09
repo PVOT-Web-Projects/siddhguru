@@ -1,13 +1,14 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
+import PropTypes from "prop-types";
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
-  console.log("tablanguage: ", language);
-
+  
   const switchLanguage = (newLanguage) => {
-    setLanguage(newLanguage);
+    localStorage.setItem("language",newLanguage)
+    setLanguage(localStorage.getItem("language"));
   };
 
   return (
@@ -25,3 +26,7 @@ export const LanguageProvider = ({ children }) => {
 // };
 
 export default LanguageContext;
+
+LanguageProvider.propTypes = {
+  children: PropTypes.any,
+};

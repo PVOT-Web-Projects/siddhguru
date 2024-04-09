@@ -4,29 +4,9 @@ import icon2 from "../../../images/facebook_icon.svg";
 import icon3 from "../../../images/youtube_icon.svg";
 import icon1 from "../../../images/instagram_icon.svg";
 import icon4 from "../../../images/twitter.svg";
-// import  { useLanguage } from "../../language/Language";
-import { useContext } from "react";
-import LanguageContext from "../../language/Language";
 
 const TopNavbar = () => {
-  const { language, switchLanguage } = useContext(LanguageContext);
-
-  console.log("context", language);
-  const changeHindiLanguage = () => {
-    switchLanguage("hindi");
-  };
-  const changeEnLanguage = () => {
-    switchLanguage("en");
-  };
-
-  // const languageCtx = useContext(LanguageContext)
-
-  // const en = languageCtx.languageEnOption("en");
-  // const hindi = languageCtx.languageHnOption("hindi");
-  // console.log("en", en);
-  // console.log("hindi", hindi);
-
-  // console.log("language", language);
+  
   return (
     <div className="topNavbar" id="hide-topNav">
       <div className="topNavbar_container">
@@ -88,20 +68,6 @@ const TopNavbar = () => {
             </li> */}
           </ul>
         </div>
-      <div className="multiLanguage">
-        <div
-          className={`lang ${language === "en" ? "active" : null}`}
-          onClick={changeEnLanguage}
-        >
-          En
-        </div>
-        <div
-          className={`lang ${language === "hindi" ? "active" : null}`}
-          onClick={changeHindiLanguage}
-        >
-          Hn
-        </div>
-      </div>
       </div>
     </div>
   );

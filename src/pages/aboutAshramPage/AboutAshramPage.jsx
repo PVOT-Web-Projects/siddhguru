@@ -46,6 +46,8 @@ const AboutAshramPage = () => {
         }
         bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
+        hindiBigText={"आत्मजागृति के लिए पधारें"}
+        hindiBigText2={"श्री ब्रह्मर्षि आश्रम: जहाँ परिवर्तन की शुरुआत होती है"}
       />
       <InnerPageCommonText
         boldText={
@@ -60,9 +62,18 @@ const AboutAshramPage = () => {
         text3={
           "The sanctity of this place has touched countless souls, offering profound experiences of Sri Gurudev's divine grace."
         }
-        // text3={
-        //   "Embrace yourself in worship and the Guru's blessings with Trimukha Ganesh Mandir, Shree Laksmi Narayan Mandir, and Shree Brahmeshwar Parshavnath Jeeravala. Swarn Jain Mandir, Shree Brahmeshwar Mahadev, Shree Dhyan Mandir, Mata Hall, Dhyan Kendra, Gaushala, and a unique energy centre."
-        // }
+        hindiBoldText={
+          "भारत में तिरुपति के नज़दीक स्थित श्री सिद्धेश्वर तीर्थ - श्री ब्रह्मर्षि आश्रम"
+        }
+        hindiText1={
+          "आध्यात्मिक चेतना से भरा एक अनोखा तीर्थस्थान है जहाँ हर साल, दुनियाभर से लाखों  भक्त और तीर्थयात्री पधारते हैं। श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] की तपस्या एवं दिव्य ऊर्जा से पावन हुई इस पवित्र धरा पर प्रति वर्ष श्रावण महोत्सव, नवरात्री और महाशिवरात्रि जैसे कई उत्सव धाम-धूम से मनाए जाते हैं।"
+        }
+        hindiText2={
+          "साथ ही, श्री ब्रह्मर्षि आश्रम में ही तीन दिन और सात दिन तक चलने वाले निः शुल्क सिद्धसना रिट्रीट का आयोजन किया जाता है जिसमें दुनियाभर से स्वयं की खोज में निकले लोग हिस्सा लेते हैं और वह यहाँ से शाश्वत आध्यात्मिक ज्ञान और परम तत्त्व की अनुभूति में लीन हो कर लौटते हैं। भारतवर्ष की पुण्यभूमि पर स्थापित यह तीर्थक्षेत्र प्राकृतिक रूप से ही आध्यात्मिक ऊर्जा से परिपूर्ण हैI यह भूमि आत्मोथान एवं परमज्ञान की अभिलाषा लिए आने वाले सभी लोगों के लिए एक आस्था का केंद्र है।"
+        }
+        hindiText3={
+          "इस जगह की पवित्रता ने अनगिनत लोगों की आत्माओं को छुआ है, उन्हें ऊर्जा दी है और गुरुदेव का आशीर्वाद पाने का मौका दिया है।"
+        }
       />
       {/* <HeadingTextAnimation
         heading={
@@ -95,6 +106,10 @@ const AboutAshramPage = () => {
         heading={"Gaushala"}
         content={
           '"Cows are special in Hindu culture, symbolizing purity, abundance, and gentleness. At Sidheshwar Tirth, Brahmrishi Ashram, we deeply respect and cherish these sacred animals, recognizing their significance in our spiritual traditions. Through our Gaushala, we provide a nurturing environment to many cows who are valued and cared for with compassion."'
+        }
+        hindiHeading={"गौशाला"}
+        hindiContent={
+          "पवित्रता, विपुलता और सौजन्यता के स्वरुप गौमाता को भारतीय संस्कृति में एक विशेष स्थान दिया गया है। हमारी आध्यात्मिक परंपराओं में उनके महत्व को समझते हुए श्री सिद्धेश्वर तीर्थ - श्री ब्रह्मर्षि आश्रम में हम इन पवित्र जीवात्माओं का सम्मान करते हैं और उनके अस्तित्व का उत्सव मनाते हैं। हमारी गौशाला द्वारा, हम अनेक गौमाता को एक सुरक्षित निवासस्थान प्रदान करते हैं, उनकी सेवा करते हैं तथा उनकी पूजा करते हैं।"
         }
         // image1={gaushalaImage1}
         image2={gaushalaImage2}

@@ -18,7 +18,8 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import LanguageContext from "../../language/Language";
 // import Logo from "../logo/Logo";
 
 const Menu = () => {
@@ -30,6 +31,15 @@ const Menu = () => {
   // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [showSubMenu2, setShowSubMenu2] = useState(false);
   const [offcanvasVisible, setOffcanvasVisible] = useState(false);
+  const { language, switchLanguage } = useContext(LanguageContext);
+
+  console.log("context", language);
+  const changeHindiLanguage = () => {
+    switchLanguage("hindi");
+  };
+  const changeEnLanguage = () => {
+    switchLanguage("en");
+  };
 
   const toggleBtn = () => {
     setOffcanvasVisible(!offcanvasVisible);
@@ -235,6 +245,26 @@ const Menu = () => {
               Contact
             </Link>
           </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="multiLanguage"
+          >
+            <div
+              className={`lang ${language === "en" ? "active" : null}`}
+              onClick={changeEnLanguage}
+            >
+              En
+            </div>
+            <div
+              className={`lang ${language === "hindi" ? "active" : null}`}
+              onClick={changeHindiLanguage}
+            >
+              Hn
+            </div>
+          </motion.div>
         </Nav>
 
         {/* mobile design */}
@@ -252,8 +282,22 @@ const Menu = () => {
           onHide={handleOffcanvasHide}
         >
           <Offcanvas.Header closeButton>
-            {/* <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title> */}
+            <div className="multiLanguage" onClick={() => setOffcanvasVisible(false)}>
+              <div
+                className={`lang ${language === "en" ? "active" : null}`}
+                onClick={changeEnLanguage}
+              >
+                En
+              </div>
+              <div
+                className={`lang ${language === "hindi" ? "active" : null}`}
+                onClick={changeHindiLanguage}
+              >
+                Hn
+              </div>
+            </div>
           </Offcanvas.Header>
+
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               {/* <Link

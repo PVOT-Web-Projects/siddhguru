@@ -16,7 +16,7 @@ import wisdomImage3 from "../../images/socialWisdom.jpeg";
 import wisdomImage4 from "../../images/professionalWisdom.jpeg";
 import brahmaShaktiImg from "../../images/brahmaShaktiTab.png";
 import "./tabSectionNew.scss";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import LeftRIghtImageContent from "../leftRightImageContent/LeftRightImageContent";
 import { HashLink } from "react-router-hash-link";
 import arrow from "../../images/downArrow.svg";
@@ -24,6 +24,7 @@ import arrow from "../../images/downArrow.svg";
 // import video2 from "../../images/tab2Image2.mp4";
 // import video3 from "../../images/tab3Image2.mp4";
 import BigHeadingSmallHeading from "../bigHeadingSmallHeading/BigHeadingSmallHeading";
+import LanguageContext from "../language/Language";
 
 const theSaintData = [
   {
@@ -97,6 +98,53 @@ const theSaintData = [
   //     "SiddhGuru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where SiddhGuru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. SiddhGuru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
   // },
 ];
+const theSaintHindiData = [
+  {
+    id: "life_of_nutshell",
+    index: 0,
+    img: theSaintImage1,
+    tagline: "श्री सिद्धगुरु",
+    title: "श्री सिद्धगुरु",
+    text: "प्रेम, करुणा, विनम्रता, और सादगी की मूरत श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] आज के ज़माने के परम पूजनीय संत-महात्माओं में से एक हैं। वह भारत की सबसे पुरातन संन्यासी प्रथा से जुड़े हुए हैं और विश्वस्तर पर भारतीय संस्कृति को आज आगे बढ़ा रहे हैं। अपनी कुंडलिनी को जागृत कर अष्ट सिद्धि एवं नव निधियों पर विजय प्राप्त कर चुके श्री सिद्धगुरु आध्यात्मिक जागरण की अलख जगाने के लिए हम सब के बीच आए हैं। उनके साथ एक आध्यात्मिक नाता जोड़ कर आप अपने जीवन में सुख और शांति का ऐसा अनुभव प्राप्त कर सकते हैं जो शायद आज आपकी सोच से परे हो। यह संभव है क्योंकि गुरुदेव के पास है - समय की सीमा के परे जा कर आपके जीवन को संवारने की अदभुत शक्तियां।",
+    itemIndex: 0,
+  },
+  {
+    id: "kundalini",
+    index: 1,
+    img: theSaintImage2,
+    tagline: "श्री सिद्धगुरु",
+    title: "कुंडलिनी",
+    text: "कुंडलिनी हमारे शरीर के अंदर छिपी एक आध्यात्मिक ऊर्जा है जो अपने सर्वोच्च स्तर पर तब पहुंचती है जब सभी चक्रों को जागृत किया जाए। यह एक ऐसी उपलब्धि है जिसे प्राप्त करने में एक आत्मा को कई जन्म लग जाते हैं और फिर भी उसे प्राप्त करना लगभग असंभव होता है। अद्भुत दिव्य चेतना के स्वामी, श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] उन गिने-चुने सिद्धात्माओं में से एक हैं जिनकी कुंडलिनी एवं सभी चक्र जन्म से ही जागृत थे। अन्य साधकों से अलग सोच के साथ, समाज से दूर जाने के बजाय उन्होंने अपनी दिव्य शक्तियों को मानवता की सेवा में लगाते हुए लोगों के दुःख-दर्द दूर कर उन्हें मन की शांति दिलाने के रास्ते को चुना। साथ ही, जिंदगी की चुनौतियों का सामना करने एवं अपने पिछले जन्म के कर्म बंधनों से मुक्ति पाने में वे हम सब की मदद करते हैं।",
+    itemIndex: 1,
+  },
+  {
+    id: "asht_siddhi's_&_nav_nidhis",
+    index: 2,
+    img: theSaintImage3,
+    tagline: "श्री सिद्धगुरु",
+    title: "सिद्धियां",
+    text: "अपने गुरु श्री देवराहा बाबा के मार्गदर्शन में 17,868 से भी अधिक विधियों में महारथ प्राप्त कर श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] ने सभी आठ सिद्धियां प्राप्त की। तीन सिद्धियों के साथ इस दुनिया में अवतरित हुए गुरुदेव ने देवराहा बाबा की मदद से बाकी की 5 सिद्धियां अगले बारह वर्षों में कठोर तपस्या के द्वारा प्राप्त की। साथ ही, गुरुदेव ने अलौकिक शक्ति प्रदान करने वाली नव निधियों को भी प्राप्त किया। गुरुदेव के सभी भक्त अपने जीवन की कठिन परिस्थितियों में अलग अलग रूपों में उनका साक्षात्कार करने के अनुभवों का वर्णन करते हैं जो गुरुदेव की दिव्य शक्तियाँ, आध्यात्मिक ऊर्जा एवं करुणा के परिचायक है।",
+    itemIndex: 2,
+  },
+  {
+    id: "brahma_shakti",
+    index: 3,
+    img: brahmaShaktiImg,
+    tagline: "श्री सिद्धगुरु",
+    title: "ब्रह्म शक्ति",
+    text: "श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] में समाहित दिव्य शक्ति जो हमारे चैतन्य के स्तर को ऊंचा उठाने और आध्यात्मिक जागृति लाने में मदद करती है - वह है ब्रह्म शक्ति। जब आप ध्यान में बैठते हैं तब आपके तीसरे नेत्र के स्थान पर गुरुदेव अपने ब्रह्म स्पर्श द्वारा दिव्य ऊर्जा की गंगा बहाते हैं। उसी तरह, आपकी आंखों में आँखें मिला कर गुरुदेव ब्रह्म दॄष्टि द्वारा आपकी आत्मा में जागृति लाते हैं और अपनी दिव्य ऊर्जा को भौतिक पदार्थों द्वारा ब्रह्म प्रसाद के ज़रिए गुरुदेव आपके शरीर की रक्षा करते हैं। यह तीन अनुभूतियाँ आपको गुरुदेव के साथ अपने आध्यात्मिक जुड़ाव को और मज़बूत करने में मदद करती हैं और जीवनभर आपका मार्गदर्शन करती हैं।",
+    itemIndex: 3,
+  },
+  // {
+  //   id: "mission",
+  //   index: 3,
+  //   img: theSaintImage4,
+  //   title: "Mission",
+  //   text: "Service to humanity is the best work of life - SiddhGuru",
+  //   descriptiontitle1:
+  //     "SiddhGuru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where SiddhGuru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. SiddhGuru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
+  // },
+];
 const visionData = [
   {
     id: "anant_diksha",
@@ -128,6 +176,40 @@ const visionData = [
     id: "world_spiritual_forum",
     img: image4,
     tagline: "Vision",
+    title: "World Spiritual Forum",
+    text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
+    itemIndex: 7,
+  },
+];
+const visionHindiData = [
+  {
+    id: "anant_diksha",
+    img: image1,
+    tagline: "संकल्प",
+    title: "ध्येय",
+    text: "श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] का ध्येय है - वैदिक विज्ञान में छिपी शक्तियां एवं ज्ञान को सामान्य मानव तक पहुंचाकर उनके जीवन को बेहतर बनाना। वे अपनी ब्रह्म शक्तियों के द्वारा लोगो की चेतना के स्तर को बढ़ाने एवं उनकी क्षमताओं को पहचानने में उनकी सहायता करते हैं जिससे वे जीवन में सुख एवं शांति का अनुभव करते हैं I यह एक ऐसा परिवर्तन होता है जिसकी अनुभूति सामान्य समझ के परे होती है। गुरुदेव का मार्गदर्शन निजी जीवन में विकास के साथ साथ लोगों को एक नैतिक एवं सामाजिक स्तर पर एक साथ जुड़ने के लिए प्रेरित करता है जो अंततः  एक जागृत समाज का निर्माण करता है।",
+    itemIndex: 4,
+  },
+  {
+    id: "siddhasana",
+    img: image2,
+    tagline: "संकल्प",
+    title: "सिद्धासना",
+    text: "सिद्धासना एक अद्वितीय, दैविक (divine) अनुभव है जिसमें मौन के द्वारा अपनी अंतरात्मा को खोजने एवं उससे जुड़ने पर ध्यान केंद्रित किया जाता है। यह रिट्रीट सात अलग अलग चरणों में विभाजित किया गया है जिसका हर एक चरण आपको एकाग्रता और शांतचित्तता देने के साथ साथ एक जीवन अधिक चैतन्यमय व् सार्थक करने में मदद करता है। हर चरण के लिए निर्धारित प्रक्रियाओं तथा मार्गदर्शन द्वारा आप अपनेआप से एक अधिक गहरा नाता जोड़ पाएंगे। हर चरण के अंत में आप खुद को और भी अच्छे तरीके से जान पाएंगे और एक परमानन्द की अनुभूति कर पाएंगे।",
+    itemIndex: 5,
+  },
+  {
+    id: "ashram",
+    img: image3,
+    tagline: "संकल्प",
+    title: "आश्रम",
+    text: "तिरुमला की पवित्र पर्वतमाला में तिरुपति शहर के पास स्थित है श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] का दिव्य और भव्य आश्रम। यह एक आध्यात्मिक तपोभूमि है जहाँ पर आप प्रतिदिन की भागदौड़ से मुक्ति के साथ साथ असीम शांति और पावन ऊर्जा का अनुभव कर पाएंगे। यहाँ के कण-कण में आपको गुरुदेव की ज्ञानसरिता बहती मिलेगी और क्षण-क्षण में नवीन ऊर्जा का संचार पाएंगे।",
+    itemIndex: 6,
+  },
+  {
+    id: "world_spiritual_forum",
+    img: image4,
+    tagline: "संकल्प",
     title: "World Spiritual Forum",
     text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
     itemIndex: 7,
@@ -184,6 +266,57 @@ const wisdomData = [
     text3: "Try and fail, but never fail to try.",
     text4:
       "Experience is not what happened to you. It is what you do with what happened to you.",
+    itemIndex: 11,
+  },
+];
+const wisdomHindiData = [
+  {
+    img: wisdomImage1,
+    title: "विचारधारा",
+    tagline: "ज्ञान",
+    text: "श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] हर व्यक्ति को जीवन में आध्यात्मिकता एवं आधुनिकता में एक संतुलित समन्वय लाने पर महत्त्व देते हैं। गुरुदेव सभी को जीवन के इन तीन चरणों में सर्वोच्च सिद्धि प्राप्त करने के लिए प्रेरित करते हैं - ज्ञान अर्जन, उपार्जन और दान अर्थात समाज को लौटाना, क्योंकि मानवता की सेवा ही सबसे महान कर्म है। गुरुदेव न सिर्फ अपने शब्दों से यह बात समझाते हैं बल्कि हैं वे अपनी दिव्य शक्तिओं के द्वारा सभी के जीवन में एक सकारात्मक बदलाव लाने में भी मदद करते हैं।",
+    itemIndex: 8,
+  },
+  {
+    img: wisdomImage2,
+    tagline: "विचारधारा",
+    title: "आध्यात्मिक ज्ञान",
+    text: " खुशी में - प्रभु को भजो; कठिन समय में - प्रभु को ढूंढो; दुःख  में - प्रभु पर भरोसा रखो; हर समय - प्रभु का धन्यवाद करो।",
+    text2: "जब भाग्य सभी दरवाज़े बंद कर देता है, भक्ति नये दरवाज़े खोल देती है।",
+    text3:
+      "हमारा जीवन भगवान का दिया हुआ 'गिफ़्ट' है। हम इस जीवन को कैसे जीते हैं वह हमारी तरफ से भगवान के लिए 'रिटर्न गिफ्ट' है।",
+    text4:
+      "सवाल यह नहीं है कि भगवान कितने शक्तिशाली है, सवाल यह है कि हमारी आस्था कितनी शक्तिशाली है।",
+    text5:
+      "बुद्धिजीवी के पास कई सवाल होते है परंतु समर्पण की भावना वाले व्यक्ति के पास सारे जवाब होते हैं।",
+    text6:
+      "भगवान का काम मनुष्य नहीं कर सकता; मनुष्य का काम भगवान कर सकते हैं, पर नहीं करते हैं क्योंकि हमारे कर्म हमें ही करने होते हैं।",
+    itemIndex: 9,
+  },
+  {
+    img: wisdomImage3,
+    tagline: "विचारधारा",
+    title: "सामाजिक ज्ञान",
+    text: "मानवता की सेवा ही सबसे महान कर्म है।",
+    text2:
+      "हम समझते कम और समझाते ज़्यादा हैं, इसीलिए हम सुलझते कम और उलझते ज़्यादा हैं।",
+    text3: "अगर दूसरों के काम नहीं आओगे तो समाज आपको सम्मान नहीं देगा।",
+    text4:
+      "यह महत्वपूर्ण नहीं है की आप अपने बच्चों के लिए क्या छोड़ कर जाते हो। महत्वपूर्ण यह है की आप उनके अंदर क्या छोड़ कर जाते हो।",
+    text5:
+      "आपका जीवन दो तरीकों से किसी के काम आ सकता है - या तो एक उदहारण के रूप में या फिर एक चेतावनी के रूप में।",
+    itemIndex: 10,
+  },
+  {
+    img: wisdomImage4,
+    tagline: "विचारधारा",
+    title: "व्यावसायिक ज्ञान",
+    text: "जीवन में सफलता के लिए इन सब का समन्वय ज़रूरी है - बुद्धिमत्ता, कठोर परिश्रम, ध्यान, समयबद्धता और भाग्य।",
+    text2:
+      "सफलता ऐसी बड़ी चीज़ों पर आधारित होती है जो अधिक समय लेती है; खुशियां ऐसी छोटी चीज़ों पर आधारित होती है जो कम समय लेती है।",
+    text3: "प्रयत्न कर के चूक जाओ तो चलेगा परंतु प्रयत्न करने से कभी मत चूको।",
+    text4:
+      "आपके साथ क्या हुआ वह 'अनुभव' नहीं है; जो हुआ उससे आपने क्या सीखा - वह असली 'अनुभव' है।",
     itemIndex: 11,
   },
 ];
@@ -256,6 +389,7 @@ const TabSectionNew = () => {
   const [tabContent2Mobile, setTabContent2Mobile] = useState(false);
   const [tabContent3Mobile, setTabContent3Mobile] = useState(false);
   const [tabContent4Mobile, setTabContent4Mobile] = useState(false);
+  const { language } = useContext(LanguageContext);
 
   const handleTab1 = () => {
     setActiveMainTab("tab1");
@@ -417,19 +551,21 @@ const TabSectionNew = () => {
               <img src={mainTabImage1} alt="mainTabMobile" />
               {/* <video src={video1} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">
-                Saint
+                {language === "en" ? "Saint" : "श्री सिद्धगुरु"}
               </div>
             </div>
             {tabContent1Mobile && (
               <div className="mobileTab1">
-                {theSaintData.map((item, index) => (
-                  <LeftRIghtImageContent
-                    key={index}
-                    {...item}
-                    index={index}
-                    titleColor={"#1D5A3F"}
-                  />
-                ))}
+                {(language === "en" ? theSaintData : theSaintHindiData).map(
+                  (item, index) => (
+                    <LeftRIghtImageContent
+                      key={index}
+                      {...item}
+                      index={index}
+                      titleColor={"#1D5A3F"}
+                    />
+                  )
+                )}
               </div>
             )}
             <HashLink
@@ -449,18 +585,22 @@ const TabSectionNew = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage2} alt="mainTabMobile" />
               {/* <video src={video2} autoPlay loop muted></video> */}
-              <div className="tabSection_mobile_wrapper_tab_text">Vision</div>
+              <div className="tabSection_mobile_wrapper_tab_text">
+                {language === "en" ? "Vision" : "संकल्प"}
+              </div>
             </div>
             {tabContent2Mobile === true && (
               <div className="mobileTab2">
-                {visionData.map((item, index) => (
-                  <LeftRIghtImageContent
-                    key={index}
-                    {...item}
-                    index={index}
-                    titleColor={"#1D5A3F"}
-                  />
-                ))}
+                {(language === "en" ? visionData : visionHindiData).map(
+                  (item, index) => (
+                    <LeftRIghtImageContent
+                      key={index}
+                      {...item}
+                      index={index}
+                      titleColor={"#1D5A3F"}
+                    />
+                  )
+                )}
               </div>
             )}
             <HashLink
@@ -480,18 +620,22 @@ const TabSectionNew = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage3} alt="mainTabMobile" />
               {/* <video src={video3} autoPlay loop muted></video> */}
-              <div className="tabSection_mobile_wrapper_tab_text ">Wisdom</div>
+              <div className="tabSection_mobile_wrapper_tab_text ">
+                {language === "en" ? "Wisdom" : "विचारधारा"}
+              </div>
             </div>
             {tabContent3Mobile === true && (
               <div className="mobileTab3">
-                {wisdomData.map((item, index) => (
-                  <LeftRIghtImageContent
-                    key={index}
-                    {...item}
-                    index={index}
-                    titleColor={"#1D5A3F"}
-                  />
-                ))}
+                {(language === "en" ? wisdomData : wisdomHindiData).map(
+                  (item, index) => (
+                    <LeftRIghtImageContent
+                      key={index}
+                      {...item}
+                      index={index}
+                      titleColor={"#1D5A3F"}
+                    />
+                  )
+                )}
               </div>
             )}
             <HashLink

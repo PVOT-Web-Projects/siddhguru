@@ -18,6 +18,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import videoPoster1 from "../../images/arrowImageCircle.svg";
 import EventHomeVideoItem from "../../components/EventsHomePage/eventHomePageItem/EventHomePageVideoItem";
+import { useContext } from "react";
+import LanguageContext from "../../components/language/Language";
 
 const prevEventData = [
   {
@@ -46,11 +48,39 @@ const prevEventData = [
     name: "Gurupurnima 2023",
   },
 ];
+const prevEventHindiData = [
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
+    name: "श्री आनन्द महोत्सव 2024",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=Z-Ch3fGy634",
+    name: "नमस्ते यूरोप 2023",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=BDjD65sTZpM",
+    name: "जन कल्याण महोत्सव 2023",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=8qpZUtUNwiA",
+    name: "सिद्धेश्वर महोत्सव 2023",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/watch?v=1LM4oRJ2y-M",
+    name: "गुरुपूर्णिमा 2023",
+  },
+];
 
 const Events = () => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
+  const { language } = useContext(LanguageContext);
   // const [events, setEvents] = useState([]);
   // const [loading, setLoading] = useState(false);
   // useEffect(() => {
@@ -77,6 +107,9 @@ const Events = () => {
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"
         }
+        hindiBigText={
+          "करें चमत्कारों का साक्षात्कार : गुरुदेव के आगामी कार्यक्रमों की जानकारी प्राप्त करें"
+        }
         overlay={true}
       />
       {/* <InnerPageCommonText
@@ -93,12 +126,14 @@ const Events = () => {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="previousEvent_heading"
         >
-          Previous Events
+          {language == "en" ? "Previous Events" : "पहले के कार्यक्रम"}
         </motion.h2>
         <div className="eventsHomePage_wrapper_previous_wrapper">
-          {prevEventData.map((item, index) => (
-            <EventHomeVideoItem key={index} {...item} />
-          ))}
+          {(language === "en" ? prevEventData : prevEventHindiData).map(
+            (item, index) => (
+              <EventHomeVideoItem key={index} {...item} />
+            )
+          )}
         </div>
       </div>
       {/* <FullWidthImageSec

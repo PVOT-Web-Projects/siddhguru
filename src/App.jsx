@@ -155,17 +155,17 @@ function App() {
     loadImages();
 
     loadVideos();
-    setTimeout(() => {
-      document.body.style.cursor = "smooth";
-      window.scrollTo(0, 0);
-      setIsLoading(false);
-    }, 3000);
-    if (isLoading) {
-      document.body.style.overflow = "hidden";
-    }
-    if (!isLoading) {
-      document.body.style.overflow = "unset";
-    }
+    // setTimeout(() => {
+    //   document.body.style.cursor = "smooth";
+    //   window.scrollTo(0, 0);
+    //   setIsLoading(false);
+    // }, 3000);
+    // if (isLoading) {
+    //   document.body.style.overflow = "hidden";
+    // }
+    // if (!isLoading) {
+    //   document.body.style.overflow = "unset";
+    // }
   }, [videosLoaded, imagesLoaded, isLoading]);
 
   // const handleResize = () => {

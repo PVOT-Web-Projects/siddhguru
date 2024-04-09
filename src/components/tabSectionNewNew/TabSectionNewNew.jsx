@@ -215,8 +215,8 @@ const theSaintHindiData = [
         index: 3,
         img: brahmaShaktiImg,
         tagline: "श्री सिद्धगुरु",
-        title: "Brahma Shakti",
-        text: "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+        title: "ब्रह्म शक्ति",
+        text: "श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] में समाहित दिव्य शक्ति जो हमारे चैतन्य के स्तर को ऊंचा उठाने और आध्यात्मिक जागृति लाने में मदद करती है - वह है ब्रह्म शक्ति। जब आप ध्यान में बैठते हैं तब आपके तीसरे नेत्र के स्थान पर गुरुदेव अपने ब्रह्म स्पर्श द्वारा दिव्य ऊर्जा की गंगा बहाते हैं। उसी तरह, आपकी आंखों में आँखें मिला कर गुरुदेव ब्रह्म दॄष्टि द्वारा आपकी आत्मा में जागृति लाते हैं और अपनी दिव्य ऊर्जा को भौतिक पदार्थों द्वारा ब्रह्म प्रसाद के ज़रिए गुरुदेव आपके शरीर की रक्षा करते हैं। यह तीन अनुभूतियाँ आपको गुरुदेव के साथ अपने आध्यात्मिक जुड़ाव को और मज़बूत करने में मदद करती हैं और जीवनभर आपका मार्गदर्शन करती हैं।",
         itemIndex: 3,
       },
     ],
@@ -396,7 +396,7 @@ const tabHindiData1 = [
     id: 2,
   },
   {
-    title: "Brahma Shakti",
+    title: "ब्रह्म शक्ति",
     id: 3,
   },
 ];
