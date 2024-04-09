@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 // import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 // import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import axios from "axios";
@@ -20,6 +20,7 @@ import fullVideo from "../../images/videcScienceVideo-FyWQQtnN.mp4";
 import fullVideo2 from "../../images/Robert Oppenheimer.mp4";
 // import vedicScienceVideo from "../../images/videcScienceVideo.mp4";
 import posterImage from "../../images/vedicVideoPosert.jpg";
+import LanguageContext from "../../components/language/Language";
 const siddhasanaData = [
   {
     delay: 0.1,
@@ -43,8 +44,31 @@ const siddhasanaData = [
       "Sri Siddhguru is one of the eminent scholars of Sanskrit and Vedic literature in the world. His profound expertise extends across scriptures such as the Vedas, Puranas, Bhagavad Gita, Agamas, and Astrology. Also, he has a deep understanding of the ideologies and philosophies of various faiths - including Jainism, Sikhism, Christianity, Buddhism, and Islam. Sri Siddhguru possesses the unique talent of explaining intricate concepts from the ancient scriptures using a simple language that is accessible to all.",
   },
 ];
-
+const siddhasanaHindiData = [
+  {
+    delay: 0.1,
+    image: image1,
+    heading: "अनुभव करो वैदिक विज्ञान के चमत्कार",
+    text1:
+      "सामान्यतः  हर एक विषयवस्तु में हमेशा ही बुद्धिमत्ता पर ज़्यादा ज़ोर दिया जाता है परंतु वैदिक विज्ञान में चैतन्य को प्राथमिकता दी जाती है। वैदिक विज्ञान के गूढ़ रहस्यों को चैतन्य के सर्वोच्च स्तर पर पहुंच चुके संत ही उजागर कर सकते हैं। अपनी कुंडलिनी के सभी चक्रों के जागृत होने के साथ जन्मे श्री सिद्धेश्वर ब्रह्मर्षि गुरुदेव [तिरुपति] ने गहन अध्ययन एवं कठोर तपस्या द्वारा वैदिक विज्ञान का अद्वितीय ज्ञान प्राप्त किया। उनके उपदेश लोगों को सामान्य बुद्धिमत्ता से ऊपर उठकर जीवन में पूर्णता लाने के लिए प्रेरित करते हैं। सिर्फ ज्ञानप्राप्ति नहीं, गुरुदेव हमेशा लोगों को आध्यात्मिक जागृति की राह दिखाते हैं, अपनी दिव्य ऊर्जा से उनकी चेतना के स्तर को ऊपर उठाते हैं और वैदिक विज्ञान का सार दुनियाभर में फैलाते हैं।",
+  },
+  // {
+  //   delay: 0.2,
+  //   image: image2,
+  //   heading: "Brahma Shakti",
+  //   text1:
+  //     "Brahma Shakti embodies Sri SiddhGuru's divine energy, aimed at elevating our consciousness and awakening our spiritual essence. It manifests itself in different forms. Through Braham Sparsh, he activates a spark of divine energy by touching the third eye while you meditate. Similarly, Brahma Drishti involves a transformative gaze directly into your eyes. Brahma Prasad, a physically energized divine object, offers both protection and energy for soul elevation. These practices deepen our spiritual connection with Sri SiddhGuru, positioning him as a guiding light for enhancing our lives.",
+  // },
+  {
+    delay: 0.2,
+    image: image2,
+    heading: "An Eminent Spiritual Scholar",
+    text1:
+      "Sri Siddhguru is one of the eminent scholars of Sanskrit and Vedic literature in the world. His profound expertise extends across scriptures such as the Vedas, Puranas, Bhagavad Gita, Agamas, and Astrology. Also, he has a deep understanding of the ideologies and philosophies of various faiths - including Jainism, Sikhism, Christianity, Buddhism, and Islam. Sri Siddhguru possesses the unique talent of explaining intricate concepts from the ancient scriptures using a simple language that is accessible to all.",
+  },
+];
 const VedicScience = () => {
+  const { language } = useContext(LanguageContext);
   // const [knowledge, setKnowledge] = useState([]);
   // const [loading, setLoading] = useState(false);
   // useEffect(() => {
@@ -79,9 +103,11 @@ const VedicScience = () => {
         `}
       /> */}
       <div className="vedicScienceWrapper">
-        {siddhasanaData.map((item, index) => (
-          <SiddhasanaItem key={index} {...item} />
-        ))}
+        {(language === "en" ? siddhasanaData : siddhasanaHindiData).map(
+          (item, index) => (
+            <SiddhasanaItem key={index} {...item} />
+          )
+        )}
       </div>
       {/* {loading ? (
         <Spinner />

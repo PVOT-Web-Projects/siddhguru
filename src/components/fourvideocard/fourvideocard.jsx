@@ -11,6 +11,8 @@ import { Player } from "video-react";
 import "./Fourvideocard.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useContext } from "react";
+import LanguageContext from "../language/Language";
 
 // const videoData = [
 //   {
@@ -35,6 +37,7 @@ const Fourvideos = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const { language } = useContext(LanguageContext);
   return (
     <div className="fourVideos" ref={ref}>
       <div className="fourVideos_wrapper">
@@ -59,7 +62,9 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">Mayank Solanki</div>
+          <div className="fourVideoItem_text">
+            {language === "en" ? "Mayank Solanki" : "मयंक सोलंकी"}
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -78,7 +83,9 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">Vladislav Y</div>
+          <div className="fourVideoItem_text">
+            {language === "en" ? "Vladislav Y" : "व्लादिस्लाव वाय"}
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -97,7 +104,7 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">Ramesh Sankhla</div>
+          <div className="fourVideoItem_text">{language === "en" ? "Ramesh Sankhla" : "रमेश सांखला"}</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -116,7 +123,7 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">Ashok Sancheti</div>
+          <div className="fourVideoItem_text">{language === "en" ? "Ashok Sancheti" : "अशोक संचेती"}</div>
         </motion.div>
       </div>
     </div>

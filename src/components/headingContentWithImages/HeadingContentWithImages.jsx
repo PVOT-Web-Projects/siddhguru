@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import "./headingCotnentWithImages.scss";
 import PropTypes from "prop-types";
+import LanguageContext from "../language/Language";
 
 const HeadingContentWithImages = ({
   heading,
@@ -14,15 +16,18 @@ const HeadingContentWithImages = ({
   list4,
   list5,
   list6,
+  hindiHeading,
+  hindiContent,
 }) => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="headingContentWithImagesItem">
       <div className="headingContentWithImagesItem_wrapper">
         <div className="heading">
-          <h3>{heading}</h3>
+          <h3>{language === "en" ? heading : hindiHeading}</h3>
         </div>
         <div className="content">
-          <p>{content}</p>
+          <p>{language === "en" ? content : hindiContent}</p>
         </div>
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
           <div className="list">
@@ -55,4 +60,12 @@ HeadingContentWithImages.propTypes = {
   image2: PropTypes.any,
   image3: PropTypes.any,
   image4: PropTypes.any,
+  list1: PropTypes.string,
+  list2: PropTypes.string,
+  list3: PropTypes.string,
+  list4: PropTypes.string,
+  list5: PropTypes.string,
+  list6: PropTypes.string,
+  hindiHeading: PropTypes.string,
+  hindiContent: PropTypes.string,
 };

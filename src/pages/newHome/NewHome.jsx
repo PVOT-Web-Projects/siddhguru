@@ -30,7 +30,8 @@ const NewHome = () => {
         }
         mobileVideo={
           // "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4"
-          "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833729/rhkym0lc0hcybuyip2q8.mp4"
+          // "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833729/rhkym0lc0hcybuyip2q8.mp4"
+          bannerVideomobile
         }
       />
       {/* <TextSection /> */}
