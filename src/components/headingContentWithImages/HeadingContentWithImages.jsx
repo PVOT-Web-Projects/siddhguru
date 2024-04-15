@@ -6,18 +6,28 @@ import LanguageContext from "../language/Language";
 const HeadingContentWithImages = ({
   heading,
   content,
+  heading1,
+  content1,
   image1,
   image2,
   image3,
   image4,
   list1,
+  list1Hindi,
   list2,
+  list2Hindi,
   list3,
+  list3Hindi,
   list4,
+  list4Hindi,
   list5,
+  list5Hindi,
   list6,
+  list6Hindi,
   hindiHeading,
   hindiContent,
+  hindiHeading1,
+  hindiContent1,
 }) => {
   const { language } = useContext(LanguageContext);
   return (
@@ -29,16 +39,23 @@ const HeadingContentWithImages = ({
         <div className="content">
           <p>{language === "en" ? content : hindiContent}</p>
         </div>
+
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
           <div className="list">
             <ul>
-              {list1 && <li>{list1}</li>}
-              {list2 && <li>{list2}</li>}
-              {list3 && <li>{list3}</li>}
-              {list4 && <li>{list4}</li>}
-              {list5 && <li>{list5}</li>}
-              {list6 && <li>{list6}</li>}
+              {list1 && <li>{language === "en" ? list1 : list1Hindi}</li>}
+              {list2 && <li>{language === "en" ? list2 : list2Hindi}</li>}
+              {list3 && <li>{language === "en" ? list3 : list3Hindi}</li>}
+              {list4 && <li>{language === "en" ? list4 : list4Hindi}</li>}
+              {list5 && <li>{language === "en" ? list5 : list5Hindi}</li>}
+              {list6 && <li>{language === "en" ? list6 : list6Hindi}</li>}
             </ul>
+            <div className="content">
+              <p className="content1">
+                {language === "en" ? heading1 : hindiHeading1}
+              </p>
+              <p>{language === "en" ? content1 : hindiContent1}</p>
+            </div>
           </div>
         )}
         <div className="images">
@@ -56,16 +73,26 @@ export default HeadingContentWithImages;
 HeadingContentWithImages.propTypes = {
   heading: PropTypes.string,
   content: PropTypes.string,
+  heading1: PropTypes.string,
+  content1: PropTypes.string,
   image1: PropTypes.any,
   image2: PropTypes.any,
   image3: PropTypes.any,
   image4: PropTypes.any,
   list1: PropTypes.string,
+  list1Hindi: PropTypes.string,
   list2: PropTypes.string,
+  list2Hindi: PropTypes.string,
   list3: PropTypes.string,
+  list3Hindi: PropTypes.string,
   list4: PropTypes.string,
+  list4Hindi: PropTypes.string,
   list5: PropTypes.string,
+  list5Hindi: PropTypes.string,
   list6: PropTypes.string,
+  list6Hindi: PropTypes.string,
   hindiHeading: PropTypes.string,
   hindiContent: PropTypes.string,
+  hindiHeading1:PropTypes.string,
+  hindiContent1:PropTypes.string,
 };

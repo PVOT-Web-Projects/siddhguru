@@ -35,6 +35,24 @@
         }
       }
     }
+    .content1{
+      padding-top: 1rem;
+      margin: 0 auto;
+      width: 800px;
+      @media (max-width: 1199px) {
+        width: 700px;
+      }
+      @media (max-width: 991px) {
+        width: 600px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
     .content {
       margin: 0 auto 40px;
       width: 800px;

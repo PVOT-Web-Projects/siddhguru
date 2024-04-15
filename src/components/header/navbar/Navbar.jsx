@@ -85,7 +85,7 @@ const Menu = () => {
                 location.pathname === "/" ? "highlight" : ""
               }`}
             >
-              Home
+             {language === "en" ? "Home" : "होम"}
             </Link>
           </motion.div>
           <motion.div
@@ -100,7 +100,8 @@ const Menu = () => {
                 location.pathname === "/vedic-science" ? "highlight" : ""
               }`}
             >
-              Vedic Science
+               {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
+              {/* Vedic Science */}
             </Link>
           </motion.div>
           <motion.div
@@ -115,7 +116,8 @@ const Menu = () => {
                 location.pathname === "/siddhasana" ? "highlight" : ""
               }`}
             >
-              Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
+              {/* Siddhasana */}
             </Link>
           </motion.div>
           <motion.div
@@ -130,7 +132,8 @@ const Menu = () => {
                 location.pathname === "/about-ashram" ? "highlight" : ""
               }`}
             >
-              Ashram
+              {language === "en" ? "Ashram" : "आश्रम"}
+              {/* Ashram */}
             </Link>
           </motion.div>
 
@@ -157,7 +160,8 @@ const Menu = () => {
                 location.pathname === "/events" ? "highlight" : ""
               }`}
             >
-              Events
+              {language === "en" ? "Events" : "कार्यक्रम"}
+              {/* Events */}
             </Link>
           </motion.div>
           <motion.div
@@ -172,7 +176,8 @@ const Menu = () => {
                 location.pathname === "/experience" ? "highlight" : ""
               }`}
             >
-              Experience
+              {language === "en" ? "Experience" : "अनुभव"}
+              {/* Experience */}
             </Link>
           </motion.div>
 
@@ -242,7 +247,8 @@ const Menu = () => {
                 location.pathname === "/contact" ? "highlight" : ""
               }`}
             >
-              Contact
+              {language === "en" ? "Contact" : "संपर्क"}
+              {/* Contact */}
             </Link>
           </motion.div>
           <motion.div
