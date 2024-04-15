@@ -334,28 +334,29 @@ const Menu = () => {
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Home
+               {language === "en" ? "Home" : "होम"}
               </Link>
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Vedic Science
+                 {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
               </Link>
+              
               <Link
                 to="/siddhasana"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
               </Link>
               <Link
                 to="/about-ashram"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Ashram
+                {language === "en" ? "Ashram" : "आश्रम"}
               </Link>
 
               {/* <Link
@@ -370,14 +371,14 @@ const Menu = () => {
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Events
+                {language === "en" ? "Events" : "कार्यक्रम"}
               </Link>
               <Link
                 to="/experience"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Experience
+                 {language === "en" ? "Experience" : "अनुभव"}
               </Link>
               {/* 
               <NavDropdown
@@ -412,12 +413,15 @@ const Menu = () => {
                 </HashLink>
                 <NavDropdown.Divider />
               </NavDropdown> */}
+
+
               <Link
                 to="/contact"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Contact Us
+                 {language === "en" ? "Contact Us" : "संपर्क करें"}
+                {/* Contact Us */}
               </Link>
               {/* <Link
                 to="/news"
@@ -447,7 +451,8 @@ const Menu = () => {
                 onClick={() => setOffcanvasVisible(false)}
                 target="_blank"
               >
-                Register Devotee/Volunteer
+                {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"}
+                {/* Register Devotee/Volunteer */}
               </Link>
               {/* <Link className="mobile_nav_link" href="#">
                 Donate

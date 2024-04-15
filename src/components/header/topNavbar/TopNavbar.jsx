@@ -4,9 +4,10 @@ import icon2 from "../../../images/facebook_icon.svg";
 import icon3 from "../../../images/youtube_icon.svg";
 import icon1 from "../../../images/instagram_icon.svg";
 import icon4 from "../../../images/twitter.svg";
-
+import { useContext } from "react";
+import LanguageContext from "../../language/Language";
 const TopNavbar = () => {
-  
+  const { language } = useContext(LanguageContext);
   return (
     <div className="topNavbar" id="hide-topNav">
       <div className="topNavbar_container">
@@ -60,7 +61,8 @@ const TopNavbar = () => {
                 to="https://app.sribrahmrishiashram.org/devotee/login"
                 target="_blank"
               >
-                Register Devotee/Volunteer
+                 {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"}
+                {/* Register Devotee/Volunteer */}
               </Link>
             </li>
             {/* <li>

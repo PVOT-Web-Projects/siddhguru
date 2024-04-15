@@ -62,7 +62,7 @@ const WeAreHere = () => {
           </li>
         </ul>
         <Button
-          btn_text={"Contact Us"}
+          btn_text={language === "en" ? "Contact Us" : "संपर्क करें"}
           link={"https://app.sribrahmrishiashram.org/devotee/login"}
         />
       </div>

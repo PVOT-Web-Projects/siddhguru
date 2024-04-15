@@ -16,6 +16,7 @@ import TabSectionNew from "../../components/tabSectionNew/TabSectionNew";
 import TabSectionNewNew from "../../components/tabSectionNewNew/TabSectionNewNew";
 import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
 import bannerVideo from "../../images/Website Banner video.mp4";
+import bannerMobileVideo from "../../images/Website_banner_video_hindi.mp4";
 import bannerVideomobile from "../../images/Website_mobile_banner_video.mp4";
 import "./newHome.scss";
 const NewHome = () => {
@@ -23,11 +24,13 @@ const NewHome = () => {
     <>
       {/* <HeroSection /> */}
       <NewHeroSection
-        deskVideo={
+        deskVideoEn={bannerVideo}
+        deskVideoHi={bannerMobileVideo}
+        // deskVideo={
           // "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4"
           // "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833663/rlqouehxtqvpftanwbue.mp4"
-          bannerVideo
-        }
+          // bannerVideo
+        // }
         mobileVideo={
           // "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4"
           // "https://res.cloudinary.com/drzn5vaqq/video/upload/v1707833729/rhkym0lc0hcybuyip2q8.mp4"
