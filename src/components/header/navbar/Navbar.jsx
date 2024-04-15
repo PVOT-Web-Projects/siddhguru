@@ -412,6 +412,8 @@ const Menu = () => {
                 </HashLink>
                 <NavDropdown.Divider />
               </NavDropdown> */}
+
+              
               <Link
                 to="/contact"
                 className="mobile_nav_link"
