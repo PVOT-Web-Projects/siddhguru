@@ -61,8 +61,8 @@ const TopNavbar = () => {
                 to="https://app.sribrahmrishiashram.org/devotee/login"
                 target="_blank"
               >
-                 {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"}
-                {/* Register Devotee/Volunteer */}
+                 {/* {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"} */}
+                Register Devotee/Volunteer
               </Link>
             </li>
             {/* <li>
