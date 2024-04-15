@@ -94,7 +94,9 @@ const VedicScience = () => {
           // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916469/l0bot5kgxhfu5lzmmwk8.jpg"
           bannerImagemobile
         }
+      
         text={"Vedic Science"}
+        hindiText={"वैदिक विज्ञान"}
         // color={"#cf4a2a"}
       />
       {/* <InnerPageCommonText
