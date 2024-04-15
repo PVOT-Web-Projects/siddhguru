@@ -343,6 +343,7 @@ const Menu = () => {
               >
                  {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
               </Link>
+              
               <Link
                 to="/siddhasana"
                 className="mobile_nav_link"
@@ -413,7 +414,7 @@ const Menu = () => {
                 <NavDropdown.Divider />
               </NavDropdown> */}
 
-              
+
               <Link
                 to="/contact"
                 className="mobile_nav_link"
