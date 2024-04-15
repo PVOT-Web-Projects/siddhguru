@@ -124,7 +124,7 @@ const SiddhasanaHindiData = [
     text1:
       "Siddheshwar - The Power of Soul (सिद्धासना) प्रोग्राम कुछ इस तरह आयोजित किए जाते हैं:",
     text2:
-      " फ्लैगशिप आवासीय लाइफस्टाइल रिट्रीट तिरुमाला पर्वतमाला की सुरम्य पहाड़ियों में स्थित श्री सिद्धेश्वर तीर्थ के शांत, आरोग्यवर्धक और पावन वातावरण में आयोजित किया जाता है।",
+      "सिद्धासना निवासीय रिट्रीट भारत में हर महीने आयोजित किए जाते हैं. साथ ही, न्यू यॉर्क, दुबई, जापान, फ्रांस, पुर्तगाल, स्वीडन, लंदन, स्पेन, कनाडा, सिंगापुर, हांगकांग, जॉर्जिया, ऑस्ट्रेलिया, न्यूजीलैंड, नीदरलैंड्स, डेनमार्क, हॉलैंड, थाईलैंड, ब्राजील, मॉरिशस, केन्या, फिजी, और तंजानिया में भी इसके ऑनलाइन/ ऑफलाइन वर्कशॉप आयोजित किये जाते हैं।",
     // text3:
     //   "The flagship 7-day residential silence retreat program is conducted amidst the therapeutic calm ambience surrounded by the beautiful green mountains at the foothills of Tirupati, India at - Sri Siddheshwar Tirth.",
     // text4:
@@ -135,7 +135,7 @@ const SiddhasanaHindiData = [
       "दुनियाभर में उपलब्ध ऑनलाइन वर्कशॉप के साथ साथ भारत में हर माह सिद्धासना आवासीय रिट्रीट का आयोजन किया जाता है।",
     // list1bold: "The flagship 7-day residential silence retreat program",
     list1light:
-      "दुनियाभर में उपलब्ध ऑनलाइन वर्कशॉप के साथ साथ भारत में हर माह सिद्धासना आवासीय रिट्रीट का आयोजन किया जाता है।",
+      "भारत में 7-दिवसीय रेसिडेंशियल साइलेंट रिट्रीट प्रोग्राम का आयोजन तिरुपति की सुंदर और हरीभरी पहाडिओं में स्थित श्री सिद्धेश्वर तीर्थ के शांत और सुरम्य वातावरण में किया जाता है।",
     list2bold: "तीन दिवसीय अंतर्राष्ट्रीय रिट्रीट ",
     list2light: "दुनिया के अलग अलग भागों में आयोजित किया जाता है।",
     list3bold: "विभिन्न कॉन्फरेंस, सम्मेलन,",
@@ -153,17 +153,17 @@ const SiddhasanaHindiData = [
     text3:
       "The Power of Soul (सिद्धासना) हर कदम पर आपका मार्गदर्शन करता है।",
     text4:
-      "हमारा मानना है कि तनाव, चिंता, इत्यादि आपकी आत्मा के ऊर्जास्तर में हो रही कमी का लक्षण है। वैज्ञानिक प्रक्रियाओं पर आधारित उपचारों द्वारा सिद्धासना आपकी आत्मा की ऊर्जा को उच्च स्तर पर पहुंचाता है।",
+      "मौन अपने मन-मस्तिष्क पर प्रभुत्व पाने की दिशा में पहला कदम है क्योंकि वह आपके विचार, शब्दों और कर्मों के अधिक स्पष्टता का बीज बोता है।",
     text5: "अहिंसक बनो – जीयो और जीने दो - इसी सोच के साथ यह प्रोग्राम आपको अधिक स्वस्थ बनाता है और आपको अपने श्रेष्ठत्तम रूप तक पहुँचने की शक्ति प्रदान करता है।",
     text6:
-      "This program enhances your overall health and empowers you to become the BEST VERSION OF YOURSELF.",
+      "अहानिकर बनो - जिओ और जीने दो।",
   },
   {
     delay: 0.4,
     image: image4,
     heading: "कौन",
     text1:
-      "Siddheshwar - The Power of Soul “Siddhasana” program is perfectly suitable for school & university teachers, parents, doctors, engineers, doctors, IAS & Govt. Officials, lawyers & judges, entrepreneurs,  homemakers, working professionals, executives and CXO corporate leaders.",
+      "Siddheshwar - The Power of Soul सिद्धासना प्रोग्राम शाला और विश्वविद्यालयों के शिक्षक, मातापिता, डॉक्टर, इंजीनियर, प्रशासनिक सेवा व सरकारी अधिकारी, वकील व न्यायाधीश, एंटरप्रेन्योर, गृहिणी, वर्किंग प्रोफेशनल, एक्सिक्यूटिव एवं CXO कॉर्पोरेट लीडर के लिए पूर्ण रूप से उपयुक्त है।",
     text2: "सिद्धासना रिट्रीट 25 वर्ष से अधिक उम्र के सभी लोगों के लिए उपलब्ध है।",
     text3:
       "सिद्धासना वर्कशॉप वयस्कों के साथ साथ 14 वर्ष से अधिक उम्र वाले बच्चों के लिए उपलब्ध है।",
@@ -172,18 +172,18 @@ const SiddhasanaHindiData = [
   {
     delay: 0.6,
     image: image5,
-    heading: "HOW",
+    heading: "कैसे",
     text1:
-      "The 7-day residential program and 3-day international program of Siddheshwar - The Power of Soul “Siddhasana” - are meticulously crafted with an eye towards re-awakening and re-balancing the essential parts of the body, mind, and soul, through the unique blend of carefully constructed programs.",
-    list1: "Rhythmic and expressive therapies",
-    list2: "Full body exercises",
-    list3: "Various natural therapies",
-    list4: "Balancing the 5 elements of the human body",
-    list5: "Mindful activities",
-    list6: "Siddheshwar Yoga, pranayama, and meditation",
-    list7: "Breathing techniques",
-    list8: "Satvic food",
-    list9: "Becoming one with self and nature",
+      "Siddheshwar - The Power of Soul सिद्धासना के 7-दिवसीय निवासी प्रोग्राम और 3-दिवसीय अंतर्राष्ट्रीय प्रोग्राम,शरीर, मन और आत्मा के मूलभूत अंगों को पुनः जागृत एवं पुनः संतुलित करने के उद्देश्य से बेहद सावधानी के साथ निर्धारित किए गए हैं।",
+    list1: "रिधमिक और एक्सप्रेसिव थेरपी",
+    list2: "फूल बॉडी एक्सरसाइज़",
+    list3: "विविध प्राकृतिक थेरपी",
+    list4: "शरीर के पंचतत्वों का संतुलन",
+    list5: "माइंडफुल क्रियाएं",
+    list6: "सिद्धेश्वर योग, प्राणायाम और ध्यान",
+    list7: "ब्रीथिंग टेक्निक",
+    list8: "सात्विक खाना",
+    list9: "अपने आप एवं प्रकृति के साथ समन्वय",
   },
 ];
 
@@ -204,6 +204,9 @@ const Siddhasana = () => {
         // text={"Siddhasana"}
         bigText={"SIDDHASANA"}
         bigText2={"THE RHYTHM OF LIFE"}
+        hindiBigText={"सिद्धासना"}
+        hindiText={"जीवन की रिधम"}
+        
       />
       {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}
       {/* <div className="Siddhasana_wrapper">

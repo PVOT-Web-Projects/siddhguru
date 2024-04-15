@@ -89,15 +89,36 @@ const AboutAshramPage = () => {
       </div>
       <HeadingContentWithImages
         heading={"Prāṇa Vriddhi (Energy Enhancement System™)"}
+        hindiHeading={"प्राण वृद्धि (एनर्जी एनहैन्समेन्ट सिस्टम™)"}
         content={
-          '"Devotees from all over India and the entire world visit Sri Brahmrishi Ashram for an opportunity to experience Prāṇa Vriddhi through our EE System based on BIO-SCALAR TECHNOLOGY. In the peaceful atmosphere of Dhyan Mandir, you can activate and enhance the ‘Prāṇa’ energy within yourself through this SCALAR FIELD THERAPY that is not available anywhere else in India. Our Prāṇa Vriddhi EE System generates multiple life-enhancing energy fields that promote cell regeneration, immunity, pain relief, detoxification of the body, and overall energy levels.'
-        }
+          <>
+            Devotees from all over India and the entire world visit Sri Brahmrishi Ashram for an opportunity to benefit from Prāṇa Vriddhi through our EE System in the peaceful atmosphere of Dhyan Mandir. This system, invented and developed by Dr. Sandra Rose Michael of USA, has been donated by Jason Shurka of Unifyd Healing (<a href="https://www.unifydhealing.com" target="_blank" rel="noopener noreferrer">www.unifydhealing.com</a>). This technology uses color, light, and electromagnetic fields to create a balanced energized environment. You can activate and enhance the ‘Prāṇa’ energy within yourself that is not available anywhere else in India. Our Prāṇa Vriddhi EE System generates multiple life-enhancing energy fields that promote cell regeneration, immunity, pain relief, detoxification of the body, and overall energy levels.
+          </>
+          }
+          hindiContent={
+            <>
+            ध्यान मंदिर के शांतिमय वातावरण में हमारे EE सिस्टम द्वारा प्राण वृद्धि की अनुभूति के अवसर के लिए भारत एवं विश्वभर से अनेकानेक भक्तजन श्री ब्रह्मर्षि आश्रम आते हैं। इस सिस्टम का अविष्कार एवं विकास अमरीका की डॉ. सेंड्रा रोज़ माइकल ने किया है और इसे यूनिफाइड हीलिंग (<a href="https://www.unifydhealing.com" target="_blank" rel="noopener noreferrer">www.unifydhealing.com</a>).के जेसन शुक्रा द्वारा अर्पण किया गया है। इस तकनीक द्वारा रंग, प्रकाश और इलैक्ट्रोमैग्नेटिक फिल्ड के समन्वय से संतुलित ऊर्जामय वातावरण का निर्माण किया जाता है। अपने अंदर की प्राण शक्ति के स्तर को बढ़ाने एवं उसे अधिक सक्रिय बनाने का यह अवसर आपको पूरे भारत में और कहीं भी नहीं मिलेगा। यह प्राण वृद्धि EE सिस्टम जीवन ऊर्जा में बढ़ौतरी करने वाले ऐसे अनेक ऊर्जाक्षेत्रों का निर्माण करती है जो सेल रिजनरेशन, रोगप्रतिकारक शक्ति, दर्द से राहत, शरीर का डिटॉक्सिफिकेशन एवं ऊर्जा वर्धन करती है।
+          </>
+          }
+        
+        
         list1={"Combines your body, mind, and soul"}
+        list1Hindi={"शरीर, मन और आत्मा का समन्वय करता है"}
         list2={"Helps you achieve peak performance"}
+        list2Hindi={"अपना सर्वोत्तम प्रदर्शन प्राप्त करने में मदद करता है"}
         list3={"Takes you to a higher state of health"}
+        list3Hindi={"आपको और सेहतमंद बनाता है"}
         list4={"Recharges your inner Prāṇa energy"}
+        list4Hindi={"आपके अंदर के प्राण ऊर्जा में वृद्धि करता है"}
         list5={"Promotes natural healing & rejuvenation"}
+        list5Hindi={"नैसर्गिक स्वस्थता एवं कायाकल्प को बढ़ावा देता है"}
         list6={"Enhances the sense of self-awareness"}
+        list6Hindi={"आत्म जागरूकता में बढ़ौतरी करता है"}
+        heading1={"Using the Prāṇa Vriddhi EE System at Sri Brahmrishi Ashram is free for everyone."}
+        content1={"Come and heal your body through the energy that has created your body!"}
+        hindiHeading1={"श्री ब्रह्मर्षि आश्रम में प्राण वृद्धि EE सिस्टम का उपयोग करना पूर्णतया निःशुल्क है।"}
+        hindiContent1={"आओ और अपने शरीर को उसी ऊर्जा के साथ स्वस्थ बनाओ जिससे वह बना हुआ है।"}
+     
       />
       <div className="divider">
         <img src={border} alt="border" />

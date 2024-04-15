@@ -421,6 +421,8 @@ const TabSectionNew = () => {
           smallHeading={
             "Transforming Lives with the supreme power of Vedic Science."
           }
+          bigHindiHeading={"श्री सिद्धेश्वर ब्रह्मर्षि सिद्धगुरु"}
+          smallHindiHeading={"जो वैदिक विज्ञान की परम शक्ति से बदल रहे हैं लाखों लोगों के जीवन की दिशा व दशा"}
         />
         <div className="mainTab">
           <div className="mainTab_wrapper">

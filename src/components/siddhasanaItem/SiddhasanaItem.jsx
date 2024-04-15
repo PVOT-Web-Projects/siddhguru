@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import "./siddhasanaItem.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import Button from "../buttons/button4";
+import LanguageContext from "../../components/language/Language";
+
 const SiddhasanaItem = ({
   heading,
   text1,
@@ -10,6 +13,7 @@ const SiddhasanaItem = ({
   text3,
   text4,
   text5,
+  text6,
   image,
   delay,
   list1,
@@ -31,6 +35,7 @@ const SiddhasanaItem = ({
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
+  const { language } = useContext(LanguageContext);
   return (
     <motion.div
       ref={ref}
@@ -46,6 +51,7 @@ const SiddhasanaItem = ({
         {text3 && <p>{text3}</p>}
         {text4 && <p>{text4}</p>}
         {text5 && <p>{text5}</p>}
+        {text6 && <p>{text6}</p>}
         {(list1bold ||
           list2bold ||
           list3bold ||
@@ -107,12 +113,23 @@ const SiddhasanaItem = ({
                 www.siddheshwarthepowerofsoul.org/<span>registration</span>
               </Link>
             </div> */}
-            <Button link={"https://www.siddheshwarthepowerofsoul.org/registration"} btn_text={"Register now"} />
-            <div className="forther_info">For Further Information:</div>
+            <Button
+              link={"https://www.siddheshwarthepowerofsoul.org/registration"}
+              btn_text={
+                language === "en" ? "Register Now" : "आज ही रजिस्टर करें"
+              }
+            />
+            <div className="forther_info">
+              {language === "en"
+                ? "For Further Information:"
+                : "अधिक जानकारी के लिए:"}
+              {/* For Further Information: */}
+            </div>
             <div className="call_info_wrap">
               <div className="list_col1">
                 <ul>
-                  {"INDIA : "}
+                  {/* {"INDIA : "} */}
+                  {language === "en" ? "INDIA :" : "भारत :"}
                   <li>
                     <Link to="tel:7847033111">+91 784 703 3111</Link>
                   </li>
@@ -129,7 +146,8 @@ const SiddhasanaItem = ({
               </div>
               <div className="list_col1">
                 <ul>
-                  {"USA : "}
+                  {/* {"USA : "} */}
+                  {language === "en" ? "USA :" : "अमरिका :"}
                   <li>
                     <Link to="tel:9546818534">+1 954 681 8534</Link>
                   </li>
@@ -137,7 +155,8 @@ const SiddhasanaItem = ({
               </div>
               <div className="list_col1">
                 <ul>
-                  {"GERMANY : "}
+                  {/* {"GERMANY : "} */}
+                  {language === "en" ? "GERMANY :" : "जर्मनी :"}
                   <li>
                     <Link to="tel:915203930692">+4 91 520 393 0692</Link>
                   </li>

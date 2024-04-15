@@ -62,9 +62,9 @@ const siddhasanaHindiData = [
   {
     delay: 0.2,
     image: image2,
-    heading: "An Eminent Spiritual Scholar",
+    heading: "जानेमाने आध्यात्मिक विद्वान",
     text1:
-      "Sri Siddhguru is one of the eminent scholars of Sanskrit and Vedic literature in the world. His profound expertise extends across scriptures such as the Vedas, Puranas, Bhagavad Gita, Agamas, and Astrology. Also, he has a deep understanding of the ideologies and philosophies of various faiths - including Jainism, Sikhism, Christianity, Buddhism, and Islam. Sri Siddhguru possesses the unique talent of explaining intricate concepts from the ancient scriptures using a simple language that is accessible to all.",
+      "श्री सिद्धगुरु संस्कृत और वैदिक विज्ञान के विश्व के अग्रगण्य विद्वानों में से एक है। वेद, पुराण, आगम, भगवद गीता एवं ज्योतिष शास्त्र जैसे सभी विषयों में उन्होंने में अप्रतिम निपुणता प्राप्त की है। साथ ही वह जैन, सिख, ईसाई, बौद्ध और इस्लाम जैसे अन्य धर्मों के धर्मग्रंथ, दर्शन शास्त्र एवं विचारधारा की गहन समझ रखते हैं। श्री सिद्धगुरु के पास पौराणिक ग्रंथों में लिखित जटिल सिद्धांतों को सामान्य लोग आसानी से समझ सकें ऐसी एकदम सरल भाषा में प्रस्तुत करने का विशेष हुनर है।",
   },
 ];
 const VedicScience = () => {
