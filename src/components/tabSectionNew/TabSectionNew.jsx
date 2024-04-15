@@ -575,7 +575,9 @@ const TabSectionNew = () => {
               to={tabContent1Mobile && "#tab1"}
               onClick={handleTab1Mobile}
             >
-              {tabContent1Mobile ? "View Less" : "View More"}
+               {language === "en" ? (tabContent1Mobile ? "View Less" : "View More") : (tabContent1Mobile ? "कम देखें" : "अधिक देखें")}
+  {/* English text: "View More", "View Less"
+              {/* {tabContent1Mobile ? "View Less" : "View More"} */}
               {tabContent1Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
@@ -610,7 +612,8 @@ const TabSectionNew = () => {
               to={tabContent2Mobile && "#tab2"}
               onClick={handleTab2Mobile}
             >
-              {tabContent2Mobile ? "View Less" : "View More"}
+               {language === "en" ? (tabContent2Mobile ? "View Less" : "View More") : (tabContent2Mobile ? "कम देखें" : "अधिक देखें")}
+              {/* {tabContent2Mobile ? "View Less" : "View More"} */}
               {tabContent2Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
@@ -645,7 +648,8 @@ const TabSectionNew = () => {
               to={tabContent3Mobile && "#tab3"}
               onClick={handleTab3Mobile}
             >
-              {tabContent3Mobile ? "View Less" : "View More"}
+               {language === "en" ? (tabContent3Mobile ? "View Less" : "View More") : (tabContent3Mobile ? "कम देखें" : "अधिक देखें")}
+              {/* {tabContent3Mobile ? "View Less" : "View More"} */}
               {tabContent3Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (

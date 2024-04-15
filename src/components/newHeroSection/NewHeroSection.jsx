@@ -1,8 +1,14 @@
+import { useContext } from "react";
 import "./newHeroSection.scss";
 // import bannerVideo from "../../images/newHomeBanner.mp4";
 // import bannerVideomobile from "../../images/newHomeMobileBanner.mp4";
+import LanguageContext from "../../components/language/Language";
 
-const NewHeroSection = ({deskVideo, mobileVideo}) => {
+
+const NewHeroSection = ({ mobileVideo, deskVideoEn, deskVideoHi}) => {
+  const { language } = useContext(LanguageContext);
+  const deskVideo = language === "en" ? deskVideoEn : deskVideoHi;
+  
   return (
     <div className="newHeroSection">
       <div className="newHeroSection_wrapper">
