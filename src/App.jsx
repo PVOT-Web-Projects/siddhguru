@@ -51,7 +51,7 @@ import expvideo3 from "./images/exp3-dNXmpXxb.mp4";
 import expvideo2 from "./images/Mayank Solanki Testimonial (Website)-MYSdPzFp.mp4";
 import expvideo4 from "./images/exp4-G1wzJ-nw.mp4";
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
-import AboutAshramPageinner from "./pages/aboutAshramPageinner/AboutAshramPageinner";
+import Prāṇa_Vriddhi from "./pages/aboutAshramPageinner/AboutAshramPageinner";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
@@ -210,7 +210,7 @@ function App() {
           {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/aboutAshramPageinner" element={<AboutAshramPageinner />} />
+          <Route path="/Prāṇa_Vriddhi" element={<Prāṇa_Vriddhi />} />
           {/* <Route path="/news" element={<News />} /> */}
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/devotee" element={<Devotee />} /> */}
