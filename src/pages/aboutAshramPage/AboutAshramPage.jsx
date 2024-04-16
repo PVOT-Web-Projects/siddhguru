@@ -160,7 +160,9 @@ const AboutAshramPage = () => {
         hindiContent1={
           "आओ और अपने शरीर को उसी ऊर्जा के साथ स्वस्थ बनाओ जिससे वह बना हुआ है।"
         }
+        
       />
+
       <div className="divider">
         <img src={border} alt="border" />
       </div>

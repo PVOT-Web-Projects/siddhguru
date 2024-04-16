@@ -1,0 +1,15 @@
+.telephone_no {
+  color: black;
+  text-decoration: none;
+}
+.innercommonText {
+  color: #1d5a3f !important;
+}
+.Bold_Text {
+  font-size: 32px !important;
+}
+@media (max-width: 575px) {
+  .Bold_Text {
+    font-size: 28px !important;
+  }
+}

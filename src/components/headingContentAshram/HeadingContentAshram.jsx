@@ -1,12 +1,17 @@
 import { useContext } from "react";
-import "./headingCotnentWithImages.scss";
+import "./headingContentAshram.scss";
 import PropTypes from "prop-types";
 import LanguageContext from "../language/Language";
-import Button from "../../components/buttons/button5";
-const HeadingContentWithImages = ({
+import { Player } from "video-react";
+import fullVideo from "../../images/videcScienceVideo-FyWQQtnN.mp4";
+import posterImage from "../../images/vedicVideoPosert.jpg";
+const headingContentAshram = ({
   heading,
   content,
   extracontent,
+  extracontentHindi,
+  extracontent1,
+  extracontentHindi1,
   heading1,
   content1,
   image1,
@@ -41,9 +46,21 @@ const HeadingContentWithImages = ({
           <p>{language === "en" ? content : hindiContent}</p>
         </div>
         <div className="content">
-          <p>{language === "en" ? extracontent : hindiContent}</p>
+          <p>{language === "en" ? extracontent : extracontentHindi}</p>
         </div>
-
+        <div className="content">
+          <p>{language === "en" ? extracontent1 : extracontentHindi1}</p>
+        </div>
+        <div className="vedicScienceVideo">
+        <Player
+          playsInline={true}
+          src={
+            // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4"
+            fullVideo
+          }
+          poster={posterImage}
+        />
+      </div>
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
           <div className="list">
             <ul>
@@ -60,12 +77,6 @@ const HeadingContentWithImages = ({
               </p>
               <p>{language === "en" ? content1 : hindiContent1}</p>
             </div>
-
-            <Button
-              className="button5"
-              // btn_text={language === "en" ? "Join Now" : "अब शामिल हों"}
-              btn_text="Know More"
-            />
           </div>
         )}
         <div className="images">
@@ -78,14 +89,17 @@ const HeadingContentWithImages = ({
     </div>
   );
 };
-export default HeadingContentWithImages;
+export default headingContentAshram;
 
-HeadingContentWithImages.propTypes = {
+headingContentAshram.propTypes = {
   heading: PropTypes.string,
   content: PropTypes.string,
   heading1: PropTypes.string,
   content1: PropTypes.string,
   extracontent: PropTypes.string,
+  extracontentHindi: PropTypes.string,
+  extracontent1: PropTypes.string,
+  extracontentHindi1: PropTypes.string,
   image1: PropTypes.any,
   image2: PropTypes.any,
   image3: PropTypes.any,
