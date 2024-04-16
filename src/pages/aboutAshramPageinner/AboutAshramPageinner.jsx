@@ -46,8 +46,20 @@ const aboutAshramPageinner = () => {
       />
       {/* banner ends */}
       <InnerPageCommonText
-        boldText={"Enhance the life force of your soul with"}
-        text1={" Prāṇa Vriddhi (Energy Enhancement System™ or EES)"}
+        boldText={
+          <>
+          <p className="Bold_Text">
+          Enhance the life force of your soul with
+          </p>
+          </>
+        }
+        text1={
+          <>
+          <p className="innercommonText">
+          Prāṇa Vriddhi (Energy Enhancement System™ or EES)
+          </p>
+          </>
+        }
         text2={"The technology developed by Dr Sandra Rose Michael, USA"}
         text3={
           <>
@@ -72,10 +84,18 @@ const aboutAshramPageinner = () => {
           </>
         }
         hindiBoldText={
-          "अपने अंदर की जीवन ऊर्जा को बढ़ाएं"
+          <>
+          <p className="Bold_Text">
+          अपने अंदर की जीवन ऊर्जा को बढ़ाएं
+          </p>
+          </>
         }
         hindiText1={
-          " प्राण वृद्धि (एनर्जी एनहैन्समेन्ट सिस्टम™ या EES) के साथ"
+          <>
+          <p className="innercommonText">
+           प्राण वृद्धि (एनर्जी एनहैन्समेन्ट सिस्टम™ या EES) के साथ
+          </p>
+          </>
         }
         hindiText2={
           "डॉ. सेंड्रा रोज़ माइकल [अमरीका] द्वारा निर्मित तकनिकी "
