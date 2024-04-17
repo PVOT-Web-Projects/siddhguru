@@ -5,6 +5,7 @@ import LanguageContext from "../language/Language";
 import { Player } from "video-react";
 import fullVideo from "../../images/videcScienceVideo-FyWQQtnN.mp4";
 import posterImage from "../../images/AboutashraminnerThumbnail.jpg";
+import posterImageHindi from "../../images/AboutashraminnerThumbnailHindi.jpg";
 const headingContentAshram = ({
   heading,
   content,
@@ -36,6 +37,10 @@ const headingContentAshram = ({
   hindiContent1,
 }) => {
   const { language } = useContext(LanguageContext);
+  const englishImages = posterImage;
+  const hindiImages = posterImageHindi;
+  const images = language === "en" ? englishImages : hindiImages;
+
   return (
     <div className="headingContentWithImagesItem">
       <div className="headingContentWithImagesItem_wrapper">
@@ -53,7 +58,7 @@ const headingContentAshram = ({
         </div>
         <div>
           <a href="https://youtu.be/Yd3gMgcazvg?si=WYdKfEWBWfMZNW12" target="_blank">
-            <img src={posterImage} alt="image" className="vedicScienceVideo"/>
+            <img src={images} alt="image" className="vedicScienceVideo"/>
           </a>
         {/* <Player
           playsInline={true}
