@@ -51,15 +51,18 @@ const headingContentAshram = ({
         <div className="content">
           <p>{language === "en" ? extracontent1 : extracontentHindi1}</p>
         </div>
-        <div className="vedicScienceVideo">
-        <Player
+        <div>
+          <a href="https://youtu.be/Yd3gMgcazvg?si=WYdKfEWBWfMZNW12" target="_blank">
+            <img src={posterImage} alt="image" className="vedicScienceVideo"/>
+          </a>
+        {/* <Player
           playsInline={true}
           src={
             // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4"
             fullVideo
           }
           poster={posterImage}
-        />
+        /> */}
       </div>
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
           <div className="list">
