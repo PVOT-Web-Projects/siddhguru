@@ -28,7 +28,7 @@ const Footer = () => {
       <div className="footer_text">
         <p>{language === "en" ? "Address :" : "पता:"}</p>
         {language === "en"
-          ? "Sri Sidheshwar Tirth R.C Road, C. Ramapuram, RC puram Mandalam, Near Tirupati, Andhra Pradesh 517561, India. Call :"
+          ? "Sri Sidheshwar Tirth - Brahmrishi Ashram, R.C Road, C. Ramapuram, Ramchandrapuram Mandalam, Tirupati - 517561, India. Call :"
           : "श्री सिद्धेश्वर तीर्थ, ब्रह्मर्षि आश्रम, आर. सी. रोड, सी. रामपुरम, रामचंद्रपुरम मंडलम, तिरुपति के पास, आन्ध्र प्रदेश - 517561, भारत।. फोन:"}
         <a href="tel:91 9866622049">+91 0986 6622049</a>,{" "}
         <a href="tel:918772247056">+91 0877 2247056</a> |{" "}
