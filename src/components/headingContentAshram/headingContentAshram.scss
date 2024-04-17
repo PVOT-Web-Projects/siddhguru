@@ -164,8 +164,9 @@
   .vedicScienceVideo {
     max-width: 100%;
     width: 100%;
-    margin: 50px 0;
-    padding: 0 100px;
+    height: auto;
+    // margin: 0px auto;
+    // padding: 0 100px;
     @media(max-width:991px){
       padding: 0 60px;
     }

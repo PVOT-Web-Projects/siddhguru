@@ -6,6 +6,15 @@ import poster1 from "../../images/newThumbnial4.jpeg";
 import poster2 from "../../images/newThumbnail1.jpeg";
 import poster3 from "../../images/newThumbnail2.jpeg";
 import poster4 from "../../images/newThumbnail3.jpeg";
+
+import hindiVideo1 from "../../images/HindiVideo2.mp4";
+import hindiVideo2 from "../../images/HindiVideo4.mp4";
+import hindiVideo3 from "../../images/HindiVideo1.mp4";
+import hindiVideo4 from "../../images/HindiVideo3.mp4";
+import hindiPoster1 from "../../images/HindiThumbnail2.png";
+import hindiPoster2 from "../../images/HindiThumbnail4.png";
+import hindiPoster3 from "../../images/HindiThumbnail1.png";
+import hindiPoster4 from "../../images/HindiThumbnail3.png";
 // import FourVideoItem from "./Fourvideocard_data";
 import { Player } from "video-react";
 import "./Fourvideocard.scss";
@@ -38,6 +47,14 @@ const Fourvideos = () => {
     triggerOnce: true,
   });
   const { language } = useContext(LanguageContext);
+  const englishVideos = [video1, video2, video3, video4];
+  const hindiVideos = [hindiVideo1, hindiVideo2, hindiVideo3, hindiVideo4];
+  const englishPosters = [poster1, poster2, poster3, poster4];
+  const hindiPosters = [hindiPoster1, hindiPoster2, hindiPoster3, hindiPoster4];
+
+  // Determine which videos/posters to use based on the language
+  const videos = language === "en" ? englishVideos : hindiVideos;
+  const posters = language === "en" ? englishPosters : hindiPosters;
   return (
     <div className="fourVideos" ref={ref}>
       <div className="fourVideos_wrapper">
@@ -54,11 +71,12 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={
-                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4"
-                video2
-              }
-              poster={poster2}
+              src={videos[0]}
+              poster={posters[0]}
+              // src={
+              //  video2
+              // }
+              // poster={poster2}
               // fluid={true}
             />
           </div>
@@ -75,11 +93,8 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={
-                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4"
-                video4
-              }
-              poster={poster3}
+              src={videos[1]}
+              poster={posters[1]}
               // fluid={true}
             />
           </div>
@@ -96,11 +111,13 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={
-                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4"
-                video3
-              }
-              poster={poster4}
+              src={videos[2]}
+              poster={posters[2]}
+              // src={
+              //   // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4"
+              //   video3
+              // }
+              // poster={poster4}
               // fluid={true}
             />
           </div>
@@ -115,11 +132,13 @@ const Fourvideos = () => {
           <div className="fourVideoItem_wrapper">
             <Player
               playsInline={true}
-              src={
-                // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4"
-                video1
-              }
-              poster={poster1}
+              src={videos[3]}
+              poster={posters[3]}
+              // src={
+              //   // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4"
+              //   video1
+              // }
+              // poster={poster1}
               // fluid={true}
             />
           </div>
