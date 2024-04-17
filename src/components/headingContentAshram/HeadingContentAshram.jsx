@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import LanguageContext from "../language/Language";
 import { Player } from "video-react";
 import fullVideo from "../../images/videcScienceVideo-FyWQQtnN.mp4";
-import posterImage from "../../images/vedicVideoPosert.jpg";
+import posterImage from "../../images/AboutashraminnerThumbnail.jpg";
 const headingContentAshram = ({
   heading,
   content,
