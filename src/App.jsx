@@ -214,7 +214,6 @@ function App() {
           {/* <Route path="/news" element={<News />} /> */}
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/devotee" element={<Devotee />} /> */}
-
           <Route path="/siddhasana" element={<Siddhasana />} />
           <Route path="/experience" element={<Experience />} />
           <Route />
