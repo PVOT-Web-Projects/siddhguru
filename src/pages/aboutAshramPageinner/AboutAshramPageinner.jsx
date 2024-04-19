@@ -188,7 +188,7 @@ const AboutAshramPageinner = () => {
       list6Hindi={"अच्छा मानसिक स्वास्थ्य और आत्मविश्वास"}
       list7={"Self-acceptance and self-awareness"}
       list7Hindi={"आत्म-स्वीकृति और आत्म-जागरूकता"}
-      list8={"Freedom from past traumas &amp; stressors"}
+      list8={"Freedom from past traumas & stressors"}
       list8Hindi={"भूतकाल के दु:ख-दर्द और तनावों से मुक्ति"}
       list9={"Living more in the ‘present moment’"}
       list9Hindi={"वर्तमान क्षण में जीने की अनुभूति"}
