@@ -205,7 +205,7 @@ const Siddhasana = () => {
         bigText={"SIDDHASANA"}
         bigText2={"THE RHYTHM OF LIFE"}
         hindiBigText={"सिद्धासना"}
-        hindiText={"जीवन की रिधम"}
+        hindiBigText2={"जीवन की रिधम"}
         
       />
       {/* <NewHeroSection deskVideo={bannerVideo} mobileVideo={mobilebannerVideo} /> */}

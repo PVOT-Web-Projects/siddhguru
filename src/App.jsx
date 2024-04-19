@@ -210,7 +210,7 @@ function App() {
           {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Prāṇa_Vriddhi" element={<Prāṇa_Vriddhi />} />
+          <Route path="/prana-vriddhi" element={<Prāṇa_Vriddhi />} />
           {/* <Route path="/news" element={<News />} /> */}
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/devotee" element={<Devotee />} /> */}

@@ -142,22 +142,22 @@ const AboutAshramPage = () => {
         list2Hindi={"अपना सर्वोत्तम प्रदर्शन प्राप्त करने में मदद करता है"}
         list3={"Takes you to a higher state of health"}
         list3Hindi={"आपको और सेहतमंद बनाता है"}
-        list4={"Recharges your inner Prāṇa energy"}
-        list4Hindi={"आपके अंदर के प्राण ऊर्जा में वृद्धि करता है"}
-        list5={"Promotes natural healing & rejuvenation"}
-        list5Hindi={"नैसर्गिक स्वस्थता एवं कायाकल्प को बढ़ावा देता है"}
-        list6={"Enhances the sense of self-awareness"}
-        list6Hindi={"आत्म जागरूकता में बढ़ौतरी करता है"}
-        heading1={
+        list6={"Recharges your inner Prāṇa energy"}
+        list6Hindi={"आपके अंदर के प्राण ऊर्जा में वृद्धि करता है"}
+        list7={"Promotes natural healing & rejuvenation"}
+        list7Hindi={"नैसर्गिक स्वस्थता एवं कायाकल्प को बढ़ावा देता है"}
+        list8={"Enhances the sense of self-awareness"}
+        list8Hindi={"आत्म जागरूकता में बढ़ौतरी करता है"}
+        content1={
           "Using the Prāṇa Vriddhi EE System at Sri Brahmrishi Ashram is free for everyone."
         }
-        content1={
+        content2={
           "Come and heal your body through the energy that has created your body!"
         }
-        hindiHeading1={
+        hindiContent1={
           "श्री ब्रह्मर्षि आश्रम में प्राण वृद्धि EE सिस्टम का उपयोग करना पूर्णतया निःशुल्क है।"
         }
-        hindiContent1={
+        hindiContent2={
           "आओ और अपने शरीर को उसी ऊर्जा के साथ स्वस्थ बनाओ जिससे वह बना हुआ है।"
         }
         
