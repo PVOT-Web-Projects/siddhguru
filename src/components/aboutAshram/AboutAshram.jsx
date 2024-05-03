@@ -92,7 +92,6 @@ const AboutAshram = () => {
             className="joinBtn"
           >
             <Button
-              // btn_text={language === "en" ? "Join Now" : "अब शामिल हों"}
               btn_text="Join Now"
               link="https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"
             />
