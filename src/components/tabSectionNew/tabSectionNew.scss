@@ -237,7 +237,7 @@
         overflow: hidden;
         &_image {
           position: relative;
-          cursor: pointer;
+          // cursor: pointer;
           video {
             max-width: 100%;
             width: 100%;
@@ -248,10 +248,11 @@
             width: 100%;
           }
           .tabSection_mobile_wrapper_tab_text {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            // position: absolute;
+            // bottom: 20px;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            background-color: #1c523a;
             color: #fff;
             font-size: 32px;
             font-style: normal;
@@ -259,6 +260,7 @@
             line-height: 35px;
             width: 100%;
             text-align: center;
+            padding: 10px;
             @media (max-width: 375px) {
               bottom: 3px;
               width: 100%;
@@ -297,32 +299,6 @@
             margin-left: 20px;
             &.showLess {
               transform: rotate(180deg);
-            }
-          }
-        }
-        .mobileTab1 {
-          .leftRightImageContent_wrapper {
-            .leftRightImageContent_wrapper_text {
-              // background-color: #d5e7df !important;
-            }
-          }
-        }
-        .mobileTab2 {
-          .leftRightImageContent_wrapper {
-            .leftRightImageContent_wrapper_text {
-              .title {
-                // color: #f90 !important;
-              }
-            }
-          }
-        }
-        .mobileTab3 {
-          .leftRightImageContent_wrapper {
-            .leftRightImageContent_wrapper_text {
-              // background-color: #a1d490;
-              .title {
-                // color: #fff !important;
-              }
             }
           }
         }
