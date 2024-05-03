@@ -3,12 +3,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useContext, useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
-import gif from "../../images/aboutAshramImage.jpeg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 import Button from "../buttons/button4";
 import LanguageContext from "../language/Language";
-import video from "../../images/whatsappVideo.mp4"
+import video from "../../images/whatsappVideo.mp4";
 import { Player } from "video-react";
+import posterImage from "../../images/WP_video_img.jpg";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -85,15 +85,6 @@ const AboutAshram = () => {
               justifyContent={"center"}
             />
           </motion.span>
-          <div className="video">
-          <Player
-              playsInline={true}
-              src={video}
-              // poster={}
-              
-              fluid={true}
-            />
-          </div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -101,11 +92,19 @@ const AboutAshram = () => {
             className="joinBtn"
           >
             <Button
-            // btn_text={language === "en" ? "Join Now" : "अब शामिल हों"}
+              // btn_text={language === "en" ? "Join Now" : "अब शामिल हों"}
               btn_text="Join Now"
               link="https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"
             />
           </motion.div>
+          <div className="video">
+            <Player
+              playsInline={true}
+              src={video}
+              poster={posterImage}
+              fluid={true}
+            />
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
