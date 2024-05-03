@@ -415,7 +415,6 @@ const TabSectionNew = () => {
   return (
     <div className="tabSectionNew">
       <div className="tabSectionNew_wrapper">
-        {/* <TextSection /> */}
         <BigHeadingSmallHeading
           bigHeading={"Sri Sidheshwar Brahmarishi SiddhGuru."}
           smallHeading={
@@ -424,7 +423,7 @@ const TabSectionNew = () => {
           bigHindiHeading={"श्री सिद्धेश्वर ब्रह्मर्षि सिद्धगुरु"}
           smallHindiHeading={"जो वैदिक विज्ञान की परम शक्ति से बदल रहे हैं लाखों लोगों के जीवन की दिशा व दशा"}
         />
-        <div className="mainTab">
+        {/* <div className="mainTab">
           <div className="mainTab_wrapper">
             <div
               className={`${
@@ -433,7 +432,6 @@ const TabSectionNew = () => {
               onClick={handleTab1}
             >
               <img src={mainTabImage1} alt="mainTab" />
-              {/* <video src={video1} autoPlay loop muted></video> */}
               <div className="mainTab_name">Sri SiddhGuru</div>
             </div>
             <div
@@ -443,7 +441,6 @@ const TabSectionNew = () => {
               onClick={handleTab2}
             >
               <img src={mainTabImage2} alt="mainTab" />
-              {/* <video src={video2} autoPlay loop muted></video> */}
               <div className="mainTab_name">Mission</div>
             </div>
             <div
@@ -453,13 +450,12 @@ const TabSectionNew = () => {
               onClick={handleTab3}
             >
               <img src={mainTabImage3} alt="mainTab" />
-              {/* <video src={video3} autoPlay loop muted></video> */}
               <div className="mainTab_name">Core Wisdom</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="innerTabs">
+      {/* <div className="innerTabs">
         <div className="innerTabs_wrapper">
           {activeMainTab === "tab1" && (
             <div className="tabs">
@@ -545,13 +541,12 @@ const TabSectionNew = () => {
                 )
             )}
         </div>
-      </div>
+      </div> */}
       <div className="tabSection_mobile">
         <div className="tabSection_mobile_wrapper">
           <div className="tabSection_mobile_wrapper_tab" id="tab1">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage1} alt="mainTabMobile" />
-              {/* <video src={video1} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">
                 {language === "en" ? "Saint" : "श्री सिद्धगुरु"}
               </div>
@@ -576,8 +571,7 @@ const TabSectionNew = () => {
               onClick={handleTab1Mobile}
             >
                {language === "en" ? (tabContent1Mobile ? "View Less" : "View More") : (tabContent1Mobile ? "कम देखें" : "अधिक देखें")}
-  {/* English text: "View More", "View Less"
-              {/* {tabContent1Mobile ? "View Less" : "View More"} */}
+ 
               {tabContent1Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
@@ -588,7 +582,6 @@ const TabSectionNew = () => {
           <div className="tabSection_mobile_wrapper_tab" id="tab2">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage2} alt="mainTabMobile" />
-              {/* <video src={video2} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text">
                 {language === "en" ? "Vision" : "संकल्प"}
               </div>
@@ -613,7 +606,6 @@ const TabSectionNew = () => {
               onClick={handleTab2Mobile}
             >
                {language === "en" ? (tabContent2Mobile ? "View Less" : "View More") : (tabContent2Mobile ? "कम देखें" : "अधिक देखें")}
-              {/* {tabContent2Mobile ? "View Less" : "View More"} */}
               {tabContent2Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
@@ -624,7 +616,6 @@ const TabSectionNew = () => {
           <div className="tabSection_mobile_wrapper_tab" id="tab3">
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage3} alt="mainTabMobile" />
-              {/* <video src={video3} autoPlay loop muted></video> */}
               <div className="tabSection_mobile_wrapper_tab_text ">
                 {language === "en" ? "Wisdom" : "विचारधारा"}
               </div>
@@ -649,7 +640,6 @@ const TabSectionNew = () => {
               onClick={handleTab3Mobile}
             >
                {language === "en" ? (tabContent3Mobile ? "View Less" : "View More") : (tabContent3Mobile ? "कम देखें" : "अधिक देखें")}
-              {/* {tabContent3Mobile ? "View Less" : "View More"} */}
               {tabContent3Mobile ? (
                 <img src={arrow} alt="arrow" className="showLess" />
               ) : (
@@ -657,38 +647,7 @@ const TabSectionNew = () => {
               )}
             </HashLink>
           </div>
-          {/* <div className="tabSection_mobile_wrapper_tab" id="tab4">
-            <div className="tabSection_mobile_wrapper_tab_image">
-              <img src={mainTabImage3} alt="mainTabMobile" />
-              <div className="tabSection_mobile_wrapper_tab_text ">
-                Brahm Shakti
-              </div>
-            </div>
-            {tabContent4Mobile === true && (
-              <div className="mobileTab4">
-                {brahmaShaktiData.map((item, index) => (
-                  <LeftRIghtImageContent
-                    key={index}
-                    {...item}
-                    index={index}
-                    titleColor={"#1D5A3F"}
-                  />
-                ))}
-              </div>
-            )}
-            <HashLink
-              className="viewmore"
-              to={tabContent4Mobile && "#tab4"}
-              onClick={handleTab4Mobile}
-            >
-              {tabContent4Mobile ? "View Less" : "View More"}
-              {tabContent4Mobile ? (
-                <img src={arrow} alt="arrow" className="showLess" />
-              ) : (
-                <img src={arrow} alt="arrow" />
-              )}
-            </HashLink>
-          </div> */}
+          
         </div>
       </div>
     </div>

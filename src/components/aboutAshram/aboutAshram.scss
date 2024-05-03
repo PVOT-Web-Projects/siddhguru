@@ -80,6 +80,22 @@
           }
         }
       }
+      .video {
+        padding: 40px 150px;
+        @media (max-width: 991px) {
+          padding: 40px 120px;
+        }
+        @media (max-width: 767px) {
+          padding: 20px 30px;
+        }
+        @media (max-width: 575px) {
+          padding: 20px 20px;
+        }
+        video {
+          max-width: 100%;
+          display: block;
+        }
+      }
     }
     .aboutAshram_content {
       text-align: center;
@@ -133,7 +149,7 @@
           @media (max-width: 575px) {
             width: 90%;
           }
-          span{
+          span {
             color: #123828;
             font-weight: 600;
           }
@@ -150,7 +166,7 @@
       }
     }
   }
-  .joinBtn{
-    margin: 20px 0 0;
+  .joinBtn {
+    // margin: 20px 0 0;
   }
 }
