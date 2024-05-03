@@ -3,12 +3,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useContext, useEffect } from "react";
 import border from "../../images/aboutAshramBorder.svg";
-import gif from "../../images/aboutAshramImage.jpeg";
 import HeadingTextAnimation from "../HeadingAnimation/HeadingTextAnimation";
 import Button from "../buttons/button4";
 import LanguageContext from "../language/Language";
 import video from "../../images/whatsappVideo.mp4";
 import { Player } from "video-react";
+import posterImage from "../../images/WP_video_img.jpg";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -101,8 +101,7 @@ const AboutAshram = () => {
             <Player
               playsInline={true}
               src={video}
-              // poster={}
-
+              poster={posterImage}
               fluid={true}
             />
           </div>
