@@ -28,15 +28,22 @@ const Footer = () => {
       <div className="footer_text">
         <p>{language === "en" ? "Address :" : "पता:"}</p>
         {language === "en"
-          ? "Sri Sidheshwar Tirth - Brahmrishi Ashram, R.C Road, C. Ramapuram, Ramchandrapuram Mandalam, Tirupati - 517561, India. Call :"
+          ? "Sri Sidheshwar Tirth, Shri Brahmrishi Ashram, R.C Road, C. Ramapuram, Ramchandrapuram Mandal, Tirupati, Andhra Pradesh  - 517561, India. Call :"
           : "श्री सिद्धेश्वर तीर्थ, ब्रह्मर्षि आश्रम, आर. सी. रोड, सी. रामपुरम, रामचंद्रपुरम मंडलम, तिरुपति के पास, आन्ध्र प्रदेश - 517561, भारत।. फोन:"}
-        <a href="tel:91 9866622049">+91 0986 6622049</a>,{" "}
-        <a href="tel:918772247056">+91 0877 2247056</a> |{" "}
-        {language === "en" ? "Tele Fax :" : "टैली फैक्स : "}
-        <a href="tel:918772247059">+91 0877 2247059</a>|{" "}
+        <a href="tel:91 7207811011">+91 7207811011</a>,{" "}
+        <a href="tel:91 0986 6622049">+91 0986 6622049</a>,{" "}
+        <a href="tel:91 877 2247056">+91 877 2247056</a>,{" "}
+        <a href="tel:91 877 2247669">+91 877 2247669</a> |{" "}
+        {/* {language === "en" ? "Tele Fax :" : "टैली फैक्स : "}
+        <a href="tel:918772247059">+91 0877 2247059</a>|{" "} */}
+        {language === "en" ? "WhatsApp :" : "टैली फैक्स : "}
+        <a href="tel:91 9676516006">+91 9676516006</a>|{" "}
         {language === "en" ? "Email :" : "ई-मेल : "}
-        <a href="mailto:contact@sribrahmrishiashram.org">
-          contact@sribrahmrishiashram.org
+        <a href="mailto:enquiry.sbashram@gmail.com">
+        enquiry.sbashram@gmail.com
+        </a>,
+        <a href="mailto:eesystem.sbashram@gmail.com">
+        eesystem.sbashram@gmail.com
         </a>
       </div>
 

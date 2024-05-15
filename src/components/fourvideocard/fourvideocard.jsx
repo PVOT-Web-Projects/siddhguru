@@ -81,7 +81,8 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">
-            {language === "en" ? "Mayank Solanki" : "मयंक सोलंकी"}
+          
+            {language === "en" ? "Ashok Sancheti" : "अशोक संचेती"}
           </div>
         </motion.div>
         <motion.div
@@ -99,7 +100,7 @@ const Fourvideos = () => {
             />
           </div>
           <div className="fourVideoItem_text">
-            {language === "en" ? "Vladislav Y" : "व्लादिस्लाव वाय"}
+            {language === "en" ? "Mayank Solanki" : "मयंक सोलंकी"}
           </div>
         </motion.div>
         <motion.div
@@ -121,7 +122,7 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">{language === "en" ? "Ramesh Sankhla" : "रमेश सांखला"}</div>
+          <div className="fourVideoItem_text">{language === "en" ? "Vladislav Y" : "व्लादिस्लाव वाय"}</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -142,7 +143,7 @@ const Fourvideos = () => {
               // fluid={true}
             />
           </div>
-          <div className="fourVideoItem_text">{language === "en" ? "Ashok Sancheti" : "अशोक संचेती"}</div>
+          <div className="fourVideoItem_text">{language === "en" ? "Ramesh Sankhla" : "रमेश सांखला"}</div>
         </motion.div>
       </div>
     </div>
