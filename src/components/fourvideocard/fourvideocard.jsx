@@ -47,7 +47,7 @@ const Fourvideos = () => {
     triggerOnce: true,
   });
   const { language } = useContext(LanguageContext);
-  const englishVideos = [video1, video2, video3, video4];
+  const englishVideos = [video1, video2, video4, video3];
   const hindiVideos = [hindiVideo1, hindiVideo2, hindiVideo3, hindiVideo4];
   const englishPosters = [poster1, poster2, poster3, poster4];
   const hindiPosters = [hindiPoster1, hindiPoster2, hindiPoster3, hindiPoster4];
@@ -146,7 +146,7 @@ const Fourvideos = () => {
           <div className="fourVideoItem_text">{language === "en" ? "Ramesh Sankhla" : "रमेश सांखला"}</div>
         </motion.div>
       </div>
-      
+
     </div>
   );
 };

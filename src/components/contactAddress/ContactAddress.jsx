@@ -7,7 +7,7 @@ const contactAddressData = [
   {
     heading: "Address",
     address: "Sri Sidheshwar Tirth R.C Road, C. Ramapuram, ",
-    address2: " RC puram Mandalam, Near Tirupati, Andhra Pradesh 517561",
+    address2: " RC puram Mandal, Near Tirupati, Andhra Pradesh 517561",
   },
   {
     heading: "Contact",
@@ -15,13 +15,17 @@ const contactAddressData = [
     //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
     number1: "9866622049",
     number2: "8772247056",
+    number3: "7207811011",
+    number4: "8772247669",
   },
   {
     heading: "Get in Touch",
     // address:
     //   "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown ",
-    mail1: "devotee@shribrahmarishi.org",
-    mail2: "info@brahamarishi.org",
+    // mail1: "devotee@shribrahmarishi.org",
+    // mail2: "info@brahamarishi.org",
+    mail1: " enquiry.sbashram@gmail.com",
+    mail2: "eesystem.sbashram@gmail.com",
   },
 ];
 
