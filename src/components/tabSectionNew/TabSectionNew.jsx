@@ -416,7 +416,7 @@ const TabSectionNew = () => {
     <div className="tabSectionNew">
       <div className="tabSectionNew_wrapper">
         <BigHeadingSmallHeading
-          bigHeading={"Sri Sidheshwar Brahmarishi SiddhGuru."}
+          bigHeading={"Sri Sidheshwar Brahmrishi SiddhGuru."}
           smallHeading={
             "Transforming Lives with the supreme power of Vedic Science."
           }
