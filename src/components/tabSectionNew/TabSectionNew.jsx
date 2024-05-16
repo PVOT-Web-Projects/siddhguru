@@ -221,7 +221,7 @@ const wisdomData = [
     img: wisdomImage1,
     tagline: "Wisdom",
     title: "Wisdom",
-    text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhytmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
+    text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Aadhyatmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
     itemIndex: 8,
   },
   {

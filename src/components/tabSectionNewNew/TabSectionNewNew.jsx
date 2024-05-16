@@ -44,7 +44,7 @@ const theSaintData = [
         img: theSaintImage1,
         tagline: "Saint",
         title: "Sri SiddhGuru",
-        text: "Sri Brahmarishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
+        text: "Sri Brahmrishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
         itemIndex: 0,
       },
       {
@@ -120,7 +120,7 @@ const theSaintData = [
         img: wisdomImage1,
         title: "Wisdom",
         tagline: "Wisdom",
-        text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Adhyatmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
+        text: "Sri SiddhGuru emphasizes the importance of having a harmonious liaison between Aadhyatmikta (Spirituality) and Adhunikta in our lives. He encourages us to excel in all three phases of life – learning, earning and ultimately returning (to society) because service to humanity is the best work of life. Sri SiddhGuru imparts his wisdom not only through words but also by acting as a catalyst for positive changes in our lives through his divine energy.",
         itemIndex: 8,
       },
       {
