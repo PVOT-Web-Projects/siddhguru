@@ -37,7 +37,7 @@ const Footer = () => {
         {/* {language === "en" ? "Tele Fax :" : "टैली फैक्स : "}
         <a href="tel:918772247059">+91 0877 2247059</a>|{" "} */}
         {language === "en" ? "WhatsApp :" : "वाट्सऐप: "}
-        <a href="tel:91 9676516006">+91 9676516006</a>|{" "}
+        <a href="tel:91 9676516006">+91 9676516006</a>|{" "} <br />
         {language === "en" ? "Email :" : "ई-मेल : "}
         <a href="mailto:enquiry.sbashram@gmail.com">
         enquiry.sbashram@gmail.com
