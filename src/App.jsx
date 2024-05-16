@@ -215,7 +215,7 @@ function App() {
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/devotee" element={<Devotee />} /> */}
           <Route path="/siddhasana" element={<Siddhasana />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/experiences" element={<Experience />} />
           <Route />
         </Routes>
       </Layout>

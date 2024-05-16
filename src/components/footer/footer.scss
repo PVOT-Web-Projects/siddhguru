@@ -35,6 +35,11 @@
       padding: 0 4px;
     }
   }
+  .footerEmail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .footer_link_container {
     display: flex;
@@ -46,6 +51,7 @@
     @media (max-width: 1024px) {
       padding-right: 0;
     }
+   
 
     .social_icon {
       transition: all 0.3s;

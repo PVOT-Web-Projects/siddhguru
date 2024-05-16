@@ -171,12 +171,12 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
           >
             <Link
-              to="/experience"
+              to="/experiences"
               className={`line_underscore nav-link ${
-                location.pathname === "/experience" ? "highlight" : ""
+                location.pathname === "/experiences" ? "highlight" : ""
               }`}
             >
-              {language === "en" ? "Experience" : "अनुभव"}
+              {language === "en" ? "Experiences" : "अनुभव"}
               {/* Experience */}
             </Link>
           </motion.div>
