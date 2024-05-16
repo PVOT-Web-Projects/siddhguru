@@ -2,9 +2,12 @@
 // import mainTabImage1 from "../../images/mainTab1.png";
 // import mainTabImage2 from "../../images/mainTab2.png";
 // import mainTabImage3 from "../../images/mainTab3.png";
-import mainTabImage1 from "../../images/saintTHUMB-min.jpg";
-import mainTabImage2 from "../../images/missionTHUMB-min.jpg";
-import mainTabImage3 from "../../images/corewisdom-min.jpg";
+// import mainTabImage1 from "../../images/saintTHUMB-min.jpg";
+// import mainTabImage2 from "../../images/missionTHUMB-min.jpg";
+// import mainTabImage3 from "../../images/corewisdom-min.jpg";
+import mainTabImage1 from "../../images/saintThumbail.jpg";
+import mainTabImage2 from "../../images/visionThumbnail.jpeg";
+import mainTabImage3 from "../../images/wisdomThumbnail.jpeg";
 // import theSaintImage1 from "../../images/Life in a Nutshell.jpg";
 // import theSaintImage1 from "../../images/SiddhguruTabImage.png";
 import theSaintImage1 from "../../images/saintMain.png";

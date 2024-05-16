@@ -1,7 +1,10 @@
 // import TextSection from "../textSection/TextSection";
-import mainTabImage1 from "../../images/saintTHUMB-min.jpg";
-import mainTabImage2 from "../../images/missionTHUMB-min.jpg";
-import mainTabImage3 from "../../images/corewisdom-min.jpg";
+// import mainTabImage1 from "../../images/saintTHUMB-min.jpg";
+// import mainTabImage2 from "../../images/missionTHUMB-min.jpg";
+// import mainTabImage3 from "../../images/corewisdom-min.jpg";
+import mainTabImage1 from "../../images/saintThumbail.jpg";
+import mainTabImage2 from "../../images/visionThumbnail.jpeg";
+import mainTabImage3 from "../../images/wisdomThumbnail.jpeg";
 import theSaintImage1 from "../../images/saintMain.png";
 import theSaintImage2 from "../../images/Sadhana & Kundalini Invocation.jpg";
 import theSaintImage3 from "../../images/Siddhis-and-Nidhis.jpg";
