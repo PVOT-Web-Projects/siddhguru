@@ -84,11 +84,11 @@ const EventHomePageItem = ({
             </div>
             {note && <div className="note">{note}</div>}
             {/* <div className="location">{location}</div> */}
-            {/* {!note && (
+            {!note && (
               <div className="eventCardBtn">
                 <Button link={link} btn_text="Register Now" />
               </div>
-            )} */}
+            )}
             {note && <div className="comingSoon">Coming soon...</div>}
           </div>
           {/* <div className="boxDateSec">
