@@ -20,6 +20,8 @@ import videoPoster1 from "../../images/arrowImageCircle.svg";
 import EventHomeVideoItem from "../../components/EventsHomePage/eventHomePageItem/EventHomePageVideoItem";
 import { useContext } from "react";
 import LanguageContext from "../../components/language/Language";
+import HeadingContentWithImages from "../../components/headingContentWithImages/HeadingContentWithImages";
+import EventLeftRight from "../../components/eventLeftRight/EventLeftRight";
 
 const prevEventData = [
   {
@@ -117,6 +119,21 @@ const Events = () => {
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
       /> */}
+      <HeadingContentWithImages
+        heading={
+          "Experience the Transformative Power of Vedic Science with Sri Siddhguru"
+        }
+        hindiHeading={
+          "Experience the Transformative Power of Vedic Science with Sri Siddhguru)"
+        }
+        content={
+          "Imagine a moment of pure bliss, where the sound of chanting Bhajans and mantras and the serenity of meditation envelop you. This is what awaits you at Sri Siddhguru’s Brahm Sparsh event in a city near you in the US. As you meditate, Sri Siddhguru will gently touch your forehead, sending a surge of divine energy coursing through your body, leaving you in a state of profound tranquility."
+        }
+        extracontent={
+          "This isn’t just an event; it’s a life-altering spiritual experience that only Siddhguru can offer. Connecting with him can transform your life in ways you never imagined, bringing an unparalleled sense of peace and harmony. He is a catalyst for positive change, capable of influencing your life even when he isn’t physically present."
+        }
+      />
+      <EventLeftRight />
       <EventsHomePage />
       <div className="eventsHomePage_wrapper_previous">
         <motion.h2

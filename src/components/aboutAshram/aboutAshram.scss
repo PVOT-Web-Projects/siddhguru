@@ -73,6 +73,9 @@
         display: block;
         font-weight: 400;
         padding: 0 20px;
+        a{
+          text-decoration: none;
+        }
         span {
           // font-family: "Lohit-Devanagari" !important;
           @media (max-width: 767px) {

@@ -10,6 +10,7 @@ import video from "../../images/whatsappVideo.mp4";
 import { Player } from "video-react";
 import posterImage from "../../images/WP_video_img.jpg";
 import HomepageLeftRight from "../homepageLeftRight/HomepageLeftRight";
+import { Link } from "react-router-dom";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -66,26 +67,30 @@ const AboutAshram = () => {
             variants={letter}
             style={{ marginBottom: "12px" }}
           >
-            <HeadingTextAnimation
-              heading={
-                language === "en"
-                  ? "Join our WhatsApp Channel"
-                  : "हमारे व्हॉट्सऐप चैनल से जुड़ें "
-              }
-              fontSize={"26.934px"}
-              justifyContent={"center"}
-            />
+            <Link to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"}>
+              <HeadingTextAnimation
+                heading={
+                  language === "en"
+                    ? "Join Our WhatsApp Channel! Connect deeply with Sri Siddhguru and elevate your mind and soul to new heights."
+                    : "हमारे व्हॉट्सऐप चैनल से जुड़ें "
+                }
+                fontSize={"26.934px"}
+                justifyContent={"center"}
+              />
+            </Link>
           </motion.span>
           <motion.span className={"mantra_wrapper"} variants={letter}>
-            <HeadingTextAnimation
-              heading={
-                language === "en"
-                  ? "Experience the miracle of vedic Science with Sri SiddhGuru."
-                  : "गुरुदेव के मार्गदर्शन में वैदिक विज्ञान की शक्ति को अपने जीवन में उतारें"
-              }
-              fontSize={"26.934px"}
-              justifyContent={"center"}
-            />
+            <Link to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"}>
+              <HeadingTextAnimation
+                heading={
+                  language === "en"
+                    ? "Click here to begin your spiritual journey today."
+                    : "गुरुदेव के मार्गदर्शन में वैदिक विज्ञान की शक्ति को अपने जीवन में उतारें"
+                }
+                fontSize={"26.934px"}
+                justifyContent={"center"}
+              />
+            </Link>
           </motion.span>
           <motion.div
             initial={{ opacity: 0, y: 50 }}

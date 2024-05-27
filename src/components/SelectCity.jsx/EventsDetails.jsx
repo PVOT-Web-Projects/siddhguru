@@ -53,7 +53,7 @@ const EventsDetails = ({
                 <div className="contactNumber">
                   <Link
                     to={`tel:${item.contactNumber}`}
-                  >{`${item.countryCode} ${item.contactNumber}`}</Link>
+                  >{`${item.countryCode ? item.countryCode : ""} ${item.contactNumber}`}</Link>
                   {" , "}
                   {item.email && (
                     <Link to={`mailto:${item.email}`}>{`${item.email}`}</Link>
@@ -63,36 +63,7 @@ const EventsDetails = ({
             ))}
           </div>
         )}
-        {multipleEvents?.map((item, index) => (
-          <div className="multipleEvent" key={index}>
-            {item.place && (
-              <div className="eventPlace">Place : {item.place}</div>
-            )}
-            {item.date && <div className="eventDate">Date : {item.date}</div>}
-            {item.time && <div className="eventTime">Time : {item.time}</div>}
-            {item.address1 && <div className="address_wrap">Address :</div>}
-            {item.address1 && (
-              <div className="address_wrap"> {item.address1}</div>
-            )}
-            {item.address2 && (
-              <div className="address_wrap"> {item.address2}</div>
-            )}
-            {item.address3 && (
-              <div className="address_wrap">{item.address3}</div>
-            )}
-            <div className="contactInfo_wrap">
-              <div className="contactPerson">{item.ContactPerson} : </div>
-              <div className="contactNumber">
-                <Link
-                  to={`tel:${item.contactNumber}`}
-                >{`${item.countryCode} ${item.contactNumber} ,`}</Link>
-                {item.email && (
-                  <Link to={`mailto:${item.email}`}>{`${item.email}`}</Link>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+       
       </div>
       {link && (
         <div className="register">
