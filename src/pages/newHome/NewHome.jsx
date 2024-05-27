@@ -20,6 +20,9 @@ import bannerVideo from "../../images/heroBannerVideo2.mp4";
 import bannerMobileVideo from "../../images/Website_banner_video_hindi.mp4";
 import bannerVideomobile from "../../images/Website_mobile_banner_video.mp4";
 import "./newHome.scss";
+import { Player } from "video-react";
+import fullVideo from "../../images/videcScienceVideo-FyWQQtnN.mp4";
+import posterImage from "../../images/vedicVideoPosert.jpg";
 const NewHome = () => {
   return (
     <>
@@ -47,6 +50,17 @@ const NewHome = () => {
       <div className="tabNew">
         <TabSectionNewNew />
       </div>
+      <div className="video">
+      <Player
+          playsInline={true}
+          src={
+            // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4"
+            fullVideo
+          }
+          poster={posterImage}
+          // fluid={true}
+        />
+        </div>
       <AboutAshram />
       <EventsHomePage />
       <ThreeVideos />

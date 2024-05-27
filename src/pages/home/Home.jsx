@@ -12,6 +12,7 @@ import HeroSection from "../../components/heroSection/HeroSection";
 // import TextSection from "../../components/textSection/TextSection";
 import ThreeVideos from "../../components/threeVideos/ThreeVideos";
 import TabSection from "../../components/tabSection/TabSection";
+
 const Home = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const Home = () => {
       {/* <TextSection /> */}
       {/* <HomePageSlider1 /> */}
       <TabSection />
+     
       <AboutAshram />
       <EventsHomePage />
       <ThreeVideos />

@@ -9,6 +9,7 @@ import LanguageContext from "../language/Language";
 import video from "../../images/whatsappVideo.mp4";
 import { Player } from "video-react";
 import posterImage from "../../images/WP_video_img.jpg";
+import HomepageLeftRight from "../homepageLeftRight/HomepageLeftRight";
 const AboutAshram = () => {
   // const text = "॥ गुरुर्ब्रह्माः गुरुर्विष्णुः गुरुर्देवो महेश्वरः॥ ";
   // const text2 = "॥ गुरुर्साक्षात् परब्रह्मः तस्मै श्री गुरुवै नमः ॥";
@@ -49,6 +50,7 @@ const AboutAshram = () => {
 
   return (
     <div className="aboutAshram">
+      <HomepageLeftRight />
       <motion.div className="aboutAshram_wrapper" ref={ref}>
         {/* <div className="aboutAshram_wrapper_image">
           <img src={gif} alt="gif" />

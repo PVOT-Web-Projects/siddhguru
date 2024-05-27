@@ -103,7 +103,35 @@
             margin: 0 0 10px;
             .contactInfo_wrap {
               display: flex;
+              margin: 0 0 10px;
               .contactNumber {
+                display: flex;
+                @media (max-width: 1199px) {
+                  flex-direction: column;
+                }
+                a {
+                  color: #fff9e0;
+                  text-decoration: none;
+                  margin-left: 5px;
+                  transition: all 0.4s;
+                  &:hover {
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+          .multipleEvent{
+            border-bottom: 1px solid #fff;
+            margin: 0 0 10px;
+            .contactInfo_wrap {
+              display: flex;
+              margin: 0 0 10px;
+              .contactNumber {
+                display: flex;
+                @media (max-width: 1199px) {
+                  flex-direction: column;
+                }
                 a {
                   color: #fff9e0;
                   text-decoration: none;

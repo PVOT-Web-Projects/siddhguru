@@ -52,6 +52,7 @@ import expvideo2 from "./images/Mayank Solanki Testimonial (Website)-MYSdPzFp.mp
 import expvideo4 from "./images/exp4-G1wzJ-nw.mp4";
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 import Prāṇa_Vriddhi from "./pages/aboutAshramPageinner/AboutAshramPageinner";
+import UsaTour from "./pages/events/usaTour/UsaTour";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
@@ -206,6 +207,7 @@ function App() {
           {/* <Route path="/activities" element={<Activities />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/events/asia-tour" element={<SingleEvent />} />
+          <Route path="/events/usa-tour" element={<UsaTour />} />
           {/* <Route path="/centers" element={<Centers />} /> */}
           {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
