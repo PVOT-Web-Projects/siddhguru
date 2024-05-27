@@ -3,7 +3,7 @@ import "../SingleEvent/singleEvent.scss";
 import deskImage from "../../../images/usa-tour-banner.jpg";
 import mobileImage from "../../../images/use-tour-mobile-banner.jpg";
 import InnerPageCommonText from "../../../components/innerPageCommonText/InnerPageCommonText";
-import SelectCity from "../../../components/SelectCity.jsx/SelectCity";
+// import SelectCity from "../../../components/SelectCity.jsx/SelectCity";
 import UsaTourCity from "../../../components/SelectCity.jsx/UsaTourCity";
 
 const UsaTour = () => {
