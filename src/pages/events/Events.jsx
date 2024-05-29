@@ -30,6 +30,22 @@ import EventLeftRightCopy from "../../components/eventLeftRight copy/EventLeftRi
 const prevEventData = [
   {
     image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/Iqvam6oCHFM?si=JQ9fLgTnyM9irnIB",
+    name: "Kalyan Mohatsav 2024 – Mumbai",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
+    name: "Anand Mohatsav 2024 – Surat",
+  },
+  
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
+    name: "Brahma Sparsh 2024 – Asia Tour",
+  },
+  {
+    image: videoPoster1,
     videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
     name: "Shri Anand Mahotsav 2024",
   },
@@ -55,6 +71,22 @@ const prevEventData = [
   },
 ];
 const prevEventHindiData = [
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/Iqvam6oCHFM?si=JQ9fLgTnyM9irnIB",
+    name: "Kalyan Mohatsav 2024 – Mumbai",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
+    name: "Anand Mohatsav 2024 – Surat",
+  },
+  
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
+    name: "Brahma Sparsh 2024 – Asia Tour",
+  },
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
@@ -181,31 +213,7 @@ const Events = () => {
           )}
         </div>
       </div>
-      {/* <FullWidthImageSec
-        imageUrl={fullWidthImage}
-        text={
-          "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
-        }
-      /> */}
-      {/* {loading ? (
-        <Spinner />
-      ) : (
-        <div className="cardList">
-          {events?.map((item) => (
-            <CardItem
-              key={item.id}
-              imageUrl={
-                item._embedded["wp:featuredmedia"] &&
-                item._embedded["wp:featuredmedia"][0].media_details.sizes.full
-                  .source_url
-              }
-              title={item.title.rendered}
-              description={item.excerpt.rendered}
-            />
-          ))}
-        </div>
-      )} */}
-      {/* <FormHomePage /> */}
+      
       <AllVideoHome />
     </div>
   );

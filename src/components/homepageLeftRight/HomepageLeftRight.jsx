@@ -1,4 +1,4 @@
-import theSaintImage1 from "../../images/saintMain.png";
+import theSaintImage1 from "../../images/professionalWisdom.jpeg";
 import SiddhasanaItem from "../siddhasanaItem/SiddhasanaItem";
 
 const homepageLeftRightData = [
