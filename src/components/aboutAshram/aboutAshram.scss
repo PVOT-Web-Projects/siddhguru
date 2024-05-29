@@ -1,6 +1,6 @@
 .aboutAshram {
   background-color: rgba(255, 234, 174, 0.16);
-  padding: 0 0 100px;
+  padding: 0 0 50px;
   &_wrapper {
     padding: 50px 0 0;
     &_image {
@@ -73,6 +73,9 @@
         display: block;
         font-weight: 400;
         padding: 0 20px;
+        a{
+          text-decoration: none;
+        }
         span {
           // font-family: "Lohit-Devanagari" !important;
           @media (max-width: 767px) {
@@ -80,10 +83,27 @@
           }
         }
       }
+      .video {
+        padding: 40px 150px;
+        @media (max-width: 991px) {
+          padding: 40px 120px;
+        }
+        @media (max-width: 767px) {
+          padding: 20px 30px;
+        }
+        @media (max-width: 575px) {
+          padding: 20px 20px;
+        }
+        video {
+          max-width: 100%;
+          display: block;
+        }
+      }
     }
     .aboutAshram_content {
       text-align: center;
       padding: 76px 0 0;
+      display: none;
       @media (max-width: 1600px) {
         padding: 50px 0 0;
       }
@@ -132,7 +152,7 @@
           @media (max-width: 575px) {
             width: 90%;
           }
-          span{
+          span {
             color: #123828;
             font-weight: 600;
           }
@@ -149,7 +169,25 @@
       }
     }
   }
-  .joinBtn{
+  .SiddhasanaItem {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 0 40px;
+    padding: 50px 200px 0;
+
+    @media(max-width:1340px){
+      padding: 50px 100px 0;
+    }
+    @media(max-width:1199px){
+      padding: 50px 60px 0;
+    }
+    @media(max-width:767px){
+      flex-direction: column-reverse;
+      padding: 50px 20px 0;
+    }
+}
+  .joinBtn {
     margin: 20px 0 0;
   }
 }

@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import "./innerPageBanner.scss";
-import { Blurhash } from "react-blurhash";
+import LanguageContext from "../language/Language";
+import PropTypes from "prop-types"
 
 const InnerPageBanner = ({
   image,
@@ -10,32 +11,29 @@ const InnerPageBanner = ({
   bigText,
   bigText2,
   overlay,
+  hindiText,
+  hindiBigText,
+  hindiBigText2,
 }) => {
-  // const [imageLoader, setImageLoader] = useState(false);
-  // console.log(imageLoader);
+  const { language } = useContext(LanguageContext);
 
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.onload = () => {
-  //     setImageLoader(true);
-  //   };
-  //   img.src = image;
-  // }, [image]);
   return (
     <div className="innerPageBanner">
       <div className={`innerPageBanner_wrapper ${overlay ? "overlay" : ""}`}>
         <img src={image} alt="bannerImage" className="deskImage" />
         <img src={mobileImage} alt="bannerImage" className="mobileImage" />
-        {text && (
+        {(text || hindiText) && (
           <div className="bannerText" style={{ color: color }}>
-            {text}
+            {language === "en" ? text : hindiText}
           </div>
         )}
-        {bigText && (
+        {(bigText || bigText2 || hindiBigText || hindiBigText2) && (
           <div className="bannerBigText" style={{ color: color }}>
-            {bigText}
+            {language === "en" ? bigText : hindiBigText}
             <br />
-            {bigText2 && bigText2}
+            {(bigText2 || hindiBigText2) && language === "en"
+              ? bigText2
+              : hindiBigText2}
           </div>
         )}
       </div>
@@ -43,3 +41,16 @@ const InnerPageBanner = ({
   );
 };
 export default InnerPageBanner;
+
+InnerPageBanner.propTypes = {
+  image : PropTypes.string,
+  text : PropTypes.string,
+  color : PropTypes.string,
+  mobileImage : PropTypes.string,
+  bigText : PropTypes.string,
+  bigText2 : PropTypes.string,
+  overlay : PropTypes.bool,
+  hindiText : PropTypes.string,
+  hindiBigText : PropTypes.string,
+  hindiBigText2 : PropTypes.string,
+}

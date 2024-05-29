@@ -3,7 +3,7 @@
   background-color: #6a1c1c;
   position: relative;
   z-index: 9999;
-  @media(max-width:991px){
+  @media (max-width: 991px) {
     display: none;
   }
   .topNavbar_container {
@@ -25,19 +25,18 @@
     .topNavbar_wrapper {
       display: flex;
       justify-content: end;
-      .footer_link_container{
+      .footer_link_container {
         display: flex;
         margin: 0 -10px;
-        @media(max-width:991px){
+        @media (max-width: 991px) {
           display: none;
         }
-        .social_icon{
+        .social_icon {
           padding: 0 10px;
           transition: all 0.4s;
-          &:hover{
+          &:hover {
             transform: translateY(-5px);
           }
-         
         }
       }
       ul {

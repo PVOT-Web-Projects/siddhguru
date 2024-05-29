@@ -2,12 +2,14 @@ import EventHomePageItem from "./EventHomePageItem/EventHomePageItem";
 import "./eventsHomePage.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import LanguageContext from "../language/Language";
 
-const EventsHomePage = () => {
+const EventsHomePage = ({heading, hindiHeading, content, hindiContent}) => {
   const [events, setEvents] = useState([]);
-  console.log(events);
+  // console.log(events);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     axios
@@ -124,7 +126,9 @@ const EventsHomePage = () => {
             transition={{ duration: 0.9, delay: 0.1 }}
             className="eventSec_second_heading"
           >
-            Upcoming Events with Sri SiddhGuru
+            {language === "en"
+              ? heading
+              : hindiHeading}
           </motion.div>
           <motion.div
             ref={ref}
@@ -133,8 +137,9 @@ const EventsHomePage = () => {
             transition={{ duration: 0.9, delay: 0.3 }}
             className="eventSec_second_text"
           >
-           {` Stay updated on Sri SiddhGuru's upcoming transformative gatherings
-            and spiritual events.`}
+            {language === "en"
+              ? content
+              : hindiContent}
           </motion.div>
           {/* </motion.div> */}
         </div>
@@ -145,30 +150,107 @@ const EventsHomePage = () => {
               id={item.id}
               key={item.id}
               // image={item.image}
+              show={item.acf.show_post}
               image={
                 item._embedded["wp:featuredmedia"] &&
                 item._embedded["wp:featuredmedia"][0].media_details.sizes.full
                   .source_url
               }
-              heading={item.acf.big_text}
+              heading={
+                language === "en" ? item.acf.big_text : item.acf.big_text_hindi
+              }
               // eventName={item.acf.event_name}
-              date={item.acf.date}
+              date={language === "en" ? item.acf.date : item.acf.date_hindi}
               // location={item.acf.location}
               // boxMonth={item.acf.box_month}
               // boxDate={item.acf.box_date}
               // boxWeek={item.acf.box_week}
-              eventDesc1={item.acf.event_desc1}
-              eventDesc2={item.acf.event_desc2}
-              eventDesc3={item.acf.event_desc3}
-              leftBold1={item.acf.left_bold_text1}
-              leftBold2={item.acf.left_bold_text2}
-              leftBold3={item.acf.left_bold_text3}
-              leftBold4={item.acf.left_bold_text4}
-              rightLight1={item.acf.right_light_text1}
-              rightLight2={item.acf.right_light_text2}
-              rightLight3={item.acf.right_light_text3}
-              rightLight4={item.acf.right_light_text4}
-              note={item.acf.note}
+              eventDesc1={
+                language === "en"
+                  ? item.acf.event_desc1
+                  : item.acf.event_desc1_hindi
+              }
+              eventDesc2={
+                language === "en"
+                  ? item.acf.event_desc2
+                  : item.acf.event_desc2_hindi
+              }
+              eventDesc3={
+                language === "en"
+                  ? item.acf.event_desc3
+                  : item.acf.event_desc3_hindi
+              }
+              leftBold1={
+                language === "en"
+                  ? item.acf.left_bold_text1
+                  : item.acf.left_bold_text1_hindi
+              }
+              leftBold2={
+                language === "en"
+                  ? item.acf.left_bold_text2
+                  : item.acf.left_bold_text2_hindi
+              }
+              leftBold3={
+                language === "en"
+                  ? item.acf.left_bold_text3
+                  : item.acf.left_bold_text3_hindi
+              }
+              leftBold4={
+                language === "en"
+                  ? item.acf.left_bold_text4
+                  : item.acf.left_bold_text4_hindi
+              }
+              leftBold5={
+                language === "en"
+                  ? item.acf.left_bold_text5
+                  : item.acf.left_bold_text5_hindi
+              }
+              leftBold6={
+                language === "en"
+                  ? item.acf.left_bold_text6
+                  : item.acf.left_bold_text6_hindi
+              }
+              leftBold7={
+                language === "en"
+                  ? item.acf.left_bold_text7
+                  : item.acf.left_bold_text7_hindi
+              }
+              rightLight1={
+                language === "en"
+                  ? item.acf.right_light_text1
+                  : item.acf.right_light_text1_hindi
+              }
+              rightLight2={
+                language === "en"
+                  ? item.acf.right_light_text2
+                  : item.acf.right_light_text2_hindi
+              }
+              rightLight3={
+                language === "en"
+                  ? item.acf.right_light_text3
+                  : item.acf.right_light_text3_hindi
+              }
+              rightLight4={
+                language === "en"
+                  ? item.acf.right_light_text4
+                  : item.acf.right_light_text4_hindi
+              }
+              rightLight5={
+                language === "en"
+                  ? item.acf.right_light_text5
+                  : item.acf.right_light_text5_hindi
+              }
+              rightLight6={
+                language === "en"
+                  ? item.acf.right_light_text6
+                  : item.acf.right_light_text6_hindi
+              }
+              rightLight7={
+                language === "en"
+                  ? item.acf.right_light_text7
+                  : item.acf.right_light_text7_hindi
+              }
+              note={language === "en" ? item.acf.note : item.acf.note_hindi}
               link={item.acf.link.url}
             />
           ))}

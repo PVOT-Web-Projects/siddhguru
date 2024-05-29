@@ -27,13 +27,13 @@ const Layout = ({ children }) => {
   const location = useLocation();
   console.log(location);
 
-  useEffect(() => {
-    popup && (document.body.style.overflow = "hidden");
-    !popup && (document.body.style.overflow = "unset");
-    if (location.pathname === "/events/asia-tour") {
-      document.body.style.overflow = "unset";
-    }
-  }, [popup, location]);
+  // useEffect(() => {
+  //   popup && (document.body.style.overflow = "hidden");
+  //   !popup && (document.body.style.overflow = "unset");
+  //   if (location.pathname === "/events/asia-tour") {
+  //     document.body.style.overflow = "unset";
+  //   }
+  // }, [popup, location]);
 
   const handlePopup = () => {
     setPopup(false);
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         {/* <div onClick={scrollTopHandle} className="scrollTop"> */}
         {/* <img src={scrollTop} alt="scrollTop" /> */}
 
-        {popup && location.pathname != "/events/asia-tour" && (
+        {/* {popup && location.pathname != "/events/asia-tour" && (
           <div className={`popup`}>
             <div className="popup_wrapper">
               <Link
@@ -62,7 +62,7 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
         {/* </div> */}
       </main>
       <Footer />

@@ -18,7 +18,8 @@ import {
   Offcanvas,
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import LanguageContext from "../../language/Language";
 // import Logo from "../logo/Logo";
 
 const Menu = () => {
@@ -30,6 +31,15 @@ const Menu = () => {
   // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [showSubMenu2, setShowSubMenu2] = useState(false);
   const [offcanvasVisible, setOffcanvasVisible] = useState(false);
+  const { language, switchLanguage } = useContext(LanguageContext);
+
+  console.log("context", language);
+  const changeHindiLanguage = () => {
+    switchLanguage("hindi");
+  };
+  const changeEnLanguage = () => {
+    switchLanguage("en");
+  };
 
   const toggleBtn = () => {
     setOffcanvasVisible(!offcanvasVisible);
@@ -75,7 +85,7 @@ const Menu = () => {
                 location.pathname === "/" ? "highlight" : ""
               }`}
             >
-              Home
+             {language === "en" ? "Home" : "होम"}
             </Link>
           </motion.div>
           <motion.div
@@ -90,7 +100,8 @@ const Menu = () => {
                 location.pathname === "/vedic-science" ? "highlight" : ""
               }`}
             >
-              Vedic Science
+               {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
+              {/* Vedic Science */}
             </Link>
           </motion.div>
           <motion.div
@@ -105,7 +116,8 @@ const Menu = () => {
                 location.pathname === "/siddhasana" ? "highlight" : ""
               }`}
             >
-              Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
+              {/* Siddhasana */}
             </Link>
           </motion.div>
           <motion.div
@@ -120,7 +132,8 @@ const Menu = () => {
                 location.pathname === "/about-ashram" ? "highlight" : ""
               }`}
             >
-              Ashram
+              {language === "en" ? "Ashram" : "आश्रम"}
+              {/* Ashram */}
             </Link>
           </motion.div>
 
@@ -147,7 +160,8 @@ const Menu = () => {
                 location.pathname === "/events" ? "highlight" : ""
               }`}
             >
-              Events
+              {language === "en" ? "Events" : "कार्यक्रम"}
+              {/* Events */}
             </Link>
           </motion.div>
           <motion.div
@@ -157,12 +171,13 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
           >
             <Link
-              to="/experience"
+              to="/experiences"
               className={`line_underscore nav-link ${
-                location.pathname === "/experience" ? "highlight" : ""
+                location.pathname === "/experiences" ? "highlight" : ""
               }`}
             >
-              Experience
+              {language === "en" ? "Experiences" : "अनुभव"}
+              {/* Experience */}
             </Link>
           </motion.div>
 
@@ -232,8 +247,29 @@ const Menu = () => {
                 location.pathname === "/contact" ? "highlight" : ""
               }`}
             >
-              Contact
+              {language === "en" ? "Contact" : "संपर्क"}
+              {/* Contact */}
             </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="multiLanguage"
+          >
+            <div
+              className={`lang ${language === "en" ? "active" : null}`}
+              onClick={changeEnLanguage}
+            >
+              En
+            </div>
+            <div
+              className={`lang ${language === "hindi" ? "active" : null}`}
+              onClick={changeHindiLanguage}
+            >
+              Hn
+            </div>
           </motion.div>
         </Nav>
 
@@ -252,8 +288,22 @@ const Menu = () => {
           onHide={handleOffcanvasHide}
         >
           <Offcanvas.Header closeButton>
-            {/* <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title> */}
+            <div className="multiLanguage" onClick={() => setOffcanvasVisible(false)}>
+              <div
+                className={`lang ${language === "en" ? "active" : null}`}
+                onClick={changeEnLanguage}
+              >
+                En
+              </div>
+              <div
+                className={`lang ${language === "hindi" ? "active" : null}`}
+                onClick={changeHindiLanguage}
+              >
+                Hn
+              </div>
+            </div>
           </Offcanvas.Header>
+
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               {/* <Link
@@ -284,28 +334,29 @@ const Menu = () => {
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Home
+               {language === "en" ? "Home" : "होम"}
               </Link>
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Vedic Science
+                 {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
               </Link>
+              
               <Link
                 to="/siddhasana"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
               </Link>
               <Link
                 to="/about-ashram"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Ashram
+                {language === "en" ? "Ashram" : "आश्रम"}
               </Link>
 
               {/* <Link
@@ -320,14 +371,14 @@ const Menu = () => {
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Events
+                {language === "en" ? "Events" : "कार्यक्रम"}
               </Link>
               <Link
                 to="/experience"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Experience
+                 {language === "en" ? "Experience" : "अनुभव"}
               </Link>
               {/* 
               <NavDropdown
@@ -362,12 +413,15 @@ const Menu = () => {
                 </HashLink>
                 <NavDropdown.Divider />
               </NavDropdown> */}
+
+
               <Link
                 to="/contact"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Contact Us
+                 {language === "en" ? "Contact Us" : "संपर्क करें"}
+                {/* Contact Us */}
               </Link>
               {/* <Link
                 to="/news"
@@ -397,7 +451,8 @@ const Menu = () => {
                 onClick={() => setOffcanvasVisible(false)}
                 target="_blank"
               >
-                Register Devotee/Volunteer
+                {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"}
+                {/* Register Devotee/Volunteer */}
               </Link>
               {/* <Link className="mobile_nav_link" href="#">
                 Donate

@@ -45,12 +45,14 @@ import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
-import expVideo1 from "./images/Ashok Sancheti Testimonial.mp4";
-import expVideo3 from "./images/exp4.mp4";
-import expVideo2 from "./images/Mayank Solanki Testimonial (Website).mp4";
-import expVideo4 from "./images/exp5.mp4";
+import fullVideo from "./images/videcScienceVideo-FyWQQtnN.mp4";
+import expvideo1 from "./images/Ashok Sancheti Testimonial-AxJu7i3v.mp4";
+import expvideo3 from "./images/exp3-dNXmpXxb.mp4";
+import expvideo2 from "./images/Mayank Solanki Testimonial (Website)-MYSdPzFp.mp4";
+import expvideo4 from "./images/exp4-G1wzJ-nw.mp4";
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
-
+import Prāṇa_Vriddhi from "./pages/aboutAshramPageinner/AboutAshramPageinner";
+import UsaTour from "./pages/events/usaTour/UsaTour";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
@@ -70,23 +72,23 @@ function App() {
 
   useEffect(() => {
     // Array of video URLs to load
-    if (isLoading) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+
     const videoUrls = [
       video1,
       video2,
       video3,
+      fullVideo,
+      expvideo1,
+      expvideo2,
+      expvideo3,
+      expvideo4,
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/cry6d20vdqdz2yq7vc1o.mp4",
       "https://res.cloudinary.com/djkswfmo5/video/upload/v1709700937/siddhguru/ftvbu1caqqxa7wdhnkdo.mp4",
-      // homeBanner,
-      // homeBannerM,
-      expVideo1,
-      expVideo2,
-      expVideo3,
-      expVideo4,
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228581/siddhguru/rarhpb9tqupmbhvdo7ex.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228683/siddhguru/uwpp7cyd0ovy83llhcxp.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228875/siddhguru/tm8xxjqiyhrt0rovppma.mp4",
+      "https://res.cloudinary.com/djkswfmo5/video/upload/v1710228917/siddhguru/kndxhydub7iqoktwuuvd.mp4",
     ];
 
     const loadVideos = async () => {
@@ -154,38 +156,44 @@ function App() {
     loadImages();
 
     loadVideos();
-    setTimeout(() => {
-      document.body.style.cursor = "smooth";
-      window.scrollTo(0, 0);
-      setIsLoading(false);
-    }, 3000);
-  }, [videosLoaded, imagesLoaded]);
+    // setTimeout(() => {
+    //   document.body.style.cursor = "smooth";
+    //   window.scrollTo(0, 0);
+    //   setIsLoading(false);
+    // }, 3000);
+    // if (isLoading) {
+    //   document.body.style.overflow = "hidden";
+    // }
+    // if (!isLoading) {
+    //   document.body.style.overflow = "unset";
+    // }
+  }, [videosLoaded, imagesLoaded, isLoading]);
 
-  const handleResize = () => {
-    setWidthCheck(window.innerWidth);
-  };
+  // const handleResize = () => {
+  //   setWidthCheck(window.innerWidth);
+  // };
   // console.log(widthCheck);
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    if (widthCheck > 991) {
-      var prevScrollpos = window.pageXOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("hide-header").style.top = "0px";
-        } else {
-          document.getElementById("hide-header").style.top =
-            "-200px"; /* adjust this value to the height of your header */
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    }
-  }, [widthCheck]);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   if (widthCheck > 991) {
+  //     var prevScrollpos = window.pageXOffset;
+  //     window.onscroll = function () {
+  //       var currentScrollPos = window.pageYOffset;
+  //       if (prevScrollpos > currentScrollPos) {
+  //         document.getElementById("hide-header").style.top = "0px";
+  //       } else {
+  //         document.getElementById("hide-header").style.top =
+  //           "-200px"; 
+  //       }
+  //       prevScrollpos = currentScrollPos;
+  //     };
+  //   }
+  // }, [widthCheck]);
 
   return (
     <>
-      { !hideLoader && <Loader loading={isLoading} />}
+      {/* {!hideLoader && <Loader loading={isLoading} />} */}
       <Layout>
         <ScrollTop />
         <Routes>
@@ -199,17 +207,17 @@ function App() {
           {/* <Route path="/activities" element={<Activities />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/events/asia-tour" element={<SingleEvent />} />
+          <Route path="/events/usa-tour" element={<UsaTour />} />
           {/* <Route path="/centers" element={<Centers />} /> */}
           {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/prana-vriddhi" element={<Prāṇa_Vriddhi />} />
           {/* <Route path="/news" element={<News />} /> */}
           {/* <Route path="/gallery" element={<Gallery />} /> */}
           {/* <Route path="/devotee" element={<Devotee />} /> */}
-
           <Route path="/siddhasana" element={<Siddhasana />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/experiences" element={<Experience />} />
           <Route />
         </Routes>
       </Layout>
