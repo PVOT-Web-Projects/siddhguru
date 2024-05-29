@@ -20,9 +20,9 @@ import bannerVideo from "../../images/heroBannerVideo2.mp4";
 import bannerMobileVideo from "../../images/Website_banner_video_hindi.mp4";
 import bannerVideomobile from "../../images/Website_mobile_banner_video.mp4";
 import "./newHome.scss";
-// import { Player } from "video-react";
-// import fullVideo from "../../images/Ashokbhai Interview Home.mp4";
-// import posterImage from "../../images/ashok_poster.jpg";
+import { Player } from "video-react";
+import fullVideo from "../../images/Ashokbhai Interview Home.mp4";
+import posterImage from "../../images/ashok_poster.jpg";
 import { useLocation } from "react-router-dom";
 const NewHome = () => {
   const location  = useLocation();
@@ -53,7 +53,7 @@ const NewHome = () => {
       <div className="tabNew">
         <TabSectionNewNew />
       </div>
-      {/* <div className="video">
+      <div className="video">
         <Player
           playsInline={true}
           src={
@@ -63,7 +63,7 @@ const NewHome = () => {
           poster={posterImage}
           // fluid={true}
         />
-      </div> */}
+      </div>
       <AboutAshram />
       <EventsHomePage
         heading={"Upcoming Events with Sri SiddhGuru"}
