@@ -1,36 +1,46 @@
-import ContactForm from "../../components/ContactForm/ContactForm";
+// import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactAddress from "../../components/contactAddress/ContactAddress";
-import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
+// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import Map from "../../map/Map";
 import "./contact.scss";
 import { Link } from "react-router-dom";
 import facebook from "../../images/facebook.svg";
 import insta from "../../images/insta.svg";
 import youtube from "../../images/youtube.svg";
-import twitter from "../../images/twittercopy.svg";
+// import twitter from "../../images/twittercopy.svg";
+import whatsApp from "../../images/whatsApp.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-import bannerImage from "../../images/ContactPage.jpg";
+import { useContext } from "react";
+import LanguageContext from "../../components/language/Language";
+// import bannerImage from "../../images/Contact-Banners-D_2.jpg";
+// import mobilebannerImage from "../../images/Contact-Banners-M_2.jpg";
 
 const Contact = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="contact">
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
-      <InnerPageBanner image={bannerImage} />
+      <InnerPageBanner
+        image={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg"
+        }
+        mobileImage={
+          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg"
+        }
+        bigText={"Connect with SiddhGuru:"}
+        bigText2={"Let Divine Wisdom Light Your Path"}
+        hindiBigText={"श्री सिद्धगुरु के साथ जुड़ें"}
+        hindiBigText2={
+          "गुरुदेव के दिव्य ज्ञान के प्रकाश से अपने जीवन का मार्ग प्रकाशित करें"
+        }
+      />
       <div className="contact_wrapper">
         <div className="contact_wrapper_left">
           <div className="heading">
-            Stay connected with Gurudev's blessings!
+            {language === "en"
+              ? "Stay connected with Gurudev's blessings!"
+              : "गुरुदेव के आशीर्वाद निरंतर प्राप्त करते रहें"}
           </div>
-          {/* <div className="title">
-            {
-              "Subscribe to our monthly newsletters and open the gateway to a world of spiritual wisdom. Immerse yourself in stories of Vedic science, unravel the daily learning lessons from Gurudev, and discover the transformative power of divine knowledge."
-            }
-          </div>
-          <div className="content">
-            {
-              "By subscribing, you join a community that cherishes holistic well-being and a deeper connection to the profound teachings of Siddhguru. Let the newsletter be your guide on this sacred journey, offering insights, inspiration, and a continuous flow of Gurudev's blessings right to your inbox. Subscribe now and embark on a path of spiritual growth and enlightenment."
-            }
-          </div> */}
         </div>
         {/* <div className="contact_wrapper_right">
           <ContactForm />
@@ -61,11 +71,14 @@ const Contact = () => {
                 <img src={youtube} alt="youtube" />
               </Link>
             </li>
-            {/* <li>
-              <Link to={"https://twitter.com/sri_sidheswar"} target="_blank">
-                <img src={twitter} alt="youtube" />
+            <li>
+              <Link
+                to={"https://whatsapp.com/channel/0029VaDdUk34NVikwxnIXa2T"}
+                target="_blank"
+              >
+                <img src={whatsApp} alt="whatsapp" />
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

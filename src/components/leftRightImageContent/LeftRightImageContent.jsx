@@ -10,6 +10,7 @@ const LeftRIghtImageContent = ({
   text3,
   text4,
   text5,
+  text6,
   descriptiontitle1,
   descriptiontext1,
   descriptiontitle2,
@@ -18,6 +19,7 @@ const LeftRIghtImageContent = ({
   titleColor,
   index,
   id,
+  tagline,
 }) => {
   return (
     <motion.div
@@ -41,6 +43,7 @@ const LeftRIghtImageContent = ({
         <img src={img} className="thesaintimg" />
       </div>
       <div className="leftRightImageContent_wrapper_text">
+        {tagline && <div className="tagline">{tagline}</div>}
         <div className="title" style={{ color: titleColor }}>
           {title}
         </div>
@@ -49,6 +52,7 @@ const LeftRIghtImageContent = ({
         {text3 && <div className="text2">{text3}</div>}
         {text4 && <div className="text2">{text4}</div>}
         {text5 && <div className="text2">{text5}</div>}
+        {text6 && <div className="text2">{text6}</div>}
         {(descriptiontext1 ||
           descriptiontext2 ||
           descriptiontitle1 ||
@@ -96,4 +100,9 @@ LeftRIghtImageContent.propTypes = {
   conclution: PropTypes.string,
   titleColor: PropTypes.string,
   id: PropTypes.string,
+  text3: PropTypes.string,
+  text4: PropTypes.string,
+  text5: PropTypes.string,
+  text6: PropTypes.string,
+  tagline: PropTypes.string,
 };

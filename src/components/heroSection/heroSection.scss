@@ -67,7 +67,7 @@
             width: 880px;
           }
           @media (max-width: 991px) {
-            width: 650px;
+            width: 709px;
           }
         }
         &::before {
@@ -102,6 +102,9 @@
             top: 48%;
             height: 29%;
             width: 33%;
+          }
+          @media(max-width:991px){
+            top: 53%;
           }
         }
       }

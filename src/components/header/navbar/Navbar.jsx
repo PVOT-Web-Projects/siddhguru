@@ -4,27 +4,42 @@ import { useInView } from "react-intersection-observer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { Link, useLocation } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-
+// import { HashLink } from "react-router-hash-link";
+import logoImage from "../../../images/logo.png";
+import icon2 from "../../../images/facebookMobile.svg";
+import icon3 from "../../../images/youtubeMobile.svg";
+import icon1 from "../../../images/instaMobile.svg";
+import icon4 from "../../../images/twitterMobile.svg";
 import {
   Navbar,
   Container,
   Nav,
-  NavDropdown,
+  // NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
 // import { DropdownSubmenu } from "react-bootstrap-submenu";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import LanguageContext from "../../language/Language";
+// import Logo from "../logo/Logo";
 
 const Menu = () => {
   const location = useLocation();
-  console.log(location.pathname);
+  // console.log(location.pathname);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
   // const [showSubMenu, setShowSubMenu] = useState(false);
   // const [showSubMenu2, setShowSubMenu2] = useState(false);
   const [offcanvasVisible, setOffcanvasVisible] = useState(false);
+  const { language, switchLanguage } = useContext(LanguageContext);
+
+  console.log("context", language);
+  const changeHindiLanguage = () => {
+    switchLanguage("hindi");
+  };
+  const changeEnLanguage = () => {
+    switchLanguage("en");
+  };
 
   const toggleBtn = () => {
     setOffcanvasVisible(!offcanvasVisible);
@@ -46,28 +61,18 @@ const Menu = () => {
   // const handleMouseLeave2 = () => {
   //   setShowSubMenu2(false);
   // };
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-  const closeDropdown = () => {
-    setDropdownOpen(false);
-  };
+  // const [isDropdownOpen, setDropdownOpen] = useState(false);
+  // const toggleDropdown = () => {
+  //   setDropdownOpen(!isDropdownOpen);
+  // };
+  // const closeDropdown = () => {
+  //   setDropdownOpen(false);
+  // };
   return (
     <Navbar expand={false}>
       <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
         <Nav className="dekstop">
-          {/* <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 0 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Link to="/" className="line_underscore nav-link">
-              Home
-            </Link>
-          </motion.div> */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 0 }}
@@ -75,12 +80,12 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
-              to="/new-home"
+              to="/"
               className={`line_underscore nav-link ${
-                location.pathname === "/new-home" ? "highlight" : ""
+                location.pathname === "/" ? "highlight" : ""
               }`}
             >
-              New Home
+             {language === "en" ? "Home" : "होम"}
             </Link>
           </motion.div>
           <motion.div
@@ -95,7 +100,8 @@ const Menu = () => {
                 location.pathname === "/vedic-science" ? "highlight" : ""
               }`}
             >
-              Vedic Science
+               {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
+              {/* Vedic Science */}
             </Link>
           </motion.div>
           <motion.div
@@ -110,7 +116,8 @@ const Menu = () => {
                 location.pathname === "/siddhasana" ? "highlight" : ""
               }`}
             >
-              Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
+              {/* Siddhasana */}
             </Link>
           </motion.div>
           <motion.div
@@ -125,7 +132,8 @@ const Menu = () => {
                 location.pathname === "/about-ashram" ? "highlight" : ""
               }`}
             >
-              Ashram
+              {language === "en" ? "Ashram" : "आश्रम"}
+              {/* Ashram */}
             </Link>
           </motion.div>
 
@@ -152,7 +160,8 @@ const Menu = () => {
                 location.pathname === "/events" ? "highlight" : ""
               }`}
             >
-              Events
+              {language === "en" ? "Events" : "कार्यक्रम"}
+              {/* Events */}
             </Link>
           </motion.div>
           <motion.div
@@ -162,12 +171,13 @@ const Menu = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
           >
             <Link
-              to="/experience"
+              to="/experiences"
               className={`line_underscore nav-link ${
-                location.pathname === "/experience" ? "highlight" : ""
+                location.pathname === "/experiences" ? "highlight" : ""
               }`}
             >
-              Experience
+              {language === "en" ? "Experiences" : "अनुभव"}
+              {/* Experience */}
             </Link>
           </motion.div>
 
@@ -237,8 +247,29 @@ const Menu = () => {
                 location.pathname === "/contact" ? "highlight" : ""
               }`}
             >
-              Contact
+              {language === "en" ? "Contact" : "संपर्क"}
+              {/* Contact */}
             </Link>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 0 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="multiLanguage"
+          >
+            <div
+              className={`lang ${language === "en" ? "active" : null}`}
+              onClick={changeEnLanguage}
+            >
+              En
+            </div>
+            <div
+              className={`lang ${language === "hindi" ? "active" : null}`}
+              onClick={changeHindiLanguage}
+            >
+              Hn
+            </div>
           </motion.div>
         </Nav>
 
@@ -257,8 +288,22 @@ const Menu = () => {
           onHide={handleOffcanvasHide}
         >
           <Offcanvas.Header closeButton>
-            {/* <Offcanvas.Title id="offcanvasNavbarLabel">Sidebar</Offcanvas.Title> */}
+            <div className="multiLanguage" onClick={() => setOffcanvasVisible(false)}>
+              <div
+                className={`lang ${language === "en" ? "active" : null}`}
+                onClick={changeEnLanguage}
+              >
+                En
+              </div>
+              <div
+                className={`lang ${language === "hindi" ? "active" : null}`}
+                onClick={changeHindiLanguage}
+              >
+                Hn
+              </div>
+            </div>
           </Offcanvas.Header>
+
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               {/* <Link
@@ -285,32 +330,33 @@ const Menu = () => {
                 Home
               </Link> */}
               <Link
-                to="/new-home"
+                to="/"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                New Home
+               {language === "en" ? "Home" : "होम"}
               </Link>
               <Link
                 to="/vedic-science"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Vedic Science
+                 {language === "en" ? "Vedic Science" : "वैदिक विज्ञान"}
               </Link>
+              
               <Link
                 to="/siddhasana"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Siddhasana
+              {language === "en" ? "Siddhasana" : "सिद्धासना"}
               </Link>
               <Link
                 to="/about-ashram"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Ashram
+                {language === "en" ? "Ashram" : "आश्रम"}
               </Link>
 
               {/* <Link
@@ -325,14 +371,14 @@ const Menu = () => {
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Events
+                {language === "en" ? "Events" : "कार्यक्रम"}
               </Link>
               <Link
                 to="/experience"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Experience
+                 {language === "en" ? "Experience" : "अनुभव"}
               </Link>
               {/* 
               <NavDropdown
@@ -367,12 +413,15 @@ const Menu = () => {
                 </HashLink>
                 <NavDropdown.Divider />
               </NavDropdown> */}
+
+
               <Link
                 to="/contact"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
               >
-                Contact Us
+                 {language === "en" ? "Contact Us" : "संपर्क करें"}
+                {/* Contact Us */}
               </Link>
               {/* <Link
                 to="/news"
@@ -397,16 +446,54 @@ const Menu = () => {
                 Blogs
               </Link> */}
               <Link
-                to="/devotee"
+                to="https://app.sribrahmrishiashram.org/devotee/login"
                 className="mobile_nav_link"
                 onClick={() => setOffcanvasVisible(false)}
+                target="_blank"
               >
-                Register Devotee/Volunteer
+                {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"}
+                {/* Register Devotee/Volunteer */}
               </Link>
               {/* <Link className="mobile_nav_link" href="#">
                 Donate
               </Link> */}
             </Nav>
+
+            {/* <Logo /> */}
+            <div className="footer_link_container">
+              <div className="instagram_icon social_icon">
+                <a
+                  href="https://www.instagram.com/srisidheshwarbrahmrishi/"
+                  target="_blank"
+                >
+                  <img src={icon1} height="20px" />
+                </a>
+              </div>
+              <div className="facebook_icon social_icon">
+                <a
+                  href=" https://www.facebook.comsrisidheshwarbrahmrishi"
+                  target="_blank"
+                >
+                  <img src={icon2} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a
+                  href=" https://www.youtube.com/@srisidheshwartirth-brahmri5318"
+                  target="_blank"
+                >
+                  <img src={icon3} />
+                </a>
+              </div>
+              <div className="youtube_icon social_icon">
+                <a href=" https://twitter.com/sri_sidheswar" target="_blank">
+                  <img src={icon4} />
+                </a>
+              </div>
+            </div>
+            <div className="mobileNavLogo">
+              <img src={logoImage} alt="logo" />
+            </div>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

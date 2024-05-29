@@ -6,8 +6,11 @@ import icon2 from "../../images/facebook_icon.svg";
 import icon3 from "../../images/youtube_icon.svg";
 import icon1 from "../../images/instagram_icon.svg";
 import icon4 from "../../images/twitter.svg";
+import { useContext } from "react";
+import LanguageContext from "../language/Language";
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
   });
@@ -23,20 +26,28 @@ const Footer = () => {
         <img className="footer_img" src={footerimg}></img>
       </motion.div>
       <div className="footer_text">
-        <p>Address :</p>
-        Sri Siddeshwar Teerth – Sri Brahmrishi Ashram,R.C.Road, C. Ramapuram,
-        Ramachandrapuram Mandalam, Tirupati – 517561, India. Call :
-        <a
-          href="to:91 986
-        6622049"
-        >
-          +91 986 6622049
-        </a>
-        , <a href="to:918772247056">+91 877 2247056</a> | Tele Fax :
-        <a href="to:918772247059">+91 877 2247059</a>| Email :
-        <a href="mailto:contact@sribrahmrishiashram.org">
-          contact@sribrahmrishiashram.org
-        </a>
+        <p>{language === "en" ? "Address :" : "पता:"}</p>
+        {language === "en"
+          ? "Sri Sidheshwar Tirth, Shri Brahmrishi Ashram, R.C Road, C. Ramapuram, Ramchandrapuram Mandal, Tirupati, Andhra Pradesh  - 517561, India. Call :"
+          : "श्री सिद्धेश्वर तीर्थ, ब्रह्मर्षि आश्रम, आर. सी. रोड, सी. रामपुरम, रामचंद्रपुरम मंडलम, तिरुपति के पास, आन्ध्र प्रदेश - 517561, भारत।. फोन:"}
+        <a href="tel:91 7207811011">+91 7207811011</a>,{" "}
+        <a href="tel:91 0986 6622049">+91 0986 6622049</a>,{" "}
+        <a href="tel:91 877 2247056">+91 877 2247056</a>,{" "}
+        <a href="tel:91 877 2247669">+91 877 2247669</a> |{" "}
+        {/* {language === "en" ? "Tele Fax :" : "टैली फैक्स : "}
+        <a href="tel:918772247059">+91 0877 2247059</a>|{" "} */}
+        {language === "en" ? "WhatsApp :" : "वाट्सऐप: "}
+        <a href="tel:91 9676516006">+91 9676516006</a>| <br />
+        <div className="footerEmail">
+          {language === "en" ? "Email :" : "ई-मेल : "}
+          <a href="mailto:enquiry.sbashram@gmail.com">
+            enquiry.sbashram@gmail.com
+          </a>
+          ,
+          <a href="mailto:eesystem.sbashram@gmail.com">
+            eesystem.sbashram@gmail.com
+          </a>
+        </div>
       </div>
 
       <div className="footer_link_container">

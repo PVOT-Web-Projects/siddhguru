@@ -1,15 +1,120 @@
 .innerPageBanner {
   // margin: 0 0 50px;
+  .overlay {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #0000007a, #ffffff00);
+    }
+  }
   &_wrapper {
+    position: relative;
     img {
       max-width: 100%;
       display: block;
       width: 100%;
       //   height: calc(100vh - 40px);
       object-fit: cover;
+      height: calc(100vh - 180px);
+      @media (max-width: 1600px) {
+        height: calc(100vh - 100px);
+      }
       @media (max-width: 767px) {
         height: 75vh;
         object-position: 88% 100%;
+      }
+      &.deskImage {
+        display: block;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &.mobileImage {
+        display: none;
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
+    }
+    .bannerText {
+      position: absolute;
+      left: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 52px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      width: 850px;
+      @media (max-width: 1199px) {
+        font-size: 35px;
+        width: 550px;
+        left: 55px;
+      }
+      @media (max-width: 991px) {
+        font-size: 35px;
+        width: 450px;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+        width: 450px;
+        top: 20px;
+        transform: translateY(0);
+        font-size: 28px;
+        left: 20px;
+      }
+      @media (max-width: 575px) {
+        left: 20px;
+        text-align: center;
+        top: 50px;
+        // transform: translateX(-50%);
+        // top: auto;
+        // bottom: 20px;
+        width: 90%;
+        // text-align: center;
+      }
+    }
+    .bannerBigText {
+      position: absolute;
+      left: 93px;
+      top: 38%;
+      transform: translateY(-50%);
+      font-size: 52px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      // width: 850px;
+      width: 46vw;
+      text-align: left;
+      @media (max-width: 1199px) {
+        font-size: 35px;
+        width: 500px;
+        left: 55px;
+      }
+      @media (max-width: 991px) {
+        font-size: 35px;
+        width: 400px;
+        top: 40%;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+        width: 450px;
+        top: 20px;
+        transform: translateY(0);
+        font-size: 28px;
+        left: 20px;
+      }
+      @media (max-width: 575px) {
+        left: 20px;
+        // transform: translateX(-50%);
+        // top: auto;
+        // bottom: 20px;
+        width: 90%;
+        // text-align: center;
       }
     }
   }

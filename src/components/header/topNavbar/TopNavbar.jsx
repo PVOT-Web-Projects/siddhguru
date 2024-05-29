@@ -4,8 +4,10 @@ import icon2 from "../../../images/facebook_icon.svg";
 import icon3 from "../../../images/youtube_icon.svg";
 import icon1 from "../../../images/instagram_icon.svg";
 import icon4 from "../../../images/twitter.svg";
-
+import { useContext } from "react";
+import LanguageContext from "../../language/Language";
 const TopNavbar = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <div className="topNavbar" id="hide-topNav">
       <div className="topNavbar_container">
@@ -36,10 +38,7 @@ const TopNavbar = () => {
               </a>
             </div>
             <div className="youtube_icon social_icon">
-              <a
-                href=" https://twitter.com/sri_sidheswar"
-                target="_blank"
-              >
+              <a href=" https://twitter.com/sri_sidheswar" target="_blank">
                 <img src={icon4} />
               </a>
             </div>
@@ -58,7 +57,13 @@ const TopNavbar = () => {
               <Link to="/blog">Blogs</Link>
             </li> */}
             <li>
-              <Link to="/devotee">Register Devotee/Volunteer</Link>
+              <Link
+                to="https://app.sribrahmrishiashram.org/devotee/login"
+                target="_blank"
+              >
+                 {/* {language === "en" ? "Register Devotee/Volunteer" : "भक्त/स्वयंसेवक पंजीकृत करें"} */}
+                Register Devotee/Volunteer
+              </Link>
             </li>
             {/* <li>
               <a href="#">Donate</a>

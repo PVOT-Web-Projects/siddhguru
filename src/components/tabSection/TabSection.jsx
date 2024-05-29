@@ -21,12 +21,12 @@ const theSaintData = [
     id: "life_of_nutshell",
     index: 0,
     img: theSaintImage1,
-    title: "Sri Siddhguru",
-    text: "Sri Brahmrishi Siddhguru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
+    title: "Sri SiddhGuru",
+    text: "Sri Brahmrishi SiddhGuru Gurudev, embodying compassion, love, humility, and simplicity, stands as a revered sage in our era. Adhering to ancient Indian spiritual practices, he has mastered all Kundalini Chakras and eight Siddhis, achieving supreme spiritual enlightenment. Establishing a spiritual connection with him can profoundly transform your life, bringing peace and harmony in ways beyond our understanding. He has the divine ability to transform our lives, breaking the barrier of distance.",
     // text2:
-    //   "Sri Siddhguru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
+    //   "Sri SiddhGuru follows the thousands of years old tradition of spiritual discipline and meditation regime (Sadhana) of ancient sages from India. He has achieved the pinnacle of Sadhana, invoking all his Kundalini Chakras (the centers of divine energy within our body) and acquiring eight Siddhis (supreme spiritual powers) mastered by our ancient sages.",
     // text3:
-    //   "Once you create a spiritual bond with Sri Siddhguru, he acts as a catalyst to bring peace and harmony to your life in ways beyond the comprehension of the limited capacity of our minds.  He has the divine ability to transform your life even when he is thousands of miles away.",
+    //   "Once you create a spiritual bond with Sri SiddhGuru, he acts as a catalyst to bring peace and harmony to your life in ways beyond the comprehension of the limited capacity of our minds.  He has the divine ability to transform your life even when he is thousands of miles away.",
   },
   {
     id: "kundalini",
@@ -42,15 +42,15 @@ const theSaintData = [
     index: 2,
     img: theSaintImage3,
     title: "Asht Siddhi’s & Nav Nidhis",
-    text: "Siddhguru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to Siddhguru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
+    text: "SiddhGuru acquired all eight Siddhis, mastering 17,868 Vidhis with guidance from Guru Devraha Baba. Born with three Siddhis, he achieved the remaining through rigorous practice, completing them in under twelve years with Baba's support. Additionally, Gurudev has attained nine Nidhis, divine supernatural treasures. Followers testify to SiddhGuru's ability to manifest in extraordinary ways, using these divine energies to assist those in desperate situations, showcasing the profound impact of his spiritual mastery and compassion.",
     // text2:
-    //   "In Siddhguru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
+    //   "In SiddhGuru’s own words, “I acquired all those Siddhis because of the grace of my Guru Devraha Baba, who was the most revered saint of recent times.",
     // text3:
     //   "“I was born with three Siddhis already acquired.  They came with my birth. Baba helped me acquire the remaining Siddhis. That required me to do thousands of Vidhis. With Baba’s encouragement and help, I completed all remaining Siddhis in eleven years and eight months.”",
     // text4:
     //   "Gurudev has also attained nine Nidhis -the divine supernatural treasures.",
     // text5:
-    //   "From the experiences of Siddhguru’s followers, you’ll see that Siddhguru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
+    //   "From the experiences of SiddhGuru’s followers, you’ll see that SiddhGuru has manifested himself in ways that seem impossible to help those in utterly desperate situations using these divine energies.",
 
     // descriptiontitle1: "Asht Sidhi -",
     // descriptiontext1:
@@ -68,9 +68,9 @@ const theSaintData = [
   //   index: 3,
   //   img: theSaintImage4,
   //   title: "Mission",
-  //   text: "Service to humanity is the best work of life - Siddhguru",
+  //   text: "Service to humanity is the best work of life - SiddhGuru",
   //   descriptiontitle1:
-  //     "Siddhguru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where Siddhguru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. Siddhguru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
+  //     "SiddhGuru commits to the service of humanity by sharing knowledge that liberates hearts and empowers every individual. It's a dedicated journey where SiddhGuru tirelessly works, akin to a compassionate friend extending a helping hand to those facing challenges. His mission acts as a guiding beacon, illuminating the way toward an infinite ocean of divine compassion. This compassion is an expansive sea of solace and understanding where everyone can find comfort. SiddhGuru's endeavors go beyond imparting wisdom; they are about uplifting the spirits of the suffering masses, embodying a profound service to humanity that extends a compassionate embrace to all.",
   // },
 ];
 const visionData = [
@@ -78,9 +78,9 @@ const visionData = [
     id: "anant_diksha",
     img: image1,
     title: "Vision",
-    text: "Sri Siddhguru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. Siddhguru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
+    text: "Sri SiddhGuru aims to revolutionize lives through Vedic science's hidden powers. Utilizing Brahm Shakti, he enables individuals to unlock their potential, elevate consciousness, and achieve unparalleled peace and harmony. This transformation surpasses ordinary understanding, accessing profound awareness beyond our minds' limits. SiddhGuru's guidance enhances personal growth and links us to a broader, enlightened purpose, fostering a more awakened society.",
     // text2:
-    //   "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes Siddhguru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
+    //   "Anant Diksha is a form of Digital Diksha that mirrors the concept of getting the blessing of gurudev in any corner of the world. By registering, you become a part of our community, receiving Gurudev's blessings. It's like having a personal mentor digitally extend profound guidance. This experience makes SiddhGuru's teachings vivid, fostering a deep connection between the seeker and divine wisdom. Feel the transformative power of spiritual guidance at your fingertips, seamlessly integrating sacred teachings into the digital age.",
   },
   {
     id: "siddhasana",
@@ -92,13 +92,13 @@ const visionData = [
     id: "ashram",
     img: image3,
     title: "Ashram",
-    text: "Discover the serene Siddhguru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of Siddhguru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
+    text: "Discover the serene SiddhGuru's Ashram in Tirupati, nestled among sacred hills. This spiritual sanctuary offers more than just solace; it's a place where tranquility meets divine energy, creating a peaceful retreat from everyday life. Here, the world's noise diminishes, replaced by a spiritual calm that leads you to inner peace. Experience the essence of SiddhGuru's wisdom in every corner, making every moment a chance for enlightenment and soulful rejuvenation.",
   },
   {
     id: "world_spiritual_forum",
     img: image4,
     title: "World Spiritual Forum",
-    text: "The World Spiritual Forum brings together people from all over the world, sharing Siddhguru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
+    text: "The World Spiritual Forum brings together people from all over the world, sharing SiddhGuru's vision of reaching a higher consciousness. This global network shows that searching for spiritual truth is something everyone can relate to, no matter where they are. It proves that the journey towards self-realization and peace knows no borders.",
   },
 ];
 const wisdomData = [
@@ -106,7 +106,7 @@ const wisdomData = [
     // id: "anant_diksha",
     img: wisdomImage,
     title: "Miracles of Vedic Science",
-    text: "During his sojourns in the Himalayas, Siddhguru Sri Siddheshwar Brahmrishi Gurudev undertook onerous Tapasya to unravel the secrets of Vedic Science. He developed a keen interest in Vedic Science and attained mastery over that sacred knowledge. A pupil of masters such as Maha Tapasvi Siddhiraj Pragyachakshuji and Brahmrishi Devraha Baba, Sri Siddhguru learned Vedic Science to heal and help people seeking his support.",
+    text: "During his sojourns in the Himalayas, SiddhGuru Sri Siddheshwar Brahmrishi Gurudev undertook onerous Tapasya to unravel the secrets of Vedic Science. He developed a keen interest in Vedic Science and attained mastery over that sacred knowledge. A pupil of masters such as Maha Tapasvi Siddhiraj Pragyachakshuji and Brahmrishi Devraha Baba, Sri SiddhGuru learned Vedic Science to heal and help people seeking his support.",
     text2:
       "The ancient wisdom of Vedic Science offers us a profound understanding of the interconnectedness between an individual, the cosmos, and the Parmatma. It suggests a holistic approach to life that delves into the metaphysical nature of a living being.",
   },
@@ -114,7 +114,7 @@ const wisdomData = [
 
 const tabData1 = [
   {
-    title: "Sri Siddhguru",
+    title: "Sri SiddhGuru",
   },
   {
     title: "Sadhana & Kundalini Invocation",
@@ -142,7 +142,13 @@ const tabData2 = [
 ];
 const tabData3 = [
   {
-    title: "Miracles of Vedic Science",
+    title: "Spiritual Wisdom",
+  },
+  {
+    title: "Social Wisdom",
+  },
+  {
+    title: "Professional Wisdom",
   },
 ];
 
@@ -186,7 +192,7 @@ const TabSection = () => {
               onClick={handleTab1}
             >
               <img src={mainTabImage1} alt="mainTab" />
-              <div className="mainTab_name">Sri Siddhguru</div>
+              <div className="mainTab_name">Sri SiddhGuru</div>
             </div>
             <div
               className={`${
@@ -302,7 +308,7 @@ const TabSection = () => {
             <div className="tabSection_mobile_wrapper_tab_image">
               <img src={mainTabImage1} alt="mainTabMobile" />
               <div className="tabSection_mobile_wrapper_tab_text">
-                Sri Siddhguru
+                Sri SiddhGuru
               </div>
             </div>
             {tabContent1Mobile &&
