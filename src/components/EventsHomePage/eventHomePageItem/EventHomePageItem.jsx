@@ -118,7 +118,7 @@ const EventHomePageItem = ({
             )}
             { !note &&  heading === "Spiritual Retreat in New York with Sri Siddhguru" && (
               <div className="eventCardBtn">
-                <Button link={eventLocation.pathname === "/" ? "/retreat" : link} btn_text={eventLocation.pathname === "/" ? "Learn More" : "Register Now"} />
+                <Button link={eventLocation.pathname === "/" ? "/retreat" : link} btn_text={eventLocation.pathname === "/" ? "Learn More" : "Learn More"} />
               </div>
             )}
             {/* {location === "/" && !note && (
