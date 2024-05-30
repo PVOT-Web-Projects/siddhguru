@@ -111,9 +111,14 @@ const EventHomePageItem = ({
             </div>
             {note && <div className="note">{note}</div>}
             {/* <div className="location">{location}</div> */}
-            { !note && (
+            { !note && heading === "Brahm Sparsh - USA Tour 2024" && (
               <div className="eventCardBtn">
                 <Button link={eventLocation.pathname === "/" ? "/events" : link} btn_text={eventLocation.pathname === "/" ? "Learn More" : "Register Now"} />
+              </div>
+            )}
+            { !note &&  heading === "Spiritual Retreat in New York with Sri Siddhguru" && (
+              <div className="eventCardBtn">
+                <Button link={eventLocation.pathname === "/" ? "/retreat" : link} btn_text={eventLocation.pathname === "/" ? "Learn More" : "Register Now"} />
               </div>
             )}
             {/* {location === "/" && !note && (

@@ -5,10 +5,13 @@ import image1 from "../../images/Siddhasana_WHAT.jpg";
 import image2 from "../../images/Siddhasana_WHERE & WHEN.jpg";
 import image3 from "../../images/Siddhasana_WHY-min.jpg";
 import image4 from "../../images/Siddhasana_WHOM.jpg";
+import Button from "../../components/buttons/button4";
 import image5 from "../../images/how_image.jpeg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import { useContext } from "react";
 import LanguageContext from "../../components/language/Language";
+import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+import "./retreat.scss";
 
 const reTreatData = [
   {
@@ -157,11 +160,24 @@ const Retreat = () => {
         }
       />
       <div className="siddhasana_wrapper">
-        {(language === "en" ? reTreatData : reTreatHindiData).map(
-          (item, index) => (
-            <SiddhasanaItem key={index} {...item} />
-          )
-        )}
+        {reTreatData.map((item, index) => (
+          <SiddhasanaItem key={index} {...item} />
+        ))}
+      </div>
+      <div className="registerText">
+        <HeadingContentWithImages
+          heading={
+            "Join Us. Don’t miss this rare opportunity for an unforgettable, life-transforming spiritual retreat with Sri Siddhguru."
+          }
+        />
+      </div>
+      <div className="register">
+        <Button
+          link={
+            "/https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
+          }
+          btn_text={"Register Now"}
+        />
       </div>
     </div>
   );
