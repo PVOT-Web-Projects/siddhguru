@@ -174,7 +174,7 @@ const Retreat = () => {
       <div className="register">
         <Button
           link={
-            "/https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
+            "https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
           }
           btn_text={"Register Now"}
         />
