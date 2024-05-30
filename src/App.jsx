@@ -53,6 +53,7 @@ import expvideo4 from "./images/exp4-G1wzJ-nw.mp4";
 import SingleEvent from "./pages/events/SingleEvent/SingleEvent";
 import Prāṇa_Vriddhi from "./pages/aboutAshramPageinner/AboutAshramPageinner";
 import UsaTour from "./pages/events/usaTour/UsaTour";
+import Retreat from "./pages/retreat/Retreat";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
@@ -218,6 +219,7 @@ function App() {
           {/* <Route path="/devotee" element={<Devotee />} /> */}
           <Route path="/siddhasana" element={<Siddhasana />} />
           <Route path="/experiences" element={<Experience />} />
+          <Route path="/retreat" element={<Retreat />} />
           <Route />
         </Routes>
       </Layout>

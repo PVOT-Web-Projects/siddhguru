@@ -8,12 +8,14 @@ import LanguageContext from "../../components/language/Language";
 
 const SiddhasanaItem = ({
   heading,
+  boldText,
   text1,
   text2,
   text3,
   text4,
   text5,
   text6,
+  text7,
   image,
   delay,
   list1,
@@ -52,6 +54,8 @@ const SiddhasanaItem = ({
         {text4 && <p>{text4}</p>}
         {text5 && <p>{text5}</p>}
         {text6 && <p>{text6}</p>}
+        {boldText && <strong>{boldText}</strong>}
+        {text7 && <p>{text7}</p>}
         {(list1bold ||
           list2bold ||
           list3bold ||
