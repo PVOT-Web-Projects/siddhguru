@@ -159,7 +159,9 @@ const Retreat = () => {
         hindiExtracontent={
           "Located about 40 miles north of New York City, Garrison Institute is easily accessible by both road and train. The picturesque train ride from Grand Central Station in Manhattan takes approximately one hour."
         }
+        showDivider={true}
       />
+       
       </div>
       <div className="siddhasana_wrapper">
         {reTreatData.map((item, index) => (
