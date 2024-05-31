@@ -139,12 +139,13 @@ const Retreat = () => {
         hindiBigText={"Spiritual Retreat with Sri Siddhguru in New York"}
         overlay={true}
       />
+      <div className="Retreat_background">
       <HeadingContentWithImages
         heading={
-          "4th TO 7TH JULY, 2024 – Garrison Institute, New York "
+          "4th TO 7th JULY, 2024 – Garrison Institute, New York "
         }
         hindiHeading={
-          "4th TO 7TH JULY, 2024 – Garrison Institute, New York"
+          "4th TO 7th JULY, 2024 – Garrison Institute, New York"
         }
         content={
           "We are thrilled to announce an extraordinary spiritual retreat from July 4 to July 7, 2024, at the serene Garrison Institute in upstate New York. This retreat will be graced by the divine presence of Sri Siddhguru, whose energy and wisdom promise a life-altering spiritual journey."
@@ -159,6 +160,7 @@ const Retreat = () => {
           "Located about 40 miles north of New York City, Garrison Institute is easily accessible by both road and train. The picturesque train ride from Grand Central Station in Manhattan takes approximately one hour."
         }
       />
+      </div>
       <div className="siddhasana_wrapper">
         {reTreatData.map((item, index) => (
           <SiddhasanaItem key={index} {...item} />
