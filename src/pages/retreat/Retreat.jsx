@@ -5,7 +5,7 @@ import image1 from "../../images/Siddhasana_WHAT.jpg";
 import image2 from "../../images/Siddhasana_WHERE & WHEN.jpg";
 import image3 from "../../images/Siddhasana_WHY-min.jpg";
 import image4 from "../../images/Siddhasana_WHOM.jpg";
-import Button from "../../components/buttons/button4";
+import Button from "../../components/buttons/button6";
 import image5 from "../../images/how_image.jpeg";
 import SiddhasanaItem from "../../components/siddhasanaItem/SiddhasanaItem";
 import { useContext } from "react";
