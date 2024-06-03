@@ -6,27 +6,33 @@
   @media (max-width: 1024px) {
     padding: 0 40px;
   }
+
   @media (max-width: 767px) {
     padding: 0 30px;
   }
+
   @media (max-width: 575px) {
     padding: 0 20px;
   }
 }
-.events{
-  .innerPageCommonHeading{
-    padding: 240px 0 50px 
+
+.events {
+  .innerPageCommonHeading {
+    padding: 240px 0 50px
   }
 }
-.event_copy{
+
+.event_copy {
   background-color: #1d5a3f;
   padding-top: 60px;
   padding-bottom: 1px;
-  .SiddhasanaItem_wrapper{
-    h2{
+
+  .SiddhasanaItem_wrapper {
+    h2 {
       color: #fff;
     }
-    p{
+
+    p {
       color: #fff;
     }
   }

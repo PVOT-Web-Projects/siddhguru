@@ -6,14 +6,14 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import LanguageContext from "../language/Language";
 
-const EventsHomePage = ({heading, hindiHeading, content, hindiContent}) => {
+const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
   const [events, setEvents] = useState([]);
   // console.log(events);
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     axios
-      .get("https://siddhguru.pvotdesigns.xyz//wp-json/wp/v2/posts/?_embed")
+      .get("https://siddhguru.pvotdesigns.xyz/wp-json/wp/v2/posts/?_embed")
       .then((res) => {
         setEvents(res.data);
         console.log(res.data);
@@ -126,9 +126,7 @@ const EventsHomePage = ({heading, hindiHeading, content, hindiContent}) => {
             transition={{ duration: 0.9, delay: 0.1 }}
             className="eventSec_second_heading"
           >
-            {language === "en"
-              ? heading
-              : hindiHeading}
+            {language === "en" ? heading : hindiHeading}
           </motion.div>
           <motion.div
             ref={ref}
@@ -137,123 +135,115 @@ const EventsHomePage = ({heading, hindiHeading, content, hindiContent}) => {
             transition={{ duration: 0.9, delay: 0.3 }}
             className="eventSec_second_text"
           >
-            {language === "en"
-              ? content
-              : hindiContent}
+            {language === "en" ? content : hindiContent}
           </motion.div>
           {/* </motion.div> */}
         </div>
 
         <div className="eventsHomePage_wrapper_left">
-          {events?.map((item) => (
-            <EventHomePageItem
-              id={item.id}
-              key={item.id}
-              // image={item.image}
-              show={item.acf.show_post}
-              image={
-                item._embedded["wp:featuredmedia"] &&
-                item._embedded["wp:featuredmedia"][0].media_details.sizes.full
-                  .source_url
-              }
-              heading={
-                language === "en" ? item.acf.big_text : item.acf.big_text_hindi
-              }
-              // eventName={item.acf.event_name}
-              date={language === "en" ? item.acf.date : item.acf.date_hindi}
-              // location={item.acf.location}
-              // boxMonth={item.acf.box_month}
-              // boxDate={item.acf.box_date}
-              // boxWeek={item.acf.box_week}
-              eventDesc1={
-                language === "en"
-                  ? item.acf.event_desc1
-                  : item.acf.event_desc1_hindi
-              }
-              eventDesc2={
-                language === "en"
-                  ? item.acf.event_desc2
-                  : item.acf.event_desc2_hindi
-              }
-              eventDesc3={
-                language === "en"
-                  ? item.acf.event_desc3
-                  : item.acf.event_desc3_hindi
-              }
-              leftBold1={
-                language === "en"
-                  ? item.acf.left_bold_text1
-                  : item.acf.left_bold_text1_hindi
-              }
-              leftBold2={
-                language === "en"
-                  ? item.acf.left_bold_text2
-                  : item.acf.left_bold_text2_hindi
-              }
-              leftBold3={
-                language === "en"
-                  ? item.acf.left_bold_text3
-                  : item.acf.left_bold_text3_hindi
-              }
-              leftBold4={
-                language === "en"
-                  ? item.acf.left_bold_text4
-                  : item.acf.left_bold_text4_hindi
-              }
-              leftBold5={
-                language === "en"
-                  ? item.acf.left_bold_text5
-                  : item.acf.left_bold_text5_hindi
-              }
-              leftBold6={
-                language === "en"
-                  ? item.acf.left_bold_text6
-                  : item.acf.left_bold_text6_hindi
-              }
-              leftBold7={
-                language === "en"
-                  ? item.acf.left_bold_text7
-                  : item.acf.left_bold_text7_hindi
-              }
-              rightLight1={
-                language === "en"
-                  ? item.acf.right_light_text1
-                  : item.acf.right_light_text1_hindi
-              }
-              rightLight2={
-                language === "en"
-                  ? item.acf.right_light_text2
-                  : item.acf.right_light_text2_hindi
-              }
-              rightLight3={
-                language === "en"
-                  ? item.acf.right_light_text3
-                  : item.acf.right_light_text3_hindi
-              }
-              rightLight4={
-                language === "en"
-                  ? item.acf.right_light_text4
-                  : item.acf.right_light_text4_hindi
-              }
-              rightLight5={
-                language === "en"
-                  ? item.acf.right_light_text5
-                  : item.acf.right_light_text5_hindi
-              }
-              rightLight6={
-                language === "en"
-                  ? item.acf.right_light_text6
-                  : item.acf.right_light_text6_hindi
-              }
-              rightLight7={
-                language === "en"
-                  ? item.acf.right_light_text7
-                  : item.acf.right_light_text7_hindi
-              }
-              note={language === "en" ? item.acf.note : item.acf.note_hindi}
-              link={item.acf.link.url}
-            />
-          ))}
+          <div class="eventHomeItem">
+            <div class="eventHomeItem_wrapper">
+              <div class="eventHomeItem_wrapper_left">
+                <div class="eventItem_image">
+                  <img
+                    src="https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/05/image.png"
+                    alt="eventImage"
+                  />
+                </div>
+              </div>
+              <div class="eventHomeItem_wrapper_right">
+                <div class="eventItem_content">
+                  <div class="eventItem_content_heading_wrap">
+                    <h5>Brahm Sparsh - USA Tour 2024</h5>
+                    <div class="date"> 23 June to 16 July, 2024</div>
+                  </div>
+                  <div class="event_content">
+                    <p>
+                      The beginning of a transformative journey toward spiritual
+                      enlightenment and deeper self-awareness.
+                    </p>
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div class="event_card_left_right_data">
+                    <p>
+                      <span>Closter, New Jersey - </span>23rd June 2024
+                    </p>
+                    <p>
+                      <span>Orlando, Florida - </span>28th June 2024
+                    </p>
+                    <p>
+                      <span>Casselberry, Florida - </span>29th June 2024
+                    </p>
+                    <p>
+                      <span>Tampa, Florida - </span>30th June 2024
+                    </p>
+                    <p>
+                      <span>Jacksonville, Florida - </span>2nd July 2024
+                    </p>
+                    <p>
+                      <span>Irving, Texas - </span>13th July 2024
+                    </p>
+                    <p>
+                      <span>Kent, Washington - </span>16th July 2024
+                    </p>
+                  </div>
+                  <div class="eventCardBtn">
+                    <div>
+                      <a
+                        class="button-60"
+                        role="button"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform"
+                      >
+                        <span class="text">Register Now</span>
+                        <span>Register Now</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eventHomeItem">
+            <div class="eventHomeItem_wrapper">
+              <div class="eventHomeItem_wrapper_left">
+                <div class="eventItem_image">
+                  <img
+                    src="https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/05/reTreat.jpeg"
+                    alt="eventImage"
+                  />
+                </div>
+              </div>
+              <div class="eventHomeItem_wrapper_right">
+                <div class="eventItem_content">
+                  <div class="eventItem_content_heading_wrap">
+                    <h5>Spiritual Retreat in New York with Sri Siddhguru</h5>
+                    <div class="date">4 July to 7 July, 2024</div>
+                  </div>
+                  <div class="event_content">
+                    <p>
+                      A transformative spiritual retreat in the divine presence
+                      of ‘Sri Siddhguru’.
+                    </p>
+                    <p>
+                      Embark on a journey to spiritual upliftment and
+                      enlightenment.
+                    </p>
+                    <p></p>
+                  </div>
+                  <div class="event_card_left_right_data"></div>
+                  <div class="eventCardBtn">
+                    <div>
+                      <a class="button-60" role="button" href="#/retreat">
+                        <span class="text">Learn More</span>
+                        <span>Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
