@@ -6,6 +6,8 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import LanguageContext from "../language/Language";
 import { useLocation } from "react-router-dom";
+import usaEvent from "../../images/usaEventImg.png"
+import reTreatEvent from "../../images/reTreatEventImg.JPEG"
 
 
 const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
@@ -149,7 +151,7 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
               <div class="eventHomeItem_wrapper_left">
                 <div class="eventItem_image">
                   <img
-                    src="https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/05/image.png"
+                    src={usaEvent}
                     alt="eventImage"
                   />
                 </div>
@@ -212,7 +214,7 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
               <div class="eventHomeItem_wrapper_left">
                 <div class="eventItem_image">
                   <img
-                    src="https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/05/reTreat.jpeg"
+                    src={reTreatEvent}
                     alt="eventImage"
                   />
                 </div>
