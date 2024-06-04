@@ -5,10 +5,13 @@ import { useInView } from "react-intersection-observer";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import LanguageContext from "../language/Language";
+import { useLocation } from "react-router-dom";
+
 
 const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
+  
   const [events, setEvents] = useState([]);
-  // console.log(events);
+  const location = useLocation();
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -193,10 +196,10 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
                       <a
                         class="button-60"
                         role="button"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform"
+                        href={location.pathname === "/events" ? `https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform` : "#/events"}
                       >
-                        <span class="text">Register Now</span>
-                        <span>Register Now</span>
+                        <span class="text">Learn More</span>
+                        <span>Learn More</span>
                       </a>
                     </div>
                   </div>
