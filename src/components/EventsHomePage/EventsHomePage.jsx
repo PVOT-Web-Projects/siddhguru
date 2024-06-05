@@ -200,8 +200,8 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
                         role="button"
                         href={location.pathname === "/events" ? `https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform` : "#/events"}
                       >
-                        <span class="text">Learn More</span>
-                        <span>Learn More</span>
+                        <span class="text">{location.pathname === "/events" ? "Register Now" : "Learn More"}</span>
+                        <span>{location.pathname === "/events" ? "Register Now" : "Learn More"}</span>
                       </a>
                     </div>
                   </div>
