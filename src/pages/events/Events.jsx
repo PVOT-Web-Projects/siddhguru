@@ -155,6 +155,16 @@ const Events = () => {
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
       /> */}
+        <EventsHomePage
+        heading={"Experience the Divine"}
+        hindiHeading={"Experience the Divine"}
+        content={
+          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
+        }
+        hindiContent={
+          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
+        }
+      />
       <HeadingContentWithImages
         heading={
           "Experience the Transformative Power of Vedic Science with Sri Siddhguru"
@@ -169,6 +179,12 @@ const Events = () => {
           "This isn’t just an event; it’s a life-altering spiritual experience that only Siddhguru can offer. Connecting with him can transform your life in ways you never imagined, bringing an unparalleled sense of peace and harmony. He is a catalyst for positive change, capable of influencing your life even when he isn’t physically present."
         }
       />
+     
+      <EventLeftRight />
+      <div className="event_copy">
+        <EventLeftRightCopy />
+      </div>
+
       <div className="video">
         <Player
           playsInline={true}
@@ -180,21 +196,6 @@ const Events = () => {
           // fluid={true}
         />
       </div>
-      <EventLeftRight />
-      <div className="event_copy">
-        <EventLeftRightCopy />
-      </div>
-
-      <EventsHomePage
-        heading={"Experience the Divine"}
-        hindiHeading={"Experience the Divine"}
-        content={
-          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
-        }
-        hindiContent={
-          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
-        }
-      />
 
       <div className="eventsHomePage_wrapper_previous">
         <motion.h2
