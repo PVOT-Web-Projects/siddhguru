@@ -26,6 +26,7 @@ import { Player } from "video-react";
 import fullVideo from "../../images/home_new_video.mp4";
 import posterImage from "../../images/home_video_poster.jpg";
 import EventLeftRightCopy from "../../components/eventLeftRight copy/EventLeftRight";
+import border from "../../images/aboutAshramBorder.svg";
 
 const prevEventData = [
   {
@@ -155,7 +156,7 @@ const Events = () => {
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
       /> */}
-        <EventsHomePage
+      <EventsHomePage
         heading={"Experience the Divine"}
         hindiHeading={"Experience the Divine"}
         content={
@@ -179,7 +180,7 @@ const Events = () => {
           "This isn’t just an event; it’s a life-altering spiritual experience that only Siddhguru can offer. Connecting with him can transform your life in ways you never imagined, bringing an unparalleled sense of peace and harmony. He is a catalyst for positive change, capable of influencing your life even when he isn’t physically present."
         }
       />
-     
+
       <EventLeftRight />
       <div className="event_copy">
         <EventLeftRightCopy />
@@ -195,6 +196,9 @@ const Events = () => {
           poster={posterImage}
           // fluid={true}
         />
+        <div className="divider">
+          <img src={border} alt="border" />
+        </div>
       </div>
 
       <div className="eventsHomePage_wrapper_previous">
