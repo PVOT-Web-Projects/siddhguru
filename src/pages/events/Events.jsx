@@ -38,7 +38,7 @@ const prevEventData = [
     videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
     name: "Anand Mohatsav 2024 – Surat",
   },
-  
+
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
@@ -81,7 +81,7 @@ const prevEventHindiData = [
     videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
     name: "Anand Mohatsav 2024 – Surat",
   },
-  
+
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
@@ -195,6 +195,7 @@ const Events = () => {
           "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
         }
       />
+
       <div className="eventsHomePage_wrapper_previous">
         <motion.h2
           ref={ref}
@@ -213,7 +214,7 @@ const Events = () => {
           )}
         </div>
       </div>
-      
+
       <AllVideoHome />
     </div>
   );

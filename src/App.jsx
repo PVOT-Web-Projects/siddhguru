@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 // import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
 // import { AnimatePresence } from "framer-motion";
@@ -60,6 +60,15 @@ function App() {
   const [videosLoaded, setVideosLoaded] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(true);
   const [hideLoader, setHideLoader] = useState(false);
+
+  const history = useNavigate();
+
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/event") {
+      return history("/events");
+    }
+  }, [location.pathname, history]);
 
   console.log("video", videosLoaded);
   console.log("image", imagesLoaded);
@@ -185,7 +194,7 @@ function App() {
   //         document.getElementById("hide-header").style.top = "0px";
   //       } else {
   //         document.getElementById("hide-header").style.top =
-  //           "-200px"; 
+  //           "-200px";
   //       }
   //       prevScrollpos = currentScrollPos;
   //     };
