@@ -3,6 +3,7 @@ import "./headingCotnentWithImages.scss";
 import PropTypes from "prop-types";
 import LanguageContext from "../language/Language";
 import Button from "../../components/buttons/button5";
+import Button1 from "../../components/buttons/button6";
 import { useLocation } from "react-router-dom";
 import border from "../../images/aboutAshramBorder.svg";
 const HeadingContentWithImages = ({
@@ -45,6 +46,7 @@ const HeadingContentWithImages = ({
   hindiContent2,
   hindiContent3,
   showDivider,
+  link,
 }) => {
   const { language } = useContext(LanguageContext);
 
@@ -65,9 +67,14 @@ const HeadingContentWithImages = ({
         <div className="content">
           <p>{language === "en" ? extracontent1 : hindiExtracontent1}</p>
         </div>
-        {showDivider && (
+        {/* {showDivider && (
           <div className="divider">
             <img src={border} alt="border" />
+          </div>
+        )} */}
+        {link && (
+          <div className="btn_link">
+            <Button1 link={link} btn_text="Register Now" />
           </div>
         )}
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
