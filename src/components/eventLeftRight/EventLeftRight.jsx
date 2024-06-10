@@ -27,9 +27,9 @@ const homepageLeftRightData = [
   // },
 ];
 
-const EventLeftRight = () => {
+const EventLeftRight = ({knowMore, btn_link, btn_text}) => {
   return (
-    <div className="eventLeftRight">
+    <div className="eventLeftRight" id={knowMore}>
       {homepageLeftRightData.map((item, index) => (
         <SiddhasanaItem
           key={index}
@@ -40,6 +40,8 @@ const EventLeftRight = () => {
           list1light={item.list1}
           list2light={item.list2}
           list3light={item.list3}
+          btn_link={btn_link}
+          btn_text={btn_text}
         />
       ))}
     </div>

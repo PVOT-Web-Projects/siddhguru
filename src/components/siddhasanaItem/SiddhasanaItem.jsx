@@ -33,6 +33,8 @@ const SiddhasanaItem = ({
   list1light,
   list2light,
   list3light,
+  btn_link,
+  btn_text,
 }) => {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger once
@@ -77,6 +79,7 @@ const SiddhasanaItem = ({
             </li>
           </ul>
         )}
+
         {(list1 ||
           list2 ||
           list3 ||
@@ -169,6 +172,7 @@ const SiddhasanaItem = ({
             </div>
           </>
         )}
+        {btn_link && btn_text && <Button link={btn_link} btn_text={btn_text} />}
       </div>
       <div className="SiddhasanaItem_image">
         <img src={image} alt="siddhasana" />

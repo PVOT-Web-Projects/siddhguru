@@ -1,10 +1,9 @@
 import theSaintImage1 from "../../images/saintMain.png";
 import theSaintImage2 from "../../images/vedicExp.jpg";
 import SiddhasanaItem from "../siddhasanaItem/SiddhasanaItem";
-import "./eventLeftRight.scss"
+import "./eventLeftRight.scss";
 
 const homepageLeftRightData = [
- 
   {
     image: theSaintImage2,
     heading: "Miraculous Beginnings and Divine Journey",
@@ -20,7 +19,7 @@ const homepageLeftRightData = [
   },
 ];
 
-const EventLeftRightCopy = () => {
+const EventLeftRightCopy = ({ btn_link, btn_text }) => {
   return (
     <div className="eventLeftRight">
       {homepageLeftRightData.map((item, index) => (
@@ -33,6 +32,8 @@ const EventLeftRightCopy = () => {
           list1light={item.list1}
           list2light={item.list2}
           list3light={item.list3}
+          btn_link={btn_link}
+          btn_text={btn_text}
         />
       ))}
     </div>
