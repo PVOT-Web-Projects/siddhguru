@@ -166,6 +166,8 @@ const Retreat = () => {
           link={
             "https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
           }
+          knowMore={'/retreat#know_more_about_siddhguru'}
+        
         />
       </div>
       <div className="siddhasana_wrapper">
@@ -187,15 +189,7 @@ const Retreat = () => {
           }
           btn_text={"Register Now"}
         />
-        <div>
-          <HashLink
-            to={`/retreat#know_more_about_siddhguru`}
-            className="button-61"
-          >
-            <span className="text">Know more about Sri Siddhguru</span>
-            <span>Know more about Sri Siddhguru</span>
-          </HashLink>
-        </div>
+       
       </div>
 
       <EventLeftRight
