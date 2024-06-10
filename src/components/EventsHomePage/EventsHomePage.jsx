@@ -167,7 +167,7 @@ const EventsHomePage = ({
                   <div class="event_content">
                     <p>
                       The beginning of a transformative journey toward spiritual
-                      enlightenment and deeper self-awareness.
+                      enlightenment and deeper self-awareness. <strong> | Event OPEN & FREE for all</strong>
                     </p>
                     <p></p>
                     <p></p>

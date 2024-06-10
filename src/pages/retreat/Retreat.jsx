@@ -12,6 +12,12 @@ import { useContext } from "react";
 import LanguageContext from "../../components/language/Language";
 import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
 import "./retreat.scss";
+import EventLeftRight from "../../components/eventLeftRight/EventLeftRight";
+import EventLeftRightCopy from "../../components/eventLeftRight copy/EventLeftRight";
+import { Player } from "video-react";
+import fullVideo from "../../images/home_new_video.mp4";
+import posterImage from "../../images/home_video_poster.jpg";
+import border from "../../images/aboutAshramBorder.svg";
 
 const reTreatData = [
   {
@@ -180,6 +186,25 @@ const Retreat = () => {
           }
           btn_text={"Register Now"}
         />
+      </div>
+      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"} btn_text={"Register Now"} />
+      <div className="event_copy">
+        <EventLeftRightCopy btn_link={"https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"} btn_text={"Register Now"} />
+      </div>
+
+      <div className="video">
+        <Player
+          playsInline={true}
+          src={
+            // "https://res.cloudinary.com/djkswfmo5/video/upload/v1710225855/siddhguru/x5jsisbrhoksxnlos0p1.mp4"
+            fullVideo
+          }
+          poster={posterImage}
+          // fluid={true}
+        />
+        <div className="divider">
+          <img src={border} alt="border" />
+        </div>
       </div>
     </div>
   );
