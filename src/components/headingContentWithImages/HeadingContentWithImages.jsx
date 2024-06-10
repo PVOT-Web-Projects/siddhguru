@@ -6,6 +6,7 @@ import Button from "../../components/buttons/button5";
 import Button1 from "../../components/buttons/button6";
 import { useLocation } from "react-router-dom";
 import border from "../../images/aboutAshramBorder.svg";
+import { HashLink } from "react-router-hash-link";
 const HeadingContentWithImages = ({
   heading,
   content,
@@ -47,6 +48,7 @@ const HeadingContentWithImages = ({
   hindiContent3,
   showDivider,
   link,
+  knowMore,
 }) => {
   const { language } = useContext(LanguageContext);
 
@@ -75,8 +77,15 @@ const HeadingContentWithImages = ({
         {link && (
           <div className="btn_link">
             <Button1 link={link} btn_text="Register Now" />
+            <div>
+              <HashLink to={knowMore} className="button-61">
+                <span className="text">Know more about Sri Siddhguru</span>
+                <span>Know more about Sri Siddhguru</span>
+              </HashLink>
+            </div>
           </div>
         )}
+        {knowMore && <div></div>}
         {(list1 || list2 || list3 || list4 || list5 || list6) && (
           <div className="list">
             <div className="list_item">
