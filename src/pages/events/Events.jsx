@@ -182,9 +182,9 @@ const Events = () => {
         }
       />
 
-      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"/usa-tour-form"} btn_text={"Register Now"} />
+      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"/usa-tour-form"} btn_text={"Register Now for Brahm Sparsh USA Tour"} />
       <div className="event_copy">
-        <EventLeftRightCopy btn_link={"/usa-tour-form"} btn_text={"Register Now"} />
+        <EventLeftRightCopy btn_link={"/usa-tour-form"} btn_text={"Register Now for Brahm Sparsh USA Tour"} />
       </div>
 
       <div className="video">

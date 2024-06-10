@@ -272,8 +272,8 @@ const EventsHomePage = ({
            to={`/events${knowMore}`}
            className="button-60"
          >
-           <span class="text">Know More About Siddhguru</span>
-           <span>Know More About Siddhguru</span>
+           <span class="text">Know more about Sri Siddhguru</span>
+           <span>Know more about Sri Siddhguru</span>
          </HashLink>
           </div>
           
