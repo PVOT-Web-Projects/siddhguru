@@ -202,7 +202,7 @@ const EventsHomePage = ({
                         role="button"
                         href={
                           location.pathname === "/events"
-                            ? `https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform`
+                            ? `#/usa-tour-form`
                             : "#/events"
                         }
                       >
