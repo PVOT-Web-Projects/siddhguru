@@ -165,6 +165,7 @@ const Events = () => {
         hindiContent={
           "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
         }
+        knowMore={"#know_more_about_siddhguru"}
       />
       <HeadingContentWithImages
         heading={
@@ -181,9 +182,9 @@ const Events = () => {
         }
       />
 
-      <EventLeftRight />
+      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"/usa-tour-form"} btn_text={"Register Now"} />
       <div className="event_copy">
-        <EventLeftRightCopy />
+        <EventLeftRightCopy btn_link={"/usa-tour-form"} btn_text={"Register Now"} />
       </div>
 
       <div className="video">

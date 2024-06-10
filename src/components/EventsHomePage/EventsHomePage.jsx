@@ -6,12 +6,17 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import LanguageContext from "../language/Language";
 import { useLocation } from "react-router-dom";
-import usaEvent from "../../images/usaEventImg.png"
-import reTreatEvent from "../../images/reTreatEventImg.JPEG"
+import usaEvent from "../../images/usaEventImg.png";
+import reTreatEvent from "../../images/reTreatEventImg.JPEG";
+import { HashLink } from "react-router-hash-link";
 
-
-const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
-  
+const EventsHomePage = ({
+  heading,
+  hindiHeading,
+  content,
+  hindiContent,
+  knowMore,
+}) => {
   const [events, setEvents] = useState([]);
   const location = useLocation();
   const { language } = useContext(LanguageContext);
@@ -150,10 +155,7 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
             <div class="eventHomeItem_wrapper">
               <div class="eventHomeItem_wrapper_left">
                 <div class="eventItem_image">
-                  <img
-                    src={usaEvent}
-                    alt="eventImage"
-                  />
+                  <img src={usaEvent} alt="eventImage" />
                 </div>
               </div>
               <div class="eventHomeItem_wrapper_right">
@@ -198,10 +200,22 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
                       <a
                         class="button-60"
                         role="button"
-                        href={location.pathname === "/events" ? `https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform` : "#/events"}
+                        href={
+                          location.pathname === "/events"
+                            ? `https://docs.google.com/forms/d/e/1FAIpQLSdurV5pH-ozkPUUAp18K0Bjl0RRNs_wUkmH9dGAFm371iUSdg/viewform`
+                            : "#/events"
+                        }
                       >
-                        <span class="text">{location.pathname === "/events" ? "Register Now" : "Learn More"}</span>
-                        <span>{location.pathname === "/events" ? "Register Now" : "Learn More"}</span>
+                        <span class="text">
+                          {location.pathname === "/events"
+                            ? "Register Now"
+                            : "Learn More"}
+                        </span>
+                        <span>
+                          {location.pathname === "/events"
+                            ? "Register Now"
+                            : "Learn More"}
+                        </span>
                       </a>
                     </div>
                   </div>
@@ -213,10 +227,7 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
             <div class="eventHomeItem_wrapper">
               <div class="eventHomeItem_wrapper_left">
                 <div class="eventItem_image">
-                  <img
-                    src={reTreatEvent}
-                    alt="eventImage"
-                  />
+                  <img src={reTreatEvent} alt="eventImage" />
                 </div>
               </div>
               <div class="eventHomeItem_wrapper_right">
@@ -250,6 +261,23 @@ const EventsHomePage = ({ heading, hindiHeading, content, hindiContent }) => {
             </div>
           </div>
         </div>
+        {knowMore && (
+          <div class="eventCardBtn">
+            {/* <div>
+              <a class="button-60" role="button" href={`/events${knowMore}`}>
+               
+              </a>
+            </div> */}
+             <HashLink
+           to={`/events${knowMore}`}
+           className="button-60"
+         >
+           <span class="text">Know More About Siddhguru</span>
+           <span>Know More About Siddhguru</span>
+         </HashLink>
+          </div>
+          
+        )}
       </div>
     </div>
   );
