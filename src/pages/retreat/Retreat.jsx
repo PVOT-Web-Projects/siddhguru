@@ -18,6 +18,7 @@ import { Player } from "video-react";
 import fullVideo from "../../images/home_new_video.mp4";
 import posterImage from "../../images/home_video_poster.jpg";
 import border from "../../images/aboutAshramBorder.svg";
+import { HashLink } from "react-router-hash-link";
 
 const reTreatData = [
   {
@@ -186,10 +187,31 @@ const Retreat = () => {
           }
           btn_text={"Register Now"}
         />
+        <div>
+          <HashLink
+            to={`/retreat#know_more_about_siddhguru`}
+            className="button-61"
+          >
+            <span className="text">Know more about Sri Siddhguru</span>
+            <span>Know more about Sri Siddhguru</span>
+          </HashLink>
+        </div>
       </div>
-      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"} btn_text={"Register Now"} />
+
+      <EventLeftRight
+        knowMore={"know_more_about_siddhguru"}
+        btn_link={
+          "https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
+        }
+        btn_text={" Register Now for Spiritual Retreat"}
+      />
       <div className="event_copy">
-        <EventLeftRightCopy btn_link={"https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"} btn_text={"Register Now"} />
+        <EventLeftRightCopy
+          btn_link={
+            "https://www.garrisoninstitute.org/event/spiritual-retreat-with-sri-siddhguru/"
+          }
+          btn_text={" Register Now for Spiritual Retreat"}
+        />
       </div>
 
       <div className="video">

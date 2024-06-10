@@ -51,13 +51,16 @@
   .eventCardBtn {
     text-align: center;
     margin: 20px 0 0;
-    @media(max-width:1199px){
+    @media (max-width: 1199px) {
       margin: 10px 0 0;
     }
     .button-60 {
       padding: 15px 30px;
-      @media(max-width:575px){
+      @media (max-width: 575px) {
         padding: 15px 20px;
+      }
+      span {
+        line-height: 20px;
       }
     }
   }
@@ -67,6 +70,7 @@
   background-color: #1d5a3f;
   padding-top: 60px;
   padding-bottom: 1px;
+ 
 
   .SiddhasanaItem_wrapper {
     h2 {
