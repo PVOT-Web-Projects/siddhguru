@@ -167,7 +167,8 @@ const EventsHomePage = ({
                   <div class="event_content">
                     <p>
                       The beginning of a transformative journey toward spiritual
-                      enlightenment and deeper self-awareness. <strong> | Event OPEN & FREE for all</strong>
+                      enlightenment and deeper self-awareness.{" "}
+                      <strong> | Event OPEN & FREE for all</strong>
                     </p>
                     <p></p>
                     <p></p>
@@ -223,6 +224,19 @@ const EventsHomePage = ({
               </div>
             </div>
           </div>
+          {knowMore && (
+          <div className="eventCardBtn mobile">
+            {/* <div>
+              <a class="button-60" role="button" href={`/events${knowMore}`}>
+               
+              </a>
+            </div> */}
+            <HashLink to={`/events${knowMore}`} className="button-60">
+              <span className="text">Know more about Sri Siddhguru</span>
+              <span>Know more about Sri Siddhguru</span>
+            </HashLink>
+          </div>
+        )}
           <div class="eventHomeItem">
             <div class="eventHomeItem_wrapper">
               <div class="eventHomeItem_wrapper_left">
@@ -268,15 +282,11 @@ const EventsHomePage = ({
                
               </a>
             </div> */}
-             <HashLink
-           to={`/events${knowMore}`}
-           className="button-60"
-         >
-           <span class="text">Know more about Sri Siddhguru</span>
-           <span>Know more about Sri Siddhguru</span>
-         </HashLink>
+            <HashLink to={`/events${knowMore}`} className="button-60">
+              <span class="text">Know more about Sri Siddhguru</span>
+              <span>Know more about Sri Siddhguru</span>
+            </HashLink>
           </div>
-          
         )}
       </div>
     </div>

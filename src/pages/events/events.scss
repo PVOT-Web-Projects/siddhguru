@@ -51,8 +51,20 @@
   .eventCardBtn {
     text-align: center;
     margin: 20px 0 0;
+    display: block;
     @media (max-width: 1199px) {
       margin: 10px 0 0;
+    }
+  
+    @media (max-width: 767px) {
+      display: none;
+    }
+    &.mobile {
+      display: none;
+      @media (max-width: 767px) {
+        display: block;
+        margin: 0 0 50px;
+      }
     }
     .button-60 {
       padding: 15px 30px;
