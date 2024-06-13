@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import TopNavbar from "../header/topNavbar/TopNavbar";
 import "./layout.scss";
 // import scrollTop from "../../images/scrollTop2.svg";
-import popupImage from "../../images/popup.jpeg";
+// import popupImage from "../../images/popup.jpeg";
 import close from "../../images/closeIcon.svg";
 import { useEffect } from "react";
 import { useState } from "react";
