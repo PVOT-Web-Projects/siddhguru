@@ -1,27 +1,13 @@
 import { useState, useEffect } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-// import LocomotoveScroll from "locomotive-scroll";
 import "./global.scss";
 // import { AnimatePresence } from "framer-motion";
-import Loader from "./components/loader/Loader";
+// import Loader from "./components/loader/Loader";
 import Layout from "./components/layout/Layout";
-// import Home from "./pages/home/Home";
 import ScrollTop from "./components/scrollTop/ScrollTop";
 import Events from "./pages/events/Events";
-// import TheSaint from "./pages/theSaint/TheSaint";
-// import Vision from "./pages/vision/Vision";
-// import CoreWisdom from "./pages/coreWisdom/CoreWisdom";
 import AboutAshramPage from "./pages/aboutAshramPage/AboutAshramPage";
-// import Activities from "./pages/activities/Activities";
-// import Centers from "./pages/centers/Centers";
-// import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
-
-// import News from "./pages/news/News";
-// import Devotee from "./pages/devotee/Devotee";
-// import Gallery from "./pages/Gallary/gallary";
-// import BlogSingle from "./pages/blog/blogSingle/BlogSingle";
-
 import Siddhasana from "./pages/siddhasana/Siddhasana";
 import Experience from "./pages/experience/Experience";
 import VedicScience from "./pages/vedicScience/VedicScience";
@@ -41,7 +27,7 @@ import tab3Images2 from "./images/spiritual.jpeg";
 import tab3Images3 from "./images/socialWisdom.jpeg";
 import tab3Images4 from "./images/professionalWisdom.jpeg";
 import lotus_image from "./images/lotus.png";
-import popupImage from "./images/popup.jpeg";
+// import popupImage from "./images/popup.jpeg";
 import video1 from "./images/exp1.mp4";
 import video2 from "./images/video2.mp4";
 import video3 from "./images/video3.mp4";
@@ -60,7 +46,7 @@ function App() {
   const [widthCheck, setWidthCheck] = useState(window.innerWidth);
   const [videosLoaded, setVideosLoaded] = useState(true);
   const [imagesLoaded, setImagesLoaded] = useState(true);
-  const [hideLoader, setHideLoader] = useState(false);
+  // const [hideLoader, setHideLoader] = useState(false);
 
   const history = useNavigate();
 
@@ -82,8 +68,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Array of video URLs to load
-
     const videoUrls = [
       video1,
       video2,
@@ -111,7 +95,6 @@ function App() {
       }
     };
 
-    // Array of image URLs to load
     const imageUrls = [
       "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg",
       "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg",
@@ -139,7 +122,7 @@ function App() {
       tab3Images2,
       tab3Images3,
       tab3Images4,
-      popupImage,
+      // popupImage,
       lotus_image,
     ];
     console.log(imageUrls);
@@ -185,48 +168,20 @@ function App() {
   // };
   // console.log(widthCheck);
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  //   if (widthCheck > 991) {
-  //     var prevScrollpos = window.pageXOffset;
-  //     window.onscroll = function () {
-  //       var currentScrollPos = window.pageYOffset;
-  //       if (prevScrollpos > currentScrollPos) {
-  //         document.getElementById("hide-header").style.top = "0px";
-  //       } else {
-  //         document.getElementById("hide-header").style.top =
-  //           "-200px";
-  //       }
-  //       prevScrollpos = currentScrollPos;
-  //     };
-  //   }
-  // }, [widthCheck]);
-
   return (
     <>
       {/* {!hideLoader && <Loader loading={isLoading} />} */}
       <Layout>
         <ScrollTop />
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<NewHome />} />
-          {/* <Route path="/the-saint" element={<TheSaint />} /> */}
-          {/* <Route path="/vision" element={<Vision />} /> */}
-          {/* <Route path="/core-wisdom" element={<CoreWisdom />} /> */}
           <Route path="/about-ashram" element={<AboutAshramPage />} />
           <Route path="/vedic-science" element={<VedicScience />} />
-          {/* <Route path="/activities" element={<Activities />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/events/asia-tour" element={<SingleEvent />} />
           <Route path="/events/usa-tour" element={<UsaTour />} />
-          {/* <Route path="/centers" element={<Centers />} /> */}
-          {/* <Route path="/blog" element={<Blog />} /> */}
-          {/* <Route path="/blog/:name" element={<BlogSingle />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/prana-vriddhi" element={<Prāṇa_Vriddhi />} />
-          {/* <Route path="/news" element={<News />} /> */}
-          {/* <Route path="/gallery" element={<Gallery />} /> */}
-          {/* <Route path="/devotee" element={<Devotee />} /> */}
           <Route path="/siddhasana" element={<Siddhasana />} />
           <Route path="/experiences" element={<Experience />} />
           <Route path="/retreat" element={<Retreat />} />

@@ -1,13 +1,6 @@
-// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import "./aboutashrampageinner.scss";
-import image1 from "../../images/aboutAshramImage1.png";
-import image2 from "../../images/aboutAshramImage2.png";
-import image3 from "../../images/aboutAshramImage3.png";
-import Button from "../../components/buttons/button4";
-import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
-import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
-// import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/AboutashrampageInner.jpg";
 import mobilebannerImage from "../../images/AboutashrampageInnerMobile.jpg";
@@ -26,18 +19,9 @@ const AboutAshramPageinner = () => {
 
   return (
     <div className="aboutAshramPage">
-      {/* <InnerPageCommonHeading
-        heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
-      /> */}
       <InnerPageBanner
-        image={
-          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg"
-          bannerImage
-        }
-        mobileImage={
-          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
-          mobilebannerImage
-        }
+        image={bannerImage}
+        mobileImage={mobilebannerImage}
         bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
         hindiBigText={"आत्मजागृति के लिए पधारें"}
@@ -159,93 +143,93 @@ const AboutAshramPageinner = () => {
         <img src={border} alt="border" />
       </div>
 
-      <HeadingContentWithImages 
-      heading={"Benefits of Prāṇa Vriddhi EE System"}
-      hindiHeading={"प्राण वृद्धि ई ई सिस्टम के लाभ"}
-      content={
-        "It is a physiologically and environmentally safe system based on ancient healing traditions and modern techniques. Using the Prāṇa Vriddhi EE System at Sri Brahmrishi Ashram is free for everyone."
-      }
-      hindiContent={
-        "यह शारीरिक एवं पर्यावरण की दॄष्टि से एक सुरक्षित सिस्टम है जो पौराणिक स्वास्थ्य सिद्धांतो और आधुनिक तकनिकी पर आधारित है। श्री ब्रह्मर्षि आश्रम में प्राण वृद्धि EE सिस्टम का उपयोग करना पूर्णतया निः शुल्क है।"
-      }
-      extracontent={
-        "Prāṇa Vriddhi aims to address the root causes of imbalance and promote holistic healing from within. It combines body, mind, spirit and science to help achieve peak performance and higher states of health, consciousness and self-actualizaition. Though every individual’s experience of Prāṇa Vriddhi is different, these benefits are commonly observed in people of every age - children, adolescents, youth, middle-aged, or senior citizens."
-      }
-      hindiExtracontent={
-        "प्राण वृद्धि सिस्टम शरीर के असंतुलन को उसकी जड़ में जाकर ठीक करता है और सम्पूर्ण स्वास्थ्य को बढ़ावा देता है। वह शरीर, मन, आत्मा और विज्ञान का का समन्वय कर स्वास्थ्य, परफॉर्मेंस, चेतना एवं आत्म-अनुभूति को सर्वोच्च स्तर पर ले जाता है। हालाँकि हर इंसान का प्राण वृद्धि का अनुभव अलग अलग होता है, उसका लाभ सामान्यतया: बच्चे, तरुण, युवा, अधेड़ या वृद्ध सभी लोगों में देखा जा सकता है।"
-      }
-      list1={"Feelings of calmness and peace"}
-      list1Hindi={"शांतचित्त एवं चैन की अनुभूति"}
-      list2={"Natural healing and rejuvenation"}
-      list2Hindi={"नैसर्गिक स्वस्थता एवं कायाकल्प"}
-      list3={"Increased energy levels in the body"}
-      list3Hindi={"शरीर के ऊर्जास्तर में बढ़ोतरी"}
-      list4={"Sense of emotional clarity and freedom"}
-      list4Hindi={"भावनाओ में स्पष्टता और मुक्ति की अनुभूति"}
-      list5={"Detoxification and better performance"}
-      list5Hindi={"डिटॉक्सिफिकेशन और अच्छा परफॉर्मेंस"}
-      list6={"Better mental health and confidence"}
-      list6Hindi={"अच्छा मानसिक स्वास्थ्य और आत्मविश्वास"}
-      list7={"Self-acceptance and self-awareness"}
-      list7Hindi={"आत्म-स्वीकृति और आत्म-जागरूकता"}
-      list8={"Freedom from past traumas & stressors"}
-      list8Hindi={"भूतकाल के दु:ख-दर्द और तनावों से मुक्ति"}
-      list9={"Living more in the ‘present moment’"}
-      list9Hindi={"वर्तमान क्षण में जीने की अनुभूति"}
-      list10={"Better blood profile and metabolism"}
-      list10Hindi={"अच्छा चयापचय और शुद्ध रक्त"}
-      content1={
-        <>
-          Visit (
-          <a
-            href="https://eesystem.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.eesystem.com
-          </a>
-          ) to learn more about the amazing healing experiences of Prāṇa
-          Vriddhi (Energy Enhancement System™).
-        </>
-      }
-      hindiContent1={
-        <>
-          प्राण वृद्धि (एनर्जी एनहैन्समेन्ट सिस्टम™) के अद्भुत स्वास्थ्यवर्धक
-          अनुभवों के बारे में अधिक जानकारी के लिए (
-          <a
-            href="https://eesystem.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.eesystem.com
-          </a>
-          ) विजिट करें।
-        </>
-      }
-      content2={
-        "Come and heal your body through the energy that has created your body!"
-      }
-      hindiContent2={""}
-      content3={
-        <>
-          For accommodation-related inquiries, contact Sri Brahmrishi Ashram
-          at
-          <a href="tel:+919845823095" className="telephone_no">
-            {" "}
-            +919845823095
-          </a>
-        </>
-      }
-      hindiContent3={
-        <>
-          निवास की सुविधा से सम्बंधित जानकारी के लिए श्री ब्रह्मर्षि आश्रम का
-          संपर्क करें:
-          <a href="tel:+919845823095" className="telephone_no">
-            {" "}
-            +919845823095
-          </a>
-        </>
-      }
+      <HeadingContentWithImages
+        heading={"Benefits of Prāṇa Vriddhi EE System"}
+        hindiHeading={"प्राण वृद्धि ई ई सिस्टम के लाभ"}
+        content={
+          "It is a physiologically and environmentally safe system based on ancient healing traditions and modern techniques. Using the Prāṇa Vriddhi EE System at Sri Brahmrishi Ashram is free for everyone."
+        }
+        hindiContent={
+          "यह शारीरिक एवं पर्यावरण की दॄष्टि से एक सुरक्षित सिस्टम है जो पौराणिक स्वास्थ्य सिद्धांतो और आधुनिक तकनिकी पर आधारित है। श्री ब्रह्मर्षि आश्रम में प्राण वृद्धि EE सिस्टम का उपयोग करना पूर्णतया निः शुल्क है।"
+        }
+        extracontent={
+          "Prāṇa Vriddhi aims to address the root causes of imbalance and promote holistic healing from within. It combines body, mind, spirit and science to help achieve peak performance and higher states of health, consciousness and self-actualizaition. Though every individual’s experience of Prāṇa Vriddhi is different, these benefits are commonly observed in people of every age - children, adolescents, youth, middle-aged, or senior citizens."
+        }
+        hindiExtracontent={
+          "प्राण वृद्धि सिस्टम शरीर के असंतुलन को उसकी जड़ में जाकर ठीक करता है और सम्पूर्ण स्वास्थ्य को बढ़ावा देता है। वह शरीर, मन, आत्मा और विज्ञान का का समन्वय कर स्वास्थ्य, परफॉर्मेंस, चेतना एवं आत्म-अनुभूति को सर्वोच्च स्तर पर ले जाता है। हालाँकि हर इंसान का प्राण वृद्धि का अनुभव अलग अलग होता है, उसका लाभ सामान्यतया: बच्चे, तरुण, युवा, अधेड़ या वृद्ध सभी लोगों में देखा जा सकता है।"
+        }
+        list1={"Feelings of calmness and peace"}
+        list1Hindi={"शांतचित्त एवं चैन की अनुभूति"}
+        list2={"Natural healing and rejuvenation"}
+        list2Hindi={"नैसर्गिक स्वस्थता एवं कायाकल्प"}
+        list3={"Increased energy levels in the body"}
+        list3Hindi={"शरीर के ऊर्जास्तर में बढ़ोतरी"}
+        list4={"Sense of emotional clarity and freedom"}
+        list4Hindi={"भावनाओ में स्पष्टता और मुक्ति की अनुभूति"}
+        list5={"Detoxification and better performance"}
+        list5Hindi={"डिटॉक्सिफिकेशन और अच्छा परफॉर्मेंस"}
+        list6={"Better mental health and confidence"}
+        list6Hindi={"अच्छा मानसिक स्वास्थ्य और आत्मविश्वास"}
+        list7={"Self-acceptance and self-awareness"}
+        list7Hindi={"आत्म-स्वीकृति और आत्म-जागरूकता"}
+        list8={"Freedom from past traumas & stressors"}
+        list8Hindi={"भूतकाल के दु:ख-दर्द और तनावों से मुक्ति"}
+        list9={"Living more in the ‘present moment’"}
+        list9Hindi={"वर्तमान क्षण में जीने की अनुभूति"}
+        list10={"Better blood profile and metabolism"}
+        list10Hindi={"अच्छा चयापचय और शुद्ध रक्त"}
+        content1={
+          <>
+            Visit (
+            <a
+              href="https://eesystem.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.eesystem.com
+            </a>
+            ) to learn more about the amazing healing experiences of Prāṇa
+            Vriddhi (Energy Enhancement System™).
+          </>
+        }
+        hindiContent1={
+          <>
+            प्राण वृद्धि (एनर्जी एनहैन्समेन्ट सिस्टम™) के अद्भुत स्वास्थ्यवर्धक
+            अनुभवों के बारे में अधिक जानकारी के लिए (
+            <a
+              href="https://eesystem.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.eesystem.com
+            </a>
+            ) विजिट करें।
+          </>
+        }
+        content2={
+          "Come and heal your body through the energy that has created your body!"
+        }
+        hindiContent2={""}
+        content3={
+          <>
+            For accommodation-related inquiries, contact Sri Brahmrishi Ashram
+            at
+            <a href="tel:+919845823095" className="telephone_no">
+              {" "}
+              +919845823095
+            </a>
+          </>
+        }
+        hindiContent3={
+          <>
+            निवास की सुविधा से सम्बंधित जानकारी के लिए श्री ब्रह्मर्षि आश्रम का
+            संपर्क करें:
+            <a href="tel:+919845823095" className="telephone_no">
+              {" "}
+              +919845823095
+            </a>
+          </>
+        }
       />
 
       <div className="aboutAshramPage_wrapper"></div>
