@@ -11,8 +11,8 @@ import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
 // import fullWidthImage from "../../images/fullWidthImage1.png";
 // import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-// import bannerImage from "../../images/Events-Banners-D_2.jpg";
-// import mobilebannerImage from "../../images/Events-Banners-M_2.jpg";
+import bannerImage from "../../images/Events_D.jpg";
+import mobilebannerImage from "../../images/Events_M.jpg";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -138,10 +138,12 @@ const Events = () => {
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
+          bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
+          mobilebannerImage
         }
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"
