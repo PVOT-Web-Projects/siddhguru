@@ -12,8 +12,8 @@ import whatsApp from "../../images/whatsApp.svg";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import { useContext } from "react";
 import LanguageContext from "../../components/language/Language";
-// import bannerImage from "../../images/Contact-Banners-D_2.jpg";
-// import mobilebannerImage from "../../images/Contact-Banners-M_2.jpg";
+import bannerImage from "../../images/Contact_D.jpg";
+import mobilebannerImage from "../../images/Contact_M.jpg";
 
 const Contact = () => {
   const { language } = useContext(LanguageContext);
@@ -22,10 +22,12 @@ const Contact = () => {
       {/* <InnerPageCommonHeading heading={"Contact"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916987/axbanxuqhdz1ltdtfmzp.jpg"
+          bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707917026/rcumi1sjejqn64kppb0j.jpg"
+          mobilebannerImage
         }
         bigText={"Connect with SiddhGuru:"}
         bigText2={"Let Divine Wisdom Light Your Path"}

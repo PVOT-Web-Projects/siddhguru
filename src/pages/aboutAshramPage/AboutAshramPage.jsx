@@ -1,49 +1,21 @@
-// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import InnerPageCommonText from "../../components/innerPageCommonText/InnerPageCommonText";
 import "./aboutAshramPage.scss";
-import image1 from "../../images/aboutAshramImage1.png";
-import image2 from "../../images/aboutAshramImage2.png";
-import image3 from "../../images/aboutAshramImage3.png";
-import image1_mobile from "../../images/aboutAshramImage1_mobile.png";
-import AboutAshramImages from "../../components/aboutAshramImages/AboutAshramImages";
-// import HeadingTextAnimation from "../../components/HeadingAnimation/HeadingTextAnimation";
+
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import bannerImage from "../../images/aboutAshramNewBanner.jpg";
 import mobilebannerImage from "../../images/ashramMOB.jpg";
 import GalleryAshram from "../../components/galleryAshram/GalleryAshram";
 import HeadingContentWithImages from "../../components/headingContentWithImages/HeadingContentWithImages";
-import gaushalaImage1 from "../../images/gaushalaImage1.jpg";
 import gaushalaImage2 from "../../images/gaushalaImage2.jpg";
-import dyanMandirImage1 from "../../images/dyanMandirImage1.jpg";
-import dyanMandirImage2 from "../../images/dyanMandirImage2.jpg";
 import gaushalaImage3 from "../../images/gaushalaImage3.jpg";
-import gaushalaImage4 from "../../images/gaushalaImage4.jpeg";
 import border from "../../images/aboutAshramBorder.svg";
 
 const AboutAshramPage = () => {
-  const aboutAshramImages = [
-    {
-      imageUrl1: image1,
-      imageUrl1_mobile: image1_mobile,
-      imageUrl2: image2,
-      imageUrl3: image3,
-    },
-  ];
-
   return (
     <div className="aboutAshramPage">
-      {/* <InnerPageCommonHeading
-        heading={"Shri Siddheshwar Tirth - Shree Brahmrishi Ashram"}
-      /> */}
       <InnerPageBanner
-        image={
-          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916659/kvrsjkzj7ljbotfmttpc.jpg"
-          bannerImage
-        }
-        mobileImage={
-          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916690/xwcvldaoobam5vaqxbsb.jpg"
-          mobilebannerImage
-        }
+        image={bannerImage}
+        mobileImage={mobilebannerImage}
         bigText={"Awaken Your Soul: SiddhGuru's Ashram,"}
         bigText2={"Where Transformation Begins"}
         hindiBigText={"आत्मजागृति के लिए पधारें"}
@@ -160,7 +132,6 @@ const AboutAshramPage = () => {
         hindiContent2={
           "आओ और अपने शरीर को उसी ऊर्जा के साथ स्वस्थ बनाओ जिससे वह बना हुआ है।"
         }
-        
       />
 
       <div className="divider">

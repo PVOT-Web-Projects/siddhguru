@@ -6,28 +6,97 @@
   @media (max-width: 1024px) {
     padding: 0 40px;
   }
+
   @media (max-width: 767px) {
     padding: 0 30px;
   }
+
   @media (max-width: 575px) {
     padding: 0 20px;
   }
 }
-.events{
-  .innerPageCommonHeading{
-    padding: 240px 0 50px 
+
+.events {
+  .innerPageCommonHeading {
+    padding: 240px 0 50px;
+  }
+  .video {
+    background-color: #1d5a3f;
+    padding: 20px 300px 0;
+    @media (max-width: 1800px) {
+      padding: 20px 250px 0;
+    }
+    @media (max-width: 1600px) {
+      padding: 20px 200px 0;
+    }
+    @media (max-width: 1199px) {
+      padding: 20px 120px 0;
+    }
+    @media (max-width: 991px) {
+      padding: 20px 100px 0;
+    }
+    @media (max-width: 767px) {
+      padding: 0 60px 0;
+    }
+    @media (max-width: 575px) {
+      padding: 0 20px 0;
+    }
+    .divider {
+      margin: 40px 0 0;
+      img {
+        text-align: center;
+      }
+    }
+  }
+  .eventCardBtn {
+    text-align: center;
+    margin: 20px 0 0;
+    display: block;
+    @media (max-width: 1199px) {
+      margin: 10px 0 0;
+    }
+  
+    @media (max-width: 767px) {
+      display: none;
+    }
+    &.mobile {
+      display: none;
+      @media (max-width: 767px) {
+        display: block;
+        margin: 0 0 50px;
+      }
+    }
+    .button-60 {
+      padding: 15px 30px;
+      @media (max-width: 575px) {
+        padding: 15px 20px;
+      }
+      span {
+        line-height: 20px;
+      }
+    }
   }
 }
-.event_copy{
+
+.event_copy {
   background-color: #1d5a3f;
   padding-top: 60px;
   padding-bottom: 1px;
-  .SiddhasanaItem_wrapper{
-    h2{
+ 
+
+  .SiddhasanaItem_wrapper {
+    h2 {
       color: #fff;
     }
-    p{
+
+    p {
       color: #fff;
     }
+  }
+}
+#know_more_about_siddhguru {
+  padding-top: 100px;
+  @media (max-width: 991px) {
+    padding-top: 0;
   }
 }

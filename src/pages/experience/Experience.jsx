@@ -3,8 +3,8 @@ import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
 import VideoCards from "../../components/fourvideocard/fourvideocard";
 // import VideoCards_one from "../../components/videoCards/VideoCards";
 import "./experience.scss";
-// import bannerImage from "../../images/Experience-Banners-D_2.jpg";
-// import mobilebannerImage from "../../images/Experience-Banners-M_2.jpg";
+import bannerImage from "../../images/Experience_D.jpg";
+import mobilebannerImage from "../../images/Experience_M.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useContext } from "react";
@@ -20,10 +20,12 @@ const Experience = () => {
       {/* <InnerPageCommonHeading heading={"Experience"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916886/bb0mlpmevlvzkexza7o8.jpg"
+          bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916920/tneaglbxrj5ojlwu9ph1.jpg"
+          mobilebannerImage
         }
         bigText={"DIVINE EXPERIENCES WITH SIDDHGURU"}
         hindiBigText={"श्री सिद्धगुरु के साथ कुछ दिव्य अनुभव"}

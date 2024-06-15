@@ -11,8 +11,8 @@ import EventsHomePage from "../../components/EventsHomePage/EventsHomePage";
 // import fullWidthImage from "../../images/fullWidthImage1.png";
 // import Spinner from "../../components/spinner/Spinner";
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-// import bannerImage from "../../images/Events-Banners-D_2.jpg";
-// import mobilebannerImage from "../../images/Events-Banners-M_2.jpg";
+import bannerImage from "../../images/Events_D.jpg";
+import mobilebannerImage from "../../images/Events_M.jpg";
 import AllVideoHome from "../../components/allVideoHome/AllVideoHome";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -26,8 +26,25 @@ import { Player } from "video-react";
 import fullVideo from "../../images/home_new_video.mp4";
 import posterImage from "../../images/home_video_poster.jpg";
 import EventLeftRightCopy from "../../components/eventLeftRight copy/EventLeftRight";
+import border from "../../images/aboutAshramBorder.svg";
 
 const prevEventData = [
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/Iqvam6oCHFM?si=JQ9fLgTnyM9irnIB",
+    name: "Kalyan Mohatsav 2024 – Mumbai",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
+    name: "Anand Mohatsav 2024 – Surat",
+  },
+
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
+    name: "Brahma Sparsh 2024 – Asia Tour",
+  },
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
@@ -55,6 +72,22 @@ const prevEventData = [
   },
 ];
 const prevEventHindiData = [
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/Iqvam6oCHFM?si=JQ9fLgTnyM9irnIB",
+    name: "Kalyan Mohatsav 2024 – Mumbai",
+  },
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/mb25KuF80VA?si=YlWz98aapeHWmG5f",
+    name: "Anand Mohatsav 2024 – Surat",
+  },
+
+  {
+    image: videoPoster1,
+    videoUrl: "https://www.youtube.com/live/GvihlWqkAtE?si=33oOup47-mEwXqH4",
+    name: "Brahma Sparsh 2024 – Asia Tour",
+  },
   {
     image: videoPoster1,
     videoUrl: "https://www.youtube.com/watch?v=mb25KuF80VA",
@@ -105,10 +138,12 @@ const Events = () => {
       {/* <InnerPageCommonHeading heading={"Event"} /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916770/uvc8okabb5zulzjwu3f9.jpg"
+          bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916806/tsnuo6vqfijlm6vp6fey.jpg"
+          mobilebannerImage
         }
         bigText={
           "Experience Miracles Unfold: Stay Updated on SiddhGuru's Events"
@@ -123,6 +158,17 @@ const Events = () => {
           "Keep an eye on the horizon for the upcoming events that pulsate with the divine energy of Siddhguru. We are your portal to a world of spiritual gatherings, engaging workshops, and joyous celebrations designed to nurture unity and foster spiritual growth. It's like a vibrant calendar, where each event is a unique opportunity to connect with the profound teachings of Siddhguru and experience the transformative power of spiritual communion. Whether it's a spiritual workshop to deepen your understanding or a joyous celebration that uplifts your spirits, each event on this page is a doorway to an enriched spiritual journey. Your journey to spiritual growth and unity awaits at the upcoming events."
         }
       /> */}
+      <EventsHomePage
+        heading={"Experience the Divine"}
+        hindiHeading={"Experience the Divine"}
+        content={
+          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
+        }
+        hindiContent={
+          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
+        }
+        knowMore={"#know_more_about_siddhguru"}
+      />
       <HeadingContentWithImages
         heading={
           "Experience the Transformative Power of Vedic Science with Sri Siddhguru"
@@ -137,6 +183,12 @@ const Events = () => {
           "This isn’t just an event; it’s a life-altering spiritual experience that only Siddhguru can offer. Connecting with him can transform your life in ways you never imagined, bringing an unparalleled sense of peace and harmony. He is a catalyst for positive change, capable of influencing your life even when he isn’t physically present."
         }
       />
+
+      <EventLeftRight knowMore={"know_more_about_siddhguru"} btn_link={"/usa-tour-form"} btn_text={"Register Now for Brahm Sparsh USA Tour"} />
+      <div className="event_copy">
+        <EventLeftRightCopy btn_link={"/usa-tour-form"} btn_text={"Register Now for Brahm Sparsh USA Tour"} />
+      </div>
+
       <div className="video">
         <Player
           playsInline={true}
@@ -147,22 +199,11 @@ const Events = () => {
           poster={posterImage}
           // fluid={true}
         />
-      </div>
-      <EventLeftRight />
-      <div className="event_copy">
-        <EventLeftRightCopy />
+        <div className="divider">
+          <img src={border} alt="border" />
+        </div>
       </div>
 
-      <EventsHomePage
-        heading={"Experience the Divine"}
-        hindiHeading={"Experience the Divine"}
-        content={
-          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
-        }
-        hindiContent={
-          "Now, you have the opportunity to experience the transformative power of Vedic science with Sri Siddhguru without leaving your hometown. Attend the Brahm Sparsh event in a city near you and embark on a journey that will leave you forever changed."
-        }
-      />
       <div className="eventsHomePage_wrapper_previous">
         <motion.h2
           ref={ref}
@@ -181,31 +222,7 @@ const Events = () => {
           )}
         </div>
       </div>
-      {/* <FullWidthImageSec
-        imageUrl={fullWidthImage}
-        text={
-          "As Gurudev always says there are 3 stages of everyone's life - “Learning; Learning and Earning; Learning, Earning and Returning”"
-        }
-      /> */}
-      {/* {loading ? (
-        <Spinner />
-      ) : (
-        <div className="cardList">
-          {events?.map((item) => (
-            <CardItem
-              key={item.id}
-              imageUrl={
-                item._embedded["wp:featuredmedia"] &&
-                item._embedded["wp:featuredmedia"][0].media_details.sizes.full
-                  .source_url
-              }
-              title={item.title.rendered}
-              description={item.excerpt.rendered}
-            />
-          ))}
-        </div>
-      )} */}
-      {/* <FormHomePage /> */}
+
       <AllVideoHome />
     </div>
   );

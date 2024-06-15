@@ -1,5 +1,4 @@
 import InnerPageBanner from "../../components/innerPageBanner/InnerPageBanner";
-// import InnerPageCommonHeading from "../../components/innerPageCommonHeading/InnerPageCommonHeading";
 import SiddhasanaItem from "../../components/SiddhasanaItem/SiddhasanaItem";
 import WeAreHere from "../../components/weAreHere/WeAreHere";
 import image1 from "../../images/Siddhasana_WHAT.jpg";
@@ -10,11 +9,9 @@ import image5 from "../../images/how_image.jpeg";
 import "./Siddhasana.scss";
 import { useContext } from "react";
 import LanguageContext from "../../components/language/Language";
-// import bannerImage from "../../images/Siddhasana-D.jpg";
-// import mobilebannerImage from "../../images/Siddhasana-M.jpg";
-// import NewHeroSection from "../../components/newHeroSection/NewHeroSection";
-// import bannerVideo from "../../images/Siddhasana Banner D.mp4";
-// import mobilebannerVideo from "../../images/Siddhasana Banners M.mp4";
+import bannerImage from "../../images/Siddhasana copy.jpg"
+import mobileBannerImage from "../../images/Siddhasana_1080x1920 copy.jpg"
+
 
 const SiddhasanaData = [
   {
@@ -196,10 +193,12 @@ const Siddhasana = () => {
       /> */}
       <InnerPageBanner
         image={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916551/kaxxspeevylgt1fuzpd0.jpg"
+          bannerImage
         }
         mobileImage={
-          "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg"
+          // "https://res.cloudinary.com/drzn5vaqq/image/upload/v1707916597/aukbvayksklsohye1fjn.jpg"
+          mobileBannerImage
         }
         // text={"Siddhasana"}
         bigText={"SIDDHASANA"}
